@@ -1,0 +1,4 @@
+PASS: 242 exact checks
+Rational Fourier finite-sum checks: N=2,3,4,7; external and pair modes included.
+Vector, zero-diffusion, Coulomb, cancellation, and multiple-close-pair checks passed.
+No floating point, random seed, numerical SDE, external dependency, or theorem certification.

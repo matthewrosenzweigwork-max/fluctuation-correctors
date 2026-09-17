@@ -1,0 +1,67 @@
+{
+  "arithmetic": "fractions.Fraction, integer arithmetic, SHA-256; no numerical approximation",
+  "check_counts": {
+    "backward_sign": 36,
+    "coulomb_multipliers": 3,
+    "coulomb_normalization": 10,
+    "density_factor": 1,
+    "endpoint_exponents": 144,
+    "finite_N_coefficient": 3,
+    "fourier_response": 2,
+    "iid_exact_decomposition": 1440,
+    "iid_mean": 16,
+    "iid_orthogonality": 4,
+    "iid_scaled_endpoint": 16,
+    "iid_second_moment": 16,
+    "iid_sharp_equality": 7,
+    "iid_sharp_inequality": 16,
+    "input_sha256": 8,
+    "mutation_detection": 40,
+    "pair_exchange": 5,
+    "pair_internal_drift": 3,
+    "response_constants": 4,
+    "riesz_normalization": 210,
+    "source_fourier": 1,
+    "temperature_quantifiers": 660,
+    "volterra_sign": 27
+  },
+  "excluded": "No singular-flow, finite-particle Ito-domain, evolved-law or fluctuation-limit certification.",
+  "inputs": [
+    {
+      "path": "TASKS/ACTIVE/TASK-043_ROUND005_INTERFACE_BLIND.md",
+      "sha256": "0e853114502260ed758259cf0c91a97c41314f0776f82cea8267d9cc5b70cfa8"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+    },
+    {
+      "path": "THEOREMS/THM-015_IID_PAIR_SECOND_MOMENT.md",
+      "sha256": "c61e042599bd18993b6b760f22bde9d9044675f206fb42ea3418197be36db150"
+    },
+    {
+      "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+      "sha256": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed"
+    },
+    {
+      "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+      "sha256": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f"
+    },
+    {
+      "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+      "sha256": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6"
+    },
+    {
+      "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+      "sha256": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db"
+    }
+  ],
+  "python": "3.9.6",
+  "scope": "Exact algebra and frozen-input verification; prerequisite analytic proofs remain explicit hypotheses.",
+  "status": "PASS",
+  "total_assertions": 2672
+}

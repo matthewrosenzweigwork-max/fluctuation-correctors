@@ -1,0 +1,29 @@
+{
+  "backward_ode_maximum_relative_or_absolute_error": 1.3874723813128605e-16,
+  "coulomb_constant_maximum_relative_error": 2.8271597168564584e-16,
+  "density_factor": {
+    "M0": "2",
+    "haar_square": "1/4",
+    "squared_factor_required": true,
+    "weighted_square": "1"
+  },
+  "dependencies": "Python standard library only",
+  "exact_rate_case_count": 36,
+  "fourier_quadrature": {
+    "case_count": 48,
+    "cutoff": 0.003,
+    "maximum_relative_or_absolute_error": 3.546589808205068e-14,
+    "nodes": 1024,
+    "precision": "IEEE binary64",
+    "tolerance": 2e-12
+  },
+  "heat_normalization_maximum_error": 4.440892098500626e-16,
+  "iid_arithmetic": "Exact rational exhaustive enumeration on three-point iid laws; spatial collisions retained.",
+  "iid_case_count": 20,
+  "python": "3.9.6",
+  "random_seed": null,
+  "scalar_volterra_maximum_absolute_error": 1.3322676295501878e-15,
+  "scope": "Finite exact and floating-point diagnostics only; analytic arguments are in the review.",
+  "status": "PASS",
+  "verified_input_count": 9
+}

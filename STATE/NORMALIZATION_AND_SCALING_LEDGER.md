@@ -77,3 +77,7 @@ The internal-transport diagnostic has a different core ell=(2s(s+2)tau/N)^(1/(s+
 ## Round 004 retained diffusion scaling
 
 Relative noise is sqrt(4nu), generator2nu Delta, internal force2s/N, and source s r^-s theta^T A theta. THM020's initial iid upper rates match the transport diagnostic for all finite nu, including nu=1/beta_N: b_N/N, b_N(1+log N)/N, or b_N N^(-(d+2-s)/(s+2)). This is upper control for the local model only, not a two-sided diffusive norm or actual hierarchy power count. The old floor, microscopic lambda and logarithmic normalization remain unchanged.
+
+Round005 periodic base squared Haar norm is O(rho_N), with rho_N=1,1+logN,N^((2s-d)/(s+2)) across2s<d,=d,>d. The conditional full-response multiplier is exp[2(c+C_R)T], independent ofN under prescribed data bounds. Iid scaling yields b_N rho_N/N with M0 squared, not one density factor. Periodic barrier requires bounded nu=1/beta_N; it does not inherit the local theorem's all-finite-nu uniformity.
+
+THM025 AUD028/029: full inverse initial iid orders b_N/N, b_N(1+logN)/N, b_N N^(-(d+2-s)/(s+2)) are proved for d>=3,0<s<=d-2 and beta bounded below, including every critical sequence eventually. General product-density factor M0^2 and mean-field bias remain. These rates do not control positive-time residuals. Old energy-floor and microscopic coupling powers are unchanged.

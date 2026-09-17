@@ -1,0 +1,102 @@
+{
+  "context_reused": true,
+  "dependencies": "Python standard library only",
+  "exact_constant_inequality_cases": 27,
+  "historical_creation_chronology_verified": false,
+  "historical_r4_manifests_read": false,
+  "new_blind_review": false,
+  "original_input_manifest_sha256": "d75bf1f5f67fbc8cabc65ba097d0c77bfda3dc485e50d2808b6b30ecc9fb446e",
+  "original_inputs_unchanged": [
+    {
+      "path": "TASKS/ACTIVE/TASK-044_ROUND005_INTERFACE_HOSTILE.md",
+      "sha256": "c19d799e32695b9a62783cd2b1260ce3c9f90bc92935b617cf6872442f3e925f"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+    },
+    {
+      "path": "THEOREMS/THM-015_IID_PAIR_SECOND_MOMENT.md",
+      "sha256": "c61e042599bd18993b6b760f22bde9d9044675f206fb42ea3418197be36db150"
+    },
+    {
+      "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+      "sha256": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed"
+    },
+    {
+      "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+      "sha256": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f"
+    },
+    {
+      "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+      "sha256": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6"
+    },
+    {
+      "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+      "sha256": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db"
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+      "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc"
+    }
+  ],
+  "original_output_manifest_sha256": "10b4836f893136fd2166af4e9358c3c0612c76da8f17bab93a0fbbfa8ca89c03",
+  "original_outputs_unchanged": [
+    {
+      "path": "AUDITS/HOSTILE/ROUND_005_INTERFACE_REVIEW.md",
+      "sha256": "35ed3222548dc1ce7b5b1dbf8d4124fce71d54c5e0c25bd26bd94b4ea64185f1"
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_005_INTERFACE_CHECKS.py",
+      "sha256": "45825f1af12fb860f1c7c693ced4e414cfd05af0432fb5ffa808151766ebab55"
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_005_INTERFACE_CHECK_RESULTS.json",
+      "sha256": "33801af6a9bd92473a4bcda960d4ee05182c9a15b21d096dd52e9011cd68348e"
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_005_INTERFACE_README.md",
+      "sha256": "7a5caad2103decdbd1b596ef063db58c47036fedbbb3e683bf9d64e05560bc28"
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_005_INTERFACE_INPUT_SHA256SUMS.txt",
+      "sha256": "d75bf1f5f67fbc8cabc65ba097d0c77bfda3dc485e50d2808b6b30ecc9fb446e"
+    }
+  ],
+  "python": "3.9.6",
+  "scope": "Integrity, cited source-location checks, and finite exact scalar diagnostics only.",
+  "source_hashes_in_addendum_verified": 3,
+  "source_locations": {
+    "constructor": "Section 2, lines 69-109, equations (2.1)-(2.4)",
+    "hostile": "C01 at line 35; Section 3.1, lines 63-76",
+    "reconstruction": "Section 1, lines 20-70; evenness at line 27"
+  },
+  "status": "PASS",
+  "supplemental_input_manifest_sha256": "892ab43a9933fc844dd880e8d7e3e90c9203296236555293f43298f3d434e22b",
+  "supplemental_inputs_verified": [
+    {
+      "path": "TASKS/ACTIVE/TASK-047_ROUND005_INTERFACE_SOURCE_RECHECK.md",
+      "sha256": "0aec6e3577411d8e6349635eefa818c623e95c3160da019838a945d2be0d484d"
+    },
+    {
+      "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+      "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec"
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be"
+    },
+    {
+      "path": "AUDITS/BLIND_RECONSTRUCTION/ROUND_004_RESPONSE_RECONSTRUCTION.md",
+      "sha256": "e07df6f4285cdb2dbb3a4fd28ab7cf325a355c75129378118f29a7fd76df53f1"
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_004_SINGULAR_RESPONSE_REVIEW.md",
+      "sha256": "06bccaa37a0c7018e1595d14662289c2c4be28017ee673abf8dffe2dc600aaa1"
+    }
+  ]
+}

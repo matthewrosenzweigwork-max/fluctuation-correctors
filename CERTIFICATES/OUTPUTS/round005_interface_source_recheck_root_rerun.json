@@ -1,0 +1,20 @@
+{
+  "context_reused": true,
+  "dependencies": "Python standard library only",
+  "exact_constant_inequality_cases": 27,
+  "historical_creation_chronology_verified": false,
+  "historical_r4_manifests_read": false,
+  "new_blind_review": false,
+  "original_input_manifest_sha256": "d75bf1f5f67fbc8cabc65ba097d0c77bfda3dc485e50d2808b6b30ecc9fb446e",
+  "original_output_manifest_sha256": "10b4836f893136fd2166af4e9358c3c0612c76da8f17bab93a0fbbfa8ca89c03",
+  "python": "3.9.6",
+  "scope": "Integrity, cited source-location checks, and finite exact scalar diagnostics only.",
+  "source_hashes_in_addendum_verified": 3,
+  "source_locations": {
+    "constructor": "Section 2, lines 69-109, equations (2.1)-(2.4)",
+    "hostile": "C01 at line 35; Section 3.1, lines 63-76",
+    "reconstruction": "Section 1, lines 20-70; evenness at line 27"
+  },
+  "status": "PASS",
+  "supplemental_input_manifest_sha256": "892ab43a9933fc844dd880e8d7e3e90c9203296236555293f43298f3d434e22b"
+}

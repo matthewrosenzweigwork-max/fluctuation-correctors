@@ -44,3 +44,5 @@ Round 002 final: THM-011 replaces the actual leading bracket by its deterministi
 ## Round 004 auxiliary martingale class
 
 THM020's martingale is the conditional expectation of an integrable source occupation from each starting point. Smooth Ito is used only before finite annular exit; bounded stopped derivatives justify zero-mean stochastic integrals. Source integrability is proved before the limit. This establishes the bounded Borel inverse's true-martingale identity, not gradients or quadratic/cross variations of the full N-particle corrector. Those PO001 obligations remain OPEN.
+
+The R5 probabilistic inverse has a true/UI source martingale along the auxiliary base-pair process. This does not give the corrector martingale along the interacting N-particle process. Its gradients, self/cross quadratic variations and passage to the exact particle identity remain PO022/023/PO001. The candidate fixed-N density estimate cannot make an unproved derivative integrable.

@@ -33,3 +33,5 @@ THM-017 retains internal B/N exactly in a zero-diffusion quadratic-source Euclid
 ## Round 004 retained diffusion
 
 THM020 retains 2nu Delta together with internal B/N in a local relative-coordinate auxiliary model. Its inverse is constructed in a bounded Borel true-martingale class; no classical diagonal trace or gradient/bracket regularity is supplied. The periodic cutoff diagnostic remains separate from COR001. Both response terms, ordinary transport, true test/source and periodic remainder are still required. No new hierarchy order is closed.
+
+R5 THM025 supplies the genuine second-order full pair inverse under prescribed uniform data and actual homogeneous data, with both responses and exact J. Its initial iid endpoint now passes AUD028/029. It remains a bounded Borel/Haar L2 inverse, not yet a particle Ito test. PO022 weighted first derivatives and PO023 full domain are separate; no higher-order corrector tail is controlled.

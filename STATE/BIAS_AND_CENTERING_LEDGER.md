@@ -40,3 +40,5 @@ For hard spatial truncation h_r=g 1_(dist>=r), m_r=int h_r=-tau_r, k_r=h_r-m_r, 
 THM020's initial iid endpoint keeps -m/(2N), the first projection -N^-2 sum q(X_i), and the canonical unordered pair sum. Its exact second moment is the THM015 identity; arbitrary finite spatial-diagonal assignment is irrelevant only because this iid law has bounded density. Supremum over deterministic remaining times and finite nu is outside expectation. No exact expectation-centering or evolved law is substituted.
 
 Round004 response integration does not change mean-field centering or N^2 normalization. Coulomb negative Haar compensation is part of divK, not a new fluctuation centering. Root R5 conditional composition retains the exact THM015 mean and first projection; its iid estimate is conditional pending independent audit/input verification. No exact-centered law is silently substituted.
+
+R5 actual full-inverse initial estimate retains deterministic -theta/(2N), first projection and canonical pair components from THM015. It is mean-field centered, with M0^2 in the Haar-to-product L2 comparison. No exact-first-marginal or dynamic corrected centering has been substituted.

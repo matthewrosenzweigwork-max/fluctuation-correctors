@@ -1,0 +1,7 @@
+# TASK-047 — separate post-seal interface source recheck
+
+2026-09-17. Assigned to the completed TASK044 hostile reviewer only after its immutable report seal. This is a supplemental source/constant audit in the existing isolated review worktree, not a new blind context or certification of the reviewer's own added proof. Do not edit its original report, candidate or prior inputs.
+
+Read the separately hashed root AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md and its exact cited R4 source/independent reconstruction/hostile review. Check every asserted source location and hash, coefficient-one smooth local remainder and evenness, and the maximum choice of the two finite divergence constants. Decide specifically whether TASK044-D1 and D2 are discharged for the original THM025 proof plus this addendum. No new mathematical target, norm, centering or regime is authorized.
+
+Only this task, addendum and three cited R4 reports, plus your own sealed original TASK044 dossier/report are permitted. Copy/hash-check supplemental manifest first and preserve both input generations. Write AUDITS/HOSTILE/ROUND_005_INTERFACE_SOURCE_RECHECK.md and separate input/output manifests. State actual context reuse and that the original REPAIR_REQUIRED report stays historical; if both dispositions pass, give the exact revised scoped verdict for the candidate together with the addendum, not an unqualified original-proof pass. No root edits, commits, pushes, dependencies or children. Return precise residual gap on failure.

@@ -1,0 +1,15 @@
+Command: python3 AUDITS/BLIND_RECONSTRUCTION/check_round006_particle_exact.py
+Runtime: Python 3.9.6; standard library only.
+Exit status: 0
+
+PASS: 242 exact checks
+Rational Fourier finite-sum checks: N=2,3,4,7; external and pair modes included.
+Vector, zero-diffusion, Coulomb, cancellation, and multiple-close-pair checks passed.
+No floating point, random seed, numerical SDE, external dependency, or theorem certification.
+
+Additional completed checks:
+- shasum -a 256 -c AUDITS/BLIND_RECONSTRUCTION/ROUND_006_PARTICLE_INPUT_SHA256SUMS.txt: all six inputs OK.
+- ast.parse of the checker: valid Python syntax.
+- Report integrity: 36 unique sequential equation labels; balanced inline and display math delimiters.
+- git rev-parse HEAD: 93c20daa45aad455a95437b1dc6beed2883afada.
+- git branch --show-current: codex/hocf-r006-particle-blind.

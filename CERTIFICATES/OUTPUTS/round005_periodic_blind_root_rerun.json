@@ -1,0 +1,18 @@
+{
+  "analytic_limit_status": "Established in the companion proof, not certified by these finite checks",
+  "arithmetic": "Exact fractions; Python standard library; no simulation or external dependencies",
+  "checks": {
+    "all_N_radial_core_and_nonlog_tail": 1344,
+    "cutoff_product_rule": 4536,
+    "density_factor_sharpness": 3,
+    "iid_exact_configurations": 468,
+    "iid_law_kernel_cases": 12,
+    "pair_divergence_factor": 96,
+    "radial_identities_and_bounds": 4536,
+    "rate_exponents": 56,
+    "volterra_simplex_coefficients": 13
+  },
+  "scope": "Frozen THM-023 and conditional THM-024; initial iid only",
+  "status": "PASS",
+  "task": "TASK-040"
+}

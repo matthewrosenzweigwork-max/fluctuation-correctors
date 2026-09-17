@@ -1,0 +1,202 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\T}{\mathbb T}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathcal R}
+\newcommand{\norm}[1]{\lVert #1\rVert}
+\title{Periodic pair inversion and the initial iid endpoint}
+\author{HOCF--RIESZ, Round 005}
+\date{17 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status at preparation.} This memorandum synthesizes the submitted
+THM--023--025 modules. Independent reconstruction and hostile review are recorded
+in the canonical theorem ledger. The prescribed-data and homogeneous initial
+endpoint statements do not establish the singular finite-particle It\^o domain,
+an evolved-law residual estimate, or a fluctuation limit. Complete proofs and
+immutable audit dossiers are retained in the accompanying Markdown memoranda.
+
+\section*{The precise operator and assumptions}
+The torus has Haar mass one and characters $e^{2\pi i k\cdot x}$. Fix
+$d\ge3$, $0<s\le d-2$, $N\ge2$, $T<\infty$, and
+$0\le\nu\le\nu_*<\infty$. The frozen periodic Riesz potential has
+\[
+ \widehat g_s(k)=c_{d,s}|k|^{s-d},\qquad
+ c_{d,s}=\pi^{s-d/2}\frac{\Gamma((d-s)/2)}{\Gamma(s/2)}
+ \quad(k\ne0),\qquad \widehat g_s(0)=0,
+\]
+and $K=-\nabla g_s$. Prescribe a time-continuous $C^1$ probability density
+$\mu_t$, a time-continuous uniformly $C^1$ velocity $u_t$, and a time-continuous
+uniformly $C^2$ test $f_t$. Write
+\[
+ M_0=\sup_t\norm{\mu_t}_\infty,\quad
+ M_1=\sup_t\norm{\nabla\mu_t}_\infty,\quad
+ \operatorname{div}u_t\ge-D_u.
+\]
+All stated norms are uniform on the parameter family in question. Their validity
+for a general unknown mean-field solution is a separate assertion.
+
+The base pair generator and actual prescribed source are
+\begin{align*}
+ G_{N,t}&=\nu(\Delta_x+\Delta_y)+u_t(x)\cdot\nabla_x+u_t(y)\cdot\nabla_y
+       +\frac1N K(x-y)\cdot(\nabla_x-\nabla_y),\\
+ J_t(x,y)&=K(x-y)\cdot\bigl(\nabla f_t(x)-\nabla f_t(y)\bigr).
+\end{align*}
+The full pair operator is $G_{N,t}+\R_{x,t}+\R_{y,t}$. Both responses have
+coefficient one. Symmetry means commutation with exchanging $x,y$; no Haar
+self-adjointness is asserted.
+
+\section*{The base potential and the singular passage}
+Set $p=s+2$ and
+\[
+ F_{N,\tau}(r)=\frac N4\left[\left(r^p+\frac{2sp\tau}{N}\right)^{2/p}-r^2\right].
+\]
+For the local relative generator $2\nu\Delta+(2s/N)r^{-s-2}z\cdot\nabla$,
+the radial comparison uses
+\[
+ \Delta F_{N,\tau}=\frac N2\left[q^{s/p}(d+s-sq)-d\right]\le0,
+ \qquad q=\frac{r^p}{r^p+2sp\tau/N}.
+\]
+The sign holds on precisely the declared range $s\le d-2$. In an embedded
+torus ball, write $K(z)=s|z|^{-s-2}z+k(z)$, where $k$ is smooth and odd.
+The remaining relative drift has size at most $L|z|$, and
+$-r\partial_rF\le sF$. For a fixed radial cutoff $\chi$ supported in that ball,
+the product rule retains the diffusion cross term
+$4\nu\nabla\chi\cdot\nabla F$. All cutoff errors are bounded by a constant
+times $\tau$, uniformly for $N\ge2$ and $\nu\le\nu_*$. Consequently constants
+$\alpha,C_B$ depending only on the prescribed data give the barrier
+\[
+ B_N(t,x,y)=e^{\alpha(T-t)}
+ \left[\norm{D^2f}_{\infty}\chi(x-y)F_{N,T-t}(|x-y|)+C_B(T-t)\right],
+ \qquad (\partial_t+G_{N,t})B_N\le-|J_t|.
+\]
+The cutoff is defined in the embedded chart, never by differentiating torus
+distance across its cut locus.
+
+Local Picard constructions are patched before collisions. The Lyapunov function
+$1+\chi(r)r^{-(d-2)}$ has generator bounded above by a constant times itself.
+Stopped expectation therefore bounds the probability of hitting
+a tube of radius $\varepsilon$ by a constant times $\varepsilon^{d-2}$ for
+each fixed starting point. Compactness excludes other explosion. The global
+off-diagonal process has deterministic-time Markov conditioning. Stopped
+It\^o applied to $B_N$, followed by monotone convergence for the nonnegative
+occupation integral, proves
+\[
+ \E_{t,x,y}\int_t^T|J_a(X_a,Y_a)|\,da\le B_N(t,x,y).
+\]
+This establishes integrability before defining the signed potential
+$U_N(t)=\E\int_t^T J_a\,da$. It is bounded Borel for each fixed $N$ and is
+the unique terminal-zero bounded Borel martingale potential in the stated class.
+Radial integration of the barrier, including the finite-$N$ cases where its
+core exceeds the cutoff radius, yields
+\[
+ \sup_t\norm{U_N(t)}_{L^2(\T^{2d})}^2\le C\rho_N,\qquad
+ \rho_N=\begin{cases}
+ 1,&2s<d,\\
+ 1+\log N,&2s=d,\\
+ N^{(2s-d)/(s+2)},&2s>d.
+ \end{cases}
+\]
+
+The distribution $D_K=\operatorname{div}K$ is a finite signed measure with
+$D_K\ge-\kappa$. Choose $\kappa$ at least as large as the periodic remainder
+constant $C_0$ in THM--023. Heat regularization preserves this lower bound. The smooth
+pair drift has divergence at least $-2D_u-2\kappa/N$; its random-flow Jacobian,
+change of variables and Jensen's inequality give
+\[
+ \norm{S^{\varepsilon}_{t,a}}_{2\to2}
+ \le e^{(D_u+\kappa/N)(a-t)}.
+\]
+For each fixed singular path, its minimum separation on a finite horizon is
+positive. Local $C^1$ convergence of the regularized force and a stopped
+Gronwall argument give uniform path convergence. Testing first on continuous
+terminal functions passes the Haar measure domination to the singular process.
+Extension to Borel measures and density of continuous functions give the same
+$L^2$ bound and strong, fixed-parameter convergence of the semigroups.
+No operator-norm convergence or convergence of regularized source potentials
+is inferred from this terminal-data argument.
+
+\section*{Restoring both responses}
+The finite-measure response is
+\begin{align*}
+ \R_{x,t}\Phi(x,y)
+ ={}&-\int\mu_t(x+w)\Phi(x+w,y)\,D_K(dw)\\
+    &-\int K(w)\cdot\nabla\mu_t(x+w)\Phi(x+w,y)\,dw.
+\end{align*}
+The second slot is analogous. Each has Borel supremum and Haar $L^2$ norm
+at most $M_0\norm{D_K}_{\rm TV}+M_1\norm K_1$. At Coulomb,
+\[
+ D_K=c_d(\delta_0-dx),\qquad c_d=(d-2)|\mathbb S^{d-1}|.
+\]
+The atom contributes $-c_d\mu_t(x)\Phi(x,y)$, not a trace on $x=y$.
+Off the diagonal, changing diagonal values changes the integral only at
+$w=y-x\ne0$, where neither $D_K$ nor the absolutely continuous $K$ term
+has an atom. Thus the off-diagonal Borel operator is well defined. Haar
+equivalence-class independence follows separately by translation and Fubini.
+
+Put $C_R=2(M_0\norm{D_K}_{\rm TV}+M_1\norm K_1)$ and
+$c=D_u+\kappa/2$. For
+\[
+ (Vh)_t=\int_t^T S_{t,a}(\R_{x,a}+\R_{y,a})h_a\,da,
+ \qquad \Phi=\sum_{j=0}^{\infty}V^jU_N,
+\]
+the ordered time simplex gives a Borel supremum bound
+$\norm{U_N}_\infty(C_RT)^j/j!$. The intervening semigroup exponents add
+over adjacent time intervals, so the $L^2$ bound is
+$e^{cT}\sup_a\norm{U_N(a)}_2(C_RT)^j/j!$. Both series converge consistently;
+the same factorial estimate proves uniqueness in the two separate classes.
+In particular
+\[
+ \sup_t\norm{\Phi_t}_2\le e^{(c+C_R)T}\sup_t\norm{U_N(t)}_2.
+\]
+Conditional Markov time splitting identifies the solution with the true
+uniformly integrable martingale whose integrated source is
+$J+(\R_x+\R_y)\Phi$. Absolute occupation integrability justifies the time
+interchanges. This is a probabilistic inverse; it is not a singular It\^o
+formula for the $N$-particle corrector.
+
+\section*{The initial endpoint and an actual homogeneous subcase}
+For iid initial law $\mu_0$, retain the exact mean-field-centered statistic
+$P_N=U_2/2$ with denominator $N^2$. THM--015 gives, with
+$b_N=\min(\beta_N,1)$,
+\begin{align*}
+ \E\left|\sqrt{Nb_N}P_N[\Phi_0]\right|^2
+ &\le\frac{b_N}{2N}\norm{\Phi_0}_{L^2(\mu_0^2)}^2\\
+ &\le\frac{b_NM_0^2}{2N}e^{2(c+C_R)T}C\rho_N.
+\end{align*}
+The factor is $M_0^2$: the full kernel need not depend only on $x-y$.
+The deterministic mean and first projection have not been omitted. The rates
+are $b_N/N$, $b_N(1+\log N)/N$, and
+$b_NN^{-(d+2-s)/(s+2)}$, respectively. These all vanish in the declared range.
+
+For actual homogeneous data, take $b=0$, $\mu_0=1$. Then $\mu_t=1$, $u_t=0$
+solve the reference equation. For a real smooth terminal test $h$, set
+\[
+ f_t(x)=\widehat h(0)+\sum_{k\ne0}\widehat h(k)
+ e^{-(T-t)a_k(\nu)}e^{2\pi i k\cdot x},\qquad
+ a_k(\nu)=4\pi^2\nu|k|^2+4\pi^2c_{d,s}|k|^{s+2-d}.
+\]
+All $a_k$ are positive. Rapid Fourier decay justifies time and spatial
+differentiation and bounds every fixed spatial derivative uniformly for
+$t\in[0,T]$ and $\nu\ge0$. The one-body response multiplier is
+$-4\pi^2|k|^2\widehat g_s(k)$; hence
+$\partial_tf+\nu\Delta f+\R f=0$ with $f_T=h$.
+This verifies the required background and test norms for this explicit
+actual-data subcase. The pair estimate still requires bounded $\nu$.
+
+With $\nu=1/\beta_N$, the conclusion therefore covers
+$\beta_N\ge\beta_*>0$. It includes every microscopically critical sequence
+$\lambda_N=\beta_NN^{s/d-1}\to\lambda\in(0,\infty)$, which eventually has
+$\beta_N\to\infty$, and subcritical sequences satisfying the lower bound.
+Subcritical sequences with $\beta_N\to0$ are not covered. The old condition
+$\beta_NN^{2s/d-1}\to0$ remains distinct from microscopic subcriticality.
+
+\noindent\textbf{First remaining line.} The constructed pair kernel is not yet
+shown to have the gradients and approximation properties needed in the
+interacting finite-particle identity. Its cubic residual, lower contractions
+and self/cross brackets must then be controlled under the evolved law.
+Neither the initial iid estimate nor the auxiliary martingale establishes
+those statements; critical hierarchy tails also remain open.
+\end{document}

@@ -1,0 +1,87 @@
+{
+  "task": "TASK-045",
+  "status": "PASS",
+  "evidence_class": "EXACT_RATIONAL_SELF_CHECK_NOT_INDEPENDENT_AUDIT",
+  "arithmetic": "Python standard-library Fraction; no floating-point values",
+  "random_seed": null,
+  "tolerance": null,
+  "models_differentiated": 96,
+  "checks_by_category": {
+    "ordered_unordered_divergence": 45,
+    "density_and_energy_constant": 45,
+    "coulomb_compensation_count": 45,
+    "fourier_gamma_recurrence": 18,
+    "radial_laplacian_sign": 18,
+    "distance_exit_denominator": 27,
+    "distance_exit_simplification": 27,
+    "solvable_relative_power": 45,
+    "solvable_energy_identity": 45,
+    "solvable_integrated_dissipation": 45,
+    "relative_diffusion_factor": 135,
+    "raw_energy_vs_direct_force": 1296,
+    "full_laplacian": 96,
+    "full_divergence": 96,
+    "full_square_with_triples": 96,
+    "gradient_dissipation": 96,
+    "ito_generator_and_noise_factor": 288,
+    "superharmonic_sign": 48,
+    "coulomb_punctured_laplacian": 32,
+    "partial_cluster_energy_lower_bound": 48,
+    "triple_cluster_cancellation": 12,
+    "negative_cross_term_retained": 12,
+    "nonzero_total_cluster_dissipation": 12,
+    "triple_collision_exact_scaling": 4
+  },
+  "total_checks": 2631,
+  "dimension_exponent_tuples": [
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      4
+    ]
+  ],
+  "finite_particle_counts_in_models": [
+    2,
+    3,
+    4
+  ],
+  "additional_counting_tests": [
+    7,
+    31
+  ],
+  "diffusivity_tests": [
+    "0",
+    "1/7",
+    "5",
+    "1/3",
+    "2"
+  ],
+  "details": [
+    "The exact two-particle SDE has N=2; other N in this test check the algebra of an assigned relative coefficient only."
+  ],
+  "limits": [
+    "No numerical SDE simulation or source theorem verification is implied.",
+    "Euclidean principal powers and polynomial backgrounds test local coefficients only.",
+    "Periodic compensation, noncollision, measurability, and measure passage require the written proof.",
+    "This checker neither supplies pair-inverse derivatives nor certifies a fluctuation theorem."
+  ]
+}
