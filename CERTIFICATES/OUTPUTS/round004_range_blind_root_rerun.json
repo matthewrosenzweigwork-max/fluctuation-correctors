@@ -1,0 +1,893 @@
+{
+  "method": "Python standard-library Fraction exact arithmetic",
+  "scope": "algebraic coefficient checks, not a stochastic proof",
+  "admitted_rows": 81,
+  "excluded_diagnostic_rows": 5,
+  "failed_tests": [],
+  "status": "PASS",
+  "finite_annulus_constant_check": {
+    "d": 3,
+    "s": "2",
+    "N": "2",
+    "nu": "1",
+    "a": "1/2",
+    "r0": "1",
+    "R": "2",
+    "explicit_time_valid_for_all_smaller_positive_times": "1/131072",
+    "quadratic_gap_lower_bound_coefficient": "1",
+    "constants": {
+      "drift_bound": "16",
+      "c": "1/384",
+      "J": "8",
+      "M1": "640",
+      "M2": "249856",
+      "H": "96",
+      "C": "124976/3"
+    },
+    "status": "PASS"
+  },
+  "admitted_cases": [
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "3/32",
+      "cubic_gap_at_r1": "-7/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "3/8",
+      "cubic_gap_at_r1": "49/32",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "7/8",
+      "cubic_gap_at_r1": "2989/288",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "3/32",
+      "cubic_gap_at_r1": "7/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "3/8",
+      "cubic_gap_at_r1": "7/4",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "7/8",
+      "cubic_gap_at_r1": "98/9",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "3/32",
+      "cubic_gap_at_r1": "301/2816",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "3/8",
+      "cubic_gap_at_r1": "91/44",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 1,
+      "s": "1/2",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "7/8",
+      "cubic_gap_at_r1": "2303/198",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "1/32",
+      "cubic_gap_at_r1": "-19/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "1/8",
+      "cubic_gap_at_r1": "3/32",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "7/24",
+      "cubic_gap_at_r1": "1589/864",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "1/32",
+      "cubic_gap_at_r1": "-89/2304",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "1/8",
+      "cubic_gap_at_r1": "17/72",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "7/24",
+      "cubic_gap_at_r1": "469/216",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "1/32",
+      "cubic_gap_at_r1": "37/2816",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "1/8",
+      "cubic_gap_at_r1": "39/88",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "1/2",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "7/24",
+      "cubic_gap_at_r1": "6307/2376",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "27/32",
+      "cubic_gap_at_r1": "-1737/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "27/8",
+      "cubic_gap_at_r1": "-207/32",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "63/8",
+      "cubic_gap_at_r1": "2261/32",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "27/32",
+      "cubic_gap_at_r1": "-1011/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "27/8",
+      "cubic_gap_at_r1": "39/8",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "63/8",
+      "cubic_gap_at_r1": "777/8",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "27/32",
+      "cubic_gap_at_r1": "45/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "27/8",
+      "cubic_gap_at_r1": "171/8",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 2,
+      "s": "3/2",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "63/8",
+      "cubic_gap_at_r1": "1085/8",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "9/32",
+      "cubic_gap_at_r1": "-1461/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "9/8",
+      "cubic_gap_at_r1": "-573/32",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "21/8",
+      "cubic_gap_at_r1": "-2051/96",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "9/32",
+      "cubic_gap_at_r1": "-939/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "9/8",
+      "cubic_gap_at_r1": "-39/4",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "21/8",
+      "cubic_gap_at_r1": "-7/3",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "9/32",
+      "cubic_gap_at_r1": "-1977/2816",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "9/8",
+      "cubic_gap_at_r1": "93/44",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "21/8",
+      "cubic_gap_at_r1": "1673/66",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "1",
+      "cubic_gap_at_r1": "-62/3",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "4",
+      "cubic_gap_at_r1": "-176/3",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "28/3",
+      "cubic_gap_at_r1": "-112/3",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "1",
+      "cubic_gap_at_r1": "-118/9",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "4",
+      "cubic_gap_at_r1": "-256/9",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "28/3",
+      "cubic_gap_at_r1": "896/27",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "1",
+      "cubic_gap_at_r1": "-70/33",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "4",
+      "cubic_gap_at_r1": "512/33",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "2",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "28/3",
+      "cubic_gap_at_r1": "4480/33",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "25/32",
+      "cubic_gap_at_r1": "-36125/768",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "25/8",
+      "cubic_gap_at_r1": "-16375/96",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "175/24",
+      "cubic_gap_at_r1": "-93625/288",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "25/32",
+      "cubic_gap_at_r1": "-71125/2304",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "25/8",
+      "cubic_gap_at_r1": "-7625/72",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "175/24",
+      "cubic_gap_at_r1": "-37625/216",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "25/32",
+      "cubic_gap_at_r1": "-62125/8448",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "25/8",
+      "cubic_gap_at_r1": "-3125/264",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "5/2",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "175/24",
+      "cubic_gap_at_r1": "35875/792",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "9/4",
+      "cubic_gap_at_r1": "-909/8",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "9",
+      "cubic_gap_at_r1": "-387",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "21",
+      "cubic_gap_at_r1": "-623",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "9/4",
+      "cubic_gap_at_r1": "-591/8",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "9",
+      "cubic_gap_at_r1": "-228",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "21",
+      "cubic_gap_at_r1": "-252",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "9/4",
+      "cubic_gap_at_r1": "-1413/88",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "9",
+      "cubic_gap_at_r1": "36/11",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "3",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "21",
+      "cubic_gap_at_r1": "3164/11",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "49/32",
+      "cubic_gap_at_r1": "-51009/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "49/8",
+      "cubic_gap_at_r1": "-24157/32",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "343/24",
+      "cubic_gap_at_r1": "-1370971/864",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "49/32",
+      "cubic_gap_at_r1": "-303359/2304",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "49/8",
+      "cubic_gap_at_r1": "-4361/9",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "343/24",
+      "cubic_gap_at_r1": "-103243/108",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "49/32",
+      "cubic_gap_at_r1": "-93933/2816",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "49/8",
+      "cubic_gap_at_r1": "-2009/22",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 5,
+      "s": "7/2",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "343/24",
+      "cubic_gap_at_r1": "-45619/1188",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "2",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "169/32",
+      "cubic_gap_at_r1": "-811031/256",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "169/8",
+      "cubic_gap_at_r1": "-398333/32",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "2",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "1183/24",
+      "cubic_gap_at_r1": "-24290539/864",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "169/32",
+      "cubic_gap_at_r1": "-4851821/2304",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "3",
+      "nu": "1",
+      "quadratic_gap_at_r1": "169/8",
+      "cubic_gap_at_r1": "-590317/72",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "3",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "1183/24",
+      "cubic_gap_at_r1": "-3931109/216",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "11",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "169/32",
+      "cubic_gap_at_r1": "-1578967/2816",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "11",
+      "nu": "1",
+      "quadratic_gap_at_r1": "169/8",
+      "cubic_gap_at_r1": "-177619/88",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    },
+    {
+      "d": 8,
+      "s": "13/2",
+      "N": "11",
+      "nu": "7/3",
+      "quadratic_gap_at_r1": "1183/24",
+      "cubic_gap_at_r1": "-8977787/2376",
+      "expected_quadratic_sign": 1,
+      "status": "PASS"
+    }
+  ],
+  "excluded_diagnostics": [
+    {
+      "d": 3,
+      "s": "1/2",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "-1/8",
+      "cubic_gap_at_r1": "-49/96",
+      "expected_quadratic_sign": -1,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "1",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "-1/4",
+      "cubic_gap_at_r1": "-29/72",
+      "expected_quadratic_sign": -1,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "1",
+      "N": "2",
+      "nu": "1",
+      "quadratic_gap_at_r1": "0",
+      "cubic_gap_at_r1": "-4",
+      "expected_quadratic_sign": 0,
+      "status": "PASS"
+    },
+    {
+      "d": 4,
+      "s": "2",
+      "N": "3",
+      "nu": "1/4",
+      "quadratic_gap_at_r1": "0",
+      "cubic_gap_at_r1": "-32/3",
+      "expected_quadratic_sign": 0,
+      "status": "PASS"
+    },
+    {
+      "d": 3,
+      "s": "3/2",
+      "N": "2",
+      "nu": "0",
+      "quadratic_gap_at_r1": "0",
+      "cubic_gap_at_r1": "0",
+      "expected_quadratic_sign": 0,
+      "status": "PASS"
+    }
+  ]
+}

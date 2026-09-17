@@ -1,0 +1,7 @@
+# TASK-042 — fresh statement-only reconstruction of the local range obstruction
+
+2026-09-17. Fresh Astra Max in a new isolated codex/hocf-r004-range-blind worktree from published 52bda5d0d24067b051c6fe9763f2a78e7599e593. Reconstruct/falsify THM022 exactly, including the fixed-data and every-small-positive-time quantifiers, finite-annulus realization, strict sign, boundary killing and finite-time remainder. No root proof, erratum, hostile report, state ledger, memory or unrelated files. The statement's status-at-submission line is context only, not evidence.
+
+Permitted inputs: this task, THM022, AGENTS, frozen R1 model. Input manifest is AUDITS/ROUND_004_RANGE_BLIND_INPUT_SHA256SUMS.txt. Copy/hash-check only these into the worktree before proof work. All model, geometry, law, centering and scope exclusions are on the card; this is an auxiliary stopped-process claim, not an interacting-law result. Use complete analytic proof and independent exact checks if useful. Do not infer a stochastic theorem from numerical agreement or replace the assertion by a weaker counterexample without marking a failure.
+
+Output AUDITS/BLIND_RECONSTRUCTION/ROUND_004_RANGE_RECONSTRUCTION.md and exact input/output SHA256 manifests, with full proof, constants/dependencies, all failed tests, status and excluded scope. Report first unsupported line and strongest corrected result if false. No root edits, commits, pushes, dependencies or children. Root compares only after your output is sealed. A separately staffed full-proof hostile review already exists, but is forbidden input.

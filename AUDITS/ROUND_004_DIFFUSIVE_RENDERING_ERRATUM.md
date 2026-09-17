@@ -1,0 +1,3 @@
+# THM020 rendering erratum
+
+2026-09-17. AUD021 / TASK035-E01 identifies a rendering-only token at line276 of the immutable constructor MEMORANDA/ROUND_004_DIFFUSIVE_COMPARISON.md. The source uses literal middle| where the intended TeX control sequence is \middle|. The surrounding prose and the exact martingale identity unambiguously specify conditional expectation. Read D23 with that conditioning bar; no mathematical coefficient, hypothesis or class changes. The original proof and all hashes are preserved. The standalone R4 TeX/PDF already typesets the conditioning bar correctly and was compiled and visually checked. No promoted mathematical claim is retracted.

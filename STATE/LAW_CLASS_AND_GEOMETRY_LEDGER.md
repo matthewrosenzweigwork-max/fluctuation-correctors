@@ -42,3 +42,9 @@ Round 002 finite-list limit: iid fixed smooth positive initial density, independ
 LG-007: initial iid arbitrary probability law for the finite L2 projection identity; atoms permitted with spatial-diagonal values part of the product-law class. Deleting repeated labels does not remove distinct-label spatial collisions. Haar unit torus is separately required for the bare Riesz cutoff/probability/converse statements. No positive-time iid assertion.
 
 LG-008: punctured Euclidean relative-coordinate, zero-diffusion internal transport and a static quadratic source, with characteristic terminal condition. Its separately defined compact periodic pair diagnostic is evaluated at initial iid bounded-density preparation. Zero diffusion is an equation assumption; arbitrary beta enters only the diagnostic scale. This is not a torus full-PDE solution, positive-temperature limit, actual backward test or transfer to an evolved/Gibbs law.
+
+## Round 004 auxiliary law
+
+The new global process is an auxiliary relative diffusion on punctured Euclidean space, with static quadratic test source and no background/nonlocal response. Its periodic cutoff kernel is only an initial iid diagnostic. The initial law has a uniformly bounded density, hence atomless diagonal; one density factor suffices. This does not identify the auxiliary diffusion with the interacting N-particle law or propagate iid preparation to positive time.
+
+THM021 lives on unit Haar torus and its product function spaces, not a Gibbs or evolving particle law. General pair Haar-to-mu^2 squared norm costs M0 squared; only translation-relative diagnostics admit the earlier single density factor. THM022 is a fixed-start killed Euclidean annular process for d>=1 and max(0,d-2)<s<d,nu>0. It does not transfer its law to a global or interacting realization.

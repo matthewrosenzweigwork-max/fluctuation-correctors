@@ -43,3 +43,11 @@ OP-002 is unchanged. The missing full-operator comparison must retain relative d
 AUD-014 makes the anisotropic diffusion limitation explicit: Delta Phi is not locally L2 for d=2,3,4 and is not absolutely locally L1 for d=2, when A has nonzero traceless part and tau>0. A strictly positive scalar nu does not cure infinite norms. A full generator may have cancellation between terms; no nonexistence is inferred.
 
 Root's separately sealed ROUND_003_DIFFUSION_RESCALING.md supplies a SELF_CHECKED punctured chain-rule identity, now submitted to fresh hostile review. Under y=N^(1/(s+2))z and Phi=N^(s/(s+2))F, the local operator has diffusion 2 chi_N Delta_y, chi_N=N^(2/(s+2))/beta_N, internal drift 2s|y|^(-s-2)y.grad, and source s|y|^-s a(theta). At critical lambda, chi_N=lambda_N^-1 N^[s(s+2-d)/(d(s+2))]. This classifies only a coefficient, not operator/solution limits or domains.
+
+## Round 004 local probabilistic realization
+
+THM020 constructs the punctured operator 2nu Delta+(2s/N)r^-s-2 z.grad for d>=s+2 via locally Lipschitz additive-noise Picard flow, annular exit bounds, and measurable deterministic-time Markov conditioning. Its source potential is the unique bounded Borel terminal-zero true-martingale solution. Killing is specified probabilistically; any classical solution satisfying stopped-Ito hypotheses is identified, but classical existence is not asserted. The radial amplitude has Delta F=(N/2)[q^(s/(s+2))(d+s-sq)-d]<=0; comparison is uniform in nu even though exit constants need not be. Fresh reconstruction AUD020 passes; hostile pending.
+
+## Round 004 full response interface
+
+Fresh AUD021 completes THM020 hostile review. THM021 passes fresh AUD023/024: D=div K is a finite signed measure; each exact response equals minus translation integration of mu Phi against D and of grad mu Phi against K. Each has Borel sup/Haar L2 norm <=M0 TV(D)+M1||K||1. At Coulomb D=c_d(delta0-Haar); the atom multiplies Phi(x,y), requiring no diagonal trace. The two-slot sum has twice this bound and preserves symmetry. Heat acts outside the entire response with fixed mu. Smooth pair divergence has 2D_epsilon/N and norm exponent a+kappa/N. Singular semigroup passage and both-response composition remain separate R5 submissions, not consequences of this smooth estimate.

@@ -1,0 +1,247 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\T}{\mathbb T}
+\title{HOCF--RIESZ: Round 004\\A diffusion-retaining local pair inverse}
+\author{Campaign research memorandum}
+\date{17 September 2026}
+\begin{document}
+\maketitle
+\noindent Published preceding checkpoint:
+\texttt{52bda5d0d24067b051c6fe9763f2a78e7599e593}.
+The construction and independent reconstruction use separately sealed
+inputs and reports. Their precise audit dispositions are recorded in the
+round report. The result below concerns a local auxiliary pair process
+and an initial iid diagnostic. Classical regularity and the full singular
+fluctuation theorem are not asserted.
+
+\section{The radial comparison}
+Fix an integer $d\ge3$, $0<s\le d-2$, $p=s+2$, $N\ge2$,
+$0\le\nu<\infty$, $0\le T<\infty$, and a real symmetric matrix $A$.
+On $D=\mathbb R^d\setminus\{0\}$, put
+\[
+ v_N(z)=\frac{2s}{N}|z|^{-s-2}z,\quad
+ L=2\nu\Delta+v_N\cdot\nabla,\quad
+ j_0(z)=s|z|^{-s},\quad J_A(z)=j_0(z)\theta^TA\theta,
+ \qquad\theta=z/|z|.
+\]
+The terminal equation is $(\partial_t+L)\Phi=-J_A$, with
+$\Phi(T,\cdot)=0$. The coefficient $2\nu$ is the relative diffusion,
+corresponding to noise $\sqrt{4\nu}$. Define
+\[
+ F_{N,\tau}(r)=\frac N4\left[
+ (r^p+2sp\tau/N)^{2/p}-r^2\right],\qquad r>0.
+\]
+For $q=r^p/(r^p+2sp\tau/N)$, direct differentiation gives
+\begin{align}
+ \partial_\tau F-v_N\cdot\nabla F&=sr^{-s},\\
+ \Delta F&=\frac N2\left[q^{s/p}(d+s-sq)-d\right].\label{lap}
+\end{align}
+The derivative of $q^{s/p}(d+s-sq)$ is
+\[
+ \frac{s}{p}q^{s/p-1}[d+s-(2s+2)q]\ge0,
+\]
+since $d\ge s+2$. Its value at $q=1$ is $d$, so
+$-Nd/2\le\Delta F\le0$, strictly negative for positive remaining time.
+Consequently
+\[
+ (\partial_t+L)F_{N,T-t}=-j_0+2\nu\Delta F\le-j_0.
+\]
+Writing $K=\|A\|_{\mathrm{op}}$, this is a radial majorant for the
+signed source, because $|J_A|\le K j_0$. The radial amplitude satisfies
+\begin{equation}\label{bounds}
+ 0\le F_{N,\tau}(r)\le
+ \min\left\{\frac{(2sp)^{2/p}}4N^{s/p}\tau^{2/p},\ s\tau r^{-s}\right\}.
+\end{equation}
+No small-diffusion assumption enters this inequality. The anisotropic
+transport solution itself need not be superharmonic.
+
+\section{Construction, collision avoidance and source integrability}
+Construct the path solving
+\[
+ Z_h=z+\sqrt{4\nu}B_h+\int_0^h v_N(Z_a)\,da
+\]
+by bounded Lipschitz cutoffs of the drift, stopped on increasing annuli.
+For each cutoff, Picard increments on $[0,H]$ are bounded by
+$B_mL_m^kH^{k+1}/(k+1)!$. Their uniform convergence gives existence;
+the same factorial estimate gives uniqueness. The resulting solution
+map is continuous in its initial point and continuous driving path for
+the cutoff equation. Countable patching gives a Borel maximal map,
+with lifetime the limit of the annular exit times.
+
+The following It\^o calculations stop inside a finite annulus.
+All derivatives and coefficients of the stochastic integrals are bounded there.
+For $V(r)=r^2+r^{-(d-2)}$,
+\[
+ LV=4\nu d+\frac{4s}{N}r^{-s}
+       -\frac{2s(d-2)}N r^{-s-d}\le C_{N,\nu},
+\]
+where an explicit admissible constant is
+\[
+ C_{N,\nu}=4\nu d+
+ \frac{4sd}{N(s+d)}
+ \left[\frac{2s}{(d-2)(s+d)}\right]^{s/d}.
+\]
+If $\rho_{a,R}$ is the first exit from $a<|z|<R$, expectation of
+stopped It\^o's formula gives
+\[
+ \Prob_z(\rho_{a,R}\le H)
+ \le(a^{d-2}+R^{-2})[V(z)+C_{N,\nu}H].
+\]
+Taking $a\downarrow0$, $R\uparrow\infty$ in nested annuli proves
+noncollision and nonexplosion from each nonzero starting point. It
+also identifies the patched global path, rather than merely extracting
+a subsequential law. The constant here need not be uniform in $\nu$.
+
+For a fixed remaining time $\tau$, stopped It\^o applied to
+$F_{N,\tau-h}(|Z_h|)$ gives
+\[
+ \E_zF_{N,\tau-\tau\wedge\rho}(|Z_{\tau\wedge\rho}|)
+ +\E_z\int_0^{\tau\wedge\rho}j_0(Z_h)\,dh
+ \le F_{N,\tau}(|z|).
+\]
+The first term is nonnegative. Monotone convergence of the positive
+source integrals, after noncollision has been established, proves
+\begin{equation}\label{occupation}
+ \E_z\int_0^\tau j_0(Z_h)\,dh\le F_{N,\tau}(|z|).
+\end{equation}
+This supplies expectation integrability, which would not follow from
+pathwise avoidance alone. The independent reconstruction also obtains
+the sharper separate exit bounds
+\[
+ \Prob_z(\rho_{a,R}\le H,|Z_\rho|=a)\le(a/|z|)^{d-2},
+\]
+\[
+ \Prob_z(\rho_{a,R}\le H,|Z_\rho|=R)
+ \le\frac{|z|^2+4\nu dH+(4/N)F_{N,H}(|z|)}{R^2}.
+\]
+They follow by differentiating $r^{2-d}$ and $r^2$, respectively.
+
+\section{The precise solution class and domain passage}
+The absolutely integrable potential
+\[
+ U_A(\tau,z)=\E_z\int_0^\tau J_A(Z_h)\,dh,
+ \qquad\Phi_A(t,z)=U_A(T-t,z)
+\]
+is jointly Borel: time integration of the measurable path map followed
+by integration over Brownian paths preserves measurability; positive
+and negative parts are finite by \eqref{occupation}. Moreover,
+\begin{equation}\label{comparison}
+ |U_A(\tau,z)|\le K F_{N,\tau}(|z|).
+\end{equation}
+This is a global bounded function for fixed $N,T$; its supremum need
+not be uniform in $N$.
+
+Pathwise uniqueness gives the deterministic flow identity under time
+shifts. Brownian independent increments then give the deterministic-time
+Markov property. Measurability permits conditioning on the random
+restart point: the exceptional future path set has zero probability
+for each fixed starting point, so its conditional integral is zero.
+Truncation and \eqref{occupation} extend this conditioning to the source.
+For each starting $(t,z)$,
+\[
+ \Phi_A(t+h,Z_h)+\int_0^hJ_A(Z_a)\,da
+ =\E_z\left[\left.\int_0^{T-t}J_A(Z_a)\,da\right|\mathcal F_h\right].
+\]
+Thus the left side is a true, uniformly integrable martingale.
+The claimed solution class consists exactly of bounded Borel functions
+with zero terminal value and this true-martingale property from every
+starting point. Taking terminal expectations proves uniqueness in this
+class. No differentiability or origin trace is part of its definition.
+
+For $\nu>0$, killing at annular exit gives the unique bounded killed
+martingale potential
+\[
+ U_A^{a,R}(\tau,z)=\E_z\int_0^{\tau\wedge\rho_{a,R}}J_A(Z_h)\,dh.
+\]
+It obeys the same radial bound. On nested annuli the signed source
+integrals converge almost surely and in $L^1$, dominated by the full
+integrable absolute source integral. Their expectations therefore converge
+to $U_A$ at each fixed time and point. This proves the specified domain
+passage. Classical interior regularity is not inferred. Any bounded
+classical solution meeting the stopped-It\^o and terminal-continuity
+hypotheses is identified with this potential by the same $L^1$ passage.
+
+When $\nu=0$, the path is the outward characteristic
+$(|z|^p+2sp h/N)^{1/p}\theta$. The potential equals
+$(\theta^TA\theta)F_{N,\tau}(|z|)$ and is unique in the pointwise forward
+absolutely-continuous characteristic class. No extra annular outflow
+condition is imposed. For $A=I$, $\nu>0$ and $\tau>0$, dominated convergence
+in the stopped equality gives the strict diagnostic
+\[
+ 0<U_I(\tau,z)=F_{N,\tau}(|z|)
+       +2\nu\E_z\int_0^\tau\Delta F_{N,\tau-h}(|Z_h|)\,dh
+       <F_{N,\tau}(|z|).
+\]
+Here \eqref{lap} bounds the Laplacian in absolute value, so this passage
+needs no uncontrolled derivative limit.
+
+\section{The initial iid diagnostic}
+Fix a smooth even cutoff $0\le\chi\le1$, equal to one near zero and
+supported in an embedded torus ball $B_R$, $R<1/2$. Set
+$H(x,y)=\chi(x-y)U_A(\tau,x-y)$, with any finite diagonal value.
+Reflection symmetry makes this a real symmetric Borel pair kernel.
+For iid labels of density $\mu$ with $\|\mu\|_\infty\le M$,
+\[
+ \|H\|_{L^2(\mu^2)}^2
+ \le M\|\chi U_A\|_{L^2(\T^d)}^2
+ \le MK^2\int_{B_R}F_{N,\tau}^2.
+\]
+There is one density factor because
+$\int\mu(y+z)\mu(y)\,dy\le M$.
+For $m=\mu^2(H)$, $q=H_\mu-m$, and
+$H_c=H-m-q(x)-q(y)$, the exact mean-field-centered statistic is
+\[
+ P_N[H]=-\frac m{2N}-\frac1{N^2}\sum_iq(X_i)
+            +\frac1{N^2}\sum_{i<j}H_c(X_i,X_j).
+\]
+Conditional centering and shared-label orthogonality give
+\[
+ \E P_N[H]^2=\frac{m^2}{4N^2}+\frac{\|q\|_2^2}{N^3}
+       +\frac{N-1}{2N^3}\|H_c\|_2^2
+ \le\frac{N-1}{2N^3}\|H\|_2^2.
+\]
+This retains the deterministic bias and first projection.
+Put $b_N=\min(\beta_N,1)$ and $\sigma_N=\sqrt{Nb_N}$.
+For $\ell=(2sp\tau/N)^{1/p}$, \eqref{bounds} yields
+\[
+ \int_{B_R}F^2\le |S^{d-1}|\left[
+ \frac{N^2\ell^4\min(R,\ell)^d}{16d}
+ +\mathbf1_{\ell<R}s^2\tau^2\int_\ell^Rr^{d-1-2s}\,dr\right].
+\]
+Consequently, for all $N\ge2$ and $\tau\in[0,T]$,
+\[
+ \sup_{0\le\tau\le T}\E|\sigma_NP_N[H]|^2
+ \le C_T b_N
+ \begin{cases}
+ N^{-1},&2s<d,\\
+ (1+\log N)/N,&2s=d,\\
+ N^{-(d+2-s)/(s+2)},&2s>d.
+ \end{cases}
+\]
+The constant is independent of finite $\nu\ge0$, $\beta_N>0$ and $N$;
+$\nu=1/\beta_N$ is permitted. In the middle case
+$\tau^2\log_+(1/\tau)$ is bounded at zero. A core larger than the cutoff
+ball is controlled by the first term of the preceding exact bound.
+The time supremum is outside the expectation. No lower bound for the
+diffusive norm or path supremum is claimed.
+
+\section{Remaining mathematical obligations}
+The constructed diagnostic does not solve the full periodic pair equation.
+Ordinary transport, both nonlocal responses, the actual time-dependent
+backward test, the periodic force remainder and cutoff equation errors
+still require a proof. Initial iid estimates do not transfer to the
+evolved interacting law. The cubic residual, contractions, pair bracket,
+singular generator passage and critical hierarchy tail remain open.
+The full singularity range $0<s<d$ also extends beyond $s\le d-2$ here.
+
+Throughout, the old condition $\beta_NN^{2s/d-1}\to0$ remains distinct
+from full microscopic subcriticality
+$\lambda_N=\beta_NN^{s/d-1}\to0$ and from microscopic criticality
+$\lambda_N\to\lambda\in(0,\infty)$. This local estimate changes none of
+those normalizations. The logarithmic case requires its separate convention.
+The complete Markdown proofs, their immutable dossiers and the round report
+supply the detailed constants and actual audit status.
+\end{document}

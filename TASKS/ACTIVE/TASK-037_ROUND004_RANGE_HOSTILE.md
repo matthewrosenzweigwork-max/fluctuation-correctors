@@ -1,0 +1,7 @@
+# TASK-037 — fresh hostile review of the local comparison range obstruction
+
+2026-09-17. Fresh Astra Max, isolated worktree from published R3. Exact candidate and negation are in root MEMORANDA/ROUND_004_SUPERHARMONIC_RANGE_OBSTRUCTION_V2.md. Read that corrected submission and original for provenance only, THM017 formula/normalization, AGENTS and frozen model. Do not read other unsealed worker outputs, root conditional R5 memo, new reviews or memory.
+
+Recompute all derivatives and coefficients, killed-annular Picard realization, double stopped-Ito/Dynkin identities with compactly supported phi and Lphi, the lower Taylor bound and its direction, positivity/explicit tau0, time/class/domain quantifiers and exact excluded implications. Do not repair silently. Original root V1 missed one factor s in third derivative; V2 is the candidate, with original retained solely as an explicit correction history. Issue per-claim PASS/FAIL for V2 and identify any first substantive failure. No full-corrector nonexistence or actual interacting-law claim is under review. Optional exact symbolic/small-parameter tests need reproducible arithmetic and limits.
+
+Write immutable AUDITS/HOSTILE/ROUND_004_RANGE_OBSTRUCTION_REVIEW.md and input/output SHA256 manifests. Root alone assigns canonical identifiers/status. No root edits, commits, pushes, dependencies or child workers. Seal and stop; no unrequested task continuation.

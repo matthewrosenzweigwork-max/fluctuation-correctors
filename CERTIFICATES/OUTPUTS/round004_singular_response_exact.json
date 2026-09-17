@@ -1,0 +1,25 @@
+{
+  "arithmetic": "fractions.Fraction, exact",
+  "audit_status": "SELF_CHECKED",
+  "checks": {
+    "constant_input_cancellation": 3,
+    "coulomb_high_frequency_obstruction": 4,
+    "homogeneous_pair_fourier_modes": 49,
+    "inhomogeneous_response_identities": 15,
+    "missing_gradient_term_detected": 2,
+    "missing_pair_factor_detected": 12,
+    "positive_energy_growth_detected": 6,
+    "radial_coefficients_and_flux_masses": 12,
+    "smooth_pair_energy_bounds": 15,
+    "smooth_pair_energy_identities": 15
+  },
+  "computation_status": "REPRODUCED",
+  "external_dependencies": [],
+  "limitations": "Finite algebra only; not a singular-limit proof or an independent certificate.",
+  "normalization": "angle derivative i*n; Coulomb c_d=1; pair energy divided by 2*pi",
+  "python": "3.9.6",
+  "random_seed": null,
+  "status": "PASS",
+  "task": "TASK-034",
+  "total_checks": 133
+}

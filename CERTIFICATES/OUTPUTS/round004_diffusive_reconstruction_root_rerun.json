@@ -1,0 +1,83 @@
+{
+  "status": "all exact arithmetic assertions passed",
+  "scope": "finite sample checks supporting the memorandum, not proof certification",
+  "arithmetic": "fractions.Fraction; no floating point or external dependencies",
+  "parameters": [
+    {
+      "s": "1/2",
+      "d": 3,
+      "threshold": false
+    },
+    {
+      "s": "1/2",
+      "d": 4,
+      "threshold": false
+    },
+    {
+      "s": "1",
+      "d": 3,
+      "threshold": true
+    },
+    {
+      "s": "1",
+      "d": 4,
+      "threshold": false
+    },
+    {
+      "s": "3/2",
+      "d": 4,
+      "threshold": false
+    },
+    {
+      "s": "3/2",
+      "d": 5,
+      "threshold": false
+    },
+    {
+      "s": "2",
+      "d": 4,
+      "threshold": true
+    },
+    {
+      "s": "2",
+      "d": 5,
+      "threshold": false
+    },
+    {
+      "s": "3",
+      "d": 5,
+      "threshold": true
+    },
+    {
+      "s": "3",
+      "d": 6,
+      "threshold": false
+    },
+    {
+      "s": "4",
+      "d": 6,
+      "threshold": true
+    },
+    {
+      "s": "4",
+      "d": 7,
+      "threshold": false
+    }
+  ],
+  "particle_numbers": [
+    2,
+    3,
+    17
+  ],
+  "diffusivities": [
+    "0",
+    "1/10",
+    "1",
+    "1000000"
+  ],
+  "radial_identity_and_comparison_checks": 432,
+  "isotropic_and_traceless_angular_checks": 1296,
+  "lyapunov_identity_checks": 864,
+  "scale_generator_checks": 648,
+  "iid_exponent_checks": 12
+}

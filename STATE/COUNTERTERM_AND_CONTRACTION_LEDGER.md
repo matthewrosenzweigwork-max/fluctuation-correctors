@@ -28,3 +28,5 @@ The triple deletion is U3[F]=rho^3[F]-3/N (eta tensor rho)[F(x,x,y)]+2/N^2 eta[F
 ## Round 002 final integration
 
 Round 002: exact partition moments identify pair blocks as zero additional N gain and larger blocks as extra N^(-(|B|-2)/2). The k-to-k-2 drift contraction stays at the raw N^(-k/2) order; it is not an additional asymptotic gain. No singular counterterm or deterministic subtraction is justified solely by these coefficients. The THM-012 symmetry defect changes no contraction coefficient after the explicit THM-014 repair.
+
+Round004: the finite measure D=divK has mass zero. At Coulomb it is c_d(delta0-Haar), c_d=(d-2)|S^(d-1)|; both parts survive the exact transferred-derivative response. This is distributional operator compensation, not permission to drop finite-N contractions or add a new Wick centering. All existing pair/triple/self/cross terms remain required. THM021 fresh AUD023/024.

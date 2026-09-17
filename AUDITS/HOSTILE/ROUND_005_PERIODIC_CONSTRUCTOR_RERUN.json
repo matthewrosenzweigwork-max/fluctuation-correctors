@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "copied_script_sha256": "f1a774b88e3fa827421b67a1ce6d0fbec30f29f5c77139128b0d7035c75f4d60",
+  "supplied_output_sha256": "f1817f2f9f036590b2a55edf37ff674ecb5de4a86cb96701dec3874e8fb6a047",
+  "rerun_output_sha256": "f1817f2f9f036590b2a55edf37ff674ecb5de4a86cb96701dec3874e8fb6a047",
+  "temporary_rerun_directory": "/var/folders/yh/pqv2cz6539gc8j2cm154bcrr0000gn/T/hocf-task041-constructor-rerun-rxf0xnyb",
+  "original_inputs_modified": false,
+  "result": {
+    "status": "all exact rational arithmetic checks passed",
+    "scope": "finite checks supporting, not certifying, the parameter-uniform proof",
+    "arithmetic": "Python standard-library fractions; no floating point",
+    "counts": {
+      "profile_derivative_checks": 108,
+      "cutoff_product_checks": 108,
+      "barrier_absorption_checks": 324,
+      "norm_factor_checks": 27
+    },
+    "total_checks": 567,
+    "particle_numbers": [
+      2,
+      3,
+      17
+    ],
+    "riesz_exponents": [
+      "1/2",
+      "1",
+      "3/2",
+      "2",
+      "3",
+      "4"
+    ]
+  }
+}

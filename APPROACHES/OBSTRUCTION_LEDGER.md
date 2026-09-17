@@ -75,3 +75,9 @@ THM-015/016 and AUD-012 prove infinite unregularized pair second moment for 2s>=
 The sharp initial bare-potential converse in THM-019, if promoted, is not a singular fluctuation counterexample. THM-017 explicitly retains internal pair transport and yields a different, vanishing initial diagnostic endpoint for every s<d. Angular traceless modes have positive squared norm despite zero mean, and a nonscalar matrix has direction-dependent collision limits; dropping diffusion or angular response requires proof. The full-operator comparison remains PO-017. This isolates a failed inference, not a failure of the flagship mission.
 
 AUD-014 confirms the anisotropic transport profile's punctured Laplacian is not L2 in dimensions 2–4 (and not absolutely L1 in dimension 2). Therefore estimating its omitted diffusion as a separate unregularized L2 forcing cannot work in those dimensions. A different profile/domain, regularized passage, cancellation-compatible norm or direct solution estimate remains possible.
+
+## OBS-013 — coefficient-one radial comparison fails above Coulomb
+
+THM022/V2 and fresh AUD022 prove, for every fixed finite annular tuple with s>d-2 and nu>0, strict reverse comparison for all sufficiently small positive times. Fresh blind reconstruction pending. Leading difference is nu s^2(s+2-d)r0^(-s-2) tau^2, with explicit cubic remainder. Original V1 missing factor s in the transport third derivative is preserved; V2 corrects it to4s^4(2s+2)/N^2. This excludes this same coefficient-one majorant, including arbitrarily small fixed positive diffusivity; it excludes neither a modified majorant nor the full inverse. Logical-wording/source qualifications are separately recorded.
+
+OBS013 final R4 gate: fresh AUD025 now closes the withheld-proof reconstruction, independently controlling killed boundary terms in two ways. Prior AUD022 hostile verdict and wording/source qualifications remain; no stronger full-inverse disproof follows.

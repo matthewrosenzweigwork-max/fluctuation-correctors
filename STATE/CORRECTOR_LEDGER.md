@@ -29,3 +29,7 @@ Round 002: the pair corrector residual closes in the fixed-smooth iid class (THM
 The exact iid bound (THM-015) reduces the actual initial endpoint to b_N||Phi_0^N||_L2(mu_0^2)^2/N->0 when L2 is available. This sufficient premise is not proved for COR-001's singular full solution. Bare-potential THM-016/018/019 are diagnostics, not replacements for Phi.
 
 THM-017 retains internal B/N exactly in a zero-diffusion quadratic-source Euclidean model and exhibits a finite radial core. Its explicit periodic-cutoff diagnostic has a negligible iid endpoint for every s<d. COR-001 still includes the full L_2 and the actual source. The specific missing comparison is PO-017; no new full-corrector order is closed by the toy solution, and no finite critical truncation is inferred.
+
+## Round 004 retained diffusion
+
+THM020 retains 2nu Delta together with internal B/N in a local relative-coordinate auxiliary model. Its inverse is constructed in a bounded Borel true-martingale class; no classical diagonal trace or gradient/bracket regularity is supplied. The periodic cutoff diagnostic remains separate from COR001. Both response terms, ordinary transport, true test/source and periodic remainder are still required. No new hierarchy order is closed.

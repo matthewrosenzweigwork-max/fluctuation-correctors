@@ -1,0 +1,11 @@
+PASS: TASK-035 independent exact arithmetic battery
+Arithmetic: Python integers and fractions.Fraction only; no floating-point tolerance.
+Randomness: none; no seed, sampling, stochastic simulation, or convergence claim.
+Radial/time/barrier tuples: 2520; positive-time strict Laplacian tuples: 1680.
+Radial N values: 2, 3, 17, 127; dimensions 3 through 10; 13 candidate rational s values filtered by 0<s<=d-2.
+Diffusivity test values: 0, 1/1000000, 1, 1000000000000 (all finite).
+Lyapunov chain-rule tuples: 7560; harmonic exponent and exact stationary-point coefficients checked.
+Iid kernel/N cases: 24; exhaustive three-point configurations: 2160.
+Iid law: masses 1/2, 1/3, 1/6; six symmetric kernels; N=2,3,4,5; spatial coincidences retained for distinct labels.
+Scaling tuples: 70; all three 2s versus d regimes represented.
+Scope: finite exact algebra checks support the written all-parameter audit; they do not establish SDE existence, stochastic limits, or PDE regularity.

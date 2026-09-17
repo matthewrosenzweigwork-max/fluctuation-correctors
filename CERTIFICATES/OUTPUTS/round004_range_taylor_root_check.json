@@ -1,0 +1,116 @@
+{
+  "status": "PASS corrected third-derivative identity",
+  "arithmetic": "exact Fraction binomial coefficients; no seed or tolerance",
+  "cases": [
+    {
+      "s": "1/2",
+      "N": 2,
+      "third_at_r1": "3/16",
+      "original_constant_valid_at_zero": true
+    },
+    {
+      "s": "1/2",
+      "N": 3,
+      "third_at_r1": "1/12",
+      "original_constant_valid_at_zero": true
+    },
+    {
+      "s": "1/2",
+      "N": 17,
+      "third_at_r1": "3/1156",
+      "original_constant_valid_at_zero": true
+    },
+    {
+      "s": "1",
+      "N": 2,
+      "third_at_r1": "4",
+      "original_constant_valid_at_zero": true
+    },
+    {
+      "s": "1",
+      "N": 3,
+      "third_at_r1": "16/9",
+      "original_constant_valid_at_zero": true
+    },
+    {
+      "s": "1",
+      "N": 17,
+      "third_at_r1": "16/289",
+      "original_constant_valid_at_zero": true
+    },
+    {
+      "s": "3/2",
+      "N": 2,
+      "third_at_r1": "405/16",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "3/2",
+      "N": 3,
+      "third_at_r1": "45/4",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "3/2",
+      "N": 17,
+      "third_at_r1": "405/1156",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "2",
+      "N": 2,
+      "third_at_r1": "96",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "2",
+      "N": 3,
+      "third_at_r1": "128/3",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "2",
+      "N": 17,
+      "third_at_r1": "384/289",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "3",
+      "N": 2,
+      "third_at_r1": "648",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "3",
+      "N": 3,
+      "third_at_r1": "288",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "3",
+      "N": 17,
+      "third_at_r1": "2592/289",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "4",
+      "N": 2,
+      "third_at_r1": "2560",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "4",
+      "N": 3,
+      "third_at_r1": "10240/9",
+      "original_constant_valid_at_zero": false
+    },
+    {
+      "s": "4",
+      "N": 17,
+      "third_at_r1": "10240/289",
+      "original_constant_valid_at_zero": false
+    }
+  ],
+  "case_count": 18,
+  "limitation": "root self-check; does not certify the annular stochastic argument"
+}

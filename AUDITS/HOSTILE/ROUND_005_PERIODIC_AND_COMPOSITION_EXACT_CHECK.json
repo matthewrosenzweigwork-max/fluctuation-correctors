@@ -1,0 +1,33 @@
+{
+  "status": "PASS: all independent exact checks passed",
+  "evidence_label": "finite exact checks; analytic parameter-uniform proof reviewed separately",
+  "arithmetic": "Python standard-library Fraction; no floating point, random seed, or dependency",
+  "counts": {
+    "all_n_core_and_tail": 378,
+    "density_factor_sharpness": 4,
+    "excluded_range_negative_control": 5,
+    "iid_configuration_identities": 1000,
+    "iid_exact_moments": 108,
+    "laplacian_threshold": 75,
+    "radial_formal_coefficients": 504,
+    "relative_generator": 504,
+    "response_mild_and_martingale": 384,
+    "response_nilpotence": 32,
+    "response_order_negative_control": 1,
+    "response_polynomial_ode": 1152,
+    "threshold_exponents": 216,
+    "time_simplex_coefficients": 13,
+    "time_simplex_exponent": 39
+  },
+  "total_assertions": 4415,
+  "noncommuting_order_witnesses": 192,
+  "density_negative_control": {
+    "density_bound": "2",
+    "haar_pair_norm_squared": "1/4",
+    "initial_law_pair_norm_squared": "1",
+    "N_3_scaled_second_moment_b_equals_1": "1/9",
+    "incorrect_single_density_factor_relaxed_bound": "1/12",
+    "interpretation": "confirms why the submitted squared density factor is necessary"
+  },
+  "scope": "THM023 algebra and all-N rates; THM024 conditional response/iid implication only"
+}

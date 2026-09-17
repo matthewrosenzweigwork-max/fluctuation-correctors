@@ -103,3 +103,19 @@ R2 publication is 2f532ccd2cb5f3d84db456be96e438f03f7e2ad2, checked equal to loc
 ## DEC-017 — fresh R3 proof gates and continued diffusion work
 
 2026-09-17. Fresh TASK029 and TASK030 establish a separately staffed reconstruction/hostile pass for THM019, with the statement's method hints disclosed. TASK030 also passes THM017/018 and identifies the root rescaling scope error FH-D01, preserved and corrected by erratum. No original reused audit is relabeled fresh. After TASK029 sealed, its Max worker moved to an isolated R4 constructor worktree with a hashed new dossier. A different fork_turns=none Max worker independently reconstructs the same bounded diffusion assertion from the root's explicitly unproved seed. R3 publication and R4 construction remain separate, and root alone writes canonical state.
+
+## DEC-018 — local diffusion and periodic continuation
+
+2026-09-17. Preserve THM020's precise probabilistic class and all-N endpoint as a separate bounded theorem; no classical regularity label is inferred. Independent TASK033 adds an explicitly sealed all-N extension before any new-task exposure. After that seal its worker starts TASK036 in a new periodic-pair worktree with prescribed C1 background/C2 test and bounded nu interval. TASK034 separately constructs the singular response measure/L2 module. Root alone integrates, with fresh hostile review before promotion. R3 is published as 52bda5d0d24067b051c6fe9763f2a78e7599e593 with local/tracking/live remote equality.
+
+## DEC-019 — root small-time coefficient correction before audit
+
+Root's separately sealed proposed range obstruction omitted one factor s in both displays of its third time derivative bound. Self-check caught it before external review or promotion. Preserve original ROUND_004_SUPERHARMONIC_RANGE_OBSTRUCTION.md and its hash; use separate V2 with 4s^4(2s+2)/N^2 in the third derivative bound. The annular lower expansion and strict s>d-2 range are unchanged. Neither version has an independent verdict at this entry; V2 alone is submitted for later audit. This is not retraction of a promoted theorem.
+
+## DEC-020 — preserve fresh response and range audit boundaries
+
+2026-09-17. Fresh AUD023 hostile and AUD024 statement-only comparison pass THM021 without mathematical repair. Preserve issued files, separately record the harmless differential-spacing typo and distinct execution-history evidence. Fresh AUD022 passes the V2 local range obstruction, while rejecting literal equivalence with a logical negation; separate wording erratum states the stronger implication and explicit annulus. Its THM020 source-exposure limit remains part of the report even though root verified the cross-reference. Dispatch fresh TASK042 for the still-missing range reconstruction; no fresh mode is inferred from full-proof hostile algebra.
+
+## DEC-021 — direct full-pair initial estimate as the next bounded gate
+
+2026-09-17. Freeze THM023 periodic-base and THM024 abstract-composition submissions after their complete proofs are sealed. Fresh TASK040 receives only statements and sealed R4 local prerequisites; fresh TASK041 receives candidate proofs. Separate isolated worktrees on R3, Astra Max, no shared narrative before reconstruction. Uniform prescribed data and bounded diffusivity remain explicit hypotheses; proving this direct norm implication would advance the initial endpoint without requiring closeness to a particular diagnostic. It would not discharge actual-data regularity, finite-particle Ito/domain, evolved-law residuals or critical hierarchy. No mission amendment or normalization change.

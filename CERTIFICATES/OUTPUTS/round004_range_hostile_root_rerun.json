@@ -1,0 +1,522 @@
+{
+  "all_v2_checks_pass": true,
+  "arithmetic": "Python standard-library Fraction; no floats, no random seed",
+  "evidence": "EXACT-RATIONAL-FINITE-TESTS; not a proof of all parameters",
+  "exact_transport_derivative_comparisons": 234,
+  "exact_transport_remainder_cases": 63,
+  "explicit_positive_time_checks": 2880,
+  "preserved_v1_actual_remainder_underbounds": 36,
+  "radius_for_time_and_remainder_cases": "r0=1",
+  "range_sign_counts": {
+    "above": 20,
+    "below": 2,
+    "threshold": 4
+  },
+  "remainder_cases": [
+    {
+      "N": 2,
+      "delta": "1/1000",
+      "s": "1/4",
+      "tau": "9036084126126084036009001/562500000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/10000",
+      "s": "1/4",
+      "tau": "900360084012601260084003600090001/562500000000000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/100000",
+      "s": "1/4",
+      "tau": "90003600084001260012600084000360000900001/562500000000000000000000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/1000",
+      "s": "1/4",
+      "tau": "9036084126126084036009001/375000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/10000",
+      "s": "1/4",
+      "tau": "900360084012601260084003600090001/375000000000000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/100000",
+      "s": "1/4",
+      "tau": "90003600084001260012600084000360000900001/375000000000000000000000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/1000",
+      "s": "1/4",
+      "tau": "876500160234230151492873097/1125000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/10000",
+      "s": "1/4",
+      "tau": "87334928149222322228148349208730097/1125000000000000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/100000",
+      "s": "1/4",
+      "tau": "8730349208148122221222208148034920087300097/1125000000000000000000000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/1000",
+      "s": "1/2",
+      "tau": "5010010005001/1250000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/10000",
+      "s": "1/2",
+      "tau": "50010001000050001/125000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/100000",
+      "s": "1/2",
+      "tau": "500010000100000500001/12500000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/1000",
+      "s": "1/2",
+      "tau": "15030030015003/2500000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/10000",
+      "s": "1/2",
+      "tau": "150030003000150003/250000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/100000",
+      "s": "1/2",
+      "tau": "1500030000300001500003/25000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/1000",
+      "s": "1/2",
+      "tau": "485970970485097/2500000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/10000",
+      "s": "1/2",
+      "tau": "4850970097004850097/250000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/100000",
+      "s": "1/2",
+      "tau": "48500970009700048500097/25000000000000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/1000",
+      "s": "1",
+      "tau": "3003001/3000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/10000",
+      "s": "1",
+      "tau": "300030001/3000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/100000",
+      "s": "1",
+      "tau": "30000300001/3000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/1000",
+      "s": "1",
+      "tau": "3003001/2000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/10000",
+      "s": "1",
+      "tau": "300030001/2000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/100000",
+      "s": "1",
+      "tau": "30000300001/2000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/1000",
+      "s": "1",
+      "tau": "291291097/6000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/10000",
+      "s": "1",
+      "tau": "29102910097/6000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/100000",
+      "s": "1",
+      "tau": "2910029100097/6000000000000000",
+      "v1_bound_fails": false,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/1000",
+      "s": "3/2",
+      "tau": "7021035035021007001/5250000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/10000",
+      "s": "3/2",
+      "tau": "7002100350035002100070001/52500000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/100000",
+      "s": "3/2",
+      "tau": "7000210003500035000210000700001/525000000000000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/1000",
+      "s": "3/2",
+      "tau": "7021035035021007001/3500000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/10000",
+      "s": "3/2",
+      "tau": "7002100350035002100070001/35000000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/100000",
+      "s": "3/2",
+      "tau": "7000210003500035000210000700001/350000000000000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/1000",
+      "s": "3/2",
+      "tau": "681040398397037679097/10500000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/10000",
+      "s": "3/2",
+      "tau": "679203733953395203706790097/105000000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/100000",
+      "s": "3/2",
+      "tau": "679020370339503395020370067900097/1050000000000000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/1000",
+      "s": "2",
+      "tau": "2001/8000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/10000",
+      "s": "2",
+      "tau": "20001/800000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/100000",
+      "s": "2",
+      "tau": "200001/80000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/1000",
+      "s": "2",
+      "tau": "6003/16000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/10000",
+      "s": "2",
+      "tau": "60003/1600000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/100000",
+      "s": "2",
+      "tau": "600003/160000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/1000",
+      "s": "2",
+      "tau": "194097/16000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/10000",
+      "s": "2",
+      "tau": "1940097/1600000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/100000",
+      "s": "2",
+      "tau": "19400097/160000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/1000",
+      "s": "3",
+      "tau": "5010010005001/15000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/10000",
+      "s": "3",
+      "tau": "50010001000050001/1500000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/100000",
+      "s": "3",
+      "tau": "500010000100000500001/150000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/1000",
+      "s": "3",
+      "tau": "5010010005001/10000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/10000",
+      "s": "3",
+      "tau": "50010001000050001/1000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/100000",
+      "s": "3",
+      "tau": "500010000100000500001/100000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/1000",
+      "s": "3",
+      "tau": "485970970485097/30000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/10000",
+      "s": "3",
+      "tau": "4850970097004850097/3000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/100000",
+      "s": "3",
+      "tau": "48500970009700048500097/300000000000000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/1000",
+      "s": "4",
+      "tau": "3003001/24000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/10000",
+      "s": "4",
+      "tau": "300030001/24000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 2,
+      "delta": "1/100000",
+      "s": "4",
+      "tau": "30000300001/24000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/1000",
+      "s": "4",
+      "tau": "3003001/16000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/10000",
+      "s": "4",
+      "tau": "300030001/16000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 3,
+      "delta": "1/100000",
+      "s": "4",
+      "tau": "30000300001/16000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/1000",
+      "s": "4",
+      "tau": "291291097/48000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/10000",
+      "s": "4",
+      "tau": "29102910097/48000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    },
+    {
+      "N": 97,
+      "delta": "1/100000",
+      "s": "4",
+      "tau": "2910029100097/48000000000000000",
+      "v1_bound_fails": true,
+      "v2_bound_pass": true
+    }
+  ],
+  "source_exponent_rows": 26
+}

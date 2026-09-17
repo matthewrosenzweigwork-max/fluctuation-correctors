@@ -1,0 +1,25 @@
+{
+  "status": "all exact rational arithmetic checks passed",
+  "scope": "finite checks supporting, not certifying, the parameter-uniform proof",
+  "arithmetic": "Python standard-library fractions; no floating point",
+  "counts": {
+    "profile_derivative_checks": 108,
+    "cutoff_product_checks": 108,
+    "barrier_absorption_checks": 324,
+    "norm_factor_checks": 27
+  },
+  "total_checks": 567,
+  "particle_numbers": [
+    2,
+    3,
+    17
+  ],
+  "riesz_exponents": [
+    "1/2",
+    "1",
+    "3/2",
+    "2",
+    "3",
+    "4"
+  ]
+}

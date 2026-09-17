@@ -40,3 +40,7 @@ Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded 
 ## Round 002 final integration
 
 Round 002 final: THM-011 replaces the actual leading bracket by its deterministic mean-field counterpart in L1 with error O(N^-1/2); the positive-sign complex exponential has bounded modulus and proves factorization against every bounded initial-measurable variable. AUD-007 hostile PASS, AUD-008 statement-only comparison PASS with disclosed context reuse. All-order bracket inequalities use THM-014 symmetrized rooted identities; original unrestricted THM-012 identity is prohibited. At inverse temperature tending to infinity the leading noise covariance vanishes; at inverse temperature tending to zero both limiting covariance components vanish under iid normalization. No singular bracket passage or path tightness follows.
+
+## Round 004 auxiliary martingale class
+
+THM020's martingale is the conditional expectation of an integrable source occupation from each starting point. Smooth Ito is used only before finite annular exit; bounded stopped derivatives justify zero-mean stochastic integrals. Source integrability is proved before the limit. This establishes the bounded Borel inverse's true-martingale identity, not gradients or quadratic/cross variations of the full N-particle corrector. Those PO001 obligations remain OPEN.
