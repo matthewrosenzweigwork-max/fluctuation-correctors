@@ -35,3 +35,7 @@ R-001 now has independent all-order reconstruction (AUD-004) in addition to host
 ## Round 002 final integration
 
 Round 002: fixed-smooth coupling residual and finite-list Gaussian routes close their bounded tasks. All-order moments supply explicit constants and sufficient tails only under separate growth hypotheses; symmetrization repair THM-014 is mandatory. Slow cutoff estimates control their own regularized model. Next active route is the initial iid singular pair interface (TASK-021/022), while fluctuation-scale singular-model comparison, actual higher-corrector norms and physical-gap estimates remain OPEN.
+
+## Round 003 disposition
+
+R-001/R-005: initial iid projection, heat-cutoff and probability interfaces have separate constructions and reviews. R-008: raw-pair variance obstruction and the sharp probability-converse candidate distinguish norm failure from probability failure. R-007/R-002: the exact internal-pair transport model retains B/N, produces a shrinking finite-amplitude core and quantifies the omitted angular diffusion. The natural next line is PO-017, a full-operator comparison controlling that core; no route may substitute g for the actual corrector. R-003 positive-time marginals, R-004 moving static response, R-006 mobility-aware gap estimates and R-009 quarantined source constant remain open as previously recorded.

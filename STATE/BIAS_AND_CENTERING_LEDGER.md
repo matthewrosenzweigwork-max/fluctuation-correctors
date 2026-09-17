@@ -28,3 +28,9 @@ Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded 
 ## Round 002 final integration
 
 Round 002 THM-011/AUD-007 and statement-only AUD-008 both prove O(N^-1) mean-field bias for a fixed finite smooth test list, with uniform temperature constants; scaling by sigma_N leaves O(N^-1/2). The independent reconstruction uses the zero-diagonal quadratic one-body source directly. Initial/martingale asymptotic independence comes from conditional characteristic functions, not merely zero cross covariance. THM-013 identifies initial limiting backward covariances at zero diffusivity. Singular, Gibbs and exact-marginal centering comparisons remain OPEN.
+
+## Round 003 exact pair centering
+
+For symmetric Phi=theta+h(x)+h(y)+H(x,y), theta=mu^2(Phi), mu(h)=0 and H canonical, P_N[Phi]=-theta/(2N)-N^-2 sum_i h(X_i)+N^-2 sum_(i<j)H(X_i,X_j). The first projection and deterministic mean do not vanish merely from iid sampling. The exact second moment is theta^2/(4N^2)+||h||_2^2/N^3+(N-1)||H||_2^2/(2N^3). THM-015, AUD-011/012.
+
+For hard spatial truncation h_r=g 1_(dist>=r), m_r=int h_r=-tau_r, k_r=h_r-m_r, the no-close-pair identity is P_N[g]=P_N[k_r]+(N-1)m_r/(2N). The full background-centered statistic P_N[h_r] instead differs from the centered sum by -m_r/(2N). THM-016/AUD-012/013 retains both distinctions. THM-017 retains nonzero density-dependent mean and first projection in its endpoint estimate; radial/traceless mean cancellation is used only in its explicitly Haar case.

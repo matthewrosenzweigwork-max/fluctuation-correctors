@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational",
+  "checks": 28,
+  "configurations": 3568,
+  "cases": [
+    {
+      "cyclic_size": 5,
+      "N": 2,
+      "pair_count": 1,
+      "event_probability": "3/5",
+      "mean_count": "3/5",
+      "second_count_moment": "3/5",
+      "probability_nonzero": "3/5",
+      "centered_pair_second_moment": "3/200"
+    },
+    {
+      "cyclic_size": 5,
+      "N": 3,
+      "pair_count": 3,
+      "event_probability": "3/5",
+      "mean_count": "9/5",
+      "second_count_moment": "99/25",
+      "probability_nonzero": "1",
+      "centered_pair_second_moment": "2/225",
+      "joint_triangle_probability": "7/25",
+      "incorrect_joint_independence_value": "27/125"
+    },
+    {
+      "cyclic_size": 5,
+      "N": 4,
+      "pair_count": 6,
+      "event_probability": "3/5",
+      "mean_count": "18/5",
+      "second_count_moment": "72/5",
+      "probability_nonzero": "1",
+      "centered_pair_second_moment": "9/1600"
+    },
+    {
+      "cyclic_size": 7,
+      "N": 2,
+      "pair_count": 1,
+      "event_probability": "3/7",
+      "mean_count": "3/7",
+      "second_count_moment": "3/7",
+      "probability_nonzero": "3/7",
+      "centered_pair_second_moment": "3/196"
+    },
+    {
+      "cyclic_size": 7,
+      "N": 3,
+      "pair_count": 3,
+      "event_probability": "3/7",
+      "mean_count": "9/7",
+      "second_count_moment": "117/49",
+      "probability_nonzero": "43/49",
+      "centered_pair_second_moment": "4/441",
+      "joint_triangle_probability": "1/7",
+      "incorrect_joint_independence_value": "27/343"
+    },
+    {
+      "cyclic_size": 7,
+      "N": 4,
+      "pair_count": 6,
+      "event_probability": "3/7",
+      "mean_count": "18/7",
+      "second_count_moment": "396/49",
+      "probability_nonzero": "1",
+      "centered_pair_second_moment": "9/1568"
+    }
+  ]
+}

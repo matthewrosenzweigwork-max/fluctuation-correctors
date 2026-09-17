@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact fractions; exhaustive finite configurations",
+  "python": "3.9.6",
+  "configuration_identity_checks": 1440,
+  "iid_moment_and_bound_cases": 16,
+  "translation_invariant_pair_count_cases": 2,
+  "triangle_probability": "1/7",
+  "product_of_triangle_marginals": "27/343",
+  "rational_exponent_parameter_cases": 351,
+  "limitations": [
+    "No singular or dynamic theorem is inferred from the finite-law tests.",
+    "No simulation, floating-point approximation, external dependency, or worker code is used."
+  ]
+}

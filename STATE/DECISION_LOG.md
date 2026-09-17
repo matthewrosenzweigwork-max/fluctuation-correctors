@@ -89,3 +89,17 @@
 ## DEC-014 — continue at the singular initial pair interface
 
 2026-09-17. Start R3 construction and independent falsification after their R2 outputs are sealed, while root finalizes the atomic R2 checkpoint. Their separate worktrees use published a061786 and statement/model inputs only. Bound the task to iid initial L2/probability pair statistics, heat-cutoff orders and collision errors. Do not equate a bare Riesz kernel with the actual backward corrector or extend initial estimates to interacting positive time.
+
+## DEC-015 — sharp initial-law statements and full-operator separation
+
+2026-09-17. Preserve THM-015/016 frozen submitted bytes and issue distinct cards for the stronger L1 upper bound (THM-018), root sharp lower-probability/converse (THM-019), and exact internal-transport model (THM-017). Infinite variance cannot establish probability nonconvergence; the new lower bound uses a positive-probability close-pair event and a controlled centered outer field. A raw-potential threshold is not assigned to the actual backward corrector. Root's construction goes to a separate hostile reviewer and a statement-only reconstructor before promotion. Model proposal participation is disclosed for the toy proof; root does not certify it.
+
+R2 publication is 2f532ccd2cb5f3d84db456be96e438f03f7e2ad2, checked equal to local/tracking/live remote main. The literal receipt is carried into R3. The ten-worker project setting remains unchanged, while the initialized three-worker capacity continues to limit fresh-session certification. All issued proof/audit artifacts stay byte-identical; mathematical clarifications belong in separate reviews and canonical state.
+
+## DEC-016 — fresh contexts can be allocated after completed workers
+
+2026-09-17T2045Z. After TASK026 completed, collaboration.list_agents showed only two running workers and one completed worker. A new fork_turns=none gpt-6-astra/max worker /root/r003_fresh_sharp was then accepted. Thus the earlier rejected spawn established the three-concurrent-worker limit while occupied, not a permanent inability to create fresh contexts. Fresh independent contexts are available by sequential allocation. Preserve earlier reports' truthful reuse histories, but supersede any inference that strict fresh review is permanently blocked. The requested ten-concurrent cap is still not active in this initialized runtime. Root has assigned a fresh statement-only THM019 reconstruction in a new isolated worktree, with its permitted prerequisites explicit.
+
+## DEC-017 — fresh R3 proof gates and continued diffusion work
+
+2026-09-17. Fresh TASK029 and TASK030 establish a separately staffed reconstruction/hostile pass for THM019, with the statement's method hints disclosed. TASK030 also passes THM017/018 and identifies the root rescaling scope error FH-D01, preserved and corrected by erratum. No original reused audit is relabeled fresh. After TASK029 sealed, its Max worker moved to an isolated R4 constructor worktree with a hashed new dossier. A different fork_turns=none Max worker independently reconstructs the same bounded diffusion assertion from the root's explicitly unproved seed. R3 publication and R4 construction remain separate, and root alone writes canonical state.

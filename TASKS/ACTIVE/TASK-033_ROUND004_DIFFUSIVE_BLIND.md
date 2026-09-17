@@ -1,0 +1,7 @@
+# TASK-033 — independent parallel diffusion reconstruction
+
+2026-09-17. Fresh fork_turns=none Astra Max /root/r004_diffusive_blind, separately allocated after a fresh R3 reviewer completed. New /private/tmp worktree on codex/hocf-r004-diffusive-blind at 2f532ccd2cb5f3d84db456be96e438f03f7e2ad2. Root is simultaneously integrating R3; the other R4 constructor works in a different worktree.
+
+Delivered permitted mathematical inputs: TASK-032 statement and explicitly proposed unproved root mechanism; THM015/017 statements; sealed ROUND_003_PAIR_TRANSPORT_MODEL.md as the existing profile prerequisite; frozen model. Governing AGENTS is permitted. Copy and hash this bounded dossier. Do not read any R4 constructor proof/worktree, new review, root TeX, other source files or memory.
+
+Independently prove/refute the d>=s+2 local diffusion comparison, including collision/nonexplosion, integrated source, precise bounded probabilistic/martingale solution and uniqueness, and the iid cutoff endpoint. Check rather than assume the root radial and Lyapunov seed. Do not call a measurable expectation a classical solution; no classical regularity proof is required if the exactly defined probabilistic class suffices. Handle nu=0 separately. Alternative mechanisms and counterexamples are welcome within the precise statement. Write and seal MEMORANDA/ROUND_004_DIFFUSIVE_RECONSTRUCTION.md, no verdict on the unseen constructor. No canonical writes, commits/pushes, dependencies, other worktrees or children.

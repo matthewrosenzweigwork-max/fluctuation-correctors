@@ -36,3 +36,9 @@ Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded 
 ## Round 002 final integration
 
 Round 002 finite-list limit: iid fixed smooth positive initial density, independent Brownian motions, fixed smooth periodic interaction and finite horizon; mean-field centering. Every convergent physical-temperature subsequence is identified, including degenerate high-temperature and inviscid initial-fluctuation low-temperature limits. This is not a Gibbs extension or a singular critical theorem. Round 003 is an initial iid pair-statistic interface only.
+
+## Round 003 rows
+
+LG-007: initial iid arbitrary probability law for the finite L2 projection identity; atoms permitted with spatial-diagonal values part of the product-law class. Deleting repeated labels does not remove distinct-label spatial collisions. Haar unit torus is separately required for the bare Riesz cutoff/probability/converse statements. No positive-time iid assertion.
+
+LG-008: punctured Euclidean relative-coordinate, zero-diffusion internal transport and a static quadratic source, with characteristic terminal condition. Its separately defined compact periodic pair diagnostic is evaluated at initial iid bounded-density preparation. Zero diffusion is an equation assumption; arbitrary beta enters only the diagnostic scale. This is not a torus full-PDE solution, positive-temperature limit, actual backward test or transfer to an evolved/Gibbs law.

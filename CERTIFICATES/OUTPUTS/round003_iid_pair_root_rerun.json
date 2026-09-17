@@ -1,0 +1,42 @@
+{
+  "arithmetic": "fractions.Fraction; exhaustive enumeration; no random sampling",
+  "checks_by_category": {
+    "above_second_threshold": 8,
+    "below_second_threshold": 8,
+    "canonical_sharpness": 8,
+    "conditional_first_projection": 144,
+    "conditional_second_projection": 432,
+    "constant_test": 8,
+    "cutoff_2_over_d_exponent": 32,
+    "cutoff_4_over_d_exponent": 32,
+    "exact_second_moment": 48,
+    "exact_variance": 48,
+    "first_cutoff_negative_exponent": 32,
+    "lattice_shell_lower": 80,
+    "lattice_shell_upper": 80,
+    "n2_all_kernel_equality": 12,
+    "nonzero_mean_coefficient": 48,
+    "orthogonal_kernel_norm": 12,
+    "pointwise_ordered_sum": 4320,
+    "second_cutoff_threshold": 8,
+    "separable_test": 8,
+    "sharp_l2_bound": 48,
+    "temperature_lower_bound": 12,
+    "temperature_prefactor": 12,
+    "temperature_upper_bound": 12,
+    "zero_canonical_projection": 36,
+    "zero_first_projection": 12
+  },
+  "evidence": "EXACT_FINITE_SUM_SELF_CHECK",
+  "kernel_distribution_cases": 12,
+  "limitations": "Supports the written proof; not an independent mathematical audit.",
+  "particle_numbers": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "status": "PASS",
+  "task": "TASK-021",
+  "total_checks": 5500
+}

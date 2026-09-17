@@ -33,3 +33,11 @@ Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded 
 ## Round 002 final integration
 
 Round 002: THM-013 constants C_mu,m and C_f,m are displayed in the viscosity proof, independent of both nonnegative diffusivities, with two additional spatial derivatives. The response difference requires only the density supremum difference. The maximum-norm/symmetrization convention in THM-014 retains all THM-012 numerical bounds; unrestricted first-slot differentiation is false. Covariance continuity uses no inverse diffusivity and no nondegeneracy. Positive-diffusivity smooth mean-field existence remains an explicit model input.
+
+## Round 003 constants and their exact scope
+
+AC-007, THM-015: arbitrary probability mu, symmetric L2(mu^2) pair kernel, iid labels. Exact norm constant (N-1)/(2N^3), sharp uniformly over admissible laws/kernels; all N>=2. Haar heat constants depend on fixed d,s and the displayed cutoff interval, not N or beta. Explicit max-shell constants and epsilon_0=(8 pi^2 d)^(-2) appear in the pair proof; no uniformity as s approaches thresholds is asserted.
+
+AC-008, THM-016/018/019: iid Haar, fixed d and 0<s<d, b_N=min(beta_N,1). Heat-representation remainder bound M_ds, outer-region squared integral G_ds and explicit radial integrals determine every truncation constant. For the sharp lower bound (d/2<s<d), choose one delta>0 with delta^-s>=2 C_tau and delta^(2s-d)<=c_0/(64 C_V), c_0=v_d/[4(1+v_d/2)]. Then a=delta^-s/8 and p=c_0 delta^d/2 are independent of N and temperature. Bounds apply beyond a fixed geometric N threshold. Proof/audit dispositions are separate.
+
+AC-009, THM-017: fixed d,s,A,T, fixed embedded radial cutoff and iid density bound M. Local two-sided constants use H_s(u)=(1+u^(s+2))^(2/(s+2))-u^2, angular squared norm Q(A), and the explicit radial integrals. All initial endpoint constants are independent of N, beta and deterministic remaining time; no singular full-operator norm or stochastic time supremum follows.

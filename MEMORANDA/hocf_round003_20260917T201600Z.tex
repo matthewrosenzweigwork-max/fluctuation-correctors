@@ -1,0 +1,443 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\T}{\mathbb T}
+\title{HOCF--RIESZ: Round 003\\The initial iid pair and collision interface}
+\author{Campaign research memorandum}
+\date{17 September 2026}
+\begin{document}
+\maketitle
+\noindent Published input checkpoint:
+\texttt{2f532ccd2cb5f3d84db456be96e438f03f7e2ad2}.
+The initial pair constructions used isolated worktrees based on the
+published Round 001 input; later proofs and reviews used the Round 002
+checkpoint above. This memorandum records initial iid statements. The round
+report gives the actual per-claim audit status. Neither the bare potential
+nor its truncated version is identified with the backward corrector, and
+no positive-time interacting-law estimate is inferred.
+
+\section{An exact finite-particle projection formula}
+Let $N\ge2$, let $X_1,\ldots,X_N$ be iid with probability law $\mu$, and let
+$\Phi$ be real, symmetric and in $L^2(\mu\otimes\mu)$. Set
+\[
+ \theta=\mu^2(\Phi),\qquad
+ h(x)=\int\Phi(x,y)\,d\mu(y)-\theta,\qquad
+ H(x,y)=\Phi(x,y)-\theta-h(x)-h(y).
+\]
+The canonical kernel $H$ has conditional mean zero in either variable.
+Orthogonality gives
+\[
+ \|\Phi\|_2^2=\theta^2+2\|h\|_2^2+\|H\|_2^2.
+\]
+With the campaign's ordered distinct-label denominator $N^2$, define
+\[
+ P_N[\Phi]=\frac1{2N^2}\sum_{i\ne j}\Phi(X_i,X_j)
+       -\frac1N\sum_i\int\Phi(X_i,y)\,d\mu(y)+\frac\theta2.
+\]
+Collecting constants and single-label terms gives the exact identity
+\begin{equation}\label{projection}
+ P_N[\Phi]=-\frac\theta{2N}
+      -\frac1{N^2}\sum_i h(X_i)
+      +\frac1{N^2}\sum_{i<j}H(X_i,X_j).
+\end{equation}
+The first projection remains because each label occurs only $N-1$ times
+in the unordered pair sum. Conditional centering makes distinct canonical
+pair terms orthogonal, including pairs sharing one label; it also makes
+them orthogonal to the linear sum. Therefore
+\begin{align}
+ \E P_N[\Phi]&=-\frac\theta{2N},\label{mean}\\
+ \E|P_N[\Phi]|^2
+ &=\frac{\theta^2}{4N^2}+\frac{\|h\|_2^2}{N^3}
+       +\frac{N-1}{2N^3}\|H\|_2^2\label{moment}\\
+ &\le\frac{N-1}{2N^3}\|\Phi\|_2^2.\label{bound}
+\end{align}
+The last constant is attained by a nonzero canonical kernel whenever the
+probability space admits one; at $N=2$ equality holds for every kernel.
+A constant kernel yields a deterministic $-\theta/(2N)$, not zero.
+A kernel $h(x)+h(y)$ with centered $h$ yields precisely the linear term in
+\eqref{projection}. These test the centering and the denominator.
+
+There is no self-label evaluation $\Phi(X_i,X_i)$. For atomless $\mu$,
+spatial-diagonal values may be changed freely. With atoms, distinct labels
+can coincide spatially, and diagonal values at those atoms belong to the
+$L^2(\mu^2)$ equivalence class. Deleting labels does not delete these values.
+
+\section{Riesz normalization and the square-integrability boundary}
+Now use Haar probability measure on the unit torus and $0<s<d$. Write
+\[
+ c_{d,s}=\pi^{s-d/2}\frac{\Gamma((d-s)/2)}{\Gamma(s/2)},\qquad
+ \widehat g(k)=c_{d,s}|k|^{s-d}\quad(k\ne0),\qquad \widehat g(0)=0.
+\]
+Let $p_t$ be the torus heat kernel with multiplier
+$e^{-4\pi^2t|k|^2}$. Its Gaussian periodization gives the $L^1$ representation
+\begin{equation}\label{heat}
+ g(x)=\frac{4^{(d-s)/2}\pi^{d/2}}{\Gamma(s/2)}
+       \int_0^\infty t^{(d-s)/2-1}(p_t(x)-1)\,dt.
+\end{equation}
+At small $t$ the $L^1$ norm of $p_t-1$ is at most two, and at large $t$ it
+decays exponentially. Fubini computes exactly the prescribed Fourier
+coefficient. The whole-space Gaussian term in \eqref{heat} integrates to
+$|x|^{-s}$ with coefficient one. Nonzero lattice translates give integrable
+$e^{-c/t}$ bounds near $t=0$, with all derivatives; the large-time difference
+is also smooth. Hence locally
+\[
+ g(x)=|x|^{-s}+H_0(x),\qquad H_0\text{ smooth near }0.
+\]
+In particular $g$ is integrable and bounded below, and belongs to $L^2$
+exactly when $2s<d$.
+
+For Haar iid samples the pair kernel $g(x-y)$ is canonical in $L^1$, so
+\[
+ P_N[g]=N^{-2}\sum_{i<j}g(X_i-X_j),\qquad \E P_N[g]=0.
+\]
+It is finite almost surely for every finite $N$. If $2s\ge d$, its second
+moment is infinite. Indeed, a lower bound $g\ge-C$ implies, with
+$M=N(N-1)/2$,
+\[
+ (P_N[g])_+\ge N^{-2}\big(g(X_1-X_2)-C(M-1)\big)_+,
+\]
+whose square has infinite expectation. This argument does not expand
+undefined cross moments and does not assert nonconvergence in probability.
+
+\section{Heat cutoffs and two different spatial scales}
+Let $g_\varepsilon=p_\varepsilon*g$ and
+$b_N=\min(\beta_N,1)$, $\sigma_N=\sqrt{Nb_N}$. Parseval and
+\eqref{moment} give
+\begin{align}
+ \|g_\varepsilon\|_2^2
+ &=c_{d,s}^2\sum_{k\ne0}|k|^{2s-2d}
+                       e^{-8\pi^2\varepsilon|k|^2},\label{sum}\\
+ \E|\sigma_NP_N[g_\varepsilon]|^2
+ &=\frac{b_N(N-1)}{2N^2}\|g_\varepsilon\|_2^2.\label{scaled}
+\end{align}
+Counting lattice points in max-norm shells in \eqref{sum} gives, with
+positive constants depending on $d,s$ and a fixed small cutoff range,
+\[
+ \|g_\varepsilon\|_2^2\asymp
+ \begin{cases}
+  1,&2s<d,\\
+  \log(1/\varepsilon),&2s=d,\\
+  \varepsilon^{-(2s-d)/2},&2s>d.
+ \end{cases}
+\]
+The shell $|k|_\infty=n$ has $(2n+1)^d-(2n-1)^d$ points, between
+$2dn^{d-1}$ and $2d3^{d-1}n^{d-1}$. On this shell
+$n\le|k|\le\sqrt d n$, so the sum is bounded above and below by explicit
+constants times $\sum_{n\ge1}n^{2s-d-1}e^{-a\varepsilon n^2}$,
+with $a=8\pi^2$ and $8\pi^2d$, respectively. Integral comparison gives
+the displayed three orders. The full proof in the sealed pair memorandum
+gives explicit two-sided constants and their cutoff interval.
+
+At $\varepsilon_N=N^{-2/d}$, the high-singularity scaled second moment is
+of order $b_NN^{2s/d-2}$ and tends to zero for every $s<d$. At
+$\varepsilon_N=N^{-4/d}$ it is of order $b_NN^{4s/d-3}$ when $2s>d$.
+These cutoffs correspond respectively to lengths $N^{-1/d}$ and
+$N^{-2/d}$. A regularized variance tending to zero does not control the
+unregularized statistic: for $2s\ge d$ the latter and its difference from
+every fixed smooth cutoff have infinite second moment. A probability
+comparison needs a separate estimate.
+
+\section{A probability estimate that retains close pairs and the mean}
+Fix $0<r<1/4$. Let
+\[
+ h_r=g\mathbf1_{\{\operatorname{dist}(x,0)\ge r\}},\qquad
+ \tau_r=\int_{\operatorname{dist}(x,0)<r}g(x)\,dx,\qquad
+ k_r=h_r+\tau_r.
+\]
+Then $k_r$ is canonical. Let $E_r$ be the event that no pair of distinct
+labels is within distance $r$, and let $v_d$ be the unit-ball volume.
+A union bound and the exact normalization give
+\[
+ \Prob(E_r^c)\le\frac{N(N-1)}2v_dr^d,
+ \qquad
+ P_N[g]=P_N[k_r]-\frac{N-1}{2N}\tau_r\quad\text{on }E_r.
+\]
+The mean correction has coefficient $(N-1)/(2N)$, not zero. Put
+\[
+ V_r=\|k_r\|_2^2,\qquad
+ B_N(r)=\sigma_N\frac{N-1}{2N}|\tau_r|.
+\]
+For $z>B_N(r)$, Chebyshev and \eqref{scaled} for this canonical kernel yield
+\begin{equation}\label{prob}
+ \Prob\{|\sigma_NP_N[g]|>z\}
+ \le\frac{N(N-1)}2v_dr^d+
+       \frac{b_N(N-1)V_r}{2N^2(z-B_N(r))^2}.
+\end{equation}
+The local singularity supplies
+\[
+ \tau_r=\frac{dv_d}{d-s}r^{d-s}+O(r^d),\qquad
+ V_r\le C_{d,s}
+ \begin{cases}
+ 1,&2s<d,\\
+ 1+\log(1/r),&2s=d,\\
+ r^{d-2s},&2s>d.
+ \end{cases}
+\]
+The constants may equivalently be expressed by the displayed smooth
+remainder and the integral outside the fixed ball; they are independent
+of $N,\beta_N,r$.
+
+At $2s=d$, choose $r_N=N^{-3/d}$. For $b_N=1$, close-pair probability,
+scaled discarded mean, and truncated variance are respectively
+$O(N^{-1})$, $O(N^{-1})$, and $O(\log N/N)$. For $d/2<s<3d/4$, choose
+\[
+ r_N=N^{-a},\qquad \frac2d<a<\frac1{2s-d}.
+\]
+All three errors in \eqref{prob} then vanish. Together with the direct
+$L^2$ result below $d/2$, this proves
+\[
+ 0<s<\frac{3d}4\quad\Longrightarrow\quad
+ \sqrt N P_N[g]\longrightarrow0\quad\text{in probability}.
+\]
+It also holds at $\sigma_N\le\sqrt N$ for every positive temperature
+sequence in this range.
+
+For $d/2<s<d$ a further sufficient condition is
+\[
+ b_NN^{4s/d-3}\longrightarrow0.
+\]
+Indeed put $A_N=\sqrt{b_N}N^{2s/d-3/2}$ and choose
+$r_N=N^{-2/d}A_N^{1/(2s-d)}$. The three controlling factors are
+\[
+ N^2r_N^d=A_N^{d/(2s-d)},\quad
+ \sigma_Nr_N^{d-s}=A_N^{s/(2s-d)},\quad
+ \frac{b_N}{N}r_N^{d-2s}=A_N.
+\]
+This proves the asserted probability convergence. It supplies no converse.
+At $s\ge3d/4$ and $b_N=1$, requiring no close pairs forces
+$r_N=N^{-2/d}\ell_N$ with $\ell_N\to0$, whereas the scaled truncated
+variance grows as $N^{4s/d-3}\ell_N^{-(2s-d)}$. This disproves closure of
+that particular truncation strategy, not convergence of the original
+statistic. An endpoint or stable-law claim would require a new proof.
+
+\section{An absolute-moment estimate and a sharp converse}
+Center both parts of the spatial split: $k_r=g\mathbf1_{\{\rho\ge r\}}+
+\tau_r$ and $j_r=g\mathbf1_{\{\rho<r\}}-\tau_r$, where $\rho$ denotes
+distance to zero. Then $g=k_r+j_r$. Put
+$D(r)=\int_{\rho<r}|g|\le C_1r^{d-s}$. The exact outer variance and the
+triangle inequality over the unordered inner sum give
+\[
+ \E|\sigma_NP_N[g]|
+ \le \sqrt{\frac{b_N}{2N}}\|g\mathbf1_{\{\rho\ge r\}}\|_2
+       +\sqrt{Nb_N}\,D(r).
+\]
+Indeed $\|j_r\|_1\le2D(r)$ and
+$\E|P_N[j_r]|\le (N-1)\|j_r\|_1/(2N)$. Choose $r=N^{-2/d}$.
+For fixed $d,s$ this proves, uniformly in every positive temperature,
+\begin{equation}\label{L1rates}
+ \E|\sigma_NP_N[g]|\le C_{d,s}
+ \begin{cases}
+  \sqrt{b_N/N},&2s<d,\\
+  \sqrt{b_N(1+\log N)/N},&2s=d,\\
+  \sqrt{b_N}\,N^{2s/d-3/2},&2s>d.
+ \end{cases}
+\end{equation}
+The first row follows directly from the untruncated second moment.
+No exclusion of close pairs is used in this argument. It was constructed
+separately in the statement-only probability reconstruction.
+
+Here is the new converse for $d/2<s<d$. Let $u_N=N^{2s/d-2}$ and
+$R_N=N^{-2/d}$. Fix a sufficiently small radius $R$ such that
+$g(x)\ge\tfrac12|x|^{-s}$ for $0<|x|<R$,
+$\tau_r\le C_\tau r^{d-s}$ and $V_r\le C_Vr^{d-2s}$ for $r<R$.
+For large $N$ take $R_N<R$ and count pairs at distance less than
+$\delta R_N$, with a fixed $0<\delta<1$:
+\[
+ Z_N=\sum_{i<j}\mathbf1_{\{|X_i-X_j|<\delta R_N\}},\qquad
+ m_N=\E Z_N=\frac{N(N-1)}2v_d\delta^dN^{-2}.
+\]
+Distinct pair indicators are pairwise independent: for shared labels,
+condition on that label and use Haar translation invariance. Joint
+independence of all the indicators is neither true in general nor used.
+Thus $\E Z_N^2\le m_N+m_N^2$, and Cauchy--Schwarz yields
+\[
+ \Prob(Z_N>0)\ge\frac{m_N}{1+m_N}\ge c_0\delta^d,
+ \qquad c_0=\frac{v_d}{4(1+v_d/2)}.
+\]
+The exact outer--inner decomposition is
+\[
+ P_N[g]=P_N[k_{R_N}]+N^{-2}\sum_{i<j}
+    g(X_i-X_j)\mathbf1_{\{|X_i-X_j|<R_N\}}
+       -\frac{N-1}{2N}\tau_{R_N}.
+\]
+All inner summands are positive. On $Z_N>0$ at least one contributes
+$\tfrac12\delta^{-s}u_N$. If $\delta^{-s}\ge2C_\tau$, the last two
+terms are at least $\tfrac14\delta^{-s}u_N$. Meanwhile
+\[
+ \E P_N[k_{R_N}]^2\le\frac{C_V}{2}u_N^2,
+ \quad
+ \Prob\left(P_N[k_{R_N}]<-\tfrac18\delta^{-s}u_N\right)
+       \le32C_V\delta^{2s}.
+\]
+Since $2s>d$, choose the same fixed $\delta$ so that
+$\delta^{2s-d}\le c_0/(64C_V)$. Subtracting the last failure
+probability from the close-pair probability, without assuming event
+independence, proves
+\begin{equation}\label{sharp}
+ \Prob(P_N[g]\ge a u_N)\ge p_0,
+ \qquad a=\delta^{-s}/8,\quad p_0=c_0\delta^d/2.
+\end{equation}
+Consequently $ap_0u_N\le\E|P_N[g]|\le C_{d,s}u_N$. Multiplying
+by $\sigma_N$ shows that, in this range, vanishing in probability is
+equivalent to vanishing in $L^1$, and equivalent to
+\[
+ B_N:=b_NN^{4s/d-3}\longrightarrow0.
+\]
+For necessity, a subsequence on which $B_N\ge\eta>0$ retains the fixed
+positive tail probability in \eqref{sharp}. Bounded $B_N$ gives tightness
+by the absolute-moment upper bound. From an unbounded scalar subsequence
+extract a further one tending to infinity; the same lower probability
+then proves non-tightness. At $\sqrt N$ scale the bare statistic is
+therefore negligible below $3d/4$, tight and nonvanishing at $3d/4$, and
+not tight above it. No endpoint distribution or stable law is identified.
+This converse is a separate assertion from the earlier sufficient-bound
+argument; the round report records its actual independent review status.
+
+\section{An exact model retaining internal pair transport}
+The raw-potential threshold cannot automatically be applied to the
+backward corrector. A solvable model makes the distinction concrete.
+Let $A$ be a fixed symmetric matrix, $z=r\theta\ne0$,
+$p=s+2$ and $\tau=T-t$. Retain only the Euclidean internal pair drift:
+\[
+ \left(\partial_t+\frac{2s}{N}r^{-s-2}z\cdot\nabla_z\right)\Phi_N
+       =-s r^{-s}\theta^TA\theta,\qquad \Phi_N(T,z)=0.
+\]
+The factor two comes from $\nabla_x-\nabla_y=2\nabla_z$.
+Directions are constant along characteristics and
+$r(h)^p=r^p+2sp h/N$. Integrating the source along the forward
+characteristic gives the unique solution in the absolutely continuous
+characteristic class, with no equation or boundary condition imposed at
+zero:
+\begin{equation}\label{toy}
+ \Phi_N(t,z)=\frac N4(\theta^TA\theta)
+       \left[(r^p+2sp\tau/N)^{2/p}-r^2\right].
+\end{equation}
+Differentiation gives $-\partial_\tau F+(2s/N)r^{-s-1}\partial_rF
+=-sr^{-s}$ for the radial amplitude $F$, checking both sign and coefficient.
+
+Set $\ell=(2sp\tau/N)^{1/p}$ for $\tau>0$. Then
+$F=(N/4)\ell^2 H_s(r/\ell)$, where
+\[
+ H_s(u)=(1+u^p)^{2/p}-u^2
+ =\frac2p\int_0^1(u^p+v)^{-s/p}\,dv.
+\]
+This decreases from one. It is bounded above and below by positive
+constants on $[0,1]$, and by constants times $u^{-s}$ on $[1,\infty)$.
+The exact angular factor is
+\[
+ Q(A)=\int_{S^{d-1}}(\theta^TA\theta)^2\,d\theta
+ =\frac{|S^{d-1}|}{d(d+2)}
+       \big[(\operatorname{tr}A)^2+2\operatorname{tr}(A^2)\big].
+\]
+Thus every nonzero traceless symmetric $A$ also has a positive square norm.
+For any fixed ball,
+\[
+ \|\Phi_N(t)\|_{L^2(B_R)}^2
+  =\frac{Q(A)N^2\ell^{d+4}}{16}
+       \int_0^{R/\ell}H_s(u)^2u^{d-1}\,du.
+\]
+When $\ell\le R$, the three orders are respectively
+\[
+ Q(A)\begin{cases}
+  \tau^2R^{d-2s},&2s<d,\\
+  \tau^2[1+\log(R/\ell)],&2s=d,\\
+  N^{(2s-d)/(s+2)}\tau^{(d+4)/(s+2)},&2s>d.
+ \end{cases}
+\]
+The full sealed proof supplies two-sided constants, the $\ell>R$ case,
+and the zero-time endpoint. Despite finite radial amplitude, a nonscalar
+$A$ has direction-dependent limits at collision. No smooth extension is
+available in that case.
+
+Choose a fixed smooth radial cutoff supported inside a torus ball of
+radius less than $1/2$ and define the periodic pair diagnostic
+$\mathcal H_{N,\tau}(x,y)=\chi(x-y)\Phi_N(T-\tau,x-y)$.
+It is an $L^2$ kernel; its diagonal value is immaterial for a density.
+For iid preparation with density bounded by $M$,
+\[
+ \|\mathcal H_{N,\tau}\|_{L^2(\mu^2)}^2
+ \le M\|\chi\Phi_N\|_2^2.
+\]
+Equation \eqref{bound} now retains all centering contributions, and yields
+\[
+ \sup_{0\le\tau\le T}\E|\sigma_NP_N[\mathcal H_{N,\tau}]|^2
+ \le C_T b_N\begin{cases}
+  N^{-1},&2s<d,\\
+  (1+\log N)/N,&2s=d,\\
+  N^{-(d+2-s)/(s+2)},&2s>d.
+ \end{cases}
+\]
+Every row vanishes for $s<d$. The supremum is outside the expectation.
+This is an initial iid diagnostic for a zero-diffusion equation; positive
+temperature appears only in the statistic's scale.
+
+\section{What remains load-bearing}
+These estimates hold at initial iid Haar preparation for the raw potential.
+The probability result beyond the $L^2$ range illustrates why variance
+divergence is not a probability obstruction. It does not identify the
+backward pair kernel, compare singular and regularized particle dynamics,
+or control any positive-time martingale. The sharp converse concerns only
+the raw potential. The transport diagnostic, also available for bounded
+densities, demonstrates a different initial endpoint power and does not
+solve the full pair equation.
+
+For the genuine pair corrector $\Psi_N$, a sufficient remaining initial
+comparison is
+\[
+ \sqrt{b_N/N}\,
+ \|\Psi_N(0)-\mathcal H_{N,T}\|_{L^2(\mu_0^2)}\longrightarrow0.
+\]
+This is open. The error equation must retain $2\nu\Delta_z$, ordinary
+transport, both nonlocal response terms, the actual test/source and
+periodic force remainder, and the cutoff term
+\[
+ (2s/N)r^{-s-1}\chi'(r)\Phi_N.
+\]
+For a nonscalar $A$, the leading
+angular Laplacian has a term proportional to $r^{-2}$, so diffusion
+cannot be added by an unproved small-coefficient argument. Well-posedness,
+cutoff passage, evolved-law residuals and martingale estimates also remain
+load-bearing. A weaker topology could replace the displayed comparison
+only with its own proved fluctuation-scale estimate.
+
+The separate transport review makes one limitation precise: if the
+traceless part of $A$ is nonzero and $\tau>0$, the squared punctured
+Laplacian contains a positive multiple of
+$\int_0^\epsilon r^{d-5}\,dr$. Thus it is not locally $L^2$ in
+dimensions $2,3,4$; in dimension two its absolute $L^1$ norm also diverges.
+This disproves a proposed separate-norm perturbation estimate for this
+profile, not existence of a different diffusion-retaining solution.
+
+There is also an exact punctured rescaling of the local equation with
+diffusion retained. Set $y=N^{1/(s+2)}z$ and
+$\Phi_N=N^{s/(s+2)}F_N(\tau,y)$. The chain rule gives
+\[
+ \partial_\tau F_N=2\chi_N\Delta_yF_N+
+       2s|y|^{-s-2}y\cdot\nabla_yF_N+s|y|^{-s}a(y/|y|),
+ \qquad \chi_N=\frac{N^{2/(s+2)}}{\beta_N}.
+\]
+At critical microscopic coupling the exact identity is
+\[
+ \chi_N=\lambda_N^{-1}
+       N^{s(s+2-d)/(d(s+2))}.
+\]
+Consequently this coefficient tends to zero, a positive constant, or
+infinity according as $d>s+2$, $d=s+2$, or $d<s+2$.
+This is only an operator rescaling on the punctured domain. No collision
+domain, solution convergence, or limit exchange follows from the
+coefficient limit. A future local comparison must handle its degree-zero
+and degree-two angular modes in the appropriate parameter range.
+
+The three regimes remain distinct:
+\[
+ \beta_NN^{2s/d-1}\to0,\qquad
+ \lambda_N=\beta_NN^{s/d-1}\to0,\qquad
+ \lambda_N\to\lambda\in(0,\infty).
+\]
+They are respectively the old energy-floor condition, full microscopic
+subcriticality, and microscopic criticality. None is replaced by
+the sufficient initial-pair condition above. The logarithmic interaction
+remains outside this positive-power calculation.
+\end{document}

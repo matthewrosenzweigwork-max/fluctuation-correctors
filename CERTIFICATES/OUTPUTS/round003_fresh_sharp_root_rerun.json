@@ -1,0 +1,42 @@
+{
+  "checks": 19734,
+  "configurations": 19600,
+  "finite_group_order": 7,
+  "limitations": "Exact finite iid algebra and exponent checks only; no claim of empirical probability-limit verification.",
+  "normalization": "unordered pairs divided by N^2",
+  "records": [
+    {
+      "N": 2,
+      "configurations": 49,
+      "mean_close_count": "3/7",
+      "outer_variance": "775/2401",
+      "pairwise_indicator_checks": 0,
+      "second_close_moment": "3/7"
+    },
+    {
+      "N": 3,
+      "configurations": 343,
+      "mean_close_count": "9/7",
+      "outer_variance": "12400/64827",
+      "pairwise_indicator_checks": 3,
+      "second_close_moment": "117/49"
+    },
+    {
+      "N": 4,
+      "configurations": 2401,
+      "mean_close_count": "18/7",
+      "outer_variance": "2325/19208",
+      "pairwise_indicator_checks": 15,
+      "second_close_moment": "396/49"
+    },
+    {
+      "N": 5,
+      "configurations": 16807,
+      "mean_close_count": "30/7",
+      "outer_variance": "992/12005",
+      "pairwise_indicator_checks": 45,
+      "second_close_moment": "1020/49"
+    }
+  ],
+  "status": "PASS"
+}

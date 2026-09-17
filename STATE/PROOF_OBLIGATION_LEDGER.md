@@ -41,3 +41,11 @@ PO-014 is discharged in the fixed-smooth finite-list covariance-limit scope by T
 PO-004 now has an explicit smooth all-order partition/moment/bracket table and conditional series/cutoff criteria (repaired THM-014), but the actual singular corrector norms, coefficient growth and survival classification remain OPEN. First open load-bearing interface: prove a specified fluctuation-scale comparison of the singular particle/reference pair and a regularized pair, with well-posedness and a cutoff compatible with the actual corrector bounds. A slow cutoff controlling only its own regularized model does not do this.
 
 PO-016 (new bounded initial interface): exact iid L2 pair projection formula and singular heat-cutoff orders, with a separate probability truncation analysis of close pairs. TASK-021 constructor and TASK-022 isolated falsifier are active. This addresses only initial iid preparation; it does not identify the actual backward corrector with the bare Riesz potential.
+
+## Round 003 initial-law gate and sharpened remaining line
+
+PO-016's exact iid moment/cutoff and sufficient probability subclaims are discharged by THM-015/016, AUD-011/012/013. General initial kernels obey the sufficient endpoint condition b_N ||Phi_0^N||_L2(mu_0^2)^2/N -> 0. This is a proved implication; the actual singular backward kernel has not been shown to satisfy its premise.
+
+PO-017 (new): construct the actual singular full pair solution and prove an initial fluctuation-scale comparison with the explicitly defined cutoff internal-transport diagnostic H_(N,T). A sufficient bound is sqrt(b_N/N)||Psi_N(0)-H_(N,T)||_L2(mu_0^2)->0, for iid bounded-density mu_0, with b_N=min(beta_N,1). The forcing comparison must include relative diffusion, ordinary transport, both responses, actual test/source, periodic force remainder and the annular cutoff source. Singularity domains, collision passage and N/cutoff uniformity are part of the assertion, not assumptions to hide. A justified L1/probability comparison may replace the L2 premise if that norm is unavailable. OPEN.
+
+PO-001 positive-time residual/bracket control, PO-004 critical hierarchy power counting and the singular-vs-regularized particle/reference comparison remain OPEN. Neither the raw-potential sharp converse nor the solvable zero-diffusion profile resolves them.

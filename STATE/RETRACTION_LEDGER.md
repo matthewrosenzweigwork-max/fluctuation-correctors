@@ -28,3 +28,11 @@ No promoted campaign theorem was retracted. OBS-001 and OBS-002 were provisional
 - Disposition: unrestricted exact identity DISPROVED / HOSTILE_REVIEW_FAIL. All original submission and review bytes preserved. THM-014 is the new repaired identifier; its separate repair uses Sym Phi and unchanged numerical constants.
 - Downstream: original nonsymmetric identity cannot be used. Symmetric corrector applications, moment bounds and Gaussian/residual proofs are unaffected. No earlier promoted theorem is retracted.
 - Correction files: ROUND_002_POWERCOUNT_SYMMETRY_REPAIR.md, THM-014 card, current ledgers and round report. No external/public correction is required: the defective candidate had not been pushed or presented as certified.
+
+## RET-002 — unpromoted root diffusion-scaling scope correction
+
+- Date: 2026-09-17. Original status EXACT_IDENTITY / SELF_CHECKED calculation, not a promoted theorem.
+- Failing clause: ROUND_003_DIFFUSION_RESCALING.md says generally that under full subcriticality no single rescaled diffusion limit follows without a rate. For fixed d<=s+2, the exact identity instead forces chi_N->infinity.
+- Independent finding: fresh hostile reviewer /root/r003_fresh_hostile. Preserve original hash 91ec6efbfb51b8eb1a4f76cd2beddf8d12031e424b1f95a01ce8e939cf1ede2a and its final audit.
+- Correction: AUDITS/ROUND_003_DIFFUSION_RESCALING_ERRATUM.md restricts rate-dependent alternatives to d>s+2 and provides explicit sequences. Chain-rule identity and critical classification survive unchanged.
+- Downstream: next local diffusion task must use the corrected fixed-parameter trichotomy. No THM015–019 or previously audited theorem changes. This unpushed candidate is corrected before research publication; no separate outside communication is needed.

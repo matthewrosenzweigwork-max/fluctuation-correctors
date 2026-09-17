@@ -33,3 +33,13 @@ OP-005 now has an exact stopped generator and bracket in ordered report (G1)–(
 ## Round 002 final integration
 
 Round 002: the root fixed-data bounds and THM-013 give explicit uniform finite-spatial-order estimates for the existing positive-diffusivity reference and the full backward test, construct the zero-diffusivity reference/response by characteristics and Volterra series, and prove Lipschitz dependence in diffusivity with two additional derivatives. Both transport and response density differences are retained. AUD-006 reviews the root qualification; AUD-010 reviews THM-013. Constants depend on the actual smooth data; singular inverse and order-uniform corrector estimates remain OPEN.
+
+## OP-006 — Round 003 internal transport diagnostic
+
+Punctured Euclidean relative coordinate, v_N=(2s/N)|z|^(-s-2)z, source s|z|^-s theta.A.theta and zero terminal data. The unique solution in the explicitly absolutely-continuous forward characteristic class is (N/4)(theta.A.theta)[(r^(s+2)+2s(s+2)tau/N)^(2/(s+2))-r^2]. Its finite-amplitude core can be angularly discontinuous; no equation is imposed at coincidence. Full proof THM-017 memorandum; separate review status recorded in the theorem ledger.
+
+OP-002 is unchanged. The missing full-operator comparison must retain relative diffusion 2nu Delta_z, ordinary pair transport, both R terms, actual source, periodic force correction and the cutoff annular term. For nonscalar A the punctured Laplacian has leading -2d F_0 a_0(theta)/r^2; low diffusivity alone cannot justify omitting it. OP-006 does not provide a singular Markov/response propagator or justify Ito across collision.
+
+AUD-014 makes the anisotropic diffusion limitation explicit: Delta Phi is not locally L2 for d=2,3,4 and is not absolutely locally L1 for d=2, when A has nonzero traceless part and tau>0. A strictly positive scalar nu does not cure infinite norms. A full generator may have cancellation between terms; no nonexistence is inferred.
+
+Root's separately sealed ROUND_003_DIFFUSION_RESCALING.md supplies a SELF_CHECKED punctured chain-rule identity, now submitted to fresh hostile review. Under y=N^(1/(s+2))z and Phi=N^(s/(s+2))F, the local operator has diffusion 2 chi_N Delta_y, chi_N=N^(2/(s+2))/beta_N, internal drift 2s|y|^(-s-2)y.grad, and source s|y|^-s a(theta). At critical lambda, chi_N=lambda_N^-1 N^[s(s+2-d)/(d(s+2))]. This classifies only a coefficient, not operator/solution limits or domains.

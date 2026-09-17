@@ -38,3 +38,7 @@ THM-005 sharpness + THM-007 extensions
 ## Round 001 gate overlay
 
 M0 PASS (frozen campaign normalization, independent smooth duality, source intake); M1 PASS (pair identity, full trace/noise accounting, independent BBGKY reconstruction, AUD-002 hostile pass). The unrelated SRC-005 printed constant is quarantined, so it is not an unresolved conflict in the frozen campaign normalization. PO-003/THM-001 smooth algebra has a hostile-reviewed proof. M2 is still OPEN at PO-004: no complete critical scaling/summability theorem. PO-001a/THM-009 supplies a bounded fixed-smooth pair estimate only; it feeds the still-open law-specific residual card. M3–M7 stay OPEN. No singular local-equilibrium branch was started ahead of these gates.
+
+## Round 003 bounded initial-law overlay
+
+THM-015 exact iid pair identity -> THM-016 sufficient probability comparison -> THM-018 L1 upper rates; THM-019 adds a separately reviewed lower-probability mechanism. These are initial bare-potential results. THM-017 exact internal-transport profile + THM-015 -> negligible diagnostic initial endpoint. The unproved edge from that diagnostic to COR-001 is PO-017, including diffusion and both response terms. No edge bypasses PO-001 evolved-law residuals, PO-004 critical power counting, or singular well-posedness/model comparison. M2 and the flagship gates remain OPEN.

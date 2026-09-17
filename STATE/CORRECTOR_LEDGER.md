@@ -23,3 +23,9 @@ Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded 
 ## Round 002 final integration
 
 Round 002: the pair corrector residual closes in the fixed-smooth iid class (THM-010). The direct one-body reconstruction of THM-011 needs no pair correction once the same fixed-smooth second moment is available; it does not eliminate the singular campaign's corrector problem. All-order root formulas must use symmetric kernels or averaged symmetrization (THM-014). Kernel growth sufficient for an infinite hierarchy is still unproved.
+
+## Round 003 initial corrector interface
+
+The exact iid bound (THM-015) reduces the actual initial endpoint to b_N||Phi_0^N||_L2(mu_0^2)^2/N->0 when L2 is available. This sufficient premise is not proved for COR-001's singular full solution. Bare-potential THM-016/018/019 are diagnostics, not replacements for Phi.
+
+THM-017 retains internal B/N exactly in a zero-diffusion quadratic-source Euclidean model and exhibits a finite radial core. Its explicit periodic-cutoff diagnostic has a negligible iid endpoint for every s<d. COR-001 still includes the full L_2 and the actual source. The specific missing comparison is PO-017; no new full-corrector order is closed by the toy solution, and no finite critical truncation is inferred.

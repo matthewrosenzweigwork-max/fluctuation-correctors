@@ -1,0 +1,13 @@
+# AUD-013 — comparison of the initial iid probability reconstruction
+
+2026-09-17. Root comparison after the complete TASK-022 constructor and TASK-024 statement-only reconstruction were separately sealed. Verdict: ISOLATED_RECONSTRUCTION_PASS for the exact THM-016 probability assertion, with prerequisite context reuse disclosed; this is not a fresh-session audit.
+
+Constructor: MEMORANDA/ROUND_003_COLLISION_FALSIFICATION.md, SHA-256 9e39bf83b9f8073bf5d31f33bdc26a31af563af5fe5316ed5399ea1d48eff8f4. Reconstruction: AUDITS/BLIND_RECONSTRUCTION/ROUND_003_PROBABILITY_RECONSTRUCTION.md, SHA-256 9eb7e54ab0fa6e38ef226cd2d815d618d2b421718ed0e1c59bb07dc27ae79e6f. The statement-only input manifest and task preserve the actual permitted dossier. The reconstructor authored the iid moment prerequisite but did not read the collision proof, its hostile audit, root TeX or any other R3 worktree.
+
+Both complete proofs derive the frozen heat prefactor and unit local singularity coefficient, integrability, infinite second moment at 2s>=d, and all finite-N centering coefficients. In particular the mean removed by the spatial truncation is multiplied by (N-1)/(2N), while the campaign statistic for a nonzero-mean kernel has expectation minus its mean divided by 2N. Neither proof deletes a spatial collision merely by deleting repeated labels.
+
+Both prove the probability assertion for every positive temperature sequence using b_N=min(beta_N,1). Their radius choices agree: the constructor uses A=sqrt(b_N) N^(2s/d-3/2) and radius N^(-2/d) A^(1/(2s-d)); the reconstructor uses A squared and exponent 1/(2(2s-d)). All close-pair, deterministic-mean and variance powers therefore coincide. Both handle 2s=d separately, and both correctly distinguish failure of this sufficient-bound method from probability nonconvergence. Neither silently supplies a converse.
+
+The reconstruction additionally constructs an L1 upper bound in Section 7. That extension has a new card THM-018 and is not relabeled an independent reconstruction of an unseen claim. Its super-L2 upper bound coincides with root's independently constructed upper half of THM-019; neither root nor this comparison supplies its hostile verdict. The sharp lower probability bound is a separate root construction and is outside this statement-only comparison.
+
+Root read both proofs in full and reproduced the 5,483 exact reconstruction checks; earlier independent constructor checks and the 18,603 hostile checks also passed. These finite tests support the coefficients, not the infinite-dimensional assertions. All conclusions remain confined to initial iid Haar data, and the strict fresh-session publication qualification remains open.

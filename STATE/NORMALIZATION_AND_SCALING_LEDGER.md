@@ -67,3 +67,9 @@ For fixed smooth iid data, raw endpoint/cubic/pair-bracket/cross-bracket rates a
 ## Round 002 final integration
 
 Round 002: Gaussian covariance prefactors are a_N^2=min(beta_N,1) and c_N=min(1,beta_N^-1), with dynamic factor 2 and unequal-time overlap ending at the smaller terminal time. Zero-diffusivity covariance equals the initial covariance of the full inviscid backward tests; dynamic covariance is zero. The cosine heat check carries variance factor one half. These physical-temperature facts do not replace the frozen old, full-subcritical or critical Riesz exponents.
+
+## Round 003 scales, without changing the campaign regimes
+
+The iid scale is sigma_N=sqrt(N b_N), b_N=min(beta_N,1). Above 2s=d, the bare initial Riesz pair's natural absolute-moment size is N^(2s/d-2); its proposed sharp scaled criterion in THM-019 is b_N N^(4s/d-3)->0. THM-018 separately constructs the upper bound. At sqrt(N) the bare-pair threshold is 3d/4. This criterion is a theorem about an initial statistic only; it replaces neither beta_N N^(2s/d-1)->0 nor lambda_N=beta_N N^(s/d-1)->0 nor critical positive finite lambda_N. At critical lambda and s<d, beta_N grows and b_N is eventually one.
+
+The internal-transport diagnostic has a different core ell=(2s(s+2)tau/N)^(1/(s+2)). Its squared norm grows as N^((2s-d)/(s+2)) above 2s=d; multiplying by b_N/N yields b_N N^(-(d+2-s)/(s+2)), which vanishes for all s<d. This is not a change to the physical-temperature or effective-coupling normalizations.

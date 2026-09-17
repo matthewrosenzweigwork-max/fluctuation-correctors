@@ -36,3 +36,22 @@ All use system Python 3.9.6 standard library, no seeds or tolerance, no installe
 - CMP-012: all-order constructor checks, 444 exact Fraction/integer equalities PASS; code DISCOVERY_CODE/check_round002_powercount_exact.py, root rerun CERTIFICATES/OUTPUTS/round002_powercount_root_rerun.json.
 - CMP-013: Gaussian statement-only constructor, 2,147 exact coefficient/model checks PASS; code DISCOVERY_CODE/check_round002_gaussian_blind_exact.py, root rerun CERTIFICATES/OUTPUTS/round002_gaussian_blind_root_rerun.json. No numerical proof of convergence inferred.
 - CMP-014: independently authored hostile all-order verifier, 1,110 exact rational checks, including nonsymmetric counterexample and Sym repair; code VERIFICATION_CODE/round002_powercount_hostile_exact.py, root rerun CERTIFICATES/OUTPUTS/round002_powercount_hostile_root_rerun.txt. All these computations are REPRODUCED supporting evidence; the analytic arguments and separate audit scopes are recorded independently.
+
+## Round 003 reproduced finite checks
+
+- CMP-015: constructor DISCOVERY_CODE/check_round003_iid_pair_exact.py, 5,500 exact checks, root rerun CERTIFICATES/OUTPUTS/round003_iid_pair_root_rerun.json.
+- CMP-016: independent VERIFICATION_CODE/round003_iid_projection_exact.py, 3,453 exact checks, root rerun CERTIFICATES/OUTPUTS/round003_iid_projection_root_rerun.json.
+- CMP-017: separate hostile VERIFICATION_CODE/round003_hostile_pair_exact.py, 18,603 exact checks, root rerun CERTIFICATES/OUTPUTS/round003_hostile_pair_root_rerun.json.
+- CMP-018: statement-only reconstruction DISCOVERY_CODE/check_round003_probability_blind_exact.py, 5,483 exact checks, root rerun CERTIFICATES/OUTPUTS/round003_probability_blind_root_rerun.json.
+
+All four use standard-library exact integer/Fraction arithmetic, with no random seed or numerical tolerance. Finite atomic/cyclic examples test all centering factors and radius exponents, not a continuous singularity or asymptotic probability theorem. Independent proofs and review scopes are preserved separately. No unchanged R1/R2 battery was repeated solely to increase counts.
+
+- CMP-019: independent hostile VERIFICATION_CODE/round003_sharp_hostile_exact.py, 31,194 exact integer/Fraction checks PASS, root rerun CERTIFICATES/OUTPUTS/round003_sharp_hostile_root_rerun.json. Includes close-pair count moments, pairwise versus mutual independence, mean absorption, centered split, matching powers and compatible constants. Continuous/asymptotic claims are proved analytically, not by the finite battery.
+
+- CMP-020: separate transport hostile DISCOVERY_CODE/check_round003_pair_transport_review_exact.py, 749 exact checks PASS, root rerun CERTIFICATES/OUTPUTS/round003_pair_transport_review_root_rerun.json.
+- CMP-021: statement-only sharp VERIFICATION_CODE/round003_sharp_blind_exact.py, 28 exact rational checks over 3,568 configurations PASS, root rerun CERTIFICATES/OUTPUTS/round003_sharp_blind_root_rerun.json.
+
+- CMP-022: fresh sharp reconstruction exact checker under AUDITS/BLIND_RECONSTRUCTION, 19,734 checks over 19,600 configurations PASS; root rerun round003_fresh_sharp_root_rerun.json.
+- CMP-023: fresh hostile VERIFICATION_CODE/round003_fresh_hostile_exact.py, 1,440 configuration identities, 16 moment/bound cases, 2 pair-count cases and 351 exponent cases PASS; root rerun round003_fresh_hostile_root_rerun.json.
+
+CMP-024: fresh THM017 reconstruction exact checker, AUDITS/BLIND_RECONSTRUCTION/ROUND_003_FRESH_TRANSPORT_CHECK.py, root output CERTIFICATES/OUTPUTS/round003_fresh_transport_root_rerun.json. REPRODUCED: 12 iid moment cases and 54 transport substitutions, exact Fraction arithmetic, no seed or tolerance. Finite coefficient tests only; no numerical PDE or singular-limit certification.

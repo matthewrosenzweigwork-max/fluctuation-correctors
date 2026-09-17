@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational arithmetic; iid laws fully enumerated",
+  "iid_moment_case_count": 12,
+  "transport_substitution_case_count": 54
+}

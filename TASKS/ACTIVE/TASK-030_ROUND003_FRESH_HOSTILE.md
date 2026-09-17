@@ -1,0 +1,7 @@
+# TASK-030 — fresh hostile review of the new R3 results
+
+2026-09-17. Accepted fork_turns=none Astra Max /root/r003_fresh_hostile after older workers completed. Separate worktree under /private/tmp, branch codex/hocf-r003-fresh-hostile, base 2f532ccd2cb5f3d84db456be96e438f03f7e2ad2. Root remains sole canonical integrator.
+
+Delivered scope: independently audit THM-017/018/019 and their complete submitted transport, sharp-lower-bound and probability/L1 proofs. Permitted normalization/iid prerequisite is the sealed TASK-022 collision report. The new root diffusion-rescaling note is reviewed only as a punctured differential identity and coefficient classification, not a solution theorem. Governing AGENTS and frozen model are permitted. Copy and hash the exact dossier before review. No other reviews, sharp reconstructions, worker code, root TeX or outside worktree may be read.
+
+Attack characteristic class, coefficients, angular collision behavior, norm powers and all-N quantifiers, initial centering, lower probability under dependent events, all L1 and temperature/tightness implications, and every excluded full-operator bridge. Issue per-result pass/fail in AUDITS/HOSTILE/ROUND_003_FRESH_HOSTILE_REVIEW.md; make any clarification explicit and preserve all candidate bytes. Seal outputs. No canonical writes, commits, pushes, dependencies, children or external unverified quantitative theorem.

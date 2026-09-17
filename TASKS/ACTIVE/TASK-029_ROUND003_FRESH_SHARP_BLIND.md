@@ -1,0 +1,7 @@
+# TASK-029 — fresh statement-only sharp iid reconstruction
+
+Dispatched 2026-09-17 after an existing worker completed. Accepted fresh gpt-6-astra/max context /root/r003_fresh_sharp, fork_turns=none. Root's prior assumption that fresh contexts remained blocked is corrected in DEC-016. The runtime still permits only three concurrent workers; this dispatch does not demonstrate ten-worker concurrency.
+
+The delivered instruction authorizes a separate local worktree under /private/tmp at published 2f532ccd2cb5f3d84db456be96e438f03f7e2ad2 on branch codex/hocf-r003-fresh-sharp. Read governing instructions, frozen ROUND_001_MODEL, THM-019 statement, and the already sealed TASK-022 collision proof solely as the explicit prerequisite for local Riesz facts, iid variance and the earlier sufficient estimate. Copy/hash only these permitted inputs before reconstruction. No root sharp proof, sharp review/reconstruction, THM-018 or root TeX may be read.
+
+Independently prove or refute the statement, including positive lower probability, absolute-moment order, equivalence of convergence modes through the scalar condition and tightness. Do not give a verdict on an unseen proof. Write and seal AUDITS/BLIND_RECONSTRUCTION/ROUND_003_FRESH_SHARP_RECONSTRUCTION.md in the separate worktree. Disclose the statement card's broad proof-ingredient hints and prerequisite exposure. No canonical writes, commits, pushes, dependencies or children. Root integrates only after the output seal.

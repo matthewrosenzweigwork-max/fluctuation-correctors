@@ -42,3 +42,11 @@ Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded 
 ## Round 002 final integration
 
 Round 002: repaired THM-014 proves heat derivative upper exponents (s+m+1)/2, a Lipschitz lower divergence exponent (s+2)/2, and exponential growth of the particular coupling constant at positive horizon. A sufficient fixed-order regularized-model condition is epsilon_N^(-(s+2)/2)+log(1+A_Phi(N)+A_f(N))=o(log N). The fixed-data envelope permits a sufficiently slow diagonal cutoff. None compares the singular and regularized particle models. Round 003 examines the initial iid pair interface and close-pair errors, leaving all positive-time singular passages OPEN.
+
+## Round 003: initial iid heat and spatial cutoffs
+
+For REG-001 the exact Haar squared norm is c_ds^2 sum_(k!=0)|k|^(2s-2d) exp(-8 pi^2 epsilon |k|^2), and the scaled pair variance is b_N(N-1)/(2N^2) times that norm. At epsilon=N^(-2/d), its super-L2 order is b_N N^(2s/d-2); at epsilon=N^(-4/d), it is b_N N^(4s/d-3). These are different length scales, not interchangeable regularizations. THM-015/AUD-012 gives explicit two-sided constants.
+
+REG-002 initial diagnostic only: hard spatial cutoff g_r=g 1_(dist>=r), with its nonzero mean retained and then explicitly centered. THM-016 proves a probability comparison without any stochastic generator passage. The separately centered inner/outer L1 split in THM-018 requires no no-close-pair event. The unregularized g and g-g_epsilon have infinite L2 pair moment for every finite N>=2 when 2s>=d; fixed-N L1/a.s. cutoff convergence alone supplies no fluctuation-scale joint rate. For actual singular dynamics all limit exchanges remain open.
+
+THM-017 uses a different fixed radial compact cutoff of an exact internal-transport profile, with the annular source (v_N.grad chi)Phi retained explicitly. It does not regularize or solve the full periodic pair problem. Its core length is (2s(s+2)tau/N)^(1/(s+2)), not either heat length above.

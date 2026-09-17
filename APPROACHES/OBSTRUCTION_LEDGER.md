@@ -65,3 +65,13 @@ DISPROVED / HOSTILE_REVIEW_PASS (AUD-006) for the unqualified transfer. On T^1 w
 ## OBS-010 — compact first-slot differentiation requires symmetry
 
 COUNTEREXAMPLE / HOSTILE_REVIEW_PASS: Phi(x,y)=h(y) gives U_2=-eta(h)/N and nonzero particle gradient, but grad_1 Phi=0. Therefore the unrestricted compact first-slot formula in submitted THM-012 is false. AUD-009 provides the exact counterexample. Symmetrization preserves U_k and contracts C^m norms, repairing all quantitative estimates with no larger constant; new THM-014. This is a scope repair, not a singular-kernel obstruction.
+
+## OBS-011 — infinite initial bare-pair variance is not probability failure
+
+THM-015/016 and AUD-012 prove infinite unregularized pair second moment for 2s>=d at every finite N, but probability convergence below 3d/4, including the infinite-variance boundary. Therefore an L2 route to the unregularized bare statistic fails in that range; a probability/L1 route can succeed. Heat-cutoff second-moment divergence alone is not a converse. The new THM-019 lower-probability argument is a distinct claim with separately recorded audits.
+
+## OBS-012 — raw-potential and actual-corrector thresholds cannot be identified
+
+The sharp initial bare-potential converse in THM-019, if promoted, is not a singular fluctuation counterexample. THM-017 explicitly retains internal pair transport and yields a different, vanishing initial diagnostic endpoint for every s<d. Angular traceless modes have positive squared norm despite zero mean, and a nonscalar matrix has direction-dependent collision limits; dropping diffusion or angular response requires proof. The full-operator comparison remains PO-017. This isolates a failed inference, not a failure of the flagship mission.
+
+AUD-014 confirms the anisotropic transport profile's punctured Laplacian is not L2 in dimensions 2–4 (and not absolutely L1 in dimension 2). Therefore estimating its omitted diffusion as a separate unregularized L2 forcing cannot work in those dimensions. A different profile/domain, regularized passage, cancellation-compatible norm or direct solution estimate remains possible.

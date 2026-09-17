@@ -21,3 +21,7 @@
 ## Round 002 update
 
 Owner authorized ten concurrent workers and publication. Live project .codex/config.toml now selects max_concurrent_threads_per_session=10 (workers exclude root). Current collaboration runtime remains four total slots and rejected an extra fresh spawn; ten concurrent workers are configured but not activated/verified. CLI parser accepts the documented numeric key. No global config or app restart performed. Round 001 commit a06178658d1e3d458536ff312ca793947212ec67 pushed to origin/main and independently matched to live remote. Earlier no-push statements in this file are historical Round 001 setup facts.
+
+## Round 003 allocation clarification
+
+After TASK026 completed, a fork_turns=none gpt-6-astra/max worker was accepted. The actual limit is on concurrently running workers; fresh contexts can be allocated in subsequent batches. The earlier rejected spawn was made while the three-worker allocation was occupied. It does not prove a permanent fresh-context block. Project ten-worker setting remains accepted but current concurrent activation is still limited to three. No restart, dependency/global configuration change, new user-owned task or workaround process was used. New fresh audit provenance is retained separately, without relabeling any prior reused report.

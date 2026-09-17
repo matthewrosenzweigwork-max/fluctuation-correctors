@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational",
+  "counts": {
+    "configuration_identities": 3384,
+    "moment_and_norm_checks": 59,
+    "temperature_factors": 10
+  },
+  "total_checks": 3453,
+  "cases": [
+    {
+      "kernel": "constant",
+      "N": 2,
+      "mean": "-3/8",
+      "second_moment": "9/64"
+    },
+    {
+      "kernel": "constant",
+      "N": 3,
+      "mean": "-1/4",
+      "second_moment": "1/16"
+    },
+    {
+      "kernel": "constant",
+      "N": 4,
+      "mean": "-3/16",
+      "second_moment": "9/256"
+    },
+    {
+      "kernel": "constant",
+      "N": 6,
+      "mean": "-1/8",
+      "second_moment": "1/64"
+    },
+    {
+      "kernel": "first_projection",
+      "N": 2,
+      "mean": "0",
+      "second_moment": "1/4"
+    },
+    {
+      "kernel": "first_projection",
+      "N": 3,
+      "mean": "0",
+      "second_moment": "2/27"
+    },
+    {
+      "kernel": "first_projection",
+      "N": 4,
+      "mean": "0",
+      "second_moment": "1/32"
+    },
+    {
+      "kernel": "first_projection",
+      "N": 6,
+      "mean": "0",
+      "second_moment": "1/108"
+    },
+    {
+      "kernel": "canonical_rank_one",
+      "N": 2,
+      "mean": "0",
+      "second_moment": "1/4"
+    },
+    {
+      "kernel": "canonical_rank_one",
+      "N": 3,
+      "mean": "0",
+      "second_moment": "4/27"
+    },
+    {
+      "kernel": "canonical_rank_one",
+      "N": 4,
+      "mean": "0",
+      "second_moment": "3/32"
+    },
+    {
+      "kernel": "canonical_rank_one",
+      "N": 6,
+      "mean": "0",
+      "second_moment": "5/108"
+    },
+    {
+      "kernel": "mixed",
+      "N": 2,
+      "mean": "-7/144",
+      "second_moment": "85/192"
+    },
+    {
+      "kernel": "mixed",
+      "N": 3,
+      "mean": "-7/216",
+      "second_moment": "12217/46656"
+    },
+    {
+      "kernel": "mixed",
+      "N": 4,
+      "mean": "-7/288",
+      "second_moment": "9157/55296"
+    },
+    {
+      "kernel": "mixed",
+      "N": 6,
+      "mean": "-7/432",
+      "second_moment": "7627/93312"
+    }
+  ]
+}
