@@ -1,0 +1,6 @@
+# Campaign worker cap requested by Matthew on 2026-09-17.
+# Root is excluded from this spawned-worker setting.
+# The active runtime may retain a lower already-initialized limit.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 10

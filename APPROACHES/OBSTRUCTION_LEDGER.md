@@ -57,3 +57,11 @@ Ordered report Section 6: source b->0 at fixed N yields uniform-simplex gaps wit
 - SRC-005 printed c_s is inconsistent with its actual real-space/Fourier kernel; numerical covariance is quarantined, not silently corrected.
 
 OBS-003, OBS-004, OBS-005 and OBS-006 retain their original unproved/structural status. No proof of critical survival, Hilbert–Schmidt endpoint classification, or conditional isotropy was supplied in Round 001.
+
+## OBS-009 — iid moment control does not transfer to arbitrary smooth Gibbs preparation
+
+DISPROVED / HOSTILE_REVIEW_PASS (AUD-006) for the unqualified transfer. On T^1 with g=a cos(2pi x), a<0, canonical Gibbs law has density proportional to exp(beta |a| N |eta(e_1)|^2/2). Its one-point marginal is uniform by translation invariance, while the arc lower bound gives P(|eta(e_1)|^2<=1-delta)<=p_delta^(-N) exp(-beta |a| N delta/4). For every beta_N->infinity, |eta(e_1)|^2->1 in probability and U2[cos(2pi(x-y))]->1. Exact first-marginal centering does not restore the iid moment bounds. Proof: ROUND_002_FALSIFICATION.md Section 8. This is outside iid preparation and is a fixed smooth attractive kernel; it is not a disproof of a positive-Riesz singular theorem. No retraction of a promoted campaign claim is required.
+
+## OBS-010 — compact first-slot differentiation requires symmetry
+
+COUNTEREXAMPLE / HOSTILE_REVIEW_PASS: Phi(x,y)=h(y) gives U_2=-eta(h)/N and nonzero particle gradient, but grad_1 Phi=0. Therefore the unrestricted compact first-slot formula in submitted THM-012 is false. AUD-009 provides the exact counterexample. Symmetrization preserves U_k and contracts C^m norms, repairing all quantitative estimates with no larger constant; new THM-014. This is a scope repair, not a singular-kernel obstruction.

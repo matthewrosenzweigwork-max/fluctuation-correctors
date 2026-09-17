@@ -1,0 +1,3 @@
+PASS: 84 exact rational identities, k=1..7, N=2,3,4, including k>N
+PASS: absolute partition weight k! and fluctuation exponent inequality through k=7
+Interpretation: deterministic finite tests, not an all-order proof or singular estimate

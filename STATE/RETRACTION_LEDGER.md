@@ -19,3 +19,12 @@ Use this format:
 ## Round 001 disposition
 
 No promoted campaign theorem was retracted. OBS-001 and OBS-002 were provisional in the baseline and now have explicit counterexamples; imported note labels and suspect printed source constants were never promoted. Their quarantine/demotion is recorded in the obstruction/source ledgers, not disguised as a proved campaign theorem. All limiting fluctuation targets remain OPEN.
+
+## RET-001 — unpromoted THM-012 scope defect, preserved and replaced
+
+- Date: 2026-09-17. Original status PROVED_CANDIDATE / SELF_CHECKED, never given an unqualified promotion.
+- Failing assertion: compact gradient identity using k times the first-slot derivative without requiring a symmetric kernel.
+- Counterexample: Phi(x,y)=h(y), U_2=-eta(h)/N; first-slot derivative is zero but particle gradient is -grad h(x_i)/N^2. OBS-010; AUD-009.
+- Disposition: unrestricted exact identity DISPROVED / HOSTILE_REVIEW_FAIL. All original submission and review bytes preserved. THM-014 is the new repaired identifier; its separate repair uses Sym Phi and unchanged numerical constants.
+- Downstream: original nonsymmetric identity cannot be used. Symmetric corrector applications, moment bounds and Gaussian/residual proofs are unaffected. No earlier promoted theorem is retracted.
+- Correction files: ROUND_002_POWERCOUNT_SYMMETRY_REPAIR.md, THM-014 card, current ledgers and round report. No external/public correction is required: the defective candidate had not been pushed or presented as certified.

@@ -1,0 +1,38 @@
+{
+  "K_theta": "sin(theta)+(1/7)sin(2theta)",
+  "N": [
+    2,
+    3
+  ],
+  "arithmetic": "exact Gaussian rationals",
+  "b_theta": "(1/3)sin(theta)+(1/5)cos(2theta)",
+  "bracket_orders": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "counts": {
+    "bracket_equalities": 64,
+    "constant_equalities": 20,
+    "drift_equalities": 20,
+    "finite_cancellation_equalities": 21845,
+    "matching_count_equalities": 204
+  },
+  "drift_orders": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "includes_coincident_coordinates_with_distinct_labels": true,
+  "includes_k_greater_than_N": true,
+  "mu": [
+    "1",
+    "1+(1/2)cos(theta)"
+  ],
+  "nu_theta": "3/7",
+  "randomness": "none",
+  "status": "PASS"
+}

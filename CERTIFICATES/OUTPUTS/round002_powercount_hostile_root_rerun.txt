@@ -1,0 +1,7 @@
+PASS: 1110 independent exact rational checks
+Partition/rooted conversion through order 7; root derivatives through order 5.
+Coincident coordinates, unused slots, nonuniform finite background, k>N included.
+Cycle grouping and generating function through order 8; iid biases through 12.
+Hilbert sign moments through degree 16; every tested temperature/bracket power.
+Scope witness confirmed: unsymmetrized first-slot gradient formula fails.
+No constructor code used; finite tests support, but do not replace, the analytic audit.

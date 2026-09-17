@@ -1,0 +1,7 @@
+# THM-014 — smooth order and cutoff estimates with explicit symmetrization
+
+2026-09-17, version 1.0. This new identifier repairs THM-012; neither its submitted card nor proof is overwritten. Mathematical status PROVED_CANDIDATE; audit pending the separate power-counting referee's disposition. Sources are self-contained finite sums, Fourier estimates and the identified smooth coupling prerequisite.
+
+Take precisely the model, hypotheses, constants and conclusions in THM-012 and MEMORANDA/ROUND_002_POWERCOUNT.md, with the following mandatory qualification. In every exact rooted first-slot derivative or generator formula, Phi is symmetric; for an arbitrary Phi first replace it by Sym Phi. The equality U_k[Phi]=U_k[Sym Phi] and contraction of all displayed C^m norms imply the same moment and numerical bracket bounds for arbitrary kernels. The full proof of this repair and a counterexample to the unrestricted notation are in MEMORANDA/ROUND_002_POWERCOUNT_SYMMETRY_REPAIR.md.
+
+All-order partition moments, explicit root-exclusion constants, the sufficient weighted-series criteria, and slow heat-cutoff conditions retain their original quantifiers. Actual hierarchy summability and singular particle-model comparison are not asserted. Exact negation: admissible data violate one of these formulas or bounds after the required symmetrization. The original first-slot identity for an arbitrary unsymmetrized kernel is excluded and disproved. Future verdicts belong in the canonical ledger, preserving this submitted card.

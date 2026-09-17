@@ -1,0 +1,21 @@
+{
+  "N": [
+    2,
+    3,
+    4,
+    6
+  ],
+  "arithmetic": "exact rational Laurent polynomials",
+  "counts": {
+    "constants_and_iid_biases": 48,
+    "free_complex_moments": 12,
+    "interacting_source_and_correlation": 104,
+    "moving_background_brackets": 32,
+    "temperature_equalities": 12
+  },
+  "frequency_convention": "angular frequency one; physical powers checked analytically",
+  "nu_zero": "algebraic diagnostic only",
+  "randomness": "none",
+  "status": "PASS",
+  "total": 208
+}

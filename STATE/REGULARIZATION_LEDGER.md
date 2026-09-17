@@ -32,3 +32,13 @@ For positive-power Riesz, g_hat(0)=0 and g_hat(k)=c_{d,s}|k|^{s-d}, c_{d,s}=pi^{
 MEMORANDA/ROUND_001_SMOOTH.md Section 7 proves for the prescribed heat Fourier sequence: ||K_epsilon||_{C^m} <= C epsilon^{-(s+m+1)/2}; div K_epsilon(0) is comparable to epsilon^{-(s+2)/2}. With the fixed terminal test cos(2 pi x_1), the relative-coordinate second derivative of J_f at the diagonal is -8 pi^2 a_epsilon, where DK_epsilon(0)=a_epsilon I. Thus the forcing C^2 norm diverges, and no uniform small-time estimate ||Phi_{T-tau}||_{C^2} <= C tau holds over all cutoffs. This disproves that strong uniform bound, not weaker norms or a justified joint cutoff limit. Audit status is recorded in the separate analytic review when issued. No singular limit taken.
 
 The singular one-dimensional ordered gap energy has nonnegative interior Hessian by its explicit sum of g_s''>0. Heat regularization has g_epsilon''(0)<0 and loses that convexity near collisions. No uniform transfer of singular ordered convexity to REG-001 is permitted. Ordered report G1–G7 is stopped before crossings/collisions; removing that stop is an independent obligation.
+
+## Round 002 fixed-smooth boundary
+
+The new coupling/moment estimate has explicit exponential dependence on the Lipschitz norm of K and derivative dependence in the cubic source. The fixed-data qualification supplies finite smooth constants but does not remove this dependence for g_epsilon. TASK-013 is active on order/cutoff power counting and a sufficient joint-cutoff condition. Any slowly removed regularization estimate for its own model must remain distinct from fluctuation-scale comparison to singular dynamics. No limit exchange is authorized by the residual proof.
+
+Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded residual estimates, fixed-data norm qualification and Gibbs law-class obstruction in the precise scopes above. The singular and other open interfaces are unchanged.
+
+## Round 002 final integration
+
+Round 002: repaired THM-014 proves heat derivative upper exponents (s+m+1)/2, a Lipschitz lower divergence exponent (s+2)/2, and exponential growth of the particular coupling constant at positive horizon. A sufficient fixed-order regularized-model condition is epsilon_N^(-(s+2)/2)+log(1+A_Phi(N)+A_f(N))=o(log N). The fixed-data envelope permits a sufficiently slow diagonal cutoff. None compares the singular and regularized particle models. Round 003 examines the initial iid pair interface and close-pair errors, leaving all positive-time singular passages OPEN.

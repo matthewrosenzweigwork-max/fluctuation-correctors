@@ -17,3 +17,7 @@
 - Archive SHA-256: `a802d22334cb459b868fb4bdca0f516ac3764cc0e012b65889b96ad1b0f077f8`.
 - Source PDF SHA-256: `a332f829904a80c27f0c13291758c316f1fcdd7460a3b0d6d67c1ff1bf18ff76`.
 - Root model evidence is local metadata, not inference from public model docs. Worker settings are tool-accepted selections.
+
+## Round 002 update
+
+Owner authorized ten concurrent workers and publication. Live project .codex/config.toml now selects max_concurrent_threads_per_session=10 (workers exclude root). Current collaboration runtime remains four total slots and rejected an extra fresh spawn; ten concurrent workers are configured but not activated/verified. CLI parser accepts the documented numeric key. No global config or app restart performed. Round 001 commit a06178658d1e3d458536ff312ca793947212ec67 pushed to origin/main and independently matched to live remote. Earlier no-push statements in this file are historical Round 001 setup facts.

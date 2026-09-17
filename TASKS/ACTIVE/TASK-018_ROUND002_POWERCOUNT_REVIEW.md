@@ -1,0 +1,7 @@
+# TASK-018 — hostile review of the all-order moment and cutoff estimate
+
+2026-09-17. Assigned after the construction is sealed. Independent reviewer must not have participated in that construction; prior independent residual or viscosity construction does not by itself count as a review of these new all-order estimates. Root will supply a hashed dossier and record the actual context.
+
+Review the complete power-counting candidate. Check the exact partition formula from the deleted-label definition for all k,N, the signed/absolute cycle weights, p-moment constants, trace derivative factors, missing-root terms in all brackets, and every exponent after sigma scaling. Verify fixed-order conclusions separately from sufficient infinite-series criteria. For the heat cutoff, check the actual s,d exponents and the conditional role of corrector norms; no critical lambda theorem or singular-dynamics comparison may be hidden in a slow-cutoff argument. Use small N, k>N, constants, unused slots, and free iid degeneracy as falsification axes. No limit or sum exchange without a displayed dominating estimate.
+
+Output an immutable per-result verdict under AUDITS/HOSTILE/ROUND_002_POWERCOUNT_REVIEW.md. Preserve submitted report bytes, list exact defects and corrected sufficient statement separately if needed. No canonical edits, commits, pushes, dependencies, or child workers. Root integrates and retains actual independence provenance.

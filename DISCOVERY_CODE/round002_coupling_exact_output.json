@@ -1,0 +1,23 @@
+{
+  "arithmetic": "exact Fraction; no tolerance or random seed",
+  "checks": {
+    "actual_cubic_full_diagonal": 83,
+    "constant_cubic": 4,
+    "constant_pair": 4,
+    "cross_bracket_prefactor": 249,
+    "cubic_diagonal_conversion": 249,
+    "iid_cross_second_moment": 4,
+    "iid_cross_signed_mean": 4,
+    "iid_cubic_second_moment": 4,
+    "iid_pair_bracket_root_moment": 4,
+    "iid_pair_second_moment": 4,
+    "pair_bracket_prefactor": 249,
+    "pair_diagonal_conversion": 83,
+    "pair_rooted_gradient": 239,
+    "regularity_order": 100,
+    "temperature_prefactor": 12
+  },
+  "scope": "same-context finite self-checks; not an independent audit",
+  "status": "PASS",
+  "total_equalities": 1292
+}

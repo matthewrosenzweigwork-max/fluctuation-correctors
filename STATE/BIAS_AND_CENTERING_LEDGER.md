@@ -18,3 +18,13 @@ For iid mu_0 data, E rho_0(f)=0, E U_2[Phi]=-mu_0^2(Phi)/N and E U_3[F]=2mu_0^3(
 ## All-order finite iid bias
 
 For iid mu at a single instant, E U_k[Phi] equals mu^k[Phi] times sum_{r=0}^k (-1)^{k-r} binomial(k,r) (N)_r/N^r. The first four coefficients are 0, -1/N, 2/N^2, 3/N^2-6/N^3. This is not a dynamic iid assertion. For exchangeable evolved law replace mu^r in each occupied term by its actual r-point marginal f_r. Exact first-marginal centering and moving Gibbs centering remain separate OPEN bridges.
+
+## Round 002 fixed-smooth iid centering
+
+THM-010 retains the initial pair bias and proves its absolute O(N^-1) bound. The two lower drift contractions also have integrated absolute O(N^-1) bounds, so multiplying by sigma<=sqrt N makes them vanish. Evolved particles are not assumed iid: the nonzero-interaction diagnostic in ROUND_002_FALSIFICATION.md (7.1) creates pair bias instantly at order N^-1 despite a uniform first marginal. TASK-014 will identify the resulting mean-field-centered finite-dimensional limit under explicit covariance convergence. Moving Gibbs, singular and critical pressure centering remain OPEN.
+
+Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded residual estimates, fixed-data norm qualification and Gibbs law-class obstruction in the precise scopes above. The singular and other open interfaces are unchanged.
+
+## Round 002 final integration
+
+Round 002 THM-011/AUD-007 and statement-only AUD-008 both prove O(N^-1) mean-field bias for a fixed finite smooth test list, with uniform temperature constants; scaling by sigma_N leaves O(N^-1/2). The independent reconstruction uses the zero-diagonal quadratic one-body source directly. Initial/martingale asymptotic independence comes from conditional characteristic functions, not merely zero cross covariance. THM-013 identifies initial limiting backward covariances at zero diffusivity. Singular, Gibbs and exact-marginal centering comparisons remain OPEN.

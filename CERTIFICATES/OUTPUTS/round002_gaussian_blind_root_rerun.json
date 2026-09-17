@@ -1,0 +1,17 @@
+{
+  "arithmetic": "exact Fraction/integer; no random seed or tolerance",
+  "checks": {
+    "complex_exponential_ito_cancellation": 1,
+    "duplicate_time_equal_rows": 45,
+    "free_heat_covariance_split": 387,
+    "free_heat_nonnegative_principal_minor": 972,
+    "random_bracket_mixture_diagnostic": 1,
+    "temperature_identity": 36,
+    "unequal_time_overlap_exponent": 387,
+    "zero_diffusion_degeneracy": 129,
+    "zero_time_dynamic_covariance": 189
+  },
+  "scope": "same-context finite self-checks; unseen Gaussian proof not reviewed",
+  "status": "PASS",
+  "total_checks": 2147
+}

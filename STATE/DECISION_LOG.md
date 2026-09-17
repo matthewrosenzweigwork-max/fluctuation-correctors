@@ -57,3 +57,35 @@
 - The complete smooth all-order recursion is THM-001. It does not close M2, which also requires proved critical power counting. Finite exact arithmetic batteries are supporting computation, not independent universal proof certificates.
 - The next bounded assertion is TASKS/ACTIVE/PO-001_RESIDUAL.md: a fixed-smooth iid residual/endpoint/bracket estimate with explicit high-regularity bounds. The singular mission, other preparations and critical survival alternatives remain separate open obligations. This first test does not silently narrow the flagship.
 - No workflow is left running as an implied background promise at the final handoff. Completed reports are integrated; open work is recorded as open.
+
+## DEC-009 — publication and continued campaign authorized
+
+- Date: 2026-09-17. The owner explicitly requested committing and pushing research outputs, increasing allocation to ten concurrent workers, and resuming through the gates. This supersedes the earlier no-further-commit/no-push instruction for this campaign work; it does not authorize history rewriting, unrelated edits, dependency installation, or remote configuration changes.
+- Round 001 research checkpoint committed as a06178658d1e3d458536ff312ca793947212ec67 and pushed to the existing origin/main. Local HEAD, origin/main and live remote main were independently read and equal. Staged diff had only preserved evidence-format warnings: four BBGKY Markdown hard breaks and one final blank line in the verbatim TeX build log. No evidence normalization performed.
+- All Round 001 reports/manifests remain historical snapshots of that checkpoint. Current state and NEXT_INVOCATION will advance; future verification of old mutable-state hashes must use the historical commit/archive rather than overwrite the old manifest.
+
+## DEC-010 — requested and runtime worker capacities differ
+
+- Created project-local .codex/config.toml with [agents], enabled=true, max_concurrent_threads_per_session=10, excluding the root. This exact key is documented and accepted by installed Codex; no global config changed. No prior live project config existed, so no replacement/backup was needed.
+- The running collaboration contract still advertises four total agents (root plus three workers). A further fresh worker spawn was actually rejected with agent thread limit reached. The configured desired cap is ten; actual activation at ten is not verified. No workaround processes/threads or claims of ten live workers.
+- Continue useful scientific work within the present limit, reusing operational-only context for proof-blind reconstruction with that provenance disclosed. A reinitialized client/session may be needed; official sources do not establish hot-reload semantics, so no restart guarantee is made.
+- Evidence: official https://learn.chatgpt.com/docs/agent-configuration/subagents and https://learn.chatgpt.com/docs/config-file/config-reference; installed CLI accepted numeric key and rejected a string at that key. Config parser succeeded again after file creation. Worker /root/capacity performed read-only investigation.
+
+## DEC-011 — bounded Round 002 promotions and immutable rendering erratum
+
+- AUD-004 completes isolated all-order smooth algebra reconstruction; M2 remains OPEN because critical power counting is separate.
+- THM-010 fixed-smooth iid residual has complete independent constructions, AUD-005 isolated comparison, and AUD-006 hostile pass for explicit constants. The precise bounded task is closed; singular PO-001 is not. Root (D1)-(D3) fixed-data qualification and OBS-009 attractive-Gibbs obstruction also pass hostile review, with no additional blind audit implied.
+- AUD-006 found a literal form-feed in one fraction command in the sealed falsification report. Preserve its original hash and use AUDITS/ROUND_002_FALSIFICATION_RENDERING_ERRATUM.md for the readable coefficient. This is a rendering repair, not a mathematical retraction or changed theorem.
+- THM-011 is a new bounded Gaussian covariance criterion in independent hostile review. Its covariance-convergence assumptions and field/singular exclusions are explicit. TASK-016 separately investigates finite/zero diffusivity identification; no frozen target is silently broadened or narrowed.
+
+## DEC-012 — preserve and repair the power-counting symmetry defect
+
+2026-09-17. The independent reviewer disproved the unrestricted compact first-slot identity in unpromoted THM-012. Preserve submitted report/card/audit; record RET-001 and OBS-010; issue new THM-014 with explicit averaged symmetrization, which preserves the statistic and contracts the displayed norms. Obtain a separately sealed repair verdict. No scope change to the mission or previously audited symmetric corrector class.
+
+## DEC-013 — audit-context capacity and precise gate status
+
+2026-09-17. The initialized tool runtime cannot create an additional fresh worker despite the accepted ten-worker project setting. Reuse existing workers only for new claims they did not construct, with a new isolated worktree/dossier and explicit context history. A statement-only reconstruction of a new claim is recorded as such, and hostile reviews identify prior related work. This operational choice does not waive or claim satisfaction of the stricter fresh-agent/session publication gate. Broad M2/M3 and singular gates remain open. Do not call reused roles independent reviews of their own prior constructions.
+
+## DEC-014 — continue at the singular initial pair interface
+
+2026-09-17. Start R3 construction and independent falsification after their R2 outputs are sealed, while root finalizes the atomic R2 checkpoint. Their separate worktrees use published a061786 and statement/model inputs only. Bound the task to iid initial L2/probability pair statistics, heat-cutoff orders and collision errors. Do not equate a bare Riesz kernel with the actual backward corrector or extend initial estimates to interacting positive time.

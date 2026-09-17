@@ -59,3 +59,11 @@ Authoritative common dossier: `TASKS/ACTIVE/ROUND_001_MODEL.md`; baseline `475a5
 ## Ordered-source temperature map
 
 In dimension one, V=0, source H=N^{-s} sum_{i!=j}g has Gibbs density exp(-b H). Campaign energy is (2N)^{-1} sum_{i!=j}g, so b=beta_N N^{s-1}/2=lambda_N/2. No ordered/unordered factor is suppressed. The source real-space kernel has exactly the campaign Fourier constant; its separately printed fractional-Laplacian c_s is inconsistent and is not adopted. Frozen campaign exponents and Fourier coefficients remain unchanged.
+
+## Round 002 residual scaling
+
+For fixed smooth iid data, raw endpoint/cubic/pair-bracket/cross-bracket rates are N^-1, N^-3/2, beta_N^-1 N^-2, beta_N^-1 N^-3/2, respectively. Scaled rates are min(sqrt(beta_N),1) N^-1/2, min(sqrt(beta_N),1) N^-1, min(1,beta_N^-1) N^-1 and min(1,beta_N^-1) N^-1/2. Both independent proofs recompute sigma_N^2/(beta_N N)=min(1,beta_N^-1). No Riesz exponent or effective lambda gain has been inserted into this fixed-smooth calculation. All three frozen Riesz regimes are unchanged.
+
+## Round 002 final integration
+
+Round 002: Gaussian covariance prefactors are a_N^2=min(beta_N,1) and c_N=min(1,beta_N^-1), with dynamic factor 2 and unequal-time overlap ending at the smaller terminal time. Zero-diffusivity covariance equals the initial covariance of the full inviscid backward tests; dynamic covariance is zero. The cosine heat check carries variance factor one half. These physical-temperature facts do not replace the frozen old, full-subcritical or critical Riesz exponents.

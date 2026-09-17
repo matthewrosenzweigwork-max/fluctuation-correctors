@@ -1,0 +1,7 @@
+# TASK-017 — independent hostile review of the Gaussian criterion
+
+2026-09-17. Astra Max /root/capacity in its existing hostile worktree, after sealing TASK-015. This reviewer independently reviewed the prerequisite residual but has never seen the Gaussian constructor narrative. Preserve that provenance. This is a separate immutable review, not an extension of the prior sealed verdict.
+
+Verify AUDITS/ROUND_002_GAUSSIAN_INPUT_SHA256SUMS.txt and review THM-011_SMOOTH_GAUSSIAN_CRITERION.md and the complete ROUND_002_SMOOTH_GAUSSIAN.md. Permitted prior inputs: frozen model, audited pair identity and the now-reviewed sealed residual proofs. Check every load-bearing step: exact corrected remainder and signs, L2 versus L1 input, deterministic bracket replacement under actual dependent law, complex exponential-martingale sign/true-martingale/conditional expectation, uniform triangular iid expansion, independence mechanism, weak-convergence smoothing and degeneracy, centering bias, unequal terminal times, and the full-response energy identity at beta->0. Recompute free and moving heat covariance tests. No covariance convergence may be inferred for an oscillating sequence, and no singular or field theorem is in scope.
+
+Do not repair candidate bytes. Write immutable AUDITS/HOSTILE/ROUND_002_GAUSSIAN_REVIEW.md with per-result PASS/FAIL, exact defects, limits, commands and input/output hashes. Constructor-specific extensions that have not yet arrived are not reviewed implicitly. No canonical edits, commits, pushes, dependencies or worker spawns.

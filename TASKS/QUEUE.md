@@ -54,3 +54,15 @@ Verify Boursier and related primary results, map them into the frozen normalizat
 - TASK-009 complete: fresh analytic reviewer, sealed statement-only reconstruction followed by proof review in one independent context, with identifier addendum.
 
 All seven kickoff scientific lanes actually executed in separate Max contexts. Root Astra Ultra integrated their outputs and updated canonical state. Task cards under ACTIVE are retained at their frozen audited paths for provenance; this queue supplies the completed dispositions. No worker is promised to continue after this invocation. Next dispatches should address the open residual card, all-order blind reconstruction/power counting, and the ordered source covariance/interface qualifications. No new commit is authorized by this queue.
+
+## Round 002 live dispositions and superseding authorization
+
+The owner's 2026-09-17 instruction explicitly authorizes campaign commits/pushes and continued gate work (DEC-009), superseding the historical no-new-commit statement above. Round 001 was published as a061786. Ten workers are configured but the live runtime still allows root plus three.
+
+TASK-010 residual construction sealed; TASK-011 isolated falsification/full reconstruction sealed; AUD-005 comparison PASS. TASK-012 isolated all-order reconstruction sealed; AUD-004 comparison PASS. TASK-013 power counting is active in the reused coupling constructor's separate worktree. TASK-014 conditional smooth finite-dimensional Gaussian criterion is active in the independent falsifier's context after its first report was sealed. TASK-015 hostile residual/norm/obstruction review is active in the prior operational/blind context, which had never seen either residual construction. Root alone writes canonical ledgers. No audit independence is claimed for a constructor's later review of its own construction.
+
+## Round 002 completed tasks and natural continuation
+
+TASK-010/011: fixed-smooth iid residual construction and independent reconstruction complete; AUD-005/006. TASK-012: all-order algebra reconstruction complete, AUD-004. TASK-013: quantitative all-order report complete with one symmetry defect; original THM-012 preserved, repaired THM-014 and AUD-009 repair addendum. TASK-014/017/019: Gaussian construction, hostile review and statement-only reconstruction/comparison complete (AUD-007/008), with context-reuse qualification. TASK-015 residual review and TASK-016/020 viscosity construction/review complete (AUD-006/010). TASK-018 power-counting review issued; separate repair disposition is retained. No blind quantitative/viscosity audit is claimed.
+
+TASK-021/022 start Round 003 from the published input checkpoint in separate worktrees, addressing the initial iid pair/collision interface. Root is final integrator; ten workers configured, three-worker runtime limit remains. Publication authorization persists. Frozen task cards remain at their original paths as evidence.

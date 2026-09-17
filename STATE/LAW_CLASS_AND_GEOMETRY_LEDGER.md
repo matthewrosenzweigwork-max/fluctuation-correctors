@@ -26,3 +26,13 @@ Unit torus, fixed smooth even kernel, gradient dynamics, smooth positive tempera
 ## LG-004 ordered scope
 
 The one-dimensional primary source law is homogeneous circular equilibrium, V=0, b=lambda_N/2, conditioned on cyclic ordering. It is not an iid or moving inhomogeneous preparation. The stopped gap identity is valid for smooth kernels before crossings, or singular kernels on separated configurations; no global singular diffusion/collision theorem follows. Absolute rotation is retained when tests require it. THM-006 remains OPEN. The Dirichlet high-temperature obstruction applies to an unqualified all-b uniform bound, not every subcritical subclass with growing campaign beta_N.
+
+## Round 002: LG-006 fixed-smooth iid residual
+
+Unit torus, fixed smooth even g and smooth V, fixed smooth iid preparation independent of Brownian motions, mean-field centering, finite time, every beta_N>0: THM-010 PROVED_CANDIDATE with ISOLATED_RECONSTRUCTION_PASS (AUD-005), hostile review pending. This is separate from singular rows LG-001–004. The falsifier gives a new exact smooth attractive-Gibbs witness: with g=a cos(2pi x), a<0 and beta_N->infinity, the uniform first marginal coexists with |eta(e_1)|^2->1. Thus the iid moment estimate cannot be transferred to arbitrary canonical equilibrium. That obstruction is separately pending hostile review.
+
+Round 002 review update: AUD-006 now grants HOSTILE_REVIEW_PASS for the bounded residual estimates, fixed-data norm qualification and Gibbs law-class obstruction in the precise scopes above. The singular and other open interfaces are unchanged.
+
+## Round 002 final integration
+
+Round 002 finite-list limit: iid fixed smooth positive initial density, independent Brownian motions, fixed smooth periodic interaction and finite horizon; mean-field centering. Every convergent physical-temperature subsequence is identified, including degenerate high-temperature and inviscid initial-fluctuation low-temperature limits. This is not a Gibbs extension or a singular critical theorem. Round 003 is an initial iid pair-statistic interface only.

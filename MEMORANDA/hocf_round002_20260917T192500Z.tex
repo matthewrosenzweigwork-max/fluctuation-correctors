@@ -1,0 +1,464 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{proposition}{Proposition}
+\newcommand{\T}{\mathbb T}
+\newcommand{\U}{\mathcal U}
+\newcommand{\E}{\mathbb E}
+\title{HOCF--RIESZ: Round 002\\Smooth iid residuals and quantitative interfaces}
+\author{Campaign research memorandum}
+\date{17 September 2026}
+\begin{document}
+\maketitle
+\noindent Published input checkpoint:
+\texttt{a06178658d1e3d458536ff312ca793947212ec67}.
+This memorandum records bounded mathematical advances within the fixed smooth
+iid model. The accompanying Round 002 report records the independent audit
+verdicts and immutable proof hashes. The singular subcritical and critical
+missions remain open; no cutoff removal is implicit in a fixed-smooth bound.
+
+\section{Model and statement}
+On the unit torus of volume one let $K=-\nabla g$ for a smooth real even
+interaction $g$, and let $b=-\nabla V$ be smooth. For $N\ge2$, $\beta>0$,
+\[
+ dx_i=\left(b(x_i)+N^{-1}\sum_{j\ne i}K(x_i-x_j)\right)dt
+             +\sqrt{2/\beta}\,dW_i.
+\]
+Initial positions are iid with smooth positive probability density $\mu_0$,
+independently of the Brownian motions. The deterministic reference solves
+\[
+ \partial_t\mu=-\operatorname{div}((b+K*\mu)\mu)+\beta^{-1}\Delta\mu,
+ \qquad \mu|_{t=0}=\mu_0.
+\]
+Write $\eta=N^{-1}\sum_i\delta_{x_i}$ and $\rho=\eta-\mu$.
+The centered deleted-label statistic $\U_k$ alternates over all subsets of
+$k$ slots, filling that subset by distinct particle labels with denominator
+$N^{|A|}$ and the other slots by $\mu$. All tuples are ordered.
+Set $P=\U_2/2$ and $\sigma=\sqrt N\min(\sqrt\beta,1)$.
+
+Let $f$ be the full backward linearized one-body test and $\Phi$ its symmetric
+zero-terminal pair corrector, with the operators frozen in Round 001. For
+$r=4d+12$ suppose their $C^r$ norms and that of $\mu$ are bounded uniformly in
+$N,\beta,t\in[0,T]$. Put
+\[
+ F=C\Phi=\operatorname{Sym}_3
+       [K(x-z)\cdot\nabla_x\Phi(x,y)],
+\]
+where symmetrization averages six permutations. THM-010 establishes
+\begin{align*}
+ \E|P[\Phi_0]|&\le I/N,&
+ \E\int_0^T|\U_3[F_t]|\,dt&\le TC_3/N^{3/2},\\
+ \E[M_\Phi]_T&\le 2TH^2/(\beta N^2),&
+ \E\operatorname{TV}[M_f,M_\Phi]&\le2TL_fH/(\beta N^{3/2}).
+\end{align*}
+All constants are explicit in the constructor memorandum, equations
+(2.1)--(2.4), and are independent of $N,\beta$. They depend on the fixed
+kernel, drift, horizon and displayed test norms. In particular the four
+scaled targets have bounds, respectively,
+\[
+ O(N^{-1/2}),\qquad O(N^{-1}),\qquad O(N^{-1}),\qquad O(N^{-1/2}),
+\]
+when the first two are multiplied by $\sigma$ and the brackets by $\sigma^2$.
+These are absolute estimates under the actual interacting law.
+
+\section{Coupling, moments, and exact deletion}
+Here is the load-bearing mechanism. Let $q=\lfloor d/2\rfloor+2$ and use
+Fourier characters $e^{2\pi i k\cdot x}$. Define
+\[
+ \|\zeta\|_{-q}^2=\sum_{k\in\mathbb Z^d}
+       (1+4\pi^2|k|^2)^{-q}|\widehat\zeta(k)|^2.
+\]
+The finite constants
+\[
+ B^2=\sum_k(1+4\pi^2|k|^2)^{-q},\qquad
+ D^2=\sum_k4\pi^2|k|^2(1+4\pi^2|k|^2)^{-q}
+\]
+give $\|\delta_x\|_{-q}=B$ and
+$\|\delta_x-\delta_y\|_{-q}\le D|\widetilde x-\widetilde y|$.
+For independent samples of any probability law, expansion of the sixth
+Hilbert moment shows
+\[
+ \left\|N^{-1}\sum_i\delta_{y_i}-\mu\right\|_{L^p(\Omega;H^{-q})}
+       \le 2\,3^{7/6}B/\sqrt N,\qquad 1\le p\le6.
+\]
+Indeed a singleton index has zero expectation in the six-factor expansion;
+a surviving list uses at most three labels. The second moment has the sharper
+bound $B^2/N$.
+
+Couple the particles to independent nonlinear particles driven by the same
+initial samples and Brownian motions, with deterministic drift $b+K*\mu_t$.
+For lifted displacements and their empirical mean $D_N$, the noises cancel.
+Writing $\overline\rho$ for the independent empirical discrepancy gives
+\[
+ D_N(t)\le\mathcal K\int_0^t e^{L(t-s)}\|\overline\rho_s\|_{-q}\,ds,
+ \qquad \|\rho_t\|_{-q}\le\|\overline\rho_t\|_{-q}+DD_N(t),
+\]
+where
+$\mathcal K=(\sum_a\|K_a\|_{H^q}^2)^{1/2}$ and
+$L=d(\|b\|_{C^1}+2\|K\|_{C^1})$.
+Minkowski's inequality yields
+\[
+ \sup_{t\le T}\|\rho_t\|_{L^p(\Omega;H^{-q})}
+ \le\frac{R}{\sqrt N},\qquad
+ R=2\,3^{7/6}B\left(1+D\mathcal K\frac{e^{LT}-1}{L}\right),
+\]
+with the fraction interpreted as $T$ at $L=0$. The supremum is outside the
+expectation. There is no claim of temperature-uniform supremum-in-time
+empirical moments.
+
+For symmetric kernels the exact, configuration-wise deletion formulas are
+\begin{align*}
+ \U_2[\Phi]&=\rho^{\otimes2}[\Phi]-N^{-1}\eta[\Phi(x,x)],\\
+ \U_3[F]&=\rho^{\otimes3}[F]
+ -3N^{-1}(\eta\otimes\rho)[F(x,x,y)]
+ +2N^{-2}\eta[F(x,x,x)].
+\end{align*}
+The coefficients follow by inclusion-exclusion of label equalities, including
+$N=2$. Smooth tensor Sobolev duality bounds the first cubic term by
+$Q^3\|F\|_{C^{3q}}\|\rho\|_{-q}^3$, with $Q=(d+1)^{q/2}$.
+The partial diagonal is bounded by $Q\|F\|_{C^q}\|\rho\|_{-q}$.
+For the actual source $C\Phi$, the full diagonal is zero since $K(0)=0$.
+These observations prove the cubic absolute bound without assuming the evolved
+law is iid. The pair bound uses the initial second moment and retains its
+nonzero deletion bias.
+
+The exact pair gradient is $\nabla_{x_i}P=N^{-1}H_i$, where
+\[
+ H_i=\int\nabla_1\Phi(x_i,y)\rho(dy)-N^{-1}\nabla_1\Phi(x_i,x_i).
+\]
+Sobolev duality in $y$, uniformly in $x_i$, gives
+$|H_i|\le L_\Phi\|\rho\|_{-q}+D_\Phi/N$. Hence
+\[
+ [M_\Phi]_T=\frac2{\beta N^2}\sum_i\int_0^T|H_i|^2dt,
+ \qquad
+ [M_f,M_\Phi]_T=\frac2{\beta N^2}\sum_i\int_0^T\nabla f(x_i)\cdot H_i\,dt.
+\]
+These yield the two bracket estimates. Their scaling uses exactly
+$\sigma^2/\beta=N\min(1,\beta^{-1})$. No signed covariance cancellation is
+needed. The two lower drift contractions have absolute integral at most
+$5Td\|K\|_\infty\sup_t\|\Phi_t\|_{C^1}/N$.
+
+\section{Qualification of the smooth norms}
+The separate root lemma records bounds for existing smooth solutions in the
+frozen model. Write $b_m=\|b\|_{C^m}$, $\kappa_m=\|K\|_{C^m}$ and
+$U_m=b_m+\kappa_m$. Differentiating the forward density equation and applying
+the finite-family maximum principle gives
+\[
+ \sup_{t\le T}\|\mu_t\|_{C^m}
+ \le\|\mu_0\|_{C^m}
+       \exp\{d(2^{m+1}-1)U_{m+1}T\}.
+\]
+The differentiated transport contributes $d(2^m-1)U_{m+1}$ and the differentiated
+reaction contributes $d2^mU_{m+1}$. Nonnegative diffusion introduces no adverse
+constant. For the one-body backward equation, derivatives in the response
+operator fall on $K$; for $m\ge1$ its $C^m$ norm is at most $d\kappa_m$.
+Thus, with $a_m=d(2^m-1)U_m+d\kappa_m$,
+\[
+ \sup_{t\le T}\|f_t\|_{C^m}\le e^{a_mT}\|h\|_{C^m}.
+\]
+The audited pair estimate THM-009 then implies, for $m\ge2$,
+\[
+ \sup_{t\le T}\|\Phi_t\|_{C^m}
+ \le T e^{\overline c_mT}d2^{m+1}\kappa_m
+                         e^{a_{m+1}T}\|h\|_{C^{m+1}},
+\]
+where
+\begin{align*}
+ \overline M&=d\|\mu_0\|_{C^1}e^{3dU_2T},\\
+ \overline c_m&=2d(2^m-1)(b_m+3\kappa_m/2)
+                      +2(d\kappa_m+\kappa_0\overline M).
+\end{align*}
+Taking $m=r$ supplies the declared regularity bounds for fixed smooth data,
+uniformly in $N,\beta$. These constants diverge with a singular heat cutoff;
+this qualification does not discharge a singular estimate.
+
+\section{Finite-dimensional Gaussian criterion}
+Fix a finite list $(t_a,\phi_a)_{a=1}^m$. Let $f_a^N$ denote the full
+one-body backward test on $[0,t_a]$, with its pair corrector on that interval.
+Put $a_N=\sigma_N/\sqrt N$ and $c_N=\sigma_N^2/(N\beta_N)$. The deterministic
+covariance matrices are
+\begin{align*}
+ I_N^{ab}&=a_N^2\operatorname{Cov}_{\mu_0}
+                         (f_a^N(0),f_b^N(0)),\\
+ D_N^{ab}&=2c_N\int_0^{t_a\wedge t_b}
+        \mu_r^N(\nabla f_a^N(r)\cdot\nabla f_b^N(r))\,dr.
+\end{align*}
+THM-011 proves that entrywise convergence $I_N\to I$, $D_N\to D$ implies
+\[
+ (\sigma_N\rho_{t_a}^N(\phi_a))_{a=1}^m
+       \Longrightarrow\mathcal N_m(0,I+D).
+\]
+The Gaussian may be degenerate. The full proof is the sealed memorandum
+\nolinkurl{ROUND_002_SMOOTH_GAUSSIAN.md}; its independent review is recorded
+separately in the round report.
+
+The exact corrected identity decomposes the vector as $Z_N=S_N+L_N+R_N$,
+where $S_N$ is the initial linearized statistic, $L_N$ the leading one-body
+martingale, and $\|R_N\|_2\le C N^{-1/2}$. The independent Fourier residual
+proof gives the necessary $L^2$ bounds. Its expectation also proves
+$|\E\rho_{t_a}^N(\phi_a)|\le C/N$, so the asserted deterministic mean-field
+centering is valid at scale $\sigma_N$.
+
+For a fixed vector $\theta$, let $Q_N^\theta$ be the bracket of
+$\theta\cdot L_N$. Actual-law empirical control gives
+\[
+ \E|Q_N^\theta(T)-\theta^TD_N\theta|\le C_\theta N^{-1/2},
+ \qquad 0\le Q_N^\theta(t)\le B_\theta,
+\]
+with a deterministic bound. Thus
+$E_N(t)=\exp(i\theta\cdot L_N(t)+Q_N^\theta(t)/2)$ is a true bounded complex
+martingale, and $\E[E_N(T)\mid\mathcal F_0]=1$. For every bounded
+initial-measurable $Y_N$,
+\[
+ \left|\E[Y_Ne^{i\theta\cdot L_N}]
+       -e^{-\theta^TD_N\theta/2}\E Y_N\right|
+ \le C_\theta\|Y_N\|_\infty N^{-1/2}.
+\]
+An elementary third-order Taylor bound for the triangular iid initial sum
+then yields
+\[
+ \E e^{i\alpha\cdot S_N+i\theta\cdot L_N}
+ =e^{-\alpha^TI_N\alpha/2-\theta^TD_N\theta/2}
+        +O_{\alpha,\theta}(N^{-1/2}).
+\]
+Independent Gaussian smoothing and the uniform second moments give weak
+convergence, including degenerate covariance. This proves independence in
+the limit, without asserting finite-particle independence.
+
+For general fixed smooth data the full-response energy identity is
+\[
+ \frac d{dt}\mu_t(f_t^2)
+ =2\beta_N^{-1}\mu_t(|\nabla f_t|^2)-2\mu_t(f_tRf_t).
+\]
+The uniform spatial bounds imply
+$\int_0^{t_a}\mu_r(|\nabla f_a|^2)dr\le C\beta_N$.
+Consequently $I_N,D_N\to0$ if $\beta_N\to0$, and the observable converges
+to zero in $L^2$ at this normalization. If $\beta_N\to\infty$, the leading
+noise has variance $O(\beta_N^{-1})$; identifying the remaining initial
+covariance requires convergence of the backward kernels or their covariance.
+
+For free heat, Haar background and a real cosine mode of eigenvalue
+$\omega_k=4\pi^2|k|^2$, the exact covariance at times $t,s$ is
+\[
+ \frac{\min(\beta_N,1)}2
+        e^{-\omega_k|t-s|/\beta_N}.
+\]
+The initial and noise contributions sum to this formula at every finite
+$N$. At time zero, alternating $\beta_N=1/2$ and $\beta_N=2$ gives covariance
+limits $1/4$ and $1/2$. Hence arbitrary oscillating temperatures need not
+have a single limiting law. No field/path tightness follows from this
+finite-list theorem.
+
+\section{Independent all-order reconstruction}
+AUD-004 compares an isolated reconstruction with the frozen R1 formulas.
+Both give the same upward, internal and lower drift terms, with the apparent
+factor $k(k-1)$ in the new lower kernel becoming $k$ when that kernel is
+defined as the sum of $k-1$ incident pair terms. Every shared-label bracket
+also agrees. In a centered representation, a matching of $p$ labels across
+the two blocks has one distinguished Brownian edge, coefficient
+$2/(\beta_NN^p)$, and multiplicity
+\[
+ p\binom{k}{p}\binom{\ell}{p}p!
+ =k\ell\binom{k-1}{p-1}\binom{\ell-1}{p-1}(p-1)!.
+\]
+Every subset of the $p$ shared quotient slots is then integrated once against
+$\mu$; the remaining slots enter the centered statistic. This is an exact
+factorial-to-centered inversion, valid also for $k>N$. Individual centered
+terms need not be positive. The finite algebra now has both isolated
+reconstruction and hostile review passes. Critical effective power counting
+remains a separate gate.
+
+\section{All-order estimates and a sufficient cutoff condition}
+THM-014 repairs THM-012's missing symmetry qualification. Its partition formula,
+with full proof and constants
+in the power-counting memorandum. For a partition $\pi$ of $[k]$, write
+$j(\pi)$ for its singleton count and
+\[
+ a(\pi)=k-|\pi|,\qquad c(\pi)=\prod_{B\in\pi}(|B|-1)!,\qquad
+ \Delta(\pi)=\frac12\sum_{|B|\ge2}(|B|-2).
+\]
+If $\Phi_\pi$ identifies variables inside each block, then
+\[
+ \U_k[\Phi]=\sum_{\pi}(-1)^{a(\pi)}c(\pi)N^{-a(\pi)}
+ \int\Phi_\pi\prod_{|B|=1}\rho(dx_B)\prod_{|B|\ge2}\eta(dx_B).
+\]
+It holds also when $k>N$. The proof selects injective assignments by the
+signed cycle-partition weights, then sums occupied-singleton versus background
+choices to obtain $\rho$ in each remaining singleton slot.
+
+Symmetrization with independent copies and signs gives the iid Hilbert bound
+\[
+ \E\|\overline\rho_t\|_{-q}^{2m}
+ \le (2B)^{2m}(2m-1)!!N^{-m}.
+\]
+The same coupling transfers every fixed moment to the interacting law. With
+$S=1+D\mathcal K(e^{LT}-1)/L$ and
+$R_p=2BS\sqrt{2\lceil p/2\rceil}$, it gives
+$\sup_t\|\|\rho_t\|_{-q}\|_{L^p}\le R_pN^{-1/2}$.
+Tensor duality in singleton variables therefore proves
+\[
+ \|\U_k[\Phi_t]\|_{L^p}
+ \le\sum_\pi c(\pi)(QR_{pj(\pi)})^{j(\pi)}
+       \|\Phi_t\|_{C^{j(\pi)q}}
+           N^{-k/2-\Delta(\pi)}.
+\]
+At $j=0$ the moment factor is one. Pair blocks have $\Delta=0$; larger
+blocks have a strict extra power. The summed constant $C_{k,p}(N)$ is a finite
+explicit partition sum, and obeys the conservative fixed-data bound
+\[
+ C_{k,p}(N)\le k!\exp\{2QBS\sqrt{pk+2}\}.
+\]
+The exact finite sum, rather than this last exponential majorant, is used
+when the data norms vary with cutoff.
+
+For rooted derivatives use symmetric kernels, replacing any kernel by its
+averaged symmetrization; this preserves $\U_k$ and contracts every $C^m$ norm.
+Excluding the root replaces $R_p$ by $R_p+B$ and gives constants
+$D_{k-1,2}(N)$ defined by the same partition sum. In particular, if
+$B_k'=\sup_t\|\Phi_{k,t}\|_{C^{(k-1)q+1}}$,
+\[
+ \E\operatorname{TV}[M_k,M_\ell]
+ \le\frac{2Td k\ell}{\beta_N}
+ B_k'B_\ell'D_{k-1,2}(N)D_{\ell-1,2}(N)
+                  N^{-(k+\ell)/2}.
+\]
+The scaled power is $N^{1-(k+\ell)/2}\min(1,\beta_N^{-1})$.
+The detailed generator table also retains the derivative cost of every
+upward, internal, single-lowering and double-lowering term. A double
+contraction is of the same raw order as $\U_k$; it is not a new gain at its
+own level. Infinite summation requires the displayed order-dependent norms
+and coefficients to be summable, including all drift and cross-bracket terms.
+A separately stated lemma with geometric kernel-norm growth and coefficients
+$1/k!$ proves statistical and martingale tail control; those extra hypotheses
+are not asserted for the actual hierarchy.
+
+For the frozen positive-power Riesz heat sequence, $0<s<d$, the report proves
+explicit constants with
+\[
+ \|K_\varepsilon\|_{C^m}
+ \le L_m\varepsilon^{-(s+m+1)/2},\qquad
+ \|K_\varepsilon\|_{C^1}\ge c\varepsilon^{-(s+2)/2}.
+\]
+The gamma factors in $L_m$ and the lattice lower bound are displayed in the
+proof. Thus the particular coupling constant grows exponentially in
+$\varepsilon^{-(s+2)/2}$ on a fixed positive horizon.
+For the regularized pair problem, a sufficient joint-limit condition is
+\[
+ \varepsilon_N^{-(s+2)/2}
+ +\log\left(1+
+   \sup_t\|\Phi_t^{N,\varepsilon_N}\|_{C^{3q+1}}+
+   \sup_t\|f_t^{N,\varepsilon_N}\|_{C^1}\right)=o(\log N).
+\]
+All four regularized residual targets then vanish, uniformly over positive
+temperatures. If those norm envelopes grow polynomially, a sufficient choice
+is $\varepsilon_N=(\log N)^{-\gamma}$ with $0<\gamma<2/(s+2)$.
+More generally finite uniform envelopes at each fixed cutoff permit a
+sufficiently slow diagonal choice. The fixed-data qualification supplies such
+finite envelopes for the existing smooth family; it does not imply polynomial
+cutoff growth.
+
+The missing comparison is a different assertion, for example
+\[
+ \sigma_N\left\langle\phi,
+  (\eta_T^{\mathrm{sing}}-\mu_T^{\mathrm{sing}})
+  -(\eta_T^{\varepsilon_N}-\mu_T^{\varepsilon_N})\right\rangle
+          \longrightarrow0
+\]
+in a specified mode, with singular well-posedness justified. A cutoff slow
+enough for these derivative estimates may smooth the microscopic scales
+needed for that comparison. No comparison or critical summation is claimed.
+
+\section{Diffusivity continuity and identified smooth limits}
+The separate THM-013 proof constructs the smooth inviscid reference by the
+characteristic fixed point
+\[
+ F_t(x)=x+\int_0^t\left[b(F_s(x))+
+       \int K(F_s(x)-F_s(y))\mu_0(y)\,dy\right]ds.
+\]
+On periodic displacements its right side is Lipschitz with constant
+$L_b+2L_K$. Bounded speed allows continuation on every finite horizon.
+The resulting smooth flow has positive Jacobian determinant and pushes
+$\mu_0$ to the unique smooth inviscid solution. Smooth positive-diffusivity
+mean-field existence remains the declared model input. The full inviscid
+backward equation is constructed by a Volterra series for transport plus
+the bounded response; its $n$th term has the displayed factorial denominator.
+
+For every fixed $m$ the proof establishes
+\begin{align*}
+ \sup_{t\le T}\|\mu_t^\nu-\mu_t^{\nu'}\|_{C^m}
+       &\le C_{\mu,m}|\nu-\nu'|,\\
+ \max_a\sup_{t\le t_a}\|f_a^\nu(t)-f_a^{\nu'}(t)\|_{C^m}
+       &\le C_{f,m}|\nu-\nu'|,
+\end{align*}
+with explicit fixed-data constants and no inverse diffusivity, including
+$\nu=0$. Two additional derivatives of the density or backward test are
+required by the Laplacian forcing. In the backward difference, both the
+velocity difference and
+\[
+ (R_{\mu^\nu}-R_{\mu^{\nu'}})f(y)
+     =\int K(z-y)\cdot\nabla f(z)
+                    (\mu^\nu-\mu^{\nu'})(z)\,dz
+\]
+are retained. Output derivatives hit $K$, so this last term needs only the
+supremum norm of the density difference. Maximum-principle commutators and
+Gronwall prove the stated bounds; there is no unproved parabolic smoothing
+estimate at $\nu=0$.
+
+It follows that the covariance matrices in THM-011 converge for every finite
+positive limiting inverse temperature. Their limits are exactly the formulas
+already displayed, evaluated at the limiting reference and full backward
+kernels. If $\beta_N\to\infty$, then $\nu_N\to0$, and
+\[
+ I_N^{ab}\longrightarrow
+       \operatorname{Cov}_{\mu_0}(f_a^0(0),f_b^0(0)),
+ \qquad D_N\longrightarrow0.
+\]
+Combined with the high-temperature zero limit, these results identify every
+physical-temperature convergent subsequence in the fixed-smooth finite-list
+model. For $0<s<d$, a critical-labelled sequence
+$\beta_N\sim\lambda N^{1-s/d}$ tends to infinity. This gives the inviscid
+initial Gaussian for a \emph{fixed smooth} interaction only; it is not the
+singular critical law.
+
+Exact checks include free heat, zero/equal/different terminal times, both
+signs of a one-mode interaction and its removable resonance. The full
+one-mode response yields
+\[ f_a^\nu(t,x)=e^{-(2\pi)^2(\nu+a/2)(t_a-t)}\cos(2\pi x). \]
+A high-frequency free test also shows why a uniform Lipschitz estimate cannot
+depend solely on the terminal $C^m$ norm without extra derivatives.
+
+\section{Law-class obstruction}
+For the smooth circle interaction $g(x)=a\cos(2\pi x)$ with $a<0$, canonical
+Gibbs density is proportional to
+$\exp(\beta |a|N|\eta(e_1)|^2/2)$. Translation invariance makes the one-point
+marginal uniform. If every particle lies in a sufficiently short fixed arc
+of length $p_\delta>0$, then $|\eta(e_1)|^2\ge1-\delta/2$. Its contribution
+to the partition function gives
+\[
+ \mathbb P_{\rm Gibbs}(|\eta(e_1)|^2\le1-\delta)
+ \le p_\delta^{-N}e^{-\beta|a|N\delta/4}.
+\]
+For every $\beta_N\to\infty$, the pair mode
+$\U_2[\cos(2\pi(x-y))]=|\eta(e_1)|^2-1/N$ tends to one in probability.
+Thus the iid moment estimates cannot be transferred to arbitrary smooth
+Gibbs preparation, even with exact first-marginal centering. This hostile-
+reviewed obstruction is outside the iid theorem and is not a counterexample
+to a positive-Riesz singular statement.
+
+
+
+
+
+\section{Scope and next load-bearing interface}
+The old condition $\beta_NN^{2s/d-1}\to0$, full microscopic subcriticality
+$\lambda_N=\beta_NN^{s/d-1}\to0$, and criticality
+$\lambda_N\to\lambda\in(0,\infty)$ remain distinct. No Riesz exponent occurs
+in the fixed-smooth coupling argument. Its higher-order and cutoff constants
+must be controlled before they can decide singular critical survival,
+truncation, or resummation. In particular an exponential in
+$T\|\nabla K_\varepsilon\|_\infty$ is not an effective power of $\lambda_N$.
+
+No assertion about Gibbs preparation, the physical gap process, exact-marginal
+centering, source covariance normalization, or field/path tightness is added
+by this memorandum. Those interfaces retain their separate campaign records.
+\end{document}

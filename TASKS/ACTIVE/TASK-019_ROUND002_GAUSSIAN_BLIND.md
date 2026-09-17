@@ -1,0 +1,13 @@
+# TASK-019 — isolated reconstruction of the Gaussian criterion
+
+2026-09-17. Astra Max /root/r002_coupling, whose earlier work constructed the residual and all-order moments but has not seen the Gaussian proof. New route worktree /private/tmp/hocf-round002-gaussian-blind-20260917 at a061786. Disclose context reuse and prior prerequisite construction; independence is from the new Gaussian argument, not from all prerequisite lemmas. Do not read the other R2 worktrees, Gaussian candidate report, its theorem card with proof commentary, hostile Gaussian report, or root TeX.
+
+## Frozen statement only
+
+Use the fixed-smooth model ROUND_001_MODEL.md, iid smooth positive mu_0 independent of Brownian motions, fixed finite horizon and a finite list of real smooth terminal tests phi_a at times t_a in [0,T]. For each N,beta_N>0 let f_a^N be the full backward linearized one-body test on [0,t_a], and Phi_a^N the zero-terminal pair corrector. Assume the exact uniform C^(4d+12) bounds of PO-001_RESIDUAL.md for the finite family.
+
+Set sigma_N=min(sqrt(N beta_N),sqrt N), a_N=sigma_N/sqrt N and c_N=sigma_N^2/(N beta_N). Define I_N^{ab}=a_N^2 Cov_mu0(f_a^N(0),f_b^N(0)) and D_N^{ab}=2 c_N integral_0^min(t_a,t_b) mu_r^N(grad f_a^N(r).grad f_b^N(r)) dr. If I_N,D_N converge entrywise to I,D, prove the vector of sigma_N rho_(t_a)^N(phi_a) converges in distribution to a centered, possibly degenerate Gaussian of covariance I+D. Prove the initial linearized fluctuation and leading martingale become independent Gaussian vectors of covariance I,D. Exact negation is an admissible sequence with the stated covariance limits but failure of this conclusion.
+
+Permitted mathematical inputs are the frozen model, audited R1 pair/one-body algebra, and your own sealed residual and moment estimates as prerequisites. You may copy only those own reports into this worktree. No candidate Gaussian proof outline is supplied. Reconstruct all decisive limiting steps, actual-law bracket control, initial/martingale dependence, and mean-field bias from these definitions. No unverified theorem may enter. Test unequal terminal times, zero time, degeneracy, and the free heat case. A temperature-independent constant cannot be asserted from a bound involving 1/nu. This is only a finite-list fixed-smooth assertion, not a field or singular limit.
+
+Save a complete reconstruction in AUDITS/BLIND_RECONSTRUCTION/ROUND_002_GAUSSIAN_RECONSTRUCTION.md, record exact permitted inputs/provenance and seal SHA-256 before comparison. Do not assign a PASS to an unseen constructor proof. No commits, pushes, canonical edits, dependencies or worker spawns.

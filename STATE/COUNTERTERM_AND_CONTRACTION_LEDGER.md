@@ -20,3 +20,11 @@ Do not combine counterterms of different origins under one symbol.
 ## All-order accounting
 
 The finite-subset derivation and full partial-bijection bracket expansion are equations (R1)–(R5) of MEMORANDA/ROUND_001_RECURSION.md. Drift has no separate Brownian lowering term under ordered distinct-label centering; the full-product contraction cancels the subtracted diagonal. Brackets retain all shared-label contractions, with root excluded from the nonroot matching. For k=2, the deterministic U_0 contraction is mu^2(B Phi)/(2N) in P=U_2/2. These are smooth identities. Singular Wick/diagonal counterterms remain OPEN.
+
+## Round 002 exact retained terms
+
+The triple deletion is U3[F]=rho^3[F]-3/N (eta tensor rho)[F(x,x,y)]+2/N^2 eta[F(x,x,x)]. For F=C Phi the full diagonal vanishes from K(0)=0, while the random partial diagonal must be estimated. The pair gradient retains -grad_1 Phi(x_i,x_i)/N. Both independent residual proofs retain these terms; no new counterterm or changed centering is introduced. AUD-004 also reconstructs every centered shared-label Brownian contraction with positive combinatorial coefficients; the centered statistics themselves are signed.
+
+## Round 002 final integration
+
+Round 002: exact partition moments identify pair blocks as zero additional N gain and larger blocks as extra N^(-(|B|-2)/2). The k-to-k-2 drift contraction stays at the raw N^(-k/2) order; it is not an additional asymptotic gain. No singular counterterm or deterministic subtraction is justified solely by these coefficients. The THM-012 symmetry defect changes no contraction coefficient after the explicit THM-014 repair.

@@ -27,3 +27,11 @@ A route is demoted when it repeats the same unproved step, loses the target scal
 - R-009: note labels and primary kernel/source maps completed for this round; numerical covariance normalization and broader source/novelty claims remain OPEN. No novelty claim is made.
 
 The original OPEN route table describes the global theorem routes; these scoped advances do not declare those routes complete. Owners of integrated outputs are recorded in TASKS/QUEUE.md; next proof owner is root until a new bounded task is dispatched.
+
+## Round 002 progress
+
+R-001 now has independent all-order reconstruction (AUD-004) in addition to hostile review; quantitative singular power counting remains OPEN. R-002's first fixed-smooth iid residual has two sealed independent constructions and AUD-005 isolated comparison PASS, with hostile review active. These two constructions share synchronous coupling but use different Hilbert/Fourier implementations; R-003's connected-marginal closure is not thereby proved. R-007 adds nonzero-interaction and moving-background exact tests. R-008 has a new smooth attractive-Gibbs obstruction to law-class transfer awaiting hostile review. R-005 still needs a singular-compatible estimate or joint regularization plus fluctuation-scale model comparison. No source/quarantined-covariance status changes.
+
+## Round 002 final integration
+
+Round 002: fixed-smooth coupling residual and finite-list Gaussian routes close their bounded tasks. All-order moments supply explicit constants and sufficient tails only under separate growth hypotheses; symmetrization repair THM-014 is mandatory. Slow cutoff estimates control their own regularized model. Next active route is the initial iid singular pair interface (TASK-021/022), while fluctuation-scale singular-model comparison, actual higher-corrector norms and physical-gap estimates remain OPEN.

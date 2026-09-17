@@ -1,0 +1,15 @@
+{
+  "arithmetic": "exact Fraction/integer; no tolerance or random seed",
+  "checks": {
+    "all_order_temperature_bracket_power": 150,
+    "fixed_point_cycle_polynomial": 39,
+    "hilbert_rademacher_moment_bound": 24,
+    "iid_bias_generating_function": 51,
+    "partition_conversion": 32,
+    "rooted_gradient": 70,
+    "weighted_partition_order_constant": 78
+  },
+  "scope": "same-context finite self-checks, not an independent audit",
+  "status": "PASS",
+  "total_checks": 444
+}

@@ -22,3 +22,17 @@ No computation may be cited as proof without the status and certificate required
 - CMP-002/003D: root rerun of DISCOVERY_CODE/round001_recursion_check.py PASS: 37,886 integer cancellation coefficients through k=9; exact Q(i) drift, time derivative and rooted gradients for k=1..4, N=2..4, inhomogeneous positive reference; full partial-matching bracket cases (2,1,1), (2,2,2), (3,2,3), (3,1,4). Saved constructor output is byte-preserved; run ended ALL ROUND 001 RECURSION SELF-CHECKS PASSED.
 - CMP-006: VERIFICATION_CODE/check_round001_smooth_fourier.py; root rerun PASS 120 rational identities, N=2,3,17, nu=0,1/3,1,7. Heat mode, signed interaction eigenmode, and nonzero internal-transport manufactured solution. REPRODUCED / SELF_CHECKED, not an independent proof certificate.
 - CMP-004 cutoff divergence and CMP-005 separated-support negativity were settled at the level of explicit analytic calculations in the smooth and falsification memoranda; no numerical enclosure is claimed.
+
+## Round 002 executed support
+
+- CMP-007: constructor DISCOVERY_CODE/check_round002_coupling_exact.py, root rerun 1,292 exact rational equalities PASS; output JSON retained. Pair/triple deletions, rooted gradients, brackets, temperature and norm orders. REPRODUCED, not independent proof certification.
+- CMP-008: independently written VERIFICATION_CODE/round002_falsification_exact.py, root rerun 116 exact rational checks PASS; moving background and nonzero interaction as well as free heat. REPRODUCED; proof is separate.
+- CMP-009: independent blind VERIFICATION_CODE/round002_blind_selfcheck.py: 20 drift, 64 bracket, 20 constant, 204 matching and 21,845 cancellation equalities. Frozen original output retained; root rerun stored separately. REPRODUCED finite support, with independent universal reconstruction in AUD-004.
+- CMP-010: root VERIFICATION_CODE/round002_partition_check.py: 84 exact rational identities for k=1..7, N=2,3,4 including k>N, plus absolute partition weight k! and exponent inequality. REPRODUCED / SELF_CHECKED; this is not an all-order proof.
+
+All use system Python 3.9.6 standard library, no seeds or tolerance, no installed dependency. No unchanged R1 battery repeated merely to inflate verification.
+
+- CMP-011: independent residual hostile verifier, 208 exact rational Laurent-polynomial checks PASS; code VERIFICATION_CODE/round002_hostile_residual_exact.py, root rerun CERTIFICATES/OUTPUTS/round002_hostile_root_rerun.json.
+- CMP-012: all-order constructor checks, 444 exact Fraction/integer equalities PASS; code DISCOVERY_CODE/check_round002_powercount_exact.py, root rerun CERTIFICATES/OUTPUTS/round002_powercount_root_rerun.json.
+- CMP-013: Gaussian statement-only constructor, 2,147 exact coefficient/model checks PASS; code DISCOVERY_CODE/check_round002_gaussian_blind_exact.py, root rerun CERTIFICATES/OUTPUTS/round002_gaussian_blind_root_rerun.json. No numerical proof of convergence inferred.
+- CMP-014: independently authored hostile all-order verifier, 1,110 exact rational checks, including nonsymmetric counterexample and Sym repair; code VERIFICATION_CODE/round002_powercount_hostile_exact.py, root rerun CERTIFICATES/OUTPUTS/round002_powercount_hostile_root_rerun.txt. All these computations are REPRODUCED supporting evidence; the analytic arguments and separate audit scopes are recorded independently.
