@@ -1,0 +1,1015 @@
+{
+  "status": "PASS",
+  "exact_rational_cases": 144,
+  "scope": "k1-k4 uniform smooth Fourier model, no singular power counting",
+  "cases": [
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 2,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 3,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 1,
+      "N": 4,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 2,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 3,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 2,
+      "N": 4,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 2,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 3,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 3,
+      "N": 4,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 2,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 3,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "0",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "0",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "0",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "mixed",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "2",
+      "kernel": "sum",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "2",
+      "kernel": "product",
+      "residual_terms": 0
+    },
+    {
+      "k": 4,
+      "N": 4,
+      "nu": "2",
+      "kernel": "mixed",
+      "residual_terms": 0
+    }
+  ]
+}

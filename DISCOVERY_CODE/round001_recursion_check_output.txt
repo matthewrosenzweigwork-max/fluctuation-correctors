@@ -1,0 +1,72 @@
+PASS general subset cancellation through k=9: 37886 exact integer coefficients
+PASS drift N=2, k=1, inhomogeneous mu: 16 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=2, k=1: 16 coefficients, exact Q(i) equality
+PASS rooted gradient N=2, k=1, i=0: 2 coefficients, exact Q(i) equality
+PASS rooted gradient N=2, k=1, i=1: 2 coefficients, exact Q(i) equality
+PASS drift N=2, k=2, inhomogeneous mu: 31 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=2, k=2: 34 coefficients, exact Q(i) equality
+PASS rooted gradient N=2, k=2, i=0: 5 coefficients, exact Q(i) equality
+PASS rooted gradient N=2, k=2, i=1: 5 coefficients, exact Q(i) equality
+PASS drift N=2, k=3, inhomogeneous mu: 41 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=2, k=3: 42 coefficients, exact Q(i) equality
+PASS rooted gradient N=2, k=3, i=0: 10 coefficients, exact Q(i) equality
+PASS rooted gradient N=2, k=3, i=1: 10 coefficients, exact Q(i) equality
+PASS drift N=2, k=4, inhomogeneous mu: 59 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=2, k=4: 60 coefficients, exact Q(i) equality
+PASS rooted gradient N=2, k=4, i=0: 17 coefficients, exact Q(i) equality
+PASS rooted gradient N=2, k=4, i=1: 17 coefficients, exact Q(i) equality
+PASS K=0 N=2, k=4: 57 coefficients, exact Q(i) equality
+PASS constant kernel N=2, k=4: 0 coefficients, exact Q(i) equality
+PASS drift N=3, k=1, inhomogeneous mu: 31 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=3, k=1: 31 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=1, i=0: 2 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=1, i=1: 2 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=1, i=2: 2 coefficients, exact Q(i) equality
+PASS drift N=3, k=2, inhomogeneous mu: 94 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=3, k=2: 100 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=2, i=0: 8 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=2, i=1: 8 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=2, i=2: 8 coefficients, exact Q(i) equality
+PASS drift N=3, k=3, inhomogeneous mu: 170 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=3, k=3: 174 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=3, i=0: 24 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=3, i=1: 24 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=3, i=2: 24 coefficients, exact Q(i) equality
+PASS drift N=3, k=4, inhomogeneous mu: 330 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=3, k=4: 334 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=4, i=0: 55 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=4, i=1: 55 coefficients, exact Q(i) equality
+PASS rooted gradient N=3, k=4, i=2: 55 coefficients, exact Q(i) equality
+PASS K=0 N=3, k=4: 260 coefficients, exact Q(i) equality
+PASS constant kernel N=3, k=4: 0 coefficients, exact Q(i) equality
+PASS drift N=4, k=1, inhomogeneous mu: 51 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=4, k=1: 51 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=1, i=0: 2 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=1, i=1: 2 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=1, i=2: 2 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=1, i=3: 2 coefficients, exact Q(i) equality
+PASS drift N=4, k=2, inhomogeneous mu: 213 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=4, k=2: 223 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=2, i=0: 11 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=2, i=1: 11 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=2, i=2: 11 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=2, i=3: 11 coefficients, exact Q(i) equality
+PASS drift N=4, k=3, inhomogeneous mu: 507 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=4, k=3: 517 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=3, i=0: 45 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=3, i=1: 45 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=3, i=2: 45 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=3, i=3: 45 coefficients, exact Q(i) equality
+PASS drift N=4, k=4, inhomogeneous mu: 1394 coefficients, exact Q(i) equality
+PASS time-dependent kernel N=4, k=4: 1405 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=4, i=0: 143 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=4, i=1: 143 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=4, i=2: 143 coefficients, exact Q(i) equality
+PASS rooted gradient N=4, k=4, i=3: 143 coefficients, exact Q(i) equality
+PASS K=0 N=4, k=4: 886 coefficients, exact Q(i) equality
+PASS constant kernel N=4, k=4: 0 coefficients, exact Q(i) equality
+PASS bracket matchings N=2, k=1, ell=1: 6 coefficients, exact Q(i) equality
+PASS bracket matchings N=2, k=2, ell=2: 22 coefficients, exact Q(i) equality
+PASS bracket matchings N=3, k=2, ell=3: 184 coefficients, exact Q(i) equality
+PASS bracket matchings N=3, k=1, ell=4: 187 coefficients, exact Q(i) equality
+ALL ROUND 001 RECURSION SELF-CHECKS PASSED

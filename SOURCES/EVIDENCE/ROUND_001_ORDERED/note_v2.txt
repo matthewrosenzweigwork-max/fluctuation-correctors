@@ -1,0 +1,686 @@
+PDF PAGE 1
+WHY CommN≤ CFN IS CRUDE, AND WHA T TO REPLACE IT WITH
+Companion to “Fluctuations around the mean-ﬁeld limit for Coulomb/Riesz ﬂows” [N]. Labels:
+F act= proved; Hope = target statement with its hypotheses; Missing ingredient = what it
+rests on; Obstruction = what these ideas do not reach. Revised twice. The ﬁrst version claimed
+the additive constant oN was the whole loss; it is not, the multiplicative bound itself is crude. The
+second invoked div u = 0, which holds only in the Hamiltonian logarithmic case; Fact 3.2 below
+replaces that accident by an identity valid for every mean-ﬁeld velocity.
+1. Setting, and the one identity everything runs through
+1.1. Setting. D = Td or Rd; g(x) =|x|−s, 0 < s < d (s = 0:− log|x|, mentioned where it diﬀers).
+M is a constant matrix with S := sym M≤ 0; M =−Id is the gradient ﬂow, M = J (rotation) the
+2D Hamiltonian case. Particles solve
+dxi =
+(1
+N
+∑
+j̸=i
+M∇g(xi− xj)−∇ V (xi)
+)
+dt +
+√
+2/β dWi,
+µN := 1
+N
+∑δxi, and µt solves the mean-ﬁeld equation∂tµ =− div(µu)+β−1∆µ, u := M∇g∗µ−∇V .
+Set ρN := µN− µ,
+ai := 1
+N
+∑
+j̸=i
+∇g(xi− xj)−∇ g∗ µ(xi) =
+∫
+y̸=xi
+∇g(xi− y) dρN(y), D N := 1
+N
+∑
+i
+|ai|2,
+so that d xi = (u(xi) + Mai) dt +
+√
+2/β dWi. The modulated energy and the commutator are
+FN := 1
+2
+∫∫
+x̸=y
+g(x−y) dρ⊗2
+N , CommN(v) :=
+∫∫
+x̸=y
+Kv dρ⊗2
+N , K v(x, y) := (v(x)−v(y))·∇g(x−y).
+For Φ symmetric on D2,⟨Φ, ρ⊗2
+N⟩̸= :=
+∫∫
+x̸=y Φ dρ⊗2
+N and Φµ(x) :=
+∫
+Φ(x, y) dµ(y).
+Imported from [N] 1.1. (I1) FN(X, µ)≥− oN for all X, with oN ≍ Ns/d−1 (plus log N/N if
+s = 0 ). (I2) The pathwise commutator inequality |CommN(v)|≤ C∥v∥∗(FN + oN). (I3) Well-
+posedness and regularity of the backward linearized equation (3) below, giving the propagator Ur,t.
+(I4) The CLT for the martingale part. (I5) The scaling σN = min(√N β, κN) with κN the size of
+the initial ﬂuctuation, the exponent γ of the H−γ ﬁeld theorem, and the master rate. Only (I2) is
+questioned here.
+1.2. The corrector identity . For a deterministic symmetric Φr(x, y), C1,2 oﬀ the diagonal, deﬁne
+PN[Φ] := 1
+2⟨Φ, ρ⊗2
+N⟩̸=, ArΦ := ∂rΦ + ur(x)·∇xΦ + ur(y)·∇yΦ + β−1(∆x + ∆y)Φ,
+bi[Φ] :=
+∫
+y̸=xi
+∇xΦ(xi, y) dρN(y), TN[Φ] := 1
+N
+∑
+i
+(Mai)· bi[Φ].
+F act 1.2 (corrector identity).
+(1) d PN[Φr](Xr, µr) = 1
+2⟨ArΦr, ρ⊗2
+N⟩̸= dr +TN[Φr] dr +
+√
+2/β 1
+N
+∑
+i
+bi[Φr]· dWr
+i .
+Date: September 14, 2026.
+1
+
+PDF PAGE 2
+2 THE COMMUTATOR BOUND IS CRUDE
+Proof. ExpandPN[Φ] = 1
+2N 2
+∑
+i̸=j Φ(xi, xj)− 1
+N
+∑
+i Φµ(xi)+ 1
+2⟨Φ, µ⊗ µ⟩. Itˆ o on the ﬁrst sum, with
+independent Brownian motions and∇yΦ(xi, xj) =∇xΦ(xj, xi), gives
+1
+2N 2
+∑
+i̸=j
+AΦ(xi, xj) dr + 1
+N 2
+∑
+i̸=j
+∇xΦ(xi, xj)· Mai dr + 1
+N 2
+∑
+i
+(∑
+j̸=i
+∇xΦ(xi, xj)
+)
+·
+√
+2/β dWi.
+For the second sum, ∂rΦµ = (∂rΦ)µ +
+∫
+Φ ∂rµ and, integrating the mean-ﬁeld equation by parts,∫
+Φ ∂rµ dy =
+∫
+[u(y)·∇ yΦ + β−1∆yΦ]µ dy; hence d( − 1
+N
+∑
+i Φµ(xi)) = − 1
+N
+∑
+i(AΦ)µ(xi) dr−
+1
+N
+∑
+i∇Φµ(xi)·Mai dr− 1
+N
+∑
+i∇Φµ(xi)·
+√
+2/β dWi. The third term gives 1
+2⟨AΦ, µ⊗µ⟩ dr. Summing,
+theAΦ terms assemble into 1
+2⟨AΦ, ρ⊗2
+N⟩̸= and the Mai terms into 1
+N
+∑
+i Mai·[ 1
+N
+∑
+j̸=i∇xΦ(xi, xj)−
+∇Φµ(xi)] =TN[Φ]. □
+F act 1.3 (energy identity). Taking Φ = g:Ag = Ku + 2β−1∆g and bi[g] = ai, so
+(2) d FN =
+[
+1
+2CommN(u) + 1
+N
+∑
+i
+aT
+i Sai + β−1⟨∆g, ρ⊗2
+N⟩̸=
+]
+dr +
+√
+2/β 1
+N
+∑
+i
+ai· dWi.
+For the gradient ﬂow the middle term is −DN.
+F act 1.4 (duality identity) . Let ψf(y) :=
+∫
+∇f(x)· M∇g(x− y) dµ(x) (smooth) and Lµf :=
+u·∇ f + β−1∆f + ψf. Then
+d⟨fr, ρr
+N⟩ =⟨∂rf +Lµr f, ρr
+N⟩ dr + 1
+2CommN(M∗∇fr) dr +
+√
+2/β 1
+N
+∑
+i
+∇f(xi)· dWi.
+Hence if fr = Ur,tφ solves the backward linearized equation
+(3) ∂rf +Lµr f = 0, f t = φ,
+then, with Mt
+N[f] the martingale,
+(4) ⟨φ, ρt
+N⟩ =⟨U0,tφ, ρ0
+N⟩ + Mt
+N[f] + 1
+2
+∫ t
+0
+CommN(M∗∇fr) dr.
+Proof. d⟨f, µN⟩ = 1
+N
+∑
+i[∂rf + (u + Mai)·∇ f + β−1∆f](xi) dr+noise, and d⟨f, µ⟩ =⟨∂rf + u·
+∇f + β−1∆f, µ⟩ dr. The force term is 1
+N
+∑
+i Mai·∇ f(xi) =
+∫∫
+̸=∇f(x)· M∇g(x− y) dµN(x) dρN(y);
+writing µN = µ + ρN in the ﬁrst slot gives ⟨ψf , ρN⟩ +
+∫∫
+̸=∇f(x)· M∇g(x− y) dρ⊗2
+N , and the last
+integral symmetrizes to 1
+2CommN(M∗∇f) since (∇f(x)−∇ f(y))· M∇g = (M∗(∇f(x)−∇ f(y)))·
+∇g. □
+Multiplying (4) by σN gives the identity of [N]. The ﬁrst two terms yield the limit law (I3, I4);
+the theorem holds as soon as the last term is o(σ−1
+N ). Everything below is about it. [N] estimates
+it by (I2).
+2. Two exact rewritings
+F act 2.1 (force form). Exactly, with hv :=∇g∗(vµ) (a Riesz potential of a smooth function, hence
+smooth):
+(5) Comm N(v) = 2
+N
+∑
+i
+v(xi)· ai + 2⟨hv, ρN⟩.
+Proof. CommN(v) = 1
+N 2
+∑
+i̸=j(v(xi)− v(xj))·∇ g(xi− xj)− 2⟨Kv,µ, µN⟩ +⟨Kv,µ, µ⟩. By symmetry
+the double sum is 2
+N 2
+∑
+i̸=j v(xi)·∇ g(xi− xj) = 2
+N
+∑
+i v(xi)· ai + 2
+N
+∑
+i v(xi)·∇ g∗ µ(xi). Since
+Kv,µ(x) = v(x)·∇ g∗ µ(x)− hv(x), the last two groups combine to 2 ⟨hv, µN⟩ +⟨Kv,µ, µ⟩, and
+⟨hv, µ⟩ =−⟨v·∇ g∗ µ, µ⟩ =−⟨Kv,µ, µ⟩−⟨ hv, µ⟩ forces⟨Kv,µ, µ⟩ =−2⟨hv, µ⟩, whence 2⟨hv, µN⟩ +
+⟨Kv,µ, µ⟩ = 2⟨hv, ρN⟩. □
+
+PDF PAGE 3
+THE COMMUTATOR BOUND IS CRUDE 3
+(Veriﬁed numerically on T1, s = 1/2, µ≡ 1, v = sin 2πx, N = 200, 400, 800: both sides agree to
+10−11; script attached.) The singular kernel appears nowhere except inside ai, which the equation
+produces anyway.
+F act 2.2 (stress form). With m = x+y
+2 , z = x− y, Ev = sym∇v, E◦
+v its traceless part, deﬁne the
+local energy and stress measures
+eN := 1
+2
+∫∫
+̸=
+g(z) δm dρ⊗2
+N , S◦
+N :=−s
+∫∫
+̸=
+|z|−s−2(
+z⊗ z
+)◦δm dρ⊗2
+N .
+Then eN(D) = FN and
+(6) Comm N(v) =−2s
+d⟨div v, eN⟩ +⟨E◦
+v ,S◦
+N⟩ +⟨rv, ρ⊗2
+N⟩̸=, |rv|≤ C∥∇2v∥∞|z|1−s,
+with, exactly and with no remainder, CommN(aId) = −2saFN; and in d = 1 , CommN(v) =
+−2sFwv
+N , wv(x, y) = v(x)−v(y)
+x−y smooth.
+Proof. With m, z as above, v(x)− v(y) = v(m + z
+2)− v(m− z
+2) = ∇v(m)z + O(∥∇2v∥∞|z|2),
+and∇g(z) =−s|z|−s−2z, so Kv =−s|z|−s−2 z·∇ v(m)z + O(∥∇2v∥∞|z|1−s). Only Ev = sym∇v
+survives in z·∇ v z, and z· Evz = trEv
+d |z|2 + z· E◦
+v z with tr Ev = div v. Integrating against ρ⊗2
+N
+gives (6). For v = ax the expansion is exact with E◦
+v = 0, giving Comm N(aId) = −2saFN. In
+d = 1, ( v(x)− v(y))g′(z) = wv(x, y) zg′(z) =−s wv g(z) exactly. (For s = 0: z·∇ g =−1, so the
+compression term is− 1
+d⟨div v(m), ρ⊗2
+N⟩̸= and CommN(aId) = a/N.) □
+Equations (5) and (6) are the same identity before and after discrete integration by parts: divSN
+is the interparticle force density (Irving–Kirkwood).
+3. Three ways the bound is crude
+(C1) It reads a transport identity as an inequality . The compression term in (6) is− 2s
+d⟨div u, eN⟩,
+and in local equilibrium eN≈ ¯eN, where ¯eN := εsNs/d−1(µt)1+s/d dx. Along the mean-ﬁeld
+ﬂow d
+dt
+∫
+µ1+s/d =−s
+d
+∫
+µ1+s/d div u, so
+(7) − s
+d⟨div u, ¯eN⟩ = d
+dt
+(
+εsNs/d−1
+∫
+(µt)1+s/d
+)
+= d
+dt
+¯FN ,
+exactly, with the correct exponent, and for every sign of div u. The compression term is
+therefore not an error at all: it is the transport of the self-energy density, which the mean-ﬁeld
+ﬂow dilutes or concentrates. The bound |CommN(u)|≤ C∥∇u∥∞FN converts this identity
+into growth eCt. (Only in the incompressible case div u≡ 0, e.g. the Hamiltonian 2D log case
+M = J, is ¯FN constant and the term absent outright; that is a special case of (7), not the
+general mechanism.)
+(C2) It replaces a measure by its total mass. CommN(v) pairs ∇v against eN andS◦
+N
+pointwise; the bound uses only eN(D) = FN. Any spatial correlation between where energy
+sits and where the strain is — e.g. div u small on the bulk of the support — is discarded.
+Equivalently, in the force form (5): the estimate bounds a distribution by its mass instead of
+integrating by parts and using that SN is nearly momentum-balanced.
+(C3) It treats the shear term as of the size of the energy . ⟨E◦
+v ,S◦
+N⟩ is bounded by∥∇v∥∞FN,
+butS◦
+N vanishes for any locally isotropic structure, and in Regime P it is of order (relaxation
+time)×(strain rate)×FN≪ FN.
+(C4) Only then: the additive oN, which prevents FN from being used as a small quantity even
+when the conﬁguration is perfectly ordered.
+Remark 3.1 (what (5) does and does not buy) . It is tempting to read oﬀ |CommN(v)| ≤
+2∥v∥L2(µN)D1/2
+N + 2∥hv∥Cγ∥ρN∥H−γ and conclude that the dissipation replaces the energy. Two
+
+PDF PAGE 4
+4 THE COMMUTATOR BOUND IS CRUDE
+caveats, both real. (i) The two terms of (5) each contain a linear-in- ρN piece of size ∥ρN∥, and
+these cancel: to ﬁrst order 2
+N
+∑v(xi)·ai≈− 2⟨hv, ρN⟩. Bounding the two pieces separately is there-
+fore worse than the pathwise bound, not better — each piece alone is of the size of the answer. (ii)
+Antisymmetrizing the near-diagonal part of 2
+N
+∑v· ai returns⟨∇v,Snear
+N ⟩, i.e. the energy bound
+again. So (5) is not by itself an improvement; its value is diagnostic ((C2): all the cancellation lives
+in divSN) and it is the right form for the mesoscopic part of the force, where hv and the far ﬁeld
+combine into a smooth quadratic form of ρN with no singular kernel at all.
+Conclusion of the diagnosis. (6) is an equality; the pathwise bound is that equality with absolute
+values. The ﬁx is not a better inequality but to carry eN andS◦
+N as objects, and to subtract from
+FN the part of it that the mean-ﬁeld ﬂow merely transports.
+F act 3.2 (renormalized energy: no forcing, no ﬂoor) . Let εs be the energy per unit volume of the
+local structure at unit density (in d = 1 at β =∞, εs = ζ(s), the lattice value); by scaling, the local
+energy density at density ρ is εsNs/d−1ρ1+s/d, which is the meaning of ¯eN above. Set
+GN := FN− ¯FN , ¯FN := εsNs/d−1
+∫
+(µt)1+s/d dx.
+Then, for any mean-ﬁeld velocity u,
+(8) d
+dt GN = − s
+d⟨div u, eN− ¯eN⟩
+  
+ﬂuctuation of the local energy
++ 1
+2⟨E◦
+u,S◦
+N⟩  
+shear
++ 1
+2⟨ru, ρ⊗2
+N⟩̸= + 1
+N
+∑
+i
+aT
+i Sai + β−1(··· ).
+No compression forcing survives, and GN carries no self-energy ﬂoor: the Ns/d−1 that FN can never
+go below has been subtracted, not estimated.
+Proof. Insert (6) with v = u into (2), write eN = ¯eN + (eN− ¯eN) in the compression term, and
+use (7): d
+dt
+∫
+(µt)1+s/d = (1 +s
+d)
+∫
+µs/d∂tµ =−(1 +s
+d)
+∫
+µs/d div(µu) =−s
+d
+∫
+µ1+s/d div u at β =∞
+(the diﬀusive part of ∂tµ contributes β−1(1 + s
+d)
+∫
+µs/d∆µ, absorbed into the β−1(··· )). □
+This is the general- d, general-u form of the endpoint cancellation (12). In the duality identity the
+same split sends ¯eN into the explicit pressure correction νt of Hope 5.1 — a term to be computed,
+not an error — and leaves only eN− ¯eN to estimate. Read statically, (7) is the ℓ = 0 (charge) sum
+rule of the free-energy expansion, and νt is the dynamic form of the β-independent scaling part
+(− 1
+4 in the 2D log case) of the next-order mean: the compression side is ﬁnished in both programs,
+and whatever eﬀort remains belongs to shear.
+4. The replacement: a weighted energy hierarchy
+For symmetric weights w(x, y) set Fw
+N := 1
+2
+∫∫
+̸= w g dρ⊗2
+N (so F1
+N = FN, and Fw
+N≈⟨ w(x, x), eN⟩).
+These are the localized energies (C2) asks for.
+F act 4.1 (d = 1: the hierarchy closes exactly) . In d = 1, with M =±1, ˜w := ∂xw−∂yw
+x−y (smooth,
+since w is symmetric), Dw
+N := 1
+N
+∑
+i w(xi, xi)|ai|2:
+CommN(v) =−2sFwv
+N ,(9)
+dFwr
+N =
+[
+FAw
+N − sFwwu
+N − 2sβ−1F ˜w
+N + β−1⟨wg′′, ρ⊗2
+N⟩̸= + MDw
+N +Rw
+N
+]
+dr + d(mart.),(10)
+whereRw
+N := M 1
+N
+∑
+i ai
+[∫
+̸=(w(xi, y)− w(xi, xi))g′(xi− y) dρN(y) +
+∫
+̸= ∂xw(xi, y)g(xi− y) dρN(y)
+]
+carries only kernels less singular than g. So {Fw
+N} is closed modulo the weighted dissipation and
+less singular remainders — no inequality, and the sign of MDw
+N is deﬁnite for the gradient ﬂow.
+
+PDF PAGE 5
+THE COMMUTATOR BOUND IS CRUDE 5
+Proof. (9) is Fact 2.2. For (10) apply (1) to Φ = wg. Using ∂xg(x− y) = g′(z) =−∂yg(x− y) and
+zg′(z) =−sg(z): ( u(x)∂x + u(y)∂y)(wg) = g (u(x)∂xw + u(y)∂yw)− s w wu g and (∂2
+x + ∂2
+y)(wg) =
+g (∂2
+x + ∂2
+y)w+2 g′(∂xw− ∂yw)+2 wg′′ = g (∂2
+x + ∂2
+y)w−2s˜w g+2 wg′′, which gives (??) and hence the
+ﬁrst four terms of (10). For TN[wg]: bi[wg] =
+∫
+̸=[∂xw g + wg′](xi, y) dρN(y), and
+∫
+̸= w(xi, y)g′(xi−
+y) dρN(y) = w(xi, xi)ai +
+∫
+̸=(w(xi, y)− w(xi, xi))g′ dρN; multiplying by Mai and averaging gives
+MDw
+N +Rw
+N. □
+Two consequences.
+(a) The remainder becomes an explicit smooth corrector. At β =∞ let Wr solve on T1× T1 the
+linear transport equation ∂rW + u(x)∂xW + u(y)∂yW− s wu W = s wvr, Wt = 0 ( vr = M∂xfr).
+By (??) at β =∞,A(W g) = s wvg =−Kv, so integrating (1) on [0 , t] gives 1
+2
+∫t
+0 CommN(vr) dr =
+FW 0
+N (X0, µ0) +
+∫t
+0TN[Wrg] dr, and by ( ??) with M =−1, (4) becomes exact:
+(11) ⟨φ, ρt
+N⟩ =⟨U0,tφ, ρ0
+N⟩ + FW 0
+N (X0, µ0)−
+∫ t
+0
+DWr
+N dr +
+∫ t
+0
+RWr
+N dr + mart.
+(b) The self-energy ﬂoor cancels between endpoints. Let Ψt be the mean-ﬁeld ﬂow map (∂tΨt(y) =
+ut(Ψty), so µt = Ψt
+#µ0) and, for w0≥ 0, let wr solve the homogeneous equation ∂rw + u(x)∂xw +
+u(y)∂yw− s wu w = 0, wt = w0; then wr > 0. On the diagonal wu(x, x) = u′(x), so along
+r↦→ (Ψry, Ψry) one has d
+dr wr(Ψry, Ψry) = s u′(Ψry) wr, and since d
+dr log ∂yΨr(y) = u′(Ψry),
+w0(y, y) = w0(Ψty) (∂yΨt(y))−s, so that
+∫
+w0(x) (µt)1+s(x) dx =
+∫
+w0(y, y) (µ0)1+s(y) dy
+by the change of variables x = Ψty, µt(Ψty) = µ0(y)/∂yΨt(y): the transported weight matches
+exactly the transport of µ1+s. At β =∞, M =−1, (10) with this wr integrates to
+(12)
+∫ t
+0
+Dwr
+N dr = Fw0
+N (X0, µ0)− Fw0
+N (Xt, µt) +
+∫ t
+0
+Rwr
+N dr.
+Each FN separately sits at the crystalline ﬂoor≍ Ns−1; the diﬀerence does not, provided a matching
+lower bound holds at both times. This is the precise sense in which (C4) is dissolved rather than
+estimated.
+F act 4.2 (d≥ 2: what closes) . The scalar-weighted hierarchy closes iﬀ E◦
+u≡ 0, i.e. for dilational
+ﬂows in any d and for conformal ﬂows in the 2D logarithmic case. Otherwise compression couples
+toS◦
+N,S◦
+N to the next multipole, and so on.
+Why. Repeating the computation of Fact 4.1 in d≥ 2,A(wg) = (Aw)g + w Ku + 2β−1(∇xw−
+∇yw)·∇ g + 2β−1w∆g, and by (6) wKu =−s
+d w div u g− s w|z|−s−2 z· E◦
+uz + w ru. The middle
+term is not of the form (smooth weight)×g unless E◦
+u = 0. □
+5. What we hope to prove
+Hope 5.1 (d = 1, β =∞, gradient ﬂow, lattice-like data) . 0 < s < 1, X0 a perturbed µ0-quantile
+lattice, κN≪ N 1−s+δ. Then
+µt
+N = µt + Ns−1νt + o(Ns−1∧ κ−1
+N ), ∂ tν =L∗
+µν + s ∆
+(
+ζ(s)µ1+s)
+, ν 0 = 0,
+and κN(ρt
+N− Ns−1νt) is transported by U as in [N]. The remainder is not discarded: it is identiﬁed
+as the pressure of the correlation hole.
+Proof route: (11) with
+∫
+DW
+N controlled by (12). Rests on Missing ingredient 6.1 and Missing
+ingredient 6.2 only.
+
+PDF PAGE 6
+6 THE COMMUTATOR BOUND IS CRUDE
+Hope 5.2 (renormalized energy estimate, any d, any u). Under ?? 6.3?? 6.4, (8) closes on GN:
+Gt
+N≤ G0
+N + o(Ns/d−1) in Regime P, with no exponential factor and no additive oN. Consequently
+Ft
+N = ¯Ft
+N + o(Ns/d−1): the modulated energy follows the transported self-energy instead of being
+bounded by a growing multiple of it.
+Two special cases cost nothing beyond Fact 2.2 and are worth extracting ﬁrst: for dilational
+u = λ(t)x the identity CommN(aId) =−2saFN is exact, so (8) is an explicit ODE plus dissipation;
+and for div u≡ 0 (2D Hamiltonian log case) ¯FN is constant, so GN = FN−const and only the shear
+term remains.
+Hope 5.3 (the ﬁeld theorem’s γ). In [N] the exponent γ = m∗ + d + 3 is dictated by ∥v∥∗ in
+the pathwise bound, applied mode by mode. In (6) the test function enters only through ∇v paired
+against measures, and in (5) through∥v∥L2(µN) and∥hv∥Cγ′ , with hφk gaining|k|−1 from the Riesz
+potential. So the commutator step should no longer set γ; what remains is adjoint regularity and
+martingale summability.
+Hope 5.4 (Regime P, positive temperature) . Gradient ﬂow, βeﬀ = βNs/d−1→ 0, i.i.d. data. The
+local structure is a Poisson cloud with a hole of size ℓB = ( β/N)1/s, so S◦
+N is negligible and eN
+concentrates; the commutator is then computed rather than bounded, giving the conclusions of [N]
+with Assumption MF replaced by σN eN→ 0, eN the size of the mean commutator. Conjecturally
+eN ≍ βN−1∨ βd/s−1N 1−d/s, hence s < 2d/3 for σN =
+√
+N, with an explicit Debye correction
+beyond.
+This is the route I over-sold last time. It is conditional on the static inputs Missing ingredient 6.6,
+which are weak-coupling expansions with small parameter N ℓd
+B = βd/s
+eﬀ — not rigidity statements,
+but not written down for Riesz kernels either.
+6. Missing ingredients
+Missing ingredient 6.1 (localized lower bound, d = 1) . For w≥ 0 smooth symmetric, all X,
+µ∈ C1 bounded below: Fw
+N(X, µ)≥ ζ(s)Ns−1∫
+w(x, x)µ1+s−C∥w∥C1Ns−1−δ. This is the weighted
+version of your screening bound; it is what makes both endpoints of (12) usable.
+Missing ingredient 6.2 (less singular remainders) .
+∫t
+0|Rw
+N| dr = o(Ns/d−1) for the kernels ap-
+pearing in (10): singularity |z|−s with a weight vanishing on the diagonal, or |z|1−s.
+Missing ingredient 6.3 (local equilibrium of the energy density) . We need|E⟨div u, eN− ¯eN⟩|≤
+εN∥∇u∥∞Ns/d−1 with εN→ 0, i.e. mesoscopic averages of the local energy measure concentrate on
+εsµ1+s/d. This is what (8) needs beyond Missing ingredient 6.4, and it is where the diﬃculty has
+moved — correctly, since it is a statement about local structure and not about a sign. It requires
+localizing eN to mesoscopic boxes of sideℓ, and the localization error is exactly the almost-additivity
+surface term of the static free-energy program (the “points cannot be cut” defect), of relative size
+ℓ−1N−1/d per box against a bulk of Ns/d−1; this ﬁxes the smallest ℓ one can aﬀord and is the one
+place where the boundary diﬃculty of the static problem re-enters the dynamics.
+Missing ingredient 6.4 (isotropy of the local stress).|E⟨E◦
+u,S◦
+N⟩|≤ εN∥∇u∥∞Ns/d−1 with εN→
+0. This is not a bound to be proved on S◦
+N directly, because of the following.
+Lemma 6.5 (rotation). Let Σ be a symmetric traceless d× d matrix. If RΣRT = Σ for a rotation
+R of order k≥ 3 in some plane and, in d≥ 3, for the generators of a group acting irreducibly on Rd
+(e.g. the cubic group), then Σ = 0. Consequently, if the conditional law of the local pair structure
+around a mesoscopic box is invariant under such rotations, then ES◦
+N = 0 on that box.
+Proof. In the plane of R, Σ restricted is
+(a b
+b−a
+)
+(traceless part), and RθΣRT
+θ rotates ( a, b) by
+angle 2 θ; invariance under θ = 2π/k, k≥ 3, forces a = b = 0. In d≥ 3 an invariant symmetric
+
+PDF PAGE 7
+THE COMMUTATOR BOUND IS CRUDE 7
+matrix under an irreducible action is a multiple of the identity (Schur), hence its traceless part
+vanishes. The pair measure
+∫∫
+|z|−s−2(z⊗ z)◦δm dρ⊗2
+N localized to the box is a symmetric traceless
+matrix which is covariant under rotation of the conﬁguration, so its expectation is invariant and
+vanishes. □
+So the ingredient is isotropy of the local structure. In Regime P it is a relaxation statement — the
+local structure equilibrates on τrelax≍ βN−2/d and the strain imposes anisotropy ≍ τrelax∥∇u∥∞,
+so εN≍ βN−2/d. In Regime R it is the angular, curvature-weighted local law that was the single
+hypothesis of the static quadrupole reduction, now required at density µt uniformly in t; nothing
+in the dynamics makes it easier. It is the dynamic form of the shear obstruction.
+Missing ingredient 6.6 (static inputs for Hope 5.4) . For the modulated Gibbs measures
+Qθ∝ exp
+(
+− β
+2N
+∑
+i̸=j
+gθ(xi− xj) +∑
+i(one-body)
+)
+µ⊗N , 1
+2 g≤ gθ≤ 3
+2 g :
+(i) z := logZN
+βN = o(Ns/d−1); (ii) supθ|EQθCommN(v)| = o(Ns/d−1); (iii) sub-Gaussian linear statis-
+tics. The singularity works in our favour here (e−β
+N g≤ 1 suppresses close pairs; the tilt is dominated
+by g); the diﬃculty is the renormalization against the one-body term.
+7. Obstructions
+Obstruction 7.1 (shear). Fact 4.2: in d≥ 2 with E◦
+u ̸= 0 the hierarchy does not close, and
+Missing ingredient 6.4 is exactly the missing piece. Same object as the static quadrupole Q0, with
+the same conditional reduction available (isotropy via rotation symmetry, or the angular local law);
+nothing dynamic adds to it. If the static quadrupole is resolved, Regime R follows modulo Missing
+ingredient 6.3; if not, nothing here passes βeﬀ≪ 1 in d≥ 2.
+Obstruction 7.2 (Coulomb borderline at zero temperature) . β =∞, s = d− 2: microscopic
+motion is O(1) per unit time, so the local structure is neither transported nor relaxed, and there is
+no temperature to expand in.
+Obstruction 7.3 (non-gradient ﬂows). Hope 5.4 needs an entropy bound relative to QN, supplied
+by the modulated free energy only in the gradient case; and (10) loses the sign of MDw
+N.
+8. Order of work
+(1) ?? 2.1?? 2.2?? 3.2 into [N] as exact statements, and rerun the energy identity for GN rather
+than FN. Immediate payoﬀ: no compression forcing, no ﬂoor, and Hope 5.3 ( γ no longer set
+by the commutator). No new ingredient required; the dilational and incompressible cases close
+on the spot.
+(2) Hope 5.1: d = 1, β =∞, lattice data, via (11)–(12). Needs ?? 6.1?? 6.2. Self-contained and a
+template for the rest.
+(3) ?? 6.3?? 6.4 in Regime P — the two ingredients of Hope 5.2. For Missing ingredient 6.4
+use the transferred rotation argument and prove only relaxation ( εN≍ βN−2/d); for Missing
+ingredient 6.3 ﬁx the mesoscale from the additivity-defect count ﬁrst.
+(4) Hope 5.4 and its static inputs Missing ingredient 6.6, starting from 2 s < d and small β.
+(5) Leave shear in d≥ 2 and the Coulomb borderline stated as open.

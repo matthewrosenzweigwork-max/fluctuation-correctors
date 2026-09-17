@@ -17,3 +17,12 @@ Forbidden implicit transfers:
 - gradient to Hamiltonian;
 - positive density to vacuum;
 - exact centering to explicit mean-field centering.
+
+
+## Round 001 finite algebra row LG-005
+
+Unit torus, fixed smooth even kernel, gradient dynamics, smooth positive temperature-dependent reference, arbitrary initial law for pathwise identities and exchangeable law only for marginals. Centering is mean-field; all finite beta>0. Algebraic row THM-008 has no CLT claim. LG-001 through LG-004 remain separate OPEN limit targets. No equilibrium-to-nonequilibrium, iid-to-Gibbs, or Euclidean-to-periodic transfer has been made.
+
+## LG-004 ordered scope
+
+The one-dimensional primary source law is homogeneous circular equilibrium, V=0, b=lambda_N/2, conditioned on cyclic ordering. It is not an iid or moving inhomogeneous preparation. The stopped gap identity is valid for smooth kernels before crossings, or singular kernels on separated configurations; no global singular diffusion/collision theorem follows. Absolute rotation is retained when tests require it. THM-006 remains OPEN. The Dirichlet high-temperature obstruction applies to an unqualified all-b uniform bound, not every subcritical subclass with growing campaign beta_N.

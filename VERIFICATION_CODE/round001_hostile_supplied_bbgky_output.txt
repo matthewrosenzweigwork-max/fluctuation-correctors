@@ -1,0 +1,1 @@
+PASS: 24 exact rational Fourier cases; all pair lower contractions, martingale coefficients, and pair cross brackets also agree.

@@ -1,0 +1,6384 @@
+PDF PAGE 1
+arXiv:2209.00396v4  [math.PR]  19 Jul 2023
+DECA Y OF CORRELA TIONS AND THERMODYNAMIC LIMIT
+FOR THE CIRCULAR RIESZ GAS
+JEANNE BOURSIER
+Abstract. W e investigate the thermodynamic limit of the circular long -range Riesz gas, a system of
+particles interacting pairwise through an inverse power ke rnel. W e show that after rescaling, so that
+the typical spacing of particles is of order 1, the microscop ic point process converges as the number of
+points tends to inﬁnity, to an inﬁnite volume measure Riesz s,β. This convergence result is obtained by
+analyzing gaps correlations, which are shown to decay in pow er-law with exponent 2 − s. Our method
+is based on the analysis of the Helﬀer-Sjöstrand equation in its static form and on various discrete
+elliptic regularity estimates.
+Contents
+1. Introduction 1
+2. Preliminaries 8
+3. The Helﬀer-Sjöstrand equation 12
+4. Decay of correlations for the HS Riesz gas 17
+5. Decay of correlations for the long-range Riesz gas 26
+6. Uniqueness of the limiting measure 49
+Appendix A. Discrete Gagliardo-Nirenberg inequality 56
+Appendix B. Well-posedness results 56
+Appendix C. Local laws for the HS Riesz gas 58
+Appendix D. Local laws for the interpolating measure 60
+References 62
+1. Introduction
+1.1. Setting of the problem.
+The circular Riesz gas. This paper aims to study an interacting particles system on t he circle T :=
+R/ Z, named circular Riesz gas. Given a parameter s> 0, the Riesz s-kernel on T is deﬁned by
+gs :x ∈ T ↦→ lim
+n→∞
+( n∑
+k=− n
+1
+|x +k|s − 2
+1 − sn1− s
+)
+. (1.1)
+Note that for s ∈ (0, 1), gs is the fundamental solution of the fractional Laplace equat ion
+(− ∆)
+1− s
+2 gs =cs(δ 0 − 1), (1.2)
+where ( − ∆)
+1− s
+2 is the fractional Laplacian on T . Let us now endow T with the natural order x<y if
+x =x′ +k,y =y′ +k′ withk,k ′ ∈ Z,x′,y ′ ∈ [0, 1) and x′ <y ′, allowing one to deﬁne the set of ordered
+conﬁgurations
+DN = {XN = (x1,...,x N ) ∈ TN :x2 − x1 <...<x N − x1}.
+Now consider the pairwise energy
+HN :XN ∈ DN ↦→ N − s ∑
+i̸=j
+gs(xi − xj). (1.3)
+1
+
+PDF PAGE 2
+2 JEANNE BOURSIER
+Finally, the circular Riesz gas at inverse temperature β > 0 corresponds to the probability measure
+dPN,β = 1
+ZN,β
+e− β HN (XN )1DN (XN )dXN. (1.4)
+One of the main motivations for studying one-dimensional Ri esz gases stems from random matrix
+theory. The Riesz kernel is indeed given for s = 0, up to a multiplicative constant, by − log |x| on
+R and by − log | sin(x/ 2)| on T. The Gibbs measure associated to such a logarithmic kernel i s called
+1D log-gas, or β -ensemble on R or circular β -ensemble on T. As observed by Dyson [ Dys62], for some
+special values of β , namely β ∈ { 1, 2, 4} , the β -ensemble matches the joint law of the N eigenvalues
+of symmetric/hermitian/symplectic random matrices with i ndependent Gaussian entries. Due to this
+connection, there are numerous probabilistic results on β -ensembles concerning for instance ﬂuctuations
+in the bulk and at the edge, correlations of points and gaps, i nﬁnite volume limit, relaxation of the
+Langevin dynamics, high temperature limit, etc.
+The one-dimensional Riesz gas is therefore a natural extens ion ofβ -ensembles and also a fundamental
+model on which to understand the properties of long-range particles systems. The interaction ( 1.1)
+is indeed long-range when s ∈ (0, 1) while short-range (or hyper-singular, following the ter minology
+of [ BHS19]) when s ∈ (1, +∞ ). The long-range Riesz gas is to this extent a particularly r ich model in
+which interesting phenomena occur, falling outside the cla ssical theory of statistical mechanics. Riesz
+gases, as a family of power-law interacting particles syste ms on Rd, have also received much attention in
+the physics literature. Apart from the log and Coulomb cases , which are ubiquitous in both mathematical
+and physics contexts [ Ser18], Riesz gases have been found out to be natural models in soli d state
+physics, ferroﬂuids, elasticity, see for instance [ Maz11, BBDR05, CDR09, Tor16]. We refer to the nice
+review [ Lew22] which presents a comprehensive account of the literature w ith many open problems.
+The ﬁrst-order asymptotic of long-range Riesz gases is gove rned by a mean-ﬁeld energy functional,
+which prescribes the macroscopic distribution of particle s [ CGZ14, Ser15], corresponding in our circular
+setting ( 1.4) to the uniform measure of the circle. In [ Bou21], we have investigated the ﬂuctuations
+of the system and shown that gaps (large spacing between part icles) ﬂuctuate much less than for i.i.d
+variables and much more than in the log-gas case. We have addi tionally established a central limit the-
+orem for linear statistics with test-functions of very poor regularity, which can for instance be applied
+to characteristic functions of intervals, thus proving rig orously the predictions of the physics litera-
+ture [ Lew22, SKA+21]. The purpose of this very paper is to investigate another cl ass of problems,
+related to the question of decay of correlations. More preci sely we work at proving the optimal decay of
+gap correlations as in [ EY15] which considers this question for β -ensembles and at proving the unique-
+ness of the limiting Gibbs state. We will show that after resc aling, chosen so that the typical spacing
+between particles is of order 1, the microscopic point proce ss converges in the large N limit to a certain
+point process Riesz s,β .
+Inﬁnite volume limit. Let (x1,...,x N ) be distributed according to ( 1.4). Fix a centering point on T,
+sayx = 0, and consider the rescaled point conﬁguration
+CN =
+N∑
+i=1
+δ N xi1|xi|< 1
+4
+.
+With a slight abuse of notation, CN can be seen as a random variable on point conﬁgurations on R.
+Our goal is to prove that the law of CN converges as N tends to inﬁnity, in a suitable topology, to a
+certain point process Riesz s,β . This property is known in statistical physics as the unique ness of the
+Gibbs state and is related to the absence of phase transition s. Note that while the existence of limiting
+point processes is standard [ GZ93, DHLM21], uniqueness is not expected to hold for general interac-
+tions even in dimension one. In the cases of the Gaussian and c ircular β -ensembles, a unique limit
+has been exhibited in the seminal works [ VV09, KVV11] and then shown to be universal in the bulk
+of β -ensembles for a large class of smooth external potentials i n [ BEY12, BEY+14b], see also [ BFG15].
+The limiting measure, called the Sine β process, can be described using a system of coupled stochast ic
+diﬀerential equations [ VV09] or alternatively as the spectrum of an inﬁnite-dimensiona l random opera-
+tor [ VV17]. Note that a weaker form of uniqueness for the limit of an ave raged microscopic uniqueness
+was also given in [ EHL18] via a displacement convexity argument. In contrast to the l og-gas, the one-
+dimensional Coulomb gas, i.e with kernel |x|− s fors = − 1, is not translation invariant in inﬁnite volume
+
+PDF PAGE 3
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 3
+as proved in [ Kun74] and Gibbs states are therefore non-unique. As a consequenc e, the proof of unique-
+ness for the long-range gas should use both convexity argume nts and the decay of the interaction. Let
+us mention that the existence of an accumulation point for th e Coulomb gas in dimension d ≥ 2 has
+been proved in [ AS21], but the uniqueness of such a limit is still a completely ope n problem.
+Decay of the correlations. The question of the uniqueness of the Gibbs state can be tackl ed by
+studying the decay of correlations. Fluctuations of linear statistics being small, the appropriate vari-
+ables to examine in order to establish a decay statement are n ot points but rather gaps. In the case
+of the 1D log-gas, it turns out that the correlation between N (xi+1 − xi) and N (xj+1 − xj ) decays in
+|i − j|− 2, as proved in [ EY15]. In this paper we give a proof of the optimal decay of gap corr elations for
+the circular Riesz gas, which matches the case s = 0 found in [ EY15] as well as the predictions of the
+physics literature [ AM85, Mar88, Lew22]. We will also study the hypersingular case s> 1.
+The Helﬀer-Sjöstrand equation. The ﬂuctuation-dissipation theorem asserts that the ﬂuctu ations at
+equilibrium of any smooth enough function is related to the a ssociated linear response. This yields in par-
+ticular a representation of the covariance between two smoo th functions in terms of the linear response,
+which solves a partial diﬀerential equation named Helﬀer-S jöstrand (H.-S.) equation. This equation
+appeared in [ Sjő93a , Sjő93b , HS94] and was more substantially studied in [ Hel98b, Hel98a, NS97], where
+it was used to get decay of correlations, uniqueness and Log- Sobolev inequalities. Many approaches
+to obtaining decay estimates on solutions in convex cases ha ve been developed in the probability and
+statistical physics literature. For instance, the Feynmac -Kac representation allows one to express the
+solution with respect to a random walk in a random environmen t. This formulation, already pointed out
+it in [ HS94], [NS97], was used for instance in [ BM03,DGI00,GOS01] and in the work [ EY15], which then
+develops a sophisticated homogenization theory for a syste m of coupled partial diﬀerential equations.
+There are also some other methods to directly study the solut ion without the Feynmac-Kac representa-
+tion, which are based on ideas from stochastic homogenizati on of elliptic partial diﬀerential equations
+as for instance in [ NS97, A W22, DW20, Tho23].
+As mentioned above, the strategy of [ EY15] requires one to control random walks in random environ-
+ments, which can be quite technical. The gamble of the presen t paper is to develop a method relying
+only on integration by parts to treat the long-range Riesz gas with s ∈ (0, 1). We will ﬁrst consider as a
+landmark the hypersingular case s >1 and work with a known distortion argument, used for instanc e
+in [Hel98a] or in older techniques to get the decay of eigenfunctions of Schrödinger operators [ CT73]. We
+will then adapt the method to the long-range case using subst antial new inputs including discrete elliptic
+regularity estimates. Let us emphasize that as it stands, ou r method cannot be applied to the logarith-
+mic case since it requires to have nearest-neighbor gaps all bounded by a large N -dependent constant
+O(N ε ), with overwhelming probability. Note that this was also on e of the crucial diﬃculties in [ EY15]
+preventing a simple implementation of the techniques of Caﬀ arelli, Chan and Vasseur [ CCV11].
+1.2. Main results. Our ﬁrst result, which concerns the correlations between ga ps in the long-range
+regime s ∈ (0, 1), is the following:
+Theorem 1 (Decay of the correlations for the long-range Riesz gas) . Lets ∈ (0, 1). For all ε> 0, there
+exists a constant C >0 such that for all ξ,χ : R → R in H 1 and for each i,j ∈ { 1,...,N } ,
+|CovPN,β [ξ (N (xi+1 − xi)),χ (N (xj+1 − xj ))]|
+≤ C(β )(EPN,β [ξ ′(xi)2]
+1
+2 + |ξ ′|∞ e− c(β )dN (i,j )δ
+)(EPN,β [χ ′(xj )2]
+1
+2 + |χ ′|∞ e− c(β )dN (i,j )δ
+) 1
+dN (i,j )2− s− ε .
+(1.5)
+Moreover, for all ε> 0 small enough and any n ∈ { 1,...,N } , there exist i,j such that n
+2 ≤ | i − j| ≤ n
+and
+|CovPN,β [N (xi+1 − xi),N (xj+1 − xj )]| ≥ ε 1
+dN (i,j )2− s. (1.6)
+Note that dN stands for the symmetric distance on { 1,...,N } .
+Theorem 1 is the natural extension of [ EY15], which proves that that for β -ensembles the correlation
+betweenN (xi+1 − xi) and N (xj+1 − xj) decays in |i − j|− 2. The lower bound ( 1.6) is obtained by using a
+
+PDF PAGE 4
+4 JEANNE BOURSIER
+result from [ Bou21] which gives the leading-order asymptotic of the correlati on between N (xi − x1) and
+N (xj − xi). Theorem 1 is in accordance with the expected decay of the truncated cor relation function
+in the mathematical physics and physics literature, see [ Lew22].
+Let us comment on the norms appearing in ( 1.5). Our method is mainly based on L2 arguments for
+a distortion of the Helﬀer-Sjöstrand equation system which is captured by the L2 norm of ξ ′ and χ ′.
+Besides by assuming that ξ ′ and χ ′ are uniformly bounded, we can control the solution on a bad ev ent
+of exponentially small probability by carrying out a maximu m principle argument.
+Theorem 1 should be compared to the decay of correlations in the short- range case, that we quantify
+in the next theorem:
+Theorem 2 (Decay of correlations for the short-range Riesz gas) . Let s ∈ (1, +∞ ). There exists a
+constantκ> 0 such that for all ξ,χ : R → R in H 1 and each i,j ∈ { 1,...,N } , we have
+|CovPN,β [ξ (N (xi+1 − xi)),χ (N (xj+1 − xj ))]|
+≤ C(β )(EPN,β [ξ ′(xi)2]
+1
+2 + |ξ ′|∞ e− c(β )d(i,j )δ
+)(EPN,β [χ ′(xj )2]
+1
+2 + |χ ′|∞ e− c(β )d(i,j )δ
+)
+( 1
+dN (i,j )s− ε + 1
+N
+)
+.
+(1.7)
+Remark 1.1 (Lagrange multiplier and ﬁnite volume correlations) . The factor 1
+N reﬂects correlations
+due to fact that the total number of points in system is ﬁxed, s ee [ EC81, PS17, BGSRS20]. In fact, in
+the framework of Helﬀer-Sjöstrand equations, it can be inte rpreted as a Lagrange multiplier associated
+to the constraint ∑N
+j=1N (xj+1 − xj) = N , with the convention that xN +1 = x1. Interestingly, this
+correction does not appear in the long-range case (see Theor em
+1).
+It would be interesting to establish the rate of decay of corr elations in the case s = 1. We believe that
+for s = 1, the situation is similar to the long-range case and that t he decay is in d(i,j )− 1 logd(i,j )− κ
+for some κ> 0. Our next result concerns the limit as N tends to inﬁnity of the law of the conﬁguration
+N∑
+i=1
+δ N xi1|xi|< 1
+4
+,
+Since PN,β is translation invariant, this is equivalent to centering t he conﬁguration around any point
+x ∈ T. Let Conf( R) be the set of locally ﬁnite, simple point conﬁgurations in R. Given a Borel set
+B ⊂ R, we let NB : Conf( R) → N be the number of points lying in B. The set Conf( R) is endowed with
+theσ -algebra generated by the maps {NB :B Borel} . A point process is then a probability measure on
+Conf(R). Let ( x1,...,x N ) distributed according to PN,β . For all x ∈ T, denote
+QN,β = Law
+( N∑
+i=1
+δ N xi1|xi|< 1
+4
+)
+∈ P (Conf(R)). (1.8)
+Theorem 3 (Uniqueness of the limiting measure ) . Lets ∈ (0, 1) ∪ (1, +∞ ). There exists a translation
+invariant point process Rieszs,β such that the sequence of point processes (QN,β ) converges to Rieszs,β
+in the topology of local convergence: for any bounded, Borel and local test function φ : Conf( R) → R,
+we have
+lim
+N →∞
+EQN,β [φ ] = ERieszs,β [φ ].
+Theorem 3 extends the known convergence results for β -ensembles, see [ BEY12, BEY14a, VV09,
+Leb15, DHLM21]. Additionally we are able to give a quantitative bound on th e convergence of QN,β (x)
+to Riesz s,β for smooth test-functions.
+Theorem 4 (Quantitative convergence). Lets ∈ (0, 1)∪ (1, +∞ ). Let K ∈ { 1,..., N
+2 } andG : RK → R
+in H 1. Let F : XN → DN ↦→ G(N (x2 − x1),...,N (xK − xK− 1)). Fix x ∈ R and let us denote
+z1 = argmin z∈C |zi − x|. Then for all ε> 0, there holds
+EPN,β [F ] = ERieszs,β [G(z2 − z1,...,z K − zK− 1)] +Oβ
+(
+N − s
+2 +ε sup |∇ G|2)
+.
+Combining the CLT of [ Bou21] and the convergence result of Theorem 3, we can additionally prove
+a CLT for gaps and discrepancies under the Riesz s,β process. Let ζ (s,x ) the Hurwitz zeta function (see
+for instance [ Ber72]).
+
+PDF PAGE 5
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 5
+Theorem 5 (Hyperuniformity of the Riesz s,β process). Lets ∈ (0, 1). Under the process Rieszs,β , the
+sequence of random variables
+K − s
+2 (zK − z1 − K)
+converges in distribution to Z ∼ N (0,σ 2) as K tends to inﬁnity with
+σ 2 = 1
+β π
+2s cotan
+(π
+2s
+)
+.
+Moreover, the variance of zK − z1 under Rieszs,β may be expanded as
+VarRiesz(β )[zk − z1] = K sσ 2 +o(K s). (1.9)
+In particular, Theorem 5 implies that the ﬂuctuations of the number of points in a give n interval
+under Riesz s,β is much smaller than for the Poisson process. In the language of [ Tor16], this says that
+Rieszs,β is hyperuniform when s ∈ (0, 1). Our techniques, combined with the method of [ Bou21], can
+also give a central limit theorem for linear statistics unde r the Riesz s,β process, as done in [ Leb18,Lam21]
+for Sine β .
+We conclude this set of results by studying the repulsion of t he Riesz s,β process at 0. We show that
+the probability of having two particles very close to each ot her decays exponentially.
+Proposition 1.1. Fix α ∈ (0, s
+2 ). Let ε ∈ (0, 1). There exist constants c(β ) > 0 and C(β ) > 0
+depending on α and locally uniformly in β such that
+PRieszs,β (|zi+1 − zi| ≥ ε ) ≥ 1 − C(β )e− c(β )ε − α
+.
+1.3. Related questions and perspective.
+DLR equations and number-rigidity. Having proved the existence of an inﬁnite volume limit for
+the circular Riesz gas, a natural question is then to study th e Riesz s,β process from a statistical physics
+perspective. The ﬁrst step in that direction could be to esta blish the Dubroshin-Landford-Ruelle (DLR)
+equations for the Riesz s,β process as was done for the Sine β process in [ DHLM21]. We refer to [ Geo11]
+for a presentation of DLR equations in the context of lattice gases and to [ Der19] in the context of point
+processes. A question of interest is then to study the number -rigidity property, recently put forward
+in [GP17], within the family of Riesz gases. Let us recall that a point process is said to be number-rigid
+whenever given any compact domain of Rd, the knowledge of the exterior determines in a deterministi c
+fashion the number of points inside the domain. Number-rigi dity is a quite surprising phenomenon,
+which has been proved to occur for the 1D log-gas independent ly in [ CN18] and in [ DHLM21] using
+DLR equations. The recent work [ DV21], providing a strategy to rule out number-rigidity, should imply
+together with the local laws of [ Bou21], that the Riesz s,β process is not number-rigid for s ∈ (0, 1). This
+would highlight a diﬀerence between the log-gas and the long -range Riesz gas for which the eﬀective
+energy is short-range.
+Regularity of the free energy. A natural question is to investigate the regularity with res pect to β
+of the inﬁnite volume process Riesz s,β . A way to address this problem is to study the regularity of th e
+free energy of the inﬁnite Riesz gas, which is deﬁned by
+f :β ∈ (0, +∞ ) ↦→ lim
+N →∞
+− 1
+N
+(
+logZN,β − 1
+2βN 2− s
+¨
+gs(x − y)dxdy
+)
+. (1.10)
+The existence of such a limit was obtained in [ LS17] for Riesz gases in arbitrary dimension d ≥ 1 with
+max(0,d − 2) < s < d. In dimension one, one expects that no phase transition occu rs for the circular
+Riesz gas and that the free energy is smooth and even analytic . To prove that f is twice diﬀerentiable,
+a standard approach is to prove that the rescaled variance of the energy under ( 1.4) converges locally
+uniformly in β as N tends to inﬁnity. This should be an easy consequence of Theor ems 1 and 3.
+Higher dimensions. Because the Hamiltonian of the Riesz gas is not convex in dime nsion d ≥ 2, it is
+not clear how to obtain results on correlations. In fact, eve n showing local laws in the long-range setting
+is still open, except in the Coulomb case s =d − 2 tackled in [ LS17,Leb17] culminating into the optimal
+local law result of [ AS21]. Nevertheless, a quantitative estimate on the translatio n invariance of the
+2D Coulomb gas has been recently obtained in the work [ Leb21], building on a Mermin-Wagner’s-type
+argument in the spirit of [ Geo98], see also [ Tho22] for related considerations. It could also be interesting
+
+PDF PAGE 6
+6 JEANNE BOURSIER
+to address this question for the hypersingular Riesz gas [ HLSS18], which is seemingly more tractable
+since it resembles the hard-core model as s becomes large. For the latter, the translation invariance
+of the inﬁnite volume Gibbs measures was shown in [ Ric07] by constructing approximate translations
+avoiding collapses between particles.
+1.4. Outline of the proofs. As mentioned, the heart of the paper is about the analysis of a partial
+diﬀerential equation related to the correlations of the Rie sz gas. Given a typical Gibbs measure d µ =
+e− H(XN )dXN onDN (or RN ), the well-known ﬂuctuation-dissipation relation assert s that the covariance
+between any smooth functions F,G :DN → R may be expressed as
+Covµ [F,G ] = Eµ [∇ φ · ∇ G], (1.11)
+where ∇ φ solves { − ∆ φ + ∇ H · ∇ φ =F − Eµ [F ] on DN
+∇ φ ·⃗ n= 0 on ∂D N, (1.12)
+One may recognize the operator Lµ = − ∆ + ∇ H · ∇ which is the inﬁnitesimal generator of the Markov
+semigroup associated to the Langevin dynamics with energy H. The Helﬀer-Sjöstrand equation then
+corresponds to the equation obtained by diﬀerentiating (
+1.12), which reads
+{
+Aµ
+1 ∇ φ = ∇ F on DN
+∇ φ ·⃗ n= 0 on ∂D N
+where Aµ
+1 := ∇ 2H + Lµ ⊗ IN. (1.13)
+When the Hessian of the energy is uniformly positive-deﬁnit e, then one can derive by integration by
+parts a weighted L2 estimate on |∇ φ |, which yields a Brascamp-Lieb inequality. Note that a maxim um
+principle argument can also give a uniform bound on |∇ φ | as seen in [
+HS94].
+The Hamiltonian we are interested in is rather a (uniformly) convex function of the gaps than of the
+points. Henceforth it is very convenient to rewrite Equatio n ( 1.13) in a new of system of coordinates.
+We deﬁne the change of variables
+GapN :XN ∈ DN ↦→ (N |x2 − x1|,...,N |xN − x1|) ∈ RN
+and work on the polyhedron
+MN := { (y1,...,y N ) ∈ (R+∗ )N :y1 +... +yN =N }.
+Assume that the measure of interest µ can be written d µ =e− Hg◦ GapN (XN )1DN (XN )dXN and that the
+test-functions in ( 1.11) are of the form F = ξ ◦ GapN and G = χ ◦ GapN . Set ν = Gap N #µ . Then
+letting
+Lν = ∇ H g · ∇ − ∆ and Aν
+1 = ∇ 2H g + Lν ⊗ IN,
+one may check that the variance of F under µ can also be represented as
+Covµ [F,G ] = Eν [∇ ψ · ∇ χ ],
+where ∇ ψ solves 
+
+
+Aν
+1 ∇ ψ = ∇ ξ +λ (e1 +... +eN ) on MN
+∇ ψ · (e1 +... +eN ) = 0 on MN
+∇ ψ ·⃗ n= 0 on ∂ MN.
+(1.14)
+Let us mention that the coeﬃcient λ in (
+1.14) is the Lagrange multiplier associated to the linear
+constraint y1 +... +yN = N . Our focus is to understand how ∂ jψ decays when ∇ ξ = e1. A ﬁrst
+important insight comes from expanding the Hessian of the en ergy ( 1.3) in gap coordinates, that we
+denote Hg
+N . Using some rigidity estimates obtained in [ Bou21], one can show that for all ε > 0, there
+exists δ > 0 such that
+PN,β
+(⏐
+⏐
+⏐∂ ijHg
+n − 1
+1 +dN (i,j )s
+⏐
+⏐
+⏐ ≥ 1
+1 +dN (i,j )1+ s
+2 − ε
+)
+≤ Ce − dN (i,j )δ
+,
+where dN stands for the symmetric distance on { 1,...,N } . In other words, the interaction matrix in
+the system ( 1.14) concentrates around a constant long-range matrix. This al ready gives a ﬁrst heuristic
+to understand the decay of gap correlations stated in Theore m 1, which is consistent with the decay of
+h := (− ∆)
+1− s
+2 δ 0 (where ( − ∆)
+1− s
+2 is the fractional Laplacian on R).
+
+PDF PAGE 7
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 7
+Due to the long-range nature of the interaction, the analysi s of ( 1.14) is rather delicate. Let us
+present an idea of the proof in the short-range case s >1 as it will be the model computation for the
+long-range case also. To simplify assume that there exist s> 1,c> 0,C > 0 such that uniformly
+∇ 2Hg
+N ≥ c− 1Id with |∂ ijHg
+N | ≤ C
+dN (i,j )s for each 1 ≤ i,j ≤ N. (1.15)
+The matrix ∇ 2Hg
+N then looks like a diagonally dominant matrix. The idea to obt ain a decay estimate
+on the solution of ( 1.14) is to multiply ∂ iψ bydN (i, 1)α for some well-chosen α> 0. Let L α ∈ M N (R)
+be the distortion matrix
+Lα = diag((1 + dN (j, 1)α )1≤ j≤ N )
+and vdis := L α ∇ ψ which solves
+β (∇ 2Hg
+N +δ Lα)vdis + Lνvdis =e1 +λ Lα (e1 +... +eN ),
+where δ Lα is the commutator
+δ Lα := L α ∇ 2Hg
+N L− 1
+α − ∇ 2Hg
+N. (1.16)
+A ﬁrst key is that the more ∇ 2Hg
+N is diagonal, the more it will commute with diagonal matrices . In fact
+one can check that for α<s − 1
+2 , the commutator ( 1.16) is small compared to the identity, in the sense
+of quadratic forms. By integration by parts and using the con vexity of Hg
+N , this entails an L2 estimate
+on ψ dis and therefore a hint on the global decay of ∇ ψ . This idea of studying a distorted vector-ﬁeld
+is well known in statistical physics, see for instance [ Hel98a, CT73]. By projecting ( 1.14) in a smaller
+window we can then improve through a bootstrap argument this ﬁrst decay estimate.
+In the long-range regime s ∈ (0, 1), the above argument no longer works. A natural way of proce eding
+is to factorize Equation ( 1.14) around the ground state by multiplying the system by a matri x A close to
+the inverse of the Riesz matrix HN,s := ( 1i̸=j
+dN (i,j )s )1≤ i,j ≤ N . A simple construction can ensure that A∇ 2Hg
+n
+remains uniformly positive-deﬁnite but the drawback of the operation is that the diﬀerential term Dψ
+can no longer be controlled. The main novelty of the paper is a method based on the comparison of the
+two distorted norms
+Eν
+[ n∑
+i=1
+dN (i, 1)2α (∂ iψ )2
+]
+and Eν
+[ n∑
+i=1
+dN (i, 1)2γ |∇ (∂ iψ )|2
+]
+, (1.17)
+for well-chosen constants α > 0 and γ > 0. The ﬁrst step is to derive an elliptic regularity estimate
+on the solution of ( 1.14). We prove that the solution has a discrete fractional primi tive of order 3
+2 − s
+in L2 (up to some nκε multiplicative factor) provided ψ i decays fast enough. In a second step we will
+control |Lγ ∇ 2ψ | by |L γ
+2 + 1
+4
+∇ ψ | (up to a residual term that we do not comment here). The proof u ses
+the distortion argument presented in the short-range case, the elliptic regularity estimate and a discrete
+Gagliardo-Nirenberg inequality. In a third step we control |Lα ∇ ψ | by |Lα − 1− s
+2
+∇ 2ψ | by implementing
+the factorization trick aforementioned. Combining these t wo inequalities we deduce that for α = 3
+2 − s
+andγ = 1 − s
+2 , each of the terms in ( 1.17) are small. This gives the optimal global decay on the soluti on
+of ( 1.14), which we then seek to localize.
+The proof of localization, which allows one to go from ( 1.17) to an estimate on a single ∂ iψ , is also
+quite delicate. Fix an index j ∈ { 1,...,N } and let
+J =
+{
+i ∈ { 1,...,N } :dN (i,j ) ≤ 1
+2dN (1,j )
+}
+.
+Projecting Equation ( 1.14) on the window J makes an exterior ﬁeld appear, which takes the form
+Vl := − β
+∑
+i∈ J c
+∂ ilHg
+N∂ iψ, l ∈ J. (1.18)
+We then break V into the sum of an almost constant ﬁeld V (1) (looking like V j
+∑
+l∈ Jel) and a smaller
+ﬁeld V (2). A key is that the equation ( 1.14) associated to a vector-ﬁeld proportional to ( e1 +... +eN )
+is much easier to analyze. It indeed admits a mean-ﬁeld appro ximation, quite similar to the mean-ﬁeld
+approximation of ( 1.13) when F is a linear statistics, see [ Bou21]. We then bootstrap the decay of
+solutions of ( 1.14). Applying the induction hypothesis to bound ( 1.18) and to bound the decay of ( 1.14)
+in the window J, one ﬁnally gets after a ﬁnite number of iterations, the opti mal result of Theorem 1.
+
+PDF PAGE 8
+8 JEANNE BOURSIER
+The uniqueness of the limiting point process stated in Theor em 3 is then an application of our result
+on the decay of correlations (in fact stated for slightly mor e general systems than ( 1.14)). As the
+existence of an accumulation point of ( 1.8) in the local topology is standard, the problem of convergen ce
+of the microscopic process can be rephrased into a uniquenes s question.
+Our aim is to prove that the sequence ( 1.8) deﬁnes, in some informal sense, a Cauchy sequence. To
+do this, we let I = { 1,...,n } and freeze the points with index in I c: given N,N ′ ≫ n, one seeks to
+compare the conditional measures ν y
+n := Pg
+N,β (· | y) and ν z
+n = Pg
+N ′ ,β (· | z) where y ∈ RN − n, z ∈ RN ′ − n
+are two exterior conﬁgurations verifying N − (y1 +... +yN − n) = N ′ − (z1 +... +zN ′ − n). The strategy
+is then to deﬁne a continuous path ν (t) from ν y
+n to ν z
+n by linear interpolation of the exterior energies.
+Let F be a test-function F : Rn → R depending only on the coordinates xi for n
+4 ≤ i ≤ 3n
+4 . One may
+write
+Eν zn [F ] − Eν y
+n [F ] = β
+ˆ 1
+0
+Covν (t)[∇ F, ∇ E(t)]dt, (1.19)
+where E(t) corresponds to some exterior energy term. By applying the d ecay of correlations result to
+the measure ν (t), we ﬁnd that ( 1.19) is small, which easily concludes the proof of Theorem 3.
+1.5. Organization of the paper.
+• Section 2 records various preliminary results, such as rigidity esti mates on circular Riesz gases
+and controls on the discrete fractional Laplacian.
+• Section 3 focuses on the well-posedness of the Helﬀer-Sjöstrand equa tion and states some of its
+basic properties.
+• In Section 4 we introduce our distortion techniques to prove the decay of correlations in the
+long-range case.
+• Section 5 is the heart of the paper. It develops a more involved method t o treat the decay of
+correlations in the long-range setting.
+• Section 6 concludes the proof of uniqueness of the limiting measure of Theorem 3.
+1.6. Notation. We let dN be the symmetric distance on { 1,...,N } deﬁned for each i,j ∈ { 1,...,N }
+by
+dN (i,j ) = min( |j − i|,N − | j − i|).
+Forx ∈ Rn, we let |x| be the Euclidian norm of x and for M ∈ M n(R), ∥M ∥ be the Hilbert-Schmidt
+norm of M , i.e
+∥M ∥ = sup
+v∈ Rn\{ 0}
+|Mv |
+|v| .
+We let (e1,...,e N ) be the standard orthonormal basis of RN .
+We either use the notation ∇ 2f for the Hessian of a real-valued function f : Rn → R.
+ForA,B ≥ 0, we write A ≤ C(β )B or A =Oβ (B) whenever there exists a constant C ∈ R+ locally
+uniform in β (which might depend on s) such that A ≤ CB .
+Acknowledgments. The author would like to thank Sylvia Serfaty, Thomas Leblé a nd Angel Alastuey
+for many helpful remarks on this work. The author is supporte d by a grant from the “Fondation CFM
+pour la Recherche” and by a grant from the ERC Project LDRAM, E RC-2019-ADG Project 884584.
+2. Preliminaries
+We begin by recording some useful preliminary results that w ill be used throughout the paper.
+2.1. Discrepancy estimates. One shall ﬁrst state a control on the probability of having tw o particles
+very close to each other. According to [ Bou21, Lem. 4.5], the following holds:
+Lemma 2.1. Lets ∈ (0, 1) andα ∈ (0, s
+2 ). There exist constants C(β )> 0 andc(β )> 0 locally uniform
+in β such that for each i ∈ { 1,...,N } and ε> 0,
+PN,β (N (xi+1 − xi) ≤ ε ) ≤ C(β )e− c(β )ε − α
+.
+In addition, in view of [ Bou21, Th. 1], the ﬂuctuations of large gaps satisfy the following estimate:
+
+PDF PAGE 9
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 9
+Theorem 6 (Near-optimal rigidity) . Lets ∈ (0, 1). There exists a constant C(β ) locally uniform in β
+such that for all ε> 0, setting δ = ε
+4(s+2) , for each i ∈ { 1,...,N } and 1 ≤ k ≤ N
+2 , we have
+PN,β (|N (xi+k − xi) − k| ≥ k
+s
+2 +ε ) ≤ C(β )e− c(β )kδ
+.
+Let us highlight that the variance of N (xi+k − xi) can in fact be shown to be of order ks, together
+with a central limit theorem, see [ Bou21, Cor. 1.1].
+2.2. F ractional Laplacian on the circle. In this subsection we justify the expression of the funda-
+mental solution of the fractional Laplace equation on the ci rcle ( 1.2). Recall the Hurwitz zeta func-
+tion [ Apo97].
+Lemma 2.2 (Fundamental solution). Letgs be the solution of ( 1.2). Let s ∈ (0, 1). For all x ∈ T, we
+have
+gs(x) = ζ (s,x ) +ζ (s, 1 − x) = lim
+n→∞
+( n∑
+k=− n
+1
+|k +x|s − 2
+1 − sn1− s
+)
+. (2.1)
+Moreover for all p ≥ 1 and all x ∈ T, we have
+g(p)
+s (x) = ( − 1)ps · · ·(s +p − 1)
+∑
+k∈ Z
+1
+|x +k|s+p.
+Proof. We only sketch the main arguments and refer to [ Bou21, Sec. 2] for a more detailed proof. Using
+the Fourier characterization of the fractional Laplacian a nd applying the formula
+λ − 1− s
+2 = 1
+Γ( 1− s
+2 )
+ˆ ∞
+0
+e− λt dt
+t1− 1− s
+2
+,
+valid for all λ> 0, one can express gs as
+gs(x) = cs
+Γ( 1− s
+2 )
+ˆ ∞
+0
+(Wt(x) − 1) dt
+t
+1+s
+2
+,
+where Wt is the heat kernel on T, namely
+Wt(x) = 1
+2π
+∑
+k∈ Z
+e− t|k|2
+eikx = 1
+√
+4πt
+∑
+k∈ Z
+e− | x− k| 2
+4t .
+The proof of ( 2.1) then follows from Fubini’s theorem which allows one to inve rt the order of integration
+and summation. □
+The kernel gs can be identiﬁed with a periodic function on R and a crucial consequence of ( 2.1) is
+that the restriction of this function to (0 , 1) is convex, thus allowing the use of various consequences o f
+convexity, such as concentration and functional inequalit ies.
+2.3. Discrete and semi-discrete F ourier transforms. The Fourier and inverse Fourier transforms
+on Z/N Z are deﬁned by
+Fd(f )(θ ) =
+N − 1∑
+n=0
+f (n)einθ, for f : { 1,...,N } → R, θ = 2πk
+N , k ∈ { 0,...,N − 1}, (2.2)
+F − 1
+d (φ )(n) = 1
+N
+N − 1∑
+k=0
+φ
+(2πk
+N
+)
+e
+− 2iπk
+N dθ, for φ : { 2kπ/N : 0 ≤ k ≤ N − 1} → R, n ∈ { 1,...,N }.
+(2.3)
+Recall that for all f deﬁned on { 1,...,N } ,f = F − 1
+d ◦ F d(f ).
+Besides if f : Z → R is in L2, then the semi-discrete Fourier of Z deﬁned by
+FZ(f )(θ ) =
++∞∑
+n=0
+f (n)einθ, θ ∈ [0, 2π ],
+belongs to L2([0, 2π ]) and one can recover f by the Fourier inverse transform
+f = F − 1
+Z (FZ(f )),
+
+PDF PAGE 10
+10 JEANNE BOURSIER
+where
+F − 1
+Z (φ )(n) = 1
+2π
+ˆ 2π
+0
+φ (θ )e− inθ dθ, for φ ∈ L2([0, 2π ]), n ∈ Z.
+2.4. Decay of the inverse Riesz kernel. In this subsection one studies the decay of the inverse of
+the periodic Riesz kernel on { 1,...,N } deﬁned by
+gN,s :k ∈ Z/N Z ↦→ lim
+n→∞
+( n∑
+m=− n
+1
+|k +mn|s − 2
+1 − sn1− s
+)
+1k̸=0. (2.4)
+Denote
+HN,s = (gN,s (j − i))1≤ i,j ≤ N ∈ M N (R). (2.5)
+Let also g− 1
+N,s : { 1,...,N } → R be the inverse of the kernel gN,s so that
+H− 1
+N,s = (g− 1
+N,s (j − i))1≤ i,j ≤ N.
+Lemma 2.3 (Decay of the inverse Riesz matrix) . There exists a constant C > 0 such that for each
+1 ≤ i,j ≤ N ,
+|(H− 1
+N,s )i,j | ≤ C
+1 +d(j,i )2− s. (2.6)
+In addition we have
+⏐
+⏐
+⏐
+N∑
+i=1
+(H− 1
+N,s )i, 1
+⏐
+⏐
+⏐ ≤ C
+N 1− s. (2.7)
+Let us observe that ( 2.6) is consistent with the decay of the fundamental solution of the fractional
+Laplacian. Indeed the coeﬃcient ( HN,s )− 1
+i, 1 is given by the i-th coordinate of the solution v of the
+convolution equationv ∗gN,s =δ (1) on Z/N Z. The continuous counterpart of this equation is gs ∗ψ =δ 0
+on the real line and it is well-known that the solution ψ decays in |x|− (2− s) near the origin.
+Proof.
+Step 1: the aliasing formula. Letψ =g− 1
+N,s , solution of the convolution equation gN,s ∗ ψ =δ (1) on
+{ 1,...,N } . One can express ψ as the solution of
+Fd(ψ )Fd(gN,s ) = 1,
+where Fd stands for the discrete Fourier transform on Z/N Z, as deﬁned in (
+2.2). For each k ∈ { 0,...,N −
+1} , let θ k = 2πk
+N . We will prove that the Fourier transform of Fd(gN,s ) is non-vanishing. One can thus
+consider a function h ∈ L2([0, 2π ]), which interpolates FZ(φ ): for all θ ∈ { θ 0,...,θ N − 1} ,
+h(θ ) = 1
+Fd(gN,s )(θ ).
+The function h shall be speciﬁed later. Let φ : Z → R in L2 such that
+FZ(φ ) = h. (2.8)
+The point is that one can recover ψ from φ : for each 1 ≤ n ≤ N , there holds
+ψ (n) =
+∞∑
+k=0
+φ (n +kN ). (2.9)
+The discrete Fourier transform of the function in the right- hand side of the last display is indeed given
+for all θ ∈ { θ 0,...,θ N − 1} by
+N − 1∑
+n=0
+∞∑
+k=0
+φ (n +kN )einθ =
+N − 1∑
+n=0
+∞∑
+k=0
+φ (n +kN )ei(n+kN )θ
+=
+∞∑
+n=0
+φ (n)einθ =h(θ ) = Fd(ψ )(θ ).
+By Fourier inversion, this concludes the proof of the aliasi ng formula (
+2.9).
+
+PDF PAGE 11
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 11
+Step 2: discrete and semi-discrete F ourier transform of gN,s . Let us now compute the discrete
+Fourier transform of gN,s on Z/N Z. First one can observe that for each 0 ≤ k ≤ N − 1,
+Fd(gN,s )(θ k) =
++∞∑
+n=1
+1
+nseinθ k +
++∞∑
+n=1
+1
+nse− inθ k. (2.10)
+Let us emphasize that the above identity is only true for θ ∈ { θ 0,...,θ N − 1} . The above sum is related
+to a well-known function called periodic zeta function [Apo97], deﬁned by
+F (x,s ) =
+∞∑
+n=1
+e2iπnx
+ns ,
+where s ∈ C and x ∈ R satisfy Re(s) > 1 if x is an integer and Re( s)> 0 otherwise. One can express
+(2.10) as
+Fd(gN,s )(θ k) = F (θ k
+2π ,s ) +F (− θ k
+2π ,s ), for each 0 ≤ k ≤ N − 1.
+Also, when Re(s)> 0 and 0 <x< 1, it is known, see [ Apo97], that
+F (x,s ) = Γ(1 − s)
+(2π )1− s
+(
+eiπ 1− s
+2 Γ(1 − s,x ) +e− iπ 1− s
+2 Γ(1 − s, 1 − x)
+)
+.
+Consequently we have the identity Fd(gN,s ) = S on {θ 0,...,θ N − 1} , where
+S(θ ) = 2sΓ(1 − s)
+π 1− s cos(π (1 − s)
+2 )
+(
+Γ(1 − s, θ
+2π ) + Γ(1 − s, 1 − θ
+2π )
+)
+. (2.11)
+One can observe that there exists a constant c> 0 such that for all θ ∈ [0, 2π ],
+S(θ ) ≥ c
+|θ |1− s. (2.12)
+Step 3: conclusion. We have shown that the discrete Fourier transform of gN,s on Z/N Z does not
+vanish, thus allowing to use ( 2.9). We now specify h =S. Let us deﬁne
+φ :n ∈ Z ↦→
+ˆ 1
+0
+S(θ )e− inθ dθ.
+One can check using ( 2.10) that
+|φ (n)| ≤ C
+n2− s.
+Since φ ∈ L2, by Fourier inversion, one can observe that Fd(φ ) = S. Consequently, applying ( 2.9), we
+ﬁnd that there exists a constant C >0 such that for each 1 ≤ n ≤ N ,
+|ψ (n)| ≤ C
+∞∑
+k=0
+1
+|n +kN |2− s ≤ C
+n2− s,
+which proves ( 2.6). □
+Remark 2.1 (Discrete fractional primitive) . In view of ( 2.11) the convolution of f : Z/N Z → R with
+gN,s formally corresponds to a fractional primitive of f of order 1 − s.
+2.5. Second derivative of the Riesz kernel. One may also introduce the second derivative of the
+kernelgN,s denotedg′′
+N,s : Z/N Z → R, given for all UN ∈ RN by the equality
+∑
+i,k
+gN,s (i − k)uiuk =
+∑
+i,k
+g′′
+N,s (i − k)(ui +... +uk)2.
+More precisely, we let
+g′′
+N,s :k ∈ Z/N Z ↦→ gN,s (k + 1) +gN,s (k − 1) − 2gN,s (k). (2.13)
+Note that g′′
+N,s ≥ 0 with
+g′′
+N,s (k) = O
+( 1
+dN (k, 1)2+s
+)
+.
+
+PDF PAGE 12
+12 JEANNE BOURSIER
+Withdrawing the pairs ( i,k ) such that dN (i,k ) ≤ K0 for a certain K0 ≥ 1 in the sum ( 2.13) provides a
+way to deﬁne, starting from gN,s , a non-negative kernel truncated at K0. Less intrinsic is the derivative
+of order 1 of gN,s that we nevertheless deﬁne for the sequel as
+g′
+N,s :i ∈ Z/N Z ↦→ gN,s (i + 1) − gN,s (i). (2.14)
+3. The Helffer-Sjöstrand equation
+In this section we introduce some standard results on Helﬀer -Sjöstrand equations. We ﬁrst recall
+basic properties valid for a certain class of convex Gibbs me asures. We then study an important change
+of variables and rewrite the Helﬀer-Sjöstrand in gap coordi nates. For the class of Gibbs measures we
+are interested in, the energy is a convex function of the gaps . This allows one to derive a maximum
+principle for solutions, which will be a central tool in the r est of the paper.
+3.1. Well-posedness. We start by explaining the principle of Helﬀer-Sjöstrand re presentation and
+give some existence and uniqueness results. The subsection is similar to [ Bou21] and follows partly the
+presentation of [ A W22]. Let µ be a probability measure on DN in the form
+dµ =e− H(XN )1DN (XN )dXN,
+where H :DN → R is a smooth and convex function. Given a smooth test-functio n F :DN → R, we
+wish to rewrite its variance in a convenient and eﬀective way . Let us recall the integration by parts
+formula for µ . Let Lµ be the operator acting on C∞ (DN, R) given by
+Lµ = ∇ H · ∇ − ∆ ,
+where ∇ and ∆ are the standard gradient and Laplace operators on TN . The operator Lµ is the
+generator of the Langevin dynamics associated to the energy H of which µ is the unique invariant
+measure. By integration by parts under µ , for any functions φ,ψ ∈ C ∞ (DN, R) such that ∇ φ ·⃗ n= 0 on
+∂D N , we can write
+Eµ [ψ Lµ φ ] = Eµ [∇ ψ · ∇ φ ]. (3.1)
+This formula may be proved by integration by parts under the L ebesgue measure on DN .
+Assume that the Poisson equation{ Lµ φ =F − Eµ [F ] on DN
+∇ φ ·⃗ n= 0 on ∂D N
+(3.2)
+admits a weak solution in a certain functional space. Then, b y ( 3.1), the variance of F under µ can be
+expressed as
+Varµ [F ] = Eµ [∇ F · ∇ φ ].
+The above identity is called the Helﬀer-Sjöstrand represen tation formula. Let us diﬀerentiate ( 3.2).
+Formally, for all φ ∈ C ∞ (DN, R), we have
+∇L µ φ =A1∇ φ,
+where Aµ
+1 is the so-called Helﬀer-Sjöstrand operator given by
+Aµ
+1 = ∇ 2H + Lµ ⊗ IN,
+with Lµ ⊗ IN acting diagonally on L2({ 1,...,N }, C∞ (DN, R)). Therefore the solution ∇ φ of (
+3.2)
+formally satisﬁes {
+Aµ
+1 ∇ φ = ∇ F on DN
+∇ φ ·⃗ n= 0 on ∂D N. (3.3)
+This partial diﬀerential equation is called the Helﬀer-Sjö strand equation. Let us now introduce the
+appropriate functional spaces to make these derivations ri gorous. Let us deﬁne the norm
+∥F ∥H1(µ ) = Eµ [F 2]
+1
+2 + Eµ [|∇ F |2]
+1
+2.
+Let H 1(µ ) be the completion of C∞ (DN ) with respect to the norm ∥ · ∥H1(µ ). Let also deﬁne the norm
+∥F ∥H− 1(µ ) = sup{| Eµ [FG ]| :G ∈ H 1(µ ), ∥G∥H1(µ ) ≤ 1}.
+We denote H − 1(µ ) the dual of H 1(µ ), that is the completion of C∞ (DN ) with respect to the norm
+∥ · ∥ H− 1(µ ). We wish to prove that under mild assumptions on F , Equation ( 3.3) is well-posed, in the
+sense of L2({ 1,...,N },H − 1(µ )). Let us now make the following assumptions on µ :
+
+PDF PAGE 13
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 13
+Assumptions 3.1. Assume that µ is a probability measure on DN written
+dµ =e− H(XN )1DN (XN )dXN,
+with H :DN → R in the form
+H :XN ↦→
+∑
+i̸=j
+χ (|xi − xj|),
+with χ : R+∗ → R satisfying
+χ ∈ C 2(R+∗, R) and χ ′′ ≥ c> 0.
+In our applications, χ is often given by gN,s or a variant of it and the density of the measure µ
+is not necessarily bounded from below with respect to the Leb esgue measure on DN . Additionally,
+the measure µ does not satisﬁes a uniform Poincaré inequality. Due to thes e limitations, to prove the
+well-posedness of ( 3.3), we further assume that F is a function of the gaps. We denote
+Π : XN ∈ DN ↦→ (x2 − x1,...,x N − x1) ∈ TN − 1. (3.4)
+We also let µ ′ be the push-forward of µ by the map Π:
+µ ′ =µ ◦ Π − 1.
+We can now state the following well-posedness result:
+Proposition 3.1 (Existence and representation) . Let µ satisfying Assumptions 3.1. Let F ∈ H 1(µ ).
+Assume that F is in the form F = G ◦ Π , G ∈ H 1(µ ′) or that µ ≥ c >0. Then there exists a unique
+∇ φ ∈ L2({ 1,...,N },H 1(µ )) such that
+{
+Aµ
+1 ∇ φ = ∇ F on DN
+∇ φ ·⃗ n= 0 on ∂D N, (3.5)
+with the ﬁrst identity being, for each coordinate, an identi ty on elements of H − 1(µ ). Moreover the
+solution of (
+3.5) is the unique minimizer of the functional
+∇ φ ↦→ Eµ [∇ φ · ∇ 2H∇ φ + |∇ 2φ |2 − 2∇ F · ∇ φ ],
+over maps ∇ φ ∈ L2({ 1,...,N },H 1(µ )). The variance of F may be represented as
+Varµ [F ] = Eµ [∇ φ · ∇ F ] (3.6)
+and the covariance between F any function G ∈ H 1(µ ) as
+Covµ [F,G ] = Eµ [∇ φ · ∇ G].
+The identity ( 3.6) is called the Helﬀer-Sjöstrand formula. The proof of Propo sition 3.1 is postponed
+to the Appendix, see Section B.
+Remark 3.2 (On the boundary condition) . The boundary condition ∇ φ ·⃗ n= 0 on ∂D N means that if
+xi =xj, then ∂ iφ (XN ) = ∂ jφ (XN ).
+Remark 3.3 (Link to the Monge-Ampère equation) . We formally discuss the link between ( 3.5) and
+the Monge-Ampère equation. Let F : DN → R be a smooth test-function. For all t ≥ 0, consider the
+measure dµ t = etF
+Eµ[etF ] dµ . According to well-known optimal transportation results [ Bre91], the measure
+µ t can be written µ t =µ ◦ ∇ Φ − 1
+t with Φ t :DN → R solution of the Monge-Ampère equation
+− log detD∇ Φ t +H ◦ ∇ Φ t − H =tF − log Eµ [etF ].
+Formally, since ν (t) = µ +tν +o(t), one expects that Φ t = Id +tφ +o(t). Linearizing the above equation
+in t formally gives
+Lµ φ =F − Eµ [F ],
+which is the Poisson equation ( 3.2). The boundary condition in ( 3.5) reﬂects the fact that for all t ≥ 0,
+∇ Φ t maps DN on itself.
+
+PDF PAGE 14
+14 JEANNE BOURSIER
+Proposition 3.2. Letµ satisfying Assumptions 3.1. Let v ∈ L2({ 1,...,N },H − 1(µ ′)) such that
+v · (e1 +... +eN ) = 0.
+There exists a unique ψ ∈ L2({ 1,...,N },H 1(µ )) such that
+{
+Aµ
+1ψ =v on DN
+ψ ·⃗ n= 0 on ∂D N. (3.7)
+In addition if v = ∇ F ∈ L2({ 1,...,N },H − 1(µ ′)), then the solution of (
+3.7) is given by the solution of
+(3.5).
+The proof of Proposition 3.2 is also given in the Appendix.
+3.2. Change of coordinates. In the sequel we will study the decay of correlations in gap co ordinates.
+Deﬁne the map
+GapN :XN ∈ DN ↦→ (N (x2 − x1),...,N (x1 − xN )) ∈ M N,
+where
+MN = Gap N (DN ) = {YN ∈ (R+∗ )N :y1 +... +yN }.
+Since MN is not an open subset of DN , Proposition 3.1 should be slightly adapted. Let µ satisfying
+Assumptions 3.1 and H g : MN → R be such that
+H =H g ◦ GapN.
+Deﬁne the generator acting on C∞ (MN, R),
+Lν = ∇ H g · ∇ − ∆ ,
+with ∇ and ∆ the standard gradient and Laplace operator on MN . Also let Aν
+1 be the Helﬀer-Sjöstrand
+operator acting on L2({ 1,...,N }, C∞ (MN, R)):
+Aν
+1 = ∇ 2H g + Lν ⊗ IN.
+LetF :DN → R in the form F =G ◦ GapN withG : RN → R smooth. Let us rewrite Equation (
+3.5)
+in gap coordinates. One can expect that the solution ∇ φ of ( 3.5) can be factorized into φ =ψ ◦ GapN
+with ∇ ψ ∈ L2({ 1,...,N },H 1(ν )). Let us derive some formal computation to conjecture the e quation
+satisﬁed by ∇ ψ . For all t ≥ 0, let d ν t = etG
+Eν [etG] dν . In view of Remark 3.3, we wish to ﬁnd a map
+∇ ψ ∈ L1({ 1,...,N },H 1(ν )) such that in a certain sense,
+ν ◦ (Id +t∇ ψ ) = ν t +o(t). (3.8)
+Since ν and ν t are both measures on MN , one can observe that ∑N
+i=1∂ iψ = 0. It is standard the the
+Gibbs measure ν t is the minimizer of the functional
+ν ∈ P (MN ) ↦→ Eν [H g +tG] + Ent(P ),
+where Ent stands for the entropy on MN . Equation (
+3.8) is compatible with the variational character-
+ization if ∇ ψ minimizes
+∇ ψ ↦→ Eν [∇ ψ · ∇ 2Hg∇ ψ + |∇ 2ψ |2 − 2∇ G · ∇ ψ ],
+over maps ∇ ψ ∈ L2({ 1,...,N },H 1(ν )) such that ∑N
+i=1∂ iψ = 0 and ∇ ψ ·⃗ n= 0 on ∂ MN . The Lagrange
+equation associated for the minimality of ∇ ψ reads
+Aν
+1 ∇ ψ = ∇ G +λ (e1 +... +eN ),
+where λ : MN → R is a smooth function. We now state this result in the followin g proposition:
+Proposition 3.3. Let µ satisfying Assumptions
+3.1. Let F ∈ H 1(µ ) in the form F =G ◦ GapN with
+G ∈ H 1(ν ). There exists a unique ∇ ψ ∈ L2({ 1,...,N },H 1(ν )) solution of
+
+
+
+Aν
+1∇ ψ = ∇ G +λ (e1 +... +eN ) on MN
+∇ ψ · (e1 +... +eN ) = 0 on MN
+∇ ψ ·⃗ n= 0 on ∂ MN,
+(3.9)
+with λ satisfying
+λ = 1
+N (e1 +... +eN ) · (∇ 2H g∇ ψ − ∇ G). (3.10)
+
+PDF PAGE 15
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 15
+The variance of F can be represented as
+Varµ [F ] = Eν [∇ G · ∇ ψ ].
+Furthermore, ∇ ψ is the unique minimizer of
+∇ ψ ↦→ Eν [∇ ψ · ∇ 2H g∇ ψ + |∇ 2ψ |2 − 2∇ G · ∇ ψ ],
+over maps ∇ ψ ∈ L2({ 1,...,N },H 1(ν )) such that ∇ ψ · (e1 +... +eN ) = 0 .
+The proof of Proposition 3.3 is postponed to the Appendix, see Section B.
+Remark 3.4. There are several manners to factorize the energy ( 1.3) since we are working on the
+circle. We choose the more natural one and set
+Hg
+N :YN ∈ M N ↦→ N − s
+N∑
+i=1
+N/ 2∑
+k=1
+gN,s (yi +...y i+k)(21k̸=N/ 2 + 1k=N/ 2).
+One may check that for each i ∈ { 1,...,N } and YN ∈ M N ,
+∂ iHg
+N (YN ) =
+N/ 2∑
+k=1
+∑
+l:i− k<l≤ i
+N − (1+s)g′
+s
+(yi +... +yi+l
+N
+)
+(21k̸=N/ 2 + 1k=N/ 2) (3.11)
+and for each i,j ∈ { 1,...,N } and YN ∈ M N ,
+∂ ijHg
+N (YN ) =
+∑
+1≤ k,k ′ ≤ N/ 2
+|k− k′ |≤ N/ 2
+N − (1+s)g′′
+N,s
+(yi− k +... +yj+k′
+N
+)
+(21|k− k′ |̸=N/ 2 + 1|k− k′ |=N/ 2). (3.12)
+Recall that under the Gibbs measure ( 1.4), for large k, the spacing N (xi+k − xi) concentrates around
+k. The expression ( 3.12) then tells us that the Hessian of the energy in gap coordinat es concentrates
+around a constant matrix with oﬀ-diagonal entries decaying in d(i,j )− s, similar to ( 2.5).
+3.3. The Brascamp-Lieb inequality . We now recall the Brascamp-Lieb inequality, a basic concen-
+tration inequality for strictly convex log-concave measur es [ BL02]. In our context, the measure µ is
+not strictly log-concave, but its pushforward ν is, therefore allowing one to bound the variance of any
+smooth function of the gaps in the following way:
+Lemma 3.4. Let A ⊂ DN be a convex domain with a piecewise smooth boundary. Let F =G ◦ GapN
+with G ∈ H 1(ν ). There holds
+Varµ [F | A] ≤ Eµ [∇ F · (∇ 2H)− 1∇ F | A].
+3.4. Localization. In this subsection we record a crucial convexity Lemma, whic h is due to Brascamp,
+see [
+BL02]. This lemma is based on the Brascamp-Lieb inequality for lo g-concave measures on DN ,
+originally derived in [ BL76] on RN , see also Lemma 3.4.
+Lemma 3.5. Let µ be a measure on DN in the form dµ = e− HdXN , with H smooth enough. On
+DN let us introduce the coordinates x = (x1,...,x n) and y = (xn+1,...,x N ). Assume that H may be
+written in the form H(x,y ) = H1(x) +H2(x,y ) with ∇ 2H2 non-negative. Let ˜µ be the push forward of
+µ by the map XN ↦→ (x1,...,x n). Then, the measure ˜µ may be written in the form d˜µ (x) = e− ˜H(x)dx,
+with
+˜H(x) = − log
+ˆ
+e− H(x,y )dy
+and ˜H satisﬁes
+∇ 2 ˜H ≥ ∇ 2H1.
+Moreover, we have
+∂ i ˜H(x) = ∂ iH(x) − Eµ (·| x)[∂ iH2], for each 1 ≤ i ≤ n, x ∈ Dn, (3.13)
+∂ ij ˜H(x) = ∂ ijH(x) − Covµ (·| x)[∂ iH2,∂ jH2], for each 1 ≤ i,j ≤ n, x ∈ Dn. (3.14)
+
+PDF PAGE 16
+16 JEANNE BOURSIER
+3.5. Maximum principle. In this subsection we derive a useful maximum principle, whi ch allows one
+to bound the supremum of the L2 norm of the solution in presence of a uniformly convex Hamilt onian.
+This maximum principle is fairly standard on RN , see for instance [ HS94, Sec. 10]. We adapt the proof
+to make it work on DN and MN . A more subtle analysis could perhaps permit to treat genera l convex
+domains.
+Proposition 3.6. Let µ satisfying Assumptions
+3.1 and ν = Gap N #µ . Assume additionally that
+limx→ 0χ ′(x) = −∞ . Let M : MN → S N (R) be a measurable map. Assume that there exists a constant
+c> 0 such that for all UN ∈ RN ,
+UN · MUN ≥ c|UN |2. (3.15)
+Letv ∈ L2({ 1,...,N },H 1(ν )) and ψ ∈ L2({ 1,...,N },H 1(ν )) be the solution of
+{
+Mψ + (Lν ⊗ IN )ψ =v on MN
+ψ ·⃗ n= 0 on ∂ MN. (3.16)
+Then ψ satisﬁes the following uniform estimate:
+sup |ψ | ≤ c− 1 sup |v|. (3.17)
+We give a proof of Proposition 3.6 via stochastic ﬂow following the approach of [ CFG22, Th. 2.1].
+Proof. We wish to give a Feynman-Kac representation for solutions o f ( 3.16). Let
+X x
+t =x −
+ˆ t
+0
+∇ H g(X x
+s )ds +
+√
+2dBt.
+Note that since lim x→ 0ξ ′(x) = −∞ , the dynamics is conservative: for all x ∈ DN , the process X x
+t
+does not hit the boundary of MN a.s. Let us denote A the operator from L2({ 1,...,N },H 1(ν )) to
+L2({ 1,...,N },H − 1(ν ))
+A = M + Lν ⊗ IN.
+Applying the spectral theorem for bounded self-adjoint ope rator to A− 1, which has a positive spectral
+gap, allows one to write
+ψ =
+ˆ +∞
+0
+e− tAvdt.
+By Itô’s formula, one may represent e− tAv as
+(e− tAv)(x) = Eν [v(X x
+t )e−
+´ t
+0 M(X x
+s )ds], for all x ∈ M N.
+Using the uniform convexity assumption of ( 3.15), one then gets
+sup |e− tAv| ≤ sup |v|e− tc
+Integrating the last display with respect to t ﬁnally gives the estimate ( 3.17). □
+The proof of Proposition 3.6 is an adaptation in a more involved case of a known maximum pri nciple
+for the Helﬀer-Sjöstrand equation, see for instance [ HS94].
+Let us emphasize that the above proof crucially relies on the fact that lim x→ 0χ ′(x) = −∞ . We now
+give the standard Gaussian concentration lemma for uniform ly log-concave measures on convex bodies.
+Lemma 3.7. Let µ satisfying Assumptions 3.1 and ν = Gap N #µ . Let cN be the constant in ( 3.15).
+Let A ⊂ DN be a convex domain with a piecewise smooth boundary. Let F =G ◦ GapN withG ∈ H 1(ν ).
+For all t ∈ R, we have
+log Eµ [etF | A] ≤ tEµ [F | A] + t2
+2cN
+sup
+A
+|∇ G|2.
+Lemma 3.7 can be derived using Log-Sobolev inequality and Herbst argu ment. When a measure µ
+is uniformly log-concave on a convex domain on Rn, it follows from the Bakry-Emery criterion [ BÉ85]
+that µ satisﬁes a Log-Sobolev inequality.
+Lemma 3.8. Let µ be a uniformly log-concave measure on a convex domain of RN , with a convexity
+constant larger than c> 0. Then µ satisﬁes the Log-Sobolev inequality with constant 2c− 1.
+
+PDF PAGE 17
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 17
+3.6. Concentration inequality for divergence free functions. If µ is of the form of Assumptions
+3.1,µ is not uniformly log-concave and one cannot directly apply L emma 3.7. However, one can observe
+that for all UN ∈ RN such that u1 +... +uN = 0,
+UN · ∇ 2HU N ≥ cN
+∑
+i̸=j
+(N (ui − uj))2 =cN (N − 1)
+N∑
+i=1
+u2
+i.
+Using this observation and the particular structure of µ , one can give a concentration estimate for diver-
+gence free functions F , i.e for F verifying∂ 1φ +... +∂ Nφ = 0. We now state the crucial concentration
+result found in [
+BEY12, Lem. 3.9].
+Lemma 3.9. Letµ satisfying Assumptions 3.1. Assume that χ ′′ ≥ cN . Let I ⊂ { 1,...,N } , card(I) =
+K. Let F ∈ H 1(µ ) such that ∑N
+i=1∂ iF = 0 and ∂ iF = 0 for each i ∈ I c. We have
+Varµ [F ] ≤ 1
+(K − 1)cN
+Eµ [|∇ F |2]. (3.18)
+Furthermore, for all t ∈ R,
+log Eµ [etF ] ≤ tEµ [F ] + t2
+2(K − 1)cN
+sup |∇ F |2.
+We refer to [ BEY12, Lem. 3.9] for a proof, see also [ Bou21, Lem. 3.13] for a transcription.
+4. Decay of correlations for the HS Riesz gas
+This section considers the hypersingular Riesz gas, i.e the Riesz gas with the kernel ( 2.1) for a
+parameters> 1. We show that the covariance between N (xi+1 − xj) and N (xj+1 − xj ) decays at least
+in dN (i,j )− (s+1). To this end we will be studying the Helﬀer-Sjöstrand equati on in gap coordinates
+(3.9). Advantaged by that the Hessian of the energy in gap coordin ates has typically summable entries,
+one may implement a simple distortion argument inspired fro m [Hel98a] to obtain sharp decay estimates.
+4.1. Study of a commutator. Let us begin by introducing the distortion argument. Given s> 1, let
+ν be the measure ( 1.4) in gap coordinates or a slight variant of it. We will be study ing the equation
+
+
+
+Aν
+1∇ ψ =e1 +λ (e1 +... +eN ) on MN
+∇ ψ · (e1 +... +eN ) = 0 on MN
+∇ ψ ·⃗ n= 0 on ∂ MN.
+(4.1)
+By Remark
+3.4, if ν = Pg
+N,β there exists an event of overwhelming probability on which t he Hessian of
+the energy in gap coordinates decays in dN (i,j )− s away from the diagonal. Following [
+Hel98a], the idea
+is to study the equation satisﬁed by L α ∇ ψ , where L α stands for the following distortion matrix:
+Lα = diag(γ 1,...,γ N ), where γ i = 1 + dN (i,i 0)α for each 1 ≤ i ≤ N. (4.2)
+Let us denote
+ψ dis = L α ∇ ψ ∈ L2({ 1,...,N },H 1(ν )).
+One can check that ψ dis solves
+Aν
+1∇ ψ +βδ Lα∇ ψ =e1 +λ Lα (e1 +... +eN ), where δ Lα := L α ∇ 2Hg
+N L− 1
+α − H g
+N.
+Note that when H ∈ M N (R) is a matrix with oﬀ-diagonal entries decaying fast enough, then the
+commutator L α HL− 1
+α − H is in some sense small compared to the identity, as shown in t he next lemma.
+Lemma 4.1 (Commutation lemma) . Lets> 1 and H ∈ M N (R). Assume that there exists a constant
+ε> 0 such that
+|Hi,j | ≤ N ε
+1 +dN (i,j )s, for each 1 ≤ i,j ≤ N. (4.3)
+Letα ∈ ( 1
+2,s − 1
+2 ) and Lα be as in ( 4.2). There exist constants C >0 and c> 0 such that for all ε 0> 0
+small enough, letting ε ′ = ε +ε 0
+min(s− 1,s − 1
+2 − α ) , we have that for all UN ∈ RN ,
+|UN · (Lα HL− 1
+α − H)UN | ≤ 1
+2N − ε 0 |UN |2 +CC κ
+N |UN |
+( ∑
+i:d(i, 1)≤ cN ε′
+u2
+i
+) 1
+2
+. (4.4)
+
+PDF PAGE 18
+18 JEANNE BOURSIER
+Proof. Let H ∈ M N (R) satisfying ( 4.3), α> 0, L α be as in ( 4.2) and UN ∈ RN . We denote
+δ Lα = L α HL− 1
+α − H ∈ M N (R).
+For each 1 ≤ i ≤ N , one may split ( δ LαUN )i into
+(δ LαUN )i =
+∑
+l:dN (i,l )≤ 1
+2 dN (i, 1)
+(δ Lα)i,lul
+  
+(I)i
++
+∑
+l:dN (i,l )> 1
+2 dN (i, 1)
+(δ Lα)i,lul
+  
+(II )i
+. (4.5)
+If dN (i,l ) ≤ 1
+2dN (i, 1), then
+⏐
+⏐
+⏐γ i − γ l
+γ l
+⏐
+⏐
+⏐ ≤ C dN (i,l )
+1 +dN (i, 1)
+and it follows from Cauchy-Schwarz inequality that
+|(I)i| ≤ Cn ε
+dN (i, 1)s− 1
+2
+|UN |. (4.6)
+Let us choose α ∈ ( 1
+2,s − 1
+2 ). If dN (i,l ) ≥ 1
+2dN (i, 1), then
+⏐
+⏐
+⏐γ i − γ l
+γ l
+⏐
+⏐
+⏐ ≤ Cγ i
+γ l
+,
+which gives, since α> 1
+2 ,
+|(II )i| ≤ Cn εdN (i, 1)α − s ∑
+l:dN (i,l )> 1
+2 dN (i, 1)
+1
+dN (l, 1)α |ul| ≤ Cn ε
+dN (i, 1)s− α |UN |. (4.7)
+Let K0 ≥ 1. Combining ( 4.6) and ( 4.7) one obtains
+|UN ·δ LαUN | ≤ CN ε |UN |2
+( ∑
+i:dN (i, 1)≥ K0
+1
+dN (i, 1)2 min(s− 1
+2 ,s − α )
+) 1
+2
++CN ε |UN |
+( ∑
+i:dN (i, 1)≤ K0
+u2
+i
+) 1
+2
+≤ CN ε |UN |2 1
+K
+min(s− 1, s− 1
+2 − α )
+0
++CN ε |UN |
+( ∑
+i:dN (i, 1)≤ K0
+u2
+i
+) 1
+2
+.
+Therefore by choosing K0 =cN ε ′
+with ε ′ = ε +ε 0
+min(s− 1,s − 1
+2 − α ) , we ﬁnd that
+|UN ·δ LαUN | ≤ 1
+2N − ε 0 |UN |2 +CN ε |UN |
+( ∑
+i:dN (i, 1)≤ K0
+u2
+i
+) 1
+2
+. (4.8)
+□
+4.2. Localization in a smaller window. Due to the degeneracy of the interaction at inﬁnity, the
+system lacks of uniform convexity and one shall sometimes re strict the system to a smaller window.
+Fix n to be the size of a subsystem, say n = N or n ≤ N/ 2, and let I = { 1,...,n } . Using the
+Log-Sobolev inequality, one may add some convexity within t he window I without changing much the
+measure. Denote π : MN → π (MN ) ⊂ Rn the projection on the coordinates ( xi)i∈ I . For ε > 0 and
+θ : [0, +∞ ) → (0, +∞ ) smooth such that θ = 0 on (1 , +∞ ), θ ′′ ≥ 1 on [0, 1
+2 ), θ ′′ ≥ 0 on [0, +∞ ], let us
+deﬁne
+Fg :Xn ∈ Rn ↦→
+n∑
+i=1
+θ (n− εxi) (4.9)
+and the constrained measure
+dQg
+N,β ∝ e− β Fg◦ π dPg
+N,β . (4.10)
+Note that the forcing (
+4.9) is tuned so that the total variation distance between PN,β and QN,β decays
+exponentially in n in view of the Log-Sobolev inequality. We now deﬁne
+ν := Qg
+N,β ◦ π − 1. (4.11)
+
+PDF PAGE 19
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 19
+Let also
+˜E :x ∈ π (MN ) ↦→ − 1
+β log
+ˆ
+e− β (Hg
+N − n(y)+Hg
+n,N (x,y ))dy, (4.12)
+where
+Hg
+n,N : (x,y ) ∈ (Rn × RN − n) ∩ M N ↦→ H g
+N (x,y ) − H g
+n(x) − H g
+N − n(y). (4.13)
+By Lemma
+3.5, ν may be written in the form
+dν (x) ∝ e− β ˜Hg
+n(x)1π (MN )(x)dx (4.14)
+where
+˜Hg
+n := Hg
+n + Fg + ˜E. (4.15)
+In the sequel one will be studying the decay of the covariance between xi and xj under ν through
+the analysis of the associated Helﬀer-Sjöstrand equation. Deﬁne the good event
+A =
+{
+Xn ∈ π (MN ) : ∀i ∈ { 1,...,n },n − ε ≤ xi ≤ nε }
+∩ {∀ i ∈ { 1,...,n },k ∈ { 1,...,n − i}, |xi +... +xi+k− 1 − k| ≤ nεk
+1
+2 }. (4.16)
+Let A = ∇ 2F (Un) ∈ M n(R) for some Un ∈ Rn where F is the quadratic form
+F :Xn ∈ Rn ↦→
+∑
+i,j ∈ I
+g′′
+s (j − i)(xi +... +xj)2.
+Let us decompose ∇ 2 ˜Hg
+n into ∇ 2 ˜Hg
+n = M +M with
+M = ∇ 2Fg + ∇ 2Hg
+n1A +A1Ac and M = ∇ 2Hg
+n1Ac − A1Ac + ∇ 2 ˜E. (4.17)
+In the case n ≤ N/ 2, we will replace ∇ 2 ˜Hg
+n in ( 4.1) by M and derive some decay estimates on the
+solution, which will be transferred to the solution of ( 4.1) by a convexity argument. One can check that
+uniformly on the event ( 4.16) and for each 1 ≤ i,j ≤ n, we have
+|Mi,j | ≤ Cn κε
+1 +dN (i,∂I )s− 1/ 2dN (j,∂I )s− 1/ 2. (4.18)
+Until the end of the section we let d be the symmetric distance on { 1,...,N } if n = N or the usual
+distance on { 1,...,n } if n ≤ N
+2 :
+d : (i,j ) ∈ { 1,...,n } 2 ↦→
+{
+min(|j − i|,N − | j − i|) if n =N
+|j − i| if n ≤ N
+2. (4.19)
+For the purpose of Section 6 it is convenient to work with a general measure ν on π (MN ) satisfying
+the following:
+Assumptions 4.1. Let ν be a probability measure on π (MN ) in the form dν = e− βH g(x)dx with
+H g :π (MN ) → R in C2 and such that
+lim
+d(x,π (MN ))→ 0
+∇ H g(x) ·⃗ n= −∞ .
+Let A be the good event (
+4.16). Assume that there exist C >0,δ > 0 (depending on ε ) such that
+ν (Ac) ≤ Ce − nδ
+.
+Note that the above condition ensures ﬁrst that no boundary t erm appears in the computations and
+second that the Langevin dynamics is conservative, implyin g that the maximum principle of Proposition
+3.6 holds true.
+Instead of the speciﬁc interaction matrix deﬁned in ( 4.17) we will be working with a more general
+measurable function M from π (MN ) to Sn0 (R) with n0 ≤ n satisfying the following:
+Assumptions 4.2. Letn0 ≤ n. Let M be a measurable map from π (MN ) to Sn0 (R).
+(1) There exists κ> 0 such that uniformly on π (MN ),
+M ≥ n− κε In0.
+
+PDF PAGE 20
+20 JEANNE BOURSIER
+(2) There exist κ> 0 and C >0 such that uniformly on π (MN ) and for each 1 ≤ i,j ≤ n0,
+|Mi,j | ≤ Cn κε
+1 +d(i,j )s,
+whered is as in ( 4.19).
+4.3. The initial decay estimate. In this subsection we introduce a simple perturbation argum ent,
+which gives a ﬁrst estimate on the decay of correlations for t he constrained hypersingular Riesz gas.
+The method can be applied to other convex models for which the Hessian of the energy satisﬁes some
+decay assumption. This technique follows from an adaptatio n of a rather classical argument in statistical
+physics [ HS94, CT73].
+Lemma 4.2. Lets ∈ (1, +∞ ). Letν and M satisfying Assumptions 4.1 and 4.2. Let χ n ∈ H 1(ν ),i 0 ∈
+{ 1,...,n } and ψ ∈ L2(I,H 1(ν )) be the solution of
+{ β Mψ + Lνψ =χ nei0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ). (4.20)
+Letd be as in ( 4.19). Then, for all α ∈ ( 1
+2,s − 1
+2 ), there exist a constant C(β ) locally uniform in β and
+κ> 0 such that
+Eν
+[ n∑
+i=1
+d(i,i 0)2α ψ 2
+i
+] 1
+2
+≤ C(β )nκε Eν [χ 2
+n]
+1
+2. (4.21)
+Proof. Let ψ ∈ L2(I,H 1(ν )) be in the solution of ( 4.20). Taking the scalar product of ( 4.20) with ψ
+and integrating by parts, one may show that there exist const antsκ> 0 and C >0 such that
+Eν [|∇ ψ |2] +β Eν [|ψ |2] ≤ Cβ − 1nκε Eν [χ 2
+n]. (4.22)
+Fix α ∈ ( 1
+2,s − 1
+2 ) and consider as in ( 4.2) the distortion matrix
+Lα = diag(γ 1,...,γ n), where γ i = 1 + d(i,i 0)α for each 1 ≤ i ≤ n.
+Let us deﬁne udis the distorted vector-ﬁeld
+udis := L α u ∈ L2(I,H 1(ν )). (4.23)
+Observing that L α ei0 =ei0, we can check that udis solves
+Aν
+1udis +βδ Lαudis =χ nei0, (4.24)
+where
+δ Lα := L α ML− 1
+α − M.
+Taking the scalar product of (
+4.24) with udis and integrating by parts under ν gives
+Eν [βu dis · (M +δ Lα)udis] + Eν [|∇ udis|2] = Eν [ui0χ n], (4.25)
+where we have used the fact that udis
+i0 =ui0 . This gives
+Eν [βu dis · (M +δ Lα)udis] + Eν [|∇ udis|2] ≤ C(β )nκ 0ε Eν [χ 2
+n].
+By assumption, there exist constants C >0,κ> 0 such that uniformly on DN and for each i ̸=j,
+|Mi,j | ≤ Cn κε
+1 +d(i,j )s.
+One may therefore apply Lemma 4.1 to the matrix H = ∇ 2Hg
+n(Xn), which gives the existence of κ> 0
+and κ ′ > 0 independent of Xn such that, letting
+K0 = ⌊nκε ⌋,
+there holds
+|Eν [udis ·δ Lαudis]| ≤ n− ε (s+2)
+2 Eν [|udis|2] − C(β )nκ ′ ε Eν [|udis|2]
+1
+2 Eν
+[ ∑
+i:d(i,i 0)≤ K0
+(udis
+i )2
+] 1
+2
+. (4.26)
+Furthermore, using the deﬁnition of udis (4.23) and the a priori bound ( 4.22), we ﬁnd that
+Eν
+[ ∑
+i:d(i,i 0)≤ K0
+(udis
+i )2
+] 1
+2
+≤ K α
+0 Eν [|u|2]
+1
+2 ≤ C(β )nκ ′′ ε Eν [χ 2
+n]
+1
+2.
+
+PDF PAGE 21
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 21
+Combining these we deduce that there exists κ> 0 such that
+β
+2n− ε (s+2)Eν
+[ n∑
+i=1
+d(i,i 0)2α (ψ (1)
+i )2
+] 1
+2
++ Eν
+[ n∑
+i=1
+d(i,i 0)2α |∇ ψ (l)
+i |2
+] 1
+2
+≤ C(β )nκε Eν [χ 2
+n]
+1
+2. (4.27)
+□
+4.4. Bootstrap on the decay exponent. This subsection introduces an iterative argument to improv e
+the decay estimate of Lemma 4.2. The method consists in studying the projection of Equation (4.20)
+in a small window. By controlling the ﬁeld outside the window with the a priori decay estimate, one
+obtains through the distortion argument of Lemma 4.2 a better decay estimate on the solution. After
+a ﬁnite number of iterations one gets the following optimal r esult:
+Proposition 4.3. Let s ∈ (1, +∞ ). Let ν and M satisfying Assumptions 4.1 and 4.2. Let χ n ∈
+H 1(ν ),i 0 ∈ { 1,...,n } and ψ ∈ L2(I,H 1(ν )) be the solution of
+{ β Mψ + Lνψ =χ nei0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ). (4.28)
+Letd be as in ( 4.19). There exist κ> 0 andC(β )> 0 locally uniform in β such that for each 1 ≤ j ≤ n,
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε 1
+1 +d(j,i 0)s Eν [χ 2
+n]
+1
+2. (4.29)
+Proof.
+Step 1: setting the bootstrap. Assume that for any n0 ≤ n and all M taking values and in Sn0 (R)
+satisfying Assumptions
+4.2, each i0 ∈ { 1,...,n 0} and χ n0 ∈ H 1(ν ), the solution ψ ∈ L2(I,H 1(ν )) of
+{
+Mψ + Lνψ =χ n0ei0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ) (4.30)
+satisﬁes for some α ≥ s − 1
+2 ,κ> 0 and δ > 0 the estimate
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε
+( 1
+1 +d(j,i 0)α + 1
+n
+)
+Eν [χ 2
+n0 ]
+1
+2. (4.31)
+We wish to prove that ( 4.31) holds for α =s. Without loss of generality one may assume that n =n0.
+Fix i0 ∈ { 1,...,n } ,χ n ∈ H 1(ν ) and ψ solution of ( 4.30).
+Step 2: localization. Fix an index j ∈ { 1,...,n } and deﬁne the window
+J = {i ∈ { 1,...,n } :d(j,i ) ≤ d(j,i 0)/ 2}. (4.32)
+Our aim is to study the equation satisﬁed by ψ J := (ψ j)j∈ J ∈ L2(J,H 1(ν )). Projecting Equation ( 5.1)
+on the l-th coordinate for l ∈ J reads, since i0 /∈ J,
+β
+∑
+i∈ J
+Mi,lψ i + Lνψ l = − β
+∑
+i∈ J c
+Mi,lψ i.
+Let us denote MJ = (Mi,j )i,j ∈ J and V ∈ L2(J,H 1(ν )) given for each l ∈ J by
+Vl = − β
+∑
+i∈ J c
+Mi,lψ i, (4.33)
+so that ψ J solves
+{
+β MJψ J + Lνψ J = V on π (MN )
+ψ J ·⃗ n= 0 on ∂π (MN ). (4.34)
+
+PDF PAGE 22
+22 JEANNE BOURSIER
+Step 3: bound on the exterior ﬁeld. Fixl ∈ J and split V l into
+Vl =
+∑
+i∈ J c,d (i,i 0)≤ 1
+2 d(j,i 0)
+Mi,lψ i
+  
+(I)l
++
+∑
+i∈ J c,d (i,i 0)> 1
+2 d(j,i 0)
+Mi,lψ i
+  
+(II )l
+. (4.35)
+Using Cauchy-Schwarz inequality and Lemma 4.2, we ﬁnd
+Eν [(I)2
+l ]
+1
+2 ≤ C(β )nκε 1
+d(j,i 0)s− 1
+2
+1
+d(l,∂J )s− 1
+2
+Eν [χ 2
+n]
+1
+2.
+On the other hand using Cauchy-Schwarz inequality and Lemma 4.2 again, one gets
+Eν [(II )2
+l ]
+1
+2 ≤ C(β )nκε
+d(j,i 0)s Eν [χ 2
+n]
+1
+2.
+Step 4: optimal decay for the auxiliary system. Let us split ψ = ∑
+l∈ Jψ (l), where for each l ∈ J
+ψ (l) ∈ L2(J,H 1(ν )) solves {
+β MJψ (l) + Lνψ (l) = V lel on π (MN )
+ψ (l) ·⃗ n= 0 on ∂π (MN )
+One may apply the bootstrap assumption ( 4.31) to MJ and ψ (l), which gives the bound
+Eν [(ψ (l)
+j )2]
+1
+2 ≤ C(β )nκε 1
+d(j,l )α
+( 1
+d(j,i 0)s− 1
+2
+1
+d(l,∂J )s− 1
+2
++ 1
+d(j,i 0)s
+)
+Eν [χ 2
+n]
+1
+2.
+Summing this over l ∈ J yields
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε
+d(j,i 0)α ′ Eν [χ 2
+n]
+1
+2,
+where
+α ′ = min(s,s +α − 1, 3s − α ).
+Since α ≥ s − 1
+2 and s >1, α ′ > α. After a ﬁnite number of iterations, we ﬁnd that ( 4.31) holds for
+α =s. □
+4.5. Conclusion in the case n = N . In view of Proposition 3.3, the H.-S. equation contains when
+n = N a Lagrange multiplier associated to the linear constraints that y1 +... +yN = N on MN .
+Controlling this multiplier entails the following:
+Lemma 4.4. Lets ∈ (1, +∞ ). Letν and M satisfying Assumptions
+4.1 and 4.2. Let χ n ∈ H 1(ν ),i 0 ∈
+{ 1,...,n } . Let ψ ∈ L2(I,H 1(ν )) solution of
+
+
+
+β Mψ + Lνψ =χ nei0 +λ (e1 +... +en) on π (MN )
+ψ · (e1 +... +en) = 0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ).
+(4.36)
+Letd be as in (
+4.19). There exist constants C(β )> 0,δ > 0 such that for each 1 ≤ j ≤ n,
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε
+( 1
+1 +d(j,i 0)s + 1
+n
+)
+Eν [χ 2
+n]
+1
+2. (4.37)
+Proof. Let us ﬁrst prove that the Lagrange multiplier λ in ( 4.36) satisﬁes
+Eν [λ 2]
+1
+2 ≤ C(β )
+n1− κε Eν [χ 2
+n]
+1
+2, (4.38)
+for some constants C(β ) > 0,κ > 0. By linearity one can split ψ into ψ = ψ (1) +ψ (2) where ψ (1) ∈
+L2(I,H 1(ν )) solves { β Mψ (1) + Lνψ (1) =χ nei0 on π (MN )
+ψ (1) ·⃗ n= 0 on ∂π (MN ).
+In view of Proposition 4.3, we have that uniformly in j ∈ I,
+Eν [(ψ (1)
+j )2]
+1
+2 ≤ C(β )nκε 1
+1 +d(j,i 0)s Eν [χ 2
+n]
+1
+2, (4.39)
+Eν [(ψ (2)
+j )2]
+1
+2 ≤ C(β )nκε Eν [λ 2]
+1
+2. (4.40)
+
+PDF PAGE 23
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 23
+Let K0 ≥ 1. Split M into M(1) + M(2) with M(1) given for each i,j ∈ I by
+M(1)
+i,j = Mi,j 1d(i,j )≤ K0.
+Let u = ∑
+j∈ Iej. Recall from (
+3.10) that
+nλ =βu · Mψ − χ n =βu · M(1)ψ +βu · M(2)ψ − χ n.
+First note that there exists C(β )> 0,κ> 0 such that
+Eν [(u · M(1)ψ )2]
+1
+2 ≤ C(β )nκε K κ
+0 Eν [|ψ |2]
+1
+2.
+Moreover taking the scalar product of ( 4.36) withψ and integrating by parts under ν yields the energetic
+estimate
+Eν [|ψ |2]
+1
+2 ≤ C(β )nκε Eν [χ 2
+n]
+1
+2.
+Consequently there exists constants C(β )> 0,κ> 0 such that
+Eν [(u · M(1)ψ )2]
+1
+2 ≤ C(β )nκε K κ
+0 Eν [χ 2
+n]
+1
+2. (4.41)
+Besides, employing ( 4.39), we ﬁnd
+Eν [(u · M(2)ψ (1))2]
+1
+2 ≤ C(β )nκε Eν [χ 2
+n]
+1
+2. (4.42)
+Finally, note
+|u · M(2)ψ (2)| ≤
+∑
+i,k :d(i,k )≥ K0
+|Mi,k ||ψ (2)
+k | ≤ nκε K − s
+0
+∑
+k
+|ψ (2)
+k |.
+Using the bound ( 4.40) one can see that
+Eν [(u · M(2)ψ (2))2]
+1
+2 ≤ C(β )nκε K − s
+0 nEν [λ 2]
+1
+2. (4.43)
+TakingK0 large with enough with respect to nε , one can make the left-hand side of ( 4.43) smaller than
+n
+2 Eν [λ 2]
+1
+2 . Combining this with ( 4.41) and ( 4.42) one obtains
+nEν [λ 2]
+1
+2 ≤ n
+2 Eν [λ 2]
+1
+2 +C(β )nκε Eν [χ 2
+n]
+1
+2,
+which proves ( 4.38). Combined with ( 4.39) and ( 4.40) this concludes the proof of ( 4.37). □
+4.6. Estimate on the main equation. There remains to compare the solution of ( 4.1) to the solution
+ψ (1) of the simpliﬁed equation ( 4.20). This supposes to estimate the quantity Mψ (1) where M is the
+perturbation in ( 4.17).
+Proposition 4.5. Lets ∈ (1, +∞ ) Letν be the measure (4.11). Let i0 ∈ { 1,...,n } such that |i0− n/ 2| ≤
+n/ 4, χ n ∈ H 1(ν ) and ψ ∈ L2(I,H 1(ν )) be the solution of
+{ Aν
+1ψ =χ nei0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ). (4.44)
+Letd be as in (
+4.19). Then, uniformly in 1 ≤ j ≤ n, we have
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε
+( 1
+1 +d(i0,j )s + 1
+nmin(s− 1/ 2, 2s− 2)
+)
+(Eν [χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
+). (4.45)
+Similarly let w ∈ L2({ 1,...,N },H 1(ν )) be the solution of
+
+
+
+β ∇ 2(Hg
+N + Fg)w + Lνw =χ Nei0 +λ (e1 +... +eN ) on MN
+w · (e1 +... +eN ) = 0 on MN
+w ·⃗ n= 0 on ∂ MN
+(4.46)
+Then, uniformly in 1 ≤ j ≤ N , we have
+Eν [w2
+j ]
+1
+2 ≤ C(β )nκε
+( 1
+1 +d(i0,j )s + 1
+N
+)
+(Eν [χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
+). (4.47)
+
+PDF PAGE 24
+24 JEANNE BOURSIER
+Proof. Let us prove the bound (4.45). Let ψ ∈ L2(I,H 1(ν )) be the solution of ( 4.44),ψ (1) ∈ L2(I,H 1(ν ))
+solving { β Mψ (1) + Lνψ (1) =χ nei0 on π (MN )
+ψ (1) ·⃗ n= 0 on ∂π (MN ).
+Deﬁne ψ (2) =ψ − ψ (1). One can check that ψ (2) is solution of
+{ Aν
+1ψ (2) = − βM (1)ψ (1) on π (MN )
+ψ (2) ·⃗ n= 0 on ∂π (MN ).
+Denote M (1) = ∇ 2Hg
+n1Ac − A1Ac and M (2) = ∇ 2 ˜E. One gets by integration by parts
+β Eν [ψ (2) · ∇ 2 ˜Hg
+nψ (2)]
+≤ C(β )
+(
+sup |ψ (1)|(Eν [|M (1)|2]
+1
+2 + Eν [1Ac|M (2)|2]
+1
+2 ) + Eν [1A|M (2)ψ (1)|2]
+1
+2
+)
+Eν [|ψ (2)|2]
+1
+2. (4.48)
+The maximum principle of Proposition 3.6 gives the existence of C(β ),κ> 0 such that
+sup |ψ (1)| ≤ C(β )nκε sup |χ n|.
+Moreover, using Assumption 4.1, one ﬁnds that there exist constants C(β ) > 0,c (β ) > 0,δ > 0 such
+that
+Eν [|M (1)|2]
+1
+2 ≤ C(β )e− c(β )nδ
+,
+Eν [1Ac |M (2)|2]
+1
+2 ≤ C(β )e− c(β )nδ
+.
+Let us now estimate the vector-ﬁeld M (2)ψ (1). We claim that for uniformly in 1 ≤ j ≤ n,
+Eν [1A(M (2)ψ (1))2
+j ]
+1
+2 ≤ C(β )nκε
+1 +d(j,∂I )
+s
+2
+1
+ns− 1/ 2 Eν [χ 2
+n]
+1
+2. (4.49)
+Fix 1 ≤ j ≤ n. Recall that for any x in the interior of A and for each 1 ≤ k,l ≤ n,
+M (2)
+k,l (x) = ∂ kl ˜E(x) = EQg
+N,β (·| x)[∂ klHg
+n,N ] − CovQg
+N,β (·| x)[∂ kHg
+n,N ,∂ lHg
+n,N ].
+In view of (
+4.18) we have that for each 1 ≤ k,l ≤ n,
+Eν [(M (2)
+k,l )2]
+1
+2 ≤ C(β )nκε
+1 +d(k,∂I )s− 1/ 2d(l,∂I )s− 1/ 2. (4.50)
+One can then split the quantity ( M (2)ψ (1))j into
+(M (2)ψ (1))j =
+∑
+k:d(k,∂I )≤ n/ 4
+M (2)
+j,k ψ (1)
+k
+  
+(I)j
++
+∑
+k:d(k,∂I )>n/ 4
+M (2)
+j,k ψ (1)
+k
+  
+(II )j
+.
+For the ﬁrst quantity, using ( 4.50) and ( 4.29), we can write
+Eν [1A(I)2
+j ]
+1
+2 ≤ C(β )nκε
+1 +d(j,∂I )s− 1/ 2
+∑
+k:d(k,∂I )≤ n/ 4
+1
+|k − n
+2 |s
+1
+1 +d(k,∂I )s− 1/ 2 Eν [χ 2
+n]
+1
+2
+≤ C(β )nκε
+1 +d(j,∂I )s− 1/ 2
+1
+nmin(s, 2s− 3/ 2) Eν [χ 2
+n]
+1
+2.
+(4.51)
+For the second quantity using the bound on the increments of M given in ( 4.18), we ﬁnd
+Eν
+[
+1A
+( ∑
+k:d(k,∂I )>n/ 4
+M (2)
+j,k ψ (1)
+k
+) 2] 1
+2
+≤ C(β )nκε
+1 +d(j,∂I )s− 1/ 2
+∑
+k:d(k,∂I )>n/ 4
+1
+|k − n
+2 |s
+1
+ns− 1/ 2 Eν [χ 2
+n]
+1
+2
+≤ C(β )nκε
+1 +d(j,∂I )s− 1/ 2
+1
+ns− 1/ 2 Eν [χ 2
+n]
+1
+2. (4.52)
+Putting ( 4.51) and ( 4.52) together we obtain ( 4.49). Summing this over j yields
+Eν [|M (2)ψ (1)|2]1/ 2 ≤ C(β )nκε
+nmin(s− 1/ 2, 2s− 2) Eν [χ 2
+n]
+1
+2. (4.53)
+
+PDF PAGE 25
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 25
+Using the uniform convexity of ˜Hg
+n, we then obtain from ( 4.48) the bound
+Eν [|ψ (2)|2]1/ 2 ≤ C(β )nκε
+nmin(s− 1/ 2, 2s− 2) (Eν [χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
+).
+In particular, together with ( 4.29), this yields ( 4.45). The proof of ( 4.47) follows from similar consider-
+ations by making use of Lemma 4.4. □
+4.7. Decay of gaps correlations. We are now ready to conclude the proof of the decay of correlat ions
+for the hypersingular Riesz gas. When xi and xj are at macroscopic or large mesoscopic distance, one
+can take n =N and use the estimate of Proposition 4.3. Otherwise one may choose n to be a power of
+dN (i,j ) and apply the estimate of Proposition 4.5 for such a number n, thus completing the proof of
+Theorem 2.
+Proof of of Theorem 2. Let ν be the constrained measure on { 1,...,N } deﬁned in ( 4.11) with n =N .
+Using the Pinsker inequality, the fact that ν satisﬁes a Log-Sobolev inequality (see Lemma 3.8) and the
+local law of Lemma C.1, one can observe that
+TV(Pg
+N,β ,ν ) ≤ (2Ent(Pg
+N,β |ν ))
+1
+2 ≤ C(β )N κε EPg
+N,β
+[|∇ Fg|2]
+1
+2 ≤ C(β )e− c(β )N δ
+.
+In particular, it follows that
+CovPN,β [ξ (N (xj+1 − xj)),χ (N (xi+1 − xi))] = Cov ν [ξ (xj ),χ (xi)] +Oβ (e− N δ
+sup |ξ | sup |χ |). (4.54)
+Moreover, by Proposition 3.3, the covariance term in the last display may be expressed as
+Covν [ξ (xj ),χ (xi)] = Eν [ξ ′(xj )∂ jφ ],
+with ∇ φ ∈ L2({ 1,...,N },H 1(ν )) solution of
+
+
+
+Aν
+1 ∇ φ =χ ′(xi)ei +λ (e1 +... +eN ) on π (MN )
+∇ φ · (e1 +... +eN ) = 0 on π (MN )
+∇ φ ·⃗ n= 0 on ∂π (MN ).
+Using the estimate of Proposition
+4.5, Hölder’s inequality and ( 4.54), one obtains that there exists some
+small ε 0> 0 such that ( 1.5) holds in the case where dN (i,j ) ≥ N ε 0.
+We now consider the case where dN (i,j ) is smaller than N ε 0 . Let n ∈ { 1,...,N } be the smallest
+number such that
+n− min(s− 1/ 2, 2s− 2) ≤ dN (i,j )− (1+s).
+Without loss of generality, one can assume that 1 ≤ n
+3 ≤ i,j ≤ 2n
+3 . Since N (xi+1 − xi) and N (xj+1 − x1)
+are functions of x1,...,x n and since A has overwhelming probability, one may write
+CovPN,β [ξ (N (xj+1 − xj)),χ (N (xi+1 − xi))] = Cov ν [ξ (xj ),χ (xi)] +Oβ (e− c(β )nδ
+sup |ξ | sup |χ |). (4.55)
+By Proposition 3.3 again one can express this covariance term as
+Covν [xj,x i] = Eν [ξ ′(xj)∂ jφ ], (4.56)
+where ∇ φ ∈ L2(I,H 1(ν )) is solution of
+{ Aν
+1∇ φ =χ ′(xi)ei on π (MN )
+∇ φ ·⃗ n= 0 on ∂π (MN ). (4.57)
+Inserting the result of Proposition
+4.5 we ﬁnd that
+Eν [(∂ jφ )2]
+1
+2 ≤ C(β )nκε
+( 1
+dN (i,j )s + 1
+nmin(s− 1/ 2, 2s− 2)
+)
+(Eν [χ ′(xi)2]
+1
+2 + sup |χ ′|e− c(β )nδ
+).
+Inserting this into ( 4.56) and using ( 4.55) completes the proof of ( 1.5) by choosing n large enough. □
+
+PDF PAGE 26
+26 JEANNE BOURSIER
+5. Decay of correlations for the long-range Riesz gas
+This section is the core of the paper and aims to develop a meth od to study the decay of correlations in
+the long-range case s ∈ (0, 1). Because the Hessian of the energy in gap coordinates conc entrates around
+the matrix ( 2.5) which has slowly decaying entries, it is not clear how the st rategy of Section 4 can be
+adapted. Indeed the commutation result of Lemma 4.1 cannot be applied to ( 2.5). The trick is to exploit
+the fact that the Hessian is not only positive-deﬁnite but ac tually controls a fractional primitive of the
+solution. This should be compared with the method of [ Bou21, Sec. 4] adapted from [ BEY12, Sec. 3]
+which exploits the long-range nature of the interaction to h ave sharp concentration estimates.
+5.1. Periodization. Let us begin by performing the following series of reduction s, leading to the study
+of a simpliﬁed equation:
+(1) Convexiﬁcation and reduction to a smaller window,
+(2) Adding of a Schur complement to the energy of the n points and splitting of the H.-S. operator,
+(3) Embedding the system into a periodic system of ¯ n ≫ n points,
+(4) Control on the perturbation operator.
+As pointed out in Section
+4 the study of the correlations at microscopic distance requi res to localize
+the system at a smaller scale. Let n ∈ { 1,...,N } be the active scale with n = N or n ≤ N
+2 , I the
+windowI = { 1,...,n } and π : MN → π (MN ) ⊂ Rn be the projection on the coordinates ( xi)i∈ I . Let
+θ : R+ → R+ smooth such that θ = 0 on (0 , 1
+2 ), θ ′′ ≥ 1 on (1, +∞ ) and θ ′′ ≥ 0 on [0, +∞ ]. Let ε > 0
+and F g be the forcing
+Fg :Xn ∈ Rn ↦→
+n∑
+i=1
+θ (n− εxi)
+and the constrained measure
+dQg
+N,β ∝ e− β Fg◦ π dPg
+N,β .
+Let ν = Qg
+N,β ◦ π − 1. We will be studying the solution ψ ∈ L2(I,H 1(ν )) of
+{ Aν
+1ψ =χ nei0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ), (5.1)
+In the case where n ≤ N
+2 , one would prefer working with a periodic system of size ¯ n = ⌊n
+1
+2 + 1
+s ⌋
+instead of ( 5.1). The idea is to subtract from Aν
+1 the appropriate quantity to identify the equation with
+the projection on the coordinates ( xi)i∈ I of a larger system of size ¯ n. Let ¯ n = ⌊n
+1
+2 + 1
+s ⌋ if n ≤ N
+2 and
+¯n =N if n =N . Set ¯I = { 1,..., ¯n} . Fix a positive parameter ε> 0. Let K0 be a large power of ⌊nε ⌋.
+Deﬁne H ∈ M ¯n(R) the truncated Riesz matrix at distance K0, i.e H = ∇ 2F (x) for some x ∈ R¯n where
+F :X¯n ∈ R¯n ↦→
+∑
+i,j ∈ ¯I:d ¯n(i,j )≥ K0
+g′′
+¯n,s (j − i)(xi +... +xj )2.
+Consider the block decomposition of H on Rn × R¯n− n,
+H =
+(
+A B
+C D
+)
+, A ∈ M n(R). (5.2)
+Also let
+G :X¯n ∈ R¯n ↦→
+∑
+i∈ I,j ∈ I c:d ¯n(i,j )≥ K0
+g′′
+¯n,s (j − i)(xi +... +xj )2.
+Let H (2) = ∇ 2G(x) for some x ∈ R¯n and H (1) = H − H(2). Consider the block decomposition of H (1)
+and H (2):
+H(1) =
+(
+A(1) 0
+0 0
+)
+and H (2) =
+(
+A(2) B
+C D
+)
+. (5.3)
+Since H (2) ≥ 0 we have A(2) − BD − 1C ≥ 0. Furthermore we also have A(1) ≥ 0. Noting that D is
+positive-deﬁnite, one may consider
+B(D +β − 1Lν ⊗ I¯n− n)− 1C.
+One may now split Aν
+1. Recall that the measure ν can be written
+dν (x) = exp( − β ˜Hg
+n(x))1π (MN )(x)dx,
+
+PDF PAGE 27
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 27
+where for any x ∈ π (MN ) and 1 ≤ i,j ≤ n,
+∂ ij ˜Hg
+n(x) = ∂ ijFg(x)+∂ ijHg
+n(x)+ EQg
+N,β (·| x)[∂ ijHg
+n,N (x, ·)]− CovQg
+N,β (·| x)[∂ iHg
+n,N (x, ·),∂ jHg
+n,N (x, ·)],
+(5.4)
+with
+Hg
+n,N : (x,y ) ∈ (Rn × RN − n) ∩ M N ↦→ H g
+N (x,y ) − H g
+n(x) − H g
+N − n(y). (5.5)
+Deﬁne the good event
+A = {Xn ∈ π (MN ) : ∀i,i +k ∈ { 1,...,n },n − ε ≤ xi ≤ nε, |xi +... +xi+k − k| ≤ nεk
+s
+2 }. (5.6)
+Let us split Aν
+1 into
+Aν
+1 = ¯Aν
+1 +M, (5.7)
+where ¯Aν
+1,M :L2(I,H 1(ν )) → L2(I,H − 1(ν )) are given by
+¯Aν
+1 :=β ∇ 2Fg+β (∇ 2Hg
+n+EQg
+N,β (·| x)[∇ 2Hg
+n,N (x, ·)])1A+βA 1Ac− βB (D+β − 1Lν ⊗ I¯n− n)− 1C+Lν ⊗ In,
+(5.8)
+M :=β (∇ 2Hg
+n + EQg
+N,β (·| x)[∇ 2Hg
+n,N (x, ·)])1Ac − βA 1Ac − β CovQg
+N,β (·| x)[∇H g
+n,N (x, ·), ∇H g
+n,N (x, ·)]
++βB (D +β − 1Lν ⊗ I¯n− n)− 1C. (5.9)
+One can prove that the operator ¯Aν
+1 has a spectral gap, resulting in the uniqueness of the soluti on
+ψ ∈ L2(I,H 1(ν )) of { ¯Aν
+1ψ =v on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ),
+for any v ∈ L2(I,H 1(ν )). We work with general measures ν onπ (MN ) in order to make our argument
+ﬂexible enough to be applied to the interpolating measure (
+6.7) of Section 6.
+Assumptions 5.1. Let ν be a probability measure on π (MN ) in the form dν = e− βH g(x)dx with
+H g :π (MN ) → R C2 and such that
+lim
+d(x,∂π (MN ))→ 0
+∇ H g(x) ·⃗ n= −∞ .
+Let A be the good event ( 5.6). Assume that there exist C >0,δ > 0 (depending on ε ) such that
+ν (Ac) ≤ Ce − cnδ
+.
+For the bootstrap argument to come in Subsection 5.5, one shall also work with a slightly more
+general system. Let A0 :π (MN ) → S n(R) be a measurable map. Let M :π (MN ) → S ¯n(R) be given by
+M =
+(
+A0 B
+C D
+)
+, (5.10)
+with B, C, D constants matrices as in ( 5.2). One shall impose the following assumptions on M:
+Assumptions 5.2. Let M :π (MN ) → S ¯n(R) be given by ( 5.10). Assume that
+(1) There exists κ> 0 such that uniformly on π (MN ),
+M ≥ n− κε I¯n. (5.11)
+(2) There exists a family of functions (α i,k ) such that for all U¯n ∈ R¯n,
+U¯n · MU¯n =
+∑
+i,k
+α i,k (ui +... +uk)2.
+Moreover there exists κ> 0 and γ > 0 such that for each i,k ∈ ¯I such that d¯n(i,k ) ≥ nγε ,
+n− κε
+d¯n(i,k )s+2 ≤ α i,k ≤ nκε
+d¯n(i,k )s+2. (5.12)
+(3) Let A ∈ M n(R) be as in ( 5.2). There exist C >0,κ> 0 such that uniformly on ( 5.6) and for
+each 1 ≤ i,j ≤ n,
+|(A0)i,j − Ai,j | ≤ Cn κε
+d¯n(i,j )1+ s
+2
+. (5.13)
+
+PDF PAGE 28
+28 JEANNE BOURSIER
+Finally let ¯A1 :L2(I,H 1(ν )) → L2(I,H − 1(ν )) in the form
+¯A1 =βA 0 − B(βD + Lν ⊗ I¯n− n)− 1C + Lν ⊗ In. (5.14)
+Remark 5.3. Note that the choice ¯n = ⌊n
+1
+2 + 1
+s ⌋ when n ≤ N
+2 ensures that ( 5.13) holds: indeed there
+exists C >0 such that for each k ∈ { 1,...,N } ,
+|gN,s (k) − g¯n,s (k)| ≤ C
+¯ns ≤ C
+n1+ s
+2
+.
+Lemma 5.1. (1) Let K0 = ⌊nε ⌋ m. Let A be as in ( 5.6). Set
+A0 :x ∈ π (MN ) ↦→ β ∇ 2F g(x) +β (∇ 2Hg
+n + EQN,β (·| x)[∇ 2Hg
+n,N (x, ·)])1A(x) +A1Ac(x). (5.15)
+Then, for m large enough, the S¯n(R)-valued function M (5.10) satisﬁes Assumptions 5.2.
+(2) Let M in the form ( 5.10) satisfying Assumptions 5.2. Let ¯A1 be given by ( 5.14). Let ψ ∈
+L2( ¯I,H 1(ν )) be the solution of
+{
+β Mψ + (Lν ⊗ I¯n)ψ =χ nei0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ). (5.16)
+Letψ (1) ∈ L2(I,H 1(ν )) be the solution of
+{ ¯A1ψ (1) =χ nei0 on π (MN )
+ψ (1) ·⃗ n= 0 on ∂π (MN ). (5.17)
+We have the identity
+ψ j =ψ (1)
+j for each j ∈ I. (5.18)
+Proof. Let M be given by ( 5.10) with A0 as in ( 5.15). Note that by deﬁnition of the good event ( 5.6),
+M veriﬁes ( 5.13). Let us prove that M satisﬁes ( 5.11). One can split M into M(1) + M(2) with M(2) given
+for all U¯n ∈ R¯n by
+U¯n · M(2)U¯n =
+∑
+d ¯n(i,k )≥ K0
+α i,k (ui +... +uk)2, (5.19)
+where theα i,k ’s are as in ( 5.12). Let H be as in ( 5.2) and set M(2, 2) = M(2) − H. There exist C >0,κ> 0
+such that for each 1 ≤ i,j ≤ n,
+|M(2, 2)
+i,j | ≤ Cn κε
+d¯n(i,j )1+ s
+2
+1d ¯n(i,j )≥ K0,
+with M(2, 2)
+i,j = 0 if i ∈ ¯I \I or j ∈ ¯I \I. Let us add to M(2, 2) the matrix n− κ 1εI¯n for some well-chosen
+constantκ 1. Set B =n− κ 1εIn + (M(2, 2)
+i,j )i,j ∈ I ∈ M n(R). For κ 1 large enough, the matrix B is diagonally
+dominant and its spectrum is thus bounded, according to the G ershgorin circle theorem, by 2 n− κ 1ε .
+Since B is symmetric, one gets an upper bound on its Euclidian operat or norm, allowing one to bound
+from above the Euclidian operator norm of M(2, 2) itself. It follows that there exist κ> 0 and c> 0 such
+that for all U¯n = (Un,V ¯n− n) ∈ R¯n,⏐
+⏐
+⏐U¯n · (M(2, 2) − H)U¯n
+⏐
+⏐
+⏐ ≤ nκε K
+− c s
+2
+0 |Un|2.
+Besides note that for all Un ∈ Rn,
+Un · M(1)Un ≥ n− κε |Un|2.
+Choosing K0 large enough one gets the existence of some κ > 0,κ ′ > 0 such that for all U¯n =
+(Un,V ¯n− n) ∈ R¯n,
+U¯n · MU¯n ≥ U¯n · HU¯n +n− κε |Un|2 ≥ n− κ ′ ε |U¯n|2,
+thus showing that M veriﬁes ( 5.11). Moreover by construction on the event, the matrix M is a pertur-
+bation of H which satisﬁes ( 5.12) and so does therefore M. The deﬁnition of ( 5.12) also ensures that
+(5.13) holds.
+The properties ( 5.12) and ( 5.13) holds by deﬁnition of the good event ( 5.6) and since the matrix H
+veriﬁes ( 5.12).
+Let us verify the second item. Let M satisfying Assumptions 5.2. Since Lν is non-negative we obtain
+that for all v ∈ L2( ¯I,H 1(ν )),
+Eν [v · (β M + Lν ⊗ I¯n)v] ≥ n− κε Eν [|v|2].
+
+PDF PAGE 29
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 29
+By the Lax-Milgram theorem, uniqueness and existence of sol utions of ( 5.16) is then a consequence of
+the coerciveness of
+v ∈ L2( ¯I,H 1(ν )) ↦→ Eν [v · (β M + Lν ⊗ I¯n− n)v].
+It remains to prove the coerciveness of
+v ∈ L2(I,H 1(ν )) ↦→ Eν [v · ¯A1v].
+Since H (2) ≥ 0, we also have that A(2) − BD − 1C ≥ 0. Then note
+A0 − BD − 1C ≥ M(1) +A(2) − BD − 1C − O(nκε K
+− s
+2
+0 In) ≥ M(1) − O(nκε K
+− s
+2
+0 In) ≥ n− κε In. (5.20)
+Let w ∈ L2(I,H 1(ν )). One can observe that
+w ·B(D +β − 1Lν ⊗ I¯n− n)− 1(Cw) = (Cw) · (D +β − 1Lν ⊗ I¯n− n)− 1(Cw).
+Integrating this over ν and using the fact that D is positive shows that for all w ∈ L2(I,H 1(ν )),
+0 ≤ Eν [w ·B(D +β − 1Lν ⊗ I¯n− n)− 1(Cw)] ≤ Eν [w ·BD − 1Cw]. (5.21)
+Consequently, inserting ( 5.20), we ﬁnd
+Eν [w · ¯A1w] ≥ n− κε Eν [|w|2].
+□
+We have thus deﬁned a simpliﬁed operator ¯Aν
+1 which can be compared Aν
+1 through the following easy
+argument. Let ψ ∈ L2(I,H 1(ν )) be the solution of (
+5.1) and ψ (1) ∈ L2(I,H 1(ν )) of
+{ ¯Aν
+1ψ (1) =χ nei0 on π (MN )
+ψ (1) ·⃗ n= 0 on ∂π (MN ).
+Let w :=ψ (1) − ψ ∈ L2(I,H 1(ν )), which solves
+{
+Aν
+1w =Mψ (1) on π (MN )
+w ·⃗ n= 0 on ∂π (MN ),
+where M is an in (
+5.9). Taking the scalar product of the ﬁrst line of the last displ ay with w and
+integrating by parts with respect to ν yields
+βn − κε Eν [|w|2] ≤ β Eν [w · ∇ 2 ˜Hg
+nw] ≤ Eν [w ·Mψ (1)]. (5.22)
+We will prove in Lemma 5.3 that
+|Eν [wi(Mψ (1))i]| ≤ C(β )nκε Eν [w2
+i ]
+1
+2
+∑
+j∈ I
+1
+1 +d(i,∂I )
+s
+2d(j,∂I )
+s
+2
+Eν [(ψ (1)
+j )2]
+1
+2.
+Inserting the last display into ( 5.22) will then give
+Eν [|w|2]
+1
+2 ≤ C(β )nκε n
+1− s
+2
+n∑
+j=1
+Eν [(ψ (1)
+j )2]
+1
+2
+1 +d(j,∂I )
+s
+2
+, (5.23)
+where d stands for the usual distance on I. Our main task is to establish that ψ (1)
+j typically decays in
+d¯n(j,i 0)− (2− s), making the left-hand side of ( 5.23) bounded by n− 1/ 2. This will show that ψ j is bounded
+byd¯n(j,i 0)− (2− s) +O(n− 1/ 2), thus concluding the proof of Theorem 1 by choosing n large enough.
+Let us ﬁnally complete Step 4 and control the operator ( 5.9). Recall that BT =C.
+Lemma 5.2. Let ν satisfying Assumptions 5.1. Let s ∈ (0, 1). Let B,C,D be as in ( 5.2). Recall
+I = { 1,...,n } and let d be the usual distance on I. There exist C(β ),κ > 0 such that for all η ,
+φ ∈ L2(ν ) and for each 1 ≤ i,j ≤ n, we have
+|Eν [(ηCe j )T (βD + Lν ⊗ I¯n− n)− 1(φCe i)]| ≤ C(β )nκε
+d(i,∂I )
+s
+2d(j,∂I )
+s
+2
+Eν [η 2]
+1
+2 Eν [φ 2]
+1
+2. (5.24)
+In addition for all η,φ ∈ L2(ν ) and for each 1 ≤ i,j,l ≤ n, we have
+|Eν [(ηC (ej − el))T (βD + Lν ⊗ I¯n− n)− 1(φCe i)]|
+≤ C(β )nκε d(j,l )
+min(d(j,∂I )1+ s
+2,d (l,∂I )1+ s
+2 )
+1
+d(i,∂I )
+s
+2
+Eν [η 2]
+1
+2 Eν [φ 2]
+1
+2. (5.25)
+
+PDF PAGE 30
+30 JEANNE BOURSIER
+Note that the term in the left-hand side of ( 5.24) resembles the covariance between ∂ iHg
+n,N and
+∂ jHg
+n,N under a Gaussian measure. This suggests us to proceed like fo r controlling the variances of
+∂ iHg
+n,N and∂ jHg
+n,N , which requires controlling the ﬂuctuations of large gaps. One may thus import the
+method of [ BEY12, Lem. 3.16-3.17] which builds on a block decomposition of la rge gaps to exploit the
+convexity of the energy at diﬀerent scales.
+Proof. First note that since βD + Lν ⊗ I¯n− n is a positive operator on L2(I,H 1(ν )), we have
+|Eν [(ηCe j )T (βD + Lν ⊗ I¯n− n)− 1(φCe i)]|
+≤ Eν [(ηCe j ) · (βD + Lν ⊗ I¯n− n)− 1(ηCe j )]
+1
+2 Eν [(φCe i) · (βD + Lν ⊗ I¯n− n)− 1(φCe i)]
+1
+2. (5.26)
+Using the positivity of Lν ⊗ I¯n− n and D, one can write
+Eν [(ηCe j )·(βD +Lν ⊗ I¯n− n)− 1(ηCe j)] ≤ β − 1Eν [(ηCe j)·D− 1(ηCe j)] = β − 1Eν [η 2](Ce j )·D− 1(Ce j).
+The right-hand side of the last display can be identiﬁed with the variance of (CZ )j whereZ is a Gaussian
+vectorZ ∼ N (0,D ). Let g¯n,s,K 0 be the Riesz kernel truncated at K0, deﬁned by
+g¯n,s,K 0(i) =
+∑
+k,l ∈ Ii,1:d ¯n(k,l )≥ K0
+g′′
+¯n,s (i − k),
+where g′′
+¯n,s is as in ( 2.13) and Ii, 1 deﬁned by
+Ii, 1 =
+{
+k ∈ ¯I :d¯n(k, i + 1
+2 )> 1
+2d¯n(i, 1)
+}
+.
+Recall that for each j ∈ I, (CZ )j is given by
+(CZ )j =
+∑
+k∈ ¯I\I
+g¯n,s,K 0(j − k)Zk.
+Deﬁne the random vector ( Yk)k∈ ¯I\I such that Yn = 0 and for each k = n + 1,..., ¯n, Zk =Yk − Yk− 1.
+By discrete integration by parts, one may write
+⌊ ¯n
+2 ⌋∑
+k=n+1
+g¯n,s,K 0(j − k)Zk =
+⌊ ¯n
+2 ⌋∑
+k=n+1
+g¯n,s,K 0(j − k)(Yk − Yk− 1)
+= −
+⌊ ¯n
+2 ⌋∑
+k=n+1
+(g¯n,s,K 0(j − k) − g¯n,s,K 0(j − k + 1))(Yk − Yn) +g¯n,s,K 0(j − ⌊ ¯n
+2 ⌋ )(Y⌊ ¯n
+2 ⌋ − Yn). (5.27)
+We claim that there exists C >0 and κ> 0 such that for each n ≤ i ≤ ¯n and 1 ≤ i +k ≤ ¯n/ 2,
+Var[Yi+k − Yi] ≤ Ck s+κε . (5.28)
+Proceeding as in ( 5.27) for the sum between ⌊ ¯n
+2 ⌋ + 1 and n entails, modulo ( 5.28),
+|ej ·BD − 1Ce j)| ≤ C
+1 +d(j,∂I )s/ 2.
+Let us now prove the claim ( 5.28). Fix i,k such that n + 1 ≤ i ≤ i +k ≤ ¯n. Following the lines
+of [ BEY12, Lem. 3.16-3.17], one shall split Yi+k − Yi into a sum of block averaged statistics. For each
+1 ≤ l ≤ n/ 2 and j ∈ { 1,...,n } , let Il(j) be an interval of integers in {n + 1,..., ¯n} of cardinal l + 1
+such that j ∈ Il(j). Deﬁne the block average
+Y [l]
+j = 1
+l + 1
+∑
+m∈ Il(j)
+Ym.
+Let α = 1
+p for a large p ∈ N∗ . One may write
+Yi − Y [k]
+i =
+p− 1∑
+m=0
+(Y [⌊ kmα⌋ ]
+i − Y [⌊ k(m+1)α ⌋ ]
+i ). (5.29)
+
+PDF PAGE 31
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 31
+For each m ∈ { 0,...,p − 1} , denote Gm = Y [⌊ kmα⌋ ]
+i − Y [⌊ k(m+1)α ⌋ ]
+i and Im = I⌊ k(m+1)α ⌋ (i). Denote
+˜H ∈ M ¯n− n+1(R), the Hessian of the energy (i.e the opposite of the log densi ty) associated to the
+Gaussian vector Z. Note that for each n + 1 ≤ i,j ≤ ¯n
+˜Hi,j =
+{
+g′′
+s, ¯n(j − i)1d(i,j )≥ K0 if i ̸=j
+− ∑
+k̸=i∈{ n+1,..., ¯n} :d(i,k )≥ K1g′′
+s, ¯n(k − i) if i =j.
+On R¯n− n+1 let us introduce the coordinates
+z = ((zi)i∈ Im, (zi)i∈{ n,..., ¯n}\ Im ).
+Then let u = (∂ iGm) ∈ R|Im|. Let us decompose on R|Im| × R¯n− n+1−| Im| into
+˜H =
+( ˜A ˜B
+˜C ˜D
+)
+, ˜A ∈ M |Im|(R).
+Using the Schur complement formula, one may express the vari ance of Gm as
+Var[Gm] = u · ( ˜A − ˜B ˜D− 1 ˜C)− 1u.
+Now deﬁne the matrix A ∈ M |Im|(R) given for each 1 ≤ i,j ≤ | Im|by
+˜A(1)
+i,j =
+{
+g′′
+¯n,s (j − i)1d(i,j )≥ K0 if i ̸=j
+− ∑
+k̸=i∈ Im:d(i,k )≥ K0g′′
+s, ¯n(k − i) if i =j.
+The point is that ˜A − ˜B ˜D− 1 ˜C = ˜A(1) + ˜A(2) − ˜B ˜D− 1 ˜C ≥ ˜A(1), since ˜A(2) − ˜B ˜D− 1 ˜C is the Schur
+complement of a positive-deﬁnite matrix. It thus follows th at
+Var[Gm] ≤ u · ( ˜A(1))− 1u.
+Let v = ( ˜A(1))− 1u. Using the fact that ∑
+i∈ Im∂ iGm = 0 and ˜A(1) ∑
+i∈ Imei = 0, one may check that∑
+i∈ Imvi = 0. It follows that
+v · ˜A(1)v ≥
+∑
+i̸=j∈ Im :d(i,j )≥ K0
+g′′
+¯n,s (i − j)(vi − vj)2 ≥ 1
+|Im|s+1 |v|2.
+Furthermore observe that
+|∇ Gm|2 ≤ C
+|Im|.
+By integration by parts, the two last displays give
+β 1
+|Im|s+1 |v|2 ≤ v · ˜A(1)v ≤ C|v| 1
+|Im|.
+It follows that |v| ≤ C|Im|
+1
+2 +s which entails
+Var[Gm] ≤ C|Im|s. (5.30)
+Summing ( 5.30) over m and using ( 5.29), one ﬁnds that
+Var[Yi+k − Yi] ≤ Ck s+κε ,
+which yields ( 5.28), thus concluding the proof of ( 5.24).
+The proof of ( 5.25) follows from the estimate ( 5.28) and the inequality
+|Eν [(ηC (ej − el))T (βD + Lν ⊗ I¯n− n)− 1(φCe i)]|
+≤ β − 1Eν [η 2]
+1
+2 Eν [φ 2]
+1
+2 (C(ej − el) ·D− 1C(ej − el))
+1
+2 (Ce i ·D− 1Ce i)
+1
+2. (5.31)
+□
+Let us now control the operator M appearing in ( 5.9).
+
+PDF PAGE 32
+32 JEANNE BOURSIER
+Lemma 5.3. Let A be the good event ( 5.6). Let d be the usual distance on { 1,...,n } . There exist
+κ> 0,C (β )> 0 such that uniformly in x ∈ A , 1 ≤ i ≤ j ≤ n and N , we have
+VarQg
+N,β (·| x)[∂ iHg
+n,N ,∂ jHg
+n,N ] ≤ C(β )nκε
+d(i,∂I )
+s
+2d(j,∂I )
+s
+2
+. (5.32)
+Let ν satisfying Assumptions 4.1 and M be as in ( 5.9). There exist κ > 0,C (β ) > 0 such that for all
+φ,η ∈ L2(ν ) and each 1 ≤ i,j ≤ n,
+Eν [φe i ·M (ηe j)] ≤ C(β )nκε
+d(i,∂I )
+s
+2d(j,∂I )
+s
+2
+Eν [η 2]
+1
+2 Eν [φ 2]
+1
+2 (5.33)
+and for each 1 ≤ i,l,j ≤ n,
+Eν [(φe i) ·M (η (ej − el))] ≤ C(β )nκε
+d(j,∂I )
+s
+2
+d(i,l )
+(d(i,∂I ) ∧ d(l,∂I ))1+ s
+2
+Eν [φ 2]
+1
+2 Eν [η 2]
+1
+2
++C(β )e− c(β )nδ
+sup |φ | sup |η |. (5.34)
+Proof. The control ( 5.32) is a direct consequence a rigidity estimate under QN,β (· | x) that we defer to
+Lemma 6.2 in the Appendix. Regarding the deﬁnition of ( 5.9), the bound on the Schur complement
+(5.33) follows from ( 5.32) and Lemma 5.2. Since A has overwhelming probability one may bound the
+contribution involving (∇ 2Hg
+n + EQg
+N,β (·| x)[∇ 2Hg
+n,N (x, ·)])1Ac − A1Ac byC(β ) sup |φ | sup |η |e− c(β )nδ
+. □
+5.2. Elliptic regularity estimate. The aim is now to prove a decay estimate on the solution of (
+5.17).
+We ﬁrst derive an elliptic regularity estimate and give an L2 bound on the discrete primitive of order
+3
+2 − s of ψ in terms of |L1/ 2ψ |. We then state a straightforward control on the L1 norm of the discrete
+primitive of order 1 − s of ψ with respect to |L3/ 2− sψ |. By interpolation, this yields via a discrete
+Gagliardo-Nirenberg inequality a control on the Lp norm of the fractional primitive of order 1 − s
+2 ofψ
+for p = 1
+1− s/ 2 . Throughout the section, for all α> 0, L α stands for the distortion matrix
+Lα = diag(γ 1,...,γ ¯n) with γ i = 1 + d¯n(i,i 0)α for each 1 ≤ i ≤ ¯n. (5.35)
+Lemma 5.4. Lets ∈ (0, 1). Let ν and M satisfying Assumptions 5.1 and 5.2. Let χ n ∈ H 1(ν ), i0 ∈ ¯I
+and ψ ∈ L2( ¯I,H 1(ν )) be the solution of
+
+
+
+β Mψ + Lνψ =χ nei0 +λ (e1 +... +e¯n) on π (MN )
+ψ · (e1 +... +e¯n) = 0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ).
+(5.36)
+Recalling (
+5.35), there exists κ> 0 such that letting p = 1
+1− s/ 2 ,
+Eν
+[( ¯n∑
+i=1
+|(g¯n,s/ 2 ∗ ψ )i|p
+) 2/p ] 1
+2
+≤ C(β )nκε
+(
+Eν [χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
++ Eν [|L1/ 2ψ |2]
+1
+2 +nEν [λ 2]
+1
+2
+) s
+× Eν [|L3/ 2− sψ |2]
+1− s
+2 . (5.37)
+Proof. Let us denote v =χ nei0 +λ (e1 +... +e¯n). Let ψ ∈ L2( ¯I,H 1(ν )) be the solution of ( 5.36). In
+view of ( 5.13), the matrix M may be split into M = M(1) + M(2) where M(1) ∈ M ¯n(R) is the constant
+Toeplitz matrix with the Riesz kernel g¯n,s and M(2) satisfying
+|M(2)
+i,j | ≤ nκε
+d¯n(i,j )1+ s
+2
+, for each i,j ∈ ¯I.
+Taking the convolution of ( 5.36) with g¯n,s − 1 and the scalar product with ψ easily gives
+Eν
+[ ¯n∑
+i=1
+(g¯n,s − 1/ 2 ∗ ψ )2
+i
+] 1
+2
+≤ C(β )nκε
+(
+Eν [χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
++ Eν [|L1/ 2ψ |2]
+1
+2 +nEν [λ 2]
+1
+2
+)
+. (5.38)
+Indeed, the diﬀerential terms satisﬁes
+¯n∑
+i=1
+Eν [Lν ((g¯n,s − 1 ∗ ψ )i)ψ i] =
+¯n∑
+i=1
+Eν [∇ (g¯n,s − 1 ∗ ψ )i · ∇ ψ i] =
+∑
+i,j,k
+Eν [g¯n,s − 1(k − i)∂ jψ k ·∂ jψ i].
+
+PDF PAGE 33
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 33
+Since g¯n,s − 1 is a positive kernel, for each j ∈ { 1,..., ¯n} , setting uk =∂ jψ k, we have
+∑
+i,k
+g¯n,s − 1(k − i)uiuk ≥ 0,
+which justiﬁes the claim ( 5.38).
+Recall that by Remark 2.1, the convolution of a discrete function f : Z/ ¯nZ with g¯n,α for α > − 1
+corresponds to a fractional primitive of order 1 − α off . One can now interpolate between the L1 norm
+of the primitive of ψ of order 1 − s and the L2 norm of the primitive of order 1 − s
+2 . Let φ : T → R
+smooth enough. Applying Lemma A.1 to u :=g¯n,s − 1/ 2 ∗ ψ with s1 = 0, s2 = 1
+2 , s0 = 1
+2 − s
+2 ∈ (s1,s 2),
+θ =s, p1 = 2, p2 = 1 and p = 1
+1− s
+2
+gives
+∥g¯n,s/ 2 ∗ ψ ∥
+L
+1
+1− s/2 (T)
+≤ C∥g¯n,s ∗ ψ ∥θ
+L1(T)∥g¯n,s − 1/ 2 ∗ ψ ∥1− θ
+L2(T). (5.39)
+Let φ 0 : T → R smooth such that φ 0( i
+¯n ) = ψ i for each i ∈ { 1,..., ¯n} . Using ( 5.39) and making φ 0
+slightly vary, we deduce that
+( ¯n∑
+i=1
+|(g¯n,s/ 2 ∗ ψ )i|
+1
+1− s/2
+) 1− s/ 2
+≤ C
+( ¯n∑
+i=1
+|(g¯n,s ∗ ψ )i|
+) 1− s( ¯n∑
+i=1
+(g¯n,s − 1/ 2 ∗ ψ )2
+i
+) s
+2
+. (5.40)
+Besides, by Cauchy-Schwarz inequality, it is straightforw ard to check that
+¯n∑
+i=1
+|(g¯n,s ∗ ψ )i| ≤ C(β )nκε |L3/ 2− sψ |. (5.41)
+Inserting ( 5.41) and ( 5.38) into ( 5.40), one obtains ( 5.37). □
+5.3. Control on derivatives. The aim is now to control the global decay of ∇ ψ i with respect to the
+global decay of ψ i. The proof relies on the distortion argument of Lemma 4.2, the central task being to
+bound a variant of the commutator L α ML− 1
+α − M from above.
+Let us pause to explain the strategy of this proof. At ﬁrst let us ﬁx a small parameter ε 0 > 0. In
+view of its speciﬁc positive-deﬁniteness structure, M can be bounded from below by a matrix ˜M where
+interactions are cut oﬀ for d¯n(i,k )>d ¯n(i,i 0)1− ε 0 . We then seek to control (L α ML− 1
+α ψ dis − ˜Mψ dis)i for
+each 1 ≤ i ≤ ¯n. By construction, ( ˜Mψ dis)i may be bounded by |L3/ 2− s− ε 0ψ |. Similarly one can bound
+the left and right tails of (L α ML− 1
+α ψ dis)i by |L3/ 2− s− ε 0ψ |. We are thus left to estimate
+∑
+k∈ A(i)
+ψ kg¯n,s (k − i) where A(i) := {k ̸=i :d¯n(i,i 0)1− ε 0 ≤ d¯n(i,k ) ≤ d¯n(i,i 0)1+ε 0 }. (5.42)
+The point is to express this sum with respect w := H¯n,s/ 2ψ , the discrete primitive w of order 1 − s/ 2 of
+ψ , which gives
+∑
+k∈ A(i)
+ψ kg¯n,s (d¯n(i,k )) =
+¯n∑
+l=1
+∑
+k∈ A(i)
+g− 1
+¯n,s/ 2(d¯n(k,l ))g¯n,s (d¯n(i,k ))1i̸=kwl, (5.43)
+whereg− 1
+¯n,s/ 2 := H− 1
+¯n,s/ 2e1. Given an index l, one shall therefore estimate a truncated convolution product
+between g¯n,s and g− 1
+¯n,s/ 2. If l lies away from the boundary of A(i), this product almost equals g¯n,s ∗
+g− 1
+¯n,s/ 2(l) ≃ g¯n, 1− s/ 2(l). Fixing a threshold of size d¯n(i,i 0)1− 2ε 0 , one can decompose ( 5.43) according to
+whether d¯n(l,∂A (i)) ≥ d¯n(i,i 0)1− 2ε 0 . Owing to the previous remark and by Hölder’s inequality, on e
+can bound the ﬁrst contribution by the Lp norm of w with p = 1
+1− s/ 2 and insert ( 5.37). On the other
+hand, the second contribution can be controlled by |L3/ 2− s− ε 0ψ |.
+We ﬁnally obtain a control on |L1− s/ 2Dψ | depending on |L1− s/ 2− ε 0ψ | and on nε 0 |L1/ 2ψ |. A reversed
+inequality will be proved in the next subsection allowing on e to control |L3/ 2− sψ | by |L1− s/ 2ψ |. Since
+ε 0> 0 and 3/ 2 − s> 1/ 2, this will provide a bound on |L3/ 2− sψ | and |L1− s/ 2Dψ |.
+
+PDF PAGE 34
+34 JEANNE BOURSIER
+Lemma 5.5. Lets ∈ (0, 1). Let ν and M satisfying Assumptions 5.1 and 5.2. Let χ n ∈ H 1(ν ), i0 ∈ ¯I
+and ψ ∈ L2( ¯I,H 1(ν )) be the solution of
+
+
+
+β Mψ + Lνψ =χ nei0 +λ (e1 +... +e¯n) on π (MN )
+ψ · (e1 +... +e¯n) = 0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ).
+(5.44)
+Let α 0 ∈ ( 1− 2s
+1− s, 1) as in Lemma 5.4. Let γ ≥ 1
+2 . There exist C(β ) locally uniform in β , κ > 0, δ > 0
+and ε 0> 0 such that
+Eν
+[ ¯n∑
+i=1
+d(i,i 0)2( γ
+2 + 1
+4 )|∇ ψ i|2
+]
+≤ C(β )nκε Eν [|Lγψ |2]
+1
+2
+(
+nκε 0 Eν [|L1/ 2ψ |2]
+1− α0
+2 Eν [|L3/ 2− sψ |2]
+α0
+2
++n− ε 0 Eν [|L3/ 2− sψ |2]
+1
+2 +nκε 0+1(Eν [λ 2]
+1
+2
+)
++nκ (ε 0+ε )Eν [χ 2
+n]. (5.45)
+Proof. Let ψ ∈ L2( ¯I,H 1(ν )) be the solution of (
+5.44).
+Step 1: a priori estimates and distortion. First note that ψ satisﬁes the energetic estimate
+Eν [|ψ |2]
+1
+2 + Eν [|Dψ |2]
+1
+2 ≤ C(β )nκε Eν [χ 2
+n]
+1
+2. (5.46)
+Forα ≥ 1
+2 , let L α ∈ M ¯n(R) be as in ( 5.35). Let ψ dis = L α ψ . Multiplying ( 5.65) by L α , one can see
+that ψ dis solves
+β Lα ML− 1
+α ψ dis + Lνψ dis =χ nei0 +λ Lα (e1 +... +e¯n).
+In contrast with the short-range case, one cannot expect |Mψ dis| to be of order nκε underν ifα = 3
+2 − s
+and one should therefore not split L α Mψ dis into Mψ dis + (Lα ML− 1
+α − M)ψ dis. We will instead isolate
+short-range interactions. Fix a small parameter ε 0> 0. For each i,j ∈ ¯I, let
+Ii,j :=
+{
+k ∈ ¯I :d¯n(k, i +j
+2 )> 1
+2d¯n(i,j )
+}
+.
+By Assumptions 4.1 item ( 5.12), there exists a family of functions ( α i,j )i,j ∈ ¯I satisfying for α i,j ≥ 0 for
+eachd¯n(i,j ) ≥ nεγ such that
+UN · MUN =
+∑
+k̸=l
+α k,l (uk +... +ul)2 ≥
+∑
+k̸=l:d ¯n(k,l )≤ d ¯n(k,i 0)1− ε0
+α k,l (uk +... +ul)2 :=UN · ˜MUN.
+It follows that M ≥ ˜M, where
+˜Mi,j :=
+∑
+k̸=l∈ Ii,j :d ¯n(k,l )≤ d ¯n(i,i 0)1− ε0
+α k,l.
+Let l0 := ⌊d¯n(i,i 0)1− ε 0 ⌋ . Let also ˜M(1) deﬁned for each i,j ∈ ¯I by
+˜M(1)
+i,j =
+{
+g¯n,s (j − i) − g¯n,s (l0) − g′
+¯n,s (l0)(d¯n(j,i ) − l0) if d¯n(j,i ) ≤ l0
+0 if d¯n(j,i )>l 0. (5.47)
+Finally let M(2) = M − H¯n,s be the random part of M and set
+δ (1)
+Lα = L α H¯n,s L− 1
+α − ˜M(1) and δ (2)
+Lα = L α M(2)L− 1
+α − M(2),
+so that ψ dis is solution of
+β ˜Mψ dis +βδ (1)
+Lαψ dis +βδ (2)
+Lαψ dis + Lνψ dis =χ nei0 +λ Lα (e1 +... +e¯n). (5.48)
+Step 2: integration by parts. We proceed as in the proof of Lemma
+4.2. Taking the scalar product
+of ( 5.48) with ψ dis reads
+Eν [βψ dis · ( ˜M +δ (1)
+Lα +δ (2)
+Lα )ψ dis] + Eν [|∇ ψ dis|2] = Eν [ψ i0χ n + L2α ψ · (e1 +... +e¯n)λ ]. (5.49)
+By construction, there exists a constant κ 0> 0 such that
+˜M ≥ n− κ 0εI¯n. (5.50)
+It therefore remains to control the commutators δ (1)
+Lα and δ (2)
+Lα .
+
+PDF PAGE 35
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 35
+Step 3: control on the long-range commutator. This step is the most important of the proof.
+Recalling that L α H¯n,s L− 1
+α ψ dis = L α H¯n,sψ , one may split δ (1)
+Lαψ dis into
+(δ (1)
+Lαψ dis)i =d¯n(i,i 0)α ∑
+k:d ¯n(i,k )≥ d ¯n(i,i 0)1− ε0
+g¯n,s (i − k)ψ k
+  
+(I)i
++
+∑
+k:d ¯n(i,k )≤ d ¯n(i,i 0)1− ε0
+g¯n,s (i − k)
+(d¯n(i,i 0)α
+d¯n(k,i 0)α − 1
+)
+ψ dis
+k
+  
+(II )i
++(III )i, (5.51)
+with
+(III )i =g′
+¯n,s (d¯n(i,i 0)1− ε 0 )
+∑
+k:d ¯n(i,k )≤ d ¯n(i,i 0)1− ε0
+(d¯n(i,k ) − d¯n(i,i 0)1− ε 0 )ψ dis
+k
+− g¯n,s (d¯n(i,i 0)1− ε 0 )
+∑
+k:d ¯n(i,k )≤ d ¯n(i,i 0)1− ε0
+ψ dis
+k .
+Let us split ( I)i further into
+(I)i =d¯n(i,i 0)α ∑
+k:d ¯n(i,i 0)1− ε0 ≤ d ¯n(i,k )≤ d ¯n(i,i 0)1+ε0
+g¯n,s (i − k)ψ k
+  
+(I)′
+i
++d¯n(i,i 0)α ∑
+k:d ¯n(i,k )>d ¯n(i,i 0)1+ε0
+g¯n,s (i − k)ψ k
+
+ 
+(I)′′
+i
+.
+First note that by Cauchy-Schwarz inequality,
+|(I)′′
+i | ≤ C
+( ∑
+k:d ¯n(i,k )>d ¯n(i,i 0)1+ε0
+1
+d¯n(i,k )2s
+1
+d¯n(i0,k )3− 2s
+) 1
+2
+|L3/ 2− sψ | ≤ C
+d¯n(i,i 0)1+ε 0
+|L3/ 2− sψ |.
+We turn to the term ( I)′
+i. The idea is to express it with respect to the primitive of ord er 1 − s/ 2 of ψ
+and to use the L
+1
+1− s/2 control of Lemma 5.4. Let w = H¯n,s/ 2ψ and g− 1
+¯n,s/ 2 = H− 1
+¯n,s/ 2e1. One may write
+(I)′
+i =
+¯n∑
+l=1
+( ∑
+k:d ¯n(i,i 0)1− ε0 ≤ d ¯n(i,k )≤ d ¯n(i,i 0)1+ε0
+1
+d¯n(i,k )sg− 1
+¯n,s/ 2(k − l)
+)
+wl. (5.52)
+The value of the truncated convolution product in front of wl depends on whether l lies close to the
+boundary of A(i) := {k :d¯n(i,i 0)1− ε 0 ≤ d¯n(i,k ) ≤ d¯n(i,i 0)1+ε 0 } . We claim that there exists a constant
+C >0 such that for each l ∈ { 1,..., ¯n} ,
+⏐
+⏐
+⏐
+∑
+k∈ A(i)
+1
+d¯n(i,k )sg− 1
+¯n,s/ 2(k − l)
+⏐
+⏐
+⏐ ≤ C
+( 1
+d¯n(i,l )s
+1
+d¯n(l,∂A (i))1− s/ 2 + 1
+d¯n(i,l )1+ s
+2 − κε 0
+)
+. (5.53)
+Let us prove ( 5.53). First, in view of Lemma 2.3, the kernel g− 1
+¯n,s/ 2 satisﬁes
+|g− 1
+¯n,s/ 2|(k) ≤ C
+d¯n(k, 1)2− s/ 2 for each 1 ≤ k ≤ ¯n, (5.54)
+⏐
+⏐
+⏐
+¯n∑
+k=1
+g− 1
+¯n,s/ 2(k)
+⏐
+⏐
+⏐ ≤ C
+n1− s
+2
+. (5.55)
+Ifd¯n(l,A (i)) ≥ d¯n(i,i 0), then by ( 5.54), the result if straightforward. Now if l ∈ A(i) withd¯n(l,∂A (i)) ≥
+d¯n(i,i 0), one can write
+∑
+k∈ A(i)
+1
+d¯n(i,k )sg− 1
+¯n,s/ 2(k − l) = −
+∑
+k∈ A(i)
+1
+d¯n(i,k )sg− 1
+¯n,s/ 2(k − l) = O
+( 1
+d¯n(i,i 0)1+ s
+2 − κε 0
+)
+.
+
+PDF PAGE 36
+36 JEANNE BOURSIER
+Finally let l such that d¯n(l,∂A (i)) ≤ d¯n(i,i 0). One has
+∑
+k∈ A(i)
+1
+d¯n(i,k )sg− 1
+¯n,s/ 2(k − l) =
+∑
+k∈ A(i):d ¯n(k,l )≤ 3
+4 d ¯n(i,i 0)
+1
+d¯n(i,k )sg− 1
+¯n,s/ 2(k − l)
++
+∑
+k∈ A(i):d ¯n(k,l )> 3
+4 d ¯n(i,i 0)
+1
+d¯n(i,k )sg− 1
+¯n,s/ 2(k − l).
+In view of ( 5.54) there holds
+⏐
+⏐
+⏐
+∑
+k∈ A(i):d ¯n(k,l )> 3
+4 d ¯n(i,i 0)
+1
+d¯n(i,k )sg− 1
+¯n,s/ 2(k − l)
+⏐
+⏐
+⏐ ≤ C
+d¯n(i,i 0)1+ s
+2 − κε 0
+.
+Let us split the ﬁrst term by writing
+1
+d¯n(i,k )s = 1
+d¯n(i,l )s + 1
+d¯n(i,k )s − 1
+d¯n(i,l )s.
+Since d¯n(l,A (i)) ≤ d¯n(i,i 0) and d¯n(k,l ) ≤ 3
+4d¯n(i,i 0) one has
+⏐
+⏐
+⏐ 1
+d¯n(i,k )s − 1
+d¯n(i,l )s
+⏐
+⏐
+⏐ ≤ Cd ¯n(k,l )
+d¯n(i,i 0)1+s. (5.56)
+Using in turn ( 5.54) and ( 5.55), one can see that
+∑
+k∈ A(i):d ¯n(k,i )≤ d ¯n(i,i 0)
+g− 1
+¯n,s/ 2(k − l) =
+∑
+k∈ A(i)
+g− 1
+¯n,s/ 2(k − l) +O
+( 1
+d¯n(i,i 0)1− s/ 2
+)
+=O
+( 1
+d¯n(l,∂A (i))1− s/ 2 + 1
+d¯n(i,i 0)1− s/ 2
+)
+.
+Finally inserting ( 5.56) we have
+⏐
+⏐
+⏐
+∑
+k∈ A(i):d ¯n(k,l )≤ d ¯n(i,i 0)
+( 1
+d¯n(i,k )s − 1
+d¯n(i,l )s
+) 1
+d¯n(k,l )2− s/ 2
+⏐
+⏐
+⏐ ≤ Cd¯n(i,i 0)s/ 2
+d¯n(i,l )1+s ≤ C
+d¯n(i,l )1+ s
+2 − κε 0
+.
+Combining the two last displays, one obtains the claimed est imate ( 5.53).
+Let us split the sum over l in ( 5.52) according to whether d¯n(l,∂A (i)) ≥ d¯n(i,i 0)1− 2ε 0 . For the ﬁrst
+contribution one can write
+⏐
+⏐
+⏐
+∑
+l:d ¯n(l,∂A (i))≥ d ¯n(i,i 0)1− 2ε0
+1
+d¯n(i,l )s
+1
+d¯n(l,∂A (i))1− s/ 2wl
+⏐
+⏐
+⏐ ≤ Cd ¯n(i,i 0)κε 0
+∑
+l:d ¯n(i,l )≥ d ¯n(i,i 0)1− 2ε0
+1
+d¯n(i,l )1+ s
+2
+|wl|
+≤ Cd ¯n(i,i 0)κε 0
+( ¯n∑
+l=1
+|wl|
+1
+1− s/2
+) 1− s/ 2( ∑
+l:d ¯n(i,l )≥ d ¯n(i,i 0)1− 2ε0
+1
+d¯n(i,l )
+2
+s (1+ s
+2 )
+) s
+2
+≤ C
+d¯n(i,i 0)1− κε 0
+( ¯n∑
+l=1
+|wl|
+1
+1− s/2
+) 1− s/ 2
+.
+Inserting the estimate ( 5.37) of Lemma 5.4 then yields
+Eν
+[⏐
+⏐
+⏐
+∑
+l:d ¯n(l,∂A (i))≥ d ¯n(i,i 0)1− 2ε0
+1
+d¯n(i,l )s
+1
+d¯n(l,∂A (i))1− s/ 2wl
+⏐
+⏐
+⏐
+2] 1
+2
+≤ C(β )nκε 1
+d¯n(i,i 0)1− κε 0
+(Eν [|L1/ 2ψ |2]
+1
+2 + Eν [χ 2
+n]
+1
+2 )sEν [|L3/ 2− sψ |2]
+1− s
+2 .
+For the second contribution, one can check via Cauchy-Schwa rz inequality that
+|wl| ≤ C
+d¯n(l,i 0)1− s/ 2 |L3/ 2− sψ |.
+
+PDF PAGE 37
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 37
+It follows that
+⏐
+⏐
+⏐
+∑
+l:d ¯n(l,∂A (i))≤ d ¯n(i,i 0)1− 2ε0
+1
+d¯n(i,l )s
+1
+d¯n(l,∂A (i))1− s
+2
+wl
+⏐
+⏐
+⏐
+≤ C 1
+d¯n(i,i 0)1+ s
+2
+∑
+l:d ¯n(l,∂A (i))≤ d ¯n(i,i 0)1− 2ε0
+1
+d¯n(l,∂A (i))1− s
+2
+|L3/ 2− sψ | ≤ C
+d¯n(i,i 0)1+sε 0
+|L3/ 2− sψ |. (5.57)
+We have crucially used the fact that in ( 5.57), the series ∑
+k
+1
+k1− s/2 is diverging, in order to have an error
+in the last display much smaller than d¯n(i,i 0)− 1, when ε 0 > 0. This justiﬁes our choice of considering a
+fractional primitive of order 1 − s/ 2 (rather than 3 / 2 − s for instance). One can gather these estimates
+into
+Eν [(I)2
+i ]
+1
+2 ≤ C(β )nκε
+d¯n(i,i 0)1− α
+((
+Eν [χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
++nκε 0 Eν [|L1/ 2ψ |2]
+1
+2
+) s
++ Eν [|L3/ 2− sψ |2]
+1− s
+2 + 1
+d¯n(i,i 0)1+sε 0
+Eν [|L3/ 2− sψ |2]
+1
+2
+)
+. (5.58)
+We now control the terms ( II )i and (III )i. Let us write ( II )i as
+(II )i =
+∑
+k:d ¯n(i,k )≤ d ¯n(i,i 0)1− ε0
+1
+d¯n(i,k )s (d¯n(i,i 0)α − d¯n(k,i 0)α )ψ k
+=d¯n(i,i 0)α ∑
+k:d ¯n(i,k )≤ d ¯n(i,i 0)1− ε0
+1
+d¯n(i,k )s
+(
+1 − d¯n(i,k )α
+d¯n(i,i 0)α
+)
+ψ k.
+One can Taylor expand the weight in the above equation when d¯n(i,k ) ≤ d¯n(i,i 0)1− ε 0 into
+⏐
+⏐
+⏐1 − d¯n(i,k )α
+d¯n(i,i 0)α
+⏐
+⏐
+⏐ ≤ Cd¯n(i,k )
+d¯n(i,i 0).
+This allows one to bound ( II )i by
+|(II )i| ≤ d¯n(i,i 0)α − 1 ∑
+k:d ¯n(i,k )≤ d ¯n(i,i 0)1− ε0
+d¯n(i,k )1− s|ψ k| ≤ C
+d¯n(i,i 0)1− α +(1− s)ε 0
+|L3/ 2− sψ |. (5.59)
+Similarly, by expanding d¯n(k,i 0)α for k close to i, one obtains
+|(III )i| ≤ C
+d¯n(i,i 0)1− α +ε 0(1− s) |L3/ 2− sψ |. (5.60)
+Putting ( 5.58), ( 5.59) and ( 5.60) together, one obtains that for ε 0 > 0 large enough with respect to ε ,
+there exists κ> 0 such that
+|Eν [ψ dis ·δ (1)
+Lαψ dis]| ≤ C(β )nκε Eν [|L2α − 1/ 2ψ |2]
+1
+2
+(
+nκε 0Eν [|L1/ 2ψ |2]
+1
+2 +n− ε 0 Eν [|L3/ 2− sψ |2]
+1
+2
+nκε 0Eν [|L1/ 2ψ |2]
+s
+2 Eν [|L3/ 2− sψ |2]
+1− s
+2 +nκε 0 Eν [λ 2]
+1
+2
+)
++C(β )nκε 0 Eν [χ 2
+n]. (5.61)
+Step 4: control on the short-range commutator. It remains to bound δ (2)
+Lα . Recall that by (
+5.10),
+the oﬀ-diagonal entries of M(2) typically decays in d¯n(i,j )− (1+ s
+2 ). One may write
+(δ (2)
+Lαψ dis)i =
+∑
+k:d ¯n(i,k )≤ 1
+2 d ¯n(i,i 0)
+M(2)
+i,k
+(d¯n(i,i 0)α
+d¯n(k, 1)α − 1
+)
+ψ dis
+k
+  
+(I)i
++
+∑
+k:d ¯n(i,k )> 1
+2 d ¯n(i,i 0)
+M(2)
+i,k
+(d¯n(i,i 0)α
+d¯n(k, 1)α − 1
+)
+ψ dis
+k
+  
+(II )i
+.
+The ﬁrst term can be bounded for any value of α by
+Eν [(I)2
+i ]
+1
+2 ≤ C(β )nκε
+d¯n(i,i 0)
+1
+2 + s
+2
+Eν [|ψ dis|2]
+1
+2,
+with C(β ) depending on α . For the second term we have
+Eν [(II )2
+i ]
+1
+2 ≤ C(β )nκε
+d¯n(i,i 0)1+ s
+2 − α Eν [|L1/ 2ψ |2]
+1
+2.
+
+PDF PAGE 38
+38 JEANNE BOURSIER
+Consequently arguing as in the short-range case (see the pro of of Lemma 4.2) we obtain
+⏐
+⏐
+⏐Eν
+[ ¯n∑
+i=1
+ψ dis
+i (I)i
+]⏐
+⏐
+⏐ ≤ β
+2n− ε (s+2)Eν [|ψ dis|2] +C(β )nκε Eν [|ψ dis|2]Eν [χ 2
+n]
+1
+2.
+By construction, we have
+Eν
+[
+ψ dis · ˜Mψ dis +
+¯n∑
+i=1
+ψ dis
+i (I)i]
+]
+≥ 0. (5.62)
+For the second term, the point is to give a control in term of L 2α − 1/ 2ψ :
+⏐
+⏐
+⏐Eν
+[ ¯n∑
+i=1
+ψ dis
+i (II )i
+]⏐
+⏐
+⏐ ≤ C(β )nκε Eν [|L2α − 1/ 2ψ |2]
+1
+2 Eν [|L1/ 2ψ |2]
+1
+2. (5.63)
+Step 5: conclusion. Note that for α ≥ 1
+2 , 2α − 1
+2 ≥ α . Therefore in view of ( 5.61), ( 5.62) and ( 5.63)
+we obtain from ( 5.49) that for α ≥ 1
+2 ,
+Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)2α |∇ ψ i|2
+]
+≤ C(β )nκε Eν [|L2α − 1/ 2ψ |2]
+1
+2
+(
+nκε 0 Eν [|L1/ 2ψ |2]
+s
+2 Eν [|L3/ 2− sψ |2]
+1− s
+2
++n− ε 0 Eν [|L3/ 2− sψ |2]
+1
+2 +nκε 0 +nEν [λ 2]
+1
+2
+)
++nκε 0Eν [χ 2
+n]
+)
+. (5.64)
+This completes the proof of Lemma
+5.5. □
+5.4. Global decay estimate. Leveraging on the a priori estimate of Lemma 5.5, we establish a global
+decay estimate on the solution. The method uses a factorizat ion of the system around its ground state
+to reduce the problem to the well-understood short-range si tuation of Section 4. Let us emphasize that
+due to the degeneracy of the inverse of the Riesz matrix ( 2.5), it is unavoidable to have an a priori
+control on Dψ such as ( 5.45).
+Lemma 5.6. Lets ∈ (0, 1). Let ν and M satisfying Assumptions 5.1 and 5.2. Let χ n ∈ H 1(ν ), i0 ∈ ¯I
+and ψ ∈ L2( ¯I,H 1(ν )) be the solution of
+
+
+
+β Mψ + Lνψ =χ nei0 +λ (e1 +... +e¯n) on π (MN )
+ψ · (e1 +... +e¯n) = 0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ).
+(5.65)
+There exists a constant C(β ) locally uniform in β and κ> 0 such that
+Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)2− s|∇ ψ i|2
+] 1
+2
++ Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)3− 2sψ 2
+i
+] 1
+2
+≤ C(β )nκε Eν [χ 2
+n]
+1
+2. (5.66)
+In addition, there exist a constant C(β ) locally uniform in β and κ> 0 such that
+Eν [λ 2]
+1
+2 ≤ C(β )
+n1− κε Eν [χ 2
+n]
+1
+2. (5.67)
+Proof. The strategy of proof is to multiply the system ( 5.65) by a constant matrix close to the inverse
+of H¯n,s , so that the system becomes short-range. There are two main d iﬃculties: ﬁrst, the interaction
+matrix should still be positive-deﬁnite and second, one sho uld be able to control the diﬀerential terms
+involving ∇ ψ , which do not come as a non-negative contribution anymore.
+Step 1: factorization. To solve the ﬁrst issue, the idea is to deﬁne a kernel f which is vanishing
+outside a certain grid centered at 1 and of length K1 = ⌊nε ⌋ κ 0 for some κ 0 ∈ N∗ . Assume ﬁrst that
+m := ¯n
+K1
+∈ N. Deﬁne f : ¯I → R given for each k ∈ ¯I by
+f (k) =
+{
+g− 1
+m,s ( k
+K1
+) if k ∈ ¯I ∩ K1Z
+0 otherwise , (5.68)
+where g− 1
+m,s = H− 1
+m,se1. Also let A be the Toeplitz matrix associated to f :
+A := (f (j − i))i,j ∈ M ¯n(R). (5.69)
+
+PDF PAGE 39
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 39
+Let us ﬁrst show that f is a positive-deﬁnite kernel on { 1,..., ¯n} . Let θ ∈ { 2kπ
+¯n : 0 ≤ k ≤ ¯n − 1} .
+One may notice that
+¯n− 1∑
+k=0
+f (k)eikθ =
+m− 1∑
+k=0
+g− 1
+m,s (k)eikθK 1.
+Since K1θ ∈ { 2kπ
+m : 0 ≤ k ≤ m − 1} , the above sum is positive. It follows that ( 5.68) deﬁnes a positive-
+deﬁnite kernel and ( 5.69) a positive-deﬁnite matrix. Now assume that ¯n
+K1
+/∈ N. Let m = ⌊ ¯n
+K1
+⌋ and
+f : { 1,...,mK 1} → R be as in ( 5.68). We deﬁne
+A := (f (j − i)1− i0≤ j− i≤ mK1 )i,j .
+Decomposing A into blocks and using the uniform positivity of the ﬁrst bloc k shows that there exists
+κ> 0,C > 0 such that for all U¯n ∈ R¯n,
+U¯n · AU¯n ≥ n− κε |U¯n|2 − Cn κε
+( ∑
+k:d(k,i 0)≤ K1
+|uk|2
+) 1
+2
+|UN |.
+Step 2: positiveness of AM. Assume that ¯n
+K1
+∈ N. One argues that for K1 large enough, the matrix
+AM is positive-deﬁnite, which is quite delicate since the prod uct of two positive-deﬁnite matrices is not
+in general positive-deﬁnite. The idea is to split M into the sum of a Toeplitz matrix associated to a
+positive kernel and a random “diagonally dominant” positiv e matrix. In view of Assumptions 5.2, there
+exists a family of ( α i,j )i,j ∈ ¯I satisfying α i,j ≥ 0 for each i,j ∈ ¯I with d¯n(i,j ) ≥ nεγ such that
+UN · MUN =
+∑
+k̸=l
+α k,l (uk +... +ul)2.
+Split M into M = M(1) + M(2) with for each 1 ≤ i,j ≤ ¯n,
+M(1)
+i,j =
+∑
+k̸=l∈ Ii,j
+α k,l 1d ¯n(k,l )≤ K1,
+where Ii,j := {k ∈ ¯I : d¯n(k, i+j
+2 ) > 1
+2d¯n(i,j )} . Since M(1)
+i,j = 0 if d¯n(i,j ) > K1 observe that AM(1) =
+f (1)M(1). Consequently there exists κ 1> 0 independent of K1 such that
+AM(1) ≥ n− κ 1εI¯n. (5.70)
+To control the product of A with the long-range matrix M(2), one may split M(2) into a constant Toeplitz
+matrix and a random part. Let h be the Riesz kernel truncated at K1 deﬁned for each k ∈ { 1,..., ¯n}
+by
+h(k) :=
+∑
+i,j ∈ I1,k
+g′′
+¯n,s (j − i)1d ¯n(i,j )≥ K1, (5.71)
+where g′′
+¯n,s is as in (
+2.13). By construction, h is a non-negative kernel since for all U¯n ∈ R¯n,
+∑
+i,j
+h(i − j)uiuj =
+∑
+i,j
+g′′
+¯n,s (j − i)1d ¯n(i,j )≥ K1 (ui − uj)2.
+Denote M(2, 1) the Toeplitz matrix associated to h and M(2, 2) = M(2) − M(2, 1). Since Toeplitz matrices
+do commute, the product of A and M(2, 1) is non-negative. For the random part note that uniformly in
+1 ≤ i,j ≤ ¯n,
+|(AM(2, 2))i,j | ≤ Cn κε
+d¯n(i,j )1+ s
+2
+1d ¯n(i,j )≥ K1,
+We wish to bound the Euclidian operator norm of AM(2, 2). Although AM(2, 2) is not symmetric, one
+may proceed as in the proof of Lemma 5.1. Let B :=n− κε I¯n + AM(2, 2). For K1 large enough, BB T is
+diagonally dominant and its oﬀ-diagonal terms satisfy
+max
+i
+∑
+k̸=i
+|(BB T )i,k | ≤ Cn κε K − s/ 2
+1 .
+Therefore from the Gershgorin circle theorem, the spectrum of BB T satisﬁes
+Spec(BB T ) ⊂ [n− κ 1ε − Cn κε K − s/ 2
+1 ,n − κ 1ε +Cn κε K − s/ 2
+1 ].
+
+PDF PAGE 40
+40 JEANNE BOURSIER
+The Euclidian operator norm of B being its largest singular value, we obtain that there exist s κ > 0
+such that
+sup
+|x|=1
+|x ·Bx| ≤ n− κε ,
+which also gives
+sup
+|x|=1
+|x · AM(2)x| ≤ Cn − κε , (5.72)
+for some constant C >0. This can be made much smaller than the lower bound in ( 5.70) by choosing
+K1 large enough, thus proving that AM(2) is positive-deﬁnite. In conclusion, if ¯n
+K1
+∈ N with K1 large
+enough, there exists κ> 0 such that on ( 5.6),
+AM ≥ n− κε I¯n.
+To summarize, on the ﬁrst hand the positivity of AM(1) follows from the grid construction of ( 5.68),
+the positivity of M(1) and ( 5.72). On the second hand the positivity of AM(2, 1) follows from the fact A
+and M(2, 1) are positive and commute.
+Now, if ¯n
+K1
+/∈ N, then for all U¯n ∈ R¯n,
+U¯n · AMU¯n ≥ n− κε I¯n − Cn κε
+( ∑
+i:d(i,i 0)≤ K1
+|ui|2
+) 1
+2
+|L3/ 2− sU¯n|. (5.73)
+We will apply ( 5.73) to ψ dis := L α ψ and control ∑
+d(i,i 0)≤ K1(ψ dis
+i )2 byK 2α
+1 |ψ |2.
+Step 3: decay of AM. Finally, one may show that the kernel ( 5.68) deﬁnes a good approximation of
+g− 1
+¯n,s : choosing K1 to be a large power of ⌊nε ⌋ as before, one can check that there exists a constant κ> 0
+such that for each k ∈ { 1,..., ¯n} ,
+|g¯n,s ∗ f |(k) ≤ Cn κε
+1 +d¯n(k, 1)2− s. (5.74)
+Let i ∈ { 1,..., ¯n} ∩ K1Z. Using that for each k ∈ { 1,...,m } ,gm,s (k) = g¯n,s (kK0)K s
+0, we ﬁnd
+¯n∑
+k=1
+g¯n,s (k − i)f (k) = K − s
+1 1l=1.
+Now ifi ∈ { 1,..., ¯n} , one can write it as i =i0 +(i− i0) withi0 ∈ { 1,..., ¯n}∩ K1Z andd¯n(i,i 0) ≤ K1.
+Therefore, by Taylor expansion,
+⏐
+⏐
+⏐
+¯n∑
+k=1
+g¯n,s (k − i)f (k) −
+¯n∑
+k=1
+g¯n,s (k − i0)f (k) − O(K1)
+¯n∑
+k=1
+g′
+¯n,s (k − i)f (k)
+⏐
+⏐
+⏐
+≤ CK 2
+1
+¯n∑
+k=1
+1
+d¯n(i,k )2+s
+1
+d¯n(k, 1)2− s ≤ CK 2
+1
+d¯n(i, 1)2− s,
+where g′
+¯n,s is as in ( 2.14). Also note that
+⏐
+⏐
+⏐
+¯n∑
+k=1
+g′
+¯n,s (k − i)f (k)
+⏐
+⏐
+⏐ ≤ C′
+d¯n(i, 1)2− s.
+It thus follows that ( 5.74) holds true. By similar considerations, one can prove that w hen ¯n
+K1
+/∈ N, the
+oﬀ-diagonal entries of AM decay as ( 5.74): there exist C >0,κ> 0 such that for each i,j ∈ { 1,..., ¯n} ,
+|(AM)i,j | ≤ Cn κε
+1 +d¯n(i,j )2− s. (5.75)
+
+PDF PAGE 41
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 41
+Step 4: distortion. Forα ≥ 1
+2 , let L α ∈ M ¯n(R) be as in ( 5.35). The argument proceeds by multiplying
+Equation ( 5.65) by L α A. Set ψ dis = L α ψ , which solves
+β Lα AML− 1
+α ψ dis + (Lα AL− 1
+α − A)Lνψ dis + ALνψ dis = L α A(χ nei0 +λ (e1 +... +e¯n)). (5.76)
+Letδ Lα = L α AML− 1
+α − AM. Taking the scalar product of ( 5.76) with ψ dis and integrating over ν yields
+β Eν
+[
+ψ dis · (AM +δ Lα)ψ dis +
+∑
+i,k
+Ai,k ∇ ψ dis
+i · ∇ ψ dis
+k +
+∑
+i,k
+(Lα AL− 1
+α − A)i,k ∇ ψ dis
+i · ∇ ψ dis
+k
+]
+= Eν [χ nψ i0 +λ Lα ψ · Lα A(e1 +... +e¯n)]. (5.77)
+Step 5: control on diﬀerential commutator. Since A fails to be uniformly positive-deﬁnite in n,
+one cannot directly bound the diﬀerential term in ( 5.77) by |Dψ dis|. However as we have seen in Lemma
+5.5, the gradient of ψ satisﬁes a global decay estimate whenever ψ does. Let us ﬁrst split the quantity
+of interest into
+∑
+k
+(Lα AL− 1
+α − A)i,k ∇ ψ dis
+i · ∇ ψ dis
+k =
+∑
+k
+f (i − k)
+(d¯n(i,i 0)α
+d¯n(k,i 0)α − 1
+)
+∇ ψ dis
+i · ∇ ψ dis
+k
+=
+∑
+k:d ¯n(k,i )≤ 1
+2 d ¯n(i,i 0)
+f (i − k)
+(d¯n(i,i 0)α
+d¯n(k,i 0)α − 1
+)
+∇ ψ dis
+i · ∇ ψ dis
+k
+  
+(I)i
++
+∑
+k:d ¯n(k,i )> 1
+2 d ¯n(i,i 0)
+f (i − k)
+(d¯n(i,i 0)α
+d¯n(k,i 0)α − 1
+)
+∇ ψ dis
+i · ∇ ψ dis
+k
+  
+(II )i
+. (5.78)
+One seeks to control the expectation of ( I)i and (II )i with respect to Eν [|LγDψ |2] for some well-chosen
+constantγ > 0. Fix γ ≥ 1
+2 . Using ( 5.75) and the fact that ∑¯n
+k=1ψ k = 0, the second term of (
+5.78) may
+be bounded by
+Eν [|(II )i|] ≤ C(β )nκε Eν [|∇ ψ dis
+i |2]
+1
+2
+d¯n(i,i 0)2− s− α Eν
+[ ∑
+k:d ¯n(k,i )> 1
+2 d ¯n(i,i 0)
+d¯n(k,i 0)2γ |∇ ψ k|2
+] 1
+2
+×
+( ∑
+k:d ¯n(i,k )≥ 1
+2 d ¯n(i,i 0)
+1
+d¯n(k,i 0)2γ
+) 1
+2
+≤ C(β )nκε Eν [|∇ ψ dis
+i |2]
+1
+2
+d¯n(i,i 0)
+3
+2 − s− α +γ Eν [|LγDψ |2]
+1
+2. (5.79)
+For the ﬁrst term, using Cauchy-Schwarz inequality one can ﬁ rst write
+|(I)i| ≤ C
+d¯n(i,i 0)
+( ∑
+k:d ¯n(i,k )≤ 1
+2 d ¯n(i,i 0)
+d¯n(i,k )2γ
+d¯n(i,k ) |∇ ψ k|2
+) 1
+2
+( ∑
+k:d ¯n(i,k )≤ 1
+2 d ¯n(i,i 0)
+d¯n(i,k )2(α − γ )
+d¯n(i,k )1− 2s |∇ ψ dis
+k |2
+) 1
+2
+.
+Summing this over i yields
+¯n∑
+i=1
+|(I)i| ≤ C
+( ¯n∑
+i=1
+∑
+k:d ¯n(i,k )≤ 1
+2 d ¯n(i,i 0)
+1
+d¯n(i,k )d¯n(k,i 0)2γ |∇ ψ k|2
+) 1
+2
+×
+( ¯n∑
+i=1
+1
+d¯n(i,i 0)2− 4(α − γ )
+∑
+k:d ¯n(i,k )≤ 1
+2 d ¯n(i,i 0)
+1
+d¯n(i,k )1− 2sd¯n(k,i 0)2γ |∇ ψ k|2
+) 1
+2
+≤ Cn κε
+( ¯n∑
+i=1
+d¯n(i,i 0)2γ |∇ ψ i|2
+) 1
+2
+( ¯n∑
+k=1
+d¯n(k,i 0)2γ |∇ ψ k|2 1
+d¯n(k,i 0)2− 2s− 4(α − γ )
+) 1
+2
+. (5.80)
+Combining ( 5.80) and ( 5.79), one can see that if α ≤ γ + 1− s
+2 , then
+⏐
+⏐
+⏐Eν
+[ ∑
+i,k
+(Lα AL− 1
+α − A)i,k ∇ ψ dis
+i · ∇ ψ dis
+k
+]⏐
+⏐
+⏐ ≤ C(β )nκε Eν
+[ n∑
+i=1
+d¯n(i,i 0)2γ |∇ ψ i|2
+]
+. (5.81)
+
+PDF PAGE 42
+42 JEANNE BOURSIER
+Step 6: control on the commutator δ Lα. One should now control the commutator δ Lα appearing
+in ( 5.77). Let us recall the decay estimate on f ∗ g¯n,s stated in ( 5.74). By analyzing AM(2), one can see
+that the oﬀ-diagonal entries of AM typically decay in
+Eν [(AM)2
+i,j ]
+1
+2 ≤ Cn κε
+d¯n(i,j )2− s.
+As a consequence Lemma 4.1 tells us that for α ∈ (0, 3
+2 − s],
+Eν [ψ dis ·δ (1)
+Lαψ dis] ≤ n− κ 0ε
+2 Eν [|ψ dis|2] +C(β )nκε Eν [|ψ dis|2]
+1
+2 Eν [|ψ |2]
+1
+2.
+From the positivity of AM stated in ( 5.73) this gives
+Eν [ψ dis(AM +δ Lα)ψ dis] ≥ n− κ 0ε
+2 Eν [|ψ dis|2] − nκε Eν [|ψ dis|2]
+1
+2 Eν [|ψ |2]
+1
+2. (5.82)
+Step 7: conclusion. Combining ( 5.77), ( 5.81) and ( 5.82) one gets that for α ∈ (0, 3
+2 − s],
+Eν [|Lα ψ |2]
+1
+2 ≤ C(β )nκε
+(
+Eν [χ 2
+n]
+1
+2 +nα − 1
+2 +sEν [λ 2]
+1
+2 + Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)2(α − 1− s
+2 )|∇ ψ i|2
+] 1
+2
+)
+. (5.83)
+In particular taking α = 3
+2 − s, one obtains
+Eν [|L3/ 2− sψ |2]
+1
+2 ≤ C(β )nκε
+(
+Eν [χ 2
+n]
+1
+2 +nEν [λ 2]
+1
+2 + Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)2(1− s
+2 )|∇ ψ i|2
+] 1
+2
+)
+. (5.84)
+Furthermore applying the estimate ( 5.45) with γ = 1 − s
+2 , we recognize
+Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)2(1− s
+2 )|∇ ψ i|2
+]
+≤ Cn κε
+(
+n− ε 0Eν [|L3/ 2− sψ |2] +nκε 0Eν [|L3/ 2− sψ |2]
+1− s
+2 Eν [|L1/ 2ψ |2]
+s
+2
++nκε 0Eν [|L3/ 2− s|2]
+1
+2nEν [λ 2]
+1
+2 + Eν [χ 2
+n]
+)
+. (5.85)
+Since s ∈ (0, 1), combining (
+5.84) and ( 5.85) one gets
+Eν [|L3/ 2− sψ |2]
+1
+2 + Eν [|L1− s/ 2Dψ |2]
+1
+2 ≤ C(β )nκε (nκε 0 Eν [χ 2
+n]
+1
+2 +n− ε 0 Eν [|L3/ 2− sψ |2]
+1
+2 +nEν [λ 2]
+1
+2 ).
+Takingε 0> 0 large enough with respect to ε , one obtains the existence of a constant κ> 0 such that
+Eν [|L3/ 2− sψ |2]
+1
+2 + Eν [|L1− s/ 2Dψ |2]
+1
+2 ≤ C(β )nκε (Eν [χ 2
+n]
+1
+2 +nEν [λ 2]
+1
+2 ). (5.86)
+Using the expression ( 3.10), one can also see that
+Eν [λ 2]
+1
+2 ≤ C(β )nκε − 1Eν [|L1/ 2ψ |2]
+1
+2. (5.87)
+Since 3
+2 − s> 1
+2 , one gets from ( 5.86) and ( 5.87) the estimates ( 5.66) and ( 5.67). □
+One shall extend the global decay estimate of Lemma 5.6 to the H.-S. equation without linear con-
+straint.
+Lemma 5.7. Lets ∈ (0, 1). Let ν and M satisfying Assumptions
+5.1 and 5.2. Let χ n ∈ H 1(ν ), i0 ∈ ¯I
+and ψ ∈ L2( ¯I,H 1(ν )) be the solution of
+{ β Mψ + Lνψ =χ nei0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ). (5.88)
+There exist a constant C(β ) locally uniform in β and κ> 0 such that
+Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)2− s|∇ ψ i|2
+] 1
+2
++ Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)3− 2sψ 2
+i
+] 1
+2
+≤ C(β )nκε Eν [χ 2
+n]
+1
+2.
+
+PDF PAGE 43
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 43
+Proof. Let ψ ∈ L2( ¯I,H 1(ν )) be the solution of ( 5.88). One can decompose ψ into ψ = v +w where
+v,w ∈ L2( ¯I,H 1(ν )) solve
+
+
+β Mv + Lνv =χ nei0 +λ (e1 +... +e¯n) on π (MN )
+v · (e1 +... +e¯n) = 0 on π (MN )
+v ·⃗ n= 0 on ∂π (MN ),
+(5.89)
+{ β Mw + Lνw =λ (e1 +... +e¯n) on π (MN )
+w ·⃗ n= 0 on ∂π (MN ). (5.90)
+For the vector-ﬁeld v, one may apply Lemma
+5.6 which gives
+Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)2− s|∇ vi|2
+] 1
+2
++ Eν
+[ ¯n∑
+i=1
+d¯n(i,i 0)3− 2sv2
+i
+] 1
+2
+≤ C(β )nκε Eν [χ 2
+n]
+1
+2 (5.91)
+as well as
+Eν [λ 2]
+1
+2 ≤ C(β )
+n1− κε Eν [χ 2
+n]
+1
+2. (5.92)
+It remains to address Equation ( 5.90). One can write a mean-ﬁeld approximation for ( 5.90) in the form
+f (e1 +... +e¯n) where f ∈ H 1(ν ) is the solution of
+βf + 1
+¯n1− s Lνf =λ. (5.93)
+By integration by parts this implies together with the contr ol ( 5.92) that
+Eν [f 2]
+1
+2 ≤ C(β )
+n2− s− κε Eν [χ 2
+n]
+1
+2, (5.94)
+Eν [|∇ f |2]
+1
+2 ≤ C(β )
+n
+3
+2 − s− κε Eν [χ 2
+n]
+1
+2. (5.95)
+Deﬁne w(1) =f × (e1 +... +e¯n) and w(2) =w − w(1) which is solution of
+{
+β Mw(2) + Lνw(2) = − β M(2)w(1) on π (MN )
+w ·⃗ n= 0 on ∂π (MN ).
+By ( 5.94), there holds
+Eν [|M(2)w(1)|2]
+1
+2 ≤ C(β )
+n
+3
+2 − s− κε Eν [χ 2
+n]
+1
+2.
+In particular, we have
+Eν [|w|2]
+1
+2 ≤ C(β )
+n
+3
+2 − s− κε Eν [χ 2
+n]
+1
+2 (5.96)
+and similarly
+Eν [|∇ w|]
+1
+2 ≤ C(β )
+n1− s
+2 − κε Eν [χ 2
+n]
+1
+2. (5.97)
+It follows from ( 5.96) and ( 5.97) that w satisﬁes the estimate ( 5.91) and so does ψ . □
+5.5. Localization and optimal decay. Let us now adapt the localization argument of Subsection
+4.4 to derive the near-optimal decay of the solution of ( 5.65). Having proved Lemma 5.6, it remains
+to control the decay of ψ j for a single j ∈ ¯I. To this end, we project the periodized equation ( 5.65)
+into a small window centered around j. After isolating an exterior ﬁeld, one can see that the proje cted
+equation has a similar structure as the equation one is start ing from. By splitting the external ﬁeld in
+a suitable manner, one can then decompose the solution into t wo parts, that we control separately.
+Proposition 5.8. Let s ∈ (0, 1). Let ν and M satisfying Assumptions 5.1 and 5.2. Let χ n ∈ H 1(ν ),
+i0 ∈ ¯I and ψ ∈ L2( ¯I,H 1(ν )) be the solution of
+
+
+β Mψ + Lνψ =χ nei0 +λ (e1 +... +e¯n) on π (MN )
+ψ · (e1 +... +e¯n) = 0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN ).
+(5.98)
+There exist C(β ) locally uniform in β and κ> 0 such that for each 1 ≤ i ≤ n,
+Eν [ψ 2
+i ]
+1
+2 ≤ C(β )nκε
+1 +d¯n(i,i 0)2− s Eν [χ 2
+n]
+1
+2, (5.99)
+
+PDF PAGE 44
+44 JEANNE BOURSIER
+Eν [|∇ ψ i|2]
+1
+2 ≤ C(β )nκε
+1 +d¯n(i,i 0)
+3
+2 − s
+2
+Eν [χ 2
+n]
+1
+2. (5.100)
+Proof. We proceed by bootstrapping the decay exponent on solutions of ( 5.98) and ( 5.88) for all M
+satisfying Assumptions 5.2. Assume that there exist α ≥ 3
+2 − s andγ ≥ 1 − s
+2 with γ ≤ α such that for
+M satisfying Assumptions 5.2 and all χ n ∈ H − 1(ν ),i0 ∈ { 1,..., ¯n} , if ψ ∈ L2( ¯I,H 1(ν )) solves ( 5.98) or
+(5.88), then there exists C(β ) and κ> 0 such that for each 1 ≤ j ≤ ¯n,
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)α Eν [χ 2
+n]
+1
+2, (5.101)
+Eν [|∇ ψ j |2]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)γ Eν [χ 2
+n]
+1
+2. (5.102)
+In addition to ( 5.101) and ( 5.102), we will also make a systematic use of the global estimates o f Lemma
+5.6 and Lemma 5.7.
+Step 1: projection and embedding. Let χ n ∈ H 1(ν ), i0 ∈ { 1,...,n } and ψ ∈ L2( ¯I,H 1(ν )) be the
+solution of ( 5.98). Fix an index j ∈ { 1,..., ¯n} and deﬁne the window
+J := {i ∈ { 1,..., ¯n} :d¯n(i,j ) ≤ d¯n(i0,j )/ 2}. (5.103)
+Let n0 = |J|. Let ψ J := (ψ i)i∈ J ∈ L2(J,H 1(ν )). Projecting ( 5.98) onto ( 5.103) reads
+
+
+
+β MJψ J + Lνψ 0 = − β
+(∑
+l∈ J c Mi,lψ l
+)
+i∈ J
+on π (MN )
+ψ 0 ·⃗ n= 0 on ∂π (MN ).
+(5.104)
+Let us operate the series of reductions of Subsection
+5.1 to reduce the study to a periodic system of
+size ¯n0 = ⌊n
+1
+2 + 1
+s
+0 ⌋ . One may assume that d¯n(j,i 0) ≥ nκε for some large κ> 0, otherwise the statements
+(5.99) and ( 5.100) are straightforward. Let us denote ¯J = { 1,..., ¯n0} . We now let d stand for the
+symmetric distance on ¯J. Consider the Riesz matrix on ¯J truncated at K0 = ⌊nκε ⌋ chosen as in ( 5.2),
+namely M0 = ∇ 2F (x) ∈ M ¯n0 for some x ∈ R¯n0 where
+F :X¯n0 ∈ R¯n0 ↦→
+∑
+i,j ∈ ¯J:d ¯n0 (i,j )≥ K0
+g′′
+¯n0,s (j − i)(xi +... +xj )2.
+Consider the block decomposition of H on Rn0 × R¯n0− n0 ,
+H =
+(A0 B0
+C0 D0
+)
+, A 0 ∈ M n0(R). (5.105)
+Let us add and subtract to the ﬁrst line of ( 5.104) the quantity B0(D0 +β − 1Lν ⊗ In0 )C0. Deﬁning
+M0 =
+(MJ B0
+C0 D0
+)
+,
+withB0,C0 andD0 as in ( 5.105), this allows one to identify ψ J
+j withψ 0
+j for each j ∈ { 1,...,n 0} , where
+ψ 0 ∈ L2( ¯J,H 1(ν )) solves
+{
+β M0ψ 0 + Lνψ 0 = V on π (MN )
+ψ 0 ·⃗ n= 0 on ∂π (MN ).
+Moreover, the external ﬁeld V ∈ L2( ¯J,H 1(ν )) satisﬁes V l = 0 if l ∈ { n0 + 1,..., ¯n0} and for each
+l ∈ { 1,...,n 0} ,
+Vl = − β
+∑
+i∈ J c
+Mi,lψ i −
+∑
+i∈ J
+el ·B0(βD 0 + Lν ⊗ I¯n0− n0 )− 1(C0eiψ i) +λ.
+Note that M0 satisﬁes Assumptions 5.2.
+
+PDF PAGE 45
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 45
+Step 2: splitting of the exterior potential. Fixε ′ > 0 and let us partition ¯J intoK := ⌊d¯n(j,i 0)ε ′
+⌋
+intervalsI1,...,I K of equal size up to a O(d¯n(j,i 0)1− ε ′
+). For each k ∈ { 1,...,K } , let ik be an index in
+the center of Ik. One can split the external potential into V = V (1) + V(2), where
+V(2)
+l = V ik if l ∈ Ik.
+Note that V (2) is piecewise constant on the partition ¯J = ∪ K
+k=1Ik. By linearity, ψ 0 can be decomposed
+intoψ 0 =v +w with v,w ∈ L2( ¯J,H 1(ν )) solving
+{
+β M0v + Lνv = ∑
+l∈ J V(1)
+l el on π (MN )
+v ·⃗ n= 0 on ∂π (MN ), (5.106)
+{
+β M0w + Lνw = ∑
+l∈ J V(2)
+l el on π (MN )
+w ·⃗ n= 0 on ∂π (MN ). (5.107)
+Step 3: study of v. By using Cauchy-Schwarz inequality, Equation (
+5.24), the fact that ∑¯n
+k=1ψ k = 0,
+the estimates (
+5.66) and ( 5.67) and Lemma 5.2, one may check that for each l ∈ J,
+Eν [(V(1))2
+l ]
+1
+2 ≤ C(β )nκε d¯n0 (j,l )1− ε ′
+d¯n(j,i 0)
+3
+2 − s
+1
+d¯n(l,∂J )
+1
+2 +s Eν [χ 2
+n]
+1
+2.
+Note that we have not made use of the bootstrap assumption for this last estimate but rather of the
+global estimate ( 5.66). Let us decompose v intov = ∑
+l∈ Jv(l) where for each l ∈ J,v(l) ∈ L2( ¯J,H 1(ν ))
+solves {
+β M0v(l) + Lνv(l) = V (1)
+l el on π (MN )
+v(l) ·⃗ n= 0 on ∂π (MN ), (5.108)
+By applying the bootstrap assumption ( 5.101) in the window ¯J, one can see that for each l ∈ J and
+j ∈ ¯J,
+Eν [(v(l)
+j )2]
+1
+2 ≤ C(β )nκε d¯n0 (j,l )1− ε ′ − α
+d¯n(j,i 0)
+3
+2 − s
+1
+d¯n(l,∂J )
+1
+2 +s Eν [χ 2
+n]
+1
+2.
+Summing this over l ∈ J yields
+Eν [v2
+j ]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)α +ε ′ Eν [χ 2
+n]
+1
+2. (5.109)
+In a similar manner, using the induction hypothesis ( 5.102), one also obtains
+Eν [|∇ vj |2]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)γ +ε ′ Eν [χ 2
+n]
+1
+2. (5.110)
+Step 4: study of w. It remains to study the solution w associated to the piecewise constant vector-ﬁeld
+V(2). We will construct an approximation of w by replacing M0 by the constant Riesz matrix on the
+window ¯J. For each k ∈ { 1,...,K } , let w(k) ∈ L2( ¯J,H 1(ν )) be the solution of
+{
+β M0w(k) + Lνw(k) = V (2)
+ik
+∑
+l∈ Ik
+el on π (MN )
+w(k) ·⃗ n= 0 on ∂π (MN )
+and φ (k) ∈ L2( ¯J,H 1(ν )) be the solution of
+βg ¯n0,s ∗ φ (k) + Lνφ (k) = V (2)
+ik
+∑
+l∈ Ik
+el. (5.111)
+Let also M(2)
+0 be the diﬀerence between M0 and the Toeplitz matrix associated to g¯n0,s . Finally set
+η (k) ∈ L2( ¯J,H 1(ν )) deﬁned for each i ∈ ¯J byη (k)
+i =φ (k)
+i+1 − φ (k)
+i . One can observe that
+βg ¯n0,s ∗ η (k) + Lνη (k) = V (2)
+ik (eik+1 − eik ).
+In view of Lemma
+5.6, there holds
+Eν [(V(2)
+ik )]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0) Eν [χ 2
+n]
+1
+2.
+
+PDF PAGE 46
+46 JEANNE BOURSIER
+Besides, from the global estimate of Lemma 5.6, letting S =g¯n0,s ∗ φ (k), we have
+Eν [S2
+i ]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0) Eν [χ 2
+n]
+1
+2. (5.112)
+One may then write φ (k)
+j as
+φ (k)
+j =
+∑
+l∈ ¯J
+g− 1
+¯n0,s (j − l)Sl =
+∑
+l∈ ¯J:d ¯n0 (j,l )> 1
+2 d ¯n0 (j,∂I k)
+g− 1
+¯n0,s (j − l)Sl
+  
+(I)j
++
+∑
+l∈ ¯J:d ¯n0 (j,l )≤ 1
+2 d ¯n0 (j,∂I k)
+g− 1
+¯n0,s (j − l)Sl
+  
+(II )j
+.
+For the ﬁrst term, employing ( 5.112), we ﬁnd
+Eν [(I)2
+j ]
+1
+2 ≤ C(β )nκε
+d¯n0 (j,i 0)d¯n0 (j,∂I k)1− s Eν [χ 2
+n]
+1
+2.
+One may then split the second term into
+(II )j =
+∑
+l∈ ¯J:d ¯n0 (j,l )≤ 1
+2 d ¯n0 (j,∂I k)
+g− 1
+¯n0,s (j − l)(Sj − Sl)
+  
+(II )′
+j
++
+∑
+l∈ ¯J:d ¯n0 (j,l )≤ 1
+2 d ¯n0 (j,∂I k)
+g− 1
+¯n0,s (j − l)Sj
+  
+(II )′′
+j
+. (5.113)
+In view of (
+5.112), (II )′′
+j is bounded by
+Eν [((II )′′
+j )2]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)d¯n0 (j,∂I k)1− s Eν [χ 2
+n]
+1
+2.
+For (II )′
+j we can note that
+Sl − Sj =
+∑
+i∈ ¯J
+φ (k)
+i
+(
+g¯n0,s (l − i) − g¯n0,s (j − i)
+)
+=
+∑
+i∈ ¯J
+(φ (k)
+i − φ (k)
+j )
+(
+g¯n0,s (l − i) − g¯n0,s (j − i)
+)
+. (5.114)
+Applying Cauchy-Schwarz inequality and the global decay es timate of Lemma
+5.6 shows there exist
+C(β )> 0,κ> 0 such that for each i,j ∈ ¯I,
+Eν [(φ (k)
+i − φ (k)
+j )2]
+1
+2 ≤ C(β )nκε
+( ∑
+l∈ (i,j )
+1
+d¯n0(l,∂I k)3− 2s
+) 1
+2
+Eν [χ 2
+n]
+1
+2. (5.115)
+Again, one can split the sum ( 5.114) according to whether d(i,j ) ≤ 3d(l,j ). For the ﬁrst contribution
+we ﬁnd using ( 5.115),
+⏐
+⏐
+⏐
+∑
+i∈ ¯J:d ¯n0 (i,j )≤ 3d ¯n0 (l,j )
+(φ (k)
+i − φ (k)
+j )
+(
+g¯n0,s (l − i) − g¯n0,s (j − i)
+) ⏐
+⏐
+⏐ ≤ C(β )nκε d¯n0 (j,l )1− s
+d¯n(j,i 0)
+1
+d¯n0 (j,∂I k)1− s.
+Regarding the second contribution we ﬁnd
+⏐
+⏐
+⏐
+∑
+i∈ ¯J:d ¯n0 (i,j )≥ 3d ¯n0 (l,j )
+(φ (k)
+i − φ (k)
+j )
+(
+g¯n0,s (l − i) − g¯n0,s (j − i)
+) ⏐
+⏐
+⏐
+≤ C(β )nκε
+d¯n(j,i 0)
+∑
+i∈ ¯J:d ¯n0 (i,j )≥ 3d ¯n0 (l,j )
+1
+d¯n0 (i,∂I k)1− s
+d¯n0 (j,l )
+d¯n0 (j,i )1+s ≤ C(β )nκε d¯n0 (j,l )
+d¯n(j,i 0)d¯n0 (j,∂I k).
+Assembling the above leads to
+Eν [(φ (k)
+j )2]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)d¯n0 (j,∂I k)1− s Eν [χ 2
+n]
+1
+2. (5.116)
+A similar computation shows that
+Eν [|∇ φ (k)
+j |2]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)d¯n0 (j,∂I k)
+1
+2 − s
+2
+Eν [χ 2
+n]
+1
+2. (5.117)
+
+PDF PAGE 47
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 47
+Step 5: conclusion for M(2)
+0 = 0 . Assume that M(2)
+0 = 0. Then φ (k) =w(k) for each k ∈ { 1,...,K } .
+Summing (
+5.109) and ( 5.116) over k and choosing ε ′ small enough shows that there exists a small η > 0
+such that
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε
+( 1
+d¯n(j,i 0)α +η + 1
+d¯n(j,i 0)2− s
+)
+Eν [χ 2
+n]
+1
+2,
+Eν [|∇ ψ j |2]
+1
+2 ≤ C(β )nκε
+( 1
+d¯n(j,i 0)γ +η + 1
+d¯n(j,i 0)
+3
+2 − s
+2
+)
+Eν [χ 2
+n]
+1
+2.
+One concludes after a ﬁnite number of steps that
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)2− s Eν [χ 2
+n]
+1
+2, (5.118)
+Eν [|∇ ψ j |2]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)
+3
+2 − s
+2
+Eν [χ 2
+n]
+1
+2. (5.119)
+Step 6: control of w in the general case. Let us go back to the general case and deﬁne e(k) =
+w(k) − φ (k) where φ (k) is as in ( 5.111). Note that e(k) solves
+β M0e(k) + Lνe(k) = − β M(2)
+0 φ (k).
+According to the estimates (
+5.116) and ( 5.117) of Step 4, the vector-ﬁeld M(2)
+0 φ (k) satisﬁes for each
+1 ≤ i ≤ n,
+Eν [((M(2)
+0 φ )(k)
+i )2]
+1
+2 ≤ C(β )nκε
+d¯n0 (j,i 0)d¯n0 (i,∂I k)1− s Eν [χ 2
+n]
+1
+2,
+Eν [|∇ (M(2)
+0 φ )(k)
+i |2]
+1
+2 ≤ C(β )nκε
+d¯n0 (j,i 0)d¯n0 (i,∂I k)
+1
+2 − s
+2
+Eν [χ 2
+n]
+1
+2.
+It follows from the bootstrap assumptions ( 5.101) and ( 5.102) that for each 1 ≤ i ≤ n,
+Eν [(e(k)
+i )2]
+1
+2 ≤ C(β )nκε
+( 1
+d¯n0 (i,∂I k)2− s + 1
+d¯n0(i,∂I k)α +1− s
+)
+Eν [χ 2
+n]
+1
+2,
+Eν [|∇ e(k)
+i |2]
+1
+2 ≤ C(β )nκε
+( 1
+d¯n0 (j,∂I k)
+3
+2 − s
+2
++ 1
+d¯n0 (j,∂I k)γ +1− s
+)
+Eν [χ 2
+n]
+1
+2.
+Consequently the same estimate holds for w(k). Summing this over k yields this existence of a constant
+κ> 0 such that
+Eν [w2
+j ]
+1
+2 ≤ C(β )nκ (ε +ε ′ )
+( 1
+d¯n(j,i 0)2− s + 1
+d¯n(j,i 0)α +1− s
+)
+Eν [χ 2
+n]
+1
+2,
+Eν [|∇ wj |2]
+1
+2 ≤ C(β )nκ (ε +ε ′ )
+( 1
+d¯n(j,i 0)
+3
+2 − s
+2
++ 1
+d¯n(j,i 0)γ +1− s
+)
+Eν [χ 2
+n]
+1
+2.
+Combined with (5.109) and ( 5.110), this improves the induction hypotheses ( 5.101) and ( 5.102) provided
+ε ′ > 0 is chosen small enough. After a ﬁnite number of iterations, one ﬁnally gets ( 5.99) and ( 5.100).
+Step 7: conclusion for equation ( 5.88). In view of the bootstrap assumption, it remains to consider
+the solution ψ of ( 5.88). Let us split ψ as in the proof of Lemma 5.7 into ψ = v +w where v,w ∈
+L2( ¯I,H 1(ν )) are solutions of ( 5.89) and ( 5.90). By applying the result of Step 6 to v, one can see that
+there exists a positive η > 0 such that for each i ∈ { 1,..., ¯n} ,
+Eν [v2
+i ]
+1
+2 ≤ C(β )nκε
+( 1
+d¯n(j,i 0)α +η + 1
+d¯n(j,i 0)2− s
+)
+Eν [χ 2
+n]
+1
+2, (5.120)
+Eν [|∇ vi|2]
+1
+2 ≤ C(β )nκε
+( 1
+d¯n(j,i 0)γ +η + 1
+d¯n(j,i 0)
+3
+2 − s
+2
+)
+Eν [χ 2
+n]
+1
+2. (5.121)
+As in the proof of Lemma 5.7 one shall split w intow =w(1) +w(2) with
+w(1) =f (e1 +... +e¯n),
+wheref is given by ( 5.93). Let M(2) be the diﬀerence between M and the Toeplitz matrix associated to
+g¯n,s . Observe that w(2) solves
+{
+β Mw(2) + Lνw(2) = − β M(2)w(1) on π (MN )
+w ·⃗ n= 0 on ∂π (MN ).
+
+PDF PAGE 48
+48 JEANNE BOURSIER
+Using ( 5.94) we ﬁnd that for each i ∈ { 1,..., ¯n} ,
+Eν [(M(2)w(1))2
+i ]
+1
+2 ≤ C(β )nκε
+d¯n(j,i 0)2− s Eν [χ 2
+n]
+1
+2.
+Employing the bootstrap assumption to bound w(2), we ﬁnd that for each i ∈ { 1,..., ¯n} ,
+Eν [(w(2)
+i )2]
+1
+2 ≤ C(β )nκε
+( 1
+d¯n(j,i 0)2− s + 1
+d¯n(j,i 0)α +1− s
+)
+Eν [χ 2
+n]
+1
+2.
+Similarly, applying ( 5.95), one gets
+Eν [|∇ w(1)
+i |2]
+1
+2 ≤ C(β )nκε
+( 1
+d¯n(j,i 0)
+3
+2 − s
+2
++ 1
+d¯n(j,i 0)γ +1− s
+)
+Eν [χ 2
+n]
+1
+2.
+Combining the two last displays with ( 5.120) and ( 5.121) improves the recursion hypothesis when ψ is
+solution of ( 5.88). □
+Remark 5.4. Even though the Lagrange multiplier in ( 5.98) is of order 1/n , there is no correction of
+order 1/n in ( 5.99), contrarily to the case s> 1. This is related to the fact that u := H− 1
+n,s (e1 +... +en)
+satisﬁes ui ∼ c/n 1− s for each 1 ≤ i ≤ n. Note that in the above proof, the Lagrange multiplier is
+contained in V(2) and the smallness of the associated solution shown in ( 5.116).
+5.6. Decay estimate for solutions of ( 5.1). In the case n ≤ N/ 2, one shall now deduce from
+Proposition 5.8 a control on the solution of ( 5.1).
+Proposition 5.9. Lets ∈ (0, 1). Let i0 ∈ { n
+4,..., 3n
+4 } , χ n ∈ H 1(ν ) and ψ ∈ L2(I,H 1(ν )) solution of
+{
+Aν
+1ψ =χ nei0 on π (MN )
+ψ ·⃗ n= 0 on ∂π (MN )), (5.122)
+There exist constants C(β )> 0,c (β )> 0,δ > 0 and κ> 0 such that for each j ∈ { 1,...,n } ,
+Eν [ψ 2
+j ]
+1
+2 ≤ C(β )nκε
+( 1
+|j − i0|2− s + 1√ n
+)
+(Eν [χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
+). (5.123)
+Proof. The proof is similar to that of Proposition 4.5. Denote d the usual distance on { 1,...,n } . Let
+ψ ∈ L2(I,H 1(ν )) be the solution of ( 5.122) and ψ (1) solution of
+{ ¯Aν
+1ψ (1) =χ nei0 on π (MN )
+ψ (1) ·⃗ n= 0 on ∂π (MN ), (5.124)
+Let ψ (2) :=ψ − ψ (1), which solves
+{ Aν
+1ψ (2) = − βMψ (1) on π (MN )
+ψ (2) ·⃗ n= 0 on ∂π (MN ).
+Taking the scalar product of the above equation with ψ (2) and integrating by parts under ν yields
+Eν [|ψ (2)|2] ≤ C(β )nκε Eν [ψ (2) ·Mψ (1)]. (5.125)
+We claim that uniformly in 1 ≤ j ≤ n,
+Eν [ψ (2) ·Mψ (1)] ≤ C(β )
+n1− κε Eν [|ψ (2)|2]
+1
+2 Eν [χ 2
+n]
+1
+2. (5.126)
+Let A be the good event ( 5.6). Fix 1 ≤ j ≤ n. One can split the quantity ( Mψ (1)) ·ej into
+(Mψ (1)) ·ej =
+∑
+k:d(k,∂I )≤ n/ 4
+ej ·M (ekψ (1)
+k )
+  
+(I)j
++
+∑
+k:d(k,∂I )>n/ 4
+ej ·M (ekψ (1)
+k )
+  
+(II )j
+.
+By ( 5.33) and ( 5.34), one may bound the ﬁrst quantity by
+Eν [1Aψ (2)
+j (I)j] ≤ C(β )nκε
+d(j,∂I )
+s
+2
+∑
+k:d(k,∂I )≤ n/ 4
+1
+d(k,i 0)2− s
+1
+d(k,∂I )
+s
+2
+Eν [(ψ (2)
+j )2]
+1
+2 Eν [χ 2
+n]
+1
+2
+≤
+C(β )Eν [(ψ (2)
+j )2]
+1
+2
+n1− s
+2 − κε d(j,∂I )
+s
+2
+Eν [χ 2
+n]
+1
+2.
+
+PDF PAGE 49
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 49
+For the second quantity, we can write
+(I)j =
+∑
+k:d(k,∂I )>n/ 4
+ej ·M ((ek − ei0 )ψ (1)
+k ) +
+∑
+k:d(k,∂I )≤ n/ 4
+ej ·M (ei0ψ (1)
+k ). (5.127)
+For the ﬁrst term of the last display, using the bound on the in crements of M given in ( 6.12), we ﬁnd
+that
+Eν
+[
+1Aψ (2)
+j ej·
+( ∑
+k:d(k,∂I )>n/ 4
+M ((ek − ei0 )ψ (1)
+k )
+)]
+≤ C(β )nκε
+d(j,∂I )
+s
+2
+∑
+k:d(k,∂I )>n/ 4
+1
+d(i0,k )1− s
+1
+n1+ s
+2
+Eν [(ψ (2)
+j )2]
+1
+2 Eν [χ 2
+n]
+1
+2 ≤
+C(β )Eν [(ψ (2)
+j )2]
+1
+2
+n1− s
+2 +κε d(j,∂I )
+s
+2
+Eν [χ 2
+n]
+1
+2. (5.128)
+Because ψ (1) · (e1 +... +en) = 0, the second term of ( 5.127) satisﬁes
+Eν
+[
+1Aψ (2)
+j ej·
+( ∑
+k:d(k,∂I )>n/ 4
+M (ei0ψ (1)
+k )
+)]
+≤ C(β )Eν [(ψ (2)
+j )2]
+1
+2
+n1− κε Eν [χ 2
+n]
+1
+2. (5.129)
+Putting ( 5.127), ( 5.128) and ( 5.129) together we obtain ( 5.126). Summing this over j yields
+Eν [1Aψ (2) ·Mψ (1)] ≤ C(β )Eν [|ψ (2)|2]
+1
+2
+n1− κε Eν [χ 2
+n].
+Finally, inserting the maximum principle of Proposition
+3.6 we obtain
+Eν [1Acψ (2) ·Mψ (1)] ≤ C(β )nκε sup |χ n|Eν [|ψ (2)|2]
+1
+2 Eν [1Ac|M |2]
+1
+2 ≤ C(β )e− c(β )nδ
+sup |χ n|Eν [|ψ (2)|2]
+1
+2.
+Inserting the last displays into ( 5.125) we ﬁnd
+Eν [|ψ (2)|2] ≤ C(β )
+n1− κε (Eν [χ 2
+n] +e− c(β )nδ
+sup |χ n|2). (5.130)
+In particular, for each 1 ≤ j ≤ n, there holds
+Eν [(ψ (2)
+j )2] ≤ C(β )
+n1− κε (Eν [χ 2
+n] +e− c(β )nδ
+sup |χ n|2)
+and the estimate (
+5.123) follows. □
+5.7. Proof of Theorem 1.
+Proof of Theorem 1. Arguing as in the proof of Theorem 2, one may deduce Theorem 1 from the decay
+estimate of Proposition 5.9. □
+6. Uniqueness of the limiting measure
+In this section we show that the sequence of the laws of micros copic processes converges, in a suitable
+topology, to a certain point process Riesz s,β , as claimed in Theorem 3. The existence of an accumulation
+point being a routine argument, Theorem 3 is in fact a uniqueness result. To establish the uniqueness o f
+the accumulation point, we demonstrate that microscopic po int processes form, in an appropriate sense,
+a Cauchy sequence. In the following subsection, we further e xplain the strategy of proof and show how
+the problem can be reduced to a correlation question.
+6.1. Reduction to a correlation estimate. In the present section one seeks to compare the two
+following quantities:
+EPg
+N,β
+[F (x1,...,x n)] and EPg
+N ′ ,β
+[F (x1,...,x n)], with F : Rn → R smooth,
+where 1 ≤ n ≤ N ≤ N ′. Let us denote I = { 1,...,n } and π : MN → π (MN ) the projection on
+the coordinates ( x1,...,x n). We claim that if F depends on variables in the bulk of { 1,...,n } , then
+the expectations of F under Pg
+N,β and Pg
+N ′ ,β approximately coincide whenever N and N ′ are chosen
+large enough. We will draw an exterior conﬁguration y = (yn+1,...,y N ) ∈ π I c (MN ) from Pg
+N,β and
+an exterior conﬁguration z = (zn+1,...,z N ′ ) ∈ π I c(MN ′ ) from PN ′ ,β and compare the conditioned
+
+PDF PAGE 50
+50 JEANNE BOURSIER
+measures PN,β (· | y) and PN ′ ,β (· | z). Let us slightly modify the measures PN,β and PN ′ ,β by adding
+the following quantity to the Hamiltonian:
+Fg :Xn ∈ Rn ↦→
+n∑
+i=1
+θ (n− εxi) +
+n∑
+i=1
+θ (n− εx− 1
+i ). (6.1)
+Deﬁne the constrained measures
+dQg
+N,β ∝ e− β Fg◦ π dPg
+N,β , dQg
+N ′ ,β ∝ e− β Fg◦ π dPg
+N ′ ,β . (6.2)
+We say that a conﬁguration y = (yn+1,...,y N ) ∈ π I c (MN ) is admissible if
+|yi +... +yi+k − k| ≤ Cn εk
+s
+2 for each n + 1 ≤ i,i +k ≤ N (6.3)
+and that y ∈ π I c(MN ) and z ∈ π I c (MN ′ ) are compatible if
+N − (yn+1 +... +yN ) = N ′ − (zn+1 +... +zN ′ ). (6.4)
+Giveny ∈ π I c(MN ) and z ∈ π I c (MN ′ ) two admissible and compatible conﬁgurations, denote
+ν y
+n = Qg
+N,β (· | y) and ν z
+n = Qg
+N,β (· | z). (6.5)
+Letting
+An = { (x1,...,x n) ∈ π (MN ) : x1 +... +xn ≤ N − yn+1 − ... − yN }, (6.6)
+we can write
+dν y
+n(x) ∝ e− β (Hg
+n(x)+Hg
+n,N (x,y )+Fg(x))1An (x)dx
+dν z
+n(x) ∝ e− β (Hg
+n(x)+Hg
+n,N ′ (x,z )+Fg(x))1An (x)dx,
+where Hg
+n,N (x,y ), deﬁned in (
+5.5), stands for the interaction between x and y. A ﬁrst possibility to
+compare ν y
+n and ν z
+n is to transport one measure onto the other and to study the dec ay of the solution
+of the Monge-Ampere equation. Instead, we interpolate betw een ν y
+n and ν z
+n and consider a continuous
+pathν (t) in the space of probability measures on π (MN ). There are several ways of interpolating, one
+of them consisting in running the Langevin dynamics as in [ A W22]. Alternatively, one can consider a
+convex combination of Hg
+n,N and Hg
+n,N ′ . For t ∈ [0, 1], deﬁne
+E(t)(x) = (1 − t)Hg
+n,N (x,y ) +tHg
+n,N ′ (x,z ) and Hg
+n(t) = Hg
+n + Fg +E(t)
+and the probability measure
+dν (t)(x) ∝ e− β Hg
+n(t)(x)1An (x)dx. (6.7)
+Observe that ν (0) = ν y
+n and ν (1) = ν z
+n.
+Let G : Rn → R be a measurable bounded function. Deﬁne
+h :t ∈ [0, 1] ↦→ Eν (t)[G].
+It is straightforward to check that h is smooth and that for all t ∈ (0, 1),
+h′(t) = β Covν (t)[G, Hg
+n,N (·,y ) − H g
+n,N (·,z )].
+Integrating this between 0 and 1, we obtain the following int egral representation of the diﬀerence of the
+expectations of G under ν y
+n and ν z
+n:
+Lemma 6.1. Let G : Rn → R be a measurable bounded function. Let also ν (t) be the measure deﬁned
+in (
+6.7). We have
+Eν zn [G] = Eν y
+n [G] +β
+ˆ 1
+0
+Covν (t)[G, Hg
+n,N (·,y ) − H g
+n,N (·,z )]dt. (6.8)
+We will consider functions G depending on a small number of coordinates in the bulk of { 1,...,n } .
+Let us emphasize that ∂ i(Hg
+n,N (·,y )− H g
+n,N (·,z )) typically decays in dn(i,∂I )− s
+2 underν (t). One should
+therefore prove that the decay of correlations under ν (t) is fast enough in order to compensate the long-
+range nature of the interaction and conclude that the covari ance term in ( 6.8) is small. In order to apply
+the result of Proposition 4.5 to the measure ν (t), one shall ﬁrst prove some rigidity estimates under
+ν (t).
+
+PDF PAGE 51
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 51
+Lemma 6.2. Lets ∈ (0, 1). Let 1 ≤ n ≤ N ≤ N ′ with N ≫ n
+2
+s . Let y ∈ π I c(MN ) and z ∈ π I c (MN ′ )
+be two admissible and compatible conﬁgurations in the sense of (6.3) and ( 6.4). Let ν (t) be the probability
+measure (6.7). There exist constants κ> 0, C(β )> 0 and c(β )> 0 locally uniform in β such that
+ν (t)(n− κε ≤ xi ≤ nκε ) ≥ 1 − C(β )e− c(β )nδ
+, for each 1 ≤ i ≤ n, (6.9)
+ν (t)(|xi +... +xi+k − k| ≥ nκε k
+s
+2 ) ≤ C(β )e− c(β )nδ
+, for each 1 ≤ i ≤ i +k ≤ n. (6.10)
+Lemma 6.2, whose proof is given in Appendix D, implies that ν (t) veriﬁes Assumptions 5.1. Let us
+now split the operator Aν (t)
+1 in a convenient way in order to simplify the analysis of the co rrelations
+equation. Following Subsection 5.1, one can decompose Aν (t)
+1 intoAν (t)
+1 = ¯Aν (t)
+1 +M (t) with
+¯Aν (t)
+1 :=β ∇ 2Fg +βA 1Ac +β ∇ 2(Hg
+n(x) +E(t))1A − βB (D +β − 1Lν (t) ⊗ In)− 1C + Lν (t) ⊗ In,
+M (t) : β ∇ 2(Hg
+n +E(t))1Ac − βA 1Ac +βB (D +β − 1Lν (t) ⊗ In)− 1C,
+where A,B,C,D are as in ( 5.2) and A as in ( 5.6). Denote d the usual distance on { 1,...,n } . In view
+of Lemmas 6.2 and 5.2, for s ∈ (0, 1), there exist C(β )> 0,c (β )> 0,δ > 0 and κ> 0 such that for each
+1 ≤ i,j,l ≤ n, η and all φ ∈ L2(ν (t)),
+Eν (t)[(φe j ) · M (t)(ηe i)]
+1
+2 ≤ C(β )nκε
+d(i,∂I )
+s
+2d(j,∂I )
+s
+2
+Eν (t)[φ 2]
+1
+2 Eν (t)[η 2]
+1
+2 + C(β )e− c(β )nδ
+sup |φ | sup |η |,
+(6.11)
+Eν (t)
+[
+(φe j)M (t)(η (ei − el))
+] 1
+2
+≤ C(β )nκε d(i,l )
+min(d(i,∂I )1+ s
+2,d (j,∂I )1+ s
+2 )d(j,∂I )
+s
+2
+Eν (t)[φ 2]
+1
+2 Eν (t)[η 2]
+1
+2
++C(β )e− c(β )nδ
+sup |φ | sup |η |. (6.12)
+Similarly in the case s ∈ (1, +∞ ), there exist C(β ) > 0,c (β ) > 0,δ > 0 and κ > 0 such that for each
+1 ≤ i,j,l ≤ n and all η , φ ∈ L2(ν (t)),
+Eν (t)[(φe j )·M (t)(ηe i)]
+1
+2 ≤ C(β )nκε
+d(i,∂I )s− 1
+2d(j,∂I )s− 1
+2
+Eν (t)[φ 2]
+1
+2 Eν (t)[η 2]
+1
+2 +C(β )e− c(β )nδ
+sup |φ | sup |η |,
+(6.13)
+Eν (t)
+[
+(φe j)M (t)(η (ei − el))
+] 1
+2
+≤ C(β )nκε d(i,l )
+min(d(i,∂I )
+3
+2 +s,d (j,∂I )
+3
+2 +s)d(j,∂I )
+1
+2 +s Eν (t)[φ 2]
+1
+2 Eν (t)[η 2]
+1
+2
++C(β )e− c(β )nδ
+sup |φ | sup |η |. (6.14)
+6.2. Estimate on the main equation. Our goal is to study the decay of the solution ψ of the
+Helﬀer-Sjöstrand equation associated to ν (t) when the source vector-ﬁeld is localized on a small number
+of coordinates in the center of I. Since ν (t) veriﬁes Assumptions 5.1, one may apply the result of
+Proposition 5.8 to ¯Aν (t)
+1 . By convexity, this yields a satisfactory bound on ψ , thus proving that that
+the correlation between a given gap in the center of I and the interaction energy E(t), tends to 0 as n
+tends to inﬁnity.
+Lemma 6.3. Lets ∈ (0, 1) ∪ (1, +∞ ). Let y ∈ π I c (MN ) be an admissible conﬁguration in the sense of
+(
+6.3) and ν (t) be the measure deﬁned in ( 6.7). Let χ n ∈ H 1, i0 ∈ { 1,...,n } such that |i0 − n
+2 | ≤ n
+4 . Let
+ψ ∈ L2(I,H 1(ν (t))) solving
+{
+β ∇ 2(Hg
+n(t) + Fg)ψ + Lν (t)ψ =χ nei0 on An
+ψ ·⃗ n= 0 on ∂ An. (6.15)
+Denote d the usual distance on { 1,...,n } . There exist constants C(β )> 0,κ> 0 such that
+n∑
+j=1
+Eν (t)[ψ 2
+j ]
+1
+2
+d(j,∂I )
+s
+2
+≤ C(β )nκε (Eν (t)[χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
+)(n− s
+2 1s∈ (0, 1) +n− 1
+2 1s∈ (1, +∞ )).
+
+PDF PAGE 52
+52 JEANNE BOURSIER
+Proof. Let s ∈ (0, 1). Let ψ ∈ L2(I,H 1(ν (t))) be the solution of ( 6.15). Let ψ (1) ∈ L2(I,H 1(ν (t))) be
+the solution of { β Mψ (1) + Lν (t)ψ (1) =χ nei0 on An
+ψ (1) ·⃗ n= 0 on ∂ An.
+Set ψ (2) =ψ − ψ (1) ∈ L2(I,H 1(ν (t))). One can observe that ψ (2) is solution of
+{ β ∇ 2(Hg
+n(t) + Fg)ψ (2) + Lν (t)ψ (2) = − βM (t)ψ (1) on An
+ψ (2) ·⃗ n= 0 on ∂ An.
+Since ν (t) satisﬁes Assumptions 5.1 if s ∈ (0, 1) (resp. Assumptions 4.1 ifs ∈ (1, +∞ )), one may apply
+the estimate ( 5.99) of Proposition 5.8 (resp. the estimate ( 4.29) of Proposition 4.3) to ψ (1) which yields
+Eν (t)[(ψ (1)
+i )2]
+1
+2 ≤ C(β )nκε
+( 1s∈ (0, 1)
+d(i,i 0)2− s + 1s∈ (1, +∞ )
+d(i,i 0)s
+)
+.
+Together with the bounds ( 6.11) and ( 6.12), this implies
+Eν (t)[|ψ (2)|2] ≤ C(β )
+n1− κε (Eν (t)[χ 2
+n] + sup |χ n|2e− c(β )nδ
+).
+By Cauchy-Schwarz inequality, this yields
+n∑
+j=1
+1
+d(j,∂I )
+s
+2
+Eν (t)[(ψ (2)
+j )2]
+1
+2 ≤ C(β )nκε − s
+2 (Eν (t)[χ 2
+n]
+1
+2 + sup |χ n|e− c(β )nδ
+)
+and the same estimate holds for ψ . We conclude likewise in the case s ∈ (1, +∞ ). □
+6.3. Proof of Theorem 3 and Theorem 4. By inserting the decay estimate of Lemma 6.3 into the
+identity (6.8), one may easily compare the measures ν y
+n and ν z
+n when the exterior conﬁgurations y and
+z are compatible. After integrating y and z in the set of admissible and compatible conﬁgurations,
+there remains to show that typical ﬂuctuations of x1 +... +xn do not aﬀect much the measures, thus
+demonstrating the following comparison inequality:
+Proposition 6.4. Let s ∈ (0, 1) ∪ (1, +∞ ). Let G : Rn → R in H 1 such that sup |∇ G|< ∞ . Assume
+that G depends only on the variables xi for i ∈ J := {⌊ n
+2 ⌋ − K,..., ⌊ n
+2 ⌋ +K} with K ≤ n/ 4. Let A be
+the good event ( 5.6). We have
+⏐
+⏐
+⏐EQg
+N,β
+[G(x1,...,x n)] − EQg
+N ′ ,β
+[G(x1,...,x n)]
+⏐
+⏐
+⏐
+≤ C(β )nκε (n− min(s,1− s)
+2 1s∈ (0, 1) +n− 1
+2 1s∈ (1, +∞ ))
+(∑
+i∈ J
+sup
+A
+|∂ iG| +
+∑
+i∈ J
+sup |∂ iG|e− c(β )nδ )
+. (6.16)
+Proof. Let G : Rn → R satisfying the above. Let F g be the forcing ( 6.1) and Qg
+N,β , Qg
+N ′ ,β be the
+measures (
+6.2). The measure Qg
+N,β ◦ π − 1 being uniformly log-concave with constant c =βn − ε (s+2) one
+may apply the Bakry-Emery to see that
+Ent[Pg
+N,β ◦ π − 1 | Qg
+N,β ◦ π − 1] ≤ 2c− 1EPg
+N,β
+[|∇ Fg|2].
+Using in turn the rigidity estimates of Lemma
+2.1 and Theorem 6 and the Pinsker inequality, one can
+write
+TV(Pg
+N,β ◦ π − 1, Qg
+N,β ◦ π − 1) ≤ C(β )e− c(β )nδ
+. (6.17)
+By similar arguments one also has
+TV(Pg
+N ′ ,β ◦ π − 1, Qg
+N ′ ,β ◦ π − 1) ≤ C(β )e− c(β )nδ
+.
+Let y ∈ π I c (MN ) and z ∈ π I c (MN ′ ) be two admissible conﬁgurations in the sense of (
+6.3). Assume
+that y and z are compatible in the sense of ( 6.4), i.e N − (yn+1 +... +yN ) = N ′ − (zn+1 +... +zN ′ ).
+Denote An the domain ( 6.6), ν y
+n and ν z
+n the measures ( 6.5) and ν (t) = ( ν (t,y,z )) the interpolating
+measure ( 6.7). For each i ∈ J, let ψ (t,i ) ∈ L2(I,H 1(ν (t))) be the solution of
+{
+Aν (t)
+1 ψ (t,i ) = (∂ iG)ei on An
+ψ (t,i ) ·⃗ n= 0 on ∂ An.
+
+PDF PAGE 53
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 53
+By applying the estimates of Lemmas 6.1, 6.2 and 6.3, we ﬁnd
+|EQg
+N,β
+[G ◦ π |y] − EQg
+N ′ ,β
+[G ◦ π |z| ≤
+ˆ 1
+0
+|Covν (t)[G, Hg
+n,N ′ − H g
+n,N ]|dt
+=
+∑
+i∈ J
+ˆ 1
+0
+|Eν (t)[∇ (Hg
+n,N ′ − H g
+n,N ) ·ψ (t,i )]|dt
+≤ C(β )nκε − min(s,1)
+2
+∑
+i∈ J
+(Eν (t)[(∂ iG)2]
+1
+2 + sup |∂ iG|e− c(β )nδ
+)
+≤ C(β )nκε − min(s,1)
+2
+(∑
+i∈ J
+sup
+A
+|∂ iG| +
+∑
+i∈ J
+sup |∂ iG|e− c(β )nδ )
+,
+(6.18)
+where we have used the fact that the event ( 5.6) has overwhelming probability under ν (t). Since y (resp.
+z) is admissible under Qg
+N,β (resp. Qg
+N ′ ,β ) with overwhelming probability, we have by integrating (
+6.18)
+that for α n ∈ (n − nε + min(s,1)
+2 ,n +nε + min(s,1)
+2 ),
+EQg
+N,β
+[G ◦ π |x1 +... +xn =α n] = EQg
+N ′ ,β
+[G ◦ π |x1 +... +xn =α n]
++Oβ
+(
+nκε − s
+2
+∑
+i∈ J
+sup
+A
+|∂ iG| +
+∑
+i∈ J
+sup |∂ iG|e− c(β )nδ )
+. (6.19)
+We have thus compared the measures Qg
+N,β and Qg
+N ′ ,β when x1,...,x n are constrained to occupy the
+same volume. Our aim is now to show that making α n slightly vary does not aﬀect much the expectation
+of G. Let us upper bound the quantity
+EQg
+N,β
+[G ◦ π |x1 +... +xn =α n] − EQg
+N,β
+[G ◦ π |x1 +... +xn =n].
+Set α = α n
+n . Performing the change of variables Φ( α, ·) : XN ↦→ X ′
+N with
+{
+x′
+i = 1
+α xi if i ∈ I
+x′
+i = N − n
+N − αn xi if i ∈ I c
+reads
+EQg
+N,β
+[G ◦ π |x1 +... +xn =nα ] = α − n
+(N − n
+N − αn
+) N − n
+Eµ α [G ◦ π ◦ Φ( α, ·) |x1 +... +xn =n], (6.20)
+where µ α := Qg
+N,β ◦ Φ − 1, which may be expressed in the form
+dµ α (x) ∝ e− βH (α,x )dx.
+Diﬀerentiating (
+6.20) with respect to α gives
+∂
+∂α Eµ α [G◦π ◦ Φ( α, ·) |x1+... +xn =n] = β Covµ α [G◦π ◦ Φ( α, ·),∂ 1H]+Eµ α
+[ ∂
+∂α ∇ Φ( α, ·)·∇ (G◦π )◦ Φ( α, ·)
+]
+.
+Using a rough upper bound on the variance of the energy ∂ 1H, one gets the existence of constants
+C(β )> 0,κ> 0 such that uniformly in α ,
+⏐
+⏐
+⏐ ∂
+∂α EQg
+N,β
+[G ◦ π |x1 +... +xn =nα ]
+⏐
+⏐
+⏐ ≤ C(β )nκε + 1
+2
+(∑
+i∈ J
+sup
+A
+|∂ iG| +
+∑
+i∈ J
+sup |∂ iG|e− c(β )nδ )
+. (6.21)
+Since α =O(n
+s− 1
+2 +ε ) for s ∈ (0, 1) one may deduce by Taylor expansion that
+⏐
+⏐
+⏐EQg
+N,β
+[G ◦ π |x1 +... +xn =α n] − EQg
+N,β
+[G ◦ π |x1 +... +xn =n]
+⏐
+⏐
+⏐
+≤ C(β )nκε + s− 1
+2
+(∑
+i∈ J
+sup
+A
+|∂ iG| +
+∑
+i∈ J
+sup |∂ iG|e− c(β )nδ )
+,
+which tends to 0 as N tends to inﬁnity. When s ∈ (1, +∞ ) it is easy to reﬁne ( 6.21). Applying
+Proposition 4.5 to the measure µ α , one obtains since α =O(n− 1/ 2+ε ),
+⏐
+⏐
+⏐EQg
+N,β
+[G ◦ π |x1 +... +xn =α n] − EQg
+N,β
+[G ◦ π |x1 +... +xn =n]
+⏐
+⏐
+⏐ ≤ C(β )nκε − 1
+2.
+In combination with ( 6.19) this ﬁnishes the proof of ( 6.16). □
+
+PDF PAGE 54
+54 JEANNE BOURSIER
+We are now ready to conclude the proof of the uniqueness of the limiting measure. We will consider
+random variables in the space of conﬁgurations on R and one should ﬁrst deﬁne a σ -algebra on it. We let
+Conf(R) be the set of locally ﬁnite and simple point conﬁgurations i n R. Given a Borel set B ⊂ R, we
+denoteNB : Conf( R) → N the number of points lying in B. We then endow Conf( R) with the σ -algebra
+generated by the maps {NB : B Borel} . We call point process a probability measure on Conf( R).
+We then say that a sequence PN of point processes converges to P for the local topology on Conf( R)
+whenever for any bounded, Borel and local function f : Conf( R) → R, the following convergence holds:
+lim
+n→∞
+EPN [f ] = EP [f ].
+Proof of Theorems 3 and 4.
+Step 1: compactness. Let (x1,...,x N ) distributed according to PN,β . Denote
+QN = Law
+( N∑
+i=1
+δ N xi1|xi|< 1
+4
+)
+∈ P (Conf(R)).
+Let us show that the sequence ( QN ) has an accumulation point in the local topology on P(Conf(R)).
+We follow the strategy of [ DHLM21, Prop. 2.9]. For all R > 0 denote Λ R = [ − R,R ] and for all
+Q ∈ P (Conf(R)), QR the law of C|ΛR when C is distributed according to Q. For two point processes P
+and Q, deﬁne the relative speciﬁc entropy of P with respect to Q by
+Ent[P |Q] = lim sup
+R→∞
+Ent[PR |QR].
+Let Π be a Poisson point process on R. According to [ GZ93, Prop. 2.6], the level sets of Ent[ · | Π] are
+sequentially compact for the local topology. As a consequen ce it is enough to check that
+sup
+N ∈ N∗
+sup
+K∈ N∗
+1
+K Ent[QN
+K, Π ΛK ]< ∞ . (6.22)
+Let BK, ΛK be a Bernoulli process on Λ K. Following [
+DHLM21], one can split the relative entropy into
+Ent[QN
+K | Π ΛK ] =
+ˆ
+log dQN
+K
+dBK,λ K
+dQN
+K +
+ˆ
+log dBK, ΛK
+dΠ ΛK
+dQN
+K
+= − logKN,β (Λ K) − β EQN
+K
+[ ∑
+xi̸=xj ∈C
+gs(xi − xj )
+]
+− log
+(
+e− NN N
+N !
+)
+,
+(6.23)
+where
+KN,β (Λ K) =
+ˆ
+exp
+(
+− β
+∑
+xi̸=xj∈C∩ ΛK
+gs(xi − xj )
+)
+1 N
+4 DN (XN )dXN.
+From the rigidity estimates of Theorem 6, we have
+logKN,β (Λ K) = − β EQN
+K
+[ ∑
+xi̸=xj ∈C∩ ΛK
+gs(xi − xj)
+]
++Oβ (K).
+Inserting this into (
+6.23), we deduce that ( 6.22) holds. It follows that ( QN ) has an accumulation point
+in the local topology.
+Step 2: uniqueness. Let us now prove that this accumulation point is unique. Let P,Q ∈ P (Conf(R))
+be two accumulation points of (QN ) in the local topology. Note that P andQ are necessarily translation
+invariant. Let k0 ≥ 1. Set
+F : C ∈ Conf(R) ↦→ G(z2 − z1,...,z k0 − z1),
+with G : Rk0 → R smooth. In view of Proposition
+6.4, we can see that
+EP [F ] = EQ[F ].
+This implies that for each k0 ∈ N, the law of ( z2 − z1,...,z k0 − z1) under P equals the law of ( z2 −
+z1,...,z k0 − z1) under Q. Since P and Q are translation invariant, we conclude that P =Q. □
+The proof of Theorem 4 is now straightforward.
+
+PDF PAGE 55
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 55
+Proof of Theorem 4. By Theorem 3,
+lim
+N →∞
+EPN,β [F ◦ π ] = ERieszs,β [G(z2 − z1,...,z k0 − z1)].
+Since the error term in ( 6.16) is uniform in N , this concludes the proof of Theorem 3. □
+6.4. Proof of the hyperuniformity result. Having already established in [ Bou21] that the N -Riesz
+gas is hyperuniform and that N (xK − x1) is of order O(K s) under PN,β with a Gaussian asymptotic
+behavior, it is now immediate using the convergence result o f Theorem 3 to prove that Riesz s,β is also
+hyperuniform.
+Proof of Theorem
+5. Let 1 ≤ K ≤ N
+2 . Set ℓ N = N
+K . Let
+FN = (Nℓ N )− s
+2
+( N∑
+i=1
+1(0,ℓ N )(xi) − ℓ N
+)
+.
+Let Z ∼ N (0,σ 2) with
+σ 2 = 1
+β π
+2s cotan
+(π
+2s
+)
+.
+Let η : R → R such that |η ′|∞ ≤ 1. In [ Bou21], we have proved that
+EPN,β [η (FN )] = E[η (Z)] +oK(1), (6.24)
+with a oK (1) uniform in N . Set
+˜FN =K − s
+2N (xK − x1).
+Using Theorem 6, we can prove that
+EPN,β [η ( ˜FN )] = EPN,β [η (FN )] +oK(1), (6.25)
+with a oK (1) uniform in N . Now by Theorem 4, we have
+lim
+N →∞
+EPN,β [η ( ˜FN )] = ERieszs,β [η (K − s
+2 (zK − z1 − K))]. (6.26)
+Combining ( 6.24), ( 6.25) and ( 6.26), one deduces that
+ERieszs,β [η (K − s
+2 (zK − z1 − K))] = E[η (Z)] +oK (1).
+We deduce that under the process Riesz s,β , the sequence K − s
+2 (zK − z1 − K) converges in distribution
+to Z ∼ N (0,σ 2). Moreover by [ Bou21],
+VarPN,β [FN ] = Var[Z] +oN (K s),
+with a oN (K s) uniform in N . Proceeding as above, one easily prove the variance estimat e ( 1.9). □
+6.5. Proof of the repulsion estimate.
+Proof of Proposition 1.1. Let α ∈ (0, s
+2 ). It was proved in [ Bou21, Lem. 4.5] that there exist constants
+C(β )> 0,c (β )> 0 locally uniform in β such that for each i ∈ { 1,...,N } and ε> 0 small enough,
+PN,β (N (xi+1 − xi) ≤ ε ) ≤ C(β )e− c(β )ε − α
+.
+Since ( Pg
+N,β ) converges to Riesz s,β in the local topology, one can pass the above inequality to th e limit
+which gives
+PRieszs,β (zi+1 − zi ≤ ε ) ≤ C(β )e− c(β )ε − α
+.
+□
+
+PDF PAGE 56
+56 JEANNE BOURSIER
+Appendix A. Discrete Gagliardo-Nirenberg inequality
+The Gagliardo-Nirenberg inequality, originally proved in dependently in [ Gag58, Nir59], is an inter-
+polation inequality between diﬀerent weak derivatives in Lp spaces. The result was at ﬁrst stated for
+derivatives of integer order and then extended to derivativ es of fractional order in the rather recent
+paper [ BM18]. The main result of [ BM18] gives suﬃcient and necessary conditions on the orders and
+exponents for an interpolation inequality to hold on Rn. For shortcut, we only present one of the cases
+where the interpolation inequality is valid.
+Lemma A.1 (Brezis-Mironescu). Let 1 ≤ p,p 1,p 2 ≤ ∞ . Let s1,s 2 ≥ 0 and θ ∈ (0, 1) such that
+s1 ≤ s2, s 0 =θs 1 + (1 − θ )s2, 1
+p = θ
+p1
++ 1 − θ
+p2
+.
+Assume that s2 < 1. Then, there exists a constant C >0 depending on p1,p 2,s 1,s 2,θ such that for all
+u ∈ W s1,p 1(R) ∩ W s2,p 2(R),
+∥u∥W s0,p(R) ≤ C∥u∥θ
+W s1,p1 (R)∥u∥1− θ
+W s2,p2 (R).
+By taking a periodic function of period 1 on ( − n,n ), one can show by letting n tend to inﬁnity that
+Lemma
+A.1 also holds for functions deﬁned on the circle.
+Appendix B. Well-posedness results
+The proofs of Propositions 3.1 and 3.3 can be found in [ Bou21, App. A]. For completeness we sketch
+the main arguments below.
+Let µ satisfying Assumptions 3.1. The formal adjoint with respect to µ of the derivation ∂ i, i ∈
+{ 1,...,N } is given by
+∂ ∗
+iw =∂ iw − (∂ iH)w,
+meaning that for all v,w ∈ C ∞ (DN, R) such that ∇ w ·⃗ n= 0, the following identity holds
+Eµ [(∂ iv)w] = Eµ [v∂ ∗
+iw]. (B.1)
+The above identity can be shown by integration by parts under the Lebesgue measure on DN . Recall
+the map
+Π : XN ∈ DN ↦→ (x2 − x1,...,x N − x1) ∈ TN − 1
+and
+µ ′ =µ ◦ Π − 1.
+Proof of Proposition 3.1. Let F = G ◦ Π with G ∈ H 1(µ ). Recall that if F ∈ H 1(µ ), then ∇ F ∈
+L2({ 1,...,N },H − 1(µ )). Let
+E = {φ ◦ Π : φ ∈ H 1(µ ′), Eµ [φ ◦ Π] = 0 }.
+Consider the functional
+J :φ ∈ E ↦→ Eµ [|∇ φ |2 − 2φF ].
+One may easily check that J admits a unique minimizer. Indeed for all φ =ψ ◦ Π ∈ E, one can write
+|Eµ [φF ]| ≤ ∥ F ∥H− 1(µ )|∥φ ∥H1(µ ).
+Moreover since φ ∈ E, one can observe that
+Eµ [|φ |2] = Eµ ′ [|ψ |2] ≤ c− 1Eµ ′ [|∇ ψ |2] = 1
+2c Eµ [|∇ φ |2].
+It follows that J is bounded from below. Since J is convex and l.s.c, by standard arguments, it is l.s.c
+for the weak topology of H 1(µ ) and therefore J admits a minimizer φ .
+One can then easily check by integration by parts that the Eul er-Lagrange equations for φ state that
+a.e on DN ,
+Lµ φ =F − Eµ [F ], (B.2)
+with the boundary condition
+∇ φ ·⃗ n= 0, (B.3)
+a.e on ∂D N . Equations ( B.2) and ( B.3) easily imply that J admits a unique minimizer.
+
+PDF PAGE 57
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 57
+Let us now diﬀerentiate rigorously Equation ( B.2). Let w ∈ C ∞
+c (DN ) and i ∈ { 1,...,N } . By
+integration by parts, we have
+Eµ [w∂ iF ] = Eµ [∂ ∗
+iw(F − Eµ [F ])] = Eµ [∂ ∗
+iwLφ ] = Eµ [∇ ∂ ∗
+iw · ∇ φ ]
+=
+N∑
+j=1
+Eµ [(∂ ∗
+i∂ jw)∂ jφ ] +
+N∑
+j=1
+Eµ [([∂ j,∂ ∗
+i ]w)∂ jφ ].
+The ﬁrst term of the right-hand side of the last display may be expressed as
+N∑
+j=1
+Eµ [(∂ ∗
+i∂ jw)∂ jφ ] =
+N∑
+j=1
+Eµ [(∂ jw)∂ i∂ jφ ] = Eµ [∇ w · ∇ (∂ iφ )] = Eµ [wLµ (∂ iφ )].
+For the second term, recalling the identity [ ∂ j,∂ ∗
+i ] = ( ∇ 2H)i,j , one may write
+N∑
+j=1
+Eµ [([∂ j,∂ ∗
+i ]w)∂ jφ ] = Eµ [(w · ∇ 2H∇ φ )i].
+One deduces that, in the sense H − 1(µ ), for each i ∈ { 1,...,N } ,
+(∇ 2H∇ φ )i + Lµ (∂ iφ ) = ∂ iF.
+Together with the boundary condition ( B.3), this concludes the proof of existence and uniqueness of a
+solution to ( 3.5). We turn to the proof the variational characterization of t he solution of ( 3.5). Let
+J :L2({ 1,...,N },H 1(µ )) ↦→ Eµ [|Dψ |2 +ψ · ∇ 2Hψ − 2ψ · ∇ F ]. (B.4)
+By standard arguments, one can prove that J admits a minimizer ψ , which satisﬁes the Euler-Lagrange
+equation
+Aµ
+1ψ = ∇ F.
+Moreover, one may assume thatψ ·⃗ n= 0 on∂D N . By integration by parts, we conclude that ψ = ∇ φ . □
+Let us now prove Proposition
+3.3. Recall the notation
+GapN :XN ∈ DN ↦→ (N |x2 − x1|,N |x3 − x2|,...,N |xN − x1|) ∈ RN,
+MN = Gap N (DN ) and ν = Gap N #µ.
+Proof of Proposition 3.3. Let G ∈ H − 1(ν ). Denote E = {φ ∈ H 1(ν ) : Eν [φ ]} = 0 and J the functional
+J :φ ∈ E ↦→ Eν [|∇ φ |2 − 2φG ].
+By standard arguments (see the proof of Proposition 3.1), we can show that J admits a unique minimizer
+φ . Since φ is a minimizer of J, for all h ∈ E,
+Eν [∇ φ · ∇ h] = Eν [Gh].
+By integration by parts, one can observe that for all h ∈ E,
+Eν [∇ φ · ∇ h] = Eν [Lνφh ] +
+ˆ
+∂ MN
+(∇ φ ·⃗ n)he− H.
+By density, it then follows that { Lνφ =G − Eν [G] on MN
+∇ φ ·⃗ n= 0 on ∂ MN.
+To prove that ∇ φ satisﬁes the Helﬀer-Sjöstrand equation ( 3.9), we need to adapt the integration by
+parts formula ( B.1). One may easily show that for all v ∈ C ∞ (MN ) such that ∇ v ·⃗ n= 0 on ∂D N and
+ψ ∈ L2({ 1,...,N }, C∞ (MN ) such that ψ · (e1 +... +eN ) = 0, there holds
+Eν [ψ · ∇ v] = Eν [v(−∇ H g ·ψ + divψ )]. (B.5)
+Let w ∈ L2({ 1,...,N }, C∞
+c (MN )) such that ∑N
+i=1wi = 0. In view of (
+B.5),
+Eν [w · ∇ G] = Eν [(G − Eν [G])(−∇ H g ·w + divw)] = Eν [Lνφ (−∇ H g ·w + divw)].
+Integrating part the last equation gives
+Eν [w · ∇ G] = Eν [∇ φ · ∇ (−∇ H g ·w + divw)] = Eν [w · (Lν ∇ φ + ∇ 2H g∇ φ )].
+
+PDF PAGE 58
+58 JEANNE BOURSIER
+By density, we deduce that there exists a Lagrange multiplie r λ ∈ H − 1(ν ) such that
+∇ 2H g∇ φ + Lν ∇ φ = ∇ G +λ (e1 +... +eN ).
+Recalling that ∇ φ ·⃗ n= 0 on ∂ MN , this yields the existence of a solution to ( 3.9). Since ∑N
+i=1∂ iφ = 0,
+taking the scalar product of the above equation with e1 +... +eN yields
+λ = 1
+N (e1 +... +eN ) · ∇ 2H g∇ φ.
+The uniqueness of the solution to ( 3.9) is straightforward. The proof of the variational characte rization
+comes from arguments similar to the proof of Proposition 3.1. □
+Appendix C. Local laws for the HS Riesz gas
+Lemma C.1. Lets> 1. For all ε> 0 small enough, there exists δ > 0 such that
+PN,β (N (xi+1 − xi) ≥ kε ) ≤ C(β )e− c(β )kδ
+, for each 1 ≤ i ≤ N. (C.1)
+For all ε> 0 small enough, there exists δ > 0 such that
+PN,β (|N (xi+k − xi) − k| ≥ k
+1
+2 +ε ) ≤ C(β )e− c(β )kδ
+, for each 1 ≤ i ≤ N and 1 ≤ k ≤ N
+2 . (C.2)
+Let us sketch the proof of the above lemma.
+Sketch of the proof. We show recursively, starting from K = N , that the log-Laplace transform of
+N (xi+K − xi) is of order O(K) uniformly in i ∈ { 1,...,N } . The point is that one may control the
+interaction between two sub-intervals by simply shrinking the conﬁguration as in [ HLSS18, Proof of
+Prop. 4.4]. Let us ﬁrst prove that there exists a constant C(β )> 0 such that for any i ∈ { 1,...,N } and
+k ≥ 1,
+log EPN,β [exp(N (xi+k − xi)] ≤ C(β )k. (C.3)
+For clarity we work in zoomed coordinates. For all R >0 let us denote Λ R = [ − R
+2, R
+2 ] and TN the
+torus of size N . Let PN be the periodic Riesz gas with N points in TN :
+dPN (XN ) ∝ e− βH N (XN )1XN ∈ TN
+N
+dXN,
+where
+HN :XN ∈ (TN )N ↦→
+∑
+i̸=j
+gN,s (xi − xj ).
+Let also Qn,R be the Riesz gas with n points in Λ R and Kn,R be the associated partition function:
+dQn,R (Xn) = 1Kn,R
+e− β ˜Hn(Xn)1Λn
+R
+(Xn)dXn,
+where
+˜Hn :Xn ∈ Λ n
+R ↦→
+∑
+i̸=j
+gN,s (xi − xj).
+For any measurable subset B in TN or Λ R and n ≥ 1 denote
+Nn(B) = card { 1 ≤ i ≤ n :xi ∈ B}.
+We proceed to the proof of (
+C.3) by bootstrap on scales.
+Fix C0 > 0. Let γ ∈ (0, 1]. Assume that for any N ≥ 1,R ≥ Nγ and n ≥ 1,R ′,R > 0 such that
+|n − R′| ≤ R′
+2 ,R ≥ R′γ we have
+EPN [eNN (ΛR)] ≤ C0R, (C.4)
+EQn,R′ [eNn(ΛR)] ≤ C0R. (C.5)
+Let us prove that ( C.4) and ( C.5) hold for some γ ′ much smaller than γ for some well-controlled C′
+0> 0.
+Let R′ =Nγ . For a small parameter α> 0 to be ﬁxed later, let us consider R ≥ max(R
+1
+1+α, √ γR ).
+Let us prove that ( C.4) holds for the interval Λ R. Since the bootstrap assumption ( C.4) holds for R′,
+
+PDF PAGE 59
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 59
+one may restrict the integral to an event where the number of p oints inside Λ R′ is well-controlled. Let
+n ≥ 1 such that |n − R′| ≤ R′
+2 . One studies
+EPN [eNN (ΛR) | N N (Λ R′ ) = n] =
+´
+TN
+N
+eNN (ΛR)− βH N 1N (ΛR′ )=n
+´
+TN
+N
+e− βH N 1NN (ΛR′ )=n
+.
+To bound the numerator from above, one can simply use the fact that the interaction between Λ R′ and
+Λ c
+R′ is positive:
+ˆ
+TN
+N
+eNN (ΛR)− βH N 1N (ΛR′ )=n ≤ KN − n,N − R′ ×
+ˆ
+Λn
+R′
+eNn(ΛR)− β ˜Hn (C.6)
+To bound the denominator from below, one can condition on the fact that all points x1,...,x n lie in a
+smaller window Λ ′ = [− R′
+2 +R1− ε, R′
+2 − R1− ε ] ⊂ Λ R′ . Denote
+A = (Λ ′)n.
+Let us then partition TN \Λ R′ intom := ⌊ N − n
+R′ ⌋ + 1 intervalsQk,k = 1,...,m of approximate sizes R′.
+On the event A, one can bound from below the interaction between Λ R′ and Λ c
+R′ , denoted H(Λ R′, Λ c
+R′ ),
+by
+H(Λ R′, Λ c
+R′ ) ≥ − R2(1+α )
+Rs −
+m∑
+k=1
+NN − n(Qk)
+(kR′)s (C.7)
+Fix ε> 0 and α = s− 1− ε
+2 > 0, so that by Jensen’s inequality, one may write from ( C.7),
+log
+ˆ
+TN
+N
+e− βH N dXN ≥ log
+ˆ
+A
+e− β ˜Hn + logKN − n,N − R′ − β log EQN − n,N − R′
+[ m∑
+k=1
+NN − n(Qk)(kR′)s
+]
+− O(R1− ε ).
+Applying the bootstrap assumption ( C.5) to QN − n,N − R′ , we ﬁnd
+log EQN − n,N − R′
+[ m∑
+k=1
+NN − n(Qk)
+(kR′)s
+]
+=O(R1− ε ).
+One then gets by scaling that the partition function of the n variables conditioned to A satisﬁes
+log
+ˆ
+A
+e− β ˜Hn = logKn,R ′ +O(R1− ε ).
+It thus follows that
+log
+ˆ
+TN
+N
+e− βH N dXN ≥ logKn,R ′ + logKN − n,N − R′ +O(R1− ε ). (C.8)
+Assembling (
+C.6) and ( C.8) shows that
+log EPN [eNN (ΛR) | N N (Λ R′ ) = n] = log EQn,R′ [eNn(ΛR)] +O(R1− ε ).
+Note
+R
+R′ = γ ′
+γ ≥ γ,
+since γ ′ ≥ √ γ . One can therefore apply the bootstrap assumption ( C.5) to Qn,R ′ and Λ R to deduce
+that
+log EQn,R′ [eNn(ΛR)] ≤ C0R.
+Finally applying the induction hypothesis ( C.4) to control the probability that |NN (Λ R′ ) − R′| ≥ R′
+2
+one obtains
+log EPN [eNN (ΛR)] ≤ C0R +O(R1− ε ).
+We obtain by a similar proof that for any n ≥ 1,R ′ > 1 such that |n − R′| ≤ n
+2 and R such that
+R ≥ max(N √ γ, (R′)
+1
+1+α ),
+log EQn,R′ [eNn(ΛR)] ≤ C0R +O(R1− ε ),
+thus proving the bootstrap assumptions ( C.4) and ( C.5) for C′
+0 =C0 +O(R− ε ). Since the initialization
+is evident we conclude after O(logN ) iterations that ( C.3) holds for some constant C >0 independent
+of R.
+
+PDF PAGE 60
+60 JEANNE BOURSIER
+Let us then improve ( C.3) into ( C.2). Let i ∈ { 1,...,N } , k ∈ { 1,..., N
+2 } , I be the window I =
+{i − k,...,i +k} ,θ : R+ → R+ be a smooth cutoﬀ function such that θ (x) = x2 ifx> 1,θ = 0 on [0, 1
+2 ]
+and θ ′′ ≥ 0 on R+. Given ε> 0, deﬁne
+F =
+∑
+i∈ I
+θ
+(N (xi+1 − xi)
+kε
+)
+and QN,β the constrained measure
+dQN,β ∝ e− β FdPN,β .
+From (C.3), one gets using the Pinsker and Log-Sobolev inequalities t hat the total variation distance
+between PN,β and QN,β decays exponentially in k, meaning that there exist δ > 0 depending on ε and
+C(β ),c (β )> 0 such that
+TV(PN,β , QN,β ) ≤ C(β )e− c(β )kδ
+. (C.9)
+Moreover, since QN,β is uniformly log-concave in gap coordinates, one gets the ex istence of some κ> 0
+such that for all t ∈ R,
+log EQN,β [tN (xi+k − xi)] − EQN,β [N (xi+k − xi)] = Oβ (k1+κε ).
+Employing ( C.9) again to now compare the expectations of N (xi+k − xi) under PN,β and QN,β , one
+concludes the proof of ( C.2). □
+Appendix D. Local laws for the interpolating measure
+We prove the rigidity estimate of Lemma 6.2 for the conditioned measures ( 6.5) and the interpolating
+path ( 6.7). The proof is based on an argument of [ BEY12, Sec. 3].
+Proof of Lemma 6.2. Lety ∈ π I c(MN ) andz ∈ π I c (MN ′ ) be as in the statement of Lemma 6.2 andν (t)
+as in ( 6.7). Let µ (t) be the push-forward of ν (t) by the map Xn ∈ Rn ↦→ (0,x 1,x 1 +x2...,x 1 +... +xn).
+The bound ( 6.9) is immediate in view of the forcing ( 6.1). Let us prove ( 6.10).
+Step 1: control of the ﬂuctuations. Leti ∈ { 1,...,n } andk ∈ { 1,...,N/ 2} such that 1 ≤ i+k ≤ n.
+We wish to prove that for ε ′ > 0 large enough with respect to ε , there exists δ > 0 depending on ε ′ > 0
+such that
+µ (t)
+(
+|N (xi+k − xi) − Eµ (t)[N (xi+k − xi)]| ≥ k
+s
+2 +εnε
+)
+≤ C(β )e− c(β )kδ
+. (D.1)
+Following [BEY12, Lem. 3.16-3.17], one may ﬁrst decompose N (xi+k − xi) into a sum of block average
+statistics. For each i ∈ I c, let Ik(i) be an interval of integers of cardinal k + 1 such that i ∈ Ik(i) and let
+x[k]
+i = 1
+k + 1
+∑
+j∈ Ik(i)
+xj.
+Let α = 1
+p for a large p ∈ N∗ . Since x[0]
+i =xi, one can break N (xi − x[k]
+i ) into
+N (xi − x[k]
+i ) =
+p− 1∑
+m=0
+N (x[⌊ kmα ⌋ ]
+i − x[⌊ k(m+1)α ⌋ ]
+i ). (D.2)
+For each m ∈ { 0,...,p − 1} , denote Gm = N (x[⌊ kmα⌋ ]
+i − x[⌊ k(m+1)α ⌋ ]
+i ) and Im = I⌊ k(m+1)α ⌋ (i). Fix
+m ∈ { 0,...,p − 1} . Let us bound the ﬂuctuations of Gm. Since Gm only depends on the variables xi
+withi inIm and since ∑
+i∈ Im∂ iGm=0, one can use the Gaussian concentration result for diverg ence free
+test-functions stated in Lemma
+3.9. Let us introduce the coordinates x = (xi)i∈ Im and y = (xi)i∈ I\Im
+on π (DN ). The measure µ (t) satisﬁes the assumptions of Lemma 3.9 in the window Im. It can indeed
+be written
+dµ (t) = e− βH (x,y )1π (DN )(x,y )dxdy with H(x,y ) = H1(x) +H2(x,y ),
+with ∇ 2H2 ≥ 0, H1 satisfying ∑
+i∈ Im∂ iH1 = 0 with
+∇ 2H1 ≥ N 2k− (m+1)α (s+2− ε ).
+
+PDF PAGE 61
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 61
+Lemma 3.9 therefore gives
+log Eµ (t)[etGm] ≤ tEµ (t)[Gm] + t2
+2β N − 2k(m+1)α (s+2+ε )|Im|− 1 sup |∇ Gm|2
+≤ tEν (t)[Gm] + t2
+2β kα (s+1)+msα +ε (s+2).
+We conclude that for ε ′ large enough with respect to ε , there exists δ > 0 depending on ε ′ such that
+µ (t)(|Gm − Eµ [Gm]| ≥ k
+s
+2 +ε ′
+) ≤ C(β )e− c(β )kδ
+.
+Inserting this into ( D.2), one deduces that for ε ′ large enough with respect to ε , there exists δ > 0
+depending on ε ′ such that
+µ (t)(|N (xi − x[k]
+i ) − Eµ (t)[N (xi − x[k]
+i )]| ≥ k
+s
+2 +ε ) ≤ C(β )e− c(β )kδ
+. (D.3)
+One can ﬁnally check that the variable N (x[k]
+i+k − xi+k) veriﬁes the same estimate: proceeding as for Gm
+with m =p − 1, we obtain that for ε ′ > 0 large enough with respect to ε , there exists δ > 0 depending
+on ε ′ such that
+µ (t)(|N (x[k]
+i − x[k]
+i+k) − Eµ (t)[N (x[k]
+i − x[k]
+i+k)]| ≥ k
+s
+2 +ε ) ≤ C(β )e− c(β )kδ
+. (D.4)
+Combining ( D.3) applied to i and i +k and ( D.4), one ﬁnally gets the claim ( D.1).
+Step 2: accuracy estimate. Taking a step back in gap coordinates, one shall now control t he expec-
+tation of xi +... +xi+k under ν (t). By construction we can write
+Eν (t)[xi +... +xi+k] − Eν (0)[xi +... +xi+k] = β
+ˆ t
+0
+Covν (s)[xi +... +xi+k, Hg
+n,N ′ (·,z ) − H g
+n,N (·,y )]ds.
+By Cauchy-Schwarz inequality and using ( D.1) one can write
+|Eν (t)[xi +... +xi+k]− Eν (0)[xi +... +xi+k]| ≤ C(β )nκε k
+s
+2
+ˆ t
+0
+Varν (s)[Hg
+n,N ′ (·,z )−H g
+n,N (·,y )]
+1
+2 ds. (D.5)
+First, recall that there exists a constant C >0 such that for all x ∈ N T,
+|N − sgs(x
+N ) − ˜gs(x)| ≤ C
+N s, (D.6)
+where ˜gs :Nx ∈ T ↦→ 1
+|x|s . Let us denote
+˜Hg
+n,N : (x,y ) ∈ Rn × RN − n ↦→
+∑
+i∈ I,j ∈{ 1,...,N }\ I
+1
+|xi +... +yj|s,
+˜Hg
+n,N ′ : (x,z ) ∈ Rn × RN ′ − n ↦→
+∑
+i∈ I,j ∈{ 1,...,N ′ }\ I
+1
+|xj +... +zj|s.
+To begin the comparison let us restrict the sum as follows:
+˜Hg
+n,N ′ (x,z ) − ˜Hg
+n,N (x,y ) =
+∑
+i∈ I
+∑
+j∈{ 1,...,N }\ I
+( 1
+|xi +... +zj|s − 1
+|xi +... +yj|s
+)
++
+∑
+i∈ I
+∑
+j∈{ 1,...,N ′ }\{ 1,...,N }
+1
+|xi +... +zj|s (D.7)
+Fix k ∈ I. By Taylor expansion, one may write
+N/ 2∑
+j=n+1
+( 1
+|xk +... +zj|s − 1
+|xk +... +yj|s
+)
+=
+N/ 2∑
+j=n+1
+˜g′
+s(xk +... +yj)N (zj − yj) + (I)k (D.8)
+with the error term ( I)k satisfying
+Varν (s)[(I)k]
+1
+2 ≤ C(β )nκε
+N ′ / 2∑
+j=n+1
+|j − n|s+ε ′
+|j − k|2+s ≤ C(β )nκε
+d(k,∂I )1− ε ′, (D.9)
+
+PDF PAGE 62
+62 JEANNE BOURSIER
+for some ε ′ > 0. By Taylor expansion again and using Lemma 6.2, one can write
+Varν (s)[˜g′
+s(xk +... +yj)] ≤ C(β )nκε ˜g′′
+s (j − k)(n − k)s/ 2+κε .
+The leading-order of the right-hand side of ( D.8) therefore satisﬁes
+N ′ / 2∑
+j=n+1
+˜g′
+s(xk +... +yj)(zn+1 +... +zj − (yn+1 +... +yj))
+=
+N ′ / 2∑
+j=n+1
+˜g′
+s(|j − k|)(zn+1 +... +zj − (yn+1 +... +yj)) + (II )k (D.10)
+with
+Varν (s)[(II )k]
+1
+2 ≤ C(β )nκε
+N ′ / 2∑
+j=n+1
+|j − n|s/ 2|n − k|s/ 2+κε
+|j − k|s+2 ≤ C(β )nκε
+d(k,∂I )1− ε ′. (D.11)
+The point is that leading order term in ( D.10) is constant with respect to x and its variance under ν (s)
+is therefore 0. It follows that uniformly in s,
+Varν (s)
+[ n∑
+k=1
+N/ 2∑
+j=n+1
+( 1
+|xk +... +zj|s − 1
+|xk +... +yj|s
+)]
+≤ C(β )nκε . (D.12)
+One may proceed similarly for the terms at the left-hand side of I and one concludes that ( D.12) also
+holds for the ﬁrst quantity in ( D.7). It remains to bound the second term in ( D.7). By assumptions on
+z, one has
+Varν (s)
+[ ∑
+i∈ I
+∑
+j∈{ 1,...,N ′ }\{ 1,...,N }
+1
+|xi +... +zj|s
+] 1
+2
+≤ C(β )nκε +1N − s
+2 +ε. (D.13)
+Combining ( D.6), ( D.9), ( D.12), we ﬁnd that uniformly in s,
+Varν (s)[Hg
+n,N (·,y ) − H g
+n,N (·,z )] ≤ C(β )nκε .
+Inserting this into ( D.5) one obtains
+|Eν (t)[xi +... +xi+k] − Eν (0)[xi +... +xi+k]| ≤ C(β )nκε k
+s
+2 +κε . (D.14)
+Let us denote B ⊂ π I c(MN ) the set of admissible conﬁgurations as deﬁned in ( 6.3). By taking t = 1
+and N =N ′, we ﬁnd that for all y,z ∈ B ,
+|EQg
+N,β (·| y)[xi +... +xi+k] − EQg
+N,β (·| z)[xi +... +xi+k]| ≤ C(β )nκε k
+s
+2 +κε . (D.15)
+Since by Theorem 6
+|EQg
+N,β
+[(xi +... +xi+k)1B] − k| ≤ C(β )nκε ,
+we deduce from (
+D.15) that for all admissible conﬁgurations y ∈ B ,
+|EQg
+N,β (·| y)[xi +... +xi+k] − k| ≤ C(β )nκε k
+s
+2 +κε .
+Inserting this into ( D.14) concludes the proof of Lemma 6.2. □
+References
+[AM85] Angel Alastuey and Philippe A. Martin. Decay of corre lations in classical ﬂuids with long-range forces. Journal
+of Statistical Physics , 39:405–426, 1985.
+[Apo97] Tom M. Apostol. Modular Functions and Dirichlet Series in Number Theory . Graduate Texts in Mathematics.
+Springer New York, 1997.
+[AS21] Scott Armstrong and Sylvia Serfaty. Local laws and ri gidity for coulomb gases at any temperature. The Annals
+of Probability, 2021.
+[A W22] Scott Armstrong and W ei W u. C2 regularity of the surfa ce tension for the ∇ φ interface model. Communications
+on Pure and Applied Mathematics , 75(2):349–421, 2022.
+[BBDR05] Julien Barré, Freddy Bouchet, Thierry Dauxois, an d Stefano Ruﬀo. Large deviation techniques applied to
+systems with long-range interactions. Journal of Statistical Physics , 119(3):677–713, 2005.
+[BÉ85] Dominique Bakry and Michel Émery. Diﬀusions hyperco ntractives. In Jacques Azéma and Marc Yor, editors,
+Séminaire de Probabilités XIX 1983/84 , pages 177–206, Berlin, Heidelberg, 1985. Springer Berlin Heidelberg.
+[Ber72] Bruce C. Berndt. On the Hurwitz zeta-function. Rocky Mountain Journal of Mathematics , 2(1):151 – 158,
+1972.
+
+PDF PAGE 63
+DECAY OF CORRELATIONS FOR THE CIRCULAR RIESZ GAS 63
+[BEY12] Paul Bourgade, László Erdős, and Horng-Tzer Yau. Bu lk universality of general β-ensembles with non-convex
+potential. Journal of mathematical physics , 53(9):095221, 2012.
+[BEY14a] Paul Bourgade, László Erdös, and Horng-Tzer Yau. E dge universality of β ensembles. Communications in
+Mathematical Physics , 332(1):261–353, 2014.
+[BEY+14b] Paul Bourgade, László Erdős, Horng-Tzer Yau, et al. Uni versality of general β-ensembles. Duke Mathematical
+Journal, 163(6):1127–1190, 2014.
+[BFG15] Florent Bekerman, Alessio Figalli, and Alice Guion net. Transport maps for β-matrix models and universality.
+Communications in mathematical physics , 338(2):589–619, 2015.
+[BGSRS20] Thierry Bodineau, Isabelle Gallagher, Laure Sai nt-Raymond, and Sergio Simonella. Statistical dynamics of
+a hard sphere gas: ﬂuctuating boltzmann equation and large d eviations. arXiv preprint arXiv:2008.10403 ,
+2020.
+[BHS19] Sergiy V. Borodachov, Douglas P. Hardin, and Edward B. Saﬀ. Discrete energy on rectiﬁable sets. Springer
+Monographs in Mathematics , 2019.
+[BL76] Herm Jan Brascamp and Elliott H. Lieb. On extensions o f the brunn-minkowski and prékopa-leindler theorems,
+including inequalities for log concave functions, and with an application to the diﬀusion equation. Journal of
+Functional Analysis, 22(4):366–389, August 1976.
+[BL02] Herm Jan Brascamp and Elliott H. Lieb. On Extensions of the Brunn-Minkowski and Prékopa-Leindler The-
+orems, Including Inequalities for Log Concave Functions, a nd with an Application to the Diﬀusion Equation ,
+pages 441–464. Springer Berlin Heidelberg, Berlin, Heidel berg, 2002.
+[BM03] Volker Bach and Jacob Schach Møller. Correlation at l ow temperature: I. exponential decay. Journal of
+Functional Analysis, 203:93–148, 2003.
+[BM18] Haïm Brezis and Petru Mironescu. Gagliardo-Nirenbe rg inequalities and non-inequalities: the full story.
+Annales de l’Institut Henri Poincaré (C) Non Linear Analysi s, 35(5):1355–1376, 2018.
+[Bou21] Jeanne Boursier. Optimal local laws and CLT for 1d lo ng-range Riesz gases. arXiv preprint arXiv:2112.05881 ,
+2021.
+[Bre91] Yann Brenier. Polar factorization and monotone rea rrangement of vector-valued functions. Communications
+on Pure and Applied Mathematics , 44:375–417, 1991.
+[CCV11] Luis Caﬀarelli, Chi Hin Chan, and Alexis Vasseur. Re gularity theory for parabolic nonlinear integral operator s.
+Journal of the American Mathematical Society , 24(3):849–869, 2011.
+[CDR09] Alessandro Campa, Thierry Dauxois, and Stefano Ruﬀ o. Statistical mechanics and dynamics of solvable
+models with long-range interactions. Physics Reports, 480(3-6):57–159, 2009.
+[CFG22] Patrick Cattiaux, Max Fathi, and Arnaud Guillin. Se lf-improvement of the bakry-emery criterion for poincaré
+inequalities and wasserstein contraction using variable c urvature bounds. Journal de Mathématiques Pures
+et Appliquées, 166:1–29, 2022.
+[CGZ14] Djalil Chafaï, Nathael Gozlan, and Pierre-André Zi tt. First-order global asymptotics for conﬁned particles
+with singular pair repulsion. The Annals of Applied Probability , 24(6):2371–2413, 2014.
+[CN18] Reda Chhaibi and Joseph Najnudel. Rigidity of the sin e-beta process. arXiv preprint arXiv:1804.01216 , 2018.
+[CT73] Jean-Michel Combes and Lawrence E. Thomas. Asymptot ic behaviour of eigenfunctions for multiparticle
+schrödinger operators. Communications in Mathematical Physics , 34:251–270, 1973.
+[Der19] David Dereudre. Introduction to the theory of gibbs point processes. In Stochastic Geometry, pages 181–229.
+Springer, 2019.
+[DGI00] Jean-Dominique Deuschel, Giambattista Giacomin, and Dmitry Ioﬀe. Large deviations and concentration
+properties for ∇ φ interface models. Probability Theory and Related Fields , 117:49–111, 2000.
+[DHLM21] David Dereudre, Adrien Hardy, Thomas Leblé, and My lène Maïda. DLR equations and rigidity for the sine- β
+process. Communications on Pure and Applied Mathematics , 74(1):172–222, 2021.
+[DV21] David Dereudre and Thibaut Vasseur. Number-rigidit y and β-Circular Riesz gas. arXiv preprint
+arXiv:2104.09408, 2021.
+[DW20] Paul Dario and W ei W u. Massless phases for the villain model in d ≥ 3. arXiv preprint arXiv:2002.02946 ,
+2020.
+[Dys62] Freeman J. Dyson. A Brownian-motion model for the ei genvalues of a random matrix. J. Mathematical Phys. ,
+3:1191–1198, 1962.
+[EC81] Matthieu H. Ernst and Ezechiel G. D. Cohen. Nonequili brium ﬂuctuations in µ space. Journal of Statistical
+Physics, 25:153–180, 1981.
+[EHL18] Matthias Erbar, Martin Huesmann, and Thomas Leblé. The one-dimensional log-gas free energy has a unique
+minimiser. arXiv preprint arXiv:1812.06929 , 2018.
+[EY15] László Erdős and Horng-Tzer Yau. Gap universality of generalized wigner and beta-ensembles. Journal of the
+European Mathematical Society, 17(8):1927–2036, 2015.
+[Gag58] Emilio Gagliardo. Proprieta di alcune classi di fun zioni in piu variabili. Ricerche di Matematica, 7(1):102–137,
+1958.
+[Geo98] Hans-Otto Georgii. Translation Invariance and Continuous Symmetries in Two-D imensional Continuum
+Systems. In Mathematical results in statistical mechanics (Marsei lles, 1998) W orld Sci. Publ., River Edge,
+NJ, 1999, 11 1998.
+[Geo11] Hans-Otto Georgii. Gibbs Measures and Phase Transitions . De Gruyter, 2011.
+[GOS01] Giambattista Giacomin, Stefano Olla, and Herbert S pohn. Equilibrium Fluctuations for ∇ φ Interface Model.
+The Annals of Probability , 29(3):1138 – 1172, 2001.
+
+PDF PAGE 64
+64 JEANNE BOURSIER
+[GP17] Subhroshekhar Ghosh and Yuval Peres. Rigidity and to lerance in point processes: Gaussian zeros and ginibre
+eigenvalues. Duke Mathematical Journal , 166(10):1789–1858, 2017.
+[GZ93] Hans-Otto Georgii and Hans Zessin. Large deviations and the maximum entropy principle for marked point
+random ﬁelds. Probability Theory and Related Fields , 96:177–204, 01 1993.
+[Hel98a] Bernard Helﬀer. Remarks on decay of correlations a nd witten laplacians brascamp–lieb inequalities and semi-
+classical limit. journal of functional analysis , 155(2):571–586, 1998.
+[Hel98b] Bernard Helﬀer. Remarks on decay of correlations a nd witten laplacians brascamp–lieb inequalities and semi-
+classical limit. Journal of Functional Analysis , 155(2):571–586, 1998.
+[HLSS18] Douglas P. Hardin, Thomas Leblé, Edward B. Saﬀ, and Sylvia Serfaty. Large deviation principles for hyper-
+singular riesz gases. Constructive Approximation, 48(1):61–100, 2018.
+[HS94] Bernard Helﬀer and Johannes Sjöstrand. On the correl ation for kac-like models in the convex case. Journal
+of statistical physics , 74(1-2):349–409, 1994.
+[Kun74] Hervé Kunz. The one-dimensional classical electro n gas. Annals of Physics , 85(2):303–335, 1974.
+[KVV11] Evgenij Kritchevski, Benedek Valkó, and Bálint Vir ág. The scaling limit of the critical one-dimensional rando m
+schrodinger operator. arXiv preprint arXiv:1107.3058 , 2011.
+[Lam21] Gaultier Lambert. Mesoscopic central limit theore m for the circular β-ensembles and applications. Electronic
+Journal of Probability , 26:1–33, 2021.
+[Leb15] Thomas Leblé. A uniqueness result for minimizers of the 1d log-gas renormalized energy. Journal of Functional
+Analysis, 268(7):1649–1677, 2015.
+[Leb17] Thomas Leblé. Local microscopic behavior for 2d cou lomb gases. Probability Theory and Related Fields ,
+169(3):931–976, 2017.
+[Leb18] Thomas Leblé. CLT for ﬂuctuations of linear statist ics in the sine- β process. International Mathematics
+Research Notices, 2018.
+[Leb21] Thomas Leblé. The two-dimensional one-component p lasma is hyperuniform. 2021.
+[Lew22] Mathieu Lewin. Coulomb and riesz gases: The known an d the unknown. Journal of Mathematical Physics ,
+63(6):061101, 2022.
+[LS17] Thomas Leblé and Sylvia Serfaty. Large deviation pri nciple for empirical ﬁelds of log and riesz gases. Inven-
+tiones mathematicae, 210(3):645–757, 2017.
+[Mar88] Philippe A. Martin. Sum rules in charged ﬂuids. Reviews of Modern Physics , 60:1075–1127, 1988.
+[Maz11] Martial Mazars. Long ranged interactions in comput er simulations and for quasi-2d systems. Physics Reports-
+review Section of Physics Letters - PHYS REP-REV SECT PHYS LE TT, 500:43–116, 03 2011.
+[Nir59] Louis Nirenberg. On elliptic partial diﬀerential e quations. Annali della Scuola Normale Superiore di Pisa -
+Classe di Scienze , Ser. 3, 13(2):115–162, 1959.
+[NS97] Ali Naddaf and Thomas Spencer. On homogenization and scaling limit of some gradient perturbations of a
+massless free ﬁeld. Communications in mathematical physics , 183(1):55–84, 1997.
+[PS17] Mario Pulvirenti and Sergio Simonella. The boltzman n–grad limit of a hard sphere system: analysis of the
+correlation error. Inventiones mathematicae , 207(3):1135–1237, 2017.
+[Ric07] Thomas Richthammer. Translation-invariance of tw o-dimensional gibbsian point processes. Communications
+in mathematical physics , 274(1):81–122, 2007.
+[Ser15] Sylvia Serfaty. Coulomb gases and Ginzburg-Landau vortices . Zurich Lectures in Advanced Mathematics.
+European Mathematical Society Publishing House, 2015.
+[Ser18] Sylvia Serfaty. Systems of points with coulomb inte ractions. In Proceedings of the International Congress of
+Mathematicians: Rio de Janeiro 2018 , pages 935–977. W orld Scientiﬁc, 2018.
+[Sjő93a] Johannes Sjőstrand. Potential wells in high dimen sions i. Annales de l’I.H.P. Physique théorique , 58(1):1–41,
+1993.
+[Sjő93b] Johannes Sjőstrand. Potentials wells in high dime nsions ii, more about the one well case. Annales de l’I.H.P.
+Physique théorique , 58, 1993.
+[SKA+21] Saikat Santra, Jitendra Kethepalli, Sanaa Agarwal, Abh ishek Dhar, Manas Kulkarni, and Anupam Kundu.
+Gap statistics for conﬁned particles with power-law intera ctions. arXiv preprint arXiv:2109.15026 , 2021.
+[Tho22] Eric Thoma. Overcrowding and separation estimates for the coulomb gas. arXiv preprint arXiv:2210.05902 ,
+2022.
+[Tho23] Eric Thoma. Thermodynamic and scaling limits of the non-gaussian membrane model. The Annals of Prob-
+ability, 51(2):626–664, 2023.
+[Tor16] Salvatore Torquato. Hyperuniformity and its gener alizations. Physical Review E , 94(2), Aug 2016.
+[VV09] Benedek Valkó and Bálint Virág. Continuum limits of r andom matrices and the brownian carousel. Inventiones
+mathematicae, 177(3):463–508, 2009.
+[VV17] Benedek Valkó and Bálint Virág. The sine β-operator. Inventiones mathematicae, 209(1):275–327, 2017.
+(JB) Université Paris-Dauphine, PSL University, UMR 7534, CNR S, CEREMADE, 75016 Paris, France
+Email address : boursier@ceremade.dauphine.fr

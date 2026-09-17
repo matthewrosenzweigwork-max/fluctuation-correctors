@@ -1,26 +1,26 @@
-# Campaign state
+# Campaign state — Round 001 checkpoint
 
-- Campaign: `HOCF-RIESZ`
-- Version: `1.0`
-- Current phase: `M0 — baseline integrity`
-- Flagship theorem: `THM-003 — singular full microscopically subcritical theorem`
-- Critical companion: `THM-004 — singular microscopically critical theorem`
-- Current mathematical status: `OPEN`
-- Current audit status: `UNAUDITED`
-- Current source status: `SRC-001 frozen; claims unverified`
-- Frozen effective coupling: \(\lambda_N=\beta_NN^{s/d-1}\)
-- Existing restrictive condition: \(\beta_NN^{2s/d-1}\to0\)
-- First open load-bearing assertion: to be frozen after independent quadratic-identity reconstruction
-- Active routes: none initialized
-- Strongest proved positive statement in this repository: none
-- Strongest proved negative statement in this repository: none
-- Regularization status: not initialized
-- Canonical memorandum: not initialized
-- Last verified commit: not initialized
-- Package source hash: see `INPUTS/SOURCE_MANIFEST.md`
+- Campaign: HOCF-RIESZ; scientific specification v1.0, operational clarification v1.1. The setup and initial round requested by the owner have executed. The scientific mission remains OPEN.
+- Gates: M0 PASS and M1 PASS in the frozen smooth starting model. M2 OPEN at PO-004, critical power counting and quantitative hierarchy tails; M3–M7 OPEN. No singular local-equilibrium closure begun prematurely.
+- Flagship THM-003: singular full-subcritical theorem OPEN / UNAUDITED. Critical companion THM-004 OPEN / UNAUDITED. No fluctuation limit promoted.
+- Frozen baseline / only commit: `475a5399828bc6e2ccbade08c59b8778638df14a`. Initial clean unborn main; zero collisions. Nothing pushed; no history rewrite. Round 001 remains intentionally uncommitted and index empty.
+- Input archive SHA-256: `a802d22334cb459b868fb4bdca0f516ac3764cc0e012b65889b96ad1b0f077f8`.
+- Source note SHA-256: `a332f829904a80c27f0c13291758c316f1fcdd7460a3b0d6d67c1ff1bf18ff76`.
+- Frozen model: TASKS/ACTIVE/ROUND_001_MODEL.md. Unit torus, gradient diffusion sqrt(2/beta_N), smooth even zero-mean kernel first, deterministic parameter-dependent mean-field reference, ordered distinct-label N^k statistics. All finite beta>0 for exact identities; analytic estimate also includes nu=0 as an extension/diagnostic.
+- Regimes unchanged: old beta_N N^(2s/d-1)->0; full subcritical lambda_N=beta_N N^(s/d-1)->0; critical lambda_N->lambda in (0,infinity). Positive Riesz 0<s<d; logarithm separate.
+- Laws: arbitrary initial law for smooth pathwise identities; exchangeable for marginal formulas; iid, Gibbs and moving-law fluctuation targets remain separate. Algebraic mean-field centering is not exact-expectation centering.
+- Strongest positive results: THM-001 exact smooth all-order drift and every bracket matching (HOSTILE_REVIEW_PASS); THM-008 exact pair identity (ISOLATED_RECONSTRUCTION_PASS and HOSTILE_REVIEW_PASS); THM-009 bounded smooth pair estimate with explicit constants uniform in N>=2, nu>=0 conditional on displayed data norms (complete proof, isolated reconstruction and hostile review PASS).
+- Strongest negative results: universal arbitrary nonnegative-weight floor and generic weighted singularity improvement DISPROVED / HOSTILE_REVIEW_PASS (OBS-001/002). Uniform small-time Riesz-cutoff C^2 estimate DISPROVED / HOSTILE_REVIEW_PASS (OBS-007). Unqualified all-temperature gap correlation import DISPROVED / SELF_CHECKED (OBS-008).
+- First open load-bearing assertion: PO-001_RESIDUAL.md, especially a law-specific fluctuation-scale bound for the time-integrated cubic statistic, together with the initial pair and martingale/cross brackets. First bounded test uses explicitly declared smooth iid preparation and uniform norms; singular cutoff, order growth and critical surviving terms remain additional open obligations.
+- Allocation actually used: root gpt-6-astra ultra confirmed by local session metadata; ten separate gpt-6-astra max contexts, comprising seven scientific lanes and three operational/mathematical review lanes. Four-slot capacity meant at most three workers alongside root. Nine isolated worker worktrees plus root integration; installation review was read-only. All dispatched work has returned and been integrated; no background promise.
+- Audit records: AUD-INSTALL-001, AUD-001 isolated BBGKY comparison, AUD-002 hostile algebra/obstruction review, AUD-003 statement-only analytic reconstruction then hostile review by one fresh independent reviewer. Exact prompts, input and output hashes preserved. General all-order blind proof reconstruction is still pending; finite tests do not substitute for it.
+- Regularization: REG-001 heat cutoff frozen; fixed-cutoff calculations only. No singular passage, exchanged limits, critical truncation or resummation certified.
+- Sources: all note labels extracted. Private [N] and its numerical script absent and unused. Three primary PDF versions retained. Boursier source inverse temperature equals lambda_N/2 in homogeneous d=1; printed covariance normalization conflict quarantined as SOURCE_MISMATCH. No novelty claim.
+- Canonical summary: MEMORANDA/hocf_round001_20260917T180200Z.tex and matching six-page PDF, compiled and visually checked. Detailed proofs remain in the Markdown memoranda and immutable audits.
+- Reproduction and handoff: REPORTS/ROUND_REPORTS/ROUND_001.md; CERTIFICATES/ROUND_001_VERIFICATION.md; REPORTS/CHECKPOINTS/NEXT_INVOCATION.md; separate checkpoint SHA-256 manifest. Original overlay hashes are preserved; the working manifest refresh is restricted to documented mutable paths by the independent provenance guard.
 
 ## Next three executable actions
 
-1. Run repository verification and environment preflight.
-2. Freeze Round 001 model/normalization and independently reconstruct the duality and pair-corrector identities.
-3. Open all-order recursion and falsification routes; then select `PO-001`.
+1. Prove or falsify the precise fixed-smooth iid residual/endpoint/bracket assertion in TASKS/ACTIVE/PO-001_RESIDUAL.md using the two stated mechanisms; retain the actual law and all constants.
+2. Obtain a proof-free reconstruction of the general recursion and establish singular/order-dependent power counting; do not infer critical finite truncation from the exact finite coefficients.
+3. Attack the singular-compatible inverse norm or physical gap inverse estimate, while resolving the source covariance normalization at proof level before numerical import. Keep static-to-dynamic and initial-layer bridges explicit.

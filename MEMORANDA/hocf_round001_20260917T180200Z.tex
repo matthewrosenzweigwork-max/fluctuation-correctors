@@ -1,0 +1,348 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{proposition}{Proposition}
+\newcommand{\T}{\mathbb T}
+\newcommand{\U}{\mathcal U}
+\newcommand{\E}{\mathbb E}
+\title{HOCF--RIESZ: Round 001\\Smooth finite-particle identities and initial obstructions}
+\author{Campaign research memorandum}
+\date{17 September 2026}
+\begin{document}
+\maketitle
+\noindent Baseline: \texttt{475a5399828bc6e2ccbade08c59b8778638df14a}.
+This memorandum records the first research round. The singular subcritical and
+critical fluctuation theorems remain open. Exact smooth identities, bounded
+analytic estimates, counterexamples, and source claims carry separate statuses.
+The final round report gives the audit dispositions and exact input hashes.
+The one-body and raw pair calculations independently reconstruct the smooth
+versions of Facts 1.4 and 1.2 in the supplied note, pages 1--2; the expanded
+pair operator and all contractions are derived explicitly in this round.
+
+\section{Frozen normalization}
+On the unit torus $\T^d=\mathbb R^d/\mathbb Z^d$, let $g$ be smooth,
+real, even and of mean zero, let $K=-\nabla g$, $b=-\nabla V$, and
+$\nu=\beta_N^{-1}$. For $N\ge2$,
+\[
+ dx_i=\left(b(x_i)+\frac1N\sum_{j\ne i}K(x_i-x_j)\right)dt
+             +\sqrt{2\nu}\,dW_i.
+\]
+The smooth, positive reference density solves
+$\partial_t\mu=-\operatorname{div}(u\mu)+\nu\Delta\mu$, where
+$u=b+K*\mu$, on a fixed $[0,T]$. Its dependence on $N$, temperature
+and regularization is retained. Put $\eta=N^{-1}\sum_i\delta_{x_i}$
+and $\rho=\eta-\mu$.
+All particle tuples below are ordered with distinct labels; coincidences
+of positions are harmless for smooth kernels. Denominators are $N^k$,
+not falling factorials. For a symmetric pair kernel,
+\[
+ \U_2[\Phi]=\frac1{N^2}\sum_{i\ne j}\Phi(x_i,x_j)
+ -\frac2N\sum_i\int\Phi(x_i,y)\mu(y)\,dy
+ +\iint\Phi(x,y)\mu(x)\mu(y)\,dx\,dy.
+\]
+We write $P[\Phi]=\tfrac12\U_2[\Phi]$. For $k\ge0$, $\U_k$ is the alternating sum over subsets of slots:
+insert distinct particle labels in that subset, integrate the other slots
+against $\mu$, and multiply by $(-1)^{k-|A|}N^{-|A|}$.
+This is background centering, not exact expectation centering:
+under iid $\mu$ data, $\E\U_2[\Phi]=-N^{-1}\mu^{\otimes2}(\Phi)$.
+
+The three Riesz regimes remain separate:
+\[
+ \beta_NN^{2s/d-1}\to0,\qquad
+ \lambda_N:=\beta_NN^{s/d-1}\to0,\qquad
+ \lambda_N\to\lambda\in(0,\infty).
+\]
+The fluctuation scale is $\sigma_N=\min(\sqrt{N\beta_N},\kappa_N)$;
+for iid preparation $\kappa_N=\sqrt N$. No fluctuation theorem is
+inferred from these definitions. For a fixed smooth kernel the Riesz
+exponent alone does not determine microscopic power counting.
+
+\section{One-body and pair identities}
+Set
+\begin{align*}
+ Af&=u\cdot\nabla f+\nu\Delta f, &
+ Rf(y)&=\int K(x-y)\cdot\nabla f(x)\mu(x)\,dx,\\
+ Lf&=Af+Rf, &
+ J_f(x,y)&=(\nabla f(x)-\nabla f(y))\cdot K(x-y).
+\end{align*}
+Then direct expansion of the particle generator gives
+\begin{equation}\label{eq:duality}
+ d\rho(f)=\left\{\rho((\partial_t+L)f)+\tfrac12\U_2[J_f]\right\}dt+dM_f,
+ \qquad dM_f=\frac{\sqrt{2\nu}}N\sum_i\nabla f(x_i)\cdot dW_i.
+\end{equation}
+In particular the backward equation $(\partial_t+L)f=0$ yields
+exact duality with the time-integrated quadratic term retained.
+To prove \eqref{eq:duality}, expand $\eta=\mu+\rho$ in
+$\int\eta(dx)(K*\rho)(x)\cdot\nabla f(x)$.
+The background part is $\rho(Rf)$, and oddness of $K$ symmetrizes
+the remaining term. Since $K(0)=0$, the particle diagonal contributes
+zero to $J_f$.
+
+For symmetric $\Phi$, define
+\begin{align*}
+ R_x\Phi(x,y)&=\int K(z-x)\cdot\nabla_z\Phi(z,y)\mu(z)\,dz,\\
+ R_y\Phi(x,y)&=\int K(z-y)\cdot\nabla_z\Phi(x,z)\mu(z)\,dz,\\
+ L_2&=A_x+A_y+R_x+R_y,\\
+ B\Phi(x,y)&=K(x-y)\cdot(\nabla_x-\nabla_y)\Phi(x,y),\\
+ C\Phi(x,y,z)&=\operatorname{Sym}_3\big[K(x-z)\cdot\nabla_x\Phi(x,y)\big].
+\end{align*}
+Here symmetrization is the average over all six permutations. The exact
+pair identity, in the $P=\U_2/2$ convention, is
+\begin{equation}\label{eq:pair}
+\begin{split}
+ dP[\Phi]={}&\left\{P[(\partial_t+L_2+N^{-1}B)\Phi]+\U_3[C\Phi]\right.\\
+ &\left.\quad+N^{-1}\rho((B\Phi)_\mu)
+          +(2N)^{-1}\mu^{\otimes2}(B\Phi)\right\}dt+dM_\Phi.
+\end{split}
+\end{equation}
+The response operators $R_x,R_y$ cannot be omitted from a corrector
+operator. The internal term $B/N$ and both lower contractions are
+explicit finite-particle effects.
+
+\subsection{Direct identity and diagonal accounting}
+Let
+\[
+ H_i[\Phi]=\frac1N\sum_{j\ne i}\nabla_x\Phi(x_i,x_j)
+                 -\int\nabla_x\Phi(x_i,y)\mu(y)\,dy,
+ \qquad F_i=(K*\rho)(x_i).
+\]
+Applying It\^o's formula to the ordered pair sum and to its two
+background terms gives the raw identity
+\[
+ dP[\Phi]=\left\{P[(\partial_t+A_x+A_y)\Phi]
+             +\frac1N\sum_i F_i\cdot H_i[\Phi]\right\}dt+dM_\Phi.
+\]
+There are no cross Brownian terms between distinct particle labels.
+Equivalently, start with the full product
+$\frac12\rho^{\otimes2}(\Phi)$ and subtract
+$\eta(\Phi_\Delta)/(2N)$, where $\Phi_\Delta(x)=\Phi(x,x)$.
+The full-product trace is
+$\nu N^{-1}\eta(\operatorname{tr}D_{xy}\Phi(x,x))$.
+\par\begin{samepage}
+The chain rule
+\[
+ \Delta\Phi_\Delta(x)=
+ (\Delta_x+\Delta_y+2\operatorname{tr}D_{xy})\Phi(x,x)
+\]
+cancels this trace exactly in the deleted statistic. This cancellation
+does not remove the martingale.
+\end{samepage}
+Expansion of the remaining nonlinear
+force term into distinct triples and the coincident internal label
+gives \eqref{eq:pair}; complete independent derivations are preserved
+in the accompanying algebra and BBGKY reports.
+
+\subsection{Martingales}
+The pair martingale and brackets are
+\begin{align*}
+ dM_\Phi&=\frac{\sqrt{2\nu}}N\sum_i H_i[\Phi]\cdot dW_i,\\
+ \frac{d[M_\Phi,M_\Psi]}{dt}&=\frac{2\nu}{N^2}\sum_iH_i[\Phi]\cdot H_i[\Psi],\\
+ \frac{d[M_f,M_\Phi]}{dt}&=\frac{2\nu}{N^2}\sum_i\nabla f(x_i)\cdot H_i[\Phi].
+\end{align*}
+Every limiting corrector argument must control these terms and their
+cross variations, not merely the drift.
+
+\section{Verification scope}
+An independent exact rational Laurent-polynomial calculation compares
+particle-coordinate differentiation with both the raw and decomposed
+pair identities. Ninety tests cover $N=2,3,4$, diffusivities
+$0,1/3,2$, and five symmetric trigonometric kernels, at homogeneous
+reference and a one-mode smooth interaction. All coefficient residuals
+vanish exactly. The zero-diffusion row is a limiting diagnostic.
+This battery is supporting evidence, not a proof of the general identities.
+The code, command, hashes and limitations are recorded in certificate CMP-001.
+
+
+\section{Exact smooth all-order recursion}
+For a symmetric $k$-slot kernel define
+\begin{align*}
+ C_k\Phi&=\sum_{1\le a<b\le k}K(x_a-x_b)\cdot(\nabla_a-\nabla_b)\Phi,\\
+ A_k^+\Phi&=\operatorname{Sym}_{k+1}\sum_{a=1}^k
+ K(x_a-x_{k+1})\cdot\nabla_a\Phi(x_1,\ldots,x_k),\\
+ Q_k\Phi(x_1,\ldots,x_{k-1})&=\int\sum_{a=1}^{k-1}
+ K(x_a-y)\cdot(\nabla_a-\nabla_y)\Phi(x_1,\ldots,x_{k-1},y)\,\mu(dy),\\
+ R_k\Phi(x_1,\ldots,x_{k-2})&=\iint K(y-z)\cdot(\nabla_y-\nabla_z)
+ \Phi(x_1,\ldots,x_{k-2},y,z)\,\mu(dy)\mu(dz).
+\end{align*}
+Let $L_k$ be the sum of the local and response operators in each slot,
+using the integrated-variable convention already fixed for $L_2$.
+The finite-subset proof gives
+\begin{equation}\label{eq:general}
+\begin{split}
+ d\U_k[\Phi]=\bigg\{&\U_k[(\partial_t+L_k+N^{-1}C_k)\Phi]
+ +\U_{k+1}[A_k^+\Phi]\\
+ &+\frac{k}{N}\U_{k-1}[Q_k\Phi]
+ +\frac{\binom{k}{2}}{N}\U_{k-2}[R_k\Phi]\bigg\}\,dt+dM_k[\Phi].
+\end{split}
+\end{equation}
+For $k=1$ both lower terms are absent. At $k=2$, $A_2^+=2C$
+and \eqref{eq:general} reduces to twice \eqref{eq:pair}.
+The martingale is exactly the particle-coordinate gradient of the
+finite statistic:
+\[
+ dM_k[\Phi]=\sqrt{2\nu}\sum_{i=1}^N\nabla_{x_i}\U_k[\Phi]\cdot dW_i,
+ \quad
+ \frac{d[M_k[\Phi],M_\ell[\Psi]]}{dt}
+ =2\nu\sum_i\nabla_{x_i}\U_k[\Phi]\cdot\nabla_{x_i}\U_\ell[\Psi].
+\]
+Each gradient differentiates the explicit ordered-subset definition,
+so all label coincidences between the two factors remain included.
+The general proof and expanded bracket contractions are preserved in the
+completed recursion report. An independently written particle-coordinate
+verifier passes 144 exact rational Fourier cases through $k=4$, including
+$k>N$. This finite battery alone does not certify the all-order assertion.
+
+Neither the finite coefficients in \eqref{eq:general} nor a fixed smooth
+kernel determines the singular critical size of the terms. That question
+also involves partial diagonals, the law, the corrector norms, and the
+number of levels. The critical power-counting and summability gate stays
+open until those estimates are proved.
+
+\section{A bounded smooth pair estimate}
+Fix an integer $m\ge2$ and use the maximum of the componentwise derivatives
+through order $m$ as the $C^m$ norm. Write
+\[
+ \kappa_m=\|K\|_{C^m},\quad b_m=\|b\|_{C^m},\quad
+ M_1(t)=\sum_{a=1}^d\|\partial_a\mu_t\|_{L^1},
+\]
+\[
+ A_m=b_m+\tfrac32\kappa_m,\qquad
+ c_m(t)=2d(2^m-1)A_m+2(d\kappa_m+\kappa_0M_1(t)).
+\]
+For every $N\ge2$, $\nu\ge0$ and continuous-time smooth symmetric source
+$F$, the equation
+\[
+ (\partial_t+L_2+B/N)\Phi=-F,\qquad \Phi_T=0
+\]
+has a unique smooth symmetric solution in the mild $C^m$ class, and
+\begin{equation}\label{eq:smoothbound}
+ \|\Phi_t\|_{C^m}\le\int_t^T
+   \exp\left(\int_t^r c_m(a)\,da\right)\|F_r\|_{C^m}\,dr.
+\end{equation}
+Every background dependence is displayed. No bound on parameter-dependent
+$M_1$ or the one-body backward test is inferred from its notation.
+For $F=J_f$,
+$\|J_f\|_{C^m}\le d2^{m+1}\kappa_m\|f\|_{C^{m+1}}$.
+
+Here is the decisive derivative estimate. For $\partial_x^\alpha
+\partial_y^\gamma R_x\Phi$, if $\alpha=0$, integrate the $z$ derivative
+against $\operatorname{div}(K(z-x)\mu(z))$. If $|\alpha|\ge1$, leave
+that derivative on $\Phi$ and put the $x$ derivatives on $K$; then
+$|\gamma|+1\le m$. Thus
+\[
+ \|(R_x+R_y)\Phi\|_{C^m}
+ \le2(d\kappa_m+\kappa_0M_1)\|\Phi\|_{C^m}.
+\]
+Include $B/N$ in the drift
+$a^N=(u(x)+K(x-y)/N,u(y)-K(x-y)/N)$, whose $C^m$ norm is at most
+$A_m$. The additive-noise flow gives a propagator with bounds independent
+of diffusivity; a time-ordered Volterra series for the bounded response
+constructs the solution. Independently, differentiation of the PDE and
+the maximum principle bound its drift commutator by
+$2d(2^m-1)A_m\|\Phi\|_{C^m}$. Gronwall gives
+\eqref{eq:smoothbound}. These two complete mechanisms and their explicit
+constants appear in the smooth memorandum. Three solvable tests and
+120 exact rational Fourier checks include zero and large diffusivity,
+negative interaction amplitude, and nonzero internal transport.
+The analytic audit is separate from these same-context proofs.
+
+This does not yield a Riesz cutoff-uniform bound. For
+$\widehat g_\varepsilon(k)=c_{d,s}|k|^{s-d}e^{-4\pi^2\varepsilon|k|^2}$,
+$0<s<d$, positive $c_{d,s}$ and $k\ne0$, lattice summation gives
+\[
+ \|K_\varepsilon\|_{C^m}\le C\varepsilon^{-(s+m+1)/2},\qquad
+ DK_\varepsilon(0)=a_\varepsilon I,\quad
+ a_\varepsilon\asymp\varepsilon^{-(s+2)/2}.
+\]
+For the fixed test $f_T(x)=\cos(2\pi x_1)$ and local coordinates
+$x=q+r/2$, $y=q-r/2$,
+\[
+ \left.\partial_{r_1}^2J_{f_T,\varepsilon}(q+r/2,q-r/2)
+ \right|_{q=r=0}=-8\pi^2a_\varepsilon.
+\]
+The $C^2$ source norm therefore diverges. In particular a single bound
+$\|\Phi_{T-\tau}\|_{C^2}\le C\tau$ for every cutoff and all small
+$\tau$ is false. This leaves weaker norms and justified joint limits open.
+
+\section{Two explicit route obstructions}
+On $\T^1$, $0<s<1$, the prescribed periodic Riesz kernel has
+$g_s(r)=|r|^{-s}+H_s(r)$ locally, with $H_s$ smooth. Choose smooth
+unit-mass nonnegative bumps $p,q$ on disjoint nearby arcs where
+$g_s(x-y)>0$, and set
+\[
+ w(x,y)=p(x)q(y)+q(x)p(y),\qquad f=p-q,\qquad h=wg_s.
+\]
+Then $w\ge0$, $w(x,x)=0$, and $h$ is smooth. Nevertheless
+\[
+ \tfrac12\iint h(x,y)f(x)f(y)\,dx\,dy
+ =-\iint p(x)^2q(y)^2g_s(x-y)\,dx\,dy=-A<0.
+\]
+For $\mu=1$, take quantile particles of the density
+$1+aN^{-(1-s)/4}f$, with $a>0$ small and fixed. Their Wasserstein
+error is at most $1/(2N)$, so their deleted weighted energy is
+\[
+ P_N[h]=-Aa^2N^{-(1-s)/2}+O(N^{-1}).
+\]
+This violates any proposed all-configuration lower bound with zero
+diagonal main term and error $CN^{s-1-\delta}$, $\delta>0$,
+even though the empirical measures converge to $\mu$.
+The full proof also treats strictly positive weights. Pointwise weight
+positivity is therefore insufficient; no prepared-law theorem is disproved.
+
+For a general smooth symmetric weight put $d_w(x)=w(x,x)$. The
+specific remainder
+\[
+ D_w(x,y)=(w(x,y)-w(x,x))g_s'(x-y)+\partial_1w(x,y)g_s(x-y)
+\]
+has expansion
+\[
+ D_w(x,x-r)=\tfrac{1+s}{2}d_w'(x)|r|^{-s}
+               +O(|r|^{1-s})+O(1).
+\]
+For $w=2+\tfrac12(\sin(2\pi x)+\sin(2\pi y))$, at $x=0$ its ratio
+to $g_s(r)$ tends to $\pi(1+s)$. It generically retains the original
+singularity. A constant diagonal eliminates this leading term and gives
+$D_w=O(|r|^{1-s})$. Complete witnesses, quantifiers and independent
+normalization calculations are in the falsification memorandum.
+
+\section{Source boundaries and the remaining assertion}
+The seven-page imported note remains immutable. Its labels
+\emph{Fact}, \emph{Hope}, \emph{Missing ingredient} and
+\emph{Obstruction} are source labels, not campaign certifications.
+Its finite-temperature renormalized-energy formula cannot omit the
+energy martingale. The pointwise comparison
+$g/2\le g_\theta\le3g/2$ cannot hold where the zero-mean periodic
+kernel is negative. Neither issue disproves the scientific mission.
+The source ledger distinguishes version-locked primary normalization
+from the unavailable private source and its unused claims.
+
+For the one-dimensional circular Hamiltonian
+$H_N=N^{-s}\sum_{i\ne j}g_s(x_i-x_j)$ in
+Boursier's \emph{Optimal local laws and CLT for the circular Riesz gas},
+arXiv:2112.05881v5, equations (1.1), (1.4), the campaign Gibbs energy
+is $(2N)^{-1}\sum_{i\ne j}g_s$. Consequently the inverse temperature
+in that source equals $\beta_NN^{s-1}/2=\lambda_N/2$.
+Fixed source temperature belongs to the campaign's critical scale.
+No temperature-uniform or nonequilibrium import follows.
+The ordered-source report records the exact versions, theorem locations,
+a printed Fourier-normalization discrepancy, and the stopped gap identity.
+Its suspect numerical covariance normalization is quarantined.
+
+For $(\partial_t+L)f=0$ and the pair solution with source $-J_f$,
+the exact corrected observable is
+\begin{align*}
+ \rho_T(f_T)={}&\rho_0(f_0)+P_N[\Phi_0]+M_f(T)+M_\Phi(T)\\
+ &+\int_0^T\left\{\U_3[C\Phi_t]
+       +N^{-1}\rho_t((B\Phi_t)_{\mu_t})
+       +(2N)^{-1}\mu_t^{\otimes2}(B\Phi_t)\right\}dt.
+\end{align*}
+The first open load-bearing probabilistic assertion is a law-specific
+bound on the integrated cubic term at scale $\sigma_N$, together with
+the initial correction and scaled martingale/cross brackets. The active
+proof-obligation card first states a fixed-smooth iid problem with visible
+uniform background/test bounds. The singular extension must additionally
+control the cutoff and the corrector-order tail. At criticality, surviving
+terms may require an infinite hierarchy or enlarged state; their vanishing
+is not assumed. M2's power-counting gate and the singular fluctuation
+theorems remain open.
+\end{document}

@@ -34,3 +34,7 @@ THM-005 sharpness + THM-007 extensions
 ```
 
 `THM-006` one-dimensional ordered work runs in parallel after `PO-002` and feeds mechanism/estimate information back into the main graph.
+
+## Round 001 gate overlay
+
+M0 PASS (frozen campaign normalization, independent smooth duality, source intake); M1 PASS (pair identity, full trace/noise accounting, independent BBGKY reconstruction, AUD-002 hostile pass). The unrelated SRC-005 printed constant is quarantined, so it is not an unresolved conflict in the frozen campaign normalization. PO-003/THM-001 smooth algebra has a hostile-reviewed proof. M2 is still OPEN at PO-004: no complete critical scaling/summability theorem. PO-001a/THM-009 supplies a bounded fixed-smooth pair estimate only; it feeds the still-open law-specific residual card. M3–M7 stay OPEN. No singular local-equilibrium branch was started ahead of these gates.

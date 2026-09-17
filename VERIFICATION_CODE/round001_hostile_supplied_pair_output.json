@@ -1,0 +1,279 @@
+{
+  "status": "PASS",
+  "exact_rational_checks": 90,
+  "raw_checks": 45,
+  "decomposed_checks": 45,
+  "scope": "smooth uniform 1D finite Fourier pair; generator divided by (2pi)^2",
+  "checks": [
+    {
+      "N": 2,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "0",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "0",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "0",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "0",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "1/3",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "2",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "2",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "2",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 2,
+      "nu": "2",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "0",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "0",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "0",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "0",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "1/3",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "2",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "2",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "2",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 3,
+      "nu": "2",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "0",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "0",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "0",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "0",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "0",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "1/3",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "2",
+      "kernel": "constant",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "2",
+      "kernel": "sum_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "2",
+      "kernel": "difference_mode",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "2",
+      "kernel": "one_body_sum",
+      "residual_terms": 0
+    },
+    {
+      "N": 4,
+      "nu": "2",
+      "kernel": "mixed_symmetric",
+      "residual_terms": 0
+    }
+  ]
+}

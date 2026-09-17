@@ -40,3 +40,22 @@ For every active theorem, append:
 - corrector coefficient;
 - centering and counterterms;
 - error after multiplication by the fluctuation scale.
+
+
+## Round 001 v1.0 freeze (2026-09-17)
+
+Authoritative common dossier: `TASKS/ACTIVE/ROUND_001_MODEL.md`; baseline `475a5399828bc6e2ccbade08c59b8778638df14a`.
+
+- Unit torus, Haar mass one, Fourier characters exp(2 pi i k.x); zero mode of g is zero. Fixed smooth even kernel first; singular target is heat-regularized Riesz with the explicit Fourier coefficient in the dossier. Fourier constant is separately source-audited before use.
+- Hamiltonian H_N=sum_i V(x_i)+(1/(2N))sum_{i!=j}g(x_i-x_j); gradient drift is -grad_i H_N; Brownian coefficient sqrt(2/beta_N). Its formal invariant Gibbs density is exp(-beta_N H_N), but no equilibrium/dynamic transfer is used.
+- nu_N=1/beta_N; reference mu^{N,g} retains temperature and kernel dependence. Smooth positivity is assumed on the finite horizon, not claimed uniformly without stated bounds.
+- Empirical measure eta=N^{-1}sum delta_i, rho=eta-mu. Ordered distinct-label tuples, denominators N^k, not (N)_k. Label deletion is meaningful even at coincident coordinates for smooth kernels.
+- P_N=U_2/2. General U_k is the precise inclusion-exclusion statistic in the dossier. Background centering is not mean-zero under iid laws: E U_2[Phi]=-mu_0^2(Phi)/N at t=0. For constant Phi=1, U_2=-1/N and U_3=2/N^2.
+- sigma_N=min(sqrt(N beta_N),kappa_N); iid row has kappa_N=sqrt(N). Do not replace this by the thermal scale when beta_N grows.
+- Initial laws are arbitrary for finite-N pathwise identities, exchangeable when deriving marginals; iid and Gibbs fluctuation theorems remain distinct and open.
+- For fixed smooth g, the Riesz reference exponent s labels a sequence but does not create a microscopic singularity. Fixed-cutoff bounds cannot be used to infer lambda_N critical power counting.
+- Logarithmic normalization remains separately OPEN. No s=0 substitution.
+
+## Ordered-source temperature map
+
+In dimension one, V=0, source H=N^{-s} sum_{i!=j}g has Gibbs density exp(-b H). Campaign energy is (2N)^{-1} sum_{i!=j}g, so b=beta_N N^{s-1}/2=lambda_N/2. No ordered/unordered factor is suppressed. The source real-space kernel has exactly the campaign Fourier constant; its separately printed fractional-Laplacian c_s is inconsistent and is not adopted. Frozen campaign exponents and Fourier coefficients remain unchanged.

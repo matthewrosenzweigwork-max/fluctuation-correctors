@@ -1,0 +1,8656 @@
+PDF PAGE 1
+OPTIMAL LOCAL LAWS AND CLT FOR THE CIRCULAR RIESZ GAS
+JEANNE BOURSIER
+Abstract. We study the long-range one-dimensional Riesz gas on the circle, a continuous system of
+particles interacting through a Riesz kernel. We establish near-optimal rigidity estimates on gaps valid
+at any scale. Leveraging these local laws together with Stein’s method, we prove a quantitative Central
+Limit Theorem for linear statistics. The proof is based on a mean-field transport and a fine analysis
+of the fluctuations of local error terms using various convexity and monotonicity arguments. Using
+a comparison principle for the Helffer-Sjöstrand equation, the method can handle very singular test
+functions, including characteristic functions of intervals.
+Contents
+1. Introduction 1
+2. Preliminaries 12
+3. The Helffer-Sjöstrand equation 18
+4. Near-optimal rigidity 26
+5. Optimal rigidity for singular linear statistics 41
+6. Central Limit Theorem 57
+Appendix A. Well-posedness of the H.-S. equation 61
+Appendix B. Auxiliary estimates 64
+References 74
+1. Introduction
+1.1. Setting of the problem.In this paper, we study the one-dimensional Riesz gas on the circle.
+We denoteT := R/Z. For a parameters∈(0, 1), let us consider the Rieszs-kernel on T, defined by
+g(x) = lim
+n→∞
+( n∑
+k=−n
+1
+|k +x|s−2
+1−sn1−s
+)
+=ζ(s,x ) +ζ(s, 1−x), (1.1)
+where ζ(s,x ) stands for the Hurwitz zeta function [Ber72]. Note thatg is the fundamental solution of
+the fractional Laplace equation on the circle
+{
+(−∆)
+1−s
+2 g =cs(δ0−1)´
+g = 0, (1.2)
+with cs given by
+cs = Γ( 1−s
+2 )
+Γ(s
+2)
+√π
+21−s. (1.3)
+We endow T with the natural orderx < yif x = x′+k, y = y′+k′with k,k′∈Z, x′,y′∈[0, 1) and
+x′<y′and work on the set of ordered configurations
+DN ={XN = (x1,...,xN)∈TN :x2−x1 <···<x N−x1}.
+On DN let us consider the energy
+HN :XN∈DN↦→N−s ∑
+i̸=j
+g(xi−xj), (1.4)
+1
+arXiv:2112.05881v5  [math.PR]  19 Jul 2025
+
+PDF PAGE 2
+2 JEANNE BOURSIER
+where g is given by (1.1). The circular Riesz gas, at the inverse temperatureβ >0, is defined by the
+Gibbs measure
+dPN,β= 1
+ZN,β
+exp(−βHN(XN))1DN (XN)dXN,
+where ZN,βis the normalization constant, calledpartition function, given by
+ZN,β=
+ˆ
+DN
+e−βHN(XN)dXN.
+Throughout the paper,s is a fixed parameter in(0, 1).
+The choice of normalization in the definition of the energy (1.4) is a natural choice because it makes
+βthe effective inverse temperature governing the microscopic scale behavior.
+The model described above belongs to a family of interacting particle systems calledRiesz gases.
+On Rd, these are associated to a kernel of the form|x|−s with s >0. The Riesz family also contains
+in dimensions 1 and 2 the so-called log-gases with kernel−log|x|. For d≥3 and s = d−2,|x|−s
+is the fundamental solution of the Laplace equation onRd and therefore corresponds to the Coulomb
+interaction. The parameters determines the singularity as well as therange of the interaction. When
+s > d, the interaction is short-range and the system, referred to ashypersingular Riesz gas, resembles
+a nearest-neighbor model. For s∈(0,d ) or s = 0 and d = 1, 2, Riesz gases are long-range particle
+systems, which, as such, have attracted much attention both in mathematical and physical contexts.
+The1Dlog-gas, alsocalledthe β-ensemble, hasbeenextensivelystudiedinthelastfewdecades, partly
+because of its connection to random matrix theory. Indeed, it corresponds, in the casesβ∈{1, 2, 4},
+to the distribution of the eigenvalues ofN×N symmetric/Hermitian/symplectic random matrices with
+independent Gaussian entries (see the original paper of Dyson [Dys62]). The 1D log-gas also appears in
+many other contexts, such as zeros of random polynomials, zeros of the Riemann zeta function, and is
+conjectured to be related to the eigenvalues of random Schrödinger operators [Lew22]. The 2D Coulomb
+gas is another fundamental model. Among many other examples, it is connected to non-Hermitian
+random matrices, Ginzburg-Landau vortices, Fekete points, complex geometry, the XY model, and the
+KT transition [Ser18]. For other values ofs, let us mention that the cases = 2 in dimension 1 is
+an integrable system, called classical Calogero-Sutherland model. The study of minimizers of Riesz
+interactions is also a dynamic topic [HS05,CSW21] and is the subject of long-standing conjectures
+related to sphere packing problems [BL15]. From a statistical physics perspective, even in dimension1,
+the Riesz gas is not fully elucidated, since the classical theory of the 60-70s [Rue74] cannot be applied
+due to the long-range nature of the interaction. The reader may refer to the nice review [Lew22], where
+an account of the literature and many open problems on Riesz gases are given.
+As the number of particlesN tends to infinity, the empirical measure
+µN := 1
+N
+N∑
+i=1
+δxi
+converges almost surely underPN,β(in a suitable topology) to the uniform measure on the circle. This
+result can be obtained through standard large deviations techniques (see, for instance, [Ser14, Ch. 2]
+for the case of Riesz gases on the real line, which adapts readily to the periodic setting). In the large
+N limit, particles tend to spread uniformly in the circle, which suggests that particles spacing (or gaps)
+N(xi+k−xi) concentrate around the valuek. The first goal of this paper is to quantify the fluctuations
+of the gaps around their mean. We establish the optimal size of the fluctuations ofN(xi+k−xi), which
+turns out to be inO(β−1
+2k
+s
+2 ), as conjectured in the recent physics paper [SKA+21]. This type of result
+is referred to in the literature as a rigidity estimate. It was intensively investigated forβ-ensembles (see,
+for instance, [BEY12,BEY+14b,BEY14a,BMP22]), but the correct observable in that case isxi−γi,
+where xi is thei-th particle andγi the classical location of thei-th particle, that is, the corresponding
+quantile of the equilibrium measure arising in the mean-field limit.
+A complementary way to study the rigidity of the system is to investigate the fluctuations of linear
+statistics of the form
+FluctN[ξ(ℓ−1
+N·)] :=
+N∑
+i=1
+ξ(ℓ−1
+N xi)−NℓN
+ˆ
+T
+ξ, (1.5)
+
+PDF PAGE 3
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 3
+where ξ: T→R is a given measurable test function and(ℓN) a sequence of numbers in(0, 1]. For
+smooth test functions, many central limit theorem (CLT) results are available in the literature on 1D-
+log gases, including [Joh98,Shc13,BG13,BEY12,BEY+14b,BLS+18,BMP22,HL21]. For 1D Riesz gases
+withs∈(0, 1), to our knowledge, no prior results on CLT for linear statistics are known. In this paper,
+we obtain a quantitative CLT for (1.5), which is valid at all scales(ℓN) down to microscopic scales
+ℓN≫1
+N. A major direction in random matrix theory is to establish CLTs for (1.5) allowing for test
+functions which areas singular as possible. Indeed, it is a natural question to capture the fluctuations
+of the number of points and of the logarithmic potential, which are key observables for the log-gas. The
+question of optimal regularity of the test function has also drawn some interest because it encapsulates
+non-universality phenomena in the context of Wigner matrices. One of the goals of this paper is to
+provide a robust method that allows singular test functions to be treated in a systematic way. The main
+question we investigate therefore isregularity issue. Using new concentration inequalities, we can treat
+singular test functions, including characteristic functions of intervals and inverse power functions up to
+the critical powers
+2. In particular, we obtain a CLT for the number of points, which extends to a Riesz
+setting some of the recent results of [BMP22].
+Let us now introduce the main tools and objects used in the proofs. For any reasonable Gibbs measure
+on DN (or RN), the fluctuations of any (smooth) statisticF :DN→R are related to the properties of
+a partial differential equation called the Helffer-Sjöstrand (H.-S.) equation, which is sometimes referred
+to as a Witten Laplacian (on1-forms). This equation appears in [Sjo93a,Sjo93b,HS94]. It is more
+extensively studied in [Hel98b,Hel98a,NS97], where it is used to establish correlation decay, uniqueness
+of the limiting measure, and log-Sobolev inequalities for models with convex interactions. The purpose
+of the present paper is to show how the analysis of Helffer-Sjöstrand equations provides powerful tools
+to study the fluctuations of linear statistics with singular test functions.
+The proof of the near-optimal rigidity is essentially similar to [BEY+14b]. It exploits the convexity of
+the interaction and is thus very specific to 1D systems. The method is mainly based on a concentration
+inequality for divergence-free functions and on a key convexity result due to Brascamp and Lieb [BL02].
+The method of proof of the CLT for linear statistics starts with performing the mean-field transport
+argument usually attributed to Johansson [Joh98]. When studying the Laplace transform of linear
+statistics FluctN[ξ], this consists in applying a well-chosen change of variables on each point, depending
+only on its position, to transport the uniform measure on the circle to the perturbed equilibrium measure
+(perturbed by the effect of addingtFluctN[ξ] to the energy). In this paper, variances are computed
+instead of Laplace transforms and the implementation of the transport of [Joh98] takes the form of
+an integration by parts. This argument is a variation of the so-called loop equations (see [BEY+14b]
+for various comments on this topic). It is the starting point of many CLTs in Coulomb gases andβ-
+ensembles, but received a more systematic analysis in the series of works [LS18,BLS+18,Leb18,LZ20,
+Ser20]. One can also interpret this transport as a mean-field approximation of the H.-S. equation
+associated with (the gradient of) linear statistics.
+Since the transport is an approximate solution (a mean-field approximation) of the H.-S. equation, it
+creates an error term, sometimes called a loop equation term, which is essentially a local weighted energy
+and the heart of the problem is to estimate its fluctuations. In contrast, in [LS18,BLS+18,Leb18,Ser20]
+the typical size of this error term is evaluated in the sense of large deviation,rather than the size of its
+fluctuations. However, we point out that the latter seems intractable in dimensiond≥2 because of the
+lack of convexity. The core of this paper is about the control of the fluctuations of this loop equation term
+through the analysis of the related H.-S. equation. Our proof is based on the Brascamp-Lieb inequality,
+the near-optimal rigidity estimates on gaps and nearest-neighbor distances, and a comparison principle
+for the Helffer-Sjöstrand equation.
+The use of the comparison principle mentioned above (also known in [Car74,HS94]) is one of the
+main novelties of the article. This is the key technical tool for treating linear statistics with singular
+test functions. Indeed, after performing loop equation techniques, we will study singular local quantities
+for which standard concentration inequalities, such as the Brascamp-Lieb or log-Sobolev inequalities,
+do not give the right order of fluctuations.
+The central limit theorem is then obtained from a rather straightforward application of Stein’s
+method. We show how the mean-field transport naturally leads to an approximate Gaussian inte-
+gration by parts formula. As a result, quantifying normality reduces to controlling the variance of the
+loop equation term.
+
+PDF PAGE 4
+4 JEANNE BOURSIER
+1.2. Main results. Throughout, we fix a long-range parameters∈(0, 1).
+1.2.1. Rigidity of gaps and local particle numbers.Our first theorem extends the rigidity estimate of
+[BEY+14b, Thm. 3.1] from the log gas to the one-dimensional Riesz gas.
+Theorem 1(Near-optimal rigidity). Forε>0 set δ(ε) := ε
+4(s+2). Then, there existsε0 > 0 such that
+for everyε∈(0,ε0) the following holds. There exist constantsc> 0 and C >0 depending onβ, s and
+εsuch that:
+(1) (Gap fluctuations) For everyi∈{1,...,N}and k∈{1,...,⌊N
+2⌋},
+PN,β
+(
+|N(xi+k−xi)−k|≥k
+s
+2 +ε)
+≤Ce−ckδ(ε)
+. (1.6)
+(2) (Discrepancy in an interval) For everya∈T and ℓN∈(0, 1
+4],
+PN,β
+(⏐⏐⏐
+N∑
+i=1
+1(a−ℓN,a +ℓN)(xi)−2NℓN
+⏐⏐⏐≥(NℓN)
+s
+2 +ε
+)
+≤Ce−c(NℓN)δ(ε)
+. (1.7)
+1.2.2. Singular linear statistics: variance expansion.Next, we prove sharp variance estimates, valid at
+any scale, for possibly singular test functions satisfying the following assumption:
+Assumption 1.1(Admissible test function). LetℓN∈(0, 1] and letξ∈L2(ℓ−1
+N T). Letψbe given by
+ψ′= (−∆)
+1−s
+2 ξand
+ˆ
+ψ= 0.
+(A1) Global Hölder regularity. There existsε>0 such thatξ′=χfor someχ∈C1−s+ε(ℓ−1
+N T).
+(A2) PiecewiseC2−s regularity. For some integerp≥0 and pointsa1 <···< ap < 1, letting
+ap+1 :=a1, we have thatψisC2 on every open arc(aj,aj+1).
+(A3) Controlled algebraic singularities. There exists a constantC > 0 and an exponentα∈
+[s−1, s
+2) such that
+|ψ′′(x)| ≤C
+
+
+p∑
+j=1
+1
+|x−aj|2−s+α1|x|≤1 + 1
+|x|3−s 1|x|≥1
+
+, x ∈ℓ−1
+N T\{a1,...,ap}. (1.8)
+(A4) Support. Either ℓN≡1, orℓN→0 and, in this case,ξis supported in
+(
+−1
+2, 1
+2
+)
+.
+Remark 1.2.We can observe that, givenα>0, the functionx∈T\{0}↦→|x|−αsatisfies Assumption
+1.1 if and only ifα<s
+2. Moreover, the function1(a,b) satisfies Assumption 1.1 (as opposed to the case
+wheres = 0).
+Let us recall the definition of the fractional Sobolev seminorm on the circle∥·∥Hα(T), forα>0. Let
+h∈L2(T) with Fourier coefficientsˆh(k), k∈Z. Whenever it is finite, we call∥h∥2
+Hα(T) the quantity
+∥h∥2
+Hα(T) :=
+∑
+k∈Z
+|k|2α|ˆh|2(k).
+Similarly, the fractional Sobolev seminorm of a functionh∈L2(R), denoted∥h∥Hα(R), is defined by
+∥h∥2
+Hα(R) :=
+ˆ
+R
+|ξ|2α|ˆh|2(ξ)dξ, (1.9)
+where ˆh stands for the Fourier transform ofh.
+Let (ℓN) be a sequence taking values in(0, 1]. For any functionξ∈H
+1−s
+2 (ℓ−1
+N T), define
+σ2
+ℓN (ξ) := (2π)1−s
+2βcs
+ℓ−s
+N∥ξ(ℓ−1
+N·)∥2
+H
+1−s
+2 (T)
+. (1.10)
+If ξ∈H
+1−s
+2 (T) is supported on(−1
+2, 1
+2), letξ0 : R→R be given for allx∈R by
+ξ0(x) =
+{
+ξ(x) if|x|≤1
+2
+0 if|x|> 1
+2
+(1.11)
+and
+σ2
+0(ξ) := (2π)1−s
+2βcs
+∥ξ0∥2
+H
+1−s
+2 (R)
+. (1.12)
+
+PDF PAGE 5
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 5
+Theorem 2(Variance of singular linear statistics). Letξ∈L2(ℓ−1
+N T) and (ℓN) satisfy Assumption 1.1.
+Letα∈[s−1, s
+2) be such that(1.8) holds.
+For allε>0, there exists a constantC >0 depending onβ, s, εand ξsuch that
+⏐⏐⏐VarPN,β[FluctN[ξ(ℓ−1
+N·)]]−(NℓN)sσ2
+ℓN (ξ)
+⏐⏐⏐≤C(NℓN)max(2s−1,2α)+ε. (1.13)
+Moreover, there exists a constantC >0 depending ons and ξsuch that
+|σ2
+ℓN (ξ)−σ2
+0(ξ)|≤Cℓ2−s
+N .
+Since α<s
+2, note thatξ∈H
+1−s
+2 (ℓ−1
+N T) and that the error term in (1.13) iso((NℓN)s).
+Theorem 2 implies that the number variance of the 1-D Riesz gas grows likeNs, the same order as
+for any smooth linear statistic. This growth rate interpolates smoothly between:
+•the log-gas cases = 0, where smooth statistics have variance of order1 but where interval counts
+fluctuate likelogN because 1(−a,a) /∈H1/2(T) [BLS+18], and
+•the Poisson-like cases = 1, where the variance is linear inN.
+Thus for everys∈(0, 1) the Riesz gas ishyperuniform in the sense of [Tor16]: the number-variance is
+much smaller than for i.i.d variables.
+1.2.3. Central limit theorem.Let dBL be the bounded-Lipschitz distance between probability measures
+on R, defined for allµand νby
+dBL(µ,ν) := sup
+f∈C1(R)
+{ˆ
+fd(µ−ν) :∥f∥L∞(R)≤1,∥f′∥L∞(R)≤1
+}
+.
+We establish the following result:
+Theorem 3 (CLT for singular linear statistics). Let ξ∈L2(ℓ−1
+N T) and (ℓN) satisfy Assumption 1.1.
+Letα∈[s−1, s
+2) be such that(1.8) holds. Assume in addition thatℓN≫N−1. LetZN∼N
+(
+0,σ2
+ℓN (ξ)
+)
+and forℓ∈{0, 1}, letZℓ∼N
+(
+0,σ2
+ℓ(ξ)
+)
+.
+(1) The random variables (NℓN)−s/2FluctN
+[
+ξ(ℓ−1
+N·)
+]
+converge in distribution toZℓ, where ℓ:=
+limN→∞ℓN∈{0, 1}.
+(2) For everyε>0, there exists a constantC >0 depending onβ, s, εand ξsuch that
+dBL
+(
+Law((NℓN)−s/2FluctN), Law(ZN)
+)
+≤C(NℓN)ε+max(−s
+2,s−1
+2 ,α−s
+2 ).
+Theorem 3 can be interpreted as the convergence of the field
+N∑
+i=1
+g(xi−·)−N
+ˆ
+g(x−·)dx
+to a fractional Gaussian field. Observe that ifξand χare smooth test functions with disjoint support,
+then the asymptotic covariance is, in general, not equal to0, meaning that the corresponding fractional
+field does not exhibit spatial independence. This reflects the non-local nature of the fractional Laplacian
+(−∆)
+1−s
+2 for s∈(0, 1).
+1.2.4. Examples. By Remark 1.2, Theorem 3 gives a CLT for the number of points in an interval and
+for the observable gaps.
+Corollary 1 (CLT for the number of points in an interval). Let a∈(0, 1
+2) and (ℓN) be a sequence
+taking values on(0, 1] such thatℓN≫1
+N. We have
+1√
+Nsζ(−s, 2aℓN)
+( N∑
+i=1
+1(−aℓN,aℓN)(xi)−2aNℓN
+)
+=⇒
+Law
+N (0,σ2),
+where
+σ2 := 2cotan(π
+2s)
+β4sπs . (1.14)
+
+PDF PAGE 6
+6 JEANNE BOURSIER
+Let (kN) be a sequence taking values in
+{
+1,...,⌊N
+2⌋
+}
+such thatkN→∞as N→∞. We have
+1√
+Nsζ(−s, kN
+N )
+(N(x1+kN−x1)−kN) =⇒
+Law
+N (0,σ2),
+whereσ2 is as in(1.14).
+Corollary 1 is an extension of the results on the fluctuations of single particles in the bulk forβ-
+ensembles, see [Gus05,CFLW21] for the GUE case and [BMP22].
+Corollary 2(CLT for power-law observables). Letα∈(0, s
+2). Then,
+N−s
+2
+( N∑
+i=1
+ζ(−α,xi)−N
+ˆ
+ζ(−α,x)dx
+)
+=⇒
+Law
+N (0,σ2),
+where
+σ2 := (2π)−1+2α−s c2
+α
+βcs
+ζ(1 +s−2α),
+with cαand cs are as in(1.3).
+Remark 1.3. The borderline observablex↦→|x|−s/2 lies exactly at the edge ofH
+1−s
+2 (T); fors = 0 it
+reduces to the classical cases1(−a,a) and−log|x|whose log–correlated CLT is proved in [BMP22].
+1.3. Context, related results, open questions.
+1.3.1. Rigidity ofβ-ensembles. As mentioned in the Introduction, Theorems 1 and 3 are natural exten-
+sions to the circular Riesz gas of some known results on the fluctuations ofβ-ensembles. We refer again
+to [BEY12,BEY+14b,BEY14a,BMP22] for rigidity estimates, to [Joh98,Shc13,BG13,BLS+18,LLW+19,
+HL20,Pei22] for CLTs for linear statistics with smooth test functions, and to [HL20,Lam21] for the case
+of the circularβ-ensemble. In the case of the GUE, that is forβ= 2 with a quadratic potential, a CLT
+for test functions inH
+1
+2 is obtained in [SW13] using a Littlewood-Paley-type decomposition argument.
+However, as observed in [Lam21, Rem. 1.3], the minimal regularity of the test function depends onβ.
+Indeed, for β= 4, leveraging variance expansions of [JM15], [Lam21] exhibits a test function inH
+1
+2
+such that the associated linear statistic does not have a finite limit. Since the characteristic function
+of a given interval is not inH
+1
+2, the asymptotic scaling of discrepancies in intervals is not of order1.
+It is proved in [Gus05] that for the GUE, eigenvaluesxi in the bulk fluctuate inO(√logi) and that
+discrepancies are of order√logN. A general CLT for the characteristic functions of intervals and for
+the logarithm function is given in the recent paper [BMP22]. Concerning the method of proof, let
+us point out a very similar variation on Stein’s method developed in [LLW+19], see also [HL20] for a
+high-temperature regime.
+1.3.2. Local laws and fluctuations for the Langevin dynamics.A related and much-studied question
+concerns the rigidity of the Dyson Brownian motion, an evolving gas of particles whose invariant dis-
+tribution is given byβ-ensemble. The time to equilibrium at the microscopic scale of Dyson Brownian
+motion was studied in many papers including [ESY11,EY12], see also [Bou21] for optimal relaxation es-
+timates. A central limit theorem at mesoscopic scale for linear statistics of the Dyson Brownian motion
+is established in [HL16], thus exhibiting a time-dependent covariance structure.
+1.3.3. Decay of the correlations and Helffer-Sjöstrand representation.The decay of gap correlations of
+β-ensembles has been extensively studied in [EY15], where a power-law decay in the inverse squared dis-
+tance is established. The starting point of [EY15] is based on a representation of the correlation function
+by a random walk in a dynamic random environment or in other words on a dynamic interpretation of
+the Helffer-Sjöstrand operator. The paper [EY15] then develops a sophisticated homogenization theory
+for a system of discrete parabolic equations. In a different context, a more direct analysis of the Helffer-
+Sjöstrand operator has been developed in the ground work [NS97] to characterize the scaling limit of
+the gradient interface model in an arbitrary dimensiond≥1. Combining ideas from [NS97] and from
+quantitative stochastic homogenization, the paper [AW19] then shows that the free energy associated
+with this model is at leastC2,αfor someα>0. We also refer to the recent paper [Tho21] which studies
+in a similar framework the scaling limit of the non-Gaussian membrane model. In non-convex settings,
+
+PDF PAGE 7
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 7
+far fewer results are available in the literature. One can mention the work [DW20] which establishes
+the optimal decay for the two-point correlation function of the Villain rotator model inZd, ford≥3 at
+low temperature. It could be interesting to develop a direct method to analyze the large-scale decay of
+the Helffer-Sjöstrand equation in the context of one-dimensional Riesz gases. We plan to address this
+question in future work.
+1.3.4. Uniqueness of the limiting point process.The question of the decay of the correlations mentioned
+above is related to a property of uniqueness of the limiting measure. One expects that after rescaling,
+chosen so that the typical distance between consecutive points is of order1, the point process converges,
+in a suitable topology, to a certain point processRieszβ. For s = 0, the limiting point process called
+Sineβis unique and universal as proved in [BEY12,BEY+14b]. The existence of a limit was first
+established in [VV09] forβ-ensembles with quadratic exterior potential, together with a sophisticated
+description and in [KS09] for the circularβ-ensemble. The Sineβprocess has also been characterized
+as the unique minimizer of the free energy functional governing the microscopic behavior in [EHL18]
+using a displacement convexity argument. In [Bou22], we prove the existence of a limiting point process
+Rieszβfor the circular Riesz ensemble.
+1.3.5. 1D hypersingular Riesz gases. Although the 1D hypersingular Riesz gas (i.e. s > 1) is not
+hyperuniform, its fluctuations are also of interest. In such a system, the macroscopic and microscopic
+behaviors arecoupled, a fact which translates into the linear response associated with linear statistics (in
+contrast with long-range particle systems, the linear response is a combination of a mean-field change of
+variables—moving each point according only to its position—and local perturbations). Simple heuristic
+computations show that the limiting variance is then proportional to anL2 norm (after subtraction of
+the mean) with a factor depending on the second-order derivative of the free energy.
+1.3.6. Fluctuations of Riesz gases in higher dimension.Ford≥1andssmaller thand, the existence of a
+thermodynamiclimitfortheRieszgas(afterextractionofasubsequence)isdelicateastheenergyislong-
+range. It was obtained in [LS17] fors∈(min(d−2, 0),d ), leveraging an electric formulation of the Riesz
+energy, see [PS17], and a screening procedure introduced in [SS12] and then improved in [RS13,PS17].
+The first task to study the fluctuations of higher dimensional long-range Riesz gases is to establish local
+laws, that is, to control the number of points and the energy in cubes of small scales. This was done
+for the Coulomb gas in arbitrary dimensions down to the microscopic scale in the paper [AS19] using
+sub-additive and super-additive approximating energies. Due to the lack of convexity, establishing a
+CLT or even a Poissonian rigidity estimate for linear statistics of Riesz gases in arbitrary dimensions
+is a delicate task. In dimension 2, since long-range interactions are overwhelmingly dominant, a CLT
+for linear statistics with smooth test functions can be proved, see [LS18,BBNY16,Leb17], without
+proving any “probabilistic cancellation” on local quantities, but only a “quenched cancellation” on
+some angle term. Let us finally mention the work [Leb21] where the 2D Coulomb gas is shown to be
+hyperuniform, meaning that the variance of the number of points in a ball scales much smaller than the
+volume. The paper [Leb21] establishes an important quantitative translation invariance property based
+on refinements of Mermin-Wagner type arguments, see also [Tho22]. In higher dimensions, far fewer
+results are available. One can mention the result of [Ser20] which treats the 3D Coulomb gas at high
+temperature “under a no phase transition assumption”. A simpler variation of the 3D Coulomb gas,
+named hierarchical Coulomb gas, has also been investigated in the work [Cha19], followed by [GS20].
+1.4. Outline of the main proofs.
+Rigidity. The proof of Theorem 1 is similar to the proof of [BEY+14b, Th. 3.1]. Let us explain the
+main steps.
+First, we establish a local law on gaps: for allδ >0, there existκ >0, c >0,C > 0 such that for
+everyk = 1,...,⌊N/2⌋and everyi = 1,...,N ,
+PN,β(N(xi+k−xi)≥k1+δ)≤Ce−ckκ
+. (1.15)
+This estimate is derived via a bootstrap procedure combined with certain concentration inequalities,
+whose details we omit here.
+Let us explain how to prove Theorem 1 from the estimate (1.15). Letd be the distance on{1,...,N}
+given for alli,j ∈{1,...,N}by d(i,j ) = min(|j−i|,N −|j−i|). For every k = 1,...,⌊N/2⌋and
+
+PDF PAGE 8
+8 JEANNE BOURSIER
+i = 1,...,N , define the block of sizek centered aroundi,
+Ik(i) :={j∈{1,...,N}:d(i,j )≤k}
+and the average of(xj)j over the blockIk(i),
+x[k]
+i := 1
+2k + 1
+∑
+j∈Ik(i)
+xj.
+Fix k and i, and letp≥1 be a large number. Setα:= 1
+p. The idea in [BEY+14b] is to decomposexi
+as follows:
+xi =x[k]
+i +
+p−1∑
+m=0
+(
+x[⌊kmα⌋]
+i −x[⌊k(m+1)α⌋]
+i
+)
+.
+For eachk = 1,...,p−1, denote
+Gm :=N
+(
+x[⌊kmα]
+i −x[⌊k(m+1)α⌋]
+i
+)
+.
+One may note that asm decreases,|∇Gm|2 becomes larger, whileGm becomes more localized, since it
+depends only on the variables inJm+1 :=I[⌊k(m+1)α⌋](i). We therefore need to exploit the convexity of
+the interactions withinJm+1. To gain uniform convexity, we consider a smooth, non-negative, convex
+function θ: R+→R+ such thatθ(x) = 0 for x∈[0, 1] and θ(x) =x2 for x> 2. For some fixedε>0,
+we define the forcing term
+Fm := 2
+∑
+i,j∈Jm+1:i<j
+θ
+(N(xj−xi)
+k1+ε
+)
+and introduce the locally constrained measure
+dQN,β(XN)∝e−β(HN+Fm)(XN)1DN (XN)dXN.
+Letµbe the law of(xi)i∈Jm+1 whenXN is distributed according toQN,β. Using the Brascamp-Lieb
+inequality, one can show that the density ofµcan be written as
+dµ(x) =e−β(H+Fm(x)+ ˜H(x))1D|Jm+1|(x)dx,
+with∇2 ˜H≥0 and H defined by
+H :x = (xi)i∈Jm+1∈D|Jm+1|↦→N−s ∑
+i,j∈Jm+1:i̸=j
+g(xj−xi).
+By construction, for allU∈R|Jm+1|, we have
+U·∇2(H + Fm)U = 2
+∑
+i<j∈Jm+1
+(
+N−sg′′(xj−xi) +θ′′
+(N
+K (xj−xi)
+)(N
+k
+)2)
+(uj−ui)2
+≥N−s
+(k(m+1)α(1+ε)
+N
+)−(s+2) ∑
+i,j∈Jm+1
+(uj−ui)2. (1.16)
+The point is that when∑
+i∈Jm+1ui = 0,
+∑
+i,j∈Jm+1
+(uj−ui)2 = 2|Jm+1|
+∑
+i∈Jm+1
+u2
+i.
+Inserting this into (1.16) yields
+U·∇2(H + Fm)U≥c1
+∑
+i∈Jm+1
+u2
+i where c1 := 2|Jm+1|N−s
+(k(m+1)α
+N
+)−(s+2)(1+ε)
+.
+Besides, one can observe that
+|∇Gm|2 =O
+(N2
+kmα
+)
+.
+
+PDF PAGE 9
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 9
+SinceH, Fm, ˜H andGm are independent of∑
+i∈Jm+1xi, one can argue with the Bakry-Emery criterion
+that for allt∈R,
+log EQN,β[etGm] =tEQN,β[Gm] +O
+(
+t2 N2
+kmαc−1
+1
+)
+=tEQN,β[Gm] +O(t2ks+κε+2α).
+Using the log-Sobolev inequality and the local law (1.15), one can easily show by takingαsmall
+enough, that for allε>0, Gm =O(k
+s
+2 +ε) with high probability (underPN,β), which shows that
+N(xi+k−xi) =N(x[k]
+i+k−x[k]
+i ) +O(k
+s
+2 +ε),
+with high probability. Using similar arguments, it is easy to proveN(x[k]
+i+k−x[k]
+i ) =k +O(k
+s
+2 +ε) with
+high probability, which will conclude the proof of Theorem 1.
+We setℓN = 1 for simplicity and focus on the fluctuations of the linear statisticFluctN[ξ], where
+ξ∈L2(T) satisfies Assumption 1.1. Letδ >0 be such thatξ∈H
+1−s
+2 +δ(T) and letα∈[s−1, s
+2) be
+such that the singularity condition (1.8) holds.
+With these hypotheses in place, we now describe how to derive both the variance expansion formula
+(Theorem 2) and the central limit theorem (Theorem 3).
+Mollification. LetK be a smooth kernel supported on(−1
+2, 1
+2) and letKℓ:=ℓ−1K(ℓ−1·). We consider
+the smooth test functionξreg :=ξ∗K1/N. We first show that for allε>0, there existsC >0 such that
+VarPN,β[FluctN[ξ−ξreg]]≤CNε+max(2α,0). (1.17)
+The Helffer-Sjöstrand equation.LetF :DN→R be sufficiently smooth. The fluctuations ofF are
+related to a partial differential equation via the representation
+VarPN,β[F] = EPN,β[∇F·∇ϕ], (1.18)
+where ϕ∈H1(PN,β) solves the Poisson equation
+Lϕ=F−EPN,β[F ], (1.19)
+whereL denotes the generator
+L :=β∇HN·∇−∆.
+Note that (1.18) follows directly by integration by parts, once it is known that (1.19) admits a solution.
+Differentiating (1.19) yields the so-called Helffer–Sjöstrand equation:
+{
+A1∇ϕ=∇F in DN,
+∇ϕ·⃗ n= 0 on ∂DN, (1.20)
+where A1 is formally given by
+A1 :=β∇2HN +L⊗IN.
+When F is a function of the gaps, or wheng is replaced by a bounded kernel, the existence and
+uniqueness of a solution to (1.19) roughly follow from the Lax–Milgram lemma. Indeed, under such an
+assumption, the Poincaré inequality holds, which ensures the coercivity of the associated bilinear form.
+To analyze the solution of (1.20), we will employ various tools based on mean-field approximations,
+convexity, and monotonicity.
+Since ∂ijHN ≤0 for every i̸= j, it is standard that PN,βsatisfies the FKG inequality, meaning
+that the covariance between any two increasing functions is non-negative. This can be formulated by
+stating thatL−1 preserves the cone of increasing functions, or equivalently thatA1 preserves the cone
+of gradients of increasing functions: if∇F ≥0 (coordinate-wise), then∇ϕ:= A−1
+1 ∇F ≥0. A useful
+consequence is the following: ifF,G :DN→R are such that|∇F|≤∇G, then
+VarPN,β[F ]≤VarPN,β[G]. (1.21)
+This comparison principle can be extended to non-gradient vector fields, at the price of working with
+the variables(xi−x1)2≤i≤N. This upgraded comparison principle will serve as a key tool for analyzing
+the fluctuations of certain complicated singular functions.
+
+PDF PAGE 10
+10 JEANNE BOURSIER
+Mean-field transport.It turns out that whenF is a linear statistic, then the solution∇ϕof (1.20)
+can be approximated by a transportΨN of the form
+ΨN :XN∈DN↦→ 1
+N1−s (ψ(x1),...,ψ(xN)),
+for some well-chosen mapψ: T→R.
+Let F := FluctN[ξreg], where we recall thatξreg =ξ∗K1/N. Letting
+DiagT2 :={(x,y )∈T2 :x =y},
+one may write
+∇HN·ΨN =N
+¨
+∆c
+g′(x−y)(ψ(x)−ψ(y))dµN(x)dµN(y),
+where µN := 1
+N
+∑N
+i=1δxi. Let us expand µN around the Lebesgue measure dx on T and denote
+fluctN :=N(µN−dx). Noting that the constant term vanishes, one can check that
+∇HN·ΨN = 2
+ˆ
+(−g′∗ψ)fluctN + 1
+N1−s Loop[ψ] (1.22)
+where
+Loop[ψ] :=
+¨
+Diagc
+T2
+(ψ(x)−ψ(y))N−sg′(x−y)dfluctN(x)dfluctN(y). (1.23)
+If we neglect the sub-leading termsdivΨN and Loop[ψ], we therefore obtain
+∇HN·ΨN−divΨN≃F,
+by choosingψgiven by
+ψ′=−1
+2βcs
+(−∆)
+1−s
+2 ξreg and
+ˆ
+ψ= 0.
+The central task of the paper is to show that for allε>0, there exists a constantC >0 such that
+VarPN,β[Loop[ψ]]≤CNε+max(1,2(α+1−s)). (1.24)
+Splitting the variance of the next-order term.Denote
+ζ0 : (x,y )∈T2↦→ψ(x)−ψ(y)
+x−y ,
+so that
+Loop[ψ] =
+¨
+Diagc
+T2
+ζ0(x,y )N−s˜g(x−y)dfluctN(x)dfluctN(y), (1.25)
+where ˜g :x∈T\{0}↦→xg′(x). Note that for everyi∈{1,...,N},
+∂iLoop[ψ]
+= 2
+ˆ
+y̸=xi
+∂1ζ0(xi,y )N−s˜g(xi−y)dfluctN(y)
+  
+≃Vi
++ 2
+ˆ
+y̸=xi
+ζ0(xi,y )N−s˜g′(xi−y)dfluctN(y)
+  
+≃Wi
+.
+By sub-additivity,
+VarPN,β[Loop[ψ]]≤2 EPN,β[V·A−1
+1 V]  
+(I)
++2 EPN,β[W·A−1
+1 W]  
+(II)
+.
+
+PDF PAGE 11
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 11
+Control on(II )with Poincaré inequality in gap coordinates.In gap coordinates, the microscopic
+force W behaves well: there exists a vector field˜W such that for allUN∈RN,
+W·UN =−
+N∑
+i=1
+˜WiN(ui+1−ui),
+and which typically satisfies (i.e., with overwhelming probability), for allε>0, the estimate
+|˜W|2≤Nε+max(1,2(α+1−s)). (1.26)
+By introducing a penalty for configurations with large nearest-neighbor distances, one can modify the
+Gibbs measure into a new one that is uniformly log-concave with respect to the variablesN(xi+1−xi),
+fori = 1,...,N . Applying the Brascamp-Lieb inequality and using (1.26), we obtain that for allε>0,
+there existsC >0 such that
+(II )≤Nε+max(1,2(α+1−s)). (1.27)
+Control on (I) with the comparison principle.In substance, one should think ofV as satisfying
+for everyi = 1,...,N ,
+|Vi|≤C|ψ′′(xi)|+“Lower order terms”. (1.28)
+Note that for instance ifξ= 1(a,b),ψ′′blows likemax(|x|, 1
+N )−(2−s). Therefore for such singularψ, the
+Poincaré inequality does not provide satisfactory estimates for(I). If Vi was exactly given byψ′′(xi)
+for everyi = 1,...,N , one could boundEPN,β[V·A−1
+1 V] by the variance ofFluctN[ψ′].
+The idea is to use the comparison principle (1.21) to compareEPN,β[V·A−1
+1 V] to the variance of a
+linear statistic, which is easier to handle using the rigidity estimates of Theorem 1. Letχ: T→R be
+such thatχ=C|ψ′′|. Equation (1.28) can be rewritten in the form
+|V|≤∇FluctN[χ].
+Applying the extension of (1.21) to general vector fields, we get that, roughly,
+EPN,β[V·A−1
+1 V]≤VarPN,β[FluctN[χ]] +“Lower order terms”.
+By the comparison principle again and the rigidity estimates of Theorem 1,
+VarPN,β[FluctN[χ]]≤Nε+max(1,2(α+1−s)).
+which yields
+(I)≤Nε+max(1,2(α+1−s)). (1.29)
+Let us emphasize that the bound onV is in fact slightly different and requires working with the
+variables (xi−x1)2≤i≤N. Combining (1.27) and (1.29) yields (1.24), thereby completing the proof of
+Theorem 2.
+Central limit theorem.The starting point of the proof of the CLT of Theorem 3 is very similar
+to [LLW+19] and proceeds by Stein’s method. LetGN :=N−s
+2 FluctN[ξreg]. We shall prove that for all
+η∈C1(R) such that∥η′∥L∞(R)≤1 and∥η∥L∞(R)≤1,
+EPN,β[η(GN)GN] =σ2
+1(ξreg)EPN,β[η′(GN)] + ErrorN, (1.30)
+with σ2
+1(ξreg) as in (1.10) andErrorN a small error term. The fundamental observation of Stein is that
+this approximate integration by parts formula quantifies a distance to normality. Indeed, lettingZ be
+a centered random variable with varianceσ2
+1(ξreg) and h : R→R smooth, one can solve the ODE
+σ2
+1(ξreg)xη(x)−η′(x) =h(x)−E[h(Z)] (1.31)
+and (1.30) can be written as
+EPN,β[h(GN)]−E[h(Z)] = ErrorN,
+which shows thatGN is approximately Gaussian. We now explain how to obtain (1.30). Let∇ϕ=
+A−1
+1 ∇GN. By integration by parts,
+EPN,β[η(GN)GN] = EPN,β[σ2
+1(ξreg)η′(GN)∇GN·∇ϕ]. (1.32)
+
+PDF PAGE 12
+12 JEANNE BOURSIER
+The goal is then to prove that∇GN·∇ϕconcentrates aroundσ2
+1(ξreg). As explained above,∇ϕmay be
+approximated by the transportN−1+s
+2 Ψ where Ψ : XN∈DN↦→(ψ(x1),...,ψ(xN)). Performing this
+approximate transport allows one to replace (1.32) by
+EPN,β[η(GN)GN]−σ2
+1(ξreg)EPN,β[η′(GN)]
+= EPN,β
+[
+η′(GN)
+(1
+N
+N∑
+i=1
+ξ′
+reg(xi)ψ(xi)−σ2
+1(ξreg)
+)]
+  
+(I)
++ 1
+N1−s
+2
+CovPN,β[η(GN),βLoop[ψ]−FluctN[ψ′]]
+  
+(II)
+.
+(1.33)
+The error term(I) is controlled using the local laws, while the error term(II ) is controlled using (1.24).
+Together with (1.17), this concludes the proof of the central limit theorem of Theorem 3.
+1.5. Structure of the paper.
+•Section 2 presents useful preliminaries on the fractional Laplacian on the circle.
+•Section 3 establishes the well-posedness of the Helffer–Sjöstrand equation and derives conse-
+quences of convexity and monotonicity.
+•Section 4 completes the proof of the near-optimal rigidity result (Theorem 1).
+•Section 5 proves the variance expansion (Theorem 2).
+•Section 6 contains the proof of the central limit theorem (Theorem 3) and its corollaries.
+•Appendix A proves the existence and uniqueness results stated in Section 3.
+•Appendix B contains proofs of various discrete convolution and energy estimates.
+1.6. Notation.
+•We denoted :{1,...,N}2→N the symmetric distance defined for each1≤i,j ≤N by
+d(i,j ) = min(|j−i|,N−|j−i|).
+•We let
+DiagT2 :={(x,y )∈T2 :x =y}.
+•For any vector fieldψ: Ω →Rm where Ω is an open set ofRn, we letDψbe the matrix of
+partial derivatives ofψ. We also write∇2f for the Hessian of a real-valued functionf.
+•For a matrixM∈MN(R), we denote by∥M∥F the Frobenius norm ofM
+∥M∥F := (Tr(MMT ))
+1
+2.
+•For allα∈(0, 1), we letCα(T) be the space ofα-Hölder continuous functions fromT to R.
+1.7. Acknowledgments. The author thanks Sylvia Serfaty, Thomas Leblé, Djalil Chafaï, Gaultier
+Lambert, David Garcia-Zelada, and Ahmed Bou-Rabee for many helpful comments, and the anonymous
+referee for invaluable feedback on an earlier version of this manuscript.
+This work was supported by a grant from the “Fondation CFM pour la Recherche” and by the ERC
+Advanced Grant LDRAM (ERC-2019-ADG 884584).
+2. Preliminaries
+2.1. The fundamental solution of the fractional Laplacian on the circle.We begin by justifying
+that the fundamental solution of the fractional Laplace equation on the circle is given by (1.1). Roughly,
+(1.1) corresponds to the periodic summation ofx↦→|x|−s, which is the fundamental solution of(−∆)
+1−s
+2
+on the real line.
+For all complex variabless and a such thatRe(s)> 1 and a̸= 0,−1,−2,..., let
+ζ(s,a ) :=
+∞∑
+n=0
+1
+(n +a)s. (2.1)
+
+PDF PAGE 13
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 13
+Givena̸= 0,−1,−2,..., one can uniquely extendζ(·,a ) into a meromorphic function on the full complex
+plane with a unique pole ats = 1, which is simple with a residue equal to1. This function is called the
+Hurwitz zeta function [Ber72].
+For any integrable functionf∈L1(T), let
+ˆf(k) =
+ˆ
+T
+f(y)e−2iπkydy, for allk∈Z.
+Lemma 2.1.
+(1) Let g be the solution of (1.2). Let ζ(s,x ) be the Hurwitz zeta function(2.1). Then, for all
+x∈T\{0},
+g(x) =ζ(s,x ) +ζ(s, 1−x) = lim
+n→∞
+( n∑
+k=−n
+1
+|k +x|s−2
+1−sn1−s
+)
+. (2.2)
+(2) Letα∈(0, 1
+2). For everyf∈C∞(T), we have
+(−∆) αf(x) =Cα p.v.
+y∈(0,1)
+∑
+n∈Z
+ˆ
+R
+f(x)−f(y)
+|x−y−n|1+2αdy, where Cα:= 2 2αΓ
+(1+2α
+2
+)
+√π
+⏐⏐Γ(−α)
+⏐⏐. (2.3)
+The above lemma is standard, but for completeness, we include a proof, following roughly [RS16].
+Proof.
+Step 1: semi-group representation. Let g be the unique solution of (1.2). We first derive the
+semi-group representation for(−∆)−1−s
+2 . Letα∈(0, 1). Recall
+λ−α= 1
+Γ(α)
+ˆ ∞
+0
+e−λtdt
+t1−α, for allλ>0. (2.4)
+The fractional Laplacian(−∆)−αis defined by the following Fourier multiplier: for allf∈C∞(T) such
+that
+´
+f = 0, lettingh = (−∆)−αf, we have
+ˆh(k) = (2π)−2α|k|−2αˆf(k), for allk∈Z\{0}and ˆh(0) = 0.
+Let f∈C∞(T) be such that
+´
+f = 0 and leth = (−∆)−αf. Applying (2.4) toλ=|k|2 for k̸= 0 gives
+ˆh(k) = 1
+Γ(α)
+ˆ ∞
+0
+e−|k|2t ˆf(k) dt
+t1−α, (2.5)
+which also holds fork = 0 since
+´
+f = ˆf(0) = 0. Let (Wt)t≥0 be the heat kernel of the Laplacian onT.
+Recall that the Fourier coefficients ofWt are given by
+ˆWt(k) =e−4tπ2|k|2
+, for allk∈Z, t≥0.
+One may therefore rewrite (2.5) as
+ˆh(k) = 1
+Γ(α)
+ˆ ∞
+0
+\f∗Wt(k) dt
+t1−α.
+It follows that
+h(x) = (−∆)−αf(x) = 1
+Γ(α)
+ˆ ∞
+0
+f∗Wt(x) dt
+t1−α for allx∈T. (2.6)
+We now derive an explicit expression forg starting from (2.6). Recall
+Wt(x) =
+∑
+k∈Z
+e−4tπ2|k|2
+e2iπkx.
+Recall the Poisson-summation identity: for all Schwartz-class functionϕ: R→R, we have
+∑
+k∈Z
+ϕ(x +k) =
+∑
+n∈Z
+ˆϕ(n)e2iπnx for allx∈R.
+Applying this toϕ(y) :=e−4tπ2y2
+gives that for allx∈T and t> 0,
+Wt(x) = 1√
+4πt
+∑
+n∈Z
+e−1
+4t (x−n)2
+. (2.7)
+
+PDF PAGE 14
+14 JEANNE BOURSIER
+Takingα= 1−s
+2 ∈(0, 1) in (2.6), we deduce from a regularization argument that
+g(x) :=cs(−∆)−1−s
+2 (δ0−1)
+⏐⏐⏐
+x
+= cs
+Γ( 1−s
+2 )
+ˆ ∞
+0
+(Wt(x)−1) dt
+t
+1+s
+2
+.
+Then, inserting (2.7), we get
+g(x) = cs
+Γ( 1−s
+2 )
+√
+4π
+ˆ ∞
+0
+∑
+k∈Z
+(
+e−1
+4t (x−k)2
+−
+ˆ
+T
+e−1
+4t (y−k)2
+dy
+) dt
+t1+s
+2
+. (2.8)
+Step 2: absolute integrability of∑
+kux
+k. Define the sequence of functions
+ux
+k :t∈(0,∞)↦→ 1
+t1+s
+2
+(
+e−1
+4t (x−k)2
+−
+ˆ
+T
+e−1
+4t (y−k)2
+dy
+)
+, k ∈Z∗.
+Let us prove that∑
+k
+´∞
+0 |ux
+k|(t)dt< ∞. We have
+∑
+k∈Z\{0}
+e−1
+4t (k−x)2
+= 2
+∞∑
+k=1
+e−1
+4t (k−x)2
+.
+Since k∈N↦→e−1
+4t (k−x)2
+is decreasing on[1,∞], we get
+∑
+k∈N\{0}
+e−1
+4t (k−x)2
+≤2
+ˆ ∞
+1−x
+e−1
+4ty2
+dy≤
+ˆ
+R
+e−1
+4ty2
+dy =
+√
+4πt.
+Similarly, ∑
+k∈N\{0}
+e−1
+4t (−k−x)2
+≤
+√
+4πt.
+It follows that ∑
+k∈Z\{0}
+e−1
+4t (−k−x)2
+≤2
+√
+4πt
+and in particular, ˆ
+T
+∑
+k∈Z\{0}
+e−1
+4t (k−y)2
+dy≤
+√
+4πt.
+Therefore, sinces∈(0, 1), we obtain
+∑
+k∈Z
+ˆ 1
+0
+|ux
+k|(t)dt≤C
+ˆ 1
+0
+1
+t
+1+s
+2
+dt< ∞. (2.9)
+We now consider the regiont≥1. By Taylor expansion, there exist constantsC > 0 and C′> 0
+such that for allt> 0,
+|ux
+k|(t)≤C
+t2+s
+2
+|(k−x)2−k2|≤C′|k|+ 1
+t2+s
+2
+.
+Thus, there exists a constantC >0 such that for allt> 0,
+sup
+t∈(0,1)
+∑
+k:|k|≤(
+√
+t)1+s
+4
+|ux
+k|(t)≤ C
+t1+s
+2−s
+4
+.
+Hence, integrating the above between1 and +∞, we find that
+∑
+k:|k|≤(
+√
+t)1+s
+4
+ˆ ∞
+1
+|ux
+k|(t)dt< ∞.
+On the other hand, by comparison with an integral, one can check that there exist constantsC >0
+and c> 0 such that for allt∈(0, 1),
+∑
+k:|k|>(
+√
+t)1+s
+4
+e−1
+4t (k−x)2
+≤C
+√
+te−ct
+s
+4
+.
+
+PDF PAGE 15
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 15
+Thus,
+ˆ ∞
+1
+
+ ∑
+k:|k|>(
+√
+t)1+s
+4
+e−1
+4t (k−x)2
+
+ dt< ∞.
+Similarly,
+ˆ ∞
+1
+
+ ∑
+k:|k|>(
+√
+t)1+s
+4
+ˆ
+T
+e−1
+4t (k−y)2
+dy
+
+ dt< ∞.
+Combining the above displays gives
+∑
+k∈Z
+ˆ ∞
+1
+|ux
+k|(t)dt< ∞. (2.10)
+With (2.9) and (2.10), we conclude that
+∑
+k∈Z
+ˆ ∞
+0
+|ux
+k|(t)dt< ∞.
+Step 3: evaluation of the integral.Combining (2.9) and (2.10) and invoking Fubini’s theorem, we
+may interchange the summation and the integral in (2.8), which gives
+g(x) = cs
+Γ( 1−s
+2 )
+√
+4π
+∑
+k∈Z
+ˆ ∞
+0
+ux
+k(t)dt
+= cs
+Γ( 1−s
+2 )
+√
+4π
+∑
+k∈Z
+(ˆ ∞
+0
+e−1
+4t (x−k)2 dt
+t1+s
+2
+−
+ˆ ∞
+0
+ˆ
+T
+e−1
+4t (y−k)2 dt
+t1+s
+2
+dy
+)
+= csΓ(s
+2)2s
+Γ( 1−s
+2 )2√π
+∑
+k∈Z
+( 1
+|x−k|s−
+ˆ
+T
+dy
+|y−k|s
+)
+= lim
+n→∞
+n∑
+k=−n
+( 1
+|x−k|s−
+ˆ
+T
+dy
+|y−k|s
+)
+= lim
+n→∞
+( n∑
+k=−n
+1
+|x +k|s−2
+1−sn1−s
+)
+,
+where we have used the change of variablest∈(0,∞)↦→1
+t and (2.4) in the third equality, the expression
+of cs (1.3) in the fourth equality, and the fact that
+ˆ n+1
+−n
+1
+xs dx = 2
+1−sn1−s +on(1)
+in the last equality.
+Step 4: rewritingg. By the Euler-Maclaurin formula, for alla∈T\{0},
+lim
+n→∞
+( n∑
+k=0
+1
+(k +a)s−1
+1−sn1−s
+)
+=−1
+1−sa1−s + 1
+as−s
+ˆ ∞
+0
+t−⌊t⌋−1
+2
+(t +a)1+s dt. (2.11)
+Ifs is complex-valued withRe(s)> 1, then the left-hand side of (2.11) is givenζ(s,a ) (2.1). It is argued
+in [Ber72, Eq. (5.2)] via an analytic continuation argument thatζ(s,a ) coincides with the right-hand
+side of (2.11) whenℜ(s)>−1 anda∈(0, 1). As a consequence, we find that for allx∈T ands∈(0, 1)
+g(x) =ζ(s, 1−x) +ζ(s,x ).
+Step 5: proof of(2.3). Let f∈C∞(T). For allλ>0, we have
+λα= α
+Γ(1−α)
+ˆ ∞
+0
+(1−e−λt) dt
+t1+α.
+Hence,
+\(−∆) αf(k) = (2π|k|2)αˆf(k) = α
+Γ(1−α)
+ˆ ∞
+0
+(1−e−4π2|k|2t) ˆf(k) dt
+t1+α.
+
+PDF PAGE 16
+16 JEANNE BOURSIER
+We deduce that
+(−∆) αf = α
+Γ(1−α)
+ˆ ∞
+0
+(f−f∗Wt) dt
+t1+α.
+Recalling (2.7), we have
+f∗Wt(x) = 1√
+4πt
+∑
+n∈Z
+ˆ
+f(y)e−1
+4t (x−y−n)2
+.
+By proceeding as in Step 2, we may show that one can invert the integral and the sum, which yields
+(−∆) αf = α
+Γ(1−α)
+√
+4π
+∑
+n∈Z
+(ˆ
+(f(x)−f(y))
+ˆ ∞
+0
+e−(x−y−n)2
+4t
+dt
+t
+3
+2 +αdy
+)
+.
+We can check that ˆ ∞
+0
+e−(x−y−n)2
+4t
+dt
+t
+3
+2 +α= 21+2αΓ(α+ 1
+2) 1
+|x−y−n|1+2α.
+Combining the above displays gives (2.3). □
+2.2. Inverse Riesz transform.
+Lemma 2.2. Letξ∈C∞(T). Letψ∈C∞(T) be given by
+ψ′=−1
+2cs
+(−∆)
+1−s
+2 ξand
+ˆ
+ψ= 0. (2.12)
+(1) We have
+ψ(x) =− 4−s
+πtan(π
+2s) p.v.
+k∈Z
+∑
+k∈Z
+ˆ
+T
+ξ(y)−
+´
+ξ
+|x−y−k|1−s sgn(x−y−k)dy, for allx∈T. (2.13)
+(2) We have
+(2π)1−s
+2cs
+∥ξ∥2
+H
+1−s
+2 (T)
+=
+¨
+g′′(x−y)(ψ(x)−ψ(y))2dxdy−2
+ˆ
+ξ′(x)ψ(x)dx
+=−
+ˆ
+ξ′(x)ψ(x)dx.
+(2.14)
+(3) Assume thatξis supported on(−1
+2, 1
+2). LetℓN∈(0, 1]. Letξ0 : R→R such that
+ξ0(x) =
+{
+ξ(x) if|x|≤1
+2
+0 if|x|> 1
+2
+. (2.15)
+Then, there exists a constantC >0 depending ons such that
+⏐⏐⏐∥ξ(ℓ−1
+N·)∥
+H
+1−s
+2 (T)
+−ℓs
+N∥ξ0∥2
+H
+1−s
+2 (R)
+⏐⏐⏐≤Cℓ2
+N∥ξ0∥2
+L2(T). (2.16)
+Proof. Let χ∈C∞(T) such thatξ−
+´
+ξ=χ′. Since∂x(−∆)
+1−s
+2 = (−∆)
+1−s
+2 ∂x onC∞(T), we have
+ψ=−1
+2cs
+(−∆)
+1−s
+2 χ. (2.17)
+Since χ∈C∞(T), by (2.3),
+ψ(x) =−c′
+s
+2cs
+p.v.
+y∈(0,1)
+ˆ
+T
+∑
+k∈Z
+χ(x)−χ(y)
+|x−y−k|2−s dy, (2.18)
+where
+c′
+s = 21−sΓ(1−s
+2)
+|Γ(−1−s
+2 )|π
+1
+2
+= 2−s(1−s)Γ(1−s
+2)
+Γ( 1+s
+2 )π
+1
+2
+.
+Using Euler’s reflection lemma, we next compute
+c′
+s
+cs
+= 21−2s(1−s)
+π
+Γ(1−s
+2)Γ(s
+2)
+Γ( 1−s
+2 )Γ( 1+s
+2 ) = 21−2s(1−s)
+π
+sin(π(1−s)
+2 )
+sin(πs
+2 ) = (1−s)21−2s
+πtan(π
+2s) .
+
+PDF PAGE 17
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 17
+Thus for anyx∈T
+ψ(x) =− 1−s
+4sπtan(π
+2s) p.v.
+y∈(0,1)
+∑
+k∈Z
+ˆ
+T
+χ(x)−χ(y)
+|x−y−k|2−s dy.
+By integration by parts, and using that
+´
+ψ= 0 and ψ∈C∞(T), we get
+ψ(x) =− 4−s
+πtan(π
+2s) p.v.
+k∈Z
+∑
+k∈Z
+ˆ
+T
+ξ(y)−
+´
+ξ
+|x−y−k|1−s sgn(x−y−k)dy.
+By integration by parts,
+ˆ
+g′′(x−y)(ψ(x)−ψ(y))2dxdy =−
+ˆ
+g′(x−y)ψ′(x)2(ψ(x)−ψ(y))dxdy
+= 2
+ˆ
+g(x−y)ψ′(x)ψ′(y) =
+ˆ
+ψ′(2g∗ψ′) =−
+ˆ
+ψ′ξ=
+ˆ
+ψξ′,
+proving (2.14). Moreover,
+ˆ
+T
+ψ′ξ=
+∑
+k∈Z
+ˆψ′(k)ˆξ(k) =−(2π)1−s
+2cs
+∑
+k∈Z
+|k|1−s|ˆξ(k)|2 =−(2π)1−s
+2cs
+∥ξ∥2
+H
+1−s
+2 (T)
+.
+Assembling the two above displays shows (2.14).
+Let us now prove (2.16). Assume thatξis supported on(−1
+2, 1
+2). Letξ0 : R→R such that
+ξ0(x) =
+{
+ξ(x) if|x|≤1
+2
+0 if|x|> 1
+2.
+We have
+∥ξ(ℓ−1
+N·)∥2
+H
+1−s
+2 (T)
+=
+ˆ
+T
+1|x|< 1
+2ℓNξ(ℓ−1
+N x)
+∑
+k∈Z
+ˆ
+T
+ξ(ℓ−1
+N x)−ξ(ℓ−1
+N y)
+|x−y +k|2−s 1|y|< 1
+2ℓN dydx
+=
+ˆ
+R
+ξ0(ℓ−1
+N x)
+∑
+k∈Z
+ˆ
+R
+ξ0(ℓ−1
+N x)−ξ0(ℓ−1
+N y)
+|x−y +k|2−s dydx
+=ℓs
+N∥ξ0∥2
+H
+1−s
+2 (R)
++
+∑
+k∈Z\{0}
+ˆ
+R
+ξ0(ℓ−1
+N x)ξ0(ℓ−1
+N x)−ξ0(ℓ−1
+N y)
+|x−y +k|2−s dydx
+=ℓs
+N∥ξ0∥2
+H
+1−s
+2 (R)
++O
+(
+ℓ2
+N
+ˆ
+|ξ0(x)||ξ0(x)−ξ0(y)|dxdy
+)
+=ℓs
+N∥ξ0∥2
+H
+1−s
+2 (R)
++O(ℓ2
+N∥ξ0∥2
+L2(R)).
+□
+Next, we apply the pointwise formula (2.13) to indicator functions and inverse power functions.
+Lemma 2.3(Explicit formulas). Letζ(s,a ) be the Hurwitz zeta function(2.1).
+(1) Letξ:= 1(−a,a)−2a for some 0<a< 1
+2 and ψbe given by (2.13). We have
+ψ(x) = 1
+4sπstan(π
+2s)(ζ(−s,x +a)−ζ(−s,x−a)), for allx∈T. (2.19)
+Moreover,
+(2π)1−s
+2cs
+∥ξ∥2
+H
+1−s
+2 (T)
+= 2cotan(π
+2s)
+4sπs ζ(−s, 2a). (2.20)
+(2) Letα∈(0, s
+2) and ξ:=ζ(−α,·). We have
+(2π)1−s
+2cs
+∥ξ∥2
+H
+1−s
+2 (T)
+= (2π)−1+2α−sc2
+α
+cs
+ζ(1 +s−2α).
+
+PDF PAGE 18
+18 JEANNE BOURSIER
+Proof. Letξ:= 1(−a,a) fora∈(0, 1
+2). Formula (2.19) follows from (2.13). Moreover, by (2.14) and since
+ζ(−s, 0) = 0,
+(2π)1−s
+2cs
+∥ξ∥2
+H
+1−s
+2 (T)
+=
+ˆ
+ξψ′=ψ(a)−ψ(−a) = cotan(π
+2s)
+4sπs 2ζ(−s, 2a).
+Let α∈(0, s
+2) and ξ:=ζ(−α,·). By Lemma 2.1, we have
+(−∆)
+1−α
+2 ξ=cαδ0.
+Therefore, for everyk∈Z,
+ˆξ(k) =cα
+1k̸=0
+|k|1−α(2π)1−α.
+We have
+∥ξ∥2
+H
+1−s
+2 (T)
+=
+∑
+k∈Z
+|k|1−s|ˆξ(k)|2 = c2
+α
+(2π)2(1−α)
+∑
+k∈Z\{0}
+1
+k1−2α+s.
+Moreover, ∑
+k∈Z\{0}
+1
+k1−2α+s = 2ζ(1−2α+s).
+Combining the above displays, we get
+(2π)1−s
+2cs
+∥ξ∥2
+H
+1−s
+2 (T)
+= (2π)1−s−2(1−α)c2
+α
+cs
+ζ(1 +s−2α).
+□
+3. The Helffer-Sjöstrand equation
+In this section, we review some basic properties of the Helffer-Sjöstrand equation. We first state some
+existence and uniqueness results, then adapt a known comparison principle to the circular setting, and
+finally record various concentration estimates.
+3.1. Basic properties. In this subsection we introduce the H.-S. equation and state some standard
+existence and uniqueness results, following in part [AW19]. Letµbe a probability measure onDN of
+the form
+dµ(XN) =e−H(XN)1DN (XN)dXN,
+with H :DN→R measurable. We make the following assumption onH:
+Assumption 3.1. The HamiltonianH :DN→R is of the form
+H :XN↦→
+∑
+i̸=j
+χij(|xi−xj|), (3.1)
+for a family of functionsχij : (0,∞)→R such that for everyi,j ∈{1,...,N}, i̸=j, χij =χji and
+χij∈C∞(0,∞), χ′′
+ij≥c> 0 and lim
+x→0
+χij(x) = +∞. (3.2)
+Let F : DN→R be a smooth enough function. We seek to rewrite the variance ofF under µin a
+tractable way. Define onC∞(DN) the Langevin operator
+Lµ=∇H·∇−∆,
+with∇and ∆ denoting the gradient and Laplace operators onTN. Recall the integration by parts
+formula underµ: for allϕ,ψ∈C∞(DN), we have
+Eµ[(Lµϕ)ψ] = E[∇ϕ·∇ψ]. (3.3)
+We study the well-posedness of the Helffer–Sjöstrand equation
+Aµ
+1∇ϕ=∇F on DN. (3.4)
+Define the norm
+∥F∥H 1(µ) = Eµ[F 2]
+1
+2 + Eµ[|∇F|2]
+1
+2.
+Let H1(µ) be the completion ofC∞(DN) with respect to the norm∥·∥H 1(µ). Also, define the norm
+∥F∥H−1(µ) := sup{|Eµ[FG]|:G∈H1(µ),∥G∥H 1(µ)≤1}
+
+PDF PAGE 19
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 19
+and letH−1(µ) be the dual ofH1(µ), defined as the completion ofC∞(DN) with respect to the norm
+∥·∥H−1(µ).
+Define the map
+GapN :XN∈DN↦→N(x2−x1,x 3−x1,...,xN−xN−1,x 1−xN)∈RN. (3.5)
+Proposition 3.1(Existence and representation). Letµsatisfy Assumption 3.1 and letµ′:= GapN#µ.
+Let F∈H1(µ). Assume thatF is of the formF = G◦GapN with G∈H1(µ′). Then, there exists a
+unique∇ϕ∈L2({1,...,N},H 1(µ)) such that
+Aµ
+1∇ϕ=∇F on DN, (3.6)
+with the equality being, for each coordinate, an equality of elements ofH−1(µ).
+Moreover, the solution of (3.6) is the unique minimizer of the functional
+∇ϕ↦→Eµ[∇ϕ·∇2H∇ϕ+∥∇2ϕ∥2
+F−2∇F·∇ϕ], (3.7)
+on maps∇ϕ∈L2({1,...,N},H 1(µ)) such that∇ϕ·⃗ n= 0 a.e. on∂DN.
+Finally, the variance ofF may be represented as
+Varµ[F] = Eµ[∇ϕ·∇F] (3.8)
+and the covariance betweenF and any functionG∈H1(µ) as
+Covµ[F,G ] = Eµ[∇ϕ·∇G].
+The identity (3.8) is called the Helffer-Sjöstrand formula. The proof of Proposition 3.1 is postponed
+to Appendix A.
+When∇F is replaced by a non-gradient vector fieldv, the solution is generally non-unique. To ensure
+uniqueness, we also need to assume that∑N
+i=1vi = 0 and that for everyi∈{1,...,N},vi is a function
+of the gaps.
+Proposition 3.2 (Well-posedness for non-gradient vector fields). Let µsatisfy Assumption 3.1 and
+let µ′:= GapN#µ. Let v ∈L2({1,...,N},H−1(µ)) be such that v·(e1 +···+eN) = 0 and for
+each i ∈ {1,...,N}, vi = wi◦GapN for some wi ∈H−1(µ′). Then, there exists a unique ψ∈
+L2({1,...,N},H 1(µ)) such that
+{
+Aµ
+1ψ=v on DN
+ψ·(e1 +···+eN) = 0 on DN. (3.9)
+Moreover, the solution of(3.9) is also the unique minimizer of
+ψ↦→Eµ[ψ·∇2Hψ+∥Dψ∥2
+F−2v·ψ],
+over mapsψ∈L2({1,...,N},H 1(µ)).
+The proof of Proposition 3.2 is postponed to Appendix A. Whenv satisfies the assumption of Propo-
+sition 3.2, we denoteψ= (Aµ
+1)−1v as the solution of (3.9).
+Lemma 3.3. Letµsatisfy Assumption 3.1 and letµ′:= GapN#µ. Letv,w ∈L2({1,...,N},H−1(µ))
+satisfy the assumption of Proposition 3.2. We have
+Eµ[(v +w)·(Aµ
+1)−1(v +w)]≤2
+(
+Eµ[v·(Aµ
+1)−1v] + Eµ[w·(Aµ
+1)−1w]
+)
+. (3.10)
+Proof. Sincev−w satisfies (e1 +···+eN)·(v−w) = 0, by Proposition 3.2,(Aµ
+1)−1(v−w) is well-defined.
+Moreover, by integration by parts (3.3),
+Eµ[(v−w)·(Aµ
+1)−1(v−w)]
+= Eµ
+[
+(Aµ
+1)−1(v−w)·∇2H(Aµ
+1)−1(v−w) +∥D((Aµ
+1)−1(v−w))∥2
+F
+]
+≥0,
+since∇H2≥0. By linearity, this implies (3.10). □
+
+PDF PAGE 20
+20 JEANNE BOURSIER
+3.2. Monotonicity and consequences.We now state some monotonicity results related to the FKG
+inequality. Recall that a measureρon RN is said to satisfy the FKG inequality if for any functions
+F : RN→R, G : RN→R in L2(ρ) which are increasing in each variable, we have
+Covρ[F,G ]≥0.
+A standard condition forρto satisfy the FKG inequality [BÉ85] is thatρcan be written as
+dρ(XN) =e−H(XN)dXN
+with H : RN→R is a twice continuously differentiable function satisfying
+∂ijH≤0 for every1≤i,j ≤N,i̸=j. (3.11)
+Note that for smooth Gibbs measures, the FKG property is roughly equivalent to a maximum princi-
+ple for the equation (3.6), which states that(Lµ)−1 preserves the cone of smooth functions that are
+increasing in each variable. In the next lemma, we show that the FGK inequality allows us to compare
+the variance of two functions via their gradients.
+Lemma 3.4. Let µbe a probability measure onDN of the form dµ(XN) = e−H(XN)dXN with H∈
+C2(DN) such that
+lim
+d(x,∂DN)→0
+H(x) = +∞. (3.12)
+Assume that
+∂ijH≤0 for everyi,j ∈{1,...,N},i̸=j. (3.13)
+LetF,G∈H1(µ) be such that for everyi∈{1,...,N},
+|∂iF|≤∂iG. (3.14)
+Then,
+Varµ[F ]≤Varµ[G]. (3.15)
+Proof. It is standard, see, for example [BM92, Th. 1.3] for the case ofRN, that µsatisfies the FKG
+inequality. That is, for all measurable non-decreasing functionsf and g, the covariance betweenf and
+g under µis non-negative.
+Let F,G∈H1(µ) satisfy (3.14). One may write
+Varµ[G] = Varµ[F] + Covµ[G +F,G−F]
+SinceG−F andF +G are non-decreasing, their covariance is non-negative, which concludes the proof
+of (3.15). □
+We observe thatµwhich satisfies Assumption 3.1 satisfies the condition (3.13). Since particles are
+ordered, one may write, for allXN∈DN,
+H(XN) = 2
+∑
+i<j
+χij(xj−xi).
+Notice that for everyi∈{1,...,N}and allXN∈DN,
+∂iH(XN) =−2
+∑
+j:j>i
+χ′
+ij(xj−xi) + 2
+∑
+j:j<i
+χ′
+ij(xi−xj).
+Therefore, for everyi,j ∈{1,...,N}with i̸=j and allXN∈DN, we have
+∂ijH(XN) =−2χ′′
+ij(|xj−xi|)≤0.
+Therefore, ifµwhich satisfies Assumption 3.1, then it satisfies the FKG inequality and, therefore, the
+conclusion of Lemma 3.4.
+In fact, for such measuresµ, one can establish a stronger maximum principle. Let us work with the
+push-forwardµ∗of µby the anchoring map
+AnchN :x∈DN↦→(x2−x1,x 3−x1,...,xN−x1)∈RN−1. (3.16)
+We now prove a maximum principle for the solution ofAµ∗
+1 ψ= v. This is similar to the maximum
+principle derived in [Car74,HS94].
+
+PDF PAGE 21
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 21
+Lemma 3.5 (Monotonicity). Let µsatisfy Assumption 3.1 and letµ∗:= AnchN#µ, where AnchN is
+the linear map defined in(3.16). Let v∈L2({1,...,N −1},H−1(µ∗)), and letψ∈L2({1,...,N −
+1},H 1(µ∗)) be the solution of
+Aµ∗
+1 ψ=v. (3.17)
+If
+vi≥0 a.e. on AnchN(DN), for everyi∈{1,...,N−1},
+then,
+ψi≥0 a.e. on AnchN(DN), for everyi∈{1,...,N−1}. (3.18)
+Remark3.2. LetH∗be such thatH =H∗(AnchN(x)). We can notice that for allUN−1 = (u2,...,uN)∈
+RN−1,
+UN−1·∇2H∗UN−1≥χ′′
+12(x2−x1)u2
+2 +
+N−1∑
+i=2
+χ′′
+i,i+1(xi+1−xi)(ui+1−ui)2
+≥1
+C
+(
+u2
+1 +
+N−1∑
+i=2
+(ui+1−ui)2
+)
+.
+Thus, there existsC >0 such that∇2H∗≥1
+C Id. Sinceµ∗is uniformly log-concave, the existence and
+uniqueness of a solution to(3.17) follow from the same reasoning as in the proof of Proposition 3.2.
+Proof of Lemma 3.5.Let H∗be such thatH = H∗(AnchN(x)). Let ψ+ and ψ−be the positive and
+negative parts ofψ. Taking the scalar product of the equationAµ∗
+1 ψ=v with ψ−gives
+ψ−·∇2H∗ψ+ψ−·(Lµ∗
+⊗IN−1)ψ=ψ−·v≥0.
+By integration by parts underµ∗, since for everyi,j = 1,...,N , i̸=j, we havelimx→0χij(x) = +∞,
+Eµ∗[ψ−·(Lµ∗
+⊗IN−1)ψ] = Eµ∗
+[ N∑
+i=1
+∇ψ−
+i ·∇ψi
+]
+.
+Indeed, the boundary term in this integration by parts vanishes due to (3.2). Combining the two above
+displays, we get
+Eµ∗
+[
+ψ−·∇2H∗ψ+
+N−1∑
+i=1
+∇ψ−
+i ·∇ψi
+]
+≥0,
+Note first that for everyi∈{1,...,N−1},∇ψ−
+i ·∇ψi =−|∇ψ−
+i|2. Hence,
+Eµ∗
+[
+ψ−·∇2H∗ψ+
+N−1∑
+i=1
+∇ψ−
+i ·∇ψi
+]
+= Eµ∗
+[
+ψ−·∇2H∗ψ−∥Dψ−∥2
+F
+]
+= Eµ∗
+[
+−ψ−·∇2H∗ψ−+ψ−·∇2H∗ψ+−∥Dψ−∥2
+F
+]
+.
+Also observe that, sinceψ+
+i ψ−
+i = 0,
+ψ−·∇2H∗ψ+ = 2
+∑
+i<j
+χ′′
+ij(xj−xi)(ψ−
+i ψ+
+i −ψ−
+i ψ+
+j ) =−2
+∑
+i<j
+χ′′
+ij(xj−xi)ψ−
+i ψ+
+j ≤0, (3.19)
+where we have used thatχ′′
+ij≥0 in the last inequality. We deduce from the above three displays that
+Eµ∗[ψ−·∇2H∗ψ−]≤0.
+By Assumption 3.1 (see Remark 3.2), there existsc> 0 such that
+Eµ∗[ψ−·∇2H∗ψ−]≥cEµ∗
+[N−1∑
+i=1
+(ψ−
+i )2
+]
+.
+This shows thatψ−= 0, which concludes the proof of the lemma. □
+The maximum principle of Lemma 3.5 allows us to extend Lemma 3.4.
+
+PDF PAGE 22
+22 JEANNE BOURSIER
+Lemma 3.6 (A−1
+1 -energy comparison). Let µsatisfy Assumption 3.1 and letµ∗:= AnchN#µ, where
+AnchN is the linear map defined in(3.16). Letv,w ∈L2({1,...,N−1},H−1(µ∗)). If
+|vi|≤wi, a.e. on AnchN(DN) for everyi∈{1,...,N−1}, (3.20)
+then
+Eµ∗
+[
+v·(Aµ∗
+1 )−1v
+]
+≤Eµ∗
+[
+w·(Aµ∗
+1 )−1w
+]
+.
+In particular, ifF,G∈H1(µ) satisfy
+|∂iF|≤∂iG, a.e. on AnchN(DN) for everyi∈{1,...,N−1},
+then
+Varµ∗[F ]≤Varµ∗[G].
+Proof of Lemma 3.6.For y = (y1,...,yN−1) ∈RN−1, we use the notation y ≥0 when for every
+i∈{1,...,N−1}, yi≥0.
+Let v+ and v−be the positive and negative parts ofv. Using the fact thatAµ∗
+1 is self-adjoint on
+L2({1,...,N−1},H 1(µ∗)), we have
+Eµ∗[w·(Aµ∗
+1 )−1w]−Eµ∗[v·(Aµ∗
+1 )−1v] = Eµ∗[(v +w)·(Aµ∗
+1 )−1(w−v)].
+Note that sincew−v≥0, by Lemma 3.5, we have(Aµ∗
+1 )−1(w−v)≥0. Moreover, sincew +v≥0, we
+get
+Eµ∗
+[
+(v +w)·(Aµ∗
+1 )−1(w−v)
+]
+≥0,
+which is the desired result. The in particular assertion is immediate. □
+3.3. Brascamp-Lieb inequality.
+Lemma 3.7 (Brascamp-Lieb inequality [BL02]). Let µsatisfy Assumption 3.1. Letµ′:= GapN#µ.
+LetF∈L2(µ) be of the formF =G◦GapN with∇G∈L2({1,...,N},H−1(µ′)). We have
+Varµ[F]≤Eµ[∇F·(∇2H)−1∇F], (3.21)
+where (∇2H)−1 is taken in the sense of the inverse on{x∈RN :x·(e1 +···+eN) = 0}.
+This result is standard, but for completeness, the proof is sketched below.
+Proof. By Proposition 3.1, the variance ofF may be written as
+Varµ[F] =−min
+ϕ∈H 1(µ)
+Eµ
+[
+∇ϕ·∇2H∇ϕ+∥∇2ϕ∥2
+F−2∇F·∇ϕ
+]
+.
+Discarding the non-negative termEµ[∥∇2ϕ∥2
+F ] yields
+Varµ[F]≤−min
+ϕ∈H 1(µ)
+Eµ
+[
+∇ϕ·∇2H∇ϕ−2∇F·∇ϕ
+]
+.
+Notice that for anyϕ∈H1(µ),
+∇ϕ·∇2H∇ϕ−2∇F·∇ϕ≥min
+UN∈RN
+(UN·∇2HUN−2∇F·UN).
+It follows that
+Varµ[F]≤−Eµ
+[
+min
+UN∈RN
+(
+UN·∇2HUN−2∇F·UN
+)]
+.
+We have∇F·(e1 +···en) = 0. Therefore, for allUN∈RN,
+UN·∇2HUN−2∇F·UN =U′
+N·∇2HU′
+N−2∇F·U′
+N,
+where
+U′
+N =UN−1
+NUN·(e1 +···+eN)(e1 +···+eN).
+Hence, we may restrict the minimization toUN∈RN satisfying UN·(e1 +···+eN) = 0. Recall that
+∇2H preserves this subspace and is uniformly positive definite on it, and thus invertible. In particular,
+min
+UN:UN·(e1+···+eN)=0
+(
+UN·∇2HUN−2∇F·UN
+)
+=−∇F·(∇2H)−1∇F.
+
+PDF PAGE 23
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 23
+Therefore,
+Varµ[F]≤Eµ
+[
+∇F·(∇2H)−1∇F
+]
+,
+which is the desired inequality. □
+Note that Lemma 3.7 is only valid for functions of the gaps since∇2H is only strictly positive definite
+on the subspace of vectors of mean0, i.e. on the subspace orthogonal toe1 +···+eN.
+3.4. Log-SobolevinequalitiesandGaussianconcentration. Wenowreviewsomestandardresults
+on log-Sobolev inequalities and Gaussian concentration for log-concave measures onRN and derive some
+stronger estimates valid for measures satisfying Assumption 3.1, following [BEY+14b].
+Let us first recall a crucial convexity result proved in [BL02].
+Lemma 3.8. Let µsatisfy Assumption 3.1. LetI⊂{1,...,N}be of cardinalitym and denote byπI
+the projection on the coordinates(xi)i∈I. SplitH into H =H1◦πI +H2 with
+H1 : (xi)i∈I∈Dm↦→
+∑
+i̸=j∈I
+χ(|xi−xj|),
+H2 :XN∈DN↦→
+∑
+i∈Ic
+∑
+j∈Ic:j̸=i
+χ(|xi−xj|) + 2
+∑
+i∈Ic
+∑
+j∈I
+χ(|xi−xj|).
+Define
+˜H :z∈Dm↦→−log
+ˆ
+e−H2(z,y)1DN (z,y )dy, (3.22)
+where we use the coordinatesz = (xi)i∈I,y = (xi)i∈Ic.
+(1) The density ofν:=πI#µis given by
+dν(x)∝e−(H1+ ˜H)(x)1Dm(x)dx. (3.23)
+(2) The Hessian of ˜H is positive-definite,
+∇2 ˜H≥0.
+Proof. The statement (3.23) is immediate. We prove that the Hessian of (3.22) is non-negative.
+For every smooth mapf :DN→R define
+∇1f :=
+(
+∂if
+)
+i∈I, ∇2f :=
+(
+∂if
+)
+i∈I c.
+Accordingly, split the Hessian into its four block components:
+∇2f =
+(∇2
+11f ∇2
+12f
+∇2
+21f ∇2
+22f
+)
+,
+where for example∇2
+11f = (∂ijf)i∈I,j∈I.
+Fix z∈Dm, v∈Rm and let
+h :t↦→˜H(z +tv).
+Since for everyi,j ∈{1,...,N}, i̸=j,
+lim
+x→0
+χij(x) = +∞,
+one can check that for allt∈R,
+h′′(t) = EP(x+tv)[v·(∇2
+11H2)v]−VarP(x+tv)[v·∇1H2], (3.24)
+where for anyz∈Dm, we defineP(z) to be the probability measure
+dP(z) = 1
+Z(z)e−H2(z,y)1(z,y)∈DN dy.
+Since the Hessian ofy↦→H2(x,y ) is non-negative, the Brascamp-Lieb inequality (Lemma 3.7) implies
+VarP(x+tv)[v·∇1H2]≤EP(x+tv)[v·(∇2
+12H2)(∇2
+22H2)−1(∇2
+12H2)v].
+Furthermore, since∇2H2 is non-negative, its Schur complement is non-negative, which gives
+∇2
+11H2−∇2
+12H2(∇2
+22H2)−1∇2
+12H2≥0.
+Inserting this into (3.24) shows that∇2 ˜H≥0. □
+
+PDF PAGE 24
+24 JEANNE BOURSIER
+Let us recall the standard log-Sobolev inequality for uniformly log-concave measures onRN, which
+is a special case of the Bakry-Emery criterion [BÉ85]. Letµandνbe two probability measures onDN.
+Recall that the relative entropy ofµwith respect toνis defined by
+Ent(µ|ν) =
+ˆ
+log
+(dµ
+dν
+)
+dµ∈[0, +∞], (3.25)
+if µis absolutely continuous with respect toνand Ent(µ|ν) = +∞otherwise. Also recall the Fisher
+information ofµwith respect toν,
+Fisher(µ|ν) =
+ˆ ⏐⏐⏐∇log dµ
+dν
+⏐⏐⏐
+2
+dµ, (3.26)
+if µis absolutely continuous with respect toνand Fisher(µ|ν) = +∞otherwise.
+Lemma 3.9 (Bakry-Emery [BÉ85]). Let K be a convex domain ofRN. Let w > 0 and let γw be a
+centered Gaussian distribution onRN with covariance matrix 1
+wIN. Let γw
+K be defined by conditioning
+γw on K. Assume thatνis a probability measure onK of the formdν=fdγw
+K with f :K→R Borel
+and log-concave. Thenνsatisfies a log-Sobolev inequality with constant2w, meaning for all probability
+measuresµon K,
+Ent(µ|ν)≤2wFisher(µ|ν).
+Moreoverνsatisfies Gaussian concentration: for everyF∈H1, we have
+log Eν[etF ]≤tEν[F] +w
+2t2 sup
+K
+|∇F|2, for allt∈R. (3.27)
+We now state a key concentration result due to [BEY+14b]. Recall that if µsatisfies Assumption
+3.1, then there existsc> 0 such that
+UN·∇2HUN≥c
+∑
+i,j
+(ui−uj)2, for allUN∈RN.
+The crucial observation is that when∑N
+i=1ui = 0, then
+∑
+i,j
+(ui−uj)2 =
+∑
+i,j
+(u2
+i +u2
+j) = 2N
+N∑
+i=1
+u2
+i.
+Therefore, for allUN∈RN such that ∑N
+i=1ui = 0, we have
+UN·∇2HUN≥2Nc
+N∑
+i=1
+u2
+i. (3.28)
+Furthermore, onecanobservethat ∇ϕ:= (Aµ
+1)−1∇F satisfies∂1ϕ+···+∂Nϕ= 0when∂1F +···+∂NF =
+0, sinceϕis a function of the gaps. As we will see below, combining this with (3.28) gives the following
+Gaussian concentration estimate:
+Lemma 3.10.LetI⊂{1,...,N}be an interval of integers andπI be the projection on the coordinates
+(xi)i∈I. Letµsatisfy Assumption 3.1. Suppose that for everyi,j ∈{1,...,N}, i̸=j,
+lim
+x→0
+χij(x) = +∞,
+and that there exists a constantc1 > 0 such that for everyi,j ∈I with i̸=j and XN∈DN,
+χ′′
+ij(xj−xi)≥c1
+2 > 0. (3.29)
+LetF =G◦πI, for someG∈H1(πI#µ). If F is independent of∑
+i∈Ixi, i.e. ∑
+i∈I∂iF = 0, then for
+all t∈R, we have
+log Eµ[etF ]≤tEµ[F ] + t2
+2c1|I|sup|∇F|2.
+The proof of Lemma 3.10 can be found in [BEY+14b, Le. 3.9] and can be readily adapted to our
+circular setting. For completeness, we give the proof, following essentially line by line the proof of
+[BEY+14b].
+
+PDF PAGE 25
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 25
+Proof. Without loss of generality, suppose thatI ={1,...,m}.
+On DN introduce the coordinates (x,y ) with x = (xi)i∈I ∈Dm and y = (xi)i∈Ic ∈DN−m. The
+energy H can be split intoH(x,y ) =H1(x) +H2(x,y ) with
+H1(x) =
+∑
+i,j∈I,i̸=j
+χij(|xi−xj|)
+and
+H2(x,y ) =
+∑
+i,j∈Ic,i̸=j
+χij(|xi−xj|) + 2
+∑
+i∈I,j∈Ic
+χij(|xi−xj|).
+Observe that∇2H1 > 0 and∇2H2≥0, and thatH1 is independent of∑
+i∈Ixi, i.e., ∑
+i∈I∂iH1 = 0.
+Now we introduce onDm the coordinates x = (z,ω) with z = (x1,...,xm−1)∈Dm−1 and ω=
+m−1
+2
+∑m
+i=1xi. Observe that this change of variables can be written(z,ω) = M(x1,...,xm), withM
+orthogonal. SinceH1 is independent ofω, one can write it asH1 = ˜H1(z) for some map ˜H1. Similarly,
+F can be writtenF = ˜F(z) for some map ˜F.
+Set q = (ω,y). Let νbe the push-forward ofµby the map(z,q )↦→z. The density ofνis given by
+dν(z)∝e−˜H(z)dz where
+˜H(z) =−log
+ˆ
+e−H(z,q)dq. (3.30)
+Fixz∈Dm−1 andv∈Rm−1. Considerh :t↦→˜H(z+tv). AsinLemma3.8, denoteby ∇2
+qq,∇2
+qz,∇2
+zq,∇2
+zz
+block matrices of the Hessian. We have
+h′′(t) = EP(z+tv)[v·∇2
+zzH(z,·)v]−VarP(z+tv)[v·(∇zH)(z,·)],
+where for anyz∈Dm−1, P(z) stands for the probability measure
+dP(z) = 1
+Z(z)e−H(z,q)dq.
+Using the Brascamp-Lieb inequality (see Lemma 3.7), one can write
+VarP(z+tv)[v·(∇zH)(z,·)]≤EP(z+tv)[v·(∇2
+zqH(∇2
+qqH)−1∇2
+zqH)(z,·)v].
+Hence,
+h′′(t)≥EP(z+tv)[v·(∇2
+zzH)(z,·)v−v·(∇2
+zqH(∇2
+qqH)−1∇2
+zqH)(z,·)v].
+Thus, by takingt = 0,
+∇2
+zz ˜H(z)≥EP(z)[∇2
+zzH(z,·)−(∇2
+zqH(∇2
+qqH)−1∇2
+zqH)(z,·)]. (3.31)
+Since H1 is independent ofq, we have
+∇2
+zqH(∇2
+qqH)−1∇2
+zqH =∇2
+zqH2(∇2
+qqH2)−1∇2
+zqH2.
+Hence,
+∇2
+zzH−∇2
+zqH(∇2
+qqH)−1∇2
+zqH =∇2
+zzH1 +∇2
+zzH2−∇2
+zqH2(∇2
+qqH2)−1∇2
+zqH2. (3.32)
+Since∇2
+zzH2≥0, the Schur complement is also non-negative:
+∇2
+zzH2−∇2
+zqH2(∇2
+qqH2)−1∇2
+zqH2≥0.
+Therefore, by (3.32),
+∇2
+zzH−∇2
+zqH(∇2
+qqH)−1∇2
+zqH≥∇2
+zzH1.
+Inserting this into (3.31), we deduce from (3.29) that for allu∈Rm−1,
+u·(∇2
+zz ˜H)(z)u≥EP(z)[u·∇2
+zzH1(z,·)u].
+Next notice that, in view of the assumption (3.29),
+u·∇2
+zzH1u = ˜Mu·∇2
+xxH1(x)( ˜Mu)≥c1
+2
+∑
+i̸=j
+(( ˜Mu)i−( ˜Mu)j)2,
+where ˜M denotes the firstm−1 columns ofM. Moreover,
+∑
+i̸=j
+(( ˜Mu)i−( ˜Mu)j)2 = 2m
+m∑
+i=1
+u2
+i.
+
+PDF PAGE 26
+26 JEANNE BOURSIER
+Combining the last three displays, we conclude that
+∇2
+zz ˜H≥c1mId.
+Therefore, by the Bakry-Emery criterion stated in Lemma 3.9, for allt∈R, we have
+Eµ[etF ] = Eν[et ˜F ]≤etEν[ ˜F]+ t2
+2c1m sup|∇z ˜F|2
+.
+Since M is orthogonal,|∇z ˜F|2 =|∇F|2. This concludes the proof. □
+4. Near-optimal rigidity
+This section is dedicated to the proof of the rigidity result stated in Theorem 1. The approach draws
+on several techniques introduced in the seminal work [BEY+14b, Th. 3.1]. Since our setting is the
+circle, the expected values of the gaps can be computed explicitly. As a result, we avoid one of the main
+technical challenges of [BEY+14b], namely estimating the accuracy of the standard positions. Our first
+objective is to establish the following local law for the gaps: we show that for everyi∈{1,...,N}and
+1≤k≤⌊N
+2⌋, the quantityN(xi+k−xi) is typically of orderk. To achieve this, we carry out a multiscale
+analysis, inspired by [BEY+14b], which allows us to bootstrap the local law down to microscale. The
+argument relies on a convexification procedure, which we describe first.
+4.1. Comparison to a constrained Gibbs measures.Since the Hessian of the energy degenerates
+when particles are far apart, one cannot directly obtain Gaussian concentration estimates forPN,β.
+Following [BEY+14b], we add a convexifying term to the Hamiltonian that penalizes configurations
+with large gaps. Letθ: R+→R+ be a smooth function such thatθ(x) = x2 for x >2, θ(x) = 0 for
+x∈[0, 1] and θ′′≥0 on (0,∞). Leti0∈{1,...,N}, L∈{1,...,⌊N
+2⌋}and R> 0. Let us define
+I :={i,...,i +L},
+with the convention that this discrete interval is taken moduloN. Then, we define the forcing term
+F := 2
+∑
+i,j∈I:i<j
+θ
+(N
+R (xj−xi)
+)
+(4.1)
+and the locally constrained Gibbs measure
+dQN,β(XN) = 1
+KN,β
+e−β(HN+F)(XN)1DN (XN)dXN, (4.2)
+where
+KN,β:=
+ˆ
+DN
+e−β(HN+F)(XN)1DN (XN)dXN.
+In what follows, we often chooseR =L1+εfor someε>0.
+Recall that the total variation distance between two probability measuresµand νon DN is defined
+by
+TV(µ,ν) = sup
+A∈B(DN)
+|µ(A)−ν(A)|,
+whereB(DN) is the set of measurable subsets ofDN. By the Pinsker inequality, see [ABC+00, Ch. 5],
+we have
+TV(µ,ν)2≤2Ent(µ|ν), (4.3)
+where Ent(·|ν) is the relative entropy with respect toν. Using (4.3) and the uniform log-concavity of
+the constrained measure (4.2) in the windowI, one may derive the following control:
+Lemma 4.1. Leti0∈{1,...,N}, L∈{1,...,⌊N
+2⌋}and R> 0. Let
+I :={i,...,i +L}.
+Denote by πI the projectionπI : XN ∈DN ↦→(xi)i∈I ∈DL+1. Let QN,βbe the probability measure
+(4.2). There exists a constantC >0 depending only onβand s such that
+TV(πI#PN,β,πI#QN,β)2≤CL5RsEPN,β
+[(N
+R (xi0+L−xi0)
+)2
+1xi0 +L−xi0≥R
+N
+]
+.
+
+PDF PAGE 27
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 27
+Proof. For everyk = 1,...,⌊N/2⌋, let us denote
+Gapk :Xk∈Dk↦→(N(x2−x1),...,N (xk−xk−1))∈Rk−1.
+Recall the relative entropy defined in (3.25). Applying Pinsker’s inequality (4.3) toµ=πI#PN,βand
+ν=πI#QN,βgives
+TV(πI#PN,β,πI#QN,β)2≤2Ent(πI#PN,β|πI#QN,β). (4.4)
+Let us recall that for any measurable mapT :πI(DN)→RL+1, we have
+Ent((T◦πI)#PN,β|(T◦πI)#QN,β)≤Ent(πI#PN,β|πI#QN,β).
+This can be proven by using, for instance, the variational representation of the entropy. Applying this
+to the mapT : (xi)i∈I↦→(xi0, GapL+1((xi)i∈I)) and to its inverse, we obtain that
+Ent(πI#PN,β|πI#QN,β) = Ent(LawPN,β(xi0, GapL+1◦πI(XN))|LawPN,β(xi0, GapL+1◦πI(XN))).
+(4.5)
+Recall that the law ofxi0 under PN,βis uniform, as is the law ofxi0 under QN,β. Moreover, underPN,β
+(similarly QN,β),xi0 is independent fromGapL+1(xi0). We thus get from the tensorization property of
+the entropy and (4.5) that
+Ent(πI#PN,β|πI#QN,β) = Ent((GapL+1◦πI)#PN,β|(GapL+1◦πI)#QN,β) + Ent(dx|dx)
+= Ent((GapL+1◦πI)#PN,β|(GapL+1◦πI)#QN,β).
+By Lemma 3.8, the push-forward ofQN,βby the mapπI has density proportional toexp(−β(H + ˜H))
+with∇2 ˜H≥0 and H defined by
+H : (xi)i∈I∈DL+1↦→N−s ∑
+i,j∈DL+1:i̸=j
+g(xi−xj) + F◦πI.
+By definition ofF (4.1) andθ, for allu∈RL+1,
+u·∇2Hu≥C0
+∑
+i,j∈I:i<j
+(N(uj−ui))2
+Rs+2 ≥C0
+∑
+i∈I\maxI
+(N(ui+1−ui))2
+Rs+2 ,
+for some constantC0 > 0 independent ofN,L andR. We deduce that the push-forward ofPN,βby the
+map GapL+1◦πI has density proportional toexp(−β(H0 + ˜H0)) with∇2H0≥C0
+Rs+2I and∇2 ˜H0≥0.
+Therefore, by Lemma 3.9,(GapL+1◦πI)#QN,βsatisfies a log-Sobolev inequality with constant2c−1
+where c := Cβ
+Rs+2. It follows that
+Ent((GapL+1◦πI)#PN,β|(GapL+1◦πI)#QN,β)
+≤2c−1Fisher((GapL+1◦πI)#PN,β|(GapL+1◦πI)#QN,β),
+where the Fisher information has been defined in (3.26). One can writeF = G◦GapL+1◦πI for some
+G : RL→R. This gives the bound
+Ent((GapL+1◦πI)#PN,β|ν)≤CRs+2EPN,β[|∇(G◦GapL+1◦πI)|2]. (4.6)
+Let us bound the right-hand side of the last display. Note that we have the explicit expression
+G(yi0,...,yi0+L−1) = 2
+∑
+i,j∈I:i<j
+θ
+(1
+R
+j−1∑
+k=i
+yk
+)
+.
+Therefore, for everyl∈I\{max(I)},
+∂lG(yi0,...,yi0+L−1) = 2
+∑
+i,j∈I:i<j
+1
+Rθ′
+(1
+R
+j−1∑
+k=i
+yk
+)
+1i≤l<j.
+
+PDF PAGE 28
+28 JEANNE BOURSIER
+Hence, sinceθ′is non-negative and increasing,
+|∂lG(yi0,...,yi0+L−1)|≤2
+∑
+i,j∈I:i<j
+1
+Rθ′
+(1
+R
+i0+L−1∑
+k=i0
+yk
+)
+1i≤l<j
+≤2
+R
+∑
+i,j∈I:i<j
+θ′
+(N
+R (xi0+L−xi0)
+)
+1i≤l<j
+≤CL2
+Rθ′
+(N
+R (xi0+L−xi0)
+)
+.
+Hence,
+∑
+l∈I\{maxI}
+|∂lG(yi0,...,yi0+L−1)|2≤CL5
+R2 (θ′)2
+(N
+R (xi0+L−xi0)
+)
+.
+Since θis smooth andθ′(0) = 0, we have|θ′(x)−θ′(0)|= θ′(x)≤C|x|on (0, 2]. Since θ(x) = x2 for
+x >2, there exists a constantC >0 such that for allx∈(0,∞),|θ′(x)|≤Cx. We deduce from this
+and the last display that the Fisher information is bounded by
+EPN,β[|∇(G◦GapL+1◦πI)|2]≤CL5
+R2 EPN,β
+[(
+θ′
+(N
+R (xi0+L−xi0)
+))2]
+≤CL5
+R2 EPN,β
+[(
+θ′
+(N
+R (xi0+L−xi0)
+))2
+1|xi0 +L−xi0|≥R
+N
+]
+≤CL5
+R2 EPN,β
+[(N
+R (xi0+L−xi0−L)
+))2
+1xi0+L−xi0≥R
+N
+]
+,
+where we have used thatθ′(x) = 0 if x∈(0, 1). Inserting this into (4.6) and using (4.4) concludes the
+proof of the lemma. □
+4.2. First local law.We now prove that each gapN(xi+k−xi) is typically of orderk with an expo-
+nentially small probability of deviation.
+Lemma 4.2. Set
+δ0 := 1−s
+2(s + 2). (4.7)
+Letδ >0. There existc> 0 and C >0 such that for everyi∈{1,...,N}and 1≤k≤⌊N
+2⌋,
+PN,β(N(xi+k−xi)≥k1+δ)≤C exp
+(
+−ck2 min(δ,δ0
+1+δ
+1+δ0 )
+)
+. (4.8)
+The proof of Lemma 4.2 is inspired by the multiscale analysis of [BEY+14b]. We proceed by a
+bootstraponscales: assumingthatthelocallaw(4.8)holdsforsome k∈{1,...,⌊N
+2⌋}, Lemma4.1allows
+us to convexify the measure within a window of sizek without significantly perturbing it. Moreover,
+the convexified measure satisfies better concentration estimates, allowing one to prove via Lemma 3.10
+that (4.8) holds at a slightly smaller scale.
+Proof of Lemma 4.2.
+Step 1: setting the bootstrap.Define
+δ0 := 1−s
+2(s + 2)∈(0, 1).
+We wish to prove that there existc0 > 0andC0 > 0independent ofN such that for everyi∈{1,...,N},
+1≤k≤⌊N
+2⌋and allδ >0,
+PN,β(N(xi+k−xi)≥k1+δ)≤
+
+
+
+C0e−c0k2δ
+if δ∈(0,δ0]
+C0e−c0k
+2δ0
+1+δ
+1+δ0
+if δ >δ0.
+(4.9)
+Observe that (4.9) trivially holds fork =⌊N/2⌋since 0≤N(xi+⌊N/2⌋−xi)≤N.
+Let K∈{1,...,⌊N/2⌋}. Assume that (4.9) holds for everyk≥K. Fixδ∈(0,δ0] and fix
+α0∈
+(
+0, 1− 1 +s
+2−δ(s + 2)
+)
+, (4.10)
+
+PDF PAGE 29
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 29
+to be determined below. Note that sinceδ≤δ0 < 1−s
+s+2, we have1− 1+s
+2−δ(s+2) > 0. We will show, for a
+particular choice ofα0, that (4.9) holds for everyk≥K1−α0.
+Let i∈{1,...,N}, k∈{K1−α0,...,⌊N
+2⌋}and fix
+γ∈(δ(1−α0),δ0), (4.11)
+to be determined below. Define
+I :={i,···,i +K}.
+Let θ: R+→R+ be a smooth cutoff function withθ(x) = x2 for x >2, θ= 0 on [0, 1] and θ′′≥0 on
+(0,∞). Define, as in (4.1)
+F := 2
+∑
+l,j∈I:l<j
+θ
+( N
+K1+γ(xl−xj)
+)
+, (4.12)
+and, as in (4.2),
+dQN,β(XN) = 1
+KN,β
+e−β(HN+F)(XN)1DN (XN)dXN.
+Since xi+k−xi is a function of(xi)i∈I, we have that
+PN,β(N(xi+k−xi)≥k1+δ)≤QN,β(N(xi+k−xi)≥k1+δ) + TV(πI#PN,β,πI#QN,β). (4.13)
+Step 2: upper bound on the total variation distance.Applying Lemma 4.1 withL := K and
+R :=K1+γ≤K2, we obtain
+TV(πI#PN,β,πI#QN,β)2≤CK 7EPN,β
+[( 1
+K1+γN(xi+K−xi)
+)2
+1N(xi+K−xi)≥K1+γ
+]
+≤CK 7 ∑
+j≥K1+γ
+j2
+K2(1+γ) PN,β(N(xi+K−xi)≥j). (4.14)
+Notice that
+δ0
+1 +δ
+1 +δ0
+≤δ⇐⇒δ≥δ0.
+It follows that
+C0e−c0k
+2 min(δ,δ0
+1+δ
+1+δ0
+)
+=
+
+
+
+C0e−c0k2δ
+if δ∈(0,δ0]
+C0e−c0k
+2δ0
+1+δ
+1+δ0
+if δ >δ0.
+Let n≥1. By (4.9) and the above display, for everyj∈{K1+nγ,...,K 1+(n+1)γ−1},
+PN,β(N(xi+K−xi)≥j)≤C0 exp
+(
+−c0K2 min(nγ,δ0
+1+nγ
+1+δ0 )
+)
+. (4.15)
+Hence, using (4.15),
+∑
+j≥K1+γ
+j2
+K2(1+γ) PN,β(N(xi+K−xi)≥j)
+)
+≤C
+∞∑
+n=1
+∑
+j:K1+nγ≤j<K 1+(n+1)γ
+j2
+K2(1+γ) PN,β(N(xi+K−xi)≥j)
+≤C
+∞∑
+n=1
+K3(1+(n+1)γ)
+K2(1+γ) exp
+(
+−c0K2 min(nγ,δ0
+1+nγ
+1+δ0 )
+)
+. (4.16)
+Therefore, using thatk≥K1−α0, we have that for allκ< γ
+1−α0
+, there existsC >0 independent ofN
+and K such that
+TV(πI#PN,β,πI#QN,β)≤Ce−c0k2κ
+. (4.17)
+
+PDF PAGE 30
+30 JEANNE BOURSIER
+Step 3: accuracy underQN,β. SinceN(xi+k−xi) is not uniformly bounded from above with respect
+to N, one cannot directly apply the total variation bound (4.17) to approximate its expectation under
+QN,β. It is therefore necessary to first establish a tightness result for the variableN(xi+k−xi) under
+QN,β. Letε>0. One can write
+log EQN,β[e(N(xi+k−xi))ε
+] = log EPN,β[e(N(xi+k−xi))ε−βF]−log EPN,β[e−βF].
+By Jensen’s inequality and the factF≥0,
+log EQN,β[e(N(xi+k−xi))ε
+]≤log EPN,β[e(N(xi+k−xi))ε
+] +βEPN,β[F]. (4.18)
+By the definition ofθ,
+F = 2
+∑
+i,j∈I:i<j
+θ
+(N(xj−xi)
+K1+γ
+)
+= 2
+∑
+i,j∈I:i<j
+θ
+(N(xj−xi)
+K1+γ
+)
+1N(xj−xi)≥K1+γ
+≤2
+∑
+i,j∈I:i<j
+θ
+(N(xj−xi)
+K1+γ
+)
+1N(xi+K−xi)≥K1+γ
+≤C
+∑
+i,j∈I:i<j
+(N(xj−xi)
+K1+γ
+)2
+1N(xi+K−xi)≥K1+γ
+≤CK 2
+(N(xi+K−xi)
+K1+γ
+)2
+1N(xi+K−xi)≥K1+γ.
+Therefore,
+EPN,β[F]≤CK 2 ∑
+j≥K1+γ
+( j
+K1+γ
+)2
+PN,β(N(xi+K−xi)≥j).
+Splitting the sum overj as in (4.16), we deduce that there existsC >0 independent ofN and K such
+that
+EPN,β[F]≤C. (4.19)
+We then turn to bounding the first term on the right of (4.18),
+EPN,β[e(N(xi+k−xi))ε
+]≤eKε(1+γ)
++
+∑
+j>K 1+γ
+ejε
+PN,β(N(xi+K−xi)≥j).
+Using (4.15), we find that forε>0 small enough,
+log EPN,β[e(N(xi+k−xi))ε
+]≤CKε(1+γ),
+for some constantC >0 independent ofN andK. Fixε>0 accordingly. Plugging in the above display
+and (4.19) into (4.18) yields
+log EQN,β[e(N(xi+k−xi))ε
+]≤CKε(1+γ), (4.20)
+for some constantC >0 independent ofN and K. One can next write
+EQN,β[N(xi+k−xi)1N(xi+k−xi)≥K2]≤
+∑
+j≥K2
+jQN,β(N(xi+k−xi)≥j)
+=
+∑
+j≥K2
+jQN,β(e(N(xi+k−xi))ε
+≥ejε
+)
+≤
+∑
+j≥K2
+je−jε
+eCKε(1+γ)
+,
+where we have used Markov’s inequality and (4.20) in the last inequality. We conclude that since
+γ∈(0, 1),
+EQN,β[N(xi+k−xi)1N(xi+k−xi)≥K2]≤C, (4.21)
+
+PDF PAGE 31
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 31
+for some positive constantC independent ofN andK. On the other hand, using (4.15), we get that by
+proceeding as in (4.16) that
+EPN,β[N(xi+k−xi)1N(xi+k−xi)>K2]≤C, (4.22)
+for some positive constantC independent ofN and K.
+Recall that for every functionf bounded and measurable, we have
+|EQN,β[f]−EPN,β[f]|≤∥f∥L∞TV(QN,β, PN,β).
+It follows that
+⏐⏐⏐EPN,β[N(xi+k−xi)1N(xi+k−xi)≤K2]−EQN,β[N(xi+k−xi)1N(xi+k−xi)≤K2]
+⏐⏐⏐
+≤K2TV(πI#PN,β,πI#QN,β).
+Using (4.17), we get that for allκ< γ
+1−α0
+, there exists a constantC >0 such that
+⏐⏐⏐EPN,β[N(xi+k−xi)1N(xi+k−xi)≤K2]−EQN,β[N(xi+k−xi)1N(xi+k−xi)≤K2]
+⏐⏐⏐≤CK 2e−c0k2κ
+.
+Furthermore, combining (4.21) and (4.22), one gets
+|EPN,β[N(xi+k−xi)1N(xi+k−xi)>K2]−EQN,β[N(xi+k−xi)1N(xi+k−xi)>K2]|≤C,
+for some positive constantC independent ofN and K. Let us observe that
+EPN,β[N(xi+k−xi)] =kEPN,β[N(x2−x1)],
+since under PN,β, particles are identically distributed. Since∑N
+i=1N(xi+1−xi) =N, we therefore get
+that
+EPN,β[N(x2−x1)] = 1.
+Thus,
+EPN,β[N(xi+k−xi)] =k.
+We conclude that
+⏐⏐EQN,β[N(xi+k−xi)]−EPN,β[N(xi+k−xi)]
+⏐⏐ =
+⏐⏐EQN,β[N(xi+k−xi)]−k
+⏐⏐≤C, (4.23)
+for some positive constantC independent ofN and K. Now, we observe that
+Step4: fluctuationsunder QN,β. Wenowstudythefluctuationsof N(xi+k−xi)undertheprobability
+measure QN,β. Denote
+G :XN∈DN↦→N(xi+k−xi).
+Observe that ∑
+j∈I∂jG = 0, ∂jG = 0 for everyj∈Ic and sup|∇G|2 = 2N2. Moreover, QN,βsatisfies
+Assumption 3.1 with, for everyi,j ∈{1,...,N}with i̸=j,
+χij :x∈T↦→β
+(
+N−sg(x) +θ
+( N
+K1+γx
+)
+1i,j∈I
+)
+.
+For everyi,j ∈I with i̸=j and x∈T, we have
+χ′′
+ij(x) =β
+(
+N−sg′′(x) +θ′′
+( N
+K1+γx
+)( N
+K1+γ
+)2)
+.
+If N|x|≤2K1+γ, then one can write
+N−sg′′(x) +θ′′
+( N
+K1+γx
+)( N
+(2K)1+γ
+)2
+≥N−sg′′(x)≥c0
+N2
+K(s+2)(1+γ),
+for some constantc0∈(0, 2). IfN|x|≥2K1+γ, then we use
+N−sg′′(x) +θ′′
+( N
+K1+γx
+)( N
+K1+γ
+)2
+≥θ′′
+( N
+K1+γx
+)( N
+K1+γ
+)2
+= 2
+( N
+K1+γ
+)2
+≥c0
+N2
+K(s+2)(1+γ),
+since by assumptionθ(x) =x2 for allx≥2. Combining the two last displays, we deduce that for every
+i,j ∈I with i̸=j,
+χ′′
+ij(x)≥c1
+2 where c1 := 4c0βN2
+K(1+γ)(s+2).
+
+PDF PAGE 32
+32 JEANNE BOURSIER
+Therefore, by applying Lemma 3.10, we obtain that for allt∈R,
+0≤log EQN,β[etG]−tEQN,β[G]≤t2
+2c1|I|sup|∇G|2≤Ct2K(1+γ)(s+2)−1,
+for some constantC >0 independent ofN and K. By Markov’s inequality, recalling thatk≥K1−α0,
+this implies that
+QN,β(|N(xi+k−xi)−EQN,β[N(xi+k−xi)]|≥k1+δ)≤C exp
+(
+−c k2(1+δ)
+K(1+γ)(s+2)−1
+)
+,
+for some constantsc> 0,C > 0 independent ofN and K. Sincek≥K1−α0, we get
+QN,β(|N(xi+k−xi)−EQN,β[N(xi+k−xi)]|≥k1+δ)≤C exp
+(
+−ck2(1+δ)−(1−α0)−1((1+γ)(s+2)−1)
+)
+.
+Using (4.23), this gives
+QN,β(|N(xi+k−xi)−k|≥k1+δ)≤C exp
+(
+−ck2(1+δ)−(1−α0)−1((1+γ)(s+2)−1)
+)
+, (4.24)
+for some constantsc> 0,C > 0 independent ofN and K.
+Step 5: conclusion.We have
+2(1 +δ)− 1
+1−α0
+((1 +γ)(s + 2)−1)> 2δ⇐⇒γ <2(1−α0)−(1 +s)
+2 +s . (4.25)
+Observe that the conditions (4.11) and (4.25) can be satisfied if and only if
+(1−α0)δ <2(1−α0)−(1 +s)
+2 +s ⇐⇒1−α0 > 1 +s
+2−δ(s + 2). (4.26)
+Therefore, by (4.10) we can chooseγ∈(δ(1−α0),δ0) satisfying (4.25). Therefore, by (4.24), there exist
+δ′>δand C >0, c> 0 independent ofN and K such that
+QN,β(N(xi+k−xi)≥k1+δ)≤Ce−ck2δ′
+.
+In combination with (4.17) and (4.13), since γ
+1−α0
+> δ, we deduce that there existδ′> δand C >0,
+c> 0 independent ofN and K such that
+PN,β(N(xi+k−xi)≥k1+δ)≤Ce−ck2δ′
+. (4.27)
+Notice that ifk is large enough, then
+Ce−ck2δ′
+≤C0e−c0k2δ
+,
+where C0 and c0 are the constants in the bootstrap assumption (4.9). We deduce that there exists an
+integer k0 independent of N and K such that for everyk with k≥k0 and k≥K1−α0, and for all
+δ∈(0,δ0],
+PN,β(N(xi+k−xi)≥k1+δ)≤C0e−c0k2δ
+. (4.28)
+Let us now prove that (4.9) holds forδ >δ0. Letδ >δ0 and L :=⌊k
+1+δ
+1+δ0⌋≥k. One can write
+PN,β(N(xi+k−xi)≥k1+δ)≤PN,β(N(xi+L−xi)≥k1+δ)≤PN,β(N(xi+L−xi)≥L1+δ0).
+Therefore, by (4.27), there existsδ′
+0 >δ0 such that
+PN,β(N(xi+k−xi)≥k1+δ)≤Ce−cL2δ′
+0
+≤Ce−ck
+2δ′
+0
+1+δ
+1+δ0
+.
+Therefore, there existsk0 independent ofK and N such that for everyk with k≥k0 and k≥K1−α0,
+we have
+PN,β(N(xi+k−xi)≥k1+δ)≤C0e−c0k
+2δ′
+0
+1+δ
+1+δ0
+.
+We deduce with (4.28) that there existsk0 independent ofN andK such that for everyk withk≥k0
+and k≥K1−α0, and everyδ >0, (4.9) holds.
+We conclude by induction that there exists a constantk0, independent ofN and K, such that (4.9)
+holds for allk≥k0. By adjusting the constantC0 if necessary, we may extend the validity of (4.9) to
+all k≥1. □
+
+PDF PAGE 33
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 33
+From the proof of Lemma 4.2, we deduce the following estimate on the expectation of gaps under the
+locally constrained measure:
+Lemma 4.3. LetL∈{1,...,⌊N/2⌋−1}and i∈{1,...,N}. Let
+I :={i,...,i +L}.
+Let j∈I and k∈{1,..., N
+2}such thatj +k∈I. Let γ∈(0, 1). Let QN,βbe the locally constrained
+measure (4.2) withR = L1+γ. There exists C > 0 depending on γ,sand βsuch that ifγis small
+enough,
+|EQN,β[N(xi+k−xi)]−k|≤C.
+Proof. We have proved in Lemma 4.2 thatPN,βsatisfies (4.9). We thus conclude by (4.23). □
+4.3. Reductiontoablockaverage. Inthissubsection, weimplementamethoddevelopedin[BEY +14b]
+to study the fluctuations of particle positions. The strategy consists of replacing a single pointxi with
+the average of thexj’s over a block centered atxi.
+For everyi∈{1,...,N}and 1≤k≤⌊N
+2⌋, letIk(i) stand for the interval of indices
+Ik(i) :={j∈{1,...,N}:d(i,j )≤k}.
+Define the block average
+x[k]
+i := 1
+|Ik(i)|
+∑
+j∈Ik(i)
+xj. (4.29)
+Lemma 4.4(Comparison to a block average). Letε>0 be small enough. There existC >0 andc> 0
+independent ofN such that for everyi∈{1,...,N}and 1≤k≤⌊N
+2⌋,
+PN,β(|N(xi−x[k]
+i )|≥k
+s
+2 +ε)≤Ce−ck
+ε
+s+2
+.
+Proof. Leti∈{1,...,N}and 1≤k≤⌊N
+2⌋. Fixε>0. Letp≥1 be a large number andα:= 1
+p. Since
+x[0]
+i =xi, one can breakN(xi−x[k]
+i ) into
+N(xi−x[k]
+i ) =
+p−1∑
+m=0
+N
+(
+x[⌊kmα⌋]
+i −x[⌊k(m+1)α⌋]
+i
+)
+.
+For eachm∈{0,...,p−1}, denote
+Gm :=N
+(
+x[⌊kmα⌋]
+i −x[⌊k(m+1)α⌋]
+i
+)
+and Im :=I⌊k(m+1)α⌋(i).
+Observe thatGm only depends on the variables(xj)j∈Im and ∑
+j∈Im
+∂jGm = 0.
+Fix m∈{0,...,p−1}. Let ε′> 0. Let QN,βbe the constrained Gibbs measure (4.2) withI =Im
+and R :=K1+ε′
+where K :=k(m+1)α.
+We begin by bounding from above the total variation distance betweenPN,βand QN,β. By Lemma
+4.1, we have
+TV(πIm#PN,β,πIm#QN,β)2≤C|Im|7EPN,β
+[(N
+R (xmaxIm−xminIm)
+)2
+1xmaxIm−xminIm≥R
+N
+]
+.
+Moreover, by Lemma 4.2 applied withδ=nε′
+EPN,β
+[(N
+R (xmaxIm−xminIm)
+)2
+1xmaxIm−xminIm≥R
+N
+]
+≤
+∑
+j≥R
+(j
+R
+)2
+PN,β(N(xmaxIm−xminIm)≥j)
+≤
+∞∑
+n=1
+∑
+j:K1+nε′≤j<K 1+(n+1)ε′
+(j
+R
+)2
+e−c0K
+2 min(nε′,δ0
+1+nε′
+1+δ0
+)
+,
+where δ0 is as in (4.7). Therefore, ifε′> 0 is small enough, namelyε′≤δ0, there existsC >0 such
+that
+TV(πIm#PN,β,πIm#QN,β)≤Ce−cKε′
+=Ce−ck(m+1)αε′
+.
+
+PDF PAGE 34
+34 JEANNE BOURSIER
+We fixε′so that (m + 1)αε′= ε
+s+2. This gives
+TV(πIm#PN,β,πIm#QN,β)≤Ce−cKε′
+=Ce−ck
+ε
+s+2
+. (4.30)
+We now bound the fluctuations ofGm under QN,β. One can check that the measureQN,βsatisfies
+the assumption of Lemma 3.10 withc1 :=βc0N2R−(s+2), for some constantc0 > 0. Moreover, we can
+compute that
+sup|∇Gm|2≤CN 2k−αm,
+for some constantC independent ofN,α,k, andm.
+Thus, by Lemma 3.10, for allt∈R, we have
+⏐⏐⏐ log EQN,β[etGm]−tEQN,β[Gm]
+⏐⏐⏐≤Ct2 sup|∇Gm|2
+c1|I|
+≤Ct2 N2k−αm
+N2R−(s+2)k(m+1)α
+≤Ct2k−αm−(m+1)α+((m+1)α)(1+ε′)(s+2)
+=Ct2kαs(m+1)+α+α(m+1)ε′(s+2)
+≤Ct2kαs(m+1)+α+ε′(s+2),
+since α(m + 1)≤1. Insertingε′= ε
+(m+1)(s+2)α, we get that for allt≥R,
+⏐⏐⏐ log EQN,β[etGm]−tEQN,β[Gm]
+⏐⏐⏐≤Ct2kαs(m+1)+α+ ε
+(m+1)α.
+Let us optimize this overα(m + 1)∈(0, 1). The maximum is attained at the boundary, therefore either
+for m = 0 or form + 1 =p = 1
+α. Form = 0, we have
+α(m + 1)s +α+ ε
+(m + 1)α=α(s + 1) +ε
+α.
+Form =p−1, we have
+α(m + 1)s +α+ ε
+(m + 1)α=s +α+ε.
+If p is large enough and ifε≤s
+2α, then
+α(s + 1) +ε
+α≤s +α+ε.
+Therefore, fixingp and εaccordingly, we get that for everyt∈R,
+⏐⏐⏐ log EQN,β[etGm]−tEQN,β[Gm]
+⏐⏐⏐≤Ct2ks+α+ε.
+Hence, using the standard Markov’s inequality argument, we obtain
+QN,β(|Gm−EQN,β[Gm]|≥k
+s
+2 +ε)≤Ce−cks+2ε−(s+α+ε)
+=Ce−ckε−α
+≤Ce−ck
+ε
+2
+, (4.31)
+providedα≤ε
+2. Using the result of Lemma 4.3 and (4.15), we get
+EQN,β[Gm]≤C, (4.32)
+for C >0 depending only onε,β, ands. Combining (4.32) with (4.31) and (4.30), we deduce that
+PN,β(|Gm|≥k
+s
+2 +ε)≤Ce−ck
+ε
+s+2
+.
+We conclude that there exist constantsC >0,c> 0 depending onε, βand s such that
+PN,β
+(p−1∑
+m=0
+|Gm|≥pk
+s
+2 +ε
+)
+≤Ce−ck
+ε
+s+2
+,
+which concludes the proof of Lemma 4.4. □
+
+PDF PAGE 35
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 35
+4.4. Proof of Theorem 1.We now turn to the analysis of the fluctuations ofN(xi+k−xi) and prove
+Theorem 1, which follows from Lemma 4.4. By this lemma,xi andxi+k can be replaced by their block
+averages at scalek, up to a well-controlled error. Moreover, the fluctuations of the difference between
+these block averages can be bounded using Lemma 3.10.
+Proof of Theorem 1.Let i∈{1,...,N}, 1≤k≤⌊N
+2⌋and ε∈(0, 1) small enough as in Lemma 4.4.
+Let us split the gapN(xi+k−xi) into
+N(xi+k−xi) =N(xi+k−x[k]
+i+k)−N(xi−x[k]
+i ) +N(x[k]
+i+k−x[k]
+i ). (4.33)
+By Lemma 4.4, lettingδ:= ε
+s+2, we have
+PN,β(|N(x[k]
+i −xi)|≥k
+s
+2 +ε)≤Ce−ckδ
+, (4.34)
+and
+PN,β(|N(x[k]
+i+k−xi+k)|≥k
+s
+2 +ε)≤Ce−ckδ
+. (4.35)
+Thus it remains to control the third term on the right in (4.33). Define
+G :XN∈DN↦→N(x[k]
+i+k−x[k]
+i ).
+Let QN,βbe the constrained Gibbs measure (4.1) withI :={j :d(i,j )≤k}and R :=k(1+ε′) for some
+ε′∈(0, 1) to be fixed later. We have
+sup|∇G|2≤CN2
+k ,
+for some constantC independent ofN and k. Moreover, QN,βsatisfies the assumption of Lemma 3.10
+with c1 := c0βN2
+Rs+2 , for some constantc0 > 0 depending only ons. Consequently, by Lemma 3.10, for all
+t∈R,
+0≤log EQN,β[etG]−tEQN,β[G]≤Ct2 sup|∇G|2
+N2R−(s+2)k
+≤Ct2k(1+ε′)(s+2)−2 =Ct2ks+ε′(s+2).
+Therefore, by Markov’s inequality,
+QN,β(|G−EQN,β[G]|≥k
+s
+2 +ε)≤C exp
+(
+−c
+(
+ks+2ε−(s+ε′(s+2))
+))
+=C exp
+(
+−ck2ε−ε′(s+2)
+)
+.
+(4.36)
+Next, inserting the accuracy estimate of Lemma 4.3 we find
+EQN,β[G]≤C, (4.37)
+for some constantC depending only onε,β,s. Fixε′= ε
+s+2. By (4.36) and (4.37) one finds
+QN,β(|G|≥k
+s
+2 +ε)≤Ce−ckε
+. (4.38)
+Set
+δ0 := 1−s
+2(s + 2).
+Suppose thatεis small enough, so thatε′≤δ0. Then, by Lemma 4.1 and Lemma 4.2, one has
+TV(πI#PN,β,πI#QN,β)≤k7EPN,β
+[((N(xi+k−xi))
+R
+)2
+1N(xi+k−xi)≥k1+ε′
+]
+≤Ck7
+∞∑
+n=1
+∑
+j:k1+ε′n≤j<k 1+ε′(n+1)
+(j
+R
+)2
+e−ck
+2 min(nε′,δ0
+1+nε′
+1+δ0
+)
+≤Ce−ck
+ε
+s+2
+.
+(4.39)
+Combining (4.38) and (4.39) one deduces that
+PN,β(|G|≥k
+s
+2 +ε)≤Ce−ck
+ε
+s+2
+.
+Together with (4.34) and (4.35), this proves (1.6). The proof of (1.7) follows from this and the fact that
+for eachi∈{1,...,N}, xi is uniformly distributed onT. This concludes the proof of Theorem 1. □
+
+PDF PAGE 36
+36 JEANNE BOURSIER
+4.5. Controlling close by particles.In this subsection, we prove the following bound:
+Lemma 4.5. For allα>0, there exists a constantC >0 depending onβ, s and αsuch that
+EPN,β
+[ 1
+(N(x2−x1))α
+]
+≤C.
+We begin by proving a weaker estimate.
+Lemma 4.6. Letq >1. There exists a constantC >0 depending onβ, s and q such that
+EPN,β
+[( N∑
+i=1
+1
+(N(xi+1−xi))s
+)q] 1
+q
+≤CN.
+Proof. Let q >1. By Lemma B.6, there exists a constantC >0 depending onβ, s and q such that
+EPN,β
+
+max
+
+
+
+
+
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+N−s (
+g(xi+k−xi)−g(k
+N )
+)
+
+, 0
+
+
+
+q
+
+1
+q
+≤CN.
+Next, we can write
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+(g(xi+k−xi)−g(k)) =
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+(g(xi+k−xi)−g(k))1N(xi+k−xi)<k
+2
++
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+(g(xi+k−xi)−g(k))1N(xi+k−xi)≥k
+2
+:=X1 +X2.
+Notice that there exists a constantc> 0 depending only ons such that for everyi and k,
+(g(xi+k−xi)−g(k))1N(xi+k−xi)<k
+2
+≥1
+cg(xi+k−xi)1N(xi+k−xi)<k
+2
+≥0. (4.40)
+Observe thatmax(X1 +X2, 0)≥max(X1, 0)−|X2|. Thus,
+max(X1, 0)q≤(max(X1 +X2, 0) +|X2|)q≤2q−1(max(X1 +X2, 0)q +|X2|q).
+Thus, sinceX1≥0, we get that there existsC >0 depending onβ,sand q such that
+E[max(X1, 0)q] = E[Xq
+1]≤C(Nq + E[Xq
+2]).
+By Theorem 1, there existsC >0 depending onβ,sand q such that
+EPN,β[Xq
+2]
+1
+q≤CN.
+Combining the two last displays, we deduce that there existsC >0 depending onβ,sand q such that
+E[Xq
+1]
+1
+q≤CN. (4.41)
+By (4.40), we have
+X1≥1
+c
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+g(xi+k−xi)1N(xi+k−xi)<k
+2
+≥1
+c
+N∑
+i=1
+g(xi+1−xi)1N(xi+1−xi)< 1
+2
+.
+We conclude by combining this with (4.41) that
+EPN,β
+[( N∑
+i=1
+1
+(N(xi+1−xi))s 1N(xi+1−xi)≤1
+2
+)q] 1
+q
+≤CN,
+which clearly proves the lemma. □
+Proof of Lemma 4.5.We prove the statement by induction on the parameterα. The inductive hypoth-
+esis is that there existsα≥s and a constantC >0 depending ons,βand αsuch that
+EPN,β
+[ 1
+(N(x2−x1))α
+]
+≤C. (4.42)
+The base caseα=s follows from Lemma 4.6. Assuming that (4.42) holds for someα≥s, we will show
+that (4.42) holds for someα′>α.
+
+PDF PAGE 37
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 37
+Step 1: integration by parts under the gap measure.Recall
+GapN :XN∈DN↦→(N(x2−x1),N (x3−x2),...,N (xN−xN−1),N (x1−xN)).
+Let us denoteP′
+N,β:= GapN#PN,βand set
+ΣN := GapN(DN) ={(y1,...,yN)∈(0,∞)N :y1 +···+yN =N}.
+The gap measureP′
+N,βcan be written
+dP′
+N,β= 1
+Zβ
+e−β˜H(YN)dσN(YN),
+for some ˜H : ΣN→R and where dσN is the (N−1)–dimensional surface measure onΣN.
+Let u∈C1(ΣN,T ΣN) be tangent toΣN, i.e. ∑N
+i=1ui = 0. The intrinsic divergence theorem gives
+ˆ
+ΣN
+divΣN (ue−β˜H)dσN =
+ˆ
+∂ΣN
+(ue−β˜H)·νΣN dSN,
+with νΣN the outward unit normal onΣN and dSN the surface measure on∂ΣN.
+Because H(y)→+∞as d(y,∂ΣN)→0, the factore−βH(y) decays faster than any power of the
+distance to∂ΣN. Assuming that|u|(y) grows at most liked(y,∂ΣN)−αfor someα>0, we obtain
+ˆ
+∂ΣN
+(ue−β˜H)·νΣN dSN = 0,
+so that ˆ
+ΣN
+divΣN
+(
+ue−β˜H )
+dσN = 0.
+Expanding the divergence and dividing byZβyields
+ˆ
+ΣN
+(
+divΣNu−β∇ΣN
+˜H·u
+)
+e−βHdσN = 0 = ⇒βEP′
+N,β
+[∇ΣN
+˜H·u] = EP′
+N,β
+[divΣNu].
+Since divΣNu = div(u) wheneveru is tangent (∑N
+i=1ui = 0), we arrive at
+βEP′
+N,β
+[∇˜H·u] = EP′
+N,β
+[div(u)]. (4.43)
+Step 2: construction of the tangent vector field.We claim that there existε∈(0, 1) and M >1
+depending only ons, β, andαsuch that
+P′
+N,β(yi∈(2ε,M))≥1
+2. (4.44)
+Indeed, we have EP′
+N,β
+[yi] = 1 since y1 +...+yN = N and since theyi are identically distributed.
+Therefore, by Markov’s inequality,
+P′
+N,β(yi >M )≤1
+M.
+Now, by Markov’s inequality again,
+P′
+N,β(yi < 2ε) = P′
+N,β
+( 1
+yα
+i
+> 1
+(2ε)α
+)
+≤(2ε)αEP′
+N,β
+[ 1
+yα
+1
+]
+.
+By using the induction hypothesis (4.42), we get by combining the two above displays that forε >0
+small enough and forM >1 large enough, (4.44) holds.
+We now show that there exists a smooth functionχ: [0,N ]→R with χ(x) = 1 for x∈(0,ε),
+χ(x) = 0 for x≥M,|χ|≤C with C depending only onβ,s,εand αand
+EP′
+N,β
+[ 1
+yα
+1
+χ(y1)
+]
+= 0. (4.45)
+Consider a smooth non-positive bump functionϕsuch thatϕ∈C∞(0,N ), ϕ(x) = 0 for x≤ε,−1≤
+ϕ≤0, ϕ(x) = 0 for x≥M, ϕ(x)≤−1
+2 for x∈(2ε,M−1). We then set, fort≥0, χt(x) := 1 +tϕ(x).
+We haveχt≥0, χt supported on [0,M ], χt(x) = 1 for x∈[0,ε]. We also have
+EP′
+N,β
+[ 1
+yα
+1
+χt(y1)
+]
+= 0 = ⇒t =
+EP′
+N,β
+[ 1
+yα
+1
+]
+EP′
+N,β
+[−ϕ(y1)
+yα
+1
+]
+.
+
+PDF PAGE 38
+38 JEANNE BOURSIER
+We now observe that the parametert in the above display is upper bounded by a constant depending
+only onβ,sandα. Indeed, by the induction hypothesis (4.42), there exists a constantC >0 depending
+only ons,βand αsuch that
+EP′
+N,β
+[ 1
+yα
+1
+]
+≤C.
+Moreover, sinceϕ≤0, we have
+EP′
+N,β
+[−ϕ(y1)
+yα
+1
+]
+≥EP′
+N,β
+[−ϕ(y1)
+yα
+1
+1y1∈(2ε,M−1)
+]
+≥1
+2MαP′
+N,β(y1∈(2ε,M−1)).
+By (4.44) and the above display, we deduce that there existsc> 0 depending only onαsuch that
+EP′
+N,β
+[−ϕ(y1)
+yα
+1
+]
+≥c.
+Thus, t∈(0,C ) for someC depending only onβ,sand α, as claimed. We finally setχ:= χt for this
+chosent, which satisfies the desired assumption.
+Consider u∈C1(ΣN,T ΣN) the vector field defined for everyi = 1,...,N and YN∈ΣN by
+ui(YN) =−1
+yα
+i
+χ(yi) + 1
+N
+N∑
+j=1
+1
+yα
+j
+χ(yj).
+Notice that ∑N
+i=1ui = 0 and that|u|(y) grows at most liked(y,∂ΣN)−αas d(y,∂ΣN)→0. Thus, by
+(4.43),
+βEP′
+N,β
+[∇˜H·u] = EP′
+N,β
+[div(u)]. (4.46)
+One can check that the energy in gap coordinates is given, for allYN∈ΣN, by
+˜H(YN) = 2N−s
+⌊N−1
+2 ⌋∑
+k=1
+N∑
+i=1
+g
+(yi +···+yi+k−1
+N
+)
++ 1N evenN−s
+N∑
+i=1
+g
+(yi +...+yi+N
+2−1
+N
+)
+.
+Therefore,
+∇˜H·u = 2N−(s+1)
+⌊N−1
+2 ⌋∑
+k=1
+N∑
+i=1
+g′
+(yi +···+yi+k−1
+N
+)(
+ui +···+ui+k−1
+)
++ 1{N even}N−(s+1)
+N∑
+i=1
+g′
+(yi +···+yi+N
+2−1
+N
+)(
+ui +···+ui+N
+2−1
+)
+.
+Let us decomposeu intou1 +u2 where
+u1
+i :=−1
+yα
+i
+χ(yi) for everyi = 1,...,N
+and
+u2 :=
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+χ(yj)
+
+ (e1 +...+eN),
+where we recall that(e1,...,eN) stands for the canonical basis onRN. By (4.46), we have
+βEP′
+N,β
+[∇˜H·u1] = EP′
+N,β
+[div(u)]−βEP′
+N,β
+[∇˜H·u2]. (4.47)
+Step 3: reduction to nearest neighbor gaps for EP′
+N,β
+[∇˜H·u2]. Let Y 0
+N = (1,..., 1), which
+corresponds to all gaps equal to1, i.e. to points regularly spaced. By (4.45), we have
+EP′
+N,β
+[∇˜H(Y 0
+N)·u2] =∇˜H(Y 0
+N)·(e1 +···+eN)E
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+χ(yj)
+
+ = 0.
+Thus,
+EP′
+N,β
+[∇˜H(YN)·u2] = EP′
+N,β
+[(∇˜H(YN)−∇˜H(Y 0
+N))·u2].
+
+PDF PAGE 39
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 39
+By Taylor expansion, there exists a constantC >0 depending ons such that
+N−(s+1)
+⏐⏐⏐g′
+(yi +...+yi+k−1
+N
+)
+−g′
+(k
+N
+)⏐⏐⏐
+≤C
+( 1
+ks+2|yi +...+yi+k−1−k|+ 1
+(yi +...+yi+k−1)s+1 1yi+...+yi+k−1≤k
+2
+)
+≤C
+( 1
+ks+2|yi +...+yi+k−1−k|+ 1
+ys+1
+i
+1yi+...+yi+k−1≤k
+2
+)
+.
+Therefore, there exists a constantC >0 depending ons such that
+|(∇˜H(YN)−∇˜H(Y 0
+N))·u2|≤C
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+
+
+×
+
+
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+1
+ks+1|yi +...+yi+k−1−k|+
+N∑
+i=1
+1
+ys+1
+i
+
+
+⌊N
+2⌋∑
+k=1
+k1yi+...+yi+k−1≤k
+2
+
+
+
+. (4.48)
+Let p,q >1 such that 1
+p + 1
+q = 1 with q large to be selected at the end of the proof below. By Hölder’s
+inequality,
+EP′
+N,β
+
+
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+
+|yi +···+yi+k−1−k|
+
+≤EP′
+N,β
+
+
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+
+
+p
+
+1
+p
+EP′
+N,β
+[|yi+···+yi+k−1−k|q]
+1
+q.
+By Theorem 1, there exists a constantC >0 depending onβ,sand p such that
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+1
+ks+1 EP′
+N,β
+[|yi +···+yi+k−1−k|q]
+1
+q≤CN. (4.49)
+Let us now turn to the second term in the right-hand side of (4.48). By Hölder’s inequality again, for
+everyi∈{1,...,N},
+⌊N
+2⌋∑
+k=1
+EP′
+N,β
+
+
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+
+ 1
+y1+s
+i
+k1yi+···+yi+k−1≤k
+2
+
+
+≤EP′
+N,β
+
+
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+
+
+p
+1
+y(1+s)p
+i
+
+
+1
+p⌊N
+2⌋∑
+k=1
+kP′
+N,β
+(
+yi +···+yi+k−1≤k
+2
+)1
+q
+Thus, by Theorem 1, there exists a constantC >0 depending onβ,s,αand p such that
+⌊N
+2⌋∑
+k=1
+EP′
+N,β
+
+
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+
+ 1
+y1+s
+i
+k1yi+···+yi+k≤k
+2
+
+≤CEP′
+N,β
+
+
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+
+
+p
+1
+y(1+s)p
+i
+
+
+1
+p
+. (4.50)
+We conclude by assembling (4.48), (4.49) and (4.50): there exists a constantC >0 depending onβ,s,α
+and p such that
+|EP′
+N,β
+[∇˜H(YN)·u2]|≤C
+
+
+N∑
+i=1
+EP′
+N,β
+
+
+
+ 1
+N
+N∑
+j=1
+1
+yα
+j
+
+
+p (
+1 + 1
+y(1+s)p
+i
+)
+
+1
+p
+
+. (4.51)
+Step 4: rearrangement inequality and control onEP′
+N,β
+[∇H·u2]. Since α≥s, we get from a
+convexity argument that
+(
+1
+N
+N∑
+i=1
+1
+yα
+i
+) (
+1
+N
+N∑
+i=1
+1
+y1+s
+i
+)
+≤
+(
+1
+N
+N∑
+i=1
+1
+ys
+i
+) (
+1
+N
+N∑
+i=1
+1
+y1+α
+i
+)
+. (4.52)
+
+PDF PAGE 40
+40 JEANNE BOURSIER
+Indeed, let us define
+M(γ) := 1
+N
+N∑
+i=1
+1
+yγ
+i
+.
+It is well known thatγ↦→logM(γ) is convex on(0,∞). Observe that the intervals[α,s] and [1+s, 1+α]
+have the same length. SincelogM is convex, the slope is non-decreasing and therefore
+logM(s)−logM(α)
+α−s ≤logM(1 +s)−logM(1 +α)
+α−s .
+It follows that
+M(α)
+M(s)≤M(1 +α)
+M(1 +s),
+which is the desired inequality (4.52).
+By Hölder’s inequality,
+EP′
+N,β
+[(
+1
+N
+N∑
+i=1
+1
+ys
+i
+)p (
+1
+N
+N∑
+i=1
+1
+y1+α
+i
+)p] 1
+p
+≤EP′
+N,β
+[(
+1
+N
+N∑
+i=1
+1
+ys
+i
+)pq] 1
+pq
+EP′
+N,β
+
+
+(
+1
+N
+N∑
+i=1
+1
+y1+α
+i
+)p2
+
+1
+p2
+.
+On the one hand, by the estimate of Lemma 4.6, there exists a constantC >0 depending onβ,s,αand
+p such that
+EP′
+N,β
+[(
+1
+N
+N∑
+i=1
+1
+ys
+i
+)pq] 1
+pq
+≤C.
+On the other hand, by the convexity ofx∈(0,∞)↦→xp2
+(since p> 1), we have
+(
+1
+N
+N∑
+i=1
+1
+y1+α
+i
+)p2
+≤1
+N
+N∑
+i=1
+1
+y(1+α)p2
+i
+.
+Thus,
+EP′
+N,β
+[(
+1
+N
+N∑
+i=1
+1
+ys
+i
+)p (
+1
+N
+N∑
+i=1
+1
+y1+α
+i
+)p] 1
+p
+≤CE
+[
+1
+N
+N∑
+i=1
+1
+y(1+α)p2
+i
+] 1
+p2
+.
+Combining this with (4.51) and (4.52), we conclude that there exists a constantC >0 depending on
+β,s,αand p such that
+|EP′
+N,β
+[∇˜H(YN)·u2]|≤CE
+[
+1
+N
+N∑
+i=1
+1
+y(1+α)p2
+i
+] 1
+p2
+. (4.53)
+Hence, by (4.47), there exists a constantC >0 depending onβ,s,αand p such that
+β|EP′
+N,β
+[∇˜H·∇u2]|≤CN EP′
+N,β
+[
+1
+N
+N∑
+i=1
+1
+y(1+α)p2
+i
+] 1
+p2
++ EP′
+N,β
+[div(u)]. (4.54)
+Step 5: positivity argument forEP′
+N,β
+[∇˜H·∇u1]. Recall thatg′≤0 on (0, N
+2 ] andg′≥0 on [N
+2,N ).
+Moreover,
+∇˜H·u1 = 2N−(s+1)
+⌊N−1
+2 ⌋∑
+k=2
+N∑
+i=1
+g′
+(yi +···+yi+k−1
+N
+)(
+u1
+i +···+u1
+i+k−1
+)
++ 1{N even}N−(s+1)
+N∑
+i=1
+g′
+(yi +···+yi+N
+2−1
+N
+)(
+u1
+i +···+u1
+i+N
+2−1
+)
+.
+
+PDF PAGE 41
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 41
+Recall thatu1
+i =−1
+yα
+i
+≤0. One can write
+∇˜H·u1≥2N−(s+1)
+N∑
+i=1
+g′
+(yi
+N
+)(
+−1
+yα
+i
+)
++ 2N−(s+1)
+⌊N−1
+2 ⌋∑
+k=1
+N∑
+i=1
+g′
+(yi +···+yi+k−1
+N
+)(
+u1
+i +···+u1
+i+k−1
+)
+1yi+...+yi+k−1≥N
+2
++ 1{N even}N−(s+1)
+N∑
+i=1
+g′
+(yi +···+yi+N
+2−1
+N
+)(
+u1
+i +···+u1
+i+N
+2−1
+)
+1yi+...+yi+N
+2−1≥N
+2
+.
+By the rigidity estimate of Theorem 1, we therefore get that there exists a constantc> 0 depending on
+s and a constantC >0 depending onβ,αand s such that
+EP′
+N,β
+[∇˜H·u1]≥c
+N∑
+i=1
+EP′
+N,β
+[ 1
+y1+s+α
+i
+]
+−CN. (4.55)
+Assembling (4.54) and (4.54) therefore gives
+N∑
+i=1
+EP′
+N,β
+[ 1
+y1+s+α
+i
+]
+≤CN EP′
+N,β
+[
+1
+N
+N∑
+i=1
+1
+y(1+α)p2
+i
+] 1
+p2
++ EP′
+N,β
+[div(u)] +CN,
+for some constantC >0 depending onβ,s,αand p. Notice that there existsC >0 depending only on
+αsuch that
+|div(u)|≤C
+N∑
+i=1
+1
+y1+α
+i
+.
+Thus, combining the two last displays, we obtain
+β
+N∑
+i=1
+EP′
+N,β
+[ 1
+y1+s+α
+i
+]
+≤CN +CN EP′
+N,β
+[
+1
+N
+N∑
+i=1
+1
+y(1+α)p2
+i
+] 1
+p2
+≤CN +CN EP′
+N,β
+[
+1
+N
+N∑
+i=1
+1
+y(1+α)p2
+i
+]
+.
+(4.56)
+for some constantC >0 depending onβ,s,αand p.
+Step 6: conclusion.By takingp> 1 small enough so that(1 +α)p2 < 1 +s +α, we deduce that from
+(4.56) that there exists a constantC >0 depending onβ,s,αsuch that
+EP′
+N,β
+[ N∑
+i=1
+1
+y1+α
+i
+]
+≤EP′
+N,β
+[ N∑
+i=1
+1
+y(1+α)p2
+i
+]
+≤CN.
+Hence, since theyi are identically distributed,
+EP′
+N,β
+[ 1
+y1+α
+1
+]
+≤C,
+which shows that (4.42) holds forα′:= 1 +α.
+Since (4.42) holds forα=s, we conclude by induction that it holds for everyα>0, which concludes
+the proof of the lemma. □
+5. Optimal rigidity for singular linear statistics
+In this section, we prove the optimal variance estimate stated in Theorem 2. This will give the
+optimal scaling of the fluctuations of gaps and discrepancies.
+
+PDF PAGE 42
+42 JEANNE BOURSIER
+5.1. Regularization estimates. In this subsection, we record various regularization estimates that
+will be used later in the proof.
+Let K∈C∞(T) be an even, non-negative mollifier with
+´
+TK(x) = 1 and K supported on (−1
+2, 1
+2).
+For allℓ∈(0, 1) define
+Kℓ:=ℓ−1K(ℓ−1·). (5.1)
+Lemma 5.1. Supposeξ∈H
+1−s
+2 +δ(T) for someδ >0. Then, there exists a constantC >0 depending
+on K such that
+∥ξ−ξ∗Kℓ∥2
+H
+1−s
+2 (T)
+≤Cℓ2 min(δ,1
+2 )∥ξ∥2
+H min(δ,1
+2 )(T)
+. (5.2)
+Letϕ∈L2(T)∩C1(T\{0}) be such that for allx∈T\{0},
+|ϕ′(x)|≤1
+|x|1+γ, (5.3)
+for someγ∈[0, 1). Then, there exists a constantC >0 depending onK and γsuch that for allx∈T,
+|(ϕ∗Kℓ)′|(x)≤ C
+min(|x|,ℓ)1+γ. (5.4)
+Proof. We prove the (5.2) with Fourier series. One can suppose without loss of generality thatδ≤1
+2.
+First, by the Parseval identity,
+∥ξ−ξ∗Kℓ∥2
+H
+1−s
+2 (T)
+=
+∑
+k∈Z
+|ˆξ(k)|2|k|1−s|1−ˆK(ℓk)|2
+=
+∑
+k∈Z:|k|≤ℓ−1
+|ˆξ(k)|2|k|1−s|1−ˆK(ℓk)|2 +
+∑
+k∈Z:|k|>ℓ−1
+|ˆξ|2(k)|k|1−s|1−ˆK(ℓk)|2.
+Since K is smooth, there exists a constantC >0 such that
+|1−ˆK(t)|≤C|t|for every|t|≤1.
+Moreover, for everyn≥1, there existsCn > 0 such that
+|ˆK(t)|≤Cn
+|t|n for every|t|> 1.
+Hence, for low frequencies,
+∑
+k∈Z:|k|≤ℓ−1
+|ˆξ(k)|2|k|1−s|1−ˆK(ℓk)|2≤C
+∑
+k∈Z:|k|≤ℓ−1
+|ˆξ(k)|2|k|1−s|k|ℓ.
+Since by assumptionξ∈H
+1−s
+2 +δ(T) with δ≤1
+2, we have
+∑
+k∈Z:|k|≤ℓ−1
+|ˆξ(k)|2|k|1−s|1−ˆK(ℓk)|2≤C
+∑
+k∈Z
+|ˆξ(k)|2|kℓ|1−s+2δ=Cℓ2δ∥ξ∥2
+H
+1−s
+2 +δ(T)
+.
+On the other hand, for high frequencies, there exists a constantC >0 depending onK such that
+∑
+k∈Z:|k|>ℓ−1
+|ˆξ(k)|2|k|1−s|1−ˆK(ℓk)|2≤C
+∑
+k∈Z:|k|>ℓ−1
+|ˆξ(k)|2|k|1−s
+≤Cℓδ ∑
+k∈Z:|k|>ℓ−1
+|ˆξ(k)|2|k|1−s+2δ≤Cℓ2δ∥ξ∥2
+H
+1−s
+2 +δ(T)
+.
+Combining the two above displays proves (5.2).
+Let us now prove (5.4). Let r :=|x|and recall suppKℓ⊂[−ℓ,ℓ]. Suppose that r≥2ℓ. Then
+|x−y|≥r
+2. Recall
+(ϕ∗Kℓ)′(x) =
+ˆ ℓ
+−ℓ
+ϕ′(x−y)Kℓ(y)dy.
+Using|ϕ′(z)|≤|z|−1−γ, we therefore get
+|(ϕ′∗Kℓ)(x)|≤C 1
+r1+γ.
+
+PDF PAGE 43
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 43
+Suppose now thatr≤2ℓ. Recall
+(ϕ∗Kℓ)′(x) =−
+ˆ
+T
+ϕ(y)∂yKℓ(x−y) dy.
+Integrating by parts gives
+|∂yKℓ(x−y)|≤Cℓ−21|x−y|≤ℓ.
+Since|ϕ(y)|≤C|y|−γ, we have
+|(ϕ∗K′
+ℓ)(x)|≤Cℓ−2
+ˆ
+|x−y|≤ℓ
+|ϕ(y)|dy≤Cℓ−2ℓ1−γ=C 1
+ℓ1+γ.
+Both bounds combine to
+|(ϕ∗K′
+ℓ)(x)|≤C
+(|x|+ℓ)1+γ= C
+min(|x|,ℓ)1+γ,
+as desired. □
+5.2. A priori estimate on the fluctuations.In the following lemma, we prove a near-optimal vari-
+ance estimate for linear statistics with smooth butN-dependent test-functions that are regularized at
+the microscopic scale. Our proof is based on the comparison principle of Lemma 3.6 and on the gaps
+fluctuation estimate of Theorem 1.
+Lemma 5.2. Letξ∈L2(ℓ−1
+N T) and ℓN∈(0, 1]. Suppose thatξis supported on(−1
+2, 1
+2) if ℓN̸= 1. Let
+α∈R. Suppose that
+|ξ′(x)|≤ 1
+max(|x|, 1
+NℓN
+)|1+α1|x|≤2 + 1
+|x|3−s 1|x|≥2.
+Then, for allε>0, there existsC >0 depending onβ, s, αand εsuch that
+VarPN,β
+[ N∑
+i=1
+ξ(ℓ−1
+N (xi−x1))
+]
+≤C(NℓN)ε(NℓN)max(2α,s) (5.5)
+and
+VarPN,β
+[ N∑
+i=1
+ξ(ℓ−1
+N xi)
+]
+≤C(NℓN)ε(NℓN)max(2α,s). (5.6)
+Proof. We work with the push-forward ofPN,βby the mapAnchN defined in (3.16). Fixγ≥1 and let
+tγ:= min
+(
+(NℓN)γ
+N , 1
+2
+)
+and
+Iγ:={i∈{1,...,N}:d(i, 1)≤Ntγ}.
+Define
+FN :=
+∑
+i∈Iγ
+ξ(ℓ−1
+N (xi−x1)).
+Step 1: reduction to a good event.Let ε>0. We letχ1,2 : R+→R be given for allx∈R+ by
+χ1,2(x) =
+
+
+
+1, 0≤x≤1,
+2−x, 1<x< 2,
+0, x ≥2.
+Define the cutoff function
+ηε,γ:=
+∏
+i∈Iγ
+∏
+−N
+2≤k≤N
+2 :i+k∈Iγ
+χ1,2
+(
+2N|(xi+k−xi)−k|
+|k|
+s
+2 (NℓN)ε
+) ∏
+i∈Iγ:i+1∈Iγ
+χ1,2
+( 1
+N(xi+1−xi)(NℓN)ε
+)
+. (5.7)
+First, by sub-additivity
+VarPN,β[FN]≤2VarPN,β[ηε,γFN] + 2VarPN,β[(1−ηε,γ)FN].
+By Theorem 1 and Lemma 4.5, there exists a constantC >0 depending onβ, s, αand γsuch that
+VarPN,β[(1−ηε,γ)FN]≤ C
+(NℓN)10. (5.8)
+
+PDF PAGE 44
+44 JEANNE BOURSIER
+Step 2: convexification. As in Section 4, we convexify the measure PN,βthrough a penalty for
+configurations with unusually large nearest-neighbor gaps in the windowIγ.
+Let θ: R+→R+ be a smooth cutoff function such thatθ(x) =|x|2 for x> 2, θ(x) = 0 for x∈[0, 1]
+and θ′′≥0 on R+. Let
+F :=
+∑
+i∈Iγ:i+1∈Iγ
+θ
+(N(xi+1−xi)
+(NℓN)ε
+)
+and QN,βbe the locally constrained measure
+dQN,β(XN) = 1
+KN,β
+e−β(HN+F)(XN)1DN (XN)dXN. (5.9)
+Observe that underPN,β(resp. QN,β),x1 is independent ofGapN(XN) and is distributed according to
+the Lebesgue measure onT. Therefore, arguing as in Lemma 4.1,
+Ent(PN,β|QN,β) = Ent(GapN#PN,β|GapN#QN,β).
+By Lemma 4.1 and Theorem 1, there exists a constantδ >0 depending onβ,s,εand γsuch that
+Ent(GapN#PN,β|GapN#QN,β)≤e−(NℓN)δ
+.
+Combining the two above displays, we deduce that there exists a constantδ >0 depending onβ,s,ε
+and γsuch that
+Ent(PN,β|QN,β)≤e−(NℓN)δ
+.
+Thus, by the Pinsker inequality (4.3), there exists a constantδ >0 depending onβ,s,εandγsuch that
+TV(PN,β, QN,β)≤e−(NℓN)δ
+. (5.10)
+Observe that on the support ofηε,γ, there exists a constantκ>0 depending onαsuch that
+|FN|≤(NℓN)κ.
+Therefore, by (5.10), there existsδ >0 depending onβ,s, α, εand γsuch that
+⏐⏐⏐VarPN,β[ηε,γFN]−VarQN,β[ηε,γFN]
+⏐⏐⏐≤e−(NℓN)δ
+. (5.11)
+Let F∗
+N be such thatFN = F∗
+N◦AnchN and η∗
+ε,γbe such thatηε,γ= η∗
+ε,γ◦AnchN. We let P∗
+N,β:=
+AnchN#PN,βand Q∗
+N,β:= AnchN#QN,β. Clearly,
+VarQN,β[ηε,γFN] = VarQ∗
+N,β
+[η∗
+ε,γF∗
+N].
+Our goal is now to estimate the variance ofη∗
+ε,γF∗
+N under Q∗
+N,β.
+Set A1 :=A
+Q∗
+N,β
+1 . By sub-additivity,
+VarQ∗
+N,β
+[η∗
+ε,γF∗
+N]≤2EQ∗
+N,β
+[η∗
+ε,γ∇F∗
+N·A−1
+1 (η∗
+ε,γ∇F∗
+N)] + 2EQ∗
+N,β
+[F∗
+N∇η∗
+ε,γ·A−1
+1 (F∗
+N∇η∗
+ε,γ)]. (5.12)
+Step 3: estimating theA−1
+1 -energy ofF∗
+N∇η∗
+ε,γ. LetH∗
+N and F∗be such thatHN =H∗
+N◦AnchN
+and F = F∗◦AnchN. By Proposition 3.2,
+EQ∗
+N,β
+[F∗
+N∇η∗
+ε,γ·A−1
+1 (F∗
+N∇η∗
+ε,γ)]
+≤−min
+ϕ∈H 1(Q∗
+N,β)
+EQ∗
+N,β
+[∥∇2ϕ∥2
+F +β∇ϕ·∇2(H∗
+N + F∗)∇ϕ−∇ϕ·(F∗
+N∇η∗
+ε,γ)].
+Proceeding as in the proof of Lemma 3.7, we get
+EQ∗
+N,β
+[F∗
+N∇η∗
+ε,γ·A−1
+1 (F∗
+Nη∇∗
+ε)]
+≤−β−1EQ∗
+N,β
+[
+min
+UN−1∈RN−1
+UN−1·∇2(H∗
+N + F∗)UN−1−2(F∗
+N∇η∗
+ε,γ)·UN−1
+]
+.
+Moreover, by the definition ofF, for allUN−1 = (u2,...,uN)∈RN−1, there exists a constantC >0
+depending ons such that
+UN−1·∇2(H∗
+N + F∗)UN−1≥1
+C (NℓN)−(s+2)ε∑
+i∈Iγ
+(N(ui+1−ui))2,
+where we setu1 = 0. Let Gap∗
+N be such thatGapN = Gap∗
+N◦AnchN.
+
+PDF PAGE 45
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 45
+Observe thatη∗
+ε,γis a function of the gaps: it can be writtenη∗
+ε,γ= ˜ηε◦Gap∗
+N for some smooth
+function ˜ηε: RN→R. Therefore,
+EQ∗
+N,β
+[F∗
+N∇η∗
+ε,γ·A−1
+1 (F∗
+N∇η∗
+ε,γ)]≤(NℓN)κεEQ∗
+N,β
+[(F∗
+N)2|∇˜ηε|2◦Gap∗
+N]. (5.13)
+Notice that on the support ofη∗
+ε,γ, there exists a constantκ >0 depending on αsuch that|F∗
+N|≤
+(NℓN)κ. Thus, using Theorem 1, Lemma 4.5 and (5.11), we deduce from the above display that there
+exists C >0 depending onβ, s and αsuch that
+EQ∗
+N,β
+[F∗
+N∇η∗
+ε,γ·A−1
+1 (F∗
+N∇η∗
+ε,γ)]≤ C
+(NℓN)10. (5.14)
+Step 4: estimating theA−1
+1 -energy ofη∗
+ε,γ∇F∗. By the assumption onξ, there exists a constant
+C >0 such that for everyi∈Iγ,
+η∗
+ε,γ|∂iF∗
+N|≤Cη∗
+ε,γℓ−1
+N
+(
+1
+|max(ℓ−1
+N xi, 1
+NℓN
+)|1+α1|ℓ−1
+N xi|≤2 + 1
+|ℓ−1
+N xi|3−s 1|ℓ−1
+N xi|≥2
+)
+=Cη∗
+ε,γN
+( (NℓN)α
+|max(Nxi, 1)|1+α1|ℓ−1
+N xi|≤2 + (NℓN)3−s
+|Nxi|2−s 1|ℓ−1
+N xi|≥2
+)
+.
+Therefore, by the definition ofηε,γ, there existsκ>0 such that for everyi∈Iγ,
+η∗
+ε,γ∂iF∗
+N≤C(NℓN)κεη∗
+ε,γN
+( (NℓN)α
+1 +d(i, 1)1+α1d(i,1)≤(NℓN)1+ε+ (NℓN)2−s
+1 +d(i, 1)3−s 1d(i,1)≥(NℓN)1−ε
+)
+. (5.15)
+Set
+G∗
+N := (NℓN)α∑
+i∈Iγ
+Nxi
+1 +d(i, 1)1+α1d(i,1)≤(NℓN)1+ε+ (NℓN)2−s ∑
+i∈Iγ
+Nxi
+1 +d(i, 1)3−s 1d(i,1)≥(NℓN)1−ε.
+By (5.15),
+η∗
+ε,γ|∇F∗
+N|≤C(NℓN)κεη∗
+ε,γ∇G∗
+N,
+where the above inequality is understood coordinate-wise. Thus, applying Lemma 3.6, we get
+EQ∗
+N,β
+[η∗
+ε,γ∇F∗
+N·A−1
+1 (η∗
+ε,γ∇F∗
+N)]≤(NℓN)2κεEQ∗
+N,β
+[η∗
+ε,γ∇G∗
+N·A−1
+1 (η∗
+ε,γ∇G∗
+N)]. (5.16)
+By sub-additivity,
+EQ∗
+N,β
+[η∗
+ε,γ∇G∗
+N·A−1
+1 (η∗
+ε,γ∇G∗
+N)]≤2VarQ∗
+N,β
+[η∗
+ε,γG∗
+N] + 2EQ∗
+N,β
+[η∗
+ε,γ∇G∗
+N·A−1
+1 (η∗
+ε,γ∇G∗
+N)]. (5.17)
+Proceeding as in (5.14), we get that there existsC >0 depending onβ, s and αsuch that
+EQ∗
+N,β
+[η∗
+ε,γ∇G∗
+N·A−1
+1 (η∗
+ε,γ∇G∗
+N)]≤ C
+(NℓN)10. (5.18)
+Now, by the definition ofηε,γ, there existsκ>0 depending onαsuch that
+|η∗
+ε,γG∗
+N|≤(NℓN)κε+α∑
+i∈Iγ
+1
+1 +d(i, 1)1+α−s
+2
+.
+Therefore, there existC >0 and κ>0 depending onαsuch that
+|η∗
+ε,γG∗
+N|≤C(NℓN)κε
+
+ ∑
+i∈Iγ
+(NℓN)α
+1 +d(i, 1)1+α−s
+2
+1d(i,1)≤(NℓN)1+ε+
+∑
+i∈Iγ
+(NℓN)2−s
+1 +d(i, 1)3−3s
+2
+1d(i,1)≥(NℓN)1−ε
+
+
+≤C(NℓN)κε(NℓN)max(2α,s).
+Thus, there existsκ>0 such that
+VarQ∗
+N,β
+[η∗
+ε,γG∗
+N]≤C(NℓN)κε(NℓN)max(2α,s). (5.19)
+Combining (5.16), (5.17), (5.18) and (5.19), we conclude that there existC >0 and κ >0 depending
+on β,sand αsuch that
+EQ∗
+N,β
+[η∗
+ε,γ∇F∗
+N·A−1
+1 (η∗
+ε,γ∇F∗
+N)]≤C(NℓN)κε(NℓN)max(2α,s). (5.20)
+
+PDF PAGE 46
+46 JEANNE BOURSIER
+Step 5: proof of (5.5). Putting (5.12), (5.14) and (5.20) together, we get that for allε >0, there
+exists C >0 depending onβ,s,αand εsuch that
+VarQN,β[ηε,γFN] = VarQ∗
+N,β
+[η∗
+ε,γF∗
+N]≤C(NℓN)ε(NℓN)max(2α,s). (5.21)
+Combining this with (5.8) and (5.11) gives
+VarPN,β[FN]≤C(NℓN)ε(NℓN)max(2α,s).
+On the other hand, using Theorem 1 and Lemma 4.5, we get that forγlarge enough, there existsC >0
+depending onβ, s, γand αsuch that
+VarPN,β
+
+∑
+i/∈Iγ
+ξ(ℓ−1
+N (xi−x1))
+
+≤C.
+Combining the two above displays gives (5.5).
+Step 6: proof of(5.6). Fix an indexi0∈{1,...,N}. One can check that
+N∑
+i=1
+ξ(ℓ−1
+N xi)−
+N∑
+i=1
+ξ(ℓ−1
+N (xi−x1)) =
+( N∑
+i=1
+ξ(ℓ−1
+N (xi0−1+i))−
+N∑
+i=1
+ξ(ℓ−1
+N (xi0−1+i−xi0))
+)
++
+( N∑
+i=1
+ξ(ℓ−1
+N (xi0−1+i−xi0))−
+N∑
+i=1
+ξ(ℓ−1
+N (xi−x1))
+)
+.
+We can notice that
+N∑
+i=1
+ξ(ℓ−1
+N (xi0−1+i−xi0))−
+N∑
+i=1
+ξ(ℓ−1
+N (xi−x1)) = 0.
+Hence, by Taylor expansion,
+⏐⏐⏐⏐⏐
+N∑
+i=1
+ξ(ℓ−1
+N xi)−
+N∑
+i=1
+ξ(ℓ−1
+N (xi−x1))
+⏐⏐⏐⏐⏐≤ℓ−1
+N|xi0−1|
+N∑
+i=1
+(
+max
+t∈[xi0−1+i−xi0,xi0−1+i]
+|ξ′(ℓ−1
+N t)|
+)
+.
+By the assumption onξ,
+⏐⏐⏐⏐⏐
+N∑
+i=1
+ξ(ℓ−1
+N xi)−
+N∑
+i=1
+ξ(ℓ−1
+N (xi−x1))
+⏐⏐⏐⏐⏐
+≤ℓ−1
+N|xi0−1|
+N∑
+i=1
+|ℓ−1
+N max(xi0−1+i−xi0, 1
+N )|−1−α1|ℓ−1
+N xi0−1+i|≤2
++ℓ−1
+N|xi0−1|
+N∑
+i=1
+|ℓ−1
+N (xi0−1+i−xi0)|−(3−s)1|ℓ−1
+N xi0−1+i|≥2.
+We then takei0 to be the index in{1,...,N}such thatxi is closest to0. By using the local law of
+Theorem 1, we deduce that for allε>0, there existsC >0 depending onβ, s, αand εsuch that
+EPN,β
+
+
+( N∑
+i=1
+ξ(ℓ−1
+N xi)−
+N∑
+i=1
+ξ(ℓ−1
+N (xi−x1))
+)2
+≤C(NℓN)ε((NℓN)max(2α,0) + 1). (5.22)
+Assembling this with (5.5) proves the estimate (5.6). □
+5.3. Reduction to a smooth test function.In the following lemma, we consider a singular test
+functionξand control the fluctuations ofξ−ξreg, whereξreg is a mollification ofξat microscopic scale.
+Lemma 5.3. Let ξ∈L2(ℓ−1
+N T) and ℓN∈(0, 1]. Assume either thatℓN = 1 or thatξis supported on
+(−1
+2, 1
+2). Letα∈[0, s
+2). Suppose that for allx∈ℓ−1
+N T,
+|ξ′(x)|≤1
+|x|1+α.
+
+PDF PAGE 47
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 47
+LethN := (NℓN)−1 andξreg :=ξ∗KhN, whereKℓis as in(5.1). Then, for allε>0, there existsC >0
+depending onβ,sand εsuch that
+VarPN,β[FluctN[(ξ−ξreg)(ℓ−1
+N·)]]≤C(NℓN)ε+2α.
+Proof. Letηbe a smooth cutoff function supported on[−2
+NℓN
+, 2
+NℓN
+] and taking values inR+. We have
+VarPN,β[FluctN[(ξ−ξreg)(ℓ−1
+N·)]]≤3VarPN,β[FluctN[(1−η)(ξ−ξreg)(ℓ−1
+N·)]]
++ 3VarPN,β[FluctN[(ηξ)(ℓ−1
+N·)]] + 3VarPN,β[FluctN[(ηξreg)(ℓ−1
+N·)]]. (5.23)
+We first estimate the variance ofFluctN[(ξη)(ℓ−1
+N·)]. We have
+VarPN,β[FluctN[(ξη)(ℓ−1
+N·)]]≤EPN,β
+
+
+( N∑
+i=1
+|ξ|(ℓ−1
+N xi)η(ℓ−1
+N xi)
+)2
+
+≤CEPN,β
+
+
+( N∑
+i=1
+1
+|ℓ−1
+N xi|α1|xi|≤2
+ℓN
+N
+)2
+.
+Leti−
+0 (resp. i+
+0 ) be the indexi of the pointxi≤0 (resp. xi≥0) closest to0. Leti0∈{i−
+0,i +
+0}be the
+index i of the pointxi closest to 0.
+For everyi∈{1,...,N}, we have|xi|≥min(|xi−xi−
+0
+|,|xi−xi+
+0
+|). Therefore,
+N∑
+i=1
+1
+|ℓ−1
+N xi|α1|xi|≤2
+N
+≤ 2
+|ℓ−1
+N xi0|α1|xi0|≤2
+N
++
+∑
+i̸=i−
+0
+1
+|ℓ−1
+N (xi−xi−
+0
+)|α1|xi−xi−
+0
+|≤2
+N
++
+∑
+i̸=i+
+0
+1
+|ℓ−1
+N (xi−xi+
+0
+)|α1|xi−xi+
+0
+|≤2
+N
+.
+Therefore, since (xi−xi−
+0
+)i and (xi−xi+
+0
+)i are identically distributed,
+VarPN,β[FluctN[(ξη)(ℓ−1
+N )]]≤CEPN,β
+
+
+(
+1
+|ℓ−1
+N xi+
+0
+|α1|xi0|≤2
+N
+)2
+
++CEPN,β
+
+
+
+ ∑
+i̸=i+
+0
+1
+|ℓ−1
+N (xi−xi+
+0
+)|α1|xi−xi+
+0
+|≤2
+N
+
+
+2
+. (5.24)
+First, by a union bound,
+PN,β(xi+
+0
+≤x
+N )≤N PN,β(x1∈[0, x
+N ]) =x.
+Hence, we get that there existsC >0 such that
+EPN,β
+
+
+(
+1
+|ℓ−1
+N xi+
+0
+|α1|x+
+i0|≤2
+N
+)2
+≤ℓ2α
+N
+ˆ 2
+0
+PN,β(|Nxi+
+0
+|−α≥t)dt
+≤(NℓN)2α
+ˆ 2
+0
+t−1
+αdt
+≤C(NℓN)2α.
+(5.25)
+For the second term in (5.24), by the Cauchy-Schwarz inequality,
+
+ ∑
+i̸=i+
+0
+1
+|ℓ−1
+N (xi−xi+
+0
+)|α1|xi−xi+
+0
+|≤2
+N
+
+
+2
+≤C
+∑
+i̸=i+
+0
+1 +d(i,i +
+0 )2
+|ℓ−1
+N (xi−xi+
+0
+)|2α1|xi−xi+
+0
+|≤2
+N
+.
+
+PDF PAGE 48
+48 JEANNE BOURSIER
+Moreover, since(xi−xi+
+0
+)i̸=i+
+0
+is independent fromi0 and since thexi are undistinguishable,
+EPN,β
+
+
+
+ ∑
+i̸=i+
+0
+1
+|ℓ−1
+N (xi−xi+
+0
+)|α1|xi−xi+
+0
+|≤2
+ℓN
+N
+
+
+2
+ = EPN,β
+
+
+
+∑
+i̸=1
+1
+|ℓ−1
+N (xi−x1)|α1|xi−x1|≤2
+ℓN
+N
+
+
+2
+.
+Thus,
+EPN,β
+
+
+
+ ∑
+i̸=i+
+0
+1
+|ℓ−1
+N (xi−xi+
+0
+)|α1|xi−xi+
+0
+|≤2
+ℓN
+N
+
+
+2
+
+≤
+N∑
+i=2
+(1 +d(i, 1)2)EPN,β
+[ 1
+|ℓ−1
+N (xi−x1)|4α
+] 1
+2
+PN,β(N(xi−x1)≤2ℓN
+N ).
+Using Theorem 1 and Lemma 4.5, we conclude that
+EPN,β
+
+
+
+ ∑
+i̸=i+
+0
+1
+|ℓ−1
+N (xi−xi+
+0
+)|α1|xi−xi+
+0
+|≤2
+N
+
+
+2
+≤C(NℓN)2α.
+Inserting this into (5.24) and using (5.25), we get that there existsC >0 depending onβ,s andαsuch
+that
+VarPN,β[FluctN[(ξη)(ℓ−1
+N·)]]≤C(NℓN)2α. (5.26)
+Similarly, we can show that there existsC >0 depending onβ, s and αsuch that
+VarPN,β[FluctN[(ξregη)(ℓ−1
+N·)]]≤C(NℓN)2α. (5.27)
+By (5.23), it therefore remains to controlFluctN[(1−η)(ξ−ξreg)(ℓ−1
+N·)]. By (5.4), we have
+|(ξ−ξreg)′|≤C
+NℓN
+1
+|max(x, 1
+NℓN
+)|2+α1|x|≤2.
+Therefore, by Lemma 5.2, we have
+VarPN,β[FluctN[(ηξreg)(ℓ−1
+N·)]]≤C(NℓN)κε 1
+(NℓN)2 ((NℓN)s + (NℓN)2+2α)≤C(NℓN)κε+2α. (5.28)
+Combining (5.23), (5.26), (5.27) and (5.28), this concludes the proof of the lemma. □
+5.4. Mean-field transport. We first introduce the transportation argument of [Joh98,Shc13], which
+serves as the starting point for numerous CLTs onβ-ensembles and Coulomb gases, including those
+in [LS18,BLS+18,Leb18,Ser20]. Given a linear statisticF, the method involves constructing a mean-
+field approximation of the solution∇Φ of the equation
+−∆Φ + β∇HN·∇Φ = F−EPN,β[F]
+and then using this approximation to derive an expansion for the variance ofF. This mean-field
+transport creates a non-local error term, sometimes called the “loop equation term”, which is defined
+for all measurable mapsψ:ℓ−1
+N T→R by
+LoopℓN [ψ] :=
+¨
+Diagc
+T2
+NℓN(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))N−(1+s)g′(x−y)dfluctN(x)dfluctN(y), (5.29)
+where we recall thatDiagT2 ={(x,y )∈T2 :x =y},
+fluctN =
+N∑
+i=1
+δxi−Ndx
+and dx is the Lebesgue measure onT.
+Remark 5.1. For two-dimensional Coulomb gases, the loop equation term(5.29) is replaced by an
+angle contribution; see [LS18,BBNY16]. Inβ-ensembles, the quantity in(5.29) is smooth, and one can
+control it directly by bounding the fluctuation measurefluctN via local laws. In our setting, however, the
+term (5.29) is as singular as the energy itself, so a more delicateanalysis is required.
+
+PDF PAGE 49
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 49
+Proposition 5.4. Letξ∈C∞(ℓ−1
+N T) and ℓN∈(0, 1]. Assume either thatξis supported on(−1
+2, 1
+2) or
+that ℓN≡1. Letψ0∈C∞(ℓ−1
+N T) be given by
+ψ′
+0 =−1
+2βcs
+ℓ1−s
+N (−∆)
+1−s
+2 (ξ(ℓ−1
+N·))(ℓN·) and
+ˆ
+ψ0 = 0. (5.30)
+We have
+VarPN,β[FluctN[ξ(ℓ−1
+N·)]] =− 1
+(NℓN)2(1−s) EPN,β[βΨ 0·∇2HNΨ 0 +∥DΨ 0∥2
+F ] (5.31)
++ 2
+(NℓN)1−s EPN,β
+[ N∑
+i=1
+ξ′(ℓ−1
+N xi)ψ0(ℓ−1
+N xi)
+]
++ 1
+(NℓN)2(1−s) VarPN,β
+[
+βLoopℓN [ψ0]−
+N∑
+i=1
+ψ′
+0(ℓ−1
+N xi)
+]
+,
+where
+Ψ 0 :XN∈DN↦→ℓN(ψ0(ℓ−1
+N x1),...,ψ0(ℓ−1
+N xN)).
+Remark 5.2(Mean-field approximation). Proposition 5.4 can be viewed as a mean-field approximation
+for the solution∇ϕof {
+Lϕ= FluctN[ξ] in DN,
+∇ϕ·⃗ n= 0 on ∂DN,
+(5.32)
+whereL :=LPN,β. Because of the energy scaling and the long-range character of the interaction, one
+can seek an approximate solution within the class ofdiagonal transports
+Ψ : XN = (x1,...,xN)∈DN↦−→(ψ(x1),...,ψ(xN)), ψ : T→R.
+For the hypersingular Riesz gas—namely, the caseg(x)∼|x|−s withs> 1—such a diagonal transport
+is no longer adequate to approximate the solution of(5.32). Here the energy is dominated by local
+interactions, so the term−div(Ψ) + β∇HN·Ψ fails to be, to leading order, a linear statistic.
+Proof of Proposition 5.4.LetL :=LPN,βbe the operator
+L =−∆ + β∇HN·∇,
+acting onH1(PN,β). Letξ∈C∞(T) and F := FluctN[ξ].
+Let ϕ∈C∞(T) and ψ=ϕ′. Define
+Φ : XN∈DN↦→ϕ(x1) +...+ϕ(xN).
+We wish to findϕsuch thatLΦ≃F. Let us expand∇HN·∇Φ. LettingµN := 1
+N
+∑N
+i=1δxi, we have
+∇HN·∇Φ =
+¨
+Diagc
+T2
+N−(1+s)g′(x−y)N(ψ(x)−ψ(y))d(NµN)(x)d(NµN)(y),
+a.e., where DiagT2 ={(x,y )∈T2 :x =y}. By decomposingµN intoµN = dx + 1
+N fluctN, where dx is
+the Lebesgue measure on the circle, one can break∇HN·∇Φ into
+∇HN·∇Φ = N2
+¨
+N(ψ(x)−ψ(y))N−(1+s)g′(x−y)dxdy
++ 2N
+ˆ (ˆ
+N(ψ(x)−ψ(y))N−(1+s)g′(x−y)dy
+)
+dfluctN(x) + Loop1[ψ], (5.33)
+where Loop1[ψ] is as in (5.29) forℓN = 1. For the cross term, we can write
+N
+ˆ
+N(ψ(x)−ψ(y))N−(1+s)g′(x−y)dy =−N1−sg′∗ψ,
+where g′∗ψ=g∗ψ′is well-defined sinceψ∈C∞(T). Setting
+CN :=N2
+¨
+N(ψ(x)−ψ(y))N−(1+s)g′(x−y)dxdy,
+
+PDF PAGE 50
+50 JEANNE BOURSIER
+we thus get
+LΦ−F =βCN +
+ˆ (
+−2βN1−sg′∗ψ−ξ
+)
+dfluctN−FluctN[ψ′] +βLoop1[ψ]. (5.34)
+Let ψ0∈C∞(T) be the solution of the master equation
+−2βg′∗ψ0 =ξ−
+ˆ
+ξwith
+ˆ
+ψ0 = 0.
+Sinceg is the fundamental solution of the fractional Laplace equation (1.2),ψ0 is the unique solution of
+ψ′
+0 =−1
+2βcs
+(−∆)
+1−s
+2 ξwith
+ˆ
+ψ0 = 0. (5.35)
+For this map, one can observe that the constant term in the splitting (5.33) vanishes:
+CN =−N2−s
+ˆ
+g′∗ψ0 = 0,
+since ξ−
+´
+ξhas zero mean. Let us chooseψ= 1
+N 1−sψ0 so that by (5.34),
+LΦ−F =−1
+N1−s FluctN[ψ′
+0] + β
+N1−s Loop1[ψ0]. (5.36)
+One can now write
+VarPN,β[F ] = VarPN,β[F−LΦ]−VarPN,β[LΦ] + 2CovPN,β[F,LΦ].
+By integration by parts underPN,β,
+CovPN,β[F,LΦ] = EPN,β[∇F·∇Φ]
+and
+VarPN,β[LΦ] = EPN,β[β∇Φ·∇2HN∇Φ +∥∇2Φ∥2
+F ].
+Assembling the above gives
+VarPN,β[F] =− 1
+N2(1−s) EPN,β
+
+β
+∑
+i̸=j
+N−sg′′(xi−xj)(ψ0(xi)−ψ0(xj))2 +
+N∑
+i=1
+ψ′
+0(xi)2
+
+
++ 2
+N1−s EPN,β
+[ N∑
+i=1
+ξ′(xi)ψ0(xi)
+]
++ 1
+N2(1−s) VarPN,β
+[
+βLoop1[ψ0]−
+N∑
+i=1
+ψ′
+0(xi)
+]
+. (5.37)
+This establishes the lemma whenℓN = 1. We now prove the lemma when ℓN ∈(0, 1) and ξis
+supported on (−1
+2, 1
+2) by rescaling. Letψ0∈C∞(ℓ−1
+N T) be given by
+ψ′
+0 =−1
+2βcs
+ℓ1−s
+N (−∆)
+1−s
+2 (ξ(ℓ−1
+N·))(ℓN·) and
+ˆ
+T
+ψ0 = 0.
+Let ψ1 :=ℓs
+Nψ0(ℓ−1
+N·). We can check thatψ1∈C∞(T) solves
+ψ′
+1 =−1
+2βcs
+(−∆)
+1−s
+2 (ξ(ℓ−1
+N·)) and
+ˆ
+T
+ψ1 = 0.
+Indeed, by the definition ofψ1, for allx∈T,
+ψ′
+1(x) =ℓs−1
+N ψ′
+0(ℓ−1
+N x) =−1
+2βcs
+(−∆)
+1−s
+2 (ξ(ℓ−1
+N·))(x).
+Therefore, by (5.37),
+VarPN,β[F] =− 1
+N2(1−s) EPN,β
+
+β
+∑
+i̸=j
+N−sg′′(xi−xj)(ψ1(xi)−ψ1(xj))2 +
+N∑
+i=1
+ψ′
+1(xi)2
+
+
++ 2
+N1−s EPN,β
+[ N∑
+i=1
+ℓ−1
+N ξ′(ℓ−1
+N xi)ψ1(xi)
+]
++ 1
+N2(1−s) VarPN,β
+[
+βLoop1[ψ1]−
+N∑
+i=1
+ψ′
+1(xi)
+]
+. (5.38)
+
+PDF PAGE 51
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 51
+By the definition ofψ1,
+1
+N2(1−s) EPN,β
+
+β
+∑
+i̸=j
+N−sg′′(xi−xj)(ψ1(xi)−ψ1(xj))2 +
+N∑
+i=1
+ψ′
+1(xi)2
+
+
+= 1
+(NℓN)2(1−s) EPN,β
+
+β
+∑
+i̸=j
+N−sg′′(xi−xj)ℓ2
+N(ψ0(ℓ−1
+N xi)−ψ0(ℓ−1
+N xj))2 +
+N∑
+i=1
+ψ′
+0(ℓ−1
+N xi)2
+
+.
+Moreover,
+1
+N1−s EPN,β
+[ N∑
+i=1
+ℓ−1
+N ξ′(ℓ−1
+N xi)ψ1(xi)
+]
+= 1
+(NℓN)1−s EPN,β
+[ N∑
+i=1
+ξ′(ℓ−1
+N xi)ψ0(ℓ−1
+N xi)
+]
+.
+Finally, recalling the definition ofLoopℓN from (5.29),
+1
+N2(1−s) VarPN,β
+[
+βLoop1[ψ1]−
+N∑
+i=1
+ψ′
+1(xi)
+]
+= 1
+(NℓN)2(1−s) VarPN,β
+[
+βLoopℓN [ψ0]−
+N∑
+i=1
+ψ′
+0(ℓ−1
+N xi)
+]
+.
+Thus, inserting the three last displays into (5.38), we obtain
+VarPN,β[FluctN[ξ(ℓ−1
+N·)]]
+=− 1
+(NℓN)2(1−s) EPN,β
+
+β
+∑
+i̸=j
+N−sg′′(xi−xj)ℓ2
+N(ψ(ℓ−1
+N xi)−ψ(ℓ−1
+N xj))2 +
+N∑
+i=1
+ψ′(ℓ−1
+N xi)2
+
+
++ 2
+(NℓN)1−s EPN,β
+[ N∑
+i=1
+ξ′(ℓ−1
+N xi)ψ(ℓ−1
+N xi)
+]
++ 1
+(NℓN)2(1−s) VarPN,β
+[
+βLoopℓN [ψ]−
+N∑
+i=1
+ψ′(ℓ−1
+N xi)
+]
+,
+which concludes the proof of the lemma. □
+5.5. Variance expansion up to the control on the loop equation term.Building on Proposition
+5.4, we first establish Theorem 2, provided we can bound the variance of the loop equation term (5.29).
+Proposition 5.5.Letξ∈L2(ℓ−1
+N T) and (ℓN) satisfy Assumption 1.1. Letϕbe an integral of(−∆)
+1−s
+2 ξ.
+Suppose that there existsα∈[s−1, s
+2) and C >0 such that
+|ϕ′′(x)|≤C
+|x|2−s+α. (5.39)
+LethN := (NℓN)−1 andξreg :=ξ∗KhN whereKhN is the kernel(5.1). Consider the mapψ∈C∞(ℓ−1
+N T)
+given by
+ψ′=−1
+2cs
+ℓ1−s
+N (−∆)
+1−s
+2 (ξreg(ℓ−1
+N·))(ℓN·) and
+ˆ
+ψ= 0. (5.40)
+Letσ2
+ℓN (ξ) be as in (1.10). For allε>0, there exists a constantC >0 depending onβ, s, ξ, εand the
+kernel K such that
+⏐⏐⏐VarPN,β[FluctN[ξ(ℓ−1
+N·)]]−(NℓN)sσ2
+ℓN (ξ)
+⏐⏐⏐
+≤C(NℓN)2(s−1)
+(
+VarPN,β[LoopℓN [ψ]] + (NℓN)max(2s−1,2α)+ε
+)
+. (5.41)
+Proof. Without loss of generality, we can suppose that
+´
+ξ= 0.
+By Lemma 5.3, for allε>0, there exists a constantC >0 depending onβ, s, ε,ξand the kernelK
+such that
+VarPN,β[FluctN[ξreg(ℓ−1
+N·)−ξ(ℓ−1
+N·)]]≤C(1 + (NℓN)2α+2ε). (5.42)
+We now study the fluctuations ofFluctN[ξreg(ℓ−1
+N·)]. Letψbe as in (5.40). Define
+Ψ : XN∈DN↦→ℓN(ψ(ℓ−1
+N x1),...,ψ(ℓ−1
+N xN)).
+
+PDF PAGE 52
+52 JEANNE BOURSIER
+By Proposition 5.4,
+VarPN,β[FluctN[ξreg(ℓ−1
+N·)]] =− 1
+(NℓN)2(1−s) EPN,β[βΨ·∇2HNΨ +∥DΨ∥2
+F ] (5.43)
++ 2
+(NℓN)1−s EPN,β
+[ N∑
+i=1
+ξ′
+reg(ℓ−1
+N xi)ψ(ℓ−1
+N xi)
+]
++ 1
+(NℓN)2(1−s) VarPN,β
+[
+βLoopℓN [ψ]−
+N∑
+i=1
+ψ′(ℓ−1
+N xi)
+]
+.
+By (5.4), observe that there existsC >0 depending onξand s such that
+|ψ′′(x)|≤C
+(
+1
+max(|x|, 1
+NℓN
+)2−s+α1|x|≤2 + 1
+|x|3−s 1|x|≥2
+)
+.
+Therefore, by Lemma 5.2, there exists a constantC >0 depending onβ, s, ξand the kernelK such
+that
+VarPN,β[FluctN[ψ′(ℓ−1
+N·)]]≤C((NℓN)s + (NℓN)2(1−s+α))≤C(NℓN + (NℓN)2(1−s+α)). (5.44)
+Splitting µN into dx + 1
+N fluctN, one can write
+EPN,β[Ψ·∇2HNΨ]
+= EPN,β
+[ ¨
+Diagc
+T2
+N−(s+2)g′′(x−y)(NℓN(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))2d(NµN)(x)d(NµN)(y)
+]
+=
+¨
+N−(s+2)g′′(x−y)(NℓN(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))2(Ndx)(Ndy)
++ 2
+¨
+N−(s+2)g′′(x−y)(NℓN(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))2(Ndx)dfluctN(y) + BℓN [ψ],
+where
+BℓN [ψ] :=
+¨
+Diagc
+T2
+N−(s+2)g′′(x−y)(NℓN)2(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))2dfluctN(x)dfluctN(y). (5.45)
+Since the first marginalx1 of PN,βis uniformly distributed onT, we have
+EPN,β[Ψ·∇2HNΨ] =
+¨
+N−(s+2)g′′(x−y)(NℓN(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))2(Ndx)(Ndy) + EPN,β[BℓN [ψ]].
+Therefore,
+− 1
+(NℓN)2(1−s) EPN,β[βΨ·∇2HNΨ +∥DΨ∥2
+F ] + 2
+(NℓN)1−s EPN,β
+[ N∑
+i=1
+ξ′
+reg(ℓ−1
+N xi)ψ(ℓ−1
+N xi)
+]
+=NsCN−(NℓN)2s−1∥ψ′∥2
+L2(ℓ−1
+N T)−β 1
+(NℓN)2(1−s) EPN,β[BℓN [ψ]], (5.46)
+where
+CN :=−β
+ˆ
+g′′(x−y)(ℓ−(1−s)
+N ψ(ℓ−1
+N x)−ℓ−(1−s)
+N ψ(ℓ−1
+N y))2dxdy + 2
+ˆ
+ξ′
+reg(ℓ−1
+N·)ℓ−(1−s)
+N ψ(ℓ−1
+N·).
+By (2.14),
+CN = 1
+2βcs
+∥ξreg(ℓ−1
+N·)∥2
+H
+1−s
+2 (T)
+=ℓs
+Nσ2
+ℓN (ξreg).
+We will prove in Lemma B.5 that for allε >0, there existsC >0 depending onβ, s, ξand εand
+the kernelK such that
+EPN,β[BℓN [ψ]]≤C(NℓN)ε((NℓN + (NℓN)2(1−s+α)). (5.47)
+
+PDF PAGE 53
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 53
+Recall that for allε>0, ξ∈H
+1
+2−α−ε(ℓ−1
+N T) and note that 1
+2−α−ε= 1−s
+2 + s−2α
+2 −ε. Therefore,
+by the estimate (5.2) in Lemma 5.1, there exists a constantC >0 depending ons,β,ξand the kernel
+K such that
+|σ2
+ℓN (ξ)−σ2
+ℓN (ξreg)|≤C((NℓN)−1 + (NℓN)−(s−2α−2ε)). (5.48)
+Therefore, combining (5.46) and (5.48), we get that for allε>0,
+− 1
+(NℓN)2(1−s) EPN,β[βΨ·∇2HNΨ +∥DΨ∥2
+F ] + 2
+(NℓN)1−s EPN,β
+[ N∑
+i=1
+ξ′
+reg(ℓ−1
+N xi)ψ(ℓ−1
+N xi)
+]
+= (NℓN)sσ2
+ℓN (ξ) +O((NℓN)max(2s−1,2α)+ε),
+with O(·) depending ons,β,ξ,εand the kernelK.
+Using this and (5.42), (5.43) and (5.44), we conclude that there existsC >0 depending ons, β, ξ,ε
+and the kernelK such that
+⏐⏐⏐VarPN,β[FluctN[ξ(ℓ−1
+N·)]]−(NℓN)sσ2
+ℓN (ξ)
+⏐⏐⏐
+≤C
+(
+(NℓN)2(s−1)VarPN,β[LoopℓN [ψ]] + (NℓN)max(2s−1,2α)+ε
+)
+,
+which proves (5.41). □
+5.6. Control on the gradient of the loop equation term.In view of Proposition 5.4, expanding
+the variance of a linear statistic reduces to controlling the loop equation term (5.29). We first explain
+why a strategy based solely on local laws fails. Recall that for allψ:ℓ−1
+N T→R smooth enough,
+LoopℓN [ψ] =
+¨
+Diagc
+T2
+NℓN(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))N−(1+s)g′(x−y)dfluctN(x)dfluctN(y).
+By using local laws on gaps, one may control the above integral away from the diagonal. Nevertheless
+LoopℓN [ψ] contains local terms such as
+N∑
+i=1
+NℓN(ψ(ℓ−1
+N xi+1)−ψ(ℓ−1
+N xi))N−(1+s)g′(xi+1−xi),
+which isO(NℓN∥ψ′∥L∞(T)) with overwhelming probability. Therefore, applying a local law estimate
+will give, in the best case, the bound
+VarPN,β
+[
+LoopℓN [ψ]
+]
+=O
+(
+(NℓN)2∥ψ′∥2
+L∞(ℓ−1
+N T)
+)
+.
+Inserting this into Proposition 5.4 gives an error term of orderO((NℓN)2s), which is larger than the
+expected variance.
+Instead, we exploit the convexity of the Hamiltonian and bound the fluctuations ofLoopℓN [ψ] by
+means of various concentration inequalities. As emphasized in Section 3, the variance of a smooth
+function under a log-concave probability measure is related to the norm of its gradient. The first task
+is therefore to control the gradient of the loop equation term (5.29).
+We first define a localized version ofLoopℓN [ψ]. Fixγ >1 and let
+tγ:= min
+(
+(NℓN)γ
+N , 1
+2
+)
+. (5.49)
+Then define
+Iγ:={i∈{1,...,N}:d(i, 1)≤Ntγ}. (5.50)
+Forψ:ℓ−1
+N T→R smooth enough, we define a localized version ofLoopℓN [ψ] by letting
+LoopℓN,γ[ψ] :=
+∑
+i̸=j∈Iγ
+NℓN(ψ(ℓ−1
+N xi)−ψ(ℓ−1
+N xj))N−(1+s)g′(xi−xj)
+−2N
+∑
+i∈Iγ
+ˆ
+|y|≤tγ
+NℓN(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))N−(1+s)g′(xi−y)dy. (5.51)
+
+PDF PAGE 54
+54 JEANNE BOURSIER
+Lemma 5.6 (Control on the gradient of the localized loop equation term). Let ψ∈C∞(ℓ−1
+N T). Let
+γ >1 and lettγand Iγbe as in(5.49) and (5.50). Letε>0. Define the good event
+Aε,γ:=
+⋂
+i∈Iγ,k∈{−⌊N
+2⌋,...,⌊N
+2⌋}:
+i+k∈Iγ
+{
+XN∈DN :N|xi+k−xi−k
+N|≤(NℓN)εk
+s
+2
+}
+∩
+⋂
+i∈Iγ
+{
+XN∈DN : (NℓN)−ε≤N|xi+1−xi|≤(NℓN)ε
+}
+. (5.52)
+Letα∈[s−1, s
+2) and let
+w(1)
+N :x∈ℓ−1
+N T↦→ 1
+max(|x|, 1
+NℓN
+)1−s+α1|x|<1 + 1
+|x|2−s 1|x|≥1, (5.53)
+w(2)
+N :x∈ℓ−1
+N T↦→ 1
+max(|x|, 1
+NℓN
+)2−s+α1|x|<1 + 1
+|x|3−s 1|x|≥1. (5.54)
+Suppose that there exists a constantC >0 such that
+|ψ′|≤Cw(1)
+N and |ψ′′|≤Cw(2)
+N .
+Let LoopℓN,γ[ψ] be as in(5.51).
+Then, one can break∇LoopℓN,γ[ψ] into
+∇LoopℓN,γ[ψ] = V + W,
+with V, W∈L2({1,...,N},C∞(DN)) such that the following holds:
+(1) For everyi /∈Iγ, Vi = Wi = 0.
+(2) There existC >0 and κ>0 depending ons such that for everyi∈Iγand XN∈Aε,γ,
+|Vi|≤(NℓN)κε
+(
+ℓ−1
+N (w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (xi−tγ)) +w(2)
+N (ℓ−1
+N (xi +tγ))
++(NℓN)1−s+αN−s
+2
+1
+max(|xi|, 1
+N )1+s
+2
+1|xi|≤2ℓN
+)
+. (5.55)
+(3) There exists Wgap∈L2({1,...,N},C∞(DN)) such that for allUN∈RN,
+W·UN =−
+N∑
+i=1
+Wgap
+i N(ui+1−ui).
+Moreover, there existC >0 and κ>0 depending ons such that
+sup
+Aε,γ
+|Wgap|2≤C(NℓN)κε
+(
+NℓN + (NℓN)2(α+1−s)
+)
+. (5.56)
+The proof of Lemma 5.6 is deferred to Appendix B.
+We now record some various auxiliary estimates that will be used in the main proof.
+Lemma 5.7(Auxiliary estimates). Suppose that the assumption of Lemma 5.6 holds. Then, forγlarge
+enough, there exists a constantC >0 depending onβ,s, γ, andψsuch that
+VarPN,β
+[
+LoopℓN [ψ]−LoopℓN,γ[ψ]
+]
+≤CNℓN. (5.57)
+Moreover, there exists a constantC >0 depending onβ,s, γ, andξsuch that
+⏐⏐⏐VarPN,β[LoopℓN,γ[ψ]]−VarPN,β[LoopℓN,γ[ψ](0,x 2−x1,...,xN−x1)]
+⏐⏐⏐≤CNℓN. (5.58)
+
+PDF PAGE 55
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 55
+5.7. Control on the variance of the loop equation term.We now control the variance of the
+localized loop equation term (5.51). LetV and W be as in Lemma 5.6. By sub-additivity, it suffices to
+bound theA−1
+1 -energy ofV and W separately. ForW, we use that, after the appropriate convexification,
+the measure becomes uniformly convex in gap coordinates. ForV, we will use the comparison principle
+of Lemma 3.6, the a priori estimate of Lemma 5.2 and the rigidity estimate of Theorem 1.
+Proposition 5.8. Letξ∈L2(ℓ−1
+N T) and (ℓN) satisfy Assumption 1.1 andα∈[s−1, s
+2) be as in(1.8).
+LethN := (NℓN)−1 and ξreg :=ξ∗KhN with KhN as in (5.1). Letψbe as in(5.40).
+For allε>0, there existsC >0 depending onβ, ε, s and ξsuch that
+VarPN,β[LoopℓN [ψ]]≤C(NℓN)ε+max(1,2(α+1−s)). (5.59)
+Proof.
+Step 1: reduction to the localized loop equation term.Recall the anchoring map
+AnchN :XN∈DN↦→(x2−x1,x 3−x1,...,xN−x1)∈RN−1.
+By combining the estimates (5.57) and (5.58) of Lemma 5.7, we get that there exists a constantC >0
+depending onβ,s,γand ψsuch that
+⏐⏐⏐VarPN,β[LoopℓN [ψ]]−VarPN,β[LoopℓN,γ[ψ]◦(0, AnchN)]
+⏐⏐⏐≤CNℓN, (5.60)
+Denote for shorthand
+Loop := LoopℓN,γ[ψ] and Loop∗(y1,...,yN−1) := LoopℓN,γ[ψ](0,y 1,...,yN−1).
+Step 2: multiplying by a cutoff function.Let ε >0. Consider the good event (5.52) with2γin
+place ofγ:
+Aε,2γ:=
+⋂
+i∈Iγ,k∈{−⌊N
+2⌋,...,⌊N
+2⌋}:
+i+k∈I2γ
+{
+XN∈DN :N|xi+k−xi−k
+N|≤(NℓN)εk
+s
+2
+}
+∩
+⋂
+i∈I2γ
+{
+XN∈DN : (NℓN)−ε≤N|xi+1−xi|≤(NℓN)ε
+}
+.
+Let ηε,2γbe the cutoff function defined in (5.7). Note thatηε,2γis supported onAε,2γ. One can write
+VarPN,β[Loop◦(0, AnchN)]
+≤2
+(
+VarPN,β[ηε,2γLoop◦(0, AnchN)] + VarPN,β[(1−ηε,2γ)Loop◦(0, AnchN)]
+)
+.
+Using the rigidity estimate of Theorem 1 and Lemma 4.5, we get that there existsC >0 depending on
+β, s,ε, ξand γsuch that
+VarPN,β[(1−ηε,2γ)Loop◦(0, AnchN)]≤ C
+(NℓN)10. (5.61)
+Step 3: convexification.Let QN,βbe as in (5.9). By (5.11), there existsδ >0 depending onβ,s,ε
+and γsuch that
+TV(PN,β, QN,β)≤e−(NℓN)δ
+. (5.62)
+Observe that on the support ofηε,2γ, there exists a constantC >0 depending onξand γsuch that
+|Loop◦(0, AnchN)|≤C(NℓN)2.
+Therefore, by (5.62), there existsδ >0 depending onβ,s, γand ξsuch that
+⏐⏐⏐VarPN,β[ηε,2γLoop◦(0, AnchN)]−VarQN,β[ηε,2γLoop◦(0, AnchN)]
+⏐⏐⏐≤e−(NℓN)δ
+. (5.63)
+We letP∗
+N,β:= AnchN#PN,βand Q∗
+N,β:= AnchN#QN,β. Letη∗
+ε,2γbe such thatηε,2γ=η∗
+ε,2γ◦AnchN.
+Notice that
+VarQN,β[ηε,2γLoop◦(0, AnchN)] = VarQ∗
+N,β
+[η∗
+ε,2γLoop∗].
+We now estimate the variance ofη∗
+ε,2γLoop∗under Q∗
+N,β.
+
+PDF PAGE 56
+56 JEANNE BOURSIER
+Denote for shorthandA1 :=A
+Q∗
+N,β
+1 .Since A1 positive onL2({1,...,N},H 1(Q∗
+N,β)),
+VarQ∗
+N,β
+[η∗
+ε,2γLoop∗] = EQ∗
+N,β
+[∇(η∗
+ε,2γLoop∗)·A−1
+1 ∇(η∗
+ε,2γLoop∗)]
+≤2EQ∗
+N,β
+[(η∗
+ε,2γ∇Loop∗)A−1
+1 (η∗
+ε,2γ∇Loop∗)] + 2EQ∗
+N,β
+[(∇η∗
+ε,2γLoop∗)A−1
+1 (∇η∗
+ε,2γLoop∗)]. (5.64)
+Let V, W∈L2({1,...,N},C∞(DN))beasinLemma5.6. Let V∗, W∗∈L2({1,...,N−1},C∞(AnchN(DN))
+be such that
+(Vi)2≤i≤N◦AnchN = V∗and (Wi)2≤i≤N◦AnchN = W∗.
+Notice that
+∇Loop∗= V∗+ W∗.
+By sub-additivity again, we have
+EQ∗
+N,β
+[(η∗
+ε,2γ∇Loop∗)A−1
+1 (η∗
+ε,2γ∇Loop∗)]≤2EQ∗
+N,β
+[(η∗
+ε,2γV∗)·A−1
+1 (η∗
+ε,2γV∗)]
++ 2EQ∗
+N,β
+[(η∗
+ε,2γW∗)·A−1
+1 (η∗
+ε,2γW∗)]. (5.65)
+Step 4: Brascamp-Lieb-type estimate for η∗
+ε,2γW∗and Loop∗∇η∗
+ε,2γ. By Lemma 5.6, for all
+UN−1 = (u2,...,uN)∈RN−1, settingu1 = 0,
+(W∗◦AnchN)·UN−1 =−
+N∑
+i=1
+Wgap
+i N(ui+1−ui)
+with Wgap satisfying (5.56) on the eventAε,2γand Wgap
+i = 0 for everyi /∈Iγ.
+Therefore, proceeding as in (5.13), we deduce that there exists a constantκ>0 such that
+EQ∗
+N,β
+[η∗
+ε,2γW∗·A−1
+1 (ηε,2γW∗)]≤(NℓN)κεEQ∗
+N,β
+[(η∗
+ε,2γ)2|Wgap|2].
+Since ηε,2γis supported onAε,2γ, the estimate (5.56) gives
+EQ∗
+N,β
+[η∗
+ε,2γW∗·A−1
+1 (η∗
+ε,2γW∗)]≤(NℓN)κε+max(1,2(α+1−s)). (5.66)
+Let Gap∗
+N be such that GapN = Gap∗
+N◦AnchN. Note that η∗
+ε,γ= ˜ηε◦Gap∗
+N for some smooth
+function ˜ηε: RN→R. Reasoning as in (5.14), we get
+EQ∗
+N,β
+[(∇η∗
+ε,2γLoop∗)A−1
+1 (∇η∗
+ε,2γLoop∗)]≤(NℓN)κεEQ∗
+N,β
+[(Loop∗)2|(∇˜ηε,2γ)◦GapN|2].
+Note that (∇˜ηε,2γ)◦GapN = 0 onAc
+ε,2γand that Loop∗is uniformly bounded onAε,2γby (NℓN)κ
+for someκ>0. Thus, using Theorem 1 and Lemma 4.5, we deduce from the above display that there
+exists C >0 depending onβ, s and ξsuch that
+EQ∗
+N,β
+[(∇η∗
+ε,2γLoop∗)A−1
+1 (∇η∗
+ε,2γLoop∗)]≤ C
+(NℓN)10. (5.67)
+Step 5: using the comparison principle forη∗
+ε,2γV. Let χ1∈C0(T) be given by
+´
+χ1 = 0 and for
+all x∈T,
+χ′
+1(x) =ℓ−1
+N w(2)
+N (ℓ−1
+N x).
+Let χ2∈C0(T) be given by
+´
+χ2 = 0 and for allx∈T,
+χ′
+2(x) = (NℓN)1−s+α(NℓN)−s
+2ℓ−1
+N
+1
+max(|ℓ−1
+N xi|, 1
+N )1+s
+2
+1|xi|≤2ℓN.
+Let us define
+G∗
+N :=
+∑
+i∈Iγ
+(χ1(xi) +χ1(xi−tγ) +χ1(xi +tγ) +χ2(xi)).
+By Lemma 5.6, there exist constantsC >0 and κ>0 such that
+η∗
+ε,2γ|V∗|≤C(NℓN)κεη∗
+ε,2γ∇G∗
+N.
+Thus, by Lemma 3.6 and sub-additivity,
+EQ∗
+N,β
+[(η∗
+ε,2γV∗)·A−1
+1 (η∗
+ε,2γV∗)]≤EQ∗
+N,β
+[(η∗
+ε,2γ∇G∗
+N)·A−1
+1 (η∗
+ε,2γ∇G∗
+N)]
+≤2VarQ∗
+N,β
+[η∗
+ε,2γG∗
+N] + 2EQ∗
+N,β
+[G∗
+N∇η∗
+ε,2γ·A−1
+1 (G∗
+N∇η∗
+ε,2γ)].
+
+PDF PAGE 57
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 57
+Arguing as in (5.14), there existsC >0 depending onβ, s, ε, γand ξsuch that
+EQ∗
+N,β
+[G∗
+N∇η∗
+ε,2γ·A−1
+1 (G∗
+N∇η∗
+ε,2γ)]≤ C
+(NℓN)10.
+Moreover, applying the estimate (5.21) in the proof of Lemma 5.2, we get that there existC >0 and
+κ>0 depending onβ, s, γ, εand ξsuch that
+VarQN,β
+
+ηε,2γ
+∑
+i∈Iγ
+(χ1(xi−x1) +χ1(xi−x1−tγ) +χ1(xi−x1 +tγ))
+
+
+≤C(NℓN)κε+max(s,2(1−s+α))≤C(NℓN)κε+max(1,2(1−s+α))
+and
+VarQN,β
+
+ηε,2γ
+∑
+i∈Iγ
+χ2(xi−x1)
+
+≤C(NℓN)κε.
+Combining the four above displays, we deduce that there existC >0 and κ >0 depending onβ, s, γ
+and ξsuch that
+EQ∗
+N,β
+[η∗
+ε,2γV∗·A−1
+1 (η∗
+ε,2γV∗)]≤C(NℓN)κε+max(1,2(1−s+α)). (5.68)
+Step 6: conclusion. Combining (5.64), (5.65), (5.66), (5.67) and (5.68), we deduce the existence of
+κ>0 and C >0 depending onβ, ε, s, γand ξsuch that
+VarQ∗
+N,β
+[η∗
+ε,2γLoop∗]≤C(NℓN)κε(NℓN)max(1,2(α+1−s)).
+Together with (5.61), (5.63) and (5.7), we get that for allε >0, there exists C > 0 depending on
+β,s,γ,εand ξsuch that
+VarPN,β[LoopℓN,γ[ψ]]≤C(NℓN)ε(NℓN)max(1,2(α+1−s)).
+Combining this with (5.60), this concludes the proof of the proposition. □
+5.8. Proof of Theorem 2.
+Proof. Piecing together Proposition 5.5 and Proposition 5.8 concludes the proof. □
+6. Central Limit Theorem
+6.1. Proof of the CLT.We prove the CLT stated in Theorem 3 using Stein’s method, leveraging the
+variance estimates of Section 5.
+Proof of Theorem 3.Let ξ∈L2(ℓ−1
+N T) and (ℓN) satisfy Assumption 1.1. Let
+FN := (NℓN)−s
+2 FluctN[ξ(ℓ−1
+N·)].
+Let h∈C1(R) such that∥h∥L∞(R)≤1 and∥h′∥L∞(R)≤1.
+Step 1: regularization.Let hN := (NℓN)−1 and ξreg =ξ∗KhN with KhN as in (5.1). Let
+GN := (NℓN)−s
+2 FluctN[ξreg(ℓ−1
+N·)]
+We can write⏐⏐⏐EPN,β[h(FN)]−EPN,β[h(GN)]
+⏐⏐⏐≤∥h′∥L∞(R)EPN,β[|FN−GN|]≤EPN,β[|FN−GN|].
+Moreover, by the Cauchy-Schwarz inequality,
+EPN,β[|FN−GN|]≤EPN,β[|FN−GN|2]
+1
+2 = VarPN,β[FN−GN]
+1
+2,
+since bothFN and GN are centered random variables underPN,β. Combining the two above displays,
+we deduce that⏐⏐⏐EPN,β[h(FN)]−EPN,β[h(GN)]
+⏐⏐⏐≤VarPN,β[FN−GN]
+1
+2
+= (NℓN)−s
+2 VarPN,β[FluctN[(ξ−ξreg)(ℓ−1
+N·)]
+1
+2.
+By Lemma 5.3, there existsC >0 depending onβ, s, εand ξsuch that⏐⏐⏐EPN,β[h(FN)]−EPN,β[h(GN)]
+⏐⏐⏐≤C((NℓN)−s
+2 + (NℓN)α−s
+2 +ε). (6.1)
+
+PDF PAGE 58
+58 JEANNE BOURSIER
+Step 2: Stein’s method.Recall σℓN from (1.10). Setσ:=σℓN (ξreg) and letZ∼N(0,σ2). Our aim
+is to compare the law ofGN under PN,βto the law ofZ.
+Consider the Stein ODE
+σ2η′(x)−η(x)x =h(x)−E[h(Z)], (6.2)
+The only bounded solution of the above equation is given by
+η:x∈R↦→1
+σ2e
+x2
+2σ2
+ˆ x
+−∞
+e−y2
+2σ2 (h(y)−E[h(Z)])dy.
+By Lemma 2.4 of [CGS10], the solutionη1 of the unit-variance Stein equation, i.e. withσ= 1, belongs
+toC1(R) and satisfies
+η1
+
+L∞(R)≤2,
+η′
+1
+
+L∞(R)≤
+√
+2
+π.
+Using the exact scaling identity
+η(x) = 1
+ση1
+(
+x
+σ
+)
+, η′(x) = 1
+σ2η′
+1
+(
+x
+σ
+)
+,
+we get
+∥η∥L∞(R)≤2
+σ and ∥η′∥L∞(R)≤
+√
+2
+πσ2.
+By (6.2),
+EPN,β[h(GN)]−EPN,β[h(Z)] = EPN,β[σ2η′(GN)]−EPN,β[η(GN)GN]. (6.3)
+Our aim is now to control the right-hand side of the above display. Letψ∈C∞(ℓ−1
+N T) satisfy
+ψ′=−1
+2βcs
+ℓ1−s
+N (−∆)
+1−s
+2 (ξreg(ℓ−1
+N·))(ℓN·) and
+´
+ψ= 0.
+Define
+Ψ : XN∈DN↦→ 1
+(NℓN)1−s
+2
+ℓN(ψ(ℓ−1
+N x1),...,ψ(ℓ−1
+N xN)),
+which can be written asΨ = ∇Φ for some function Φ ∈C∞(DN). Let L :=LPN,β. Recall that by
+(5.36),
+LΦ−GN = 1
+(NℓN)1−s
+2
+(
+βLoopℓN [ψ]−FluctN[ψ′(ℓ−1
+N·)]
+)
+.
+Therefore,
+EPN,β[η(GN)GN] = EPN,β[η(GN)LΦ]− 1
+(NℓN)1−s
+2
+CovPN,β
+[
+η(GN),βLoopℓN [ψ]−FluctN[ψ′(ℓ−1
+N·)]
+]
+.
+(6.4)
+By integration by parts,
+EPN,β[η(GN)LΦ] = EPN,β[η′(GN)∇GN·∇Φ].
+Combining the two last displays, we get
+EPN,β[η(GN)GN] =σ2
+ℓN (ξreg)EPN,β[η′(GN)] + Error1
+N + Error2
+N,
+where
+Error1
+N := EPN,β
+[
+η′(GN)
+( N∑
+i=1
+1
+NℓN
+ψ(ℓ−1
+N xi)ξ′
+reg(ℓ−1
+N xi)−σ2
+ℓN (ξreg)
+)]
+,
+Error2
+N :=− 1
+(NℓN)1−s
+2
+CovPN,β
+[
+η(GN),βLoopℓN [ψ]−FluctN[ψ′(ℓ−1
+N·)]
+]
+.
+
+PDF PAGE 59
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 59
+Step 3: the error termError1
+N. One can boundError1
+N by
+|Error1
+N|≤∥η′∥L∞(R)
+1
+NℓN
+EPN,β
+[ ⏐⏐⏐⏐⏐
+N∑
+i=1
+ψ(ℓ−1
+N xi)ξ′
+reg(ℓ−1
+N xi)−NℓNσ2
+ℓN (ξreg)
+⏐⏐⏐⏐⏐
+]
+.
+Since 1
+ℓ1−s
+N
+ψ′(ℓ−1
+N·) =−1
+2βcs
+(−∆)
+1−s
+2 (ξreg(ℓ−1
+N·)),
+we get using (2.14) that
+EPN,β
+[ N∑
+i=1
+ξ′
+reg(ℓ−1
+N xi)ψ(ℓ−1
+N xi)
+]
+= (2π)1−s
+2βcs
+Nℓ1−s
+N ∥ξreg(ℓ−1
+N·)∥2
+H
+1−s
+2 (ℓ−1
+N T)
+=NℓNσ2
+ℓN (ξreg).
+We therefore obtain
+|Error1
+N|≤C∥η′∥L∞(R)
+1
+NℓN
+VarPN,β
+[ N∑
+i=1
+ξ′
+reg(ℓ−1
+N xi)ψ(ℓ−1
+N xi)
+] 1
+2
+.
+By Lemma 4.2, there exists a constantC >0 depending onβ, s and ξsuch that
+|Error1
+N|≤C(NℓN)−1
+2. (6.5)
+Step 4: the error termError2
+N. On the other hand, we have
+|Error2
+N|≤2β
+(NℓN)1−s
+2
+∥η∥L∞(R)VarPN,β[LoopℓN [ψ]]
+1
+2
++ 2
+(NℓN)1−s
+2
+∥η∥L∞(R)VarPN,β[FluctN[ψ′(ℓ−1
+N·)]]
+1
+2. (6.6)
+By (5.59), for allε>0, there exists a constantC >0 depending onβ, s, εand ξsuch that
+VarPN,β[LoopℓN [ψ]]≤C(NℓN)ε+max(1,2(α+1−s)).
+By (5.4) and Lemma 5.2, there exists a constantC >0 depending onβ, s and ξsuch that
+VarPN,β[FluctN[ψ′(ℓ−1
+N·)]]≤C(NℓN)max(1,2(α+1−s)).
+It follows that for allε>0, there exists a constantC >0 depending onβ, s, εand ξsuch that
+|Error2
+N|≤C∥η∥L∞(R)(NℓN)ε+max(s−1
+2 ,α−s
+2 ). (6.7)
+Step 5: conclusion. Inserting (6.5), (6.7) into (6.4), we get that for allε >0, there existsC > 0
+depending onβ, s, εand ξsuch that
+|EPN,β[h(GN)]−E[h(Z)]|≤C(NℓN)ε+max(s−1
+2 ,α−s
+2 ). (6.8)
+Let Z′∼N(0,σ2
+ℓN (ξ)). We can write
+|EPN,β[h(FN)]−E[h(Z′)]|
+≤|EPN,β[h(GN)]−E[h(Z)]|+|EPN,β[h(FN)]−E[h(GN)]|+|E[h(Z)−E[h(Z′)]|. (6.9)
+Clearly,
+|E[h(Z)−E[h(Z′)]|≤∥h′∥L∞(R)|σℓN (ξ)−σℓN (ξreg)|≤|σℓN (ξ)−σℓN (ξreg)|≤|σ2
+ℓN (ξ)−σ2
+ℓN (ξreg)|
+1
+2.
+Recall that ξ∈H
+1
+2−α−ε(ℓ−1
+N T) and 1
+2−α= 1−s
+2 + s−2α
+2 −ε. Thus, by Lemma 5.1, there exists a
+constantC >0 depending onβ,s, ξand εsuch that
+|σ2
+ℓN (ξ)−σ2
+ℓN (ξreg)|≤C((NℓN)−1 + (NℓN)−(s−2α−2ε)),
+which gives
+|E[h(Z)−E[h(Z′)]|≤C((NℓN)−1
+2 + (NℓN)α−s
+2 ). (6.10)
+Combining (6.9), (6.8), (6.1) and (6.10), we get that for allε >0, there existsC >0 depending onβ,
+s, εand ξsuch that
+|EPN,β[h(FN)]−E[h(Z′)]|≤C(NℓN)ε+max(−s
+2,s−1
+2 ,α−s
+2 +ε).
+
+PDF PAGE 60
+60 JEANNE BOURSIER
+This concludes the proof of Theorem 3. □
+6.2. Proof of Corollary 1.
+Proof of Corollary 1.By Lemma 2.3, the functionξ:= 1(−a,a) satisfies Assumption 1.1. Therefore, by
+Theorem 3,
+(NℓN)−s
+2σℓN (ξ)−1FluctN[ξ(ℓ−1
+N·) =⇒
+Law
+N (0, 1).
+Let ℓ= limN→∞ℓN∈{0, 1}. We have
+lim
+N→∞
+σℓN (ξ) =σℓ(ξ).
+Moreover, by Lemma 2.3,
+σ2
+1(ξ) = 2cotan(π
+2s)
+β4sπs ζ(−s, 2a)
+and
+σ2
+0(ξ) = 2cotan(π
+2s)
+β4sπs (2a)s.
+These two cases combine into
+1√
+Nsζ(−s, 2aℓN)
+FluctN[1(−a,a)(ℓ−1
+N·)] =⇒
+Law
+N (0,σ2), (6.11)
+where
+σ2 := 2cotan(π
+2s)
+β4sπs , (6.12)
+as claimed.
+We now prove the second assertion. Let(kN) be a sequence in{1,...,⌊N
+2⌋}such thatkN→∞. Let
+i0∈{1,...,N}. Forε>0, define the event
+A :=
+⋂
+i,j:d(i,i0)≤2kN,d(j,i0)≤2kN
+{
+|N(xj−xi)−Nj−i
+N|≤kε
+Nd(j,i )
+s
+2
+}
+.
+Set ℓN := kN
+N . Let us define the error counting
+∆ N :=
+⏐⏐⏐{i∈{1,...,N}:xi∈[xi0,xi0 +ℓN]}
+⏐⏐⏐−kN.
+We claim that there exists a constantC >0 such that on the eventA,
+⏐⏐⏐N(xkN+i0−xi0)−kN + ∆N
+⏐⏐⏐≤Ck
+2ε+s2
+4
+N . (6.13)
+Let us prove (6.13). SinceN(xi+1−xi)≤(NℓN)εfor everyi∈{1,...,N}such thatd(i,i 0)≤2NℓN,
+we have
+|N(xi0+kN+∆N−xi0)−kN|≤(NℓN)ε.
+Moreover, by the definition ofA,
+|N(xi0+kN+∆N−xi0+kN )−∆ N|≤kε
+N∆
+s
+2
+N.
+Combining the two above displays, we get
+N(xi0+kN−xi0) =N(xi0+kN−xi0+kN+∆N ) +N(xi0+kN+∆N−xi0)
+=−∆ N +O
+(
+kε
+N∆
+s
+2
+N
+)
++kN +O(kε
+N).
+Thus,
+N(xi0+kN−xi0)−kN =−∆ N +O
+(
+kε
+N(∆
+s
+2
+N + 1)
+)
+.
+Since ∆ N =O(k
+s
+2 +ε
+N ), this proves the claim.
+We now leti0 be the indexi (defined almost surely) of the pointxi closest to 0. We have
+∆ N =
+N∑
+i=1
+1[0,ℓN](xi−xi0)−NℓN.
+
+PDF PAGE 61
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 61
+There exists a constantκ>0 such that on the eventA∩{|xi0|≤(NℓN)ε},
+∆ N =
+N∑
+i=1
+1[0,ℓN](xi)−NℓN +O((NℓN)κε). (6.14)
+By Theorem 1, there existsδ >0 depending onβ,sand εsuch that
+PN,β
+(
+(A∩{|xi0|≤(NℓN)ε})c
+)
+≤e−kδ
+N.
+Therefore, combining this with (6.14) and (6.11), we get
+1√
+Nsζ(−s,ℓN)
+∆ N =⇒
+Law
+N (0,σ2), (6.15)
+where σ2 is as in (6.12). Therefore, by (6.13),
+1√
+Nsζ(−s,ℓN)
+(N(xi0+kN−xi0)−kN) =⇒
+Law
+N (0,σ2). (6.16)
+SinceN(xi0+kN−xi0) is independent fromi0 and since the variablesN(xi+kN−xi),i∈{1,...,N}are
+identically distributed, we get
+LawPN,β(N(xi0+kN−xi0)) = LawPN,β(N(x1+kN−x1)).
+Thus, we conclude from (6.16) that
+1√
+Nsζ(−s,ℓN)
+(N(x1+kN−x1)−kN) =⇒
+Law
+N (0,σ2),
+which concludes the proof. □
+Appendix A. Well-posedness of the H.-S. equation
+A.1. Poincaré inequality.Recall the map
+GapN :XN∈DN↦→N(x2−x1,x 3−x2,...,xN−xN−1,x 1−xN)∈RN.
+Lemma A.1 (Poincaré inequality). Let µsatisfy Assumption 3.1 and denoteµ′:= GapN#µ. Then,
+there exists a constantC >0 such that forψ∈H1(µ′),
+Varµ[(ψ◦GapN)]≤CEµ[|∇(ψ◦GapN)|2]. (A.1)
+Proof. Let ϕ=ψ◦GapN with ψ∈H1(µ′). Observe that the measureµ′is uniformly log-concave:
+dµ′(x) =e−˜H(x)dXN,
+where dXN is the surface measure onGapN(DN) and ˜H is a function satisfying∇2 ˜H≥cId for some
+constant c > 0. Therefore, by the Brascamp-Lieb inequality stated in Lemma 3.7, we have, defining
+∂N+1ϕ:=∂1ϕ,
+Varµ[ϕ] = Varµ′[ψ]≤c−1Eµ′[|∇ψ|2] =c−1Eµ
+[ N∑
+i=1
+(N(∂i+1ϕ−∂iϕ))2
+]
+≤4c−1N2Eµ[|∇ϕ|2].
+This proves (A.1). □
+A.2. Well-posedness for gradient vector fields.The formal adjoint with respect toµof the deriv-
+ative∂i, i∈{1,...,N}is given by
+∂∗
+iw =−∂iw + (∂iH)w,
+meaning that for allv,w ∈C∞(DN) such that∇v·⃗ n= 0 on ∂DN,
+Eµ[(∂iv)w] = Eµ[v∂∗
+iw]. (A.2)
+The above formula can be shown by integration by parts under the Lebesgue measure onDN.
+
+PDF PAGE 62
+62 JEANNE BOURSIER
+Lemma A.2. Let µsatisfy Assumption 3.1, letµ′:= GapN#µ, and letF ∈H−1(µ). Assume that
+F is of the formF = G◦GapN with G∈H−1(µ′). Then, there exists a unique, modulo an additive
+constant,ϕ∈H1(µ) such that
+Lµϕ=F−Eµ[F] on DN. (A.3)
+Moreover, the solutionϕof (A.3) is the unique, modulo additive constant, minimizer of
+ϕ↦→Eµ[|∇ϕ|2−2ϕ(F−Eµ[F])],
+over functionsϕ∈H1(µ).
+Lemma A.2 is a variation of the Lax–Milgram lemma.
+Proof of Lemma A.2.We begin by considering the case whereF is a function of the gaps, i.e.F =
+G◦GapN with G∈H−1(µ′). Let
+E :={ϕ∈H1(µ) :ϕ=ψ◦GapN for someψ∈H1(µ′), Eµ[ϕ] = 0}
+and
+J :ϕ∈E↦→Eµ[|∇ϕ|2]−2Eµ[Fϕ]. (A.4)
+Let us prove thatJ admits a unique minimizer. First, for allϕ∈E,
+|Eµ[Fϕ]|≤∥F∥H−1(µ)∥ϕ∥H 1(µ).
+By Lemma A.1, there exists a constantC >0 such that for allϕ∈E,
+Eµ[ϕ2]≤CEµ[|∇ϕ|2],
+since ϕis a function of the gaps and sinceEµ[ϕ] = 0. Therefore, there existsC >0 such that for all
+ϕ∈E,
+Eµ[Fϕ]≤C∥F∥H−1(µ)Eµ[|∇ϕ|2]
+1
+2. (A.5)
+It follows thatJ is coercive with respect to theH1(µ) norm and thatJ is bounded from below. Let(ϕk)
+be a sequence of elements ofE such that (J(ϕk)) converges to infJ. Since (ϕk) is bounded inH1(µ),
+there exists a sub-sequence converging weakly to a certainϕ∈E. It follows from (A.5) thatJ is l.s.c
+on H1(µ). Since J is convex,J is l.s.c for the weak topology onH1(µ). Therefore ϕis a minimizer of
+J on E. The first-order minimality condition forϕreads
+Eµ[∇ϕ·∇h] = Eµ[Fh],
+for allh∈E. By integration by parts, for everyh∈E, we have
+Eµ[(Lµϕ−F)h] +
+ˆ
+∂DN
+(∇ϕ·⃗ n)he−H = 0. (A.6)
+Since H(x)→∞when d(x,∂DN)→0, we get
+Eµ[(Lµϕ−F)h] = 0.
+Moreover, since
+Eµ[Lµϕ−F + Eµ[F]] = 0,
+we deduce, using the definition ofE, that for allh =ψ◦GapN with ψ∈H1(µ′),
+Eµ[(Lµϕ−F + Eµ[F])h] = 0. (A.7)
+SinceLµϕ−F +Eµ[F ] is a function of the gaps (becauseϕandH are), we deduce that for allh∈H1(µ),
+Eµ[(Lµϕ−F + Eµ[F])h] = Eµ[Eµ[(Lµϕ−F + Eµ[F ])h|GapN(XN)]]
+= Eµ[(Lµϕ−F + Eµ[F ])Eµ[h|GapN(XN)]]. (A.8)
+Since Eµ[h|GapN(XN)] is a function of the gaps, we get from (A.7) that
+Eµ[(Lµϕ−F + Eµ[F])h] = 0.
+We conclude that
+Lµϕ=F−Eµ[F],
+as elements ofH−1(µ).
+Let us finally prove uniqueness. Letϕ∈H1(µ) solve
+Lµϕ=F−Eµ[F] on DN.
+
+PDF PAGE 63
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 63
+Sinceϕ∈H1(µ) and since the equality holds in theH−1(µ) sense, multiplying byϕand integrating by
+parts, we get
+Eµ[|∇ϕ|2] = 0.
+This proves thatϕis constant a.e., which ensures the uniqueness of the solution of (A.3), modulo an
+additive constant. □
+We now complete the proof of Proposition 3.1.
+Proof of Proposition 3.1.Note that ifF∈H1(µ), then∇F∈L2({1,...,N},H−1(µ)). Indeed
+N∑
+i=1
+∥∂iF∥2
+H−1(µ)≤
+N∑
+i=1
+∥∂iF∥2
+L2≤∥F∥2
+H 1(µ).
+By Lemma A.2, there existsϕ∈H1(µ) such thatLµϕ=F−Eµ[F] as elements ofH−1(µ) and such that
+∇ϕ·⃗ n= 0 a.e. on∂DN. Letw∈C∞(DN) such that∇w·⃗ n= 0 a.e. on∂DN. For everyi∈{1,...,N},
+we have
+Eµ[w∂iF] = Eµ[∂∗
+iw(F−Eµ[F])] = Eµ[∂∗
+iwLµϕ] = Eµ[∇(∂∗
+iw)·∇ϕ]
+=
+N∑
+j=1
+Eµ[(∂∗
+i∂jw)∂jϕ] +
+N∑
+j=1
+Eµ[([∂j,∂∗
+i ]w)∂jϕ].
+For the first term in the sum above, we have
+N∑
+j=1
+Eµ[(∂∗
+i∂jw)∂jϕ] =
+N∑
+j=1
+Eµ[(∂jw)∂i∂jϕ] = Eµ[∇w·∇(∂iϕ)] = Eµ[wLµ(∂iϕ)].
+For the second term, using the identity
+[∂j,∂∗
+i ] =∂j
+(
+−∂i + (∂iH)
+)
+−
+(
+−∂i + (∂iH)
+)
+∂j = (∇2H)ij,
+we get
+N∑
+j=1
+Eµ[([∂j,∂∗
+i ]w)∂jϕ] = Eµ[wei·∇2H∇ϕ].
+We conclude by density that, for everyi∈{1,...,N},
+Lµ(∂iϕ) + (∇2H∇ϕ)i =∂iF,
+holds in the sense ofH−1(µ). This concludes the proof of existence of a solution to (3.6).
+Let us prove uniqueness. Suppose that∇ϕ∈L2({1,...,N},H 1(µ)) solves (3.6). Then, ϕsolves
+(A.3) forF = 0, which has a unique solution such thatEµ[ϕ] = 0, which isϕ= 0. Hence, uniqueness
+holds.
+The formula (3.8) then easily follows from an integration by parts: letting∇ϕbe the solution of
+(3.6), we can write
+Varµ[F] = Eµ[(F−Eµ[F])Lµϕ] = Eµ[∇F·∇ϕ].
+The variational representation (3.7) is straightforward using that∇ϕis the unique minimizer of the
+function J defined in (A.4). □
+A.3. Well-posedness for non gradient vector fields.We turn to the proof of Proposition 3.2.
+Proof of Proposition 3.2.Let v∈L2({1,...,N},H−1(µ)). Let
+E :={ψ∈L2({1,...,N},H 1(µ)) :ψ=w◦GapN for somew∈L2({1,...,N},H 1(µ′)),
+ψ·(e1 +···+eN) = 0}
+and
+J :ψ∈E↦→Eµ[∥Dψ∥2
+F +ψ·∇2Hψ−2v·ψ].
+Let us show thatJ admits a unique minimizer. First
+|Eµ[v·ψ]|≤
+N∑
+i=1
+Eµ[v2
+i ]
+1
+2 Eµ[ψ2
+i ]
+1
+2.
+
+PDF PAGE 64
+64 JEANNE BOURSIER
+Denoting ψN+1 :=ψ1, sinceψ·(e1 +···+eN) = 0, there existsc> 0 such that
+ψ·∇2Hψ≥c
+N∑
+i=1
+(ψi+1−ψi)2≥c
+N2
+N∑
+i=1
+ψ2
+i. (A.9)
+It follows thatJ is coercive with respect to the norm∥·∥L2({1,...,N},H 1(µ)).Arguing as in the proof
+of Lemma A.2, one can show thatJ admits a unique minimizerψ∈E. Moreover, the minimizer ψ
+satisfies, for everyh∈E,
+Eµ
+[ N∑
+i=1
+∇ψi·∇hi +ψ·∇2Hh
+]
+= Eµ[v·h].
+By integration by parts, for everyh∈E and everyi = 1,...,N , we have
+Eµ[∇ψi·∇hi] = Eµ[Lµψihi] +
+ˆ
+∂DN
+(∇ψi·⃗ n)hie−H = Eµ[Lµψihi],
+since for everyi,j such thati̸=j, limx→0χij(x) = +∞. Therefore, for everyh∈E,
+Eµ[(Aµ
+1ψ−v)h] = 0. (A.10)
+Since (Aµ
+1ψ−v)·(e1+···+eN) = 0, (A.10) holds for everyh∈L2({1,...,N},H 1(µ)) such that for every
+i, hi is a function of the gaps. Finally, sinceAµ
+1ψ−v is a function of the gaps, we get by proceeding
+as in (A.8) that (A.10) holds for anyh∈L2({1,...,N},H 1(µ)). We conclude that ψsatisfies the
+Euler-Lagrange equation {
+Aµ
+1ψ=v on DN
+ψ·(e1 +···+eN) = 0 on DN, (A.11)
+where the first equality is an equality between elements ofL2({1,...,N},H−1(µ)).
+We now turn to the proof of uniqueness. Letψ∈L2({1,...,N},H 1(µ)) satisfy
+{
+Aµ
+1ψ= 0 on DN
+ψ·(e1 +···+eN) = 0 on DN. (A.12)
+Taking the scalar product of the equationAµ
+1ψ= 0 with ψand integrating by parts gives
+Eµ
+[ N∑
+i=1
+|∇ψi|2
+]
++ Eµ[ψ·∇2Hψ] = 0.
+In particular,
+Eµ[ψ·∇2Hψ] = 0.
+The above display and (A.9) imply thatψ= 0, which proves uniqueness. □
+Appendix B. Auxiliary estimates
+B.1. Proof of Lemma 5.6.
+Lemma B.1. Let
+˜g :x∈T\{0}↦→g′(x)x
+and letψ∈C∞(ℓ−1
+N T). Set
+ζ0 : (x,y )∈ℓ−1
+N (T\diagT2)2↦→ℓN(ψ(ℓ−1
+N y)−ψ(ℓ−1
+N x))
+y−x .
+RecalltγandIγfrom (5.49)and (5.50). RecallLoopℓN,γ[ψ]from (5.51). LetV and W∈L2({1,...,N},C∞(DN))
+be given byVi = Wi = 0 for everyi /∈Iγand for everyi∈Iγ,
+Vi := 2
+∑
+k:i+k∈Iγ
+∂1ζ0(xi,xi+k)N−s˜g(xi+k−xi)−2N
+ˆ
+|y|≤tγ
+∂1ζ0(xi,y )N−s˜g(y−xi)dy
++ 2
+∑
+k:i+k∈Iγ
+ζ0(xi,xi+k)N−s˜g′(k
+N )−2N
+ˆ
+|y|≤tγ
+ζ0(xi,y )N−s˜g′(y−xi)dy, (B.1)
+
+PDF PAGE 65
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 65
+Wi := 2
+∑
+k:i+k∈Iγ
+ζ0(xi,xi+k)N−s(˜g′(xi+k−xi)−˜g′(k
+N )). (B.2)
+Then, we have
+∇LoopℓN,γ[ψ] = V + W.
+Proof. For allx,y∈T, x̸=y, we have
+NℓN(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))N−(s+1)g′(x−y) =ζ0(x,y )N−s˜g(x−y).
+Therefore,
+LoopℓN,γ[ψ] =
+∑
+i̸=j∈Iγ
+ζ0(xi,xj)N−s˜g(xi−xj)−2N
+∑
+i∈Iγ
+ˆ
+|y|≤tγ
+ζ0(xi,y )N−s˜g(xi−y)dy.
+Thus, we can decompose the gradient ofLoopℓN,γ[ψ] into∇LoopℓN,γ[ψ] = V + Wwith V and W as in
+(B.1) and (B.2). □
+Lemma B.2. Letψ∈C∞(ℓ−1
+N T). Letα∈[s−1, s
+2). Let
+ζ0 : (x,y )∈ℓ−1
+N (T\diagT2)2↦→ℓN(ψ(ℓ−1
+N y)−ψ(ℓ−1
+N x))
+y−x .
+Letw(1)
+N and w(2)
+N be as in(5.53) and (5.54). Suppose that
+|ψ′|≤Cw(1)
+N and |ψ′′|≤Cw(2)
+N .
+Then, for allx,y∈T, we have
+|ζ0(x,y )|≤C(w(1)
+N (ℓ−1
+N x) +w(1)
+N (ℓ−1
+N y)), (B.3)
+|∂xζ0(x,y )|≤Cℓ−1
+N (w(2)
+N (ℓ−1
+N x) +w(2)
+N (ℓ−1
+N y)), (B.4)
+|∂yζ0(x,y )|≤Cℓ−1
+N (w(2)
+N (ℓ−1
+N x) +w(2)
+N (ℓ−1
+N y)) (B.5)
+|∂xyζ0(x,y )|≤Cℓ−1
+N
+|y−x|(w(2)
+N (ℓ−1
+N x) +w(2)
+N (ℓ−1
+N y)). (B.6)
+For allx,y,a ∈T, we have
+|∂xζ0(x,y +a)−∂xζ0(x,y )|
+≤ Cℓ−1
+N|a|
+min(|x−y|,|x−y−a|)(w(2)
+N (ℓ−1
+N x) +w(2)
+N (ℓ−1
+N y) +w(2)
+N (ℓ−1
+N (y +a))). (B.7)
+Proof. One can notice that
+ζ0(x,y ) =
+ˆ 1
+0
+ψ′(ℓ−1
+N ((1−θ)x +θy))dθ. (B.8)
+Therefore, since 1−s +α<1, we get (B.3).
+Let us now prove (B.4). We have
+∂xζ0(x,y ) =−(y−x)ψ′(ℓ−1
+N x) +ℓN
+(
+ψ(ℓ−1
+N y)−ψ(ℓ−1
+N x)
+)
+(y−x)2 .
+Suppose thatx∈(−1
+4, 0) and y∈(0, 1
+4). We use
+|∂xζ0(x,y )|≤|ψ′(ℓ−1
+N x)|
+|y−x|+ ℓN
+⏐⏐ψ(ℓ−1
+N y)−ψ(ℓ−1
+N x)
+⏐⏐
+(y−x)2 .
+Since|y−x|≥|x|, we get
+|ψ′(ℓ−1
+N x)|
+|y−x|≤|ψ′(ℓ−1
+N x)|
+|x|≤Cℓ−1
+N w(2)
+N (ℓ−1
+N x).
+Moreover, using|y−x|≥max(|x|,|y|) and (B.3), we get
+ℓN
+⏐⏐ψ(ℓ−1
+N y)−ψ(ℓ−1
+N x)
+⏐⏐
+(y−x)2 ≤C
+(w(1)
+N (ℓ−1
+N x)
+|x| + w(1)
+N (ℓ−1
+N y)
+|y|
+)
+≤Cℓ−1
+N (w(2)
+N (ℓ−1
+N x) +w(2)
+N (ℓ−1
+N y)).
+
+PDF PAGE 66
+66 JEANNE BOURSIER
+Combining the two above displays shows (B.4) in the casex< 0 and y >0.
+Now assume thatx∈(0, 1
+4) and y∈(0, 1
+4). Then by (B.8),
+∂xζ0(x,y ) =−ℓ−1
+N
+ˆ 1
+0
+ψ′′(ℓ−1
+N ((1−θ)x +θy))θdθ.
+Hence,
+|∂xζ0(x,y )|≤ℓ−1
+N
+ˆ 1
+0
+|ψ′′(ℓ−1
+N ((1−θ)x +θy))|θdθ.
+Since 0 /∈[x,y ], we get (B.4). The proof of (B.5) is similar.
+We finally prove (B.7). We compute
+∂xyζ0(x,y ) =−ψ′(ℓ−1
+N y)−ψ′(ℓ−1
+N x)
+(y−x)2 −2−(y−x)ψ′(ℓ−1
+N x) +ℓN
+(
+ψ(ℓ−1
+N y)−ψ(ℓ−1
+N x)
+)
+(y−x)3 .
+Proceeding as above, we get
+|∂xyζ0(x,y )|≤Cℓ−1
+N
+|y−x|(w(2)
+N (ℓ−1
+N x) +w(2)
+N (ℓ−1
+N y)),
+which gives (B.7). □
+Lemma B.3.Letψ∈C∞(ℓ−1
+N T)satisfy the assumption of Lemma B.2. LetV ∈L2({1,...,N},C∞(DN))
+be as in(B.1). LetAε,γbe the event defined in(5.52). There exists a constantκ >0 depending ons
+such that for everyi∈Iγ, we have
+|Vi|≤(NℓN)κε
+(
+ℓ−1
+N (w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (xi−tγ)) +w(2)
+N (ℓ−1
+N (xi +tγ))
++(NℓN)1−s+αN−s
+2
+1
+max(|xi|, 1
+N )1+s
+2
+1|xi|≤2ℓN
+)
+.
+Proof. We assume thatℓN→0. The caseℓN≡1 is similar and easier. Recall the eventAε,γdefined
+in (5.52). Throughout this proof, we work on the eventAε,γ, and all bounds below are understood to
+hold on this event.
+Step 1: splitting ofV. We can splitV into V = V(1) + V(2), where for everyi∈Ic
+γ, V(1)
+i = V(2)
+i = 0,
+and for everyi∈Iγ,
+V(1)
+i := 2
+∑
+k:i+k∈Iγ
+∂xζ0(xi,xi+k)N−s˜g(xi+k−xi)−2
+∑
+k:i+k∈Iγ
+∂xζ0(xi,xi + k
+N )N−s˜g(k
+N )
++ 2
+∑
+k:i+k∈Iγ
+(ζ0(xi,xi+k)−ζ0(xi,xi + k
+N ))N−s˜g′(k
+N ),
+V(2)
+i := 2
+∑
+k:i+k∈Iγ
+(∂xζ0(xi, k
+N )˜g(k
+N ) +ζ0(xi, k
+N )˜g′(k
+N ))
+−2N
+ˆ
+|y|≤
+(NℓN )γ
+N
+(∂xζ0(xi,y )˜g(y) +ζ0(xi,y )˜g′(y))dy. (B.9)
+Step 2: control onV(1). For everyi∈Iγ, one may write
+V(1)
+i = 2
+∑
+k:i+k∈Iγ
+∂xζ0(xi,xi+k)N−s(˜g(xi+k−xi)−˜g(k
+N )) (B.10)
++ 2
+∑
+k:i+k∈Iγ
+(∂xζ0(xi,xi+k)−∂xζ0(xi,xi + k
+N ))N−s˜g(k
+N )
++ 2
+∑
+k:i+k∈Iγ
+(ζ0(xi,xi+k)−ζ0(xi,xi + k
+N ))N−s˜g′(k
+N ).
+By Lemma B.2,
+|∂xζ0(xi,xi+k)|≤Cℓ−1
+N (w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (xi+k))),
+
+PDF PAGE 67
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 67
+|∂xζ0(xi,xi+k)−∂xζ0(xi,xi + k
+N )|≤ Cℓ−1
+N
+min(k
+N,xi+k−xi)(w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (xi+k))).
+|∂xζ0(xi,xi+k)−∂xζ0(xi,xi + k
+N )|≤|xi+k−xi−k
+N|Cℓ−1
+N (w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (xi+k))).
+Therefore, we conclude that there exists a constantκ>0 such that for everyi∈Iγ,
+|V(1)
+i |≤ℓ−1
+N (NℓN)κε∑
+j∈Iγ:j̸=i
+(w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N xj) +w(2)
+N (ℓ−1
+N (xi + j−i
+N ))) 1
+d(i,j )1+s
+2
+.
+Notice that for allγ∈R,
+ℓ−1
+N
+max(ℓ−1
+N x, 1
+NℓN
+)γ= ℓ−1
+N (NℓN)γ
+max(Nx, 1)γ.
+Therefore,
+|V(1)
+i |≤(NℓN)κε(Ai +Bi) (B.11)
+with
+Ai : =ℓ−1
+N (NℓN)2−s+α ∑
+j∈Iγ:j̸=i
+1
+|j|2−s+α
+1
+|i−j|1+s
+2
+1|j|≤NℓN,
+Bi : =ℓ−1
+N (NℓN)3−s ∑
+j∈Iγ:j̸=i
+1
+|j|3−s
+1
+|i−j|1+s
+2
+1|j|>NℓN.
+Step 3: control onAi and Bi. Suppose that|i|≤2NℓN. Since 2−s +α>1, we have
+|Ai|≤ℓ−1
+N (NℓN)2−s+α ∑
+j∈Iγ:j̸=i
+1
+|j|2−s+α
+1
+|j−i|1+s
+2
+≤Cℓ−1
+N (NℓN)2−s+α
+( 1
+|i|2−s+α+ 1
+|i|1+s
+2
+)
+.
+(B.12)
+Moreover, we have
+|Bi|≤Cℓ−1
+N (NℓN)3−s ∑
+j
+1
+(NℓN)3−s
+1
+|i−j|1+s
+2
+≤Cℓ−1
+N . (B.13)
+Therefore, if|i|≤2NℓN, then by combining (B.11), (B.12) and (B.13), we get
+|V(1)
+i |≤Cℓ−1
+N (NℓN)2−s+α+κε
+( 1
+|i|2−s+α+ 1
+|i|1+s
+2
+)
+.
+Suppose that|i|> 2NℓN. Then, we have
+|Ai|≤Cℓ−1
+N (NℓN)2−s+α 1
+|i|1+s
+2
+. (B.14)
+Moreover, we have
+|Bi|≤Cℓ−1
+N (NℓN)3−s ∑
+j:|j|≤i
+2
+1
+|j|3−s
+1
+|i−j|1+s
+2
+1|j|≥NℓN
++Cℓ−1
+N (NℓN)3−s ∑
+j:|j|>i
+2
+1
+|j|3−s
+1
+|i−j|1+s
+2
+1|j|≥NℓN.
+The first term is bounded by
+ℓ−1
+N (NℓN)3−s ∑
+j:|j|≤i
+2
+1
+|j|3−s
+1
+|i−j|1+s
+2
+1|j|≥NℓN≤Cℓ−1
+N (NℓN)3−s 1
+|i|1+s
+2
+1
+(NℓN)2−s.
+For the second term, we have
+Cℓ−1
+N (NℓN)3−s ∑
+j:|j|>i
+2
+1
+|j|3−s
+1
+|i−j|1+s
+2
+1|j|≥NℓN≤Cℓ−1
+N (NℓN)3−s 1
+|i|3−s.
+
+PDF PAGE 68
+68 JEANNE BOURSIER
+Combining the above displays gives
+|Bi|≤Cℓ−1
+N
+(NℓN
+|i|1+s
+2
++ (NℓN)3−s
+|i|3−s
+)
+. (B.15)
+Hence, when|i|> 2NℓN, then by combining (B.11), (B.14) and (B.15) and using that2−s +α≥1,
+we get
+|V(1)
+i |≤Cℓ−1
+N (NℓN)κε
+((NℓN)2−s+α
+|i|2−s+α + (NℓN)3−s
+|i|3−s
+)
+.
+We conclude that
+|V(1)
+i |≤C(NℓN)κε
+(
+ℓ−1
+N w(2)
+N (ℓ−1
+N xi) + (NℓN)1−s+αN−s
+2
+1
+max(|xi|, 1
+N )1+s
+2
+1|xi|≤2ℓN
+)
+. (B.16)
+Step 4: control onV(2). Fix x∈T and define
+ϕx :y∈N T↦→ζ0(x,x + y
+N )N−s˜g′(y
+N ) +∂1ζ0(x,x + y
+N )N−s˜g(y
+N ).
+Recalling the definition (B.9) ofV(2), we have
+V(2)
+i =
+∑
+k̸=0:
+−Ntγ≤i+k≤Ntγ
+ϕx(k).
+By the Euler-Maclaurin formula,
+∑
+k̸=0:
+−Ntγ≤i+k≤Ntγ
+ϕx(k) =
+ˆ
+[−tγ−i,tγ−i]\[−1,1]
+ϕx(y)dy
++ 1
+2(ϕx(Ntγ−i) +ϕx(−Ntγ−i)−ϕx(1)−ϕx(−1)) +O
+(ˆ −1
+−N
+2
+|ϕ′
+x(y)|dy +
+ˆ N
+2
+1
+|ϕ′
+x(y)|dy
+)
+.
+We compute
+ϕx(1) +ϕx(−1) =
+(
+ζ0(x,x + 1
+N )−ζ0(x,x−1
+N )
+)
+N−s˜g′( 1
+N )
++
+(
+∂1ζ0(x,x + 1
+N ) +∂1ζ0(x,x−1
+N )
+)
+N−s˜g( 1
+N ).
+By Lemma B.2,
+|ϕx(1) +ϕx(−1)|≤Cℓ−1
+N w(2)
+N (ℓ−1
+N x). (B.17)
+We compute
+ϕ′
+x(y) =N−(s+1)
+(
+ζ0
+(
+x,x + y
+N
+)
+˜g′′(y
+N
+)
++
+(
+∂x +∂y
+)
+ζ0
+(
+x,x + y
+N
+)
+˜g′(y
+N
+)
++∂xyζ0
+(
+x,x + y
+N
+)
+˜g
+(y
+N
+))
+.
+By using Lemma B.2, one can check that
+ˆ N
+2
+1
+|ϕ′
+x|(y)dy≤Cℓ−1
+N
+ˆ N
+2
+1
+(
+w(2)
+N (ℓ−1
+N x) +w(2)
+N
+(
+ℓ−1
+N
+(
+x + y
+N
+))) 1
+y1+s dy.
+After some computations, we get
+ˆ N
+2
+1
+|ϕ′
+x|(y)dy≤C
+(
+ℓ−1
+N w(2)
+N (ℓ−1
+N xi) + (NℓN)1−s+αN−s
+2
+1
+max(|xi|, 1
+N )1+s
+2
+1|xi|≤2ℓN
+)
+.
+It follows that
+|V(2)
+i |≤C
+(
+ℓ−1
+N w(2)
+N (ℓ−1
+N xi) + (NℓN)1−s+αN−s
+2
+1
+max(|xi|, 1
+N )1+s
+2
+1|xi|≤2ℓN
+)
++ 1
+2(|ϕx(Ntγ−i)|+|ϕx(−Ntγ−i)|). (B.18)
+It remains to bound the second term in the above display. We have
+ϕx(Ntγ−i) =ζ0(x,x +tγ−i
+N )N−s˜g′(tγ−i
+N ) +∂1ζ0(x,x +tγ−i
+N )N−s˜g(tγ−i
+N ). (B.19)
+
+PDF PAGE 69
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 69
+By Lemma B.2,
+|ζ0(x,x +tγ−i
+N )|≤C
+(
+w(1)
+N (ℓ−1
+N x) +w(1)
+N (ℓ−1
+N (x +tγ−i
+N ))
+)
+.
+It follows that
+|ζ0(x,x +tγ−i
+N )N−s˜g′(tγ−i
+N )|≤Cℓ−1
+N
+|Ntγ−i|1+s
+(
+w(1)
+N (ℓ−1
+N x) +w(1)
+N (ℓ−1
+N (x +tγ−i
+N ))
+)
+.
+Therefore, by the definition ofAε,γ, there existsκ>0 such that
+|ζ0(xi,xi +tγ−i
+N )N−s˜g′(tγ−i
+N )|≤Cℓ−1
+N (NℓN)κε
+|Ntγ−i|1+s
+(
+w(1)
+N (ℓ−1
+N xi) +w(1)
+N (ℓ−1
+N tγ)
+)
+≤2Cℓ−1
+N (NℓN)κε
+|Ntγ−i|1+s w(1)
+N (ℓ−1
+N xi)
+≤2Cℓ−1
+N (NℓN)κ′ε
+|N(xi−tγ)|1+sw(1)
+N (ℓ−1
+N xi).
+One can notice that if|N(xi−tγ)|≥NℓN, then
+1
+|N(xi−tγ)|w(1)
+N (ℓ−1
+N xi)≤(NℓN)κεw(2)
+N (ℓ−1
+N xi).
+Now, if|N(xi +tγ)|≤NℓN, then
+ℓ−1
+N
+1
+|N(xi +tγ)|w(1)
+N (ℓ−1
+N xi)≤(NℓN)κεℓ−1
+N (NℓN)(2−s)(1−γ).
+Therefore, takingγlarge enough,
+ℓ−1
+N
+1
+|N(xi−tγ)|w(1)
+N (ℓ−1
+N xi)≤(NℓN)κεℓ−1
+N w(2)
+N (ℓ−1
+N (xi +tγ)).
+Combining the two above displays shows that
+|ζ0(xi,xi +tγ−i
+N )N−s˜g′(tγ−i
+N )|≤(NℓN)κεℓ−1
+N
+(
+w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (xi +tγ))
+)
+. (B.20)
+For the second term in (B.19),
+|∂xζ0(x,x +tγ−i
+N )|≤Cℓ−1
+N
+(
+w(2)
+N (ℓ−1
+N x) +w(2)
+N (ℓ−1
+N (x +tγ−i
+N ))
+)
+.
+Therefore,
+|∂xζ0(x,x +tγ−i
+N )N−s˜g(tγ−i
+N )|≤Cℓ−1
+N
+|Ntγ−i|s
+(
+w(2)
+N (ℓ−1
+N x) +w(2)
+N (ℓ−1
+N (x +tγ−i
+N ))
+)
+.
+Hence, by the definition ofAε,γ, there existsκ>0 such that
+|∂xζ0(xi,xi +tγ−i
+N )N−s˜g(tγ−i
+N )|≤(NℓN)κεℓ−1
+N
+|Ntγ−i|s
+(
+w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (tγ))
+)
+≤(NℓN)κεℓ−1
+N
+(
+w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (tγ))
+)
+≤C(NℓN)κεℓ−1
+N w(2)
+N (ℓ−1
+N xi).
+(B.21)
+We conclude by combining (B.20), (B.21), (B.19) and (B.18) that
+|V(2)
+i |≤(NℓN)κε
+(
+ℓ−1
+N
+(
+w(2)
+N (ℓ−1
+N xi) +w(2)
+N (ℓ−1
+N (xi +tγ) +w(2)
+N (ℓ−1
+N (xi−tγ))
+)
++(NℓN)1−s+αN−s
+2
+1
+max(|xi|, 1
+N )1+s
+2
+1|xi|≤2ℓN
+)
+. (B.22)
+
+PDF PAGE 70
+70 JEANNE BOURSIER
+Step 5: conclusion.Combining (B.16) and (B.22) concludes the proof. □
+Lemma B.4.Letψ∈C∞(ℓ−1
+N T)satisfy the assumption of Lemma B.2. LetW∈L2({1,...,N},C∞(DN))
+be as in(B.2). LetAε,γbe the event defined in(5.52). For allUN∈RN, we have
+W·UN =−
+N∑
+i=1
+Wgap
+i N(ui+1−ui),
+where Wgap is such that there existsκ>0 depending ons such that
+sup
+Aε,γ
+|Wgap|2≤(NℓN)κε
+(
+NℓN + (NℓN)2(α+1−s)
+)
+. (B.23)
+Proof. Let Wgap∈L2({1,...,N},C∞(DN)) be the vector field given for everyi∈Iγby
+Wgap
+i :=N−(1+s)
+N−1∑
+k=1
+(
+δk̸=N/2 + 1
+2δk=N/2
+) ∑
+l∈Iγ
+l+k∈Iγ
+i−k<l≤i
+ζ0(xl+k,xl)
+(
+˜g′(xl+k−xl)−˜g′(k
+N )
+)
+and Wgap
+i = 0 for everyi /∈Iγ. For allUN∈RN, we have
+W·UN =−
+N∑
+i=1
+Wgap
+i N(ui+1−ui).
+Let us now bound|Wgap|on the good eventAε,γ. Throughout this proof, we work on the eventAε,γ,
+and all bounds below are understood to hold on this event.
+By the definition ofAε,γ, there exists a constantκ>0 depending ons such that for everyl,l +k∈Iγ,
+N−(1+s)|˜g′(xl+k−xk)−˜g′(k
+N )|≤C(NℓN)κε
+|k|2+s
+2
+. (B.24)
+By Lemma B.2, we have
+|ζ0(xl+k,xl)|≤C(w(1)
+N (ℓ−1
+N xl+k) +w(1)
+N (ℓ−1
+N xl)).
+Therefore,
+|Wgap
+i |≤(NℓN)κε
+N−1∑
+k=1
+1
+k2+s
+2
+i∑
+l=i−k+1
+(⏐⏐w(1)
+N
+(
+ℓ−1
+N xl
+)⏐⏐ +
+⏐⏐w(1)
+N
+(
+ℓ−1
+N xl+k
+)⏐⏐
+)
+.
+Reindexing the sum gives
+|Wgap
+i |≤(NℓN)κε
+N∑
+j=1
+|w(1)
+N (ℓ−1
+N xj)| 1
+d(j,i )1+s
+2
+. (B.25)
+On the eventAε,γ, we have
+|Wgap
+i |≤(NℓN)κε(Ai +Bi) (B.26)
+where
+Ai := (NℓN)1−s+α∑
+j
+1
+|j|1−s+α1|j|≤NℓN
+1
+|j−i|1+s
+2
+,
+Bi := (NℓN)2−s ∑
+j
+1
+|j|2−s 1|j|≥NℓN
+1
+|j−i|1+s
+2
+.
+Suppose that|i|≤2NℓN. Since 1−s +α<1, we have
+|Ai|≤C(NℓN)1−s+α
+( 1
+|i|1−s+α+ 1
+|i|1+s
+2−s+α
+)
+≤2C(NℓN)1−s+α 1
+|i|1−s+α.
+Moreover, we have|Bi|≤C.
+Suppose that|i|> 2NℓN. Since 1−s +α<1, we have
+|Ai|≤C NℓN
+|i|1+s
+2
+and |Bi|≤C NℓN
+|i|1+s
+2
+.
+
+PDF PAGE 71
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 71
+Therefore,
+∑
+i:|i|≤NℓN
+|Ai|2 ≤C
+(
+NℓN 11−s+α<1
+2
++ NℓN log(NℓN)11−s+α= 1
+2
++ (NℓN)2(1−s+α)11−s+α>1
+2
+)
+and ∑
+i:|i|≥NℓN
+|Bi|2≤CNℓN.
+Inserting the two above displays into (B.26) concludes the proof. □
+Combining Lemma B.1, Lemma B.3 and Lemma B.4 concludes the proof of Lemma 5.6.
+B.2. Additional useful estimates.
+Lemma B.5. Letψ∈C∞(ℓ−1
+N T) be as in Lemma B.3. LetBℓN [ψ] be as in(5.45). For allε>0, there
+exists a constantC >0 depending onε, s and βsuch that
+EPN,β[BℓN [ψ]]≤C(NℓN)ε(NℓN + (NℓN)2(1−s+α)). (B.27)
+Proof. Let w(1)
+N be as in (5.53). Let us recall that
+BℓN [ψ] =
+¨
+Diagc
+T2
+N−(s+2)g′′(x−y)(NℓN)2(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))2dfluctN(x)dfluctN(y).
+Denote
+Φ : (x,y )∈(ℓ−1
+N T)2\DiagT2↦→N−(s+2)g′′(x−y)(NℓN)2(ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y))2,
+so that
+BℓN [ψ] =
+¨
+Diagc
+T2
+Φ(x,y )dfluctN(x)dfluctN(y).
+Notice that
+BℓN [ψ] =−
+¨
+Φ(x,y )(Ndx)dfluctN(y) +
+¨
+Diagc
+T2
+Φ(x,y )d(NdµN)(x)dfluctN(y).
+Since the first marginalx1 of PN,βis uniformly distributed onT, we have
+EPN,β[BℓN [ψ]] = EPN,β
+[ ¨
+Diagc
+T2
+Φ(x,y )d(NdµN)(x)dfluctN(y)
+]
+=
+N∑
+i=1
+EPN,β
+
+∑
+j:j̸=i
+Φ(xi,xj)−N
+ˆ
+Φ(xi,y )dy
+
+.
+Let us write ∑
+j:j̸=i
+Φ(xi,xj)−N
+ˆ
+Φ(xi,y )dy =E1
+i +E(2)
+i , (B.28)
+where
+E(1)
+i : =
+∑
+j:j̸=i
+(Φ(xi,xj)−Φ(xi,xi + j−i
+N ))
+E(2)
+i : =
+∑
+j:j̸=i
+Φ(xi,xi + j−i
+N )−N
+ˆ
+Φ(xi,xi +y)dy.
+Let x,y,a ∈T. We have
+(
+ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y)
+)2
+−
+(
+ψ(ℓ−1
+N x)−ψ(ℓ−1
+N (y +a))
+)2
+=
+(
+ψ(ℓ−1
+N (y +a))−ψ(ℓ−1
+N y)
+)(
+ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y) +ψ(ℓ−1
+N x)−ψ(ℓ−1
+N (y +a))
+)
+.
+
+PDF PAGE 72
+72 JEANNE BOURSIER
+Therefore, by Lemma B.2, there exists a constantC >0 such that
+⏐⏐⏐
+(
+ψ(ℓ−1
+N x)−ψ(ℓ−1
+N y)
+)2
+−
+(
+ψ(ℓ−1
+N x)−ψ(ℓ−1
+N (y +a))
+)2⏐⏐⏐≤C|a|
+(
+w(1)
+N (ℓ−1
+N (y +a)) +w(1)
+N (ℓ−1
+N y)
+)
+×
+(
+(w(1)
+N (ℓ−1
+N x) +w(1)
+N (ℓ−1
+N y))|x−y|+ (w(1)
+N (ℓ−1
+N (y +a)) +w(1)
+N (ℓ−1
+N y))|x−y−a|
+)
+.
+Moreover, by Lemma B.2, there exists a constantC >0 such that
+|Φ(x,y )|≤C|x−y|2(w(1)
+N (ℓ−1
+N x) +w(1)
+N (ℓ−1
+N y)).
+Thus, combining the two last displays, we get that there exists a constantC >0 such that
+|Φ(xi,xj)−Φ(xi,xi + j−i
+N )|≤C
+(
+w(1)
+N (ℓ−1
+N xi) +w(1)
+N (ℓ−1
+N xj) +w(1)
+N (ℓ−1
+N (xi + j−i
+N ))
+)2
+×|N(xj−xi)−Nj−i
+N|
+|N(xj−xi)|s+1 .
+Using Theorem 1 and Lemma 4.5, we get that for allε>0, there exists a constantC >0 depending on
+β, s and εsuch that
+N∑
+i=1
+EPN,β[|E(1)
+i |]≤C(NℓN)ε
+N∑
+i=1
+∑
+j̸=i:|j|≤2NℓN
+(NℓN)2(1−s+α) 1
+|j|2(1−s+α)
+1
+|j−i|1+s
+2
++C(NℓN)ε∑
+j:j̸=i
+(NℓN)2(2−s) 1
+(j +NℓN)2(2−s)
+1
+|j−i|1+s
+2
+,
+After some computations similar to the proof of Lemma 5.6, we find that for allε >0, there exists a
+constantC >0 depending onβ, s and εsuch that
+N∑
+i=1
+EPN,β[|E(1)
+i |]≤C(NℓN)ε+max(2(1−s+α),1). (B.29)
+For the discretization error, proceeding as in the proof of Lemma 5.6, one can write
+|E(2)
+i |≤1
+N
+ˆ N
+2
+1
+|∂yΦ(xi,xi + y
+N )|dy
+≤C
+ˆ N
+2
+1
+1
+y1+s
+(
+w(1)
+N (ℓ−1
+N xi)2 +w(1)
+N (ℓ−1
+N (xi + y
+N ))2
+)
+dy
+≤Cw(1)
+N (ℓ−1
+N xi)2.
+Summing the above estimate gives that for allε >0, there exists a constantC >0 depending onβ, s
+and εsuch that
+N∑
+i=1
+EPN,β[|E(2)
+i |]≤C(NℓN)ε+max(2(1−s+α),1). (B.30)
+In combination with (B.28) and (B.29), this gives (B.27). □
+We now turn to the proof of Lemma 5.7.
+proof of Lemma 5.7.Let us denote
+Looperr
+ℓN [ψ] = LoopℓN [ψ]−LoopℓN,γ[ψ].
+Let w(1)
+N be as in (5.53). By Lemma B.2, there exists a constantC >0 such that
+|Looperr
+ℓN [ψ]|≤C
+N∑
+i=1
+∑
+j∈Icγ
+(w(1)
+N (ℓ−1
+N xi) +w(1)
+N (ℓ−1
+N xj)) 1
+|N(xj−xi)|1+s
+2−ε. (B.31)
+
+PDF PAGE 73
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 73
+Using Lemma 4.5, we get that for allε>0, there exists a constantC >0 depending onεsuch that
+EPN,β[Looperr
+ℓN [ψ]2]
+≤C(NℓN)εEPN,β
+
+
+
+
+N∑
+i=1
+∑
+j∈Icγ
+(w(1)
+N (ℓ−1
+N xi) +w(1)
+N (ℓ−1
+N xj)) 1
+|N(j−i)|1+s
+2−ε
+
+
+2
+.
+Next, we use that forεsmall enough, there exists a constantC >0 such that
+N∑
+i=1
+∑
+j∈Icγ
+(w(1)
+N (ℓ−1
+N xi) +w(1)
+N (ℓ−1
+N xj)) 1
+|N(j−i)|1+s
+2−ε
+≤C
+N∑
+i=1
+w(1)
+N (ℓ−1
+N xi) 1
+1 +d(i,Icγ)
+s
+2−ε+C
+∑
+j∈Icγ
+w(1)
+N (ℓ−1
+N xj).
+Since the singularity ofw(1)
+N is inL1 (since 1−s +α<1), we get that
+EPN,β
+
+
+
+ ∑
+i∈Iγ
+w(1)
+N (ℓ−1
+N xi)
+
+
+2
+1
+1 +d(i,Icγ)
+s
+2−ε
+
+
+1
+2
+≤C(NℓN)κε+1−γ(s
+2−ε).
+Moreover, since|w(1)
+N (x)|≤C|x|−(2−s) for|x|> 1, we get that for allε>0, there existsC >0depending
+on β, s and εsuch that
+EPN,β
+
+
+
+ ∑
+j∈Icγ
+w(1)
+N (ℓ−1
+N xj)
+
+
+2
+
+1
+2
+≤C (NℓN)2−s+ε
+(NℓN)γ(1−s).
+Combining the two above displays, we get that for allε>0, there existsC >0 depending onβ, s and
+εsuch that
+EPN,β[Looperr
+ℓN [ψ]2]
+1
+2≤C(NℓN)ε
+(
+(NℓN)2−s−γ(1−s−ε) + (NℓN)1−γ(s
+2−ε)
+)
+.
+Therefore, forγlarge enough, we get the existence of a constantC >0 depending onβ, s and γsuch
+that
+EPN,β[Looperr
+ℓN [ψ]2]
+1
+2≤C(NℓN)
+1
+2,
+which concludes the proof of (5.57).
+The proof of (5.58) is similar to the proof of (5.22), since that1−s +α<1. □
+B.3. Energy estimate.
+Lemma B.6. For everyq >1, there exists a constantC >0 depending onβ, s and q such that
+EPN,β
+
+max
+
+
+
+
+
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+N−s (
+g(xi+k−xi)−g(k
+N )
+)
+
+, 0
+
+
+
+q
+
+1
+q
+≤CN.
+Proof. Let
+FN :XN∈DN↦→N−s
+¨
+Diagc
+T2
+g(x−y)dfluctN(x)dfluctN(y).
+Observe that
+HN =N2−s
+¨
+g(x−y)dxdy +FN.
+Define, on the set of non-ordered particles, the partition function
+KN,β:=
+ˆ
+TN
+e−βFN(XN)dXN.
+We now prove, following [Ser24, Ch. 5], thatlogKN,β=O(N).
+
+PDF PAGE 74
+74 JEANNE BOURSIER
+First, by [Ser24, Cor. 4.2.4], we have
+FN≥−CN,
+which gives
+logKN,β≤CN.
+On the other hand, by Jensen’s inequality,
+logKN,β≥−β
+ˆ
+FN(XN)dx1...dxN
+=−βN−s
+ˆ 
+∑
+i̸=j
+g(xi−xj)−2N
+N∑
+i=1
+ˆ
+g(xi−y)dy +N2
+¨
+g(x−y)dxdy
+
+ dx1···dxN
+=−βN−s(N(N−1)−2N2 +N2)
+¨
+g(x−y)dxdy =βN1−s
+¨
+g(x−y)dxdy≥0.
+We deduce that there exists a constantC >0 depending onβand s such that
+|logKN,β|≤CN. (B.32)
+It follows that there exists a constantC >0 depending onβand s such that
+log EPN,β
+[
+e
+β
+2FN
+]
+= logKN,β
+2
+−logKN,β≤CN. (B.33)
+Let
+X :=
+N∑
+i=1
+⌊N
+2⌋∑
+k=1
+N−s
+(
+g(xi+k−xi)−g(k
+N )
+)
+.
+Notice that there existsC >0 depending ons such that
+FN≥−CN +X. (B.34)
+We deduce from (B.33) and (B.34) that there existsC >0 depending onβand s such that
+EPN,β
+[
+e
+β
+2X
+]
+≤eCN.
+Therefore, for everyu> 0, we have
+EPN,β
+[
+e
+β
+2X 1X>u
+]
+≤eCN. (B.35)
+Letq >1 anduq := (q−1)q. Let us defineϕ:u∈[uq,∞]↦→eu
+1
+q
+. One can notice thatϕis convex and
+increasing. Therefore, by Jensen’s inequality,
+EPN,β[exp(max(X,uq))] = EPN,β[ϕ(max(X,uq)q)]≥ϕ(EPN,β[max(X,uq)q]).
+Hence,
+log EPN,β[exp(max(X,uq))]≥EPN,β[max(X,uq)q]
+1
+q.
+Together with (B.35), this concludes the proof. □
+References
+[ABC+00] Cécile Ané, Sébastien Blachère, Djalil Chafaï, Pierre Fougères, Ivan Gentil, Florent Malrieu, Cyril Roberto,
+and Grégory Scheffer.Sur les inégalités de Sobolev logarithmiques, volume 10. Paris: Société Mathématique
+de France, 2000.
+[AS19] Scott Armstrong and Sylvia Serfaty. Local laws and rigidity for coulomb gases at any temperature. arXiv:
+Mathematical Physics, 2019.
+[AW19] Scott Armstrong and Wei Wu. C2 regularity of the surface tension for the∇ϕinterface model.arXiv preprint
+arXiv:1909.13325, 2019.
+[BBNY16] Roland Bauerschmidt, Paul Bourgade, Miika Nikula, and Horng-Tzer Yau. The two-dimensional coulomb
+plasma: quasi-free approximation and central limit theorem.arXiv preprint arXiv:1609.08582, 2016.
+[BÉ85] Dominique Bakry and Michel Émery. Diffusions hypercontractives. In Jacques Azéma and Marc Yor, editors,
+Séminaire de Probabilités XIX 1983/84, pages 177–206, Berlin, Heidelberg, 1985. Springer Berlin Heidelberg.
+[Ber72] Bruce C. Berndt. On the Hurwitz zeta-function. Rocky Mountain Journal of Mathematics, 2(1):151 – 158,
+1972.
+[BEY12] Paul Bourgade, László Erdős, and Horng-Tzer Yau. Bulk universality of generalβ-ensembles with non-convex
+potential. Journal of mathematical physics, 53(9):095221, 2012.
+
+PDF PAGE 75
+OPTIMAL LOCAL LA WS AND CLT FOR THE CIRCULAR RIESZ GAS 75
+[BEY14a] Paul Bourgade, László Erdös, and Horng-Tzer Yau. Edge universality ofβensembles. Communications in
+Mathematical Physics, 332(1):261–353, 2014.
+[BEY+14b] Paul Bourgade, László Erdős, Horng-Tzer Yau, et al. Universality of generalβ-ensembles. Duke Mathematical
+Journal, 163(6):1127–1190, 2014.
+[BG13] Gaëtan Borot and Alice Guionnet. Asymptotic expansion of βmatrix models in the one-cut regime.Commu-
+nications in Mathematical Physics, 317(2):447–483, 2013.
+[BL02] Herm Jan Brascamp and Elliott H. Lieb. On Extensions of the Brunn-Minkowski and Prékopa-Leindler The-
+orems, Including Inequalities for Log Concave Functions, and with an Application to the Diffusion Equation,
+pages 441–464. Springer Berlin Heidelberg, Berlin, Heidelberg, 2002.
+[BL15] Xavier Blanc and Mathieu Lewin. The Crystallization Conjecture: A Review. EMS Surveys in Mathematical
+Sciences, 2(2):255–306, 2015. Final version to appear in EMS Surv. Math. Sci.
+[BLS+18] Florent Bekerman, Thomas Leblé, Sylvia Serfaty, et al. CLT for fluctuations of β-ensembles with general
+potential. Electronic Journal of Probability, 23, 2018.
+[BM92] Dominique Bakry and Dominique Michel. Sur les inégalités FKG. Séminaire de probabilités de Strasbourg,
+26:170–188, 1992.
+[BMP22] PaulBourgade, KrishnanMody, andMichelPain.Optimallocallawandcentrallimittheoremfor β-ensembles.
+Communications in Mathematical Physics, 390(3):1017–1079, 2022.
+[Bou21] Paul Bourgade. Extreme gaps between eigenvalues of wigner matrices.Journal of the European Mathematical
+Society, 2021.
+[Bou22] Jeanne Boursier. Decay of correlations and thermodynamic limit for the circular Riesz gas. arXiv preprint
+arXiv:2209.00396, 2022.
+[Car74] Pierre Cartier. Inégalités de corrélation en mécanique statistique. InSéminaire Bourbaki vol. 1972/73 Exposés
+418–435, pages 242–264. Springer, 1974.
+[CFLW21] Tom Claeys, Benjamin Fahs, Gaultier Lambert, and Christian Webb. How much can the eigenvalues of a
+random hermitian matrix fluctuate?Duke Mathematical Journal, 170(9):2085–2235, 2021.
+[CGS10] Louis HY Chen, Larry Goldstein, and Qi-Man Shao. Normal approximation by Stein’s method. Springer
+Science & Business Media, 2010.
+[Cha19] Sourav Chatterjee. Rigidity of the three-dimensional hierarchical coulomb gas.Probability Theory and Related
+Fields, 175(3):1123–1176, 2019.
+[CSW21] Djalil Chafaï, Edward B. Saff, and Robert S. Womersley. On the solution of a riesz equilibrium problem and
+integral identities for special functions, 2021.
+[DW20] Paul Dario and Wei Wu. Massless phases for the villain model in d ≥3. arXiv preprint arXiv:2002.02946,
+2020.
+[Dys62] Freeman J. Dyson. A Brownian-motion model for the eigenvalues of a random matrix.J. Mathematical Phys.,
+3:1191–1198, 1962.
+[EHL18] Matthias Erbar, Martin Huesmann, and Thomas Leblé. The one-dimensional log-gas free energy has a unique
+minimiser. arXiv preprint arXiv:1812.06929, 2018.
+[ESY11] László Erdős, Benjamin Schlein, and Horng-Tzer Yau. Universality of random matrices and local relaxation
+flow. Inventiones mathematicae, 185(1):75–119, 2011.
+[EY12] László Erdős and Horng-Tzer Yau. Gap universality of generalized wigner andβ-ensembles. preprint.arXiv
+preprint arXiv:1211.3786, 2012.
+[EY15] László Erdős and Horng-Tzer Yau. Gap universality of generalized wigner andbeta-ensembles. Journal of the
+European Mathematical Society, 17(8):1927–2036, 2015.
+[GS20] Shirshendu Ganguly and Sourav Sarkar. Ground states and hyperuniformity of the hierarchical coulomb gas
+in all dimensions.Probability Theory and Related Fields, 177(3):621–675, 2020.
+[Gus05] Jonas Gustavsson. Gaussian fluctuations of eigenvalues in the gue. InAnnales de l’IHP Probabilités et statis-
+tiques, volume 41, pages 151–178, 2005.
+[Hel98a] Bernard Helffer. Remarks on decay of correlations and witten laplacians brascamp–lieb inequalities and semi-
+classical limit.journal of functional analysis, 155(2):571–586, 1998.
+[Hel98b] Bernard Helffer. Remarks on decay of correlations and witten laplacians brascamp–lieb inequalities and semi-
+classical limit.Journal of Functional Analysis, 155(2):571–586, 1998.
+[HL16] Jiaoyang Huang and Benjamin Landon. Local law and mesoscopic fluctuations of dyson brownian motion for
+general βand potential.arXiv preprint arXiv:1612.06306, 2016.
+[HL20] Adrien Hardy and Gaultier Lambert. CLT for circular β-ensembles at high temperature.Journal of Functional
+Analysis, page 108869, 2020.
+[HL21] Adrien Hardy and Gaultier Lambert. CLT for circular β-ensembles at high temperature.Journal of Functional
+Analysis, 280(7):108869, 2021.
+[HS94] Bernard Helffer and Johannes Sjöstrand. On the correlation for kac-like models in the convex case. Journal
+of statistical physics, 74(1-2):349–409, 1994.
+[HS05] DP Hardin and EB Saff. Minimal riesz energy point configurations for rectifiable d-dimensional manifolds.
+Advances in Mathematics, 193(1):174–204, 2005.
+[JM15] Tiefeng Jiang and Sho Matsumoto. Moments of traces of circular beta-ensembles. The Annals of Probability,
+43(6):3279–3336, 2015.
+[Joh98] Kurt Johansson. On fluctuations of eigenvalues of random hermitian matrices. Duke mathematical journal,
+91(1):151–204, 1998.
+
+PDF PAGE 76
+76 JEANNE BOURSIER
+[KS09] Rowan Killip and Mihai Stoiciu. Eigenvalue statistics for cmv matrices: from poisson to clock via random
+matrix ensembles.Duke Mathematical Journal, 146(3):361–399, 2009.
+[Lam21] Gaultier Lambert. Mesoscopic central limit theorem for the circularβ-ensembles and applications.Electronic
+Journal of Probability, 26:1–33, 2021.
+[Leb17] Thomas Leblé. Local microscopic behavior for 2d coulomb gases. Probability Theory and Related Fields,
+169(3):931–976, 2017.
+[Leb18] Thomas Leblé. CLT for fluctuations of linear statistics in the sine- βprocess. International Mathematics
+Research Notices, 2018.
+[Leb21] Thomas Leblé. The two-dimensional one-component plasma is hyperuniform. arXiv preprint
+arXiv:2104.05109, 2021.
+[Lew22] Mathieu Lewin. Coulomb and riesz gases: The known and the unknown. Journal of Mathematical Physics,
+63(6):061101, 2022.
+[LLW+19] Gaultier Lambert, Michel Ledoux, Christian Webb, et al. Quantitative normal approximation of linear sta-
+tistics ofβ-ensembles. Annals of Probability, 47(5):2619–2685, 2019.
+[LS17] Thomas Leblé and Sylvia Serfaty. Large deviation principle for empirical fields of log and riesz gases.Inven-
+tiones mathematicae, 210(3):645–757, 2017.
+[LS18] Thomas Leblé and Sylvia Serfaty. Fluctuations of two dimensional coulomb gases. Geometric and Functional
+Analysis, 28(2):443–508, 2018.
+[LZ20] Thomas Leblé and Ofer Zeitouni. A local CLT for linear statistics of 2d coulomb gases. arXiv preprint
+arXiv:2005.12163, 2020.
+[NS97] Ali Naddaf and Thomas Spencer. On homogenization and scaling limit of some gradient perturbations of a
+massless free field.Communications in mathematical physics, 183(1):55–84, 1997.
+[Pei22] Luke Peilen. Local laws and a mesoscopic clt for beta-ensembles. arXiv preprint arXiv:2208.14940, 2022.
+[PS17] Mircea Petrache and Sylvia Serfaty. Next order asymptotics and renormalized energy for riesz interactions.
+Journal of the Institute of Mathematics of Jussieu, 16(3):501–569, 2017.
+[RS13] Nicolas Rougerie and Sylvia Serfaty. Higher dimensional coulomb gases and renormalized energy functionals.
+arXiv: Mathematical Physics, 2013.
+[RS16] Luz Roncal and Pablo Raúl Stinga. Fractional laplacian on the torus. Communications in Contemporary
+Mathematics, 18(03):1550033, 2016.
+[Rue74] David Ruelle. Statistical Mechanics: Rigorous Results. Mathematical physics monograph series. W. A. Ben-
+jamin, 1974.
+[Ser14] Sylvia Serfaty. Coulomb Gases and Ginzburg-Landau Vortices. arXiv e-prints, page arXiv:1403.6860, March
+2014.
+[Ser18] Sylvia Serfaty. Systems of points with coulomb interactions. In Proceedings of the International Congress of
+Mathematicians: Rio de Janeiro 2018, pages 935–977. World Scientific, 2018.
+[Ser20] Sylvia Serfaty. Gaussian fluctuations and free energy expansion for 2d and 3d coulomb gases at any temper-
+ature. arXiv preprint arXiv:2003.11704, 2020.
+[Ser24] Sylvia Serfaty. Lectures on coulomb and riesz gases. arXiv preprint arXiv:2407.21194, 2024.
+[Shc13] Mariya Shcherbina. Fluctuations of linear eigenvalue statistics of βmatrix models in the multi-cut regime.
+Journal of Statistical Physics, 151(6):1004–1034, 2013.
+[Sjo93a] Johannes Sjostrand. Potential wells in high dimensions i. Annales de l’I.H.P. Physique théorique, 58(1):1–41,
+1993.
+[Sjo93b] Johannes Sjostrand. Potentials wells in high dimensions ii, more about the one well case.Annales de l’I.H.P.
+Physique théorique, 58, 1993.
+[SKA+21] Saikat Santra, Jitendra Kethepalli, Sanaa Agarwal, Abhishek Dhar, Manas Kulkarni, and Anupam Kundu.
+Gap statistics for confined particles with power-law interactions.arXiv preprint arXiv:2109.15026, 2021.
+[SS12] Etienne Sandier and Sylvia Serfaty. From the Ginzburg-Landau model to vortex lattice problems. Commu-
+nications in Mathematical Physics, 313(3):635–743, 2012.
+[SW13] Philippe Sosoe and Percy Wong. Regularity conditions in the CLT for linear eigenvalue statistics of wigner
+matrices. Advances in Mathematics, 249:37–87, 2013.
+[Tho21] Eric Thoma. Thermodynamic and scaling limits of the non-gaussian membrane model. arXiv preprint
+arXiv:2112.07584, 2021.
+[Tho22] Eric Thoma. Overcrowding and separation estimates for the coulomb gas. arXiv preprint arXiv:2210.05902,
+2022.
+[Tor16] Salvatore Torquato. Hyperuniformity and its generalizations. Physical Review E, 94(2), Aug 2016.
+[VV09] BenedekValkóandBálintVirág.Continuumlimitsofrandommatricesandthebrowniancarousel. Inventiones
+mathematicae, 177(3):463–508, 2009.
+(JB) Department of Mathematics, Columbia University
