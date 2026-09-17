@@ -1,0 +1,22 @@
+# DG-### — diagram/power-counting card
+
+- Algebraic origin:
+- Corrector order:
+- Interaction vertices:
+- Contractions:
+- Combinatorial multiplicity:
+- Partial diagonals and singular degrees:
+- Raw \(N\)-power:
+- Raw \(\beta_N\)-power:
+- \(\lambda_N\)-power:
+- \(\sigma_N\)-scaled size:
+- Deterministic/centered/martingale:
+- Subcritical disposition:
+- Critical disposition:
+- Counterterm:
+- Function/trace class:
+- Time-integration effect:
+- Order-uniform bound:
+- Solvable-model check:
+- Computation certificate:
+- Status/audit:

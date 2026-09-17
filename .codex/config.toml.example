@@ -1,0 +1,13 @@
+# Example only. Copy verified settings into your local/project Codex configuration
+# after checking the syntax supported by your installed Codex version.
+# Do not guess Astra model slugs in this file; select Astra Ultra/Max through the
+# current Codex interface or verified current configuration documentation.
+
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 8
+
+# Recommended operational policy:
+# - root thread: Astra Ultra
+# - default subagents/workers: Astra Max
+# - single-writer merges for canonical state and memoranda
