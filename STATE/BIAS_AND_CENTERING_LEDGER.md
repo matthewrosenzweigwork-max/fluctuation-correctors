@@ -44,3 +44,5 @@ Round004 response integration does not change mean-field centering or N^2 normal
 R5 actual full-inverse initial estimate retains deterministic -theta/(2N), first projection and canonical pair components from THM015. It is mean-field centered, with M0^2 in the Haar-to-product L2 comparison. No exact-first-marginal or dynamic corrected centering has been substituted.
 
 R8 exact particle identity retains mean-field centering with q(x)=integral Phi(x,y)dy and r=integral Phi. P[Phi]=(2N^2)^-1 sum_(i!=j)Phi_ij-N^-1 sum_i q_i+r/2. No exact-law recentering or new counterterm. Its gradient is N^-2 sum_(j!=i) grad_x Phi_ij-N^-1 grad q_i, including the finite-N background deletion.
+
+R9 keeps the exact finite-N deletion in grad_iP=N^-2[sum_(j!=i)H_ij-A_i], H=G-A and A=integral Gdy. Haar conditional centering cancels only distinct H products and mixed H-A averages under product Haar. Additive kernels leave ||A||2^2/N^3 in the summed gradient square. Actual one-body Haar cancels the A-square difference between laws, not the pair/triple/mixed differences. No centering or denominator changes.

@@ -39,3 +39,5 @@ R5 THM025 supplies the genuine second-order full pair inverse under prescribed u
 THM027 adds genuine weighted C1 derivatives and global weak Haar H1 to the full COR001 inverse, retaining both responses and exact source. Fresh AUD032/033 pass, with fixed-N constants. THM028's C1time/C2space and exact actual-particle identity remain a separately submitted candidate under fresh review. No extra corrector order or critical tail has closed.
 
 R8 THM028 passes the actual homogeneous COR001 particle domain. The true full inverse, both responses and exact source appear in a justified singular Ito identity with its true square-integrable martingale. This adds no higher corrector or critical tail closure. Uniform self/cross noise and the evolved cubic residual remain PO024/PO001.
+
+R9 THM029 adds an N-uniform nu-weighted Haar gradient-energy bound for the same genuine COR001. It retains source, both responses and full domain. This closes reference self/cross-noise functionals only. Actual-law tail/correlation control, evolved cubic residual and all higher-corrector closure remain separate open tasks.

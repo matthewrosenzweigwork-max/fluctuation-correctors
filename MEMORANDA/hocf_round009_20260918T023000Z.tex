@@ -1,0 +1,201 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\E}{\mathbb E}
+\newcommand{\T}{\mathbb T}
+\newcommand{\dd}{\,\mathrm d}
+\title{Uniform Haar noise energy and the exact interacting-law remainder}
+\author{HOCF--RIESZ, Round 009}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Scope.} This synthesis concerns THM--029. Complete proofs,
+independent reports, qualifications and verification records remain in the
+immutable Markdown artifacts and canonical ledgers. Its Haar estimates are
+reference-law estimates. The quantitative transfer to the actual interacting
+law is still open.
+
+\section*{The genuine full inverse and its uniform amplitude}
+Use the unit Haar torus, $K=-\nabla g$, and the coefficient-one periodic Riesz
+kernel. Fix $d\ge3$, $0<s\le d-2$, $T<\infty$, $\nu_*<\infty$, and a smooth
+real terminal test $h$. For every $N\ge2$ and $0\le\nu\le\nu_*$, take external
+drift zero, reference density one, the actual homogeneous backward Fourier
+test $f$, and the unique symmetric terminal-zero full pair inverse $\Phi$.
+The domain theorem supplies the classical equation off the diagonal,
+\[
+ \partial_t\Phi+\nu\Delta_{x,y}\Phi+B\Phi/N+R\Phi=-J,
+ \qquad \Phi_T=0,
+\]
+where
+\[
+ Bv=K(x-y)\cdot(\nabla_x-\nabla_y)v,\qquad
+ J=K(x-y)\cdot(\nabla f(x)-\nabla f(y)),\qquad R=R_x+R_y.
+\]
+It also supplies boundedness, global Haar $H^1\cap W^{2,1}$, Haar integrability
+of $\partial_t\Phi$ and $B\Phi$, and the exact particle It\^o identity. Its
+possibly large constants in $N$ will justify operations only; they do not enter
+the uniform energy constant below.
+
+Set $p=s+2$ and $a=s/p\in(0,1)$. The actual Fourier multipliers of $f$ have
+modulus at most one. Smoothness of $h$ therefore gives uniform bounds on
+$\nabla f,D^2f$ over the admitted diffusivity interval. The source satisfies
+$|J(x,y)|\le C(1+|x-y|^{-s})$, so $\sup_t\|J_t\|_1\le C_J$ independently of
+$N,\nu$. The full earlier radial comparison gives the positive profile
+\[
+ F_{N,\tau}(r)=\frac N4\left[
+ (r^p+2sp\tau/N)^{2/p}-r^2\right]
+ \le \frac{(2sp)^{2/p}}4N^a\tau^{2/p}.
+\]
+The local cutoff and its full diffusion cross term have fixed annular bounds.
+Consequently the genuine base-pair source potential satisfies
+$\sup_t\|U_N(t)\|_\infty\le C_U N^a$. The exact bounded-response Volterra
+series, with both response slots, yields
+\[
+ \sup_t\|\Phi_t\|_\infty\le C_\infty N^a,
+ \qquad C_\infty=C_Ue^{2\|D\|_{\rm TV}T},\quad D=\operatorname{div}K.
+\]
+All displayed constants depend only on $d,s,T,\nu_*,h$ and the fixed kernel
+and cutoffs. No weighted derivative constant is hidden here.
+
+\section*{Energy integration retains the Coulomb flux}
+Write $\psi(z,y)=\Phi(z+y,y)$. Then
+$B=2K(z)\cdot\nabla_z-K(z)\cdot\nabla_y$.
+Delete the relative tube $|z|\le\epsilon$. The diffusion boundary term tends
+to zero because $\Phi$ is bounded and
+$|\nabla\Phi|\le C_N|z|^{-q_1}$ for an allowed $1<q_1<d/2<d-1$.
+Its size is at most $C_N\epsilon^{d-1-q_1}$. Global $H^1$ and $W^{2,1}$
+then give
+\[
+ \int\Phi\Delta_{x,y}\Phi=-\|\nabla_{x,y}\Phi\|_2^2.
+\]
+The exact internal-drift formula is
+\[
+ \int_{|z|>\epsilon}\Phi B\Phi
+ =-\int_{|z|=\epsilon}\!\int K(z)\cdot\frac z\epsilon\,
+        \psi(z,y)^2\dd y\dd S_z
+  -\int_{|z|>\epsilon}(\operatorname{div}_{\rm cl}K)(z)\psi^2\dd z\dd y.
+\]
+Near zero, $K(z)=s|z|^{-s-2}z+k(z)$ with $|k(z)|\le L_k|z|$.
+Thus the surface term is nonpositive for small $\epsilon$. Below Coulomb
+it vanishes. At Coulomb its sign is retained; no diagonal trace or vanishing
+flux is assumed. Since $\operatorname{div}_{\rm cl}K\ge-\kappa$ and
+$B\Phi\in L^1$, passage to the limit gives
+\[
+ \int\Phi B\Phi\le\kappa\|\Phi\|_2^2.
+\]
+This is an upper bound, not nonpositivity of the full internal drift. A
+constant kernel at Coulomb has cancelling bulk and boundary terms.
+
+The two homogeneous responses are minus convolution with the even finite
+measure $D$ in the respective slots. Its exact Fourier coefficients are
+\[
+ d_0=0,\qquad d_k=4\pi^2c_{d,s}|k|^{s+2-d}\ge0\quad(k\ne0).
+\]
+They are bounded in this exponent range. Fourier polynomial approximation
+and the finite-measure $L^2$ operator bound prove
+\[
+ \langle\Phi,R\Phi\rangle=-\sum_{k,\ell}(d_k+d_\ell)
+ |\widehat\Phi(k,\ell)|^2\le0.
+\]
+This sign belongs to the homogeneous convolution responses.
+
+Multiply the classical equation by $\Phi$ and integrate. The fixed-$N$
+weighted time-derivative majorant justifies the energy derivative. The
+terminal-zero convention gives
+\[
+ \nu\int_0^T\|\nabla_{x,y}\Phi_t\|_2^2\dd t+\frac12\|\Phi_0\|_2^2
+ =\int_0^T\!\left[\langle\Phi,J\rangle+
+ N^{-1}\langle\Phi,B\Phi\rangle+\langle\Phi,R\Phi\rangle\right]\dd t.
+\]
+Therefore, using $2a-1\le a$ and unit Haar mass,
+\[
+ \boxed{\quad\nu\int_0^T\|\nabla_{x,y}\Phi_t\|_2^2\dd t
+ \le T(C_JC_\infty+\kappa C_\infty^2)N^a.\quad}
+\]
+The fixed-$N$ domain constants have disappeared. At zero noise the left side
+is zero; no division by $\nu$ or uniform unweighted gradient estimate follows.
+
+\section*{Exact Haar noise factors}
+Put $G(x,y)=\nabla_x\Phi(x,y)$, $A(x)=\int G(x,y)\dd y$, and $H=G-A$.
+For the mean-field-centered, ordered deleted-pair statistic,
+\[
+ P[\Phi]=\frac1{2N^2}\sum_{i\ne j}\Phi(X_i,X_j)
+ -\frac1N\sum_i\int\Phi(X_i,y)\dd y+\frac12\int\Phi\dd x\dd y,
+\]
+its exact particle gradient is
+\[
+ \nabla_iP=N^{-2}\left[\sum_{j\ne i}H(X_i,X_j)-A(X_i)\right].
+\]
+Under product Haar measure $m_N$, the $H$ terms have zero conditional means
+given $X_i$. Squaring before integrating and retaining the deleted-label
+background term gives
+\[
+ \boxed{\int\sum_i|\nabla_iP|^2\dd m_N
+ =\frac{N-1}{N^3}\|G\|_2^2-\frac{N-2}{N^3}\|A\|_2^2.}
+\]
+At $N=2$ the second coefficient is zero; an additive pair kernel still leaves
+$N^{-3}\|A\|_2^2$. No diagonal is inserted to change the normalization.
+
+For positive $\nu=1/\beta_N$, let $b_N=\min(\beta_N,1)$ and
+$\sigma_N^2=Nb_N$. Since pair symmetry gives
+$\|\nabla_{x,y}\Phi\|_2^2=2\|G\|_2^2$, the reference noise functional obeys
+\[
+ Q_P^{\rm Haar}:=\sigma_N^2\int_0^T\!\int
+ 2\nu\sum_i|\nabla_iP_t|^2\dd m_N\dd t
+ \le Cb_NN^{-2/(s+2)}.
+\]
+For $\eta_N(f_t)$, the corresponding leading reference functional is
+$Q_f^{\rm Haar}=2\nu b_N\int_0^T\|\nabla f_t\|_2^2\dd t\le C$.
+Cauchy--Schwarz in particle components, Haar variables and time proves
+\[
+ \sigma_N^2\int_0^T\!\int\left|2\nu\sum_i
+ N^{-1}\nabla f_t(X_i)\cdot\nabla_iP_t\right|\dd m_N\dd t
+ \le\sqrt{Q_f^{\rm Haar}Q_P^{\rm Haar}}
+ \le C\sqrt{b_N}\,N^{-1/(s+2)}.
+\]
+The absolute value remains inside both integrals. These statements assume
+bounded diffusivity; general subcritical sequences with $\beta_N\to0$ are
+not covered. Zero-noise functionals vanish separately.
+
+\section*{The actual-law estimate still required}
+For an exchangeable law with the stated products integrable, the same literal
+square yields
+\begin{align*}
+ \E\sum_i|\nabla_iP|^2=N^{-3}\big[&
+ (N-1)\E|H_{12}|^2+(N-1)(N-2)\E(H_{12}\cdot H_{13})\\
+ &-2(N-1)\E(H_{12}\cdot A_1)+\E|A_1|^2\big].
+\end{align*}
+At $N=2$ the triple term is absent; no third coordinate is defined.
+The dynamics commute with label permutations and common translations.
+Pathwise uniqueness therefore shows that their laws from iid Haar preparation
+are exchangeable and have Haar one-body marginals. They do not establish product higher marginals.
+Let $F_t^{(2)},F_t^{(3)}$ be their pair and triple densities, and define
+\begin{align*}
+ \delta_2(t)&=\int|H_t(x,y)|^2(F_t^{(2)}-1)\dd x\dd y,\\
+ \delta_3(t)&=\int H_t(x,y)\cdot H_t(x,z)(F_t^{(3)}-1)\dd x\dd y\dd z,\\
+ \delta_A(t)&=\int H_t(x,y)\cdot A_t(x)(F_t^{(2)}-1)\dd x\dd y.
+\end{align*}
+All exist at fixed $N$ by the established density domination and Haar $H^1$.
+The actual expected scaled corrector bracket satisfies the exact reduction
+\[
+ Q_P^{\rm actual}-Q_P^{\rm Haar}
+ =\frac{2\nu b_N}{N^2}\int_0^T
+ \left[(N-1)\delta_2+(N-1)(N-2)\delta_3-2(N-1)\delta_A\right]\dd t.
+\]
+A vanishing bound for this signed combination, or a suitable upper bound
+for its positive part, would suffice. Replacing each deviation by its absolute
+value gives a stronger sufficient condition, not a necessary one.
+The available full-density comparison only gives
+$Q_P^{\rm actual}\le e^{(N-1)\kappa T}Q_P^{\rm Haar}$, which need not vanish.
+A uniform estimate for the displayed marginal remainder is open.
+
+The leading actual bracket expectation already equals its Haar value because
+it depends only on the one-body marginal. An actual corrector self-bracket
+bound would therefore imply the corresponding expected absolute cross bound.
+The evolved cubic residual and its lower contractions still need their own
+estimates; no fluctuation theorem or critical hierarchy closure follows.
+The old energy-floor condition $\beta_NN^{2s/d-1}\to0$, full microscopic
+subcriticality $\lambda_N=\beta_NN^{s/d-1}\to0$, and microscopic criticality
+$\lambda_N\to\lambda\in(0,\infty)$ remain distinct.
+\end{document}
