@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "python": "3.9.6",
+  "arithmetic": "exact fractions only; no floating-point tolerance, randomness, or external dependencies",
+  "total_checks": 5468,
+  "checks_by_group": {
+    "absorption_stationary_value": 9,
+    "all_response_derivative_products": 2058,
+    "constant_source": 10,
+    "coulomb_atom_compensation": 343,
+    "d3_coulomb_noise": 4,
+    "force_from_potential": 124,
+    "homogeneous_fourier": 196,
+    "inhomogeneous_response": 2058,
+    "maximal_supermartingale_tail": 3,
+    "moment_and_source_ranges": 55,
+    "morrey_averaging": 24,
+    "morrey_exponent": 6,
+    "one_sided_eigenvalues": 55,
+    "pair_weight_generator": 210,
+    "response_constants": 147,
+    "source_both_derivatives": 88,
+    "two_singularity_thresholds": 14,
+    "weak_H1_thresholds": 10,
+    "zero_noise_radial_flow": 36,
+    "zero_noise_radial_source": 18
+  },
+  "convolution_examples": [
+    {
+      "d": 3,
+      "s": "1",
+      "q": "5/4",
+      "a": "2",
+      "near_second_power": "-1/4",
+      "above_d": true
+    },
+    {
+      "d": 3,
+      "s": "1",
+      "q": "7/5",
+      "a": "2",
+      "near_second_power": "-2/5",
+      "above_d": true
+    },
+    {
+      "d": 3,
+      "s": "1/2",
+      "q": "5/4",
+      "a": "3/2",
+      "near_second_power": "1/4",
+      "above_d": false
+    },
+    {
+      "d": 3,
+      "s": "1/2",
+      "q": "5/4",
+      "a": "5/2",
+      "near_second_power": "-3/4",
+      "above_d": true
+    },
+    {
+      "d": 4,
+      "s": "3/2",
+      "q": "7/4",
+      "a": "5/2",
+      "near_second_power": "-1/4",
+      "above_d": true
+    },
+    {
+      "d": 4,
+      "s": "3/2",
+      "q": "7/4",
+      "a": "7/2",
+      "near_second_power": "-5/4",
+      "above_d": true
+    },
+    {
+      "d": 6,
+      "s": "4",
+      "q": "5/2",
+      "a": "5",
+      "near_second_power": "-3/2",
+      "above_d": true
+    }
+  ],
+  "source_sha256": "e60c662445c821762d29ecc233b7e067edfa43ce13816329c4040bf4e8ba8ae0",
+  "scope": "Supports local identities, coefficients, ranges and Fourier response algebra. Does not certify stochastic interchange, common flow, convergence, or the theorem; those are reviewed in prose."
+}

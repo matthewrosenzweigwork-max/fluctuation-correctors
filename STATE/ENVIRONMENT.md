@@ -25,3 +25,5 @@ Owner authorized ten concurrent workers and publication. Live project .codex/con
 ## Round 003 allocation clarification
 
 After TASK026 completed, a fork_turns=none gpt-6-astra/max worker was accepted. The actual limit is on concurrently running workers; fresh contexts can be allocated in subsequent batches. The earlier rejected spawn was made while the three-worker allocation was occupied. It does not prove a permanent fresh-context block. Project ten-worker setting remains accepted but current concurrent activation is still limited to three. No restart, dependency/global configuration change, new user-owned task or workaround process was used. New fresh audit provenance is retained separately, without relabeling any prior reused report.
+
+R7 integration: published R6 is3aa91391516f35afe5317a287b4f0e2e93e6384c. Root remains Astra Ultra and all workers Astra Max. Fresh TASK053/054 now independently reconstruct/review R8; reused constructor TASK055 runs in a new R9 worktree. Runtime still permits root plus three despite configured worker cap ten. All worktree/input histories are explicit; no additional process or global setting bypasses that cap.

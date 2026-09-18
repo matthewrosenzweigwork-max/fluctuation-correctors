@@ -42,3 +42,5 @@ M0 PASS (frozen campaign normalization, independent smooth duality, source intak
 ## Round 003 bounded initial-law overlay
 
 THM-015 exact iid pair identity -> THM-016 sufficient probability comparison -> THM-018 L1 upper rates; THM-019 adds a separately reviewed lower-probability mechanism. These are initial bare-potential results. THM-017 exact internal-transport profile + THM-015 -> negligible diagnostic initial endpoint. The unproved edge from that diagnostic to COR-001 is PO-017, including diffusion and both response terms. No edge bypasses PO-001 evolved-law residuals, PO-004 critical power counting, or singular well-posedness/model comparison. M2 and the flagship gates remain OPEN.
+
+Round007: THM021+THM023/024/025 -> THM027 weighted C1/H1 (fresh AUD032/033). THM028 separately rebuilds higher flow/time lemmas and uses THM026 plus R1 exact algebra; its candidate is under fresh audit. Conditional THM029 uses the full THM028 domain plus R5 N-uniform amplitude/norm bounds to target Haar noise energy. PO024 actual two-/three-marginal transfer is not a consequence of that reference estimate and remains inside open PO001.

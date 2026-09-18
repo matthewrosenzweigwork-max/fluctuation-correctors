@@ -1,0 +1,32 @@
+{
+  "arithmetic": "exact rational integers and SHA-256; no tolerance or random seed",
+  "classification": "construction self-check, not independent audit",
+  "counts": {
+    "R1_raw_pair_identity": 60,
+    "constant_pair_test": 12,
+    "constant_terminal_source": 3,
+    "coulomb_constant": 7,
+    "coulomb_response": 15,
+    "deleted_gradient": 150,
+    "double_cubic_contraction": 60,
+    "full_corrector_identity": 60,
+    "input_hash": 18,
+    "mutation_sensitivity": 4,
+    "partial_cubic_contraction": 60,
+    "quadratic_variation_2nu": 60,
+    "radial_jacobian": 126,
+    "second_variation_source": 164,
+    "triple_background_mean": 60,
+    "triple_collision": 164,
+    "weak_derivatives": 164,
+    "weight_ranges": 164,
+    "weighted_barrier": 1512,
+    "young_absorption": 1512,
+    "zero_noise": 30
+  },
+  "limitations": "Finite Fourier/radial algebra tests do not certify the new analytic lemmas or any asymptotic statement.",
+  "python": "3.9.6",
+  "status": "PASS",
+  "task": "TASK051",
+  "total_assertions": 4405
+}

@@ -1,0 +1,163 @@
+{
+  "admissible_examples_violating_naive_sum_threshold": [
+    {
+      "d": 3,
+      "p_plus_q": "67/20",
+      "q": "11/10",
+      "s": "1/4"
+    },
+    {
+      "d": 3,
+      "p_plus_q": "7/2",
+      "q": "5/4",
+      "s": "1/4"
+    },
+    {
+      "d": 3,
+      "p_plus_q": "73/20",
+      "q": "7/5",
+      "s": "1/4"
+    },
+    {
+      "d": 3,
+      "p_plus_q": "18/5",
+      "q": "11/10",
+      "s": "1/2"
+    },
+    {
+      "d": 3,
+      "p_plus_q": "15/4",
+      "q": "5/4",
+      "s": "1/2"
+    },
+    {
+      "d": 3,
+      "p_plus_q": "39/10",
+      "q": "7/5",
+      "s": "1/2"
+    },
+    {
+      "d": 4,
+      "p_plus_q": "4",
+      "q": "3/2",
+      "s": "1/2"
+    },
+    {
+      "d": 4,
+      "p_plus_q": "22/5",
+      "q": "19/10",
+      "s": "1/2"
+    },
+    {
+      "d": 4,
+      "p_plus_q": "41/10",
+      "q": "11/10",
+      "s": "1"
+    },
+    {
+      "d": 4,
+      "p_plus_q": "9/2",
+      "q": "3/2",
+      "s": "1"
+    },
+    {
+      "d": 4,
+      "p_plus_q": "49/10",
+      "q": "19/10",
+      "s": "1"
+    },
+    {
+      "d": 5,
+      "p_plus_q": "103/20",
+      "q": "12/5",
+      "s": "3/4"
+    },
+    {
+      "d": 5,
+      "p_plus_q": "21/4",
+      "q": "7/4",
+      "s": "3/2"
+    },
+    {
+      "d": 5,
+      "p_plus_q": "59/10",
+      "q": "12/5",
+      "s": "3/2"
+    },
+    {
+      "d": 6,
+      "p_plus_q": "6",
+      "q": "2",
+      "s": "2"
+    },
+    {
+      "d": 6,
+      "p_plus_q": "69/10",
+      "q": "29/10",
+      "s": "2"
+    },
+    {
+      "d": 8,
+      "p_plus_q": "89/10",
+      "q": "39/10",
+      "s": "3"
+    }
+  ],
+  "arithmetic": "fractions.Fraction; exact rational arithmetic only",
+  "barrier_check_variable": "r_to_s represents r^s and is at most c/Q when Q>0",
+  "counts": {
+    "absorbed_local_coefficient": 3645,
+    "both_coulomb_slots": 98,
+    "constant_input_response_zero": 21,
+    "constant_test_source": 1,
+    "coulomb_compensation_constant": 2,
+    "coulomb_is_atom": 45,
+    "dimension_three_positive_diffusion": 729,
+    "force_convolution_threshold": 135,
+    "haar_h1_threshold": 135,
+    "inhomogeneous_coulomb_response": 147,
+    "pair_jacobian_factor": 270,
+    "positive_repulsion_margin": 1215,
+    "quadratic_source_potential_coefficient": 36,
+    "radial_laplacian": 1215,
+    "radial_solution_derivatives": 36,
+    "radial_solution_time": 36,
+    "response_density_threshold": 90,
+    "source_gradient_coefficient": 135,
+    "source_tail_power": 135,
+    "sum_threshold_obstruction_present": 1,
+    "top_eigenvalue": 135,
+    "weight_square_identity": 20,
+    "weight_square_nonnegative": 20,
+    "zero_noise_margin": 2025
+  },
+  "diffusion_convention": "2 nu Delta in relative coordinates",
+  "evidence_limit": "Corroborating coefficient checks; analytic proof is the Markdown report.",
+  "floating_point_tolerances": null,
+  "internal_relative_drift": "2s/N times z/r^(s+2)",
+  "random_seed": null,
+  "status": "PASS",
+  "tested_diffusivity_upper_bounds": [
+    0,
+    1,
+    5
+  ],
+  "tested_dimensions": [
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "tested_moment_powers": [
+    1,
+    2,
+    3
+  ],
+  "tested_particle_numbers": [
+    2,
+    3,
+    17
+  ],
+  "total_exact_assertions": 10327
+}

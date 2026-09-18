@@ -1,0 +1,136 @@
+{
+  "task": "TASK-049",
+  "status": "PASS",
+  "audit_status": "SELF_CHECKED_NOT_INDEPENDENT",
+  "sealed_at_utc": "2026-09-18T00:10:56Z",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r007-weighted-gradient",
+  "branch": "codex/hocf-r007-weighted-gradient",
+  "base_commit": "93c20daa45aad455a95437b1dc6beed2883afada",
+  "python_version": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "darwin",
+  "input_manifest_sha256": "6ba8f27d2196eda85522c5f61e8248b3725a404263cc234d707f1302084e6766",
+  "fourteen_input_checks": [
+    {
+      "path": "TASKS/ACTIVE/TASK-049_ROUND007_WEIGHTED_GRADIENT_CONSTRUCTION.md",
+      "sha256": "5968312fca97db7c7cfeeb2f69ad530a842226dea62c75e87f0f0ebc1e2ae542",
+      "passed": true
+    },
+    {
+      "path": "THEOREMS/THM-027_WEIGHTED_PAIR_GRADIENT.md",
+      "sha256": "45a1e5a6b43b9cdebd02513131b41ae8bb1b201dfcf65ff7a0169940d735e108",
+      "passed": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "passed": true
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "passed": true
+    },
+    {
+      "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+      "sha256": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed",
+      "passed": true
+    },
+    {
+      "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+      "sha256": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f",
+      "passed": true
+    },
+    {
+      "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+      "sha256": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6",
+      "passed": true
+    },
+    {
+      "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+      "sha256": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db",
+      "passed": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "passed": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+      "sha256": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+      "passed": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+      "sha256": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+      "passed": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+      "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+      "passed": true
+    },
+    {
+      "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+      "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec",
+      "passed": true
+    },
+    {
+      "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+      "sha256": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210",
+      "passed": true
+    }
+  ],
+  "output_structural_checks": [
+    {
+      "path": "MEMORANDA/ROUND_007_WEIGHTED_PAIR_GRADIENT.md",
+      "sha256": "eb65ed8680416032ca2667db1cab9b39b493fcb1c578985c632a8bbfd1e9953a",
+      "bytes": 34446,
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_unexpected_control_characters": true
+    },
+    {
+      "path": "VERIFICATION_CODE/round007_weighted_gradient_exact.py",
+      "sha256": "5ad5db9ac365e6b65ece66a967ed06dfcdae93336dc321ab6a5d1f3e04893110",
+      "bytes": 11460,
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_unexpected_control_characters": true
+    },
+    {
+      "path": "VERIFICATION_CODE/round007_weighted_gradient_exact_output.json",
+      "sha256": "bd5add0fc4eebfdc47a26db02c74e9c9908f6757fb8056aae79d5e7c772dc731",
+      "bytes": 2065,
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_unexpected_control_characters": true
+    },
+    {
+      "path": "REPORTS/ROUND007_WEIGHTED_GRADIENT_README.md",
+      "sha256": "b885f22201a1f4f0d7cf9cb31bb70984a3d84d1d2e8a479eff0f1fc1cacb355d",
+      "bytes": 5126,
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_unexpected_control_characters": true
+    }
+  ],
+  "display_pairs": 52,
+  "unique_equation_labels": 52,
+  "numbered_equation_references": 57,
+  "missing_equation_references": [],
+  "python_ast_parse": "PASS",
+  "exact_rational_checks": 5992,
+  "git_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "tex_build": "NOT_APPLICABLE_NO_TEX_OUTPUT_OR_MATHEMATICAL_LATEX_IN_FINAL_HANDOFF",
+  "limits": [
+    "The root route was a disclosed construction seed.",
+    "All present checks are same-context supporting evidence.",
+    "Fresh independent reconstruction and hostile review remain required.",
+    "No particle Ito drift or N-uniform bracket result is asserted."
+  ]
+}

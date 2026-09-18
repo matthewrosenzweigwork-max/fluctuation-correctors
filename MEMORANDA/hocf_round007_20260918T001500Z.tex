@@ -1,0 +1,216 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\E}{\mathbb E}
+\newcommand{\T}{\mathbb T}
+\newcommand{\X}{\mathcal X}
+\title{Weighted first derivatives of the full pair inverse}
+\author{HOCF--RIESZ, Round 007}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Scope and status.} This is a synthesis of the candidate THM--027.
+Its complete proof and separate independent audit dispositions are recorded in
+the immutable Markdown reports and canonical theorem ledger. The construction
+establishes a fixed-$N$ first-derivative prerequisite; it does not establish
+an interacting-particle It\^o drift or uniform fluctuation estimates.
+
+\section*{Precise assertion}
+Use the unit Haar torus, coefficient-one periodic Riesz potential $g$, and
+$K=-\nabla g$. Fix $d\ge3$, $0<s\le d-2$, $N\ge2$, $T<\infty$ and
+$0\le\nu\le\nu_*<\infty$. Prescribe time-continuous data
+$\mu_t\in C^2$, $u_t\in C^1$ and $f_t\in C^3$, with uniform norms;
+$\mu_t$ is a probability density. General unknown mean-field norms are not
+asserted. The actual homogeneous Fourier reference and smooth terminal test
+from Round005 meet these hypotheses.
+
+The pair generator, source and full inverse are
+\begin{align*}
+ G_t&=\nu(\Delta_x+\Delta_y)+u_t(x)\cdot\nabla_x+u_t(y)\cdot\nabla_y
+       +\frac1N K(x-y)\cdot(\nabla_x-\nabla_y),\\
+ J_t&=K(x-y)\cdot(\nabla f_t(x)-\nabla f_t(y)),\\
+ \Phi_t&=U_t+\int_t^T S_{t,a}R_a\Phi_a\,da,
+ \qquad U_t=\E_{t,x,y}\int_t^T J_a(Z_a)\,da,\qquad R=R_x+R_y.
+\end{align*}
+Here $S$ is the already constructed noncolliding auxiliary pair evolution and
+$\Phi$ the unique bounded Borel terminal-zero full inverse. Its previously
+proved Haar $L^2$ estimate alone supplied no derivative.
+
+Fix $1<q<d/2$. Choose a positive smooth off-diagonal weight $w_q(z)$ equal to
+$|z|^{-q}$ on an embedded ball and bounded above and below outside that ball.
+The new assertion is
+\[
+ \sup_{0\le t\le T}\left(\|\Phi_t\|_\infty+
+       \sup_{x\ne y}\frac{|\nabla_{x,y}\Phi_t(x,y)|}{w_q(x-y)}\right)
+ \le C<\infty.
+\]
+The representative is $C^1$ off the diagonal, its derivatives are jointly Borel,
+and they are global weak derivatives. Thus $\sup_t\|\Phi_t\|_{H^1}<\infty$.
+The constant may depend on $N,\nu_*,T,d,s,q$ and the displayed data and cutoffs.
+It is uniform in the chosen $\nu$ in that interval and may grow rapidly in $N$.
+
+\section*{One-sided growth and weighted occupations}
+Locally put $z=x-y$ and $r=|z|$. Then $K(z)=s|z|^{-s-2}z+k(z)$
+with smooth odd $k$. Put $k_0=2s/N$. The nonsingular relative drift
+is bounded by $L_0r$ for a finite fixed-data constant $L_0$.
+The principal pair Jacobian has zero center eigenvalues and difference-space
+eigenvalues
+\[
+ k_0r^{-s-2}\quad\text{transverse},\qquad
+ -(s+1)k_0r^{-s-2}\quad\text{radial}.
+\]
+Its largest eigenvalue is the transverse one. Replacing it by the absolute
+matrix norm loses the required range. Choose a nonnegative global function
+$\ell$ equal to $k_0r^{-s-2}+L$ near zero and dominating the largest symmetric
+drift-Jacobian eigenvalue elsewhere. The flow derivative $A_{t,a}$ then obeys
+\[
+ \|A_{t,a}\|\le\exp\left(\int_t^a\ell(Z_r)\,dr\right)
+\]
+along each noncolliding path. This pathwise fact alone does not justify
+expectation differentiation.
+
+Choose weights with the exact product property $w_\alpha^p=w_{p\alpha}$:
+take $R=1/16$ and a smooth radial cutoff $\chi$ equal to one on $B_R$
+and supported in $B_{2R}$, and set
+$w_\alpha=\exp(\alpha\chi\log(1/r))$, extended as one outside the chart.
+For $p\ge0$ and $\alpha>p$, the inner-ball calculation is
+\[
+ \frac{(G_t+p\ell)w_\alpha}{w_\alpha}
+ \le-(\alpha-p)k_0r^{-s-2}
+      +2\nu_*\alpha(\alpha+2-d)_+r^{-2}+\alpha L_0+pL.
+\]
+Write $b=(\alpha-p)k_0>0$ and $a=2\nu_*\alpha(\alpha+2-d)_+$.
+The positive diffusion contribution is controlled by the explicit maximum
+\[
+ \sup_{v\ge0}\left(av^2-\frac b2v^{s+2}\right)
+ =\frac{s}{s+2}a\left(\frac{4a}{(s+2)b}\right)^{2/s},
+\]
+with value zero when $a=0$. The more singular negative repulsive term is
+essential, including in dimension three where the displayed diffusion term
+can be positive. Bounded annular cutoff derivatives give a finite specified
+$C_{p,\alpha}$ such that
+\[
+ (G_t+p\ell)w_\alpha\le C_{p,\alpha}w_\alpha
+ -\frac b2\mathbf1_{r\le R}r^{-\alpha-s-2}.
+\]
+The full Markdown proof lists every annular and data constant. They can
+already grow like $N^{2/s}$ inside a later time exponential.
+
+Stopped smooth It\^o applied to the nonnegative weighted process gives,
+after Fatou for its terminal term and monotone convergence for occupation,
+\begin{align*}
+ \E e^{p\int_t^{t+h}\ell}w_\alpha(Z_{t+h})
+     &\le e^{C_{p,\alpha}h}w_\alpha(z),\\
+ \E\int_t^{t+h}e^{p\int_t^a\ell}
+       \mathbf1_{r_a\le R}r_a^{-\alpha-s-2}\,da
+     &\le\frac2b e^{C_{p,\alpha}h}w_\alpha(z).
+\end{align*}
+No uniform integrability of stopped weights or zero collision boundary value is
+assumed. Apply the level bound for a nonnegative supermartingale at doubled
+parameters. Integrating its square-root tail gives
+\[
+ \E\sup_{t\le a\le t+h}e^{p\int_t^a\ell}w_\alpha(Z_a)
+ \le2e^{C_{2p,2\alpha}h/2}w_\alpha(z).
+\]
+
+\section*{The expectation derivative is a separate proof step}
+For a fixed driving path let $F_m$ be the minimum of $m$ and the maximal
+weight $w_1$ along its local trajectory through the horizon, using infinity
+at a finite collision lifetime. These truncated functions are locally
+Lipschitz in the starting point. Below the truncation level this follows
+from one safe smooth cutoff flow. Above it a finite time has already crossed
+the level, so $F_m$ is locally constant, even at an exploding start.
+
+The previous maximal estimate bounds $F_m$ and its local weak gradient in
+$L^P$ of the starting point and probability, uniformly in $m$, for every
+$P>2d$. The gradient is bounded by a constant times
+$\sup_a e^{\int_t^a\ell}w_2(Z_a)$. Averaging the line-segment fundamental
+theorem over a coordinate ball gives the elementary supremum estimate
+\[
+ \|v\|_{L^\infty(B_b)}\le C_{b,P,d}
+       \bigl(\|v\|_{L^P(B_{2b})}+\|\nabla v\|_{L^P(B_{2b})}\bigr).
+\]
+Its kernel is $|x-y|^{1-2d}$, whose conjugate-power integral is finite because
+$P>2d$. Fubini and Fatou bound a subsequence of these random norms almost
+surely. Monotonicity of $F_m$ then bounds the untruncated path weight on the
+smaller initial ball. No start in that ball can explode. A countable cover
+yields a simultaneous local flow for each fixed initial time and horizon;
+its image of a compact initial ball stays uniformly separated from collisions.
+This common-flow conclusion is derived, not imported.
+
+For a pathwise $C^1$ functional $H(z,W)$, a uniform local bound
+$\sup_z\E|D_zH|^p<\infty$ with $p>1$ bounds finite differences by the
+line-segment formula and Jensen. Their tails are at most a constant times
+$K^{1-p}$, giving uniform integrability. This proves
+$D\E H=\E DH$ and continuity of the derivative. The weights above provide
+exactly those bounds for propagated terminal functions.
+
+For the singular source, direct differentiation gives
+$|\nabla J|\le C_Jr^{-s-1}$ near zero, with bounded remainder. Choose
+$\alpha>p$ so that $\alpha+s+2\ge p(s+1)$. The retained negative occupation
+term bounds the $p$th moment of
+$\int_t^T\|A_{t,a}\||\nabla J_a(Z_a)|\,da$.
+For example $p=2$, $\alpha=2(s+2)+1$ suffice for uniform integrability.
+Thus the actual signed source potential satisfies
+\[
+ \nabla U_t=\E\int_t^T A_{t,a}^{\mathsf T}\nabla J_a(Z_a)\,da,
+ \qquad
+ \sup_t\sup_E\frac{|\nabla U_t|}{w_q}
+ \le C_J e^{C_{1,q}T}
+       \left(T+\frac{2}{(q-1)k_0}\right).
+\]
+The zero-terminal derivative is included. The previously proved bounded
+source-potential estimate supplies its separate zeroth-order norm.
+
+\section*{Both responses and the full inverse}
+The exact first-slot response is
+\[
+ R_xF=-\int\mu(x+w)F(x+w,y)D(dw)
+      -\int K(w)\cdot\nabla\mu(x+w)F(x+w,y)\,dw,
+ \qquad D=\operatorname{div}K.
+\]
+For $0<a,q<d$, splitting near the two separate singular points and their
+complement proves
+\[
+ \int \chi(w)|w|^{-a}w_q(w+z)\,dw\le C_{a,q}w_q(z),\qquad z\ne0.
+\]
+The convolution need not remain bounded when $a+q\ge d$; the weighted bound
+uses $a<d$ and $q<d$ separately. It applies to the force and, below Coulomb,
+the divergence density. At Coulomb retain exactly
+$D=c_d(\delta_0-dw)$; the atom samples the present off-diagonal point.
+
+A bounded $C^1$ function with gradient bounded by $w_q$ has global weak
+first derivatives: deletion of a diagonal tube has boundary contribution
+$O(\|F\|_\infty\delta^{d-1})$, while its gradient is integrable. Differentiate
+the translated products in the response formula in this weak sense. Fubini,
+the convolution bound and the $C^2$ density norms control every term.
+Continuity off the diagonal follows by separating the two singular points;
+near the moving second point a change of variable fixes it before dominated
+convergence. The second response is treated in its own slot. Thus for
+$\|F\|_{\X_q}=\|F\|_\infty+\sup|\nabla F|/w_q$,
+\[
+ \|R_tF\|_{\X_q}\le C_{R,q}\|F\|_{\X_q},\qquad
+ \|S_{t,a}F\|_{\X_q}\le e^{C_{1,q}(a-t)}\|F\|_{\X_q}.
+\]
+Every density-gradient and second-density-derivative term is retained.
+
+Write $(VF)_t=\int_t^T S_{t,a}R_aF_a\,da$ and
+$B_q^*=\sup_t\|U_t\|_{\X_q}<\infty$, as proved by the source estimates.
+The ordered Volterra series then has bounds
+\[
+ \|(V^kU)_t\|_{\X_q}\le B_q^* e^{C_{1,q}(T-t)}
+       \frac{[C_{R,q}(T-t)]^k}{k!}.
+\]
+It converges uniformly in values and locally uniformly in derivatives,
+without a separable weighted-sup-space assumption. Bounded Borel uniqueness
+identifies its sum with the genuine full inverse. Finally $2q<d$ gives
+\[
+ \sup_t\|\Phi_t\|_{H^1}^2\le C^2\left(1+\int w_{2q}\right)<\infty.
+\]
+No diagonal trace follows. The crude internal-drift majorant is
+$r^{-s-1-q}$, which is not integrable at Coulomb for $q>1$.
+Second/time derivatives or a directional cancellation, the exact interacting
+particle It\^o identity and uniform evolved residual/bracket estimates remain
+separate open gates.
+\end{document}

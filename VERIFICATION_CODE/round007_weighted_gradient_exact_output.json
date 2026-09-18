@@ -1,0 +1,60 @@
+{
+  "task": "TASK-049",
+  "status": "PASS",
+  "evidence_class": "EXACT_RATIONAL_SELF_CHECK_NOT_INDEPENDENT_AUDIT",
+  "arithmetic": "Python standard-library Fraction and integers only",
+  "random_seed": null,
+  "tolerance": null,
+  "checks_by_category": {
+    "pair_center_eigenvalue": 45,
+    "pair_radial_eigenvalue": 45,
+    "pair_transverse_eigenvalue": 45,
+    "largest_eigenvalue_quadratic_form": 180,
+    "absolute_norm_is_not_largest_eigenvalue": 45,
+    "full_coordinate_weight_generator": 648,
+    "strict_repulsive_moment_coefficient": 648,
+    "two_relative_laplacians": 216,
+    "h1_range": 6,
+    "coulomb_drift_majorant_nonintegrable": 5,
+    "three_dimensional_positive_diffusion": 2,
+    "maximum_stationarity": 108,
+    "maximum_value": 108,
+    "negative_half_retained": 648,
+    "actual_diffusion_absorption": 405,
+    "response_both_compensated_terms": 735,
+    "response_first_derivative_product_rule": 735,
+    "response_second_slot_derivative": 735,
+    "response_kills_constants_inhomogeneous_density": 21,
+    "coulomb_atom_and_two_compensations": 121,
+    "homogeneous_fourier_gradient_commutes": 363,
+    "morrey_integrability": 6,
+    "simultaneous_flow_weight_strictness": 6,
+    "source_ui_weight_strictness": 18,
+    "source_ui_power_dominates": 18,
+    "separate_convolution_integrability": 36,
+    "near_second_singularity_comparison": 36,
+    "unbounded_convolution_witness_exponent": 1,
+    "unbounded_but_weight_dominated": 7
+  },
+  "total_checks": 5992,
+  "tested_particle_counts": [
+    2,
+    3,
+    7,
+    11,
+    13,
+    17
+  ],
+  "tested_diffusivities": [
+    "0",
+    "1/3",
+    "2",
+    "4"
+  ],
+  "limits": [
+    "The checker supports algebraic identities; it does not independently audit the proof.",
+    "Nearby-start completeness, uniform integrability, weak differentiation and measure arguments require the written proof.",
+    "Fourier checks use dimensionless angles and divide out the common positive Riesz constant.",
+    "No H1-to-particle-Ito or N-uniform martingale conclusion is checked or asserted."
+  ]
+}
