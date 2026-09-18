@@ -1,0 +1,214 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\E}{\mathbb E}
+\newcommand{\T}{\mathbb T}
+\newcommand{\dd}{\,\mathrm d}
+\title{The homogeneous pair corrector in the singular particle domain}
+\author{HOCF--RIESZ, Round 008}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Scope and status.} This is a synthesis of the submitted THM--028
+construction. Its complete proof is the immutable Markdown memorandum; the
+canonical theorem ledger records the separate independent audit dispositions.
+The assertion concerns fixed particle number and the exact singular It\^o
+identity. It supplies no uniform fluctuation estimate.
+
+\section*{The precise domain assertion}
+Use the unit Haar torus, $K=-\nabla g$, and the coefficient-one periodic Riesz
+potential. Fix $d\ge3$, $0<s\le d-2$, $N\ge2$, $T<\infty$, and
+$0\le\nu\le\nu_*<\infty$. There is no external drift, and the reference density
+is one. A smooth real terminal test $h$ determines the actual homogeneous
+backward test
+\[
+ f_t(x)=\widehat h(0)+\sum_{k\ne0}\widehat h(k)
+ e^{-(T-t)[4\pi^2\nu|k|^2+4\pi^2c_{d,s}|k|^{s+2-d}]}
+ e^{2\pi i k\cdot x},\qquad
+ c_{d,s}=\frac{\pi^{s-d/2}\Gamma((d-s)/2)}{\Gamma(s/2)}.
+\]
+All its fixed-order spatial and time derivatives are bounded uniformly on the
+specified diffusivity interval. Set $E=\{(x,y):x\ne y\}$ and
+\begin{align*}
+ Bv&=K(x-y)\cdot(\nabla_x-\nabla_y)v,&G&=\nu\Delta_{x,y}+B/N,\\
+ J_t(x,y)&=K(x-y)\cdot(\nabla f_t(x)-\nabla f_t(y)),&R&=R_x+R_y.
+\end{align*}
+The exact homogeneous response is
+\[
+ R_xv(x,y)=-\int v(x+w,y)D(\dd w),\qquad
+ D=\operatorname{div}K=
+ \begin{cases}
+ s(d-2-s)g_{s+2}(w)\dd w,&s<d-2,\\
+ (d-2)|\mathbb S^{d-1}|(\delta_0-\dd w),&s=d-2.
+ \end{cases}
+\]
+The second slot is retained by exchange. Let $\Phi$ be the previously constructed
+unique bounded Borel terminal-zero full inverse, with source $J$ and both
+responses. It is not replaced by a transport diagnostic or the raw potential.
+
+For every $1<q_1<d/2$ and $q_1+1<q_2<d$, the submitted domain assertion is
+\[
+ \sup_{0\le t\le T}\left(\|\Phi_t\|_\infty+
+ \sup_E\frac{|\nabla\Phi_t|}{w_{q_1}}+
+ \sup_E\frac{|D^2\Phi_t|}{w_{q_2}}+
+ \sup_E\frac{|\partial_t\Phi_t|}{w_s}\right)<\infty.
+\]
+Here $w_a(x-y)$ is a fixed positive smooth weight off zero, equal to
+$|x-y|^{-a}$ near zero and bounded elsewhere. The indicated derivatives are
+jointly continuous off the diagonal, with one-sided time derivatives at the
+endpoints. Constants can depend severely on $N$, but are uniform in the chosen
+$\nu$. The same representative belongs to global Haar $H^1\cap W^{2,1}$;
+$\partial_t\Phi$ and $B\Phi$ belong uniformly in time to Haar $L^1$.
+
+\section*{Higher derivatives require their own occupation bounds}
+The local force is $K(z)=s|z|^{-s-2}z+k(z)$ with $k$ smooth and odd. For the
+pair flow, the largest singular drift-Jacobian eigenvalue is
+$c(z)=2s|z|^{-s-2}/N$; the radial eigenvalue is $-(s+1)c(z)$.
+After a fixed cutoff, a finite $L$ bounds the smooth remainder, and the first
+variation satisfies $|A_t|\le e^{Lt+I_t}$, where $I_t=\int_0^tc(Z_a)\dd a$.
+For every moment order $m\ge0$ and weight exponent $\alpha>m$,
+\[
+ (G+mc)w_\alpha\le C_{\alpha,m}w_\alpha
+ -b_{\alpha,m}\chi|z|^{-\alpha-s-2},\qquad
+ b_{\alpha,m}=\frac{s(\alpha-m)}N>0.
+\]
+The positive term $2\nu\alpha(\alpha+2-d)_+|z|^{-2}$ is absorbed by the more
+singular repulsion, including dimension three. The complete memorandum gives
+the maximization and all annular constants. Smooth stopping and nonnegative
+Fatou passage yield weighted terminal and occupation estimates. A maximal
+supermartingale tail, applied at larger moments, supplies every finite moment
+on compact sets of initial states.
+
+The expectation derivative is not inferred from pointwise noncollision.
+Truncated maximal inverse-distance functions of the initial state are locally
+Lipschitz. Their high Sobolev moments, an explicitly proved local Morrey bound
+in dimension $2d$, and monotone convergence yield a common noncolliding flow on
+each compact initial set. First and second chain rules then have moments above
+one. Their pathwise line identities, Fubini and uniform integrability justify
+both expectation derivatives and their local continuity.
+
+The second variation is
+\[
+ H_t=\int_0^t A_{t,r}\,D^2F(Z_r)[A_r,A_r]\dd r,
+ \qquad F=N^{-1}(K,-K).
+\]
+Condition at the intermediate time $r$ to bound the future first variation
+against $w_{q_1}$. The remaining occupation has moment order two and source
+power $s+3+q_1$. The exact inequality
+\[
+ s+3+q_1<q_2+s+2,\qquad q_2>2,
+\]
+allows the $q_2$ barrier to control it. This proves the weighted Hessian estimate
+for terminal data and, separately, the integrated singular source. It does not
+import a second-derivative conclusion from the first-gradient theorem.
+
+Both homogeneous responses preserve these weighted derivatives. The needed
+convolution estimate is
+\[
+ \int w_a(w)w_q(w+z)\dd w\le C_{a,q}w_q(z),\qquad a,q<d,
+\]
+with the two singular neighborhoods treated separately. No condition
+$a+q<d$ is imposed. At Coulomb the atom and compensation replace an invalid
+power-density argument. A pointwise factorial Volterra series constructs the
+weighted solution and bounded Borel uniqueness identifies it with $\Phi$.
+
+\section*{Time differentiation and the internal-drift cancellation}
+A separate weighted Borel space with norm $\sup_E|v|/w_s$ supports the base
+semigroup and the bounded response. An absolutely convergent pointwise Dyson
+series defines the full autonomous evolution $\mathcal T_r$. Local continuity
+on the specific continuous weighted inputs follows from common-flow moments
+and uniform integrability. Strong continuity on the entire weighted supremum
+space is neither needed nor asserted.
+
+The source is twice differentiable in time in that weighted norm. Therefore
+ordinary differentiation of the time integral gives
+\begin{align*}
+ \Phi_t&=\int_0^{T-t}\mathcal T_rJ_{t+r}\dd r,\\
+ \partial_t\Phi_t&=-\mathcal T_{T-t}J_T+
+          \int_0^{T-t}\mathcal T_r\partial_tJ_{t+r}\dd r.
+\end{align*}
+This differentiates the input and endpoint, not a semigroup generator on an
+unjustified domain. Comparing the established base-pair martingale with
+localized classical It\^o gives
+\[
+ \partial_t\Phi+\nu\Delta_{x,y}\Phi+B\Phi/N+R\Phi=-J
+ \quad\hbox{on }[0,T]\times E.
+\]
+Consequently
+\[
+ B\Phi=-N\bigl(J+\partial_t\Phi+\nu\Delta_{x,y}\Phi+R\Phi\bigr).
+\]
+Each right-hand term has an integrable majorant: $w_s,w_s,w_{q_2}$ and a
+constant. This structural identity supplies the $L^1$ internal drift.
+The crude force-times-gradient majorant is generally not integrable at
+Coulomb and is not used for this repeated-pair term.
+
+Deleting a diagonal tube in weak integration by parts gives boundary errors
+of orders $\varepsilon^{d-1}$ and $\varepsilon^{d-1-q_1}$.
+They vanish because $\Phi$ is bounded and $q_1<d-1$.
+The conditions $2q_1<d$ and $q_2<d$ give $H^1$ and $W^{2,1}$.
+Moving-tube estimates justify differentiated background integrals, including
+their continuous representatives and the vanishing integrated background
+Laplacian. No diagonal trace is assigned.
+
+\section*{The actual finite-particle identity}
+Let $\eta=N^{-1}\sum_i\delta_{X_i}$ and $\rho=\eta-\dd x$. For a symmetric pair
+kernel, write $q(x)=\int\Phi(x,y)\dd y$ and $r=\int\Phi\dd x\dd y$. Then
+\[
+ P[\Phi]=\frac1{2N^2}\sum_{i\ne j}\Phi(X_i,X_j)
+       -\frac1N\sum_iq(X_i)+\frac12r.
+\]
+For a symmetric triple $F$, the exact ordered deleted-label statistic is
+\[
+ U_3[F]=\frac1{N^3}\sum_{i,j,k\ \mathrm{distinct}}F(X_i,X_j,X_k)
+ -\frac3{N^2}\sum_{i\ne j}F_1(X_i,X_j)
+ +\frac3N\sum_iF_2(X_i)-F_0,
+\]
+Here $F_1$ and $F_2$ integrate one and two Haar coordinates, respectively,
+and $F_0$ is the full three-coordinate Haar integral.
+At $N=2$ the first sum is empty, but the background terms remain.
+Define
+\[
+ C\Phi=\operatorname{Sym}_3[K(x-z)\cdot\nabla_x\Phi(x,y)],
+ \qquad (B\Phi)_\mu(x)=\int B\Phi(x,y)\dd y,
+\]
+where $\operatorname{Sym}_3$ averages all six permutations. Explicit finite sums
+separate the repeated internal pair from three distinct labels before any
+estimate. They give
+\[
+ \boxed{\quad
+ dP_t[\Phi_t]=\left\{-P_t[J_t]+U_{3,t}[C\Phi_t]
+ +\frac1N\rho_t[(B\Phi_t)_\mu]
+ +\frac1{2N}\int B\Phi_t\dd x\dd y\right\}\dd t+\dd M^2_t.
+ \quad}
+\]
+The gradient and its noise are exactly
+\begin{align*}
+ \nabla_iP[\Phi]&=\frac1{N^2}\sum_{j\ne i}\nabla_1\Phi(X_i,X_j)
+       -\frac1N\int\nabla_1\Phi(X_i,y)\dd y,\\
+ dM^2_t&=\sqrt{2\nu}\sum_i\nabla_iP_t[\Phi_t](X_t)\cdot\dd W_i(t),&
+ d\langle M^2\rangle_t&=2\nu\sum_i|\nabla_iP_t[\Phi_t](X_t)|^2\dd t.
+\end{align*}
+There is no extra thermal trace: distinct particle labels have independent
+Brownian noises, and integrated Haar Laplacians vanish.
+
+For a bounded initial $N$-body density $F_0$, independent of the noises,
+the established actual-law bound is
+$\|F_t\|_\infty\le\|F_0\|_\infty e^{(N-1)\kappa T}$,
+where $D\ge-\kappa\dd x$. Triple terms are Haar integrable because, conditional
+on one coordinate, the force and gradient use two independent integration
+variables with separately integrable powers. Repeated pairs instead use the
+structural $B\Phi$ bound. All drift terms have finite expected absolute time
+integrals, and $H^1$ supplies a finite expected bracket at fixed $N$.
+The stopped drift passes in $L^1$ and the stopped stochastic integral in $L^2$;
+the latter is a true square-integrable martingale. This is a direct collision
+localization argument, not a claim of heat-regularized source convergence.
+
+\noindent\textbf{Remaining assertion.} Uniform smallness of evolved residuals
+and self/cross brackets is still open. The exponential density cost and
+fixed-$N$ derivative constants cannot provide it. The next reference-Haar
+energy task retains the actual two- and three-particle correlation transfer as
+a separate obligation. The old energy-floor condition, full microscopic
+subcriticality and finite positive critical coupling remain distinct.
+\end{document}

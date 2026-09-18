@@ -1,0 +1,11 @@
+# Round008 final validation
+
+Input HEAD4171be9839feb8acf4c70e1dda014458fdb44490, empty index before explicit staging. The69 reviewed paths include accepted THM028/AUD034/035, immutable original reports/comparison and TASK058 scope check, canonical integration, R7 publication receipt, compiled R8 artifacts, and explicitly pending R9 construction/fresh audit and R10 task dossiers. No unissued worker output, unrelated user edits or protected baseline changes.
+
+Protected provenance and shipped campaign verification PASS:51 immutable baseline entries,23 documented mutable paths differing from baseline; note SHA256a332f829904a80c27f0c13291758c316f1fcdd7460a3b0d6d67c1ff1bf18ff76. Issued R4–R10 manifests83,639 file checks PASS. Historical mutable checkpoint manifests remain unchanged. New Python AST, text control-character and allowed-path checks PASS. All staged bytes equal their inspected working files.
+
+Root read the full798-line R8 constructor,610-line fresh reconstruction,208-line fresh hostile report,106-line supplemental scope report and508-line pending R9 constructor. Root checked the complete scope comparison, every substantive canonical diff and the full staged path list/stat. Exact reruns and packet comparisons are documented in CERTIFICATES/ROUND_008_VERIFICATION.md. No R9 independent pass is claimed; its blind report arrived sealed but is not yet root-compared.
+
+R8 final TeX/PDF:3 pages,213744 bytes; complete final log clean; every final page rendered and visually inspected. git diff --check PASS before staging. git diff --cached --check reports exactly one preserved verbatim transcript warning: CERTIFICATES/OUTPUTS/round008_tex_build.txt:101,new blank line at EOF. This evidence is deliberately not normalized. No other whitespace warning accepted.
+
+This validation, full inventory and nonselfhash manifest bring the final stage to72 paths and71 checkpoint hashes. The manifest hashes every staged file except itself. Recheck all index bytes and the sole transcript warning, then ordinary authorized commit/push. Compare localHEAD,origin/main and live refs/heads/main afterward; save the literal receipt outside its own commit. No amend,force push,history rewrite,remote change,dependency installation or global configuration change.

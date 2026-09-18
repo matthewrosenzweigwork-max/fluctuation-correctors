@@ -1,0 +1,1288 @@
+{
+  "task": "TASK-053",
+  "claim": "THM028",
+  "status": "PASS",
+  "evidence_label": "exact independent reconstruction checks; supporting algebra, not an analytic certificate",
+  "arithmetic": "fractions and finite Laurent/Taylor polynomials over Q(i)",
+  "dependencies": "Python standard library only",
+  "randomness": "none",
+  "tolerance": "none",
+  "check_count": 285,
+  "checks": [
+    {
+      "name": "full_particle_identity_N2_nu0_constant",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu0_constant",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_constant_N2_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu0_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu0_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_difference_mode_N2_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu0_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu0_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_one_body_sum_N2_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu0_separable",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu0_separable",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_separable_N2_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu0_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu0_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_mode_N2_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu0_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu0_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_sine_N2_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu2/5_constant",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu2/5_constant",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_constant_N2_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu2/5_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu2/5_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_difference_mode_N2_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu2/5_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu2/5_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_one_body_sum_N2_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu2/5_separable",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu2/5_separable",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_separable_N2_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu2/5_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu2/5_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_mode_N2_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N2_nu2/5_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N2_nu2/5_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_sine_N2_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu0_constant",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu0_constant",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_constant_N3_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu0_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu0_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_difference_mode_N3_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu0_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu0_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_one_body_sum_N3_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu0_separable",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu0_separable",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_separable_N3_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu0_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu0_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_mode_N3_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu0_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu0_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_sine_N3_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu2/5_constant",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu2/5_constant",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_constant_N3_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu2/5_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu2/5_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_difference_mode_N3_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu2/5_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu2/5_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_one_body_sum_N3_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu2/5_separable",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu2/5_separable",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_separable_N3_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu2/5_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu2/5_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_mode_N3_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N3_nu2/5_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N3_nu2/5_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_sine_N3_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu0_constant",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu0_constant",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_constant_N4_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu0_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu0_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_difference_mode_N4_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu0_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu0_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_one_body_sum_N4_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu0_separable",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu0_separable",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_separable_N4_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu0_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu0_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_mode_N4_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu0_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu0_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_sine_N4_nu0",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu2/5_constant",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu2/5_constant",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_constant_N4_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu2/5_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu2/5_difference_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_difference_mode_N4_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu2/5_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu2/5_one_body_sum",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_one_body_sum_N4_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu2/5_separable",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu2/5_separable",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_separable_N4_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu2/5_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu2/5_mixed_mode",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_mode_N4_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "full_particle_identity_N4_nu2/5_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "deleted_gradient_N4_nu2/5_mixed_sine",
+      "pass": true
+    },
+    {
+      "name": "pair_exchange_mixed_sine_N4_nu2/5",
+      "pass": true
+    },
+    {
+      "name": "constant_P_N2",
+      "pass": true
+    },
+    {
+      "name": "constant_U3_N2",
+      "pass": true
+    },
+    {
+      "name": "unordered_internal_coefficient_N2",
+      "pass": true
+    },
+    {
+      "name": "constant_P_N3",
+      "pass": true
+    },
+    {
+      "name": "constant_U3_N3",
+      "pass": true
+    },
+    {
+      "name": "unordered_internal_coefficient_N3",
+      "pass": true
+    },
+    {
+      "name": "constant_P_N4",
+      "pass": true
+    },
+    {
+      "name": "constant_U3_N4",
+      "pass": true
+    },
+    {
+      "name": "unordered_internal_coefficient_N4",
+      "pass": true
+    },
+    {
+      "name": "smooth_Fourier_response_sign",
+      "pass": true
+    },
+    {
+      "name": "smooth_Fourier_B_factor",
+      "pass": true
+    },
+    {
+      "name": "smooth_response_constant",
+      "pass": true
+    },
+    {
+      "name": "constant_terminal_source",
+      "pass": true
+    },
+    {
+      "name": "admissible_d3_s1",
+      "pass": true
+    },
+    {
+      "name": "strict_gap_gradient_amplification_d3_s1",
+      "pass": true,
+      "detail": "29/256"
+    },
+    {
+      "name": "strict_gap_hessian_amplification_d3_s1",
+      "pass": true,
+      "detail": "37/128"
+    },
+    {
+      "name": "strict_gap_gradient_source_d3_s1",
+      "pass": true,
+      "detail": "269/128"
+    },
+    {
+      "name": "strict_gap_hessian_double_source_d3_s1",
+      "pass": true,
+      "detail": "9/64"
+    },
+    {
+      "name": "strict_gap_hessian_direct_source_d3_s1",
+      "pass": true,
+      "detail": "583/256"
+    },
+    {
+      "name": "strict_gap_H1_integrability_d3_s1",
+      "pass": true,
+      "detail": "1/2"
+    },
+    {
+      "name": "strict_gap_W21_integrability_d3_s1",
+      "pass": true,
+      "detail": "1/2"
+    },
+    {
+      "name": "strict_gap_weak_boundary_d3_s1",
+      "pass": true,
+      "detail": "3/4"
+    },
+    {
+      "name": "strict_gap_relative_drift_dominance_d3_s1",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "radial_Hessian_d3_s1",
+      "pass": true
+    },
+    {
+      "name": "tangent_Hessian_d3_s1",
+      "pass": true
+    },
+    {
+      "name": "principal_Laplacian_d3_s1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N2_nu0_q5/4_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N2_nu0_q5/4_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N2_nu0_q5/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N2_nu0_q5/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N2_nu3/5_q5/4_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N2_nu3/5_q5/4_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N2_nu3/5_q5/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N2_nu3/5_q5/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N3_nu0_q5/4_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N3_nu0_q5/4_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N3_nu0_q5/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N3_nu0_q5/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N3_nu3/5_q5/4_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N3_nu3/5_q5/4_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N3_nu3/5_q5/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1_N3_nu3/5_q5/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_punctured_Laplacian_d3",
+      "pass": true
+    },
+    {
+      "name": "positive_diffusion_requires_absorption_d3_s1",
+      "pass": true
+    },
+    {
+      "name": "admissible_d3_s1/2",
+      "pass": true
+    },
+    {
+      "name": "strict_gap_gradient_amplification_d3_s1/2",
+      "pass": true,
+      "detail": "25/168"
+    },
+    {
+      "name": "strict_gap_hessian_amplification_d3_s1/2",
+      "pass": true,
+      "detail": "8/21"
+    },
+    {
+      "name": "strict_gap_gradient_source_d3_s1/2",
+      "pass": true,
+      "detail": "719/336"
+    },
+    {
+      "name": "strict_gap_hessian_double_source_d3_s1/2",
+      "pass": true,
+      "detail": "3/16"
+    },
+    {
+      "name": "strict_gap_hessian_direct_source_d3_s1/2",
+      "pass": true,
+      "detail": "797/336"
+    },
+    {
+      "name": "strict_gap_H1_integrability_d3_s1/2",
+      "pass": true,
+      "detail": "1/3"
+    },
+    {
+      "name": "strict_gap_W21_integrability_d3_s1/2",
+      "pass": true,
+      "detail": "1/3"
+    },
+    {
+      "name": "strict_gap_weak_boundary_d3_s1/2",
+      "pass": true,
+      "detail": "2/3"
+    },
+    {
+      "name": "strict_gap_relative_drift_dominance_d3_s1/2",
+      "pass": true,
+      "detail": "1/2"
+    },
+    {
+      "name": "radial_Hessian_d3_s1/2",
+      "pass": true
+    },
+    {
+      "name": "tangent_Hessian_d3_s1/2",
+      "pass": true
+    },
+    {
+      "name": "principal_Laplacian_d3_s1/2",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N2_nu0_q4/3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N2_nu0_q4/3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N2_nu0_q8/3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N2_nu0_q8/3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N2_nu3/5_q4/3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N2_nu3/5_q4/3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N2_nu3/5_q8/3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N2_nu3/5_q8/3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N3_nu0_q4/3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N3_nu0_q4/3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N3_nu0_q8/3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N3_nu0_q8/3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N3_nu3/5_q4/3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N3_nu3/5_q4/3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N3_nu3/5_q8/3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d3_s1/2_N3_nu3/5_q8/3_ell1",
+      "pass": true
+    },
+    {
+      "name": "positive_diffusion_requires_absorption_d3_s1/2",
+      "pass": true
+    },
+    {
+      "name": "Fourier_gamma_ratio_d3_s1/2",
+      "pass": true
+    },
+    {
+      "name": "admissible_d4_s2",
+      "pass": true
+    },
+    {
+      "name": "strict_gap_gradient_amplification_d4_s2",
+      "pass": true,
+      "detail": "37/160"
+    },
+    {
+      "name": "strict_gap_hessian_amplification_d4_s2",
+      "pass": true,
+      "detail": "47/80"
+    },
+    {
+      "name": "strict_gap_gradient_source_d4_s2",
+      "pass": true,
+      "detail": "351/160"
+    },
+    {
+      "name": "strict_gap_hessian_double_source_d4_s2",
+      "pass": true,
+      "detail": "9/32"
+    },
+    {
+      "name": "strict_gap_hessian_direct_source_d4_s2",
+      "pass": true,
+      "detail": "51/20"
+    },
+    {
+      "name": "strict_gap_H1_integrability_d4_s2",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "strict_gap_W21_integrability_d4_s2",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "strict_gap_weak_boundary_d4_s2",
+      "pass": true,
+      "detail": "3/2"
+    },
+    {
+      "name": "strict_gap_relative_drift_dominance_d4_s2",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "radial_Hessian_d4_s2",
+      "pass": true
+    },
+    {
+      "name": "tangent_Hessian_d4_s2",
+      "pass": true
+    },
+    {
+      "name": "principal_Laplacian_d4_s2",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N2_nu0_q3/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N2_nu0_q3/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N2_nu0_q3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N2_nu0_q3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N2_nu3/5_q3/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N2_nu3/5_q3/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N2_nu3/5_q3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N2_nu3/5_q3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N3_nu0_q3/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N3_nu0_q3/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N3_nu0_q3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N3_nu0_q3_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N3_nu3/5_q3/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N3_nu3/5_q3/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N3_nu3/5_q3_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d4_s2_N3_nu3/5_q3_ell1",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_punctured_Laplacian_d4",
+      "pass": true
+    },
+    {
+      "name": "admissible_d5_s3",
+      "pass": true
+    },
+    {
+      "name": "strict_gap_gradient_amplification_d5_s3",
+      "pass": true,
+      "detail": "23/48"
+    },
+    {
+      "name": "strict_gap_hessian_amplification_d5_s3",
+      "pass": true,
+      "detail": "23/24"
+    },
+    {
+      "name": "strict_gap_gradient_source_d5_s3",
+      "pass": true,
+      "detail": "29/12"
+    },
+    {
+      "name": "strict_gap_hessian_double_source_d5_s3",
+      "pass": true,
+      "detail": "3/8"
+    },
+    {
+      "name": "strict_gap_hessian_direct_source_d5_s3",
+      "pass": true,
+      "detail": "139/48"
+    },
+    {
+      "name": "strict_gap_H1_integrability_d5_s3",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "strict_gap_W21_integrability_d5_s3",
+      "pass": true,
+      "detail": "3/2"
+    },
+    {
+      "name": "strict_gap_weak_boundary_d5_s3",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "strict_gap_relative_drift_dominance_d5_s3",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "radial_Hessian_d5_s3",
+      "pass": true
+    },
+    {
+      "name": "tangent_Hessian_d5_s3",
+      "pass": true
+    },
+    {
+      "name": "principal_Laplacian_d5_s3",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N2_nu0_q2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N2_nu0_q2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N2_nu0_q7/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N2_nu0_q7/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N2_nu3/5_q2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N2_nu3/5_q2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N2_nu3/5_q7/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N2_nu3/5_q7/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N3_nu0_q2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N3_nu0_q2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N3_nu0_q7/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N3_nu0_q7/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N3_nu3/5_q2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N3_nu3/5_q2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N3_nu3/5_q7/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d5_s3_N3_nu3/5_q7/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_punctured_Laplacian_d5",
+      "pass": true
+    },
+    {
+      "name": "admissible_d7_s5",
+      "pass": true
+    },
+    {
+      "name": "strict_gap_gradient_amplification_d7_s5",
+      "pass": true,
+      "detail": "187/256"
+    },
+    {
+      "name": "strict_gap_hessian_amplification_d7_s5",
+      "pass": true,
+      "detail": "171/128"
+    },
+    {
+      "name": "strict_gap_gradient_source_d7_s5",
+      "pass": true,
+      "detail": "337/128"
+    },
+    {
+      "name": "strict_gap_hessian_double_source_d7_s5",
+      "pass": true,
+      "detail": "15/32"
+    },
+    {
+      "name": "strict_gap_hessian_direct_source_d7_s5",
+      "pass": true,
+      "detail": "829/256"
+    },
+    {
+      "name": "strict_gap_H1_integrability_d7_s5",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "strict_gap_W21_integrability_d7_s5",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "strict_gap_weak_boundary_d7_s5",
+      "pass": true,
+      "detail": "7/2"
+    },
+    {
+      "name": "strict_gap_relative_drift_dominance_d7_s5",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "radial_Hessian_d7_s5",
+      "pass": true
+    },
+    {
+      "name": "tangent_Hessian_d7_s5",
+      "pass": true
+    },
+    {
+      "name": "principal_Laplacian_d7_s5",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N2_nu0_q5/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N2_nu0_q5/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N2_nu0_q4_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N2_nu0_q4_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N2_nu3/5_q5/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N2_nu3/5_q5/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N2_nu3/5_q4_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N2_nu3/5_q4_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N3_nu0_q5/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N3_nu0_q5/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N3_nu0_q4_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N3_nu0_q4_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N3_nu3/5_q5/2_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N3_nu3/5_q5/2_ell1",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N3_nu3/5_q4_ell0",
+      "pass": true
+    },
+    {
+      "name": "weighted_generator_d7_s5_N3_nu3/5_q4_ell1",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_punctured_Laplacian_d7",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_0_0",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_0_1",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_0_2",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_1_0",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_1_1",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_1_2",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_2_0",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_2_1",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_full_response_mode_2_2",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_atom_only_fails_constant",
+      "pass": true
+    },
+    {
+      "name": "Coulomb_compensation_only_fails_constant",
+      "pass": true
+    },
+    {
+      "name": "signed_jump_constant_compensation",
+      "pass": true
+    }
+  ],
+  "checker_sha256": "2422715b384219af3413afb4fead89b2c9d0988ceb1136020efaaf8306f450e2",
+  "base_commit": "3aa91391516f35afe5317a287b4f0e2e93e6384c",
+  "input_manifest_sha256": "da5b28e293acd91c3be49928cae60402c6e8dca7e5ccd269c9317bc24806568c",
+  "input_verification": [
+    {
+      "path": "TASKS/ACTIVE/TASK-053_ROUND008_HOMOGENEOUS_DOMAIN_BLIND.md",
+      "sha256": "9e84c25cc5d667035983bf8530b88bc8af72442c15832b5e8f81891c1817d422",
+      "pass": true
+    },
+    {
+      "path": "THEOREMS/THM-028_HOMOGENEOUS_PARTICLE_CORRECTOR_DOMAIN.md",
+      "sha256": "262f2ef32cfb9fa7757774e09970862c06c38891b2ef2d1bd1af875947e928a3",
+      "pass": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "pass": true
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "pass": true
+    },
+    {
+      "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+      "sha256": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed",
+      "pass": true
+    },
+    {
+      "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+      "sha256": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f",
+      "pass": true
+    },
+    {
+      "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+      "sha256": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6",
+      "pass": true
+    },
+    {
+      "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+      "sha256": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db",
+      "pass": true
+    },
+    {
+      "path": "THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a",
+      "pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+      "sha256": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+      "pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+      "sha256": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+      "pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+      "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+      "pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "pass": true
+    },
+    {
+      "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+      "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec",
+      "pass": true
+    },
+    {
+      "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+      "sha256": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210",
+      "pass": true
+    }
+  ]
+}

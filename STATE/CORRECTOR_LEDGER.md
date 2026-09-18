@@ -37,3 +37,5 @@ THM020 retains 2nu Delta together with internal B/N in a local relative-coordina
 R5 THM025 supplies the genuine second-order full pair inverse under prescribed uniform data and actual homogeneous data, with both responses and exact J. Its initial iid endpoint now passes AUD028/029. It remains a bounded Borel/Haar L2 inverse, not yet a particle Ito test. PO022 weighted first derivatives and PO023 full domain are separate; no higher-order corrector tail is controlled.
 
 THM027 adds genuine weighted C1 derivatives and global weak Haar H1 to the full COR001 inverse, retaining both responses and exact source. Fresh AUD032/033 pass, with fixed-N constants. THM028's C1time/C2space and exact actual-particle identity remain a separately submitted candidate under fresh review. No extra corrector order or critical tail has closed.
+
+R8 THM028 passes the actual homogeneous COR001 particle domain. The true full inverse, both responses and exact source appear in a justified singular Ito identity with its true square-integrable martingale. This adds no higher corrector or critical tail closure. Uniform self/cross noise and the evolved cubic residual remain PO024/PO001.

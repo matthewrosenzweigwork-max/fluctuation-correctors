@@ -42,3 +42,5 @@ THM020's initial iid endpoint keeps -m/(2N), the first projection -N^-2 sum q(X_
 Round004 response integration does not change mean-field centering or N^2 normalization. Coulomb negative Haar compensation is part of divK, not a new fluctuation centering. Root R5 conditional composition retains the exact THM015 mean and first projection; its iid estimate is conditional pending independent audit/input verification. No exact-centered law is silently substituted.
 
 R5 actual full-inverse initial estimate retains deterministic -theta/(2N), first projection and canonical pair components from THM015. It is mean-field centered, with M0^2 in the Haar-to-product L2 comparison. No exact-first-marginal or dynamic corrected centering has been substituted.
+
+R8 exact particle identity retains mean-field centering with q(x)=integral Phi(x,y)dy and r=integral Phi. P[Phi]=(2N^2)^-1 sum_(i!=j)Phi_ij-N^-1 sum_i q_i+r/2. No exact-law recentering or new counterterm. Its gradient is N^-2 sum_(j!=i) grad_x Phi_ij-N^-1 grad q_i, including the finite-N background deletion.
