@@ -43,3 +43,9 @@ R10–R13 use complete locally frozen earlier proofs with explicit conditional h
 R12 source interface resolved by separately accepted R8 full homogeneous domain and R10 sharp deterministic floor. Original hostile/reconstruction dossiers remain explicitly conditional; no source-level audit was retroactively attributed to those workers. No new external theorem, private[N], citation, source normalization or novelty claim.
 
 R11/R13 gates use complete version-locked local source modules with exact historical conditional statuses. Fresh audits read only hashed permitted dossiers before seal; root comparison maps their prerequisites to the separate accepted R4–R10 homogeneous gates. No private[N], new external theorem, attribution or novelty claim. THM036 sprint is restricted to its complete27-input local dossier; an outside theorem would require a separate verified source obligation.
+
+
+Round014 final gate,2026-09-18 UTC. R14 complete new sources are constructor266d8fe2cdbaa4111c3f5b515ed22c791f291508987618de525c49f9c67d3f14, fresh blindd73aceccdf173fa42b33a88d0f5ddeefc2c0bc1ecc83d6521c0e4265b2af9d23 and fresh hostile5eb85136afcc0bd2b7db9b9c5af6d794ad871edd558e8198760dc628a77dc2b7. Full source/exposure/interface checks and independently accepted R8/R12 premises are recorded in ROUND_014_GATE_INTEGRATION.md. No new external citation, private[N] input or novelty claim.
+
+
+Round015 final gate,2026-09-18 UTC. R15 full674/543/480-line records and all source/exposure qualifications read; new conjunction passes AUD049/050 with matching independently accepted R5/R6/R7/R8/R10/R12 premises. Source hashes and scope mapping are ROUND_015_GATE_INTEGRATION.md. Hostile three-byte rendering damage has a separately sealed same-reviewer clarification, no new independent-gate claim. No new external source or private[N].

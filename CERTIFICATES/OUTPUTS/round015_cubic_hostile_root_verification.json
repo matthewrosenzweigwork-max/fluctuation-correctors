@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "input_files": 30,
+  "sealed_outputs": 40,
+  "archive_members": 41,
+  "archive_sha256": "37fef68c77ee86ec6a4a8b1c272d37c6f4de74cb2cd5ff2acd5309edc49e950c",
+  "proof_sha256": "9ff4765f3ded77f6a3d41fa575d53460b28890f45aa5403764c70a93a0384da1",
+  "exact_assertions": 1422,
+  "rerun_byte_identical": true,
+  "root_copies_byte_identical": true,
+  "archive_exact_member_set": true,
+  "disposable_rerun": "/private/tmp/hocf-r015-hostile-root-_uotf78i",
+  "issued_integrity_verifier": {
+    "status": "PASS",
+    "permitted_input_count": 30,
+    "output_manifest_file_count": 40,
+    "archive_member_count": 41,
+    "archive_sha256": "37fef68c77ee86ec6a4a8b1c272d37c6f4de74cb2cd5ff2acd5309edc49e950c"
+  },
+  "rendering_findings": "Original immutable report contains three form-feed bytes, two at line364 and one at420. Separate post-seal reviewer clarification requested; originals preserved.",
+  "scope": "Integrity and exact algebra reproduction; full mathematical comparison separately recorded."
+}

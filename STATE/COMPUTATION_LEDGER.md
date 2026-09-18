@@ -88,3 +88,14 @@ R10 whole-card blind4955 exact supporting assertions rerun byte-identically afte
 R12 hostile22725 exact assertions rerun byte-identically from its safe34-member extraction, including25 input/count checks; all24 input and8 output hashes and archive sidecar pass. Root read all426 lines and22 claim dispositions. Combined R11/R12 final TeX/PDF3 pages,215207 bytes, clean complete log, all pages visually checked. Initial literal-quad rendering defect corrected before final build; verbatim transcript retained.
 
 R11 hostile6927 exact checks rerun byte-identically after all22 input/8 output/33 member checks; blind16207 semantic reproduction differs only by disclosed timestamp. R13 blind2513 and hostile56353 exact checks rerun byte-identically in separate safe extractions; respective27/28 inputs,8/8 outputs,36/38 members and all detached seals pass. Root R13 checker3570 earlier reproduced; chronology erratum preserved. None of these finite diagnostics certifies singular analytic passages. Machine records are under CERTIFICATES/OUTPUTS/.
+
+R14 root reproduced57186 constructor and208486 fresh-blind exact checks byte-identically from safe separate extractions. Constructor25 inputs/32 payload files including dossier/33 members; blind25 inputs/35 payload files including preserved inputs/36 members. Every original/output/outer hash and exact member set passed. One constructor distinct-label font fragment in equation4.6 is recorded by a separate rendering erratum; immutable bytes are preserved. Full analytic comparison AUD047 passes, separate hostile pending.
+
+
+20260918T045742Z: R15 constructor6865 and fresh blind5045 exact assertions independently rerun byte-identically; all27/28 inputs, both36-member packets and copied output seals match. CERTIFICATES/OUTPUTS/round015_cubic_*_root_*.json. Supporting exact algebra only, not analytic certification.
+
+
+Round014 final gate,2026-09-18 UTC. R14 hostile diagnostic REPRODUCED:236686 exact assertions,9 coefficient mutations detected, complete JSON byte-identical in a new root extraction. All27 inputs,36 outputs,37 exact safe archive members and3 outer seal entries verify. Constructor57186/blind208486 also reproduce. See CERTIFICATES/OUTPUTS/round014_lower_*_root_*.json. Exact finite diagnostics support but do not certify singular proofs.
+
+
+Round015 final gate,2026-09-18 UTC. R15 complete fresh extracted diagnostics REPRODUCED:6865 constructor,5045 blind,1422 hostile exact assertions, all byte-identical. Dossiers27/28/30 inputs; packet members36/36/41; all hashes/bytes verify. Rendering addendum7-member archive and44 original byte-preservation check pass. Root additionally read/verified/reproduced R16 candidate2892 exact assertions,9 inputs18 members; this is construction reproducibility only, independent R16 audits pending.

@@ -72,3 +72,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 explicit constants are reconstructed in hostile H4–H13 and H16–H21. The bounded-chi Jacobian-weight cost, fixed annular terms, derivative-only two-response bound and Gronwall contain no hidden C_N. The positive occupation coefficient is s(d-2-s), so it cannot be used at Coulomb. R7 fixed-N higher moments justify identities only; all N/nu dependence remaining in the result is displayed.
 
 R11/R13 accepted constants: R11 fixes d>=3,0<s<=d-2,T,L,h,weights and controls every fixed moment alpha>m by C(chi^((s+2)/s)),chi<=L. R13 fixes d>=4,0<s<2,T,nu_*,h,q,weights; q is strictly1<q<min(d-2,d/2),q<=s+1,eta<2. Its negative diffusion and repulsive coefficients both remain positive; no uniform endpoint-in-s/q/d/nu_* constant is claimed. Complete formula records are the immutable proofs and accepted round reports.
+
+
+Round014 final gate,2026-09-18 UTC. R14 accepted fixed-family constant can be (3sqrt(2)/2)T A_q J_q^*, where A_q is precisely the admitted uniform R12 weighted-gradient constant and J_q^* the explicit finite polar/smooth-complement bound in the proof. q is the stated midpoint; q<d-s-1 gives integrability and q>s/2 gives decay. No fixed-N density or derivative constant enters this uniform lower estimate.
+
+
+Round015 final gate,2026-09-18 UTC. R15 complete fixed-data uniform source constant uses finite smooth terminal Fourier seminorm, constructor powerd+4 or independent modewise reconstruction powerd+2. No exponential terminal-frequency cost, noise-dependent energy constant or positive-time iid factor. Cubic constants may depend on fixed bounds for the critical tail and admitted R12 gradient constants; no endpoint uniformity in s approaching2 is claimed.

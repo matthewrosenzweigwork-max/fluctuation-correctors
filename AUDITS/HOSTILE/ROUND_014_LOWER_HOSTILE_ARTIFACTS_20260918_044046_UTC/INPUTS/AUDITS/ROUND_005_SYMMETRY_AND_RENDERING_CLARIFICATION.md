@@ -1,0 +1,5 @@
+# Round005 symmetry and rendering clarification
+
+2026-09-17. THM024's phrase symmetric Markov evolution means commutation with exchanging the two pair coordinates. This is explicitly hypothesis4 in the original conditional proof and was independently read this way by both fresh reviews. Haar self-adjointness is neither assumed nor proved. TASK041-E01/AUD026 records the terminology ambiguity; the original card and candidate bytes stay frozen. No operator assumption is weakened or mathematical conclusion changed.
+
+The fresh TASK040 reconstruction's conditional-expectation display(9.8) contains literal middle followed by a vertical bar, where the intended TeX conditional delimiter requires a preceding control-sequence backslash. The surrounding definition and proof give the unambiguous conditional expectation. This is the same kind of rendering-only token as the earlier R4 display erratum, not a mathematical defect. The issued reconstruction remains byte-identical. The standalone synthesis uses ordinary conditioning notation where needed.

@@ -76,3 +76,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 proves |grad_pair Phi|/w_q<=C_q N^((s+1-q)/(s+2)) for1<q<d/2,q<=s+1 at bounded chi. The source split cancels the occupation factor N. Both homogeneous finite signed-measure responses act on the derivative only, with no extra value norm. Root Gronwall and fresh Ultra full differentiated-series constructions identify the same existing inverse. THM032 spatial convergence is not a premise.
 
 R11 passes the full weighted-space assertion and response-only limit integral exp((a-t)R)J_a^0 da, uniquely in uniformly weighted-value bounded pointwise mild class. Both responses remain. Uniform local C1 convergence passes through separated singularity convolution and factorial tails; no weighted-sup/H1/time-derivative convergence is asserted. R13 improves only the derivative norm using simultaneous diffusion/repulsion occupation and derivative-only homogeneous response bounds.
+
+
+Round014 final gate,2026-09-18 UTC. R14 uses only the complete R8 genuine-domain and R12 smaller-weight uniform-gradient implications for the same full two-response inverse. Force-gradient product and Haar slice identification are audited separately. R10 energy/noise and R11 spatial limit are not needed for this bound.
+
+
+Round015 final gate,2026-09-18 UTC. R15 new source bound uses positive heat coefficients and a Fourier commutator cancellation with polynomial cost; it does not need the pair inverse. Cubic closure additionally invokes the exact genuine full inverse and both responses through accepted R5/R8/R12 sources. Complete current R11/R13/R14 results are nondependencies.

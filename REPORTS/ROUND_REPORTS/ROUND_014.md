@@ -1,0 +1,15 @@
+# Round014 — lower drift contractions pass both independent gates
+
+2026-09-18 UTC. Base before this integration:072cab684b9ce41855ead6c48f435c8fc184ec35. The resulting commit is recorded in the post-publication receipt, avoiding a self-hash cycle.
+
+THM035's full assertion and exact negation are frozen in THEOREMS/THM-035_LOWER_DRIFT_CONTRACTIONS.md. The constructor proves the stronger pathwise bound in d>=3,0<s<d-2,3s<2d-2, fixed bounded chi=nu N^(2/(s+2)), including zero noise. For q the midpoint of max(1,s/2) and min(d/2,d-s-1,s+1), the exact lower functional ell=rho[g]/N+c/(2N)=eta[g]/N-c/(2N) satisfies sigma integral|ell|<=C sqrt(b) N^(-(2q-s)/(2(s+2))). The constant is explicit in the proof. Every actual continuous contraction, both response slots and the scalar coefficient are retained.
+
+Routes executed: Max TASK073 construction, fresh Max TASK074 whole reconstruction and fresh Max TASK076 hostile review. AUD047 and AUD048 both pass the exact conditional implication; all19 hostile local claims pass. Complete root comparison and source qualifications are AUDITS/ROUND_014_RECONSTRUCTION_COMPARISON.md and ROUND_014_GATE_INTEGRATION.md. The accepted R8 genuine-domain and R12 uniform-gradient modules separately provide precisely the admitted premises. Actual-energy, entropy and current cubic estimates are not needed.
+
+Falsification/small-model tests retain N=2 backgrounds, constant/additive/relative/mixed smooth probes, all lower/scalar signs and two responses. Hostile diagnostics detect nine deliberate coefficient mutations. Strict exponent boundaries are analyzed as limitations of the proof, not alleged counterexamples to improved theorems. Constructor57186, blind208486 and hostile236686 exact supporting assertions reproduce byte-identically in independent root extractions. All source/output/outer seals and exact33/36/37-member packets pass. No numerical test certifies the analytic proof.
+
+The separate immutable-constructor rendering erratum is accepted by hostile TASK076-E01. Original malformed bytes remain preserved; the final standalone synthesis uses readable ordered-distinct notation. No mathematical repair, demotion, retraction, new counterterm or centering change. Existing protected source and temperature conventions remain unchanged.
+
+PO025 is discharged in the exact stated range. The estimate includes every R12 strict critical noise-decay range and proves the precise perturbative equivalence of integrated cubic-plus-lower and cubic L1 targets. It also controls the expected supremum of the lower primitive and separately compares the stronger absolute-time-integral norms. It proves neither cubic norm small. THM036 is still the first pending critical cubic assertion until its own final gate; full flagship THM003/004 and higher hierarchy remain open.
+
+Next actions: finish separate R15 whole-conjunction hostile review, close or repair that exact gate, and execute the independently frozen R16 wider source and R17 finite-dimensional law targets without importing unaccepted claims. Owner authorization already covers atomic research commits and ordinary pushes; remotes/history remain unchanged.

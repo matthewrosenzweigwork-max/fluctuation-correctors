@@ -57,3 +57,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 changes no centering: mean-field Haar background remains. One-body Haar controls only its actual background square; the full pair is not assumed independent. An actual noise estimate does not upgrade R10 exact zero mean to endpoint concentration. Initial terminal-zero-corrector contribution is separately controlled at iid time zero by R5.
 
 R13 preserves exactly P_N=U2/2 and mean-field Haar centering. Radially clipped and tail fields each use their own row A; full gradient is N^-2(sum G-N A), retaining the missing-self subtraction after centering. Noise smallness proves no evolved residual centering. THM035 now freezes both lower and scalar drift terms; neither may be silently dropped.
+
+
+Round014 final gate,2026-09-18 UTC. R14 lower bound is pathwise for any empirical probability measure once the same genuine contractions are fixed; actual dynamics enter the separate R8 domain identity. Both mean-field-centered/scalar terms are retained, even if special structural cancellation exists. One-body Haar equivariance is true but does not imply higher-marginal independence. No centering change.
+
+
+Round015 final gate,2026-09-18 UTC. R15 keeps mean-field Haar centering and all explicit scalar/linear contractions. Actual source bound uses E|PJ|, not signed mean-zero symmetry. Initial iid pair second moment includes m^2/(4N^2) bias, first projection/N^3 and degenerate pair coefficient(N-1)/(2N^3). Product sampling is used only initially; no evolved iid endpoint.

@@ -1,0 +1,131 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\E}{\mathbb E}
+\newcommand{\dd}{\,\mathrm d}
+\title{The exact lower drift contractions}
+\author{HOCF--RIESZ, Round 014}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status and premises.}
+This synthesis records the THM--035 conditional implication. Complete
+constructor and independently reconstructed proofs are sealed separately;
+AUD--047 records their full comparison; separate fresh hostile review
+AUD--048 also passes. Root verified all three sealed packets and reran their
+exact diagnostics. The R8 genuine-domain and R12 uniform smaller-gradient
+premises enter only in their exact stated scopes. No cubic-smallness or
+fluctuation-law conclusion is inferred here.
+
+\section*{An integrable product with a uniform power}
+Fix $d\ge3$, $0<s<d-2$, $3s<2d-2$, finite $T,L,\nu_*\ge0$ and a smooth
+real terminal test $h$. Use the unit Haar torus, coefficient-one periodic
+Riesz force $K=-\nabla g$, zero external drift, the actual Fourier test and
+genuine symmetric terminal-zero full pair inverse $\Phi$, with both responses.
+For $N\ge2$, take $0\le\nu\le\nu_*$ and $\nu N^{2/p}\le L$, $p=s+2$.
+Define
+\[
+ q_- =\max(1,s/2),\qquad q_+=\min(d/2,d-s-1,s+1),\qquad q=(q_-+q_+)/2.
+\]
+Every upper endpoint strictly exceeds both lower endpoints, so
+\[
+ 1<q<d/2,\qquad q<s+1,\qquad s+1+q<d,\qquad q>s/2.
+\]
+With the fixed periodic weights $w_a=w_1^a$, equal to $|z|^{-a}$ near zero,
+the admitted R12 estimate is
+\[
+ |\nabla_{x,y}\Phi_t(x,y)|\le A_q N^{\alpha_q}w_q(x-y),
+ \qquad \alpha_q=(s+1-q)/p,
+\]
+where $A_q$ is independent of $N,\nu,t$ in this fixed family.
+Set
+\[
+ B\Phi=K(x-y)\cdot(\nabla_x-\nabla_y)\Phi,\quad
+ g_t(x)=\int B\Phi_t(x,y)\dd y,\quad c_t=\int g_t(x)\dd x.
+\]
+The product norm gives
+\[
+ |B\Phi_t(x,y)|\le\sqrt2 A_qN^{\alpha_q}|K(x-y)|w_q(x-y).
+\]
+Its relative singular exponent is $s+1+q<d$, so
+\[
+ J_q=\int|K(z)|w_q(z)\dd z<\infty,\qquad
+ \sup_t\|g_t\|_\infty,\ \sup_t|c_t|\le D_qN^{\alpha_q},
+ \quad D_q=\sqrt2 A_qJ_q.
+\]
+For an explicit bound, on a fixed embedded ball of radius $R=1/16$ write
+$K(z)=s z|z|^{-s-2}-\nabla H_s(z)$. Then
+\[
+ J_q\le\frac{s|\mathbb S^{d-1}|R^{d-s-1-q}}{d-s-1-q}
+ +\frac{\sup_{B_R}|\nabla H_s|\,|\mathbb S^{d-1}|R^{d-q}}{d-q}
+ +\sup_{z\notin B_R}|K(z)|w_q(z).
+\]
+All denominators are positive. Moving-tube dominated convergence identifies
+continuous genuine R8 contractions at every remaining coordinate. Absolute
+Fubini gives $c_t=\int g_t$; no diagonal trace is assigned.
+
+\newpage
+\section*{Both exact contractions and the pathwise bound}
+For the actual empirical measure $\eta_N$ and $\rho_N=\eta_N-\dd x$, the
+lower-plus-scalar drift is exactly
+\[
+ \ell_N(t)=\frac1N\rho_N[g_t]+\frac1{2N}c_t
+          =\frac1N\eta_N[g_t]-\frac1{2N}c_t.
+\]
+Both terms remain. Every empirical probability measure satisfies
+\[
+ |\ell_N(t)|\le\frac32D_qN^{\alpha_q-1}.
+\]
+For positive noise put $b=\min(1,\nu^{-1})$, $\sigma=\sqrt{Nb}$; at zero
+noise set $b=1$, $\sigma=\sqrt N$ directly. Consequently, pathwise,
+\[
+ \sigma\int_0^T|\ell_N(t)|\dd t
+ \le\frac32TD_q\sqrt b\,N^{-\kappa_q},\qquad
+ \kappa_q=\frac{2q-s}{2(s+2)}>0.
+\]
+Taking expectation costs no law-comparison factor. The actual iid-Haar-prepared
+singular process meets the earlier domain premises; positive-time independence
+is not assumed. Zero time and zero noise are included directly.
+
+For clarity, let $D_2[F]=N^{-2}\sum_{i\ne j}F(X_i,X_j)$ and use the exact
+ordered statistic $P_N=U_2/2$. Splitting the force-generator sum at its repeated
+label gives $D_2[B\Phi]/(2N)$ and the three-distinct contribution.
+Integrating the six-permutation average
+\[
+ C\Phi=\operatorname{Sym}_3[K(x-z)\cdot\nabla_x\Phi(x,y)]
+\]
+retains both response slots with coefficient one. Subtracting the inverse's
+internal operator term yields precisely
+\[
+ \frac1{2N}D_2[B\Phi]-\frac1NP_N[B\Phi]
+ =\frac1N\rho_N[g_t]+\frac1{2N}c_t.
+\]
+The full conditional R8 identity is therefore
+\[
+ \dd P_N[\Phi_t]=\{-P_N[J_t]+U_3[C\Phi_t]+\ell_N(t)\}\dd t+\dd M_t^2.
+\]
+Here $U_3$ has denominator $N^3$ and all three Haar-background levels.
+At $N=2$ only its three-distinct particle sum is empty; its backgrounds remain.
+The constructor's malformed font fragment for ``distinct'' has a separate
+rendering erratum, preserving every sealed source byte and coefficient.
+
+\section*{Critical inclusion and the remaining assertion}
+If $s<d-2$ and $s(s+2)<2d$, then $3s<2d-2$: for $s\le2$ use
+$2d>2s+4\ge3s+2$; for $s>2$ use
+$s(s+2)-2=3s+(s-2)(s+1)>3s$.
+For $\lambda_N=\beta_NN^{s/d-1}\to\lambda\in(0,\infty)$,
+\[
+ \nu_NN^{2/p}=\lambda_N^{-1}N^{s(s+2-d)/(d(s+2))}\longrightarrow0.
+\]
+Thus each such sequence eventually lies in a fixed bounded-rescaled family.
+Writing $A_N=\sigma_N\int_0^T U_3[C\Phi_t]\dd t$ and
+$Z_N=A_N+\sigma_N\int_0^T\ell_N(t)\dd t$, reverse triangle gives
+\[
+ \big|\E|Z_N|-\E|A_N|\big|\le C\sqrt{b_N}N^{-\kappa_q}\longrightarrow0.
+\]
+This is the exact equivalence of the two scaled integrated $L^1$ targets.
+It proves neither target small. In particular $\E|\int U_3\dd t|$ and
+$\E\int|U_3|\dd t$ are not interchanged. Old energy-floor, full subcritical
+and finite positive critical conditions remain distinct.
+\end{document}

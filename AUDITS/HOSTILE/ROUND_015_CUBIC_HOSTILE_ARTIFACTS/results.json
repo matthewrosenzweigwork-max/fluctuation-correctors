@@ -1,0 +1,2399 @@
+{
+  "audit": "AUD050",
+  "critical_parameter_rows": [
+    {
+      "d": 4,
+      "lower_decay": "1000000/2000001",
+      "noise_decay": "7999997999999/16000008000000",
+      "omega": "1/2000000",
+      "r": "2000001/2000000",
+      "s": "1/1000000",
+      "source_decay": "1999999/4000000"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1000/2001",
+      "noise_decay": "7997999/16008000",
+      "omega": "1/2000",
+      "r": "2001/2000",
+      "s": "1/1000",
+      "source_decay": "1999/4000"
+    },
+    {
+      "d": 4,
+      "lower_decay": "20/41",
+      "noise_decay": "3159/6560",
+      "omega": "1/40",
+      "r": "41/40",
+      "s": "1/20",
+      "source_decay": "39/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "10/21",
+      "noise_decay": "779/1680",
+      "omega": "1/20",
+      "r": "21/20",
+      "s": "1/10",
+      "source_decay": "19/40"
+    },
+    {
+      "d": 4,
+      "lower_decay": "20/43",
+      "noise_decay": "3071/6880",
+      "omega": "3/40",
+      "r": "43/40",
+      "s": "3/20",
+      "source_decay": "37/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "5/11",
+      "noise_decay": "189/440",
+      "omega": "1/10",
+      "r": "11/10",
+      "s": "1/5",
+      "source_decay": "9/20"
+    },
+    {
+      "d": 4,
+      "lower_decay": "4/9",
+      "noise_decay": "119/288",
+      "omega": "1/8",
+      "r": "9/8",
+      "s": "1/4",
+      "source_decay": "7/16"
+    },
+    {
+      "d": 4,
+      "lower_decay": "10/23",
+      "noise_decay": "731/1840",
+      "omega": "3/20",
+      "r": "23/20",
+      "s": "3/10",
+      "source_decay": "17/40"
+    },
+    {
+      "d": 4,
+      "lower_decay": "20/47",
+      "noise_decay": "2871/7520",
+      "omega": "7/40",
+      "r": "47/40",
+      "s": "7/20",
+      "source_decay": "33/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "5/12",
+      "noise_decay": "11/30",
+      "omega": "1/5",
+      "r": "6/5",
+      "s": "2/5",
+      "source_decay": "2/5"
+    },
+    {
+      "d": 4,
+      "lower_decay": "20/49",
+      "noise_decay": "2759/7840",
+      "omega": "9/40",
+      "r": "49/40",
+      "s": "9/20",
+      "source_decay": "31/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "2/5",
+      "noise_decay": "27/80",
+      "omega": "1/4",
+      "r": "5/4",
+      "s": "1/2",
+      "source_decay": "3/8"
+    },
+    {
+      "d": 4,
+      "lower_decay": "20/51",
+      "noise_decay": "2639/8160",
+      "omega": "11/40",
+      "r": "51/40",
+      "s": "11/20",
+      "source_decay": "29/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "5/13",
+      "noise_decay": "161/520",
+      "omega": "3/10",
+      "r": "13/10",
+      "s": "3/5",
+      "source_decay": "7/20"
+    },
+    {
+      "d": 4,
+      "lower_decay": "20/53",
+      "noise_decay": "2511/8480",
+      "omega": "13/40",
+      "r": "53/40",
+      "s": "13/20",
+      "source_decay": "27/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "10/27",
+      "noise_decay": "611/2160",
+      "omega": "7/20",
+      "r": "27/20",
+      "s": "7/10",
+      "source_decay": "13/40"
+    },
+    {
+      "d": 4,
+      "lower_decay": "4/11",
+      "noise_decay": "95/352",
+      "omega": "3/8",
+      "r": "11/8",
+      "s": "3/4",
+      "source_decay": "5/16"
+    },
+    {
+      "d": 4,
+      "lower_decay": "5/14",
+      "noise_decay": "9/35",
+      "omega": "2/5",
+      "r": "7/5",
+      "s": "4/5",
+      "source_decay": "3/10"
+    },
+    {
+      "d": 4,
+      "lower_decay": "20/57",
+      "noise_decay": "2231/9120",
+      "omega": "17/40",
+      "r": "57/40",
+      "s": "17/20",
+      "source_decay": "23/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "10/29",
+      "noise_decay": "539/2320",
+      "omega": "9/20",
+      "r": "29/20",
+      "s": "9/10",
+      "source_decay": "11/40"
+    },
+    {
+      "d": 4,
+      "lower_decay": "20/59",
+      "noise_decay": "2079/9440",
+      "omega": "19/40",
+      "r": "59/40",
+      "s": "19/20",
+      "source_decay": "21/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/3",
+      "noise_decay": "5/24",
+      "omega": "1/2",
+      "r": "3/2",
+      "s": "1",
+      "source_decay": "1/4"
+    },
+    {
+      "d": 4,
+      "lower_decay": "19/61",
+      "noise_decay": "1919/9760",
+      "omega": "19/40",
+      "r": "59/40",
+      "s": "21/20",
+      "source_decay": "19/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "9/31",
+      "noise_decay": "459/2480",
+      "omega": "9/20",
+      "r": "29/20",
+      "s": "11/10",
+      "source_decay": "9/40"
+    },
+    {
+      "d": 4,
+      "lower_decay": "17/63",
+      "noise_decay": "1751/10080",
+      "omega": "17/40",
+      "r": "57/40",
+      "s": "23/20",
+      "source_decay": "17/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/4",
+      "noise_decay": "13/80",
+      "omega": "2/5",
+      "r": "7/5",
+      "s": "6/5",
+      "source_decay": "1/5"
+    },
+    {
+      "d": 4,
+      "lower_decay": "3/13",
+      "noise_decay": "63/416",
+      "omega": "3/8",
+      "r": "11/8",
+      "s": "5/4",
+      "source_decay": "3/16"
+    },
+    {
+      "d": 4,
+      "lower_decay": "7/33",
+      "noise_decay": "371/2640",
+      "omega": "7/20",
+      "r": "27/20",
+      "s": "13/10",
+      "source_decay": "7/40"
+    },
+    {
+      "d": 4,
+      "lower_decay": "13/67",
+      "noise_decay": "1391/10720",
+      "omega": "13/40",
+      "r": "53/40",
+      "s": "27/20",
+      "source_decay": "13/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "3/17",
+      "noise_decay": "81/680",
+      "omega": "3/10",
+      "r": "13/10",
+      "s": "7/5",
+      "source_decay": "3/20"
+    },
+    {
+      "d": 4,
+      "lower_decay": "11/69",
+      "noise_decay": "1199/11040",
+      "omega": "11/40",
+      "r": "51/40",
+      "s": "29/20",
+      "source_decay": "11/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/7",
+      "noise_decay": "11/112",
+      "omega": "1/4",
+      "r": "5/4",
+      "s": "3/2",
+      "source_decay": "1/8"
+    },
+    {
+      "d": 4,
+      "lower_decay": "9/71",
+      "noise_decay": "999/11360",
+      "omega": "9/40",
+      "r": "49/40",
+      "s": "31/20",
+      "source_decay": "9/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/9",
+      "noise_decay": "7/90",
+      "omega": "1/5",
+      "r": "6/5",
+      "s": "8/5",
+      "source_decay": "1/10"
+    },
+    {
+      "d": 4,
+      "lower_decay": "7/73",
+      "noise_decay": "791/11680",
+      "omega": "7/40",
+      "r": "47/40",
+      "s": "33/20",
+      "source_decay": "7/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "3/37",
+      "noise_decay": "171/2960",
+      "omega": "3/20",
+      "r": "23/20",
+      "s": "17/10",
+      "source_decay": "3/40"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/15",
+      "noise_decay": "23/480",
+      "omega": "1/8",
+      "r": "9/8",
+      "s": "7/4",
+      "source_decay": "1/16"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/19",
+      "noise_decay": "29/760",
+      "omega": "1/10",
+      "r": "11/10",
+      "s": "9/5",
+      "source_decay": "1/20"
+    },
+    {
+      "d": 4,
+      "lower_decay": "3/77",
+      "noise_decay": "351/12320",
+      "omega": "3/40",
+      "r": "43/40",
+      "s": "37/20",
+      "source_decay": "3/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/39",
+      "noise_decay": "59/3120",
+      "omega": "1/20",
+      "r": "21/20",
+      "s": "19/10",
+      "source_decay": "1/40"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/79",
+      "noise_decay": "119/12640",
+      "omega": "1/40",
+      "r": "41/40",
+      "s": "39/20",
+      "source_decay": "1/80"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/3999",
+      "noise_decay": "5999/31992000",
+      "omega": "1/2000",
+      "r": "2001/2000",
+      "s": "1999/1000",
+      "source_decay": "1/4000"
+    },
+    {
+      "d": 4,
+      "lower_decay": "1/3999999",
+      "noise_decay": "5999999/31999992000000",
+      "omega": "1/2000000",
+      "r": "2000001/2000000",
+      "s": "1999999/1000000",
+      "source_decay": "1/4000000"
+    },
+    {
+      "d": 5,
+      "lower_decay": "1000000/2000001",
+      "noise_decay": "9999997999999/20000010000000",
+      "omega": "1/2000000",
+      "r": "2000001/2000000",
+      "s": "1/1000000",
+      "source_decay": "2499999/5000000"
+    },
+    {
+      "d": 5,
+      "lower_decay": "1000/2001",
+      "noise_decay": "9997999/20010000",
+      "omega": "1/2000",
+      "r": "2001/2000",
+      "s": "1/1000",
+      "source_decay": "2499/5000"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/41",
+      "noise_decay": "3959/8200",
+      "omega": "1/40",
+      "r": "41/40",
+      "s": "1/20",
+      "source_decay": "49/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "10/21",
+      "noise_decay": "979/2100",
+      "omega": "1/20",
+      "r": "21/20",
+      "s": "1/10",
+      "source_decay": "12/25"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/43",
+      "noise_decay": "3871/8600",
+      "omega": "3/40",
+      "r": "43/40",
+      "s": "3/20",
+      "source_decay": "47/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "5/11",
+      "noise_decay": "239/550",
+      "omega": "1/10",
+      "r": "11/10",
+      "s": "1/5",
+      "source_decay": "23/50"
+    },
+    {
+      "d": 5,
+      "lower_decay": "4/9",
+      "noise_decay": "151/360",
+      "omega": "1/8",
+      "r": "9/8",
+      "s": "1/4",
+      "source_decay": "9/20"
+    },
+    {
+      "d": 5,
+      "lower_decay": "10/23",
+      "noise_decay": "931/2300",
+      "omega": "3/20",
+      "r": "23/20",
+      "s": "3/10",
+      "source_decay": "11/25"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/47",
+      "noise_decay": "3671/9400",
+      "omega": "7/40",
+      "r": "47/40",
+      "s": "7/20",
+      "source_decay": "43/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "5/12",
+      "noise_decay": "113/300",
+      "omega": "1/5",
+      "r": "6/5",
+      "s": "2/5",
+      "source_decay": "21/50"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/49",
+      "noise_decay": "3559/9800",
+      "omega": "9/40",
+      "r": "49/40",
+      "s": "9/20",
+      "source_decay": "41/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "2/5",
+      "noise_decay": "7/20",
+      "omega": "1/4",
+      "r": "5/4",
+      "s": "1/2",
+      "source_decay": "2/5"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/51",
+      "noise_decay": "3439/10200",
+      "omega": "11/40",
+      "r": "51/40",
+      "s": "11/20",
+      "source_decay": "39/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "5/13",
+      "noise_decay": "211/650",
+      "omega": "3/10",
+      "r": "13/10",
+      "s": "3/5",
+      "source_decay": "19/50"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/53",
+      "noise_decay": "3311/10600",
+      "omega": "13/40",
+      "r": "53/40",
+      "s": "13/20",
+      "source_decay": "37/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "10/27",
+      "noise_decay": "811/2700",
+      "omega": "7/20",
+      "r": "27/20",
+      "s": "7/10",
+      "source_decay": "9/25"
+    },
+    {
+      "d": 5,
+      "lower_decay": "4/11",
+      "noise_decay": "127/440",
+      "omega": "3/8",
+      "r": "11/8",
+      "s": "3/4",
+      "source_decay": "7/20"
+    },
+    {
+      "d": 5,
+      "lower_decay": "5/14",
+      "noise_decay": "97/350",
+      "omega": "2/5",
+      "r": "7/5",
+      "s": "4/5",
+      "source_decay": "17/50"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/57",
+      "noise_decay": "3031/11400",
+      "omega": "17/40",
+      "r": "57/40",
+      "s": "17/20",
+      "source_decay": "33/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "10/29",
+      "noise_decay": "739/2900",
+      "omega": "9/20",
+      "r": "29/20",
+      "s": "9/10",
+      "source_decay": "8/25"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/59",
+      "noise_decay": "2879/11800",
+      "omega": "19/40",
+      "r": "59/40",
+      "s": "19/20",
+      "source_decay": "31/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "1/3",
+      "noise_decay": "7/30",
+      "omega": "1/2",
+      "r": "3/2",
+      "s": "1",
+      "source_decay": "3/10"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/61",
+      "noise_decay": "2719/12200",
+      "omega": "21/40",
+      "r": "61/40",
+      "s": "21/20",
+      "source_decay": "29/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "10/31",
+      "noise_decay": "659/3100",
+      "omega": "11/20",
+      "r": "31/20",
+      "s": "11/10",
+      "source_decay": "7/25"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/63",
+      "noise_decay": "2551/12600",
+      "omega": "23/40",
+      "r": "63/40",
+      "s": "23/20",
+      "source_decay": "27/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "5/16",
+      "noise_decay": "77/400",
+      "omega": "3/5",
+      "r": "8/5",
+      "s": "6/5",
+      "source_decay": "13/50"
+    },
+    {
+      "d": 5,
+      "lower_decay": "4/13",
+      "noise_decay": "19/104",
+      "omega": "5/8",
+      "r": "13/8",
+      "s": "5/4",
+      "source_decay": "1/4"
+    },
+    {
+      "d": 5,
+      "lower_decay": "10/33",
+      "noise_decay": "571/3300",
+      "omega": "13/20",
+      "r": "33/20",
+      "s": "13/10",
+      "source_decay": "6/25"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/67",
+      "noise_decay": "2191/13400",
+      "omega": "27/40",
+      "r": "67/40",
+      "s": "27/20",
+      "source_decay": "23/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "5/17",
+      "noise_decay": "131/850",
+      "omega": "7/10",
+      "r": "17/10",
+      "s": "7/5",
+      "source_decay": "11/50"
+    },
+    {
+      "d": 5,
+      "lower_decay": "20/69",
+      "noise_decay": "1999/13800",
+      "omega": "29/40",
+      "r": "69/40",
+      "s": "29/20",
+      "source_decay": "21/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "2/7",
+      "noise_decay": "19/140",
+      "omega": "3/4",
+      "r": "7/4",
+      "s": "3/2",
+      "source_decay": "1/5"
+    },
+    {
+      "d": 5,
+      "lower_decay": "19/71",
+      "noise_decay": "1799/14200",
+      "omega": "29/40",
+      "r": "69/40",
+      "s": "31/20",
+      "source_decay": "19/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "1/4",
+      "noise_decay": "53/450",
+      "omega": "7/10",
+      "r": "17/10",
+      "s": "8/5",
+      "source_decay": "9/50"
+    },
+    {
+      "d": 5,
+      "lower_decay": "17/73",
+      "noise_decay": "1591/14600",
+      "omega": "27/40",
+      "r": "67/40",
+      "s": "33/20",
+      "source_decay": "17/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "8/37",
+      "noise_decay": "371/3700",
+      "omega": "13/20",
+      "r": "33/20",
+      "s": "17/10",
+      "source_decay": "4/25"
+    },
+    {
+      "d": 5,
+      "lower_decay": "1/5",
+      "noise_decay": "11/120",
+      "omega": "5/8",
+      "r": "13/8",
+      "s": "7/4",
+      "source_decay": "3/20"
+    },
+    {
+      "d": 5,
+      "lower_decay": "7/38",
+      "noise_decay": "79/950",
+      "omega": "3/5",
+      "r": "8/5",
+      "s": "9/5",
+      "source_decay": "7/50"
+    },
+    {
+      "d": 5,
+      "lower_decay": "13/77",
+      "noise_decay": "1151/15400",
+      "omega": "23/40",
+      "r": "63/40",
+      "s": "37/20",
+      "source_decay": "13/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "2/13",
+      "noise_decay": "259/3900",
+      "omega": "11/20",
+      "r": "31/20",
+      "s": "19/10",
+      "source_decay": "3/25"
+    },
+    {
+      "d": 5,
+      "lower_decay": "11/79",
+      "noise_decay": "919/15800",
+      "omega": "21/40",
+      "r": "61/40",
+      "s": "39/20",
+      "source_decay": "11/100"
+    },
+    {
+      "d": 5,
+      "lower_decay": "167/1333",
+      "noise_decay": "2005999/39990000",
+      "omega": "1001/2000",
+      "r": "3001/2000",
+      "s": "1999/1000",
+      "source_decay": "501/5000"
+    },
+    {
+      "d": 5,
+      "lower_decay": "166667/1333333",
+      "noise_decay": "2000005999999/39999990000000",
+      "omega": "1000001/2000000",
+      "r": "3000001/2000000",
+      "s": "1999999/1000000",
+      "source_decay": "500001/5000000"
+    },
+    {
+      "d": 6,
+      "lower_decay": "1000000/2000001",
+      "noise_decay": "1333333111111/2666668000000",
+      "omega": "1/2000000",
+      "r": "2000001/2000000",
+      "s": "1/1000000",
+      "source_decay": "2999999/6000000"
+    },
+    {
+      "d": 6,
+      "lower_decay": "1000/2001",
+      "noise_decay": "1333111/2668000",
+      "omega": "1/2000",
+      "r": "2001/2000",
+      "s": "1/1000",
+      "source_decay": "2999/6000"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/41",
+      "noise_decay": "4759/9840",
+      "omega": "1/40",
+      "r": "41/40",
+      "s": "1/20",
+      "source_decay": "59/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "10/21",
+      "noise_decay": "131/280",
+      "omega": "1/20",
+      "r": "21/20",
+      "s": "1/10",
+      "source_decay": "29/60"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/43",
+      "noise_decay": "1557/3440",
+      "omega": "3/40",
+      "r": "43/40",
+      "s": "3/20",
+      "source_decay": "19/40"
+    },
+    {
+      "d": 6,
+      "lower_decay": "5/11",
+      "noise_decay": "289/660",
+      "omega": "1/10",
+      "r": "11/10",
+      "s": "1/5",
+      "source_decay": "7/15"
+    },
+    {
+      "d": 6,
+      "lower_decay": "4/9",
+      "noise_decay": "61/144",
+      "omega": "1/8",
+      "r": "9/8",
+      "s": "1/4",
+      "source_decay": "11/24"
+    },
+    {
+      "d": 6,
+      "lower_decay": "10/23",
+      "noise_decay": "377/920",
+      "omega": "3/20",
+      "r": "23/20",
+      "s": "3/10",
+      "source_decay": "9/20"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/47",
+      "noise_decay": "4471/11280",
+      "omega": "7/40",
+      "r": "47/40",
+      "s": "7/20",
+      "source_decay": "53/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "5/12",
+      "noise_decay": "23/60",
+      "omega": "1/5",
+      "r": "6/5",
+      "s": "2/5",
+      "source_decay": "13/30"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/49",
+      "noise_decay": "1453/3920",
+      "omega": "9/40",
+      "r": "49/40",
+      "s": "9/20",
+      "source_decay": "17/40"
+    },
+    {
+      "d": 6,
+      "lower_decay": "2/5",
+      "noise_decay": "43/120",
+      "omega": "1/4",
+      "r": "5/4",
+      "s": "1/2",
+      "source_decay": "5/12"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/51",
+      "noise_decay": "471/1360",
+      "omega": "11/40",
+      "r": "51/40",
+      "s": "11/20",
+      "source_decay": "49/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "5/13",
+      "noise_decay": "87/260",
+      "omega": "3/10",
+      "r": "13/10",
+      "s": "3/5",
+      "source_decay": "2/5"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/53",
+      "noise_decay": "4111/12720",
+      "omega": "13/40",
+      "r": "53/40",
+      "s": "13/20",
+      "source_decay": "47/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "10/27",
+      "noise_decay": "337/1080",
+      "omega": "7/20",
+      "r": "27/20",
+      "s": "7/10",
+      "source_decay": "23/60"
+    },
+    {
+      "d": 6,
+      "lower_decay": "4/11",
+      "noise_decay": "53/176",
+      "omega": "3/8",
+      "r": "11/8",
+      "s": "3/4",
+      "source_decay": "3/8"
+    },
+    {
+      "d": 6,
+      "lower_decay": "5/14",
+      "noise_decay": "61/210",
+      "omega": "2/5",
+      "r": "7/5",
+      "s": "4/5",
+      "source_decay": "11/30"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/57",
+      "noise_decay": "1277/4560",
+      "omega": "17/40",
+      "r": "57/40",
+      "s": "17/20",
+      "source_decay": "43/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "10/29",
+      "noise_decay": "313/1160",
+      "omega": "9/20",
+      "r": "29/20",
+      "s": "9/10",
+      "source_decay": "7/20"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/59",
+      "noise_decay": "3679/14160",
+      "omega": "19/40",
+      "r": "59/40",
+      "s": "19/20",
+      "source_decay": "41/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "1/3",
+      "noise_decay": "1/4",
+      "omega": "1/2",
+      "r": "3/2",
+      "s": "1",
+      "source_decay": "1/3"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/61",
+      "noise_decay": "1173/4880",
+      "omega": "21/40",
+      "r": "61/40",
+      "s": "21/20",
+      "source_decay": "13/40"
+    },
+    {
+      "d": 6,
+      "lower_decay": "10/31",
+      "noise_decay": "859/3720",
+      "omega": "11/20",
+      "r": "31/20",
+      "s": "11/10",
+      "source_decay": "19/60"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/63",
+      "noise_decay": "1117/5040",
+      "omega": "23/40",
+      "r": "63/40",
+      "s": "23/20",
+      "source_decay": "37/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "5/16",
+      "noise_decay": "17/80",
+      "omega": "3/5",
+      "r": "8/5",
+      "s": "6/5",
+      "source_decay": "3/10"
+    },
+    {
+      "d": 6,
+      "lower_decay": "4/13",
+      "noise_decay": "127/624",
+      "omega": "5/8",
+      "r": "13/8",
+      "s": "5/4",
+      "source_decay": "7/24"
+    },
+    {
+      "d": 6,
+      "lower_decay": "10/33",
+      "noise_decay": "257/1320",
+      "omega": "13/20",
+      "r": "33/20",
+      "s": "13/10",
+      "source_decay": "17/60"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/67",
+      "noise_decay": "997/5360",
+      "omega": "27/40",
+      "r": "67/40",
+      "s": "27/20",
+      "source_decay": "11/40"
+    },
+    {
+      "d": 6,
+      "lower_decay": "5/17",
+      "noise_decay": "181/1020",
+      "omega": "7/10",
+      "r": "17/10",
+      "s": "7/5",
+      "source_decay": "4/15"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/69",
+      "noise_decay": "311/1840",
+      "omega": "29/40",
+      "r": "69/40",
+      "s": "29/20",
+      "source_decay": "31/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "2/7",
+      "noise_decay": "9/56",
+      "omega": "3/4",
+      "r": "7/4",
+      "s": "3/2",
+      "source_decay": "1/4"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/71",
+      "noise_decay": "2599/17040",
+      "omega": "31/40",
+      "r": "71/40",
+      "s": "31/20",
+      "source_decay": "29/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "5/18",
+      "noise_decay": "13/90",
+      "omega": "4/5",
+      "r": "9/5",
+      "s": "8/5",
+      "source_decay": "7/30"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/73",
+      "noise_decay": "797/5840",
+      "omega": "33/40",
+      "r": "73/40",
+      "s": "33/20",
+      "source_decay": "9/40"
+    },
+    {
+      "d": 6,
+      "lower_decay": "10/37",
+      "noise_decay": "571/4440",
+      "omega": "17/20",
+      "r": "37/20",
+      "s": "17/10",
+      "source_decay": "13/60"
+    },
+    {
+      "d": 6,
+      "lower_decay": "4/15",
+      "noise_decay": "29/240",
+      "omega": "7/8",
+      "r": "15/8",
+      "s": "7/4",
+      "source_decay": "5/24"
+    },
+    {
+      "d": 6,
+      "lower_decay": "5/19",
+      "noise_decay": "43/380",
+      "omega": "9/10",
+      "r": "19/10",
+      "s": "9/5",
+      "source_decay": "1/5"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/77",
+      "noise_decay": "1951/18480",
+      "omega": "37/40",
+      "r": "77/40",
+      "s": "37/20",
+      "source_decay": "23/120"
+    },
+    {
+      "d": 6,
+      "lower_decay": "10/39",
+      "noise_decay": "51/520",
+      "omega": "19/20",
+      "r": "39/20",
+      "s": "19/10",
+      "source_decay": "11/60"
+    },
+    {
+      "d": 6,
+      "lower_decay": "20/79",
+      "noise_decay": "573/6320",
+      "omega": "39/40",
+      "r": "79/40",
+      "s": "39/20",
+      "source_decay": "7/40"
+    },
+    {
+      "d": 6,
+      "lower_decay": "1000/3999",
+      "noise_decay": "445111/5332000",
+      "omega": "1999/2000",
+      "r": "3999/2000",
+      "s": "1999/1000",
+      "source_decay": "1001/6000"
+    },
+    {
+      "d": 6,
+      "lower_decay": "1000000/3999999",
+      "noise_decay": "444445111111/5333332000000",
+      "omega": "1999999/2000000",
+      "r": "3999999/2000000",
+      "s": "1999999/1000000",
+      "source_decay": "1000001/6000000"
+    },
+    {
+      "d": 8,
+      "lower_decay": "1000000/2000001",
+      "noise_decay": "15999997999999/32000016000000",
+      "omega": "1/2000000",
+      "r": "2000001/2000000",
+      "s": "1/1000000",
+      "source_decay": "3999999/8000000"
+    },
+    {
+      "d": 8,
+      "lower_decay": "1000/2001",
+      "noise_decay": "15997999/32016000",
+      "omega": "1/2000",
+      "r": "2001/2000",
+      "s": "1/1000",
+      "source_decay": "3999/8000"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/41",
+      "noise_decay": "6359/13120",
+      "omega": "1/40",
+      "r": "41/40",
+      "s": "1/20",
+      "source_decay": "79/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "10/21",
+      "noise_decay": "1579/3360",
+      "omega": "1/20",
+      "r": "21/20",
+      "s": "1/10",
+      "source_decay": "39/80"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/43",
+      "noise_decay": "6271/13760",
+      "omega": "3/40",
+      "r": "43/40",
+      "s": "3/20",
+      "source_decay": "77/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "5/11",
+      "noise_decay": "389/880",
+      "omega": "1/10",
+      "r": "11/10",
+      "s": "1/5",
+      "source_decay": "19/40"
+    },
+    {
+      "d": 8,
+      "lower_decay": "4/9",
+      "noise_decay": "247/576",
+      "omega": "1/8",
+      "r": "9/8",
+      "s": "1/4",
+      "source_decay": "15/32"
+    },
+    {
+      "d": 8,
+      "lower_decay": "10/23",
+      "noise_decay": "1531/3680",
+      "omega": "3/20",
+      "r": "23/20",
+      "s": "3/10",
+      "source_decay": "37/80"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/47",
+      "noise_decay": "6071/15040",
+      "omega": "7/40",
+      "r": "47/40",
+      "s": "7/20",
+      "source_decay": "73/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "5/12",
+      "noise_decay": "47/120",
+      "omega": "1/5",
+      "r": "6/5",
+      "s": "2/5",
+      "source_decay": "9/20"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/49",
+      "noise_decay": "5959/15680",
+      "omega": "9/40",
+      "r": "49/40",
+      "s": "9/20",
+      "source_decay": "71/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "2/5",
+      "noise_decay": "59/160",
+      "omega": "1/4",
+      "r": "5/4",
+      "s": "1/2",
+      "source_decay": "7/16"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/51",
+      "noise_decay": "5839/16320",
+      "omega": "11/40",
+      "r": "51/40",
+      "s": "11/20",
+      "source_decay": "69/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "5/13",
+      "noise_decay": "361/1040",
+      "omega": "3/10",
+      "r": "13/10",
+      "s": "3/5",
+      "source_decay": "17/40"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/53",
+      "noise_decay": "5711/16960",
+      "omega": "13/40",
+      "r": "53/40",
+      "s": "13/20",
+      "source_decay": "67/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "10/27",
+      "noise_decay": "1411/4320",
+      "omega": "7/20",
+      "r": "27/20",
+      "s": "7/10",
+      "source_decay": "33/80"
+    },
+    {
+      "d": 8,
+      "lower_decay": "4/11",
+      "noise_decay": "223/704",
+      "omega": "3/8",
+      "r": "11/8",
+      "s": "3/4",
+      "source_decay": "13/32"
+    },
+    {
+      "d": 8,
+      "lower_decay": "5/14",
+      "noise_decay": "43/140",
+      "omega": "2/5",
+      "r": "7/5",
+      "s": "4/5",
+      "source_decay": "2/5"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/57",
+      "noise_decay": "5431/18240",
+      "omega": "17/40",
+      "r": "57/40",
+      "s": "17/20",
+      "source_decay": "63/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "10/29",
+      "noise_decay": "1339/4640",
+      "omega": "9/20",
+      "r": "29/20",
+      "s": "9/10",
+      "source_decay": "31/80"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/59",
+      "noise_decay": "5279/18880",
+      "omega": "19/40",
+      "r": "59/40",
+      "s": "19/20",
+      "source_decay": "61/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "1/3",
+      "noise_decay": "13/48",
+      "omega": "1/2",
+      "r": "3/2",
+      "s": "1",
+      "source_decay": "3/8"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/61",
+      "noise_decay": "5119/19520",
+      "omega": "21/40",
+      "r": "61/40",
+      "s": "21/20",
+      "source_decay": "59/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "10/31",
+      "noise_decay": "1259/4960",
+      "omega": "11/20",
+      "r": "31/20",
+      "s": "11/10",
+      "source_decay": "29/80"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/63",
+      "noise_decay": "4951/20160",
+      "omega": "23/40",
+      "r": "63/40",
+      "s": "23/20",
+      "source_decay": "57/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "5/16",
+      "noise_decay": "19/80",
+      "omega": "3/5",
+      "r": "8/5",
+      "s": "6/5",
+      "source_decay": "7/20"
+    },
+    {
+      "d": 8,
+      "lower_decay": "4/13",
+      "noise_decay": "191/832",
+      "omega": "5/8",
+      "r": "13/8",
+      "s": "5/4",
+      "source_decay": "11/32"
+    },
+    {
+      "d": 8,
+      "lower_decay": "10/33",
+      "noise_decay": "1171/5280",
+      "omega": "13/20",
+      "r": "33/20",
+      "s": "13/10",
+      "source_decay": "27/80"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/67",
+      "noise_decay": "4591/21440",
+      "omega": "27/40",
+      "r": "67/40",
+      "s": "27/20",
+      "source_decay": "53/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "5/17",
+      "noise_decay": "281/1360",
+      "omega": "7/10",
+      "r": "17/10",
+      "s": "7/5",
+      "source_decay": "13/40"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/69",
+      "noise_decay": "4399/22080",
+      "omega": "29/40",
+      "r": "69/40",
+      "s": "29/20",
+      "source_decay": "51/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "2/7",
+      "noise_decay": "43/224",
+      "omega": "3/4",
+      "r": "7/4",
+      "s": "3/2",
+      "source_decay": "5/16"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/71",
+      "noise_decay": "4199/22720",
+      "omega": "31/40",
+      "r": "71/40",
+      "s": "31/20",
+      "source_decay": "49/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "5/18",
+      "noise_decay": "8/45",
+      "omega": "4/5",
+      "r": "9/5",
+      "s": "8/5",
+      "source_decay": "3/10"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/73",
+      "noise_decay": "3991/23360",
+      "omega": "33/40",
+      "r": "73/40",
+      "s": "33/20",
+      "source_decay": "47/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "10/37",
+      "noise_decay": "971/5920",
+      "omega": "17/20",
+      "r": "37/20",
+      "s": "17/10",
+      "source_decay": "23/80"
+    },
+    {
+      "d": 8,
+      "lower_decay": "4/15",
+      "noise_decay": "151/960",
+      "omega": "7/8",
+      "r": "15/8",
+      "s": "7/4",
+      "source_decay": "9/32"
+    },
+    {
+      "d": 8,
+      "lower_decay": "5/19",
+      "noise_decay": "229/1520",
+      "omega": "9/10",
+      "r": "19/10",
+      "s": "9/5",
+      "source_decay": "11/40"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/77",
+      "noise_decay": "3551/24640",
+      "omega": "37/40",
+      "r": "77/40",
+      "s": "37/20",
+      "source_decay": "43/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "10/39",
+      "noise_decay": "859/6240",
+      "omega": "19/20",
+      "r": "39/20",
+      "s": "19/10",
+      "source_decay": "21/80"
+    },
+    {
+      "d": 8,
+      "lower_decay": "20/79",
+      "noise_decay": "3319/25280",
+      "omega": "39/40",
+      "r": "79/40",
+      "s": "39/20",
+      "source_decay": "41/160"
+    },
+    {
+      "d": 8,
+      "lower_decay": "1000/3999",
+      "noise_decay": "8005999/63984000",
+      "omega": "1999/2000",
+      "r": "3999/2000",
+      "s": "1999/1000",
+      "source_decay": "2001/8000"
+    },
+    {
+      "d": 8,
+      "lower_decay": "1000000/3999999",
+      "noise_decay": "8000005999999/63999984000000",
+      "omega": "1999999/2000000",
+      "r": "3999999/2000000",
+      "s": "1999999/1000000",
+      "source_decay": "2000001/8000000"
+    },
+    {
+      "d": 16,
+      "lower_decay": "1000000/2000001",
+      "noise_decay": "31999997999999/64000032000000",
+      "omega": "1/2000000",
+      "r": "2000001/2000000",
+      "s": "1/1000000",
+      "source_decay": "7999999/16000000"
+    },
+    {
+      "d": 16,
+      "lower_decay": "1000/2001",
+      "noise_decay": "31997999/64032000",
+      "omega": "1/2000",
+      "r": "2001/2000",
+      "s": "1/1000",
+      "source_decay": "7999/16000"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/41",
+      "noise_decay": "12759/26240",
+      "omega": "1/40",
+      "r": "41/40",
+      "s": "1/20",
+      "source_decay": "159/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "10/21",
+      "noise_decay": "3179/6720",
+      "omega": "1/20",
+      "r": "21/20",
+      "s": "1/10",
+      "source_decay": "79/160"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/43",
+      "noise_decay": "12671/27520",
+      "omega": "3/40",
+      "r": "43/40",
+      "s": "3/20",
+      "source_decay": "157/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "5/11",
+      "noise_decay": "789/1760",
+      "omega": "1/10",
+      "r": "11/10",
+      "s": "1/5",
+      "source_decay": "39/80"
+    },
+    {
+      "d": 16,
+      "lower_decay": "4/9",
+      "noise_decay": "503/1152",
+      "omega": "1/8",
+      "r": "9/8",
+      "s": "1/4",
+      "source_decay": "31/64"
+    },
+    {
+      "d": 16,
+      "lower_decay": "10/23",
+      "noise_decay": "3131/7360",
+      "omega": "3/20",
+      "r": "23/20",
+      "s": "3/10",
+      "source_decay": "77/160"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/47",
+      "noise_decay": "12471/30080",
+      "omega": "7/40",
+      "r": "47/40",
+      "s": "7/20",
+      "source_decay": "153/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "5/12",
+      "noise_decay": "97/240",
+      "omega": "1/5",
+      "r": "6/5",
+      "s": "2/5",
+      "source_decay": "19/40"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/49",
+      "noise_decay": "12359/31360",
+      "omega": "9/40",
+      "r": "49/40",
+      "s": "9/20",
+      "source_decay": "151/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "2/5",
+      "noise_decay": "123/320",
+      "omega": "1/4",
+      "r": "5/4",
+      "s": "1/2",
+      "source_decay": "15/32"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/51",
+      "noise_decay": "12239/32640",
+      "omega": "11/40",
+      "r": "51/40",
+      "s": "11/20",
+      "source_decay": "149/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "5/13",
+      "noise_decay": "761/2080",
+      "omega": "3/10",
+      "r": "13/10",
+      "s": "3/5",
+      "source_decay": "37/80"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/53",
+      "noise_decay": "12111/33920",
+      "omega": "13/40",
+      "r": "53/40",
+      "s": "13/20",
+      "source_decay": "147/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "10/27",
+      "noise_decay": "3011/8640",
+      "omega": "7/20",
+      "r": "27/20",
+      "s": "7/10",
+      "source_decay": "73/160"
+    },
+    {
+      "d": 16,
+      "lower_decay": "4/11",
+      "noise_decay": "479/1408",
+      "omega": "3/8",
+      "r": "11/8",
+      "s": "3/4",
+      "source_decay": "29/64"
+    },
+    {
+      "d": 16,
+      "lower_decay": "5/14",
+      "noise_decay": "93/280",
+      "omega": "2/5",
+      "r": "7/5",
+      "s": "4/5",
+      "source_decay": "9/20"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/57",
+      "noise_decay": "11831/36480",
+      "omega": "17/40",
+      "r": "57/40",
+      "s": "17/20",
+      "source_decay": "143/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "10/29",
+      "noise_decay": "2939/9280",
+      "omega": "9/20",
+      "r": "29/20",
+      "s": "9/10",
+      "source_decay": "71/160"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/59",
+      "noise_decay": "11679/37760",
+      "omega": "19/40",
+      "r": "59/40",
+      "s": "19/20",
+      "source_decay": "141/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "1/3",
+      "noise_decay": "29/96",
+      "omega": "1/2",
+      "r": "3/2",
+      "s": "1",
+      "source_decay": "7/16"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/61",
+      "noise_decay": "11519/39040",
+      "omega": "21/40",
+      "r": "61/40",
+      "s": "21/20",
+      "source_decay": "139/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "10/31",
+      "noise_decay": "2859/9920",
+      "omega": "11/20",
+      "r": "31/20",
+      "s": "11/10",
+      "source_decay": "69/160"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/63",
+      "noise_decay": "11351/40320",
+      "omega": "23/40",
+      "r": "63/40",
+      "s": "23/20",
+      "source_decay": "137/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "5/16",
+      "noise_decay": "11/40",
+      "omega": "3/5",
+      "r": "8/5",
+      "s": "6/5",
+      "source_decay": "17/40"
+    },
+    {
+      "d": 16,
+      "lower_decay": "4/13",
+      "noise_decay": "447/1664",
+      "omega": "5/8",
+      "r": "13/8",
+      "s": "5/4",
+      "source_decay": "27/64"
+    },
+    {
+      "d": 16,
+      "lower_decay": "10/33",
+      "noise_decay": "2771/10560",
+      "omega": "13/20",
+      "r": "33/20",
+      "s": "13/10",
+      "source_decay": "67/160"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/67",
+      "noise_decay": "10991/42880",
+      "omega": "27/40",
+      "r": "67/40",
+      "s": "27/20",
+      "source_decay": "133/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "5/17",
+      "noise_decay": "681/2720",
+      "omega": "7/10",
+      "r": "17/10",
+      "s": "7/5",
+      "source_decay": "33/80"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/69",
+      "noise_decay": "10799/44160",
+      "omega": "29/40",
+      "r": "69/40",
+      "s": "29/20",
+      "source_decay": "131/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "2/7",
+      "noise_decay": "107/448",
+      "omega": "3/4",
+      "r": "7/4",
+      "s": "3/2",
+      "source_decay": "13/32"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/71",
+      "noise_decay": "10599/45440",
+      "omega": "31/40",
+      "r": "71/40",
+      "s": "31/20",
+      "source_decay": "129/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "5/18",
+      "noise_decay": "41/180",
+      "omega": "4/5",
+      "r": "9/5",
+      "s": "8/5",
+      "source_decay": "2/5"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/73",
+      "noise_decay": "10391/46720",
+      "omega": "33/40",
+      "r": "73/40",
+      "s": "33/20",
+      "source_decay": "127/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "10/37",
+      "noise_decay": "2571/11840",
+      "omega": "17/20",
+      "r": "37/20",
+      "s": "17/10",
+      "source_decay": "63/160"
+    },
+    {
+      "d": 16,
+      "lower_decay": "4/15",
+      "noise_decay": "407/1920",
+      "omega": "7/8",
+      "r": "15/8",
+      "s": "7/4",
+      "source_decay": "25/64"
+    },
+    {
+      "d": 16,
+      "lower_decay": "5/19",
+      "noise_decay": "629/3040",
+      "omega": "9/10",
+      "r": "19/10",
+      "s": "9/5",
+      "source_decay": "31/80"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/77",
+      "noise_decay": "9951/49280",
+      "omega": "37/40",
+      "r": "77/40",
+      "s": "37/20",
+      "source_decay": "123/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "10/39",
+      "noise_decay": "2459/12480",
+      "omega": "19/20",
+      "r": "39/20",
+      "s": "19/10",
+      "source_decay": "61/160"
+    },
+    {
+      "d": 16,
+      "lower_decay": "20/79",
+      "noise_decay": "9719/50560",
+      "omega": "39/40",
+      "r": "79/40",
+      "s": "39/20",
+      "source_decay": "121/320"
+    },
+    {
+      "d": 16,
+      "lower_decay": "1000/3999",
+      "noise_decay": "24005999/127968000",
+      "omega": "1999/2000",
+      "r": "3999/2000",
+      "s": "1999/1000",
+      "source_decay": "6001/16000"
+    },
+    {
+      "d": 16,
+      "lower_decay": "1000000/3999999",
+      "noise_decay": "24000005999999/127999968000000",
+      "omega": "1999999/2000000",
+      "r": "3999999/2000000",
+      "s": "1999999/1000000",
+      "source_decay": "6000001/16000000"
+    },
+    {
+      "d": 32,
+      "lower_decay": "1000000/2000001",
+      "noise_decay": "63999997999999/128000064000000",
+      "omega": "1/2000000",
+      "r": "2000001/2000000",
+      "s": "1/1000000",
+      "source_decay": "15999999/32000000"
+    },
+    {
+      "d": 32,
+      "lower_decay": "1000/2001",
+      "noise_decay": "63997999/128064000",
+      "omega": "1/2000",
+      "r": "2001/2000",
+      "s": "1/1000",
+      "source_decay": "15999/32000"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/41",
+      "noise_decay": "25559/52480",
+      "omega": "1/40",
+      "r": "41/40",
+      "s": "1/20",
+      "source_decay": "319/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "10/21",
+      "noise_decay": "6379/13440",
+      "omega": "1/20",
+      "r": "21/20",
+      "s": "1/10",
+      "source_decay": "159/320"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/43",
+      "noise_decay": "25471/55040",
+      "omega": "3/40",
+      "r": "43/40",
+      "s": "3/20",
+      "source_decay": "317/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "5/11",
+      "noise_decay": "1589/3520",
+      "omega": "1/10",
+      "r": "11/10",
+      "s": "1/5",
+      "source_decay": "79/160"
+    },
+    {
+      "d": 32,
+      "lower_decay": "4/9",
+      "noise_decay": "1015/2304",
+      "omega": "1/8",
+      "r": "9/8",
+      "s": "1/4",
+      "source_decay": "63/128"
+    },
+    {
+      "d": 32,
+      "lower_decay": "10/23",
+      "noise_decay": "6331/14720",
+      "omega": "3/20",
+      "r": "23/20",
+      "s": "3/10",
+      "source_decay": "157/320"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/47",
+      "noise_decay": "25271/60160",
+      "omega": "7/40",
+      "r": "47/40",
+      "s": "7/20",
+      "source_decay": "313/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "5/12",
+      "noise_decay": "197/480",
+      "omega": "1/5",
+      "r": "6/5",
+      "s": "2/5",
+      "source_decay": "39/80"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/49",
+      "noise_decay": "25159/62720",
+      "omega": "9/40",
+      "r": "49/40",
+      "s": "9/20",
+      "source_decay": "311/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "2/5",
+      "noise_decay": "251/640",
+      "omega": "1/4",
+      "r": "5/4",
+      "s": "1/2",
+      "source_decay": "31/64"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/51",
+      "noise_decay": "25039/65280",
+      "omega": "11/40",
+      "r": "51/40",
+      "s": "11/20",
+      "source_decay": "309/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "5/13",
+      "noise_decay": "1561/4160",
+      "omega": "3/10",
+      "r": "13/10",
+      "s": "3/5",
+      "source_decay": "77/160"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/53",
+      "noise_decay": "24911/67840",
+      "omega": "13/40",
+      "r": "53/40",
+      "s": "13/20",
+      "source_decay": "307/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "10/27",
+      "noise_decay": "6211/17280",
+      "omega": "7/20",
+      "r": "27/20",
+      "s": "7/10",
+      "source_decay": "153/320"
+    },
+    {
+      "d": 32,
+      "lower_decay": "4/11",
+      "noise_decay": "991/2816",
+      "omega": "3/8",
+      "r": "11/8",
+      "s": "3/4",
+      "source_decay": "61/128"
+    },
+    {
+      "d": 32,
+      "lower_decay": "5/14",
+      "noise_decay": "193/560",
+      "omega": "2/5",
+      "r": "7/5",
+      "s": "4/5",
+      "source_decay": "19/40"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/57",
+      "noise_decay": "24631/72960",
+      "omega": "17/40",
+      "r": "57/40",
+      "s": "17/20",
+      "source_decay": "303/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "10/29",
+      "noise_decay": "6139/18560",
+      "omega": "9/20",
+      "r": "29/20",
+      "s": "9/10",
+      "source_decay": "151/320"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/59",
+      "noise_decay": "24479/75520",
+      "omega": "19/40",
+      "r": "59/40",
+      "s": "19/20",
+      "source_decay": "301/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "1/3",
+      "noise_decay": "61/192",
+      "omega": "1/2",
+      "r": "3/2",
+      "s": "1",
+      "source_decay": "15/32"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/61",
+      "noise_decay": "24319/78080",
+      "omega": "21/40",
+      "r": "61/40",
+      "s": "21/20",
+      "source_decay": "299/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "10/31",
+      "noise_decay": "6059/19840",
+      "omega": "11/20",
+      "r": "31/20",
+      "s": "11/10",
+      "source_decay": "149/320"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/63",
+      "noise_decay": "24151/80640",
+      "omega": "23/40",
+      "r": "63/40",
+      "s": "23/20",
+      "source_decay": "297/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "5/16",
+      "noise_decay": "47/160",
+      "omega": "3/5",
+      "r": "8/5",
+      "s": "6/5",
+      "source_decay": "37/80"
+    },
+    {
+      "d": 32,
+      "lower_decay": "4/13",
+      "noise_decay": "959/3328",
+      "omega": "5/8",
+      "r": "13/8",
+      "s": "5/4",
+      "source_decay": "59/128"
+    },
+    {
+      "d": 32,
+      "lower_decay": "10/33",
+      "noise_decay": "5971/21120",
+      "omega": "13/20",
+      "r": "33/20",
+      "s": "13/10",
+      "source_decay": "147/320"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/67",
+      "noise_decay": "23791/85760",
+      "omega": "27/40",
+      "r": "67/40",
+      "s": "27/20",
+      "source_decay": "293/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "5/17",
+      "noise_decay": "1481/5440",
+      "omega": "7/10",
+      "r": "17/10",
+      "s": "7/5",
+      "source_decay": "73/160"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/69",
+      "noise_decay": "23599/88320",
+      "omega": "29/40",
+      "r": "69/40",
+      "s": "29/20",
+      "source_decay": "291/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "2/7",
+      "noise_decay": "235/896",
+      "omega": "3/4",
+      "r": "7/4",
+      "s": "3/2",
+      "source_decay": "29/64"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/71",
+      "noise_decay": "23399/90880",
+      "omega": "31/40",
+      "r": "71/40",
+      "s": "31/20",
+      "source_decay": "289/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "5/18",
+      "noise_decay": "91/360",
+      "omega": "4/5",
+      "r": "9/5",
+      "s": "8/5",
+      "source_decay": "9/20"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/73",
+      "noise_decay": "23191/93440",
+      "omega": "33/40",
+      "r": "73/40",
+      "s": "33/20",
+      "source_decay": "287/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "10/37",
+      "noise_decay": "5771/23680",
+      "omega": "17/20",
+      "r": "37/20",
+      "s": "17/10",
+      "source_decay": "143/320"
+    },
+    {
+      "d": 32,
+      "lower_decay": "4/15",
+      "noise_decay": "919/3840",
+      "omega": "7/8",
+      "r": "15/8",
+      "s": "7/4",
+      "source_decay": "57/128"
+    },
+    {
+      "d": 32,
+      "lower_decay": "5/19",
+      "noise_decay": "1429/6080",
+      "omega": "9/10",
+      "r": "19/10",
+      "s": "9/5",
+      "source_decay": "71/160"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/77",
+      "noise_decay": "22751/98560",
+      "omega": "37/40",
+      "r": "77/40",
+      "s": "37/20",
+      "source_decay": "283/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "10/39",
+      "noise_decay": "5659/24960",
+      "omega": "19/20",
+      "r": "39/20",
+      "s": "19/10",
+      "source_decay": "141/320"
+    },
+    {
+      "d": 32,
+      "lower_decay": "20/79",
+      "noise_decay": "22519/101120",
+      "omega": "39/40",
+      "r": "79/40",
+      "s": "39/20",
+      "source_decay": "281/640"
+    },
+    {
+      "d": 32,
+      "lower_decay": "1000/3999",
+      "noise_decay": "56005999/255936000",
+      "omega": "1999/2000",
+      "r": "3999/2000",
+      "s": "1999/1000",
+      "source_decay": "14001/32000"
+    },
+    {
+      "d": 32,
+      "lower_decay": "1000000/3999999",
+      "noise_decay": "56000005999999/255999936000000",
+      "omega": "1999999/2000000",
+      "r": "3999999/2000000",
+      "s": "1999999/1000000",
+      "source_decay": "14000001/32000000"
+    }
+  ],
+  "evidence_class": "Exact rational Laurent-polynomial algebra and rational exponent checks; supporting evidence, not analytic certification.",
+  "groups": {
+    "cancellation_is_essential": 201,
+    "critical_exponents": 258,
+    "critical_rescaled_noise": 258,
+    "cubic_contractions": 18,
+    "explicit_margins": 258,
+    "full_bracket_expansion": 18,
+    "full_generator": 36,
+    "high_frequency_cancellation": 201,
+    "iid_bound": 18,
+    "iid_decomposition": 18,
+    "iid_joint_energy_equality": 5,
+    "iid_second_moment": 18,
+    "labelled_pair_conversion": 5,
+    "nonvacuous_mutations": 4,
+    "particle_gradient": 54,
+    "positive_energy_self_and_tail": 5,
+    "raw_internal_split": 36,
+    "response_contractions": 6,
+    "source_full_vs_deleted": 3,
+    "source_multiplier": 1,
+    "source_zero_diagonal": 1
+  },
+  "mutation_witness_counts": {
+    "omit_linear_lower": 9,
+    "omit_response": 15,
+    "omit_scalar_lower": 9,
+    "replace_N_by_N_minus_one": 15
+  },
+  "not_certified_by_this_program": [
+    "singular analytic limits",
+    "N-uniform constants in multiplier estimates",
+    "actual positive-time law estimates",
+    "true full pair inverse construction",
+    "full fluctuation law"
+  ],
+  "runtime": {
+    "arithmetic": "fractions.Fraction; no numerical tolerance",
+    "external_dependencies": [],
+    "python": "3.9.6",
+    "randomness": "none"
+  },
+  "scope": {
+    "diffusivities": [
+      "0",
+      "2/7"
+    ],
+    "generator_particle_counts": [
+      2,
+      3,
+      4
+    ],
+    "pair_kernels": [
+      "constant",
+      "additive",
+      "relative",
+      "product",
+      "mixed",
+      "combined"
+    ],
+    "particle_counts": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "physical_derivative_factor": "-(2*pi)^2 for every second-order differential expression; no physical factors discarded selectively"
+  },
+  "status": "PASS_EXACT_FINITE_DIAGNOSTICS",
+  "total_checks": 1422
+}

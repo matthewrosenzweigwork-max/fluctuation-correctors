@@ -1,0 +1,16 @@
+TASK-077 sealed blind reconstruction
+Sealed UTC: 2026-09-18T04:50:02.268255+00:00
+Base: 072cab684b9ce41855ead6c48f435c8fc184ec35
+Branch: codex/hocf-r015-cubic-blind
+Inputs: 28 / 28 SHA-256 PASS
+Exact diagnostic: 5045 assertions PASS
+Output manifest: 7 / 7 SHA-256 PASS
+Archive: 36 unique safe relative members; CRC PASS; 36 / 36 byte comparisons PASS
+Candidate comparison before seal: NONE
+Canonical edits, commits, pushes, installations, children: NONE
+
+aea244373bfd6fa9f80569b4a7e556fbb802702d2f7135e0397b2e424e6515d5  OUTPUT_SHA256SUMS.txt
+bad5100dfd2b828e1f4feb272edf72d9349cd31b7529d635d4cf3f7c85c1b0c7  ROUND_015_CUBIC_SOURCE_BLIND_SEALED.zip
+
+Issued report, output files, manifest, archive and this external seal are read-only.
+Any later correction must be issued separately, preserving these bytes.

@@ -1,0 +1,351 @@
+{
+  "admitted_mesh_cases": 27716,
+  "assertions": 236686,
+  "boundary_cases": [
+    {
+      "d": 7,
+      "kappa": "0",
+      "product_margin": "0",
+      "q": "2",
+      "q_high": "2",
+      "q_low": "2",
+      "s": "4",
+      "strict_R12_critical": false
+    },
+    {
+      "d": 8,
+      "kappa": "-1/28",
+      "product_margin": "-1/4",
+      "q": "9/4",
+      "q_high": "2",
+      "q_low": "5/2",
+      "s": "5",
+      "strict_R12_critical": false
+    },
+    {
+      "d": 3,
+      "kappa": "1/2",
+      "product_margin": "1",
+      "q": "1",
+      "q_high": "1",
+      "q_low": "1",
+      "s": "0",
+      "strict_R12_critical": false
+    },
+    {
+      "d": 3,
+      "kappa": "1/6",
+      "product_margin": "0",
+      "q": "1",
+      "q_high": "1",
+      "q_low": "1",
+      "s": "1",
+      "strict_R12_critical": false
+    },
+    {
+      "d": 12,
+      "kappa": "1/4",
+      "product_margin": "7/2",
+      "q": "7/2",
+      "q_high": "5",
+      "q_low": "2",
+      "s": "4",
+      "strict_R12_critical": false
+    }
+  ],
+  "categories": {
+    "R12_equality_not_lower_counterexample": 1,
+    "R8_second_exponent": 27716,
+    "all_mutations_detected": 1,
+    "allowed_input_seal": 27,
+    "critical_included": 12384,
+    "critical_rescaled_noise": 38948,
+    "cubic_one_background": 21,
+    "cubic_scalar_zero": 21,
+    "cubic_two_background": 21,
+    "decay_exponent": 27716,
+    "diffusion_no_extra_trace": 84,
+    "empty_exponent_range": 1,
+    "force_zero_haar": 21,
+    "full_inverse_force_identity": 84,
+    "full_raw_force_identity": 84,
+    "interval_equivalence": 38948,
+    "log_and_coulomb_excluded": 1,
+    "lower_boundary_log": 1,
+    "lower_empirical_form": 84,
+    "lower_regrouping": 84,
+    "midpoint_admissible": 27716,
+    "noise_convention": 4,
+    "odd_force": 21,
+    "pair_symmetry": 7,
+    "pathwise_triangle_constant": 34875,
+    "product_radial_log": 1,
+    "real_pair_modes": 7,
+    "regimes_distinct": 1,
+    "response_integration_by_parts": 21,
+    "response_scalar_zero": 21,
+    "response_slice": 21,
+    "reverse_triangle_perturbation": 25,
+    "six_admissibility_inequalities": 27716,
+    "squared_weight_radial_log": 1,
+    "two_time_norms_distinct": 1
+  },
+  "coefficient_parameter_cases": 84,
+  "convention": "Physical real odd force = i times formal force; physical derivative = 2 pi i times delta; all formal force drifts multiply by -2 pi, diffusion by -4 pi^2.",
+  "evidence_limit": "Finite exact coefficient/range checks and newly written reviewer self-check; not a proof of the singular inverse, any analytic limit, cubic smallness, or earlier premise certification.",
+  "exact_samples": [
+    {
+      "N2_cubic_formal": {
+        "coefficient": "3/10",
+        "frequency": [
+          -2,
+          2
+        ]
+      },
+      "case": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "lower_formal": {
+        "coefficient": "-3/5",
+        "frequency": [
+          0,
+          0
+        ]
+      },
+      "rho_g_identically_zero": true,
+      "scalar_B_formal": "-12/5"
+    }
+  ],
+  "floating_tolerance": null,
+  "input_seals": [
+    {
+      "path": "THEOREMS/THM-028_HOMOGENEOUS_PARTICLE_CORRECTOR_DOMAIN.md",
+      "sha256": "262f2ef32cfb9fa7757774e09970862c06c38891b2ef2d1bd1af875947e928a3"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de"
+    },
+    {
+      "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+      "sha256": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed"
+    },
+    {
+      "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+      "sha256": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f"
+    },
+    {
+      "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+      "sha256": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6"
+    },
+    {
+      "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+      "sha256": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db"
+    },
+    {
+      "path": "THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a"
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be"
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+      "sha256": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e"
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+      "sha256": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d"
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+      "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc"
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017"
+    },
+    {
+      "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+      "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec"
+    },
+    {
+      "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+      "sha256": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210"
+    },
+    {
+      "path": "MEMORANDA/ROUND_008_HOMOGENEOUS_PARTICLE_DOMAIN.md",
+      "sha256": "753c9a431cd0b403d3a784fc5faee79631ecc0cc249ec494ac751131dd2b1311"
+    },
+    {
+      "path": "THEOREMS/THM-027_WEIGHTED_PAIR_GRADIENT.md",
+      "sha256": "45a1e5a6b43b9cdebd02513131b41ae8bb1b201dfcf65ff7a0169940d735e108"
+    },
+    {
+      "path": "MEMORANDA/ROUND_007_WEIGHTED_PAIR_GRADIENT.md",
+      "sha256": "eb65ed8680416032ca2667db1cab9b39b493fcb1c578985c632a8bbfd1e9953a"
+    },
+    {
+      "path": "THEOREMS/THM-033_SUBCOULOMB_ACTUAL_NOISE.md",
+      "sha256": "c5fec57da94a2b210c2ac699d1de457179fcaa7b47a84189e89b2bc2a2a6c574"
+    },
+    {
+      "path": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b"
+    },
+    {
+      "path": "THEOREMS/THM-031_ACTUAL_FOURIER_SMOOTHING_AND_TAIL.md",
+      "sha256": "2b8ffeae89b33742353c06e9e975b726f4b705ab7f1ef2bb8d830675d6195ba4"
+    },
+    {
+      "path": "MEMORANDA/ROUND_012_SUBCOULOMB_ACTUAL_NOISE.md",
+      "sha256": "3160cce5d6389b5b3e1eefb2aceb6cc07fd29c421102931f3dcb80ccc4ca3a22"
+    },
+    {
+      "path": "THEOREMS/THM-035_LOWER_DRIFT_CONTRACTIONS.md",
+      "sha256": "74cb2e2a7e697f11451da160bb0eb668919a8e9d70e1d1a4a0d07f811766d4fb"
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-076_ROUND014_LOWER_DRIFT_HOSTILE.md",
+      "sha256": "4f69bf970d52afdc2d47c6201cc5f8977c3f6112aa2250a3bb9f55ae46d9a5b0"
+    },
+    {
+      "path": "MEMORANDA/ROUND_014_LOWER_DRIFT_CONTRACTIONS.md",
+      "sha256": "266d8fe2cdbaa4111c3f5b515ed22c791f291508987618de525c49f9c67d3f14"
+    },
+    {
+      "path": "AUDITS/ROUND_014_CONSTRUCTOR_RENDERING_ERRATUM.md",
+      "sha256": "403b3444eb22ff631c00c4d9a17bbd750e3482ea9128eb30e7fedcbad3fd243a"
+    }
+  ],
+  "mutations": {
+    "double_cubic": {
+      "coefficient": "3/10",
+      "context": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "frequency": [
+        -2,
+        2
+      ]
+    },
+    "drop_N2_background_cubic": {
+      "coefficient": "3/10",
+      "context": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "frequency": [
+        -2,
+        2
+      ]
+    },
+    "falling_factorial_pair": {
+      "coefficient": "3/20",
+      "context": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "frequency": [
+        -4,
+        4
+      ]
+    },
+    "flip_scalar_sign": {
+      "coefficient": "-6/5",
+      "context": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "frequency": [
+        0,
+        0
+      ]
+    },
+    "halve_centered_lower": {
+      "coefficient": "-3/40",
+      "context": {
+        "N": 2,
+        "force": "modes_1_3",
+        "pair": "additive_three"
+      },
+      "frequency": [
+        -3,
+        0
+      ]
+    },
+    "halve_internal_repeated": {
+      "coefficient": "3/40",
+      "context": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "frequency": [
+        -4,
+        4
+      ]
+    },
+    "omit_scalar": {
+      "coefficient": "-3/5",
+      "context": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "frequency": [
+        0,
+        0
+      ]
+    },
+    "omit_x_response": {
+      "coefficient": "-3/20",
+      "context": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "frequency": [
+        -2,
+        2
+      ]
+    },
+    "omit_y_response": {
+      "coefficient": "-3/20",
+      "context": {
+        "N": 2,
+        "force": "mode_two",
+        "pair": "relative_two"
+      },
+      "frequency": [
+        -2,
+        2
+      ]
+    }
+  },
+  "norm_probe": {
+    "absolute_integral": "4/3",
+    "signed_integral": "0"
+  },
+  "python": "3.9.6",
+  "random_seed": null,
+  "status": "PASS",
+  "strict_critical_mesh_cases": 12384,
+  "task": "TASK-076"
+}

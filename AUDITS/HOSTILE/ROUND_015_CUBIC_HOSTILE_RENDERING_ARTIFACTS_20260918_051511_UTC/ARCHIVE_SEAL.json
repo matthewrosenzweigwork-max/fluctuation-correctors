@@ -1,0 +1,20 @@
+{
+  "addendum_path": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r015-cubic-hostile/AUDITS/HOSTILE/ROUND_015_CUBIC_SOURCE_RENDERING_ADDENDUM_AUD050_20260918_051511_UTC.md",
+  "addendum_sha256": "202d96230dbcd33436b085b65532c34caf9f0463ab0e6ba9ee92a146766aff02",
+  "all_new_payload_control_scan": "PASS no C0/C1 controls except LF",
+  "archive_member_count": 7,
+  "archive_membership_and_member_bytes": "PASS exact equality; no duplicates; all regular files",
+  "archive_path": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r015-cubic-hostile/AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_RENDERING_ARTIFACTS_20260918_051511_UTC/ROUND_015_CUBIC_HOSTILE_RENDERING_ADDENDUM_AUD050_20260918_051511_UTC.tar.gz",
+  "archive_sha256": "0ec3040e5a884695f57d7b90885a7b8f4c766b111573219612d55c512b8f15d7",
+  "audit": "AUD050",
+  "immutable_after_issuance": true,
+  "issued_utc": "2026-09-18 05:16:20 UTC",
+  "new_addendum_control_scan": "PASS no C0/C1 controls except LF",
+  "original_44_files_preserved": "PASS after new archive verification",
+  "original_archive_sha256": "37fef68c77ee86ec6a4a8b1c272d37c6f4de74cb2cd5ff2acd5309edc49e950c",
+  "original_report_sha256": "9ff4765f3ded77f6a3d41fa575d53460b28890f45aa5403764c70a93a0384da1",
+  "outer_seal_note": "This seal and the archive hash sidecar remain outside the archive to avoid circular hashes.",
+  "output_manifest_sha256": "604e27d714dcf50c98dbec266b0964260aa8e80c09305bf950f951135efd7298",
+  "type": "post-seal rendering clarification of own report, not a new independent gate",
+  "verdict_changed": false
+}

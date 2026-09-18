@@ -1,0 +1,21 @@
+{
+  "archive_checked": true,
+  "archive_member_count": 37,
+  "archive_sha256": "24af822e2d16eec33a0939f581cf3703c4c333e6d8546740c5c2b8ea006f47ab",
+  "checks": [
+    "safe relative paths",
+    "no duplicate manifest entries",
+    "input SHA-256",
+    "output SHA-256",
+    "exact archive membership when present",
+    "archive CRC when present",
+    "all archive member SHA-256 when present",
+    "external seal SHA-256 when present"
+  ],
+  "external_seal_checked": false,
+  "external_seal_entries": 0,
+  "frozen_inputs_verified": 27,
+  "sealed_outputs_verified": 36,
+  "status": "PASS",
+  "task": "TASK-076"
+}

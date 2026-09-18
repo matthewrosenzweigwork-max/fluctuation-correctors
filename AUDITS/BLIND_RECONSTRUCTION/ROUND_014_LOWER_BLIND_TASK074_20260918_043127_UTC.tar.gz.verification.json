@@ -1,0 +1,21 @@
+{
+  "all_archive_member_hashes_match": true,
+  "all_live_payload_hashes_match": true,
+  "archive_bytes": 144450,
+  "archive_member_count": 36,
+  "archive_path": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r014-lower-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_014_LOWER_BLIND_TASK074_20260918_043127_UTC.tar.gz",
+  "archive_sha256": "d6f8455bbb21e9be7d7cd1a6fdbe21200c04b1da15f3d1c500e75d15dcd6c118",
+  "conditional_scope": "Complete THM-035 implication reconstructed conditional on the supplied R8 domain and R12 gradient premises. Cubic smallness remains open.",
+  "current_candidate_comparison_before_seal": false,
+  "exact_file_list": true,
+  "file_permissions": "Read-only payload, output manifest, archive and sidecars after final seal creation.",
+  "input_count": 25,
+  "only_regular_safe_relative_paths": true,
+  "output_manifest_sha256": "154f37d415e4c7590996c2afbe0fef687aaf7e0f36a20fea84e26eac9e23fa80",
+  "payload_file_count": 35,
+  "report_path": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r014-lower-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_014_LOWER_DRIFT_RECONSTRUCTION.md",
+  "report_sha256": "d73aceccdf173fa42b33a88d0f5ddeefc2c0bc1ecc83d6521c0e4265b2af9d23",
+  "sealed_utc": "2026-09-18T04:31:27.872117+00:00",
+  "status": "PASS",
+  "task": "TASK-074"
+}

@@ -1,0 +1,41 @@
+{
+  "addendum_bytes": 3804,
+  "addendum_control_scan": "PASS: no C0/C1 controls except LF; all TeX backslashes are ASCII 0x5C",
+  "addendum_path": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r015-cubic-hostile/AUDITS/HOSTILE/ROUND_015_CUBIC_SOURCE_RENDERING_ADDENDUM_AUD050_20260918_051511_UTC.md",
+  "addendum_sha256": "202d96230dbcd33436b085b65532c34caf9f0463ab0e6ba9ee92a146766aff02",
+  "audit": "AUD050",
+  "original_control_count": 3,
+  "original_control_locations": [
+    {
+      "byte_column_one_based": 35,
+      "byte_offset_zero_based": 23058,
+      "byte_position_one_based": 23059,
+      "intended_command_prefix_hex": "5c 66 72 61 63",
+      "line_one_based": 364,
+      "stored_byte_hex": "0c",
+      "stored_command_prefix_hex": "0c 72 61 63"
+    },
+    {
+      "byte_column_one_based": 57,
+      "byte_offset_zero_based": 23080,
+      "byte_position_one_based": 23081,
+      "intended_command_prefix_hex": "5c 66 72 61 63",
+      "line_one_based": 364,
+      "stored_byte_hex": "0c",
+      "stored_command_prefix_hex": "0c 72 61 63"
+    },
+    {
+      "byte_column_one_based": 49,
+      "byte_offset_zero_based": 26372,
+      "byte_position_one_based": 26373,
+      "intended_command_prefix_hex": "5c 66 72 61 63",
+      "line_one_based": 420,
+      "stored_byte_hex": "0c",
+      "stored_command_prefix_hex": "0c 72 61 63"
+    }
+  ],
+  "original_report_bytes": 32174,
+  "original_report_sha256": "9ff4765f3ded77f6a3d41fa575d53460b28890f45aa5403764c70a93a0384da1",
+  "type": "rendering clarification, not independent gate",
+  "verdict_changed": false
+}

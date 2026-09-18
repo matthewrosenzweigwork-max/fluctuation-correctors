@@ -67,3 +67,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 accepted actual-noise gate: THM033 passes fresh AUD040 reconstruction and AUD041 hostile review. In the homogeneous strict sub-Coulomb bounded-chi family, Q_N<=C b_N N^(s/(s+2))(N^(-(1-s/d))+nu). Critical decay holds when s(s+2)<2d; bounded-chi decay also holds for s<min(2,d-2), and the exact other sufficient conditions remain in the card. The accepted R8 domain and R10 sharp floor separately supply the conditional premises. Outside these ranges PO024 is OPEN; within them PO001's actual integrated cubic/lower drift is the first open assertion. No fluctuation law or hierarchy closure follows.
 
 R13 THM034 now passes fresh AUD045/046: Q_N=2nu Nb E integral sum_i|grad_i P_N[Phi]|^2 tends uniformly to zero over0<=nu<=nu_* for d>=4,0<s<2, with the exact five-term rate. The leading bracket is uniformly bounded and expected integral of absolute scaled cross-variation<=C sqrt(Q_N). Zero-noise bracket is identically zero. Entire actual bracket, not just smooth/clipped/reference component. PO024 is still open outside accepted R12/R13 union; drift remains separate.
+
+
+Round014 final gate,2026-09-18 UTC. R14 verifies the existing full Ito coefficient identity and absence of extra mixed-particle thermal trace using R8. Its new estimate concerns lower drift only, neither a new bracket estimate nor cubic decay. Prior accepted R12/R13 actual-noise ranges remain exactly unchanged.
+
+
+Round015 final gate,2026-09-18 UTC. R15 uses the exact actual R12 whole bracket Q<=C b N^a(N^-theta+nu), full four-term particle-gradient square and true R8 martingale. At criticality isometry gives sigma E|M_T^2|<=C N^((a-theta)/2). No signed component is independently discarded and no Haar-to-law transfer is presumed. Full first-order limiting noise/finite-dimensional law remains separately open THM039.

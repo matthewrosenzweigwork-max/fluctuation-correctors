@@ -1,0 +1,25 @@
+{
+  "all_30_worktree_and_packet_inputs_unchanged": true,
+  "audit": "AUD050",
+  "checked_output_text_files": [
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_SOURCE_REVIEW.md",
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/verify_packet.py",
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/results.json",
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/WORKTREE_METADATA.json",
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/README.md",
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/diagnostic.py",
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/SOURCE_PREFLIGHT.md",
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/INPUT_SHA256SUMS.txt",
+    "AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/EXPOSURE.md"
+  ],
+  "claim_rows_present": 17,
+  "diagnostic_command": "python3 AUDITS/HOSTILE/ROUND_015_CUBIC_HOSTILE_ARTIFACTS/diagnostic.py",
+  "diagnostic_exit_code": 0,
+  "exact_checks": 1422,
+  "new_output_text_checks": "PASS: terminal newlines and no trailing whitespace",
+  "report_display_math_delimiters_balanced": true,
+  "scope": "Inputs and new assigned outputs only. No all-tree status/history inspection.",
+  "selected_git_status": "Only the assigned new report and artifact directory are untracked output paths; no canonical integration or commit performed.",
+  "tex": "No TeX files created or compiled; the bounded final handoff contains no mathematical LaTeX.",
+  "validated_utc": "2026-09-18 05:10:31 UTC"
+}

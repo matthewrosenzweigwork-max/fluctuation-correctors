@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "input_files": 28,
+  "archive_members": 36,
+  "archive_sha256": "bad5100dfd2b828e1f4feb272edf72d9349cd31b7529d635d4cf3f7c85c1b0c7",
+  "proof_sha256": "83aac33461215a1b0e944403a5932d21006a1265da73b912ffae58210c070a04",
+  "exact_assertions": 5045,
+  "rerun_byte_identical": true,
+  "root_copies_byte_identical": true,
+  "archive_exact_member_set": true,
+  "disposable_rerun": "/private/tmp/hocf-r015-blind-root-oobtaeu1",
+  "scope": "Integrity and exact algebra reproduction; analytic comparison separately recorded."
+}

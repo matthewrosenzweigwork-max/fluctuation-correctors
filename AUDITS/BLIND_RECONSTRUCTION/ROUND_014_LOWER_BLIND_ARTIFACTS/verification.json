@@ -1,0 +1,55 @@
+{
+  "canonical_source_state_edits": false,
+  "commits_pushes_merges_installations_children": false,
+  "exact_assertion_count": 208486,
+  "final_checker_runs": 2,
+  "input_count": 25,
+  "mathematical_review": {
+    "R8_and_R12_premises_remain_conditional": true,
+    "complete_frozen_assertion_and_negation": true,
+    "critical_range_inclusion_proved": true,
+    "cubic_smallness_proved": false,
+    "genuine_R8_representatives_and_both_exact_coefficients": true,
+    "numerical_tests_claim_analytic_certification": false,
+    "pathwise_uniform_lower_bound": true,
+    "scaled_integrated_L1_equivalence_proved": true
+  },
+  "mutation_witnesses": [
+    "N2_nonzero_U3",
+    "cubic_omitted",
+    "internal_pair_doubled",
+    "lower_sign_reversed",
+    "one_response_omitted",
+    "scalar_doubled",
+    "scalar_omitted",
+    "wrong_falling_factorial_pair"
+  ],
+  "original_worktree_and_preserved_inputs_match": true,
+  "range_cases": {
+    "admitted_parameter_cases": 27339,
+    "boundary_example": {
+      "d": 8,
+      "kappa": "0",
+      "q_lo_equals_q_hi": "7/3",
+      "radial_power": "-1",
+      "s": "14/3"
+    },
+    "critical_cases": 10682,
+    "excluded_interval_cases": 11706
+  },
+  "report_format_checks": {
+    "balanced_display_and_inline_math_delimiters": true,
+    "no_unexpected_control_characters": true,
+    "repaired_time_differential_spacing": true
+  },
+  "rerun_byte_identical": true,
+  "result_sha256": "dad971e486ac5e8ca70664d1798595629660b7f985e11a5ec38bd6264dca1833",
+  "seal_status": "Payload ready; final manifest/archive verification is recorded in the external archive verification sidecar.",
+  "smooth_generator_cases": 225,
+  "status": "PASS",
+  "task": "TASK-074",
+  "utc": "2026-09-18T04:30:35.835878+00:00",
+  "verification_notes": [
+    "Initial prose QA used an overbroad comma-dt substring assertion that also matched valid escaped spacing; corrected to test only unescaped comma-dt. The mathematical checker had no failed final run."
+  ]
+}

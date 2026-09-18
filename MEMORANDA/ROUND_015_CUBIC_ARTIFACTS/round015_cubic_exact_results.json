@@ -1,0 +1,48 @@
+{
+  "arithmetic": "fractions.Fraction; no floats, random seed, or tolerance",
+  "assertions": 6865,
+  "counts": {
+    "D2_positive_tail_inequality": 344,
+    "D2_vs_labelled_pair_normalization": 508,
+    "chosen_gradient_exponent": 351,
+    "commutator_Fourier_coefficient": 6,
+    "critical_rescaled_diffusivity": 351,
+    "dossier_count": 1,
+    "full_generator_bracket": 24,
+    "genuine_noise_decay": 351,
+    "heat_Fourier_normalization_exponent": 351,
+    "iid_endpoint_second_moment": 15,
+    "input_sha256": 27,
+    "integrable_internal_contraction": 351,
+    "labelled_positive_tail_inequality": 344,
+    "literal_full_pair_identity": 180,
+    "lower_physical_decay": 351,
+    "missing_gradient_difference_detected": 1,
+    "mutation_witnesses": 4,
+    "one_background_contraction": 180,
+    "particle_gradient_deletion": 540,
+    "positive_kernel_exact_self_subtraction": 508,
+    "positive_tail_joint_identity": 508,
+    "scalar_cubic_contraction": 180,
+    "smooth_commutator_zero_self_diagonal": 6,
+    "solvable_high_frequency_cancellation": 852,
+    "source_physical_decay": 351,
+    "two_background_contraction": 180
+  },
+  "evidence_class": "EXACT_ALGEBRA_SELF_CHECK; not independent analytic certification",
+  "mutation_witness_counts": {
+    "omitted_N2_cubic_backgrounds": 32,
+    "omitted_lower_contraction": 72,
+    "omitted_scalar_contraction": 48,
+    "omitted_second_response": 96
+  },
+  "nonclaims": [
+    "No singular law is simulated.",
+    "No prior checker was read.",
+    "The two-point surrogate checks decomposition/label algebra only.",
+    "Exact calculations support but do not certify the analytic proof."
+  ],
+  "normalization": "All spatial second-order diagnostics factor out (2*pi)^2; full source sign, two response coefficients, deleted N powers, and bracket factor 2*nu are checked.",
+  "status": "PASS",
+  "task": "TASK-075"
+}

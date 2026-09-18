@@ -79,3 +79,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 uses the previously proved fixed-N genuine derivative and particle-energy/domain passages before applying its uniform estimates. The actual Laplacian occupation follows from the exact unstopped energy identity and deterministic sharp floor; no new singular Ito formula or N/cutoff interchange is presumed. Both fresh audits retain those prerequisite histories.
 
 R11 tube tails give global W1,1 only after uniform local C1 and in the declared order; no diagonal trace. R13 actual w_(s+2) occupation is proved at fixed N by singular energy/domain passages before uniform estimates. A quantitative actual tail at the moving clipping threshold supplies the missing uniformity; fixed-N density approximation alone is not used. All issued source/archive bytes remain unchanged.
+
+
+Round014 final gate,2026-09-18 UTC. R14 new bound uses the genuine off-diagonal product dominated by |K|w_q, with s+1+q<d. Moving-ball/complement convergence identifies continuous contractions at every remaining coordinate before empirical evaluation. No true diagonal derivative or new singular Ito limit is assigned; the accepted R8 full-domain passage is the explicit premise.
+
+
+Round015 final gate,2026-09-18 UTC. R15 particle heat regularization is removed at fixed N using same-noise paths and shifted Fatou for expected energy. A different positive heat-integral observable splitting is then used at r=N^-2/d, with exact omitted positive remainder and retained smooth energy. Arbitrary smooth-test passage is explicit. The genuine inverse/domain are never replaced by a cutoff inverse; R8 supplies full fixed-N drift/martingale passages.

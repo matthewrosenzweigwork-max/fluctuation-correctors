@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "base": "072cab684b9ce41855ead6c48f435c8fc184ec35",
+  "branch": "codex/hocf-r015-cubic-blind",
+  "input_count": 28,
+  "input_hash_checks": "28/28 PASS before copy, after copy, in independent diagnostic, and before sealing",
+  "diagnostic_assertions": 5045,
+  "diagnostic_status": "PASS",
+  "diagnostic_command": "python3 AUDITS/BLIND_RECONSTRUCTION/ROUND_015_CUBIC_BLIND_ARTIFACTS/round015_exact_diagnostic.py",
+  "python_version": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "output_format_checks": "terminal newlines, no trailing whitespace/control characters, balanced standalone display delimiters: PASS",
+  "scoped_git_diff_check": "PASS",
+  "canonical_edits": false,
+  "commits": false,
+  "pushes": false,
+  "external_source_search": false,
+  "dependencies_installed": false,
+  "children": false,
+  "candidate_exposure_before_seal": false,
+  "archive_verification": "Performed after archive creation and recorded in external SEAL.txt; no circular archive hash."
+}

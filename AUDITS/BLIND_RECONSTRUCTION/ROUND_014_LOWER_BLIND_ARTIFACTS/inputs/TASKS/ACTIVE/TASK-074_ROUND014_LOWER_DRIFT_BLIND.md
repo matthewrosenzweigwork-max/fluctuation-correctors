@@ -1,0 +1,9 @@
+# TASK-074 — fresh reconstruction of lower drift contractions
+
+Use a fresh Astra Max context, independent of TASK073 and all current candidate narratives. Reconstruct or falsify every claim and exact negation in THEOREMS/THM-035_LOWER_DRIFT_CONTRACTIONS.md before seeing any current proof. No broad plan-only response.
+
+First read this task and AUDITS/ROUND_014_LOWER_DRIFT_BLIND_INPUT_SHA256SUMS.txt. Create branch codex/hocf-r014-lower-blind and worktree /Users/matthewrosenzweig/.codex/worktrees/hocf-r014-lower-blind at published R10 1df1805ed7cd8f7c295945f99273c8ffdb598e74. Copy and verify only the 25 allowed inputs. Ignore inherited non-allowlisted files. Do not read current R14 construction, R13 materials, other current audits, state/history, memory files, prior checkers or worker results. Disclose unavoidable ambient summary exposure. Earlier R12 gradient and R8 domain implications retain their issued conditional scope; no unseen current verdict supplies a premise.
+
+Recompute exact lower and scalar contractions, weight ranges, all N/nu/time uniformity, genuine representatives, actual-law use, zero-noise convention, inclusion of the full R12 critical decay range, and the precise scaled L1 equivalence. Do not presume the cubic term vanishes. Provide full proof or first failing line and strongest surviving assertion, not just a plausibility review. Write an independent exact diagnostic with adversarial range/coefficient cases. Finite computation does not certify analytic limits.
+
+Write AUDITS/BLIND_RECONSTRUCTION/ROUND_014_LOWER_DRIFT_RECONSTRUCTION.md and unique AUDITS/BLIND_RECONSTRUCTION/ROUND_014_LOWER_BLIND_ARTIFACTS with README/exposure, checker/results, input/output seals and immutable archive. Verify and seal all outputs before any comparison. No canonical edits, commits, pushes, installations or children. Root alone compares and promotes. Stop after the sealed bounded handoff.

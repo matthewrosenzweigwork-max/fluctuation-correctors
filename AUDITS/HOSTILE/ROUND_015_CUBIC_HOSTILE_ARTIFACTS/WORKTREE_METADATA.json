@@ -1,0 +1,14 @@
+{
+  "audit": "AUD050",
+  "base_commit": "072cab684b9ce41855ead6c48f435c8fc184ec35",
+  "branch": "codex/hocf-r015-cubic-hostile",
+  "canonical_edits": false,
+  "commits_made": false,
+  "input_count": 30,
+  "input_hash_check": "PASS before root-to-worktree copy, after copy, and before packet copy",
+  "input_manifest_sha256": "6628b4c8d436681bddd29c9184b42ea2e1287ff9773d7eb31b92f4aa7aeeae1d",
+  "outside_sources_used": false,
+  "prepared_utc": "20260918_050834_UTC",
+  "task": "TASK-078",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r015-cubic-hostile"
+}

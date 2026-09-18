@@ -52,3 +52,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 accepted actual-noise gate: THM033 passes fresh AUD040 reconstruction and AUD041 hostile review. In the homogeneous strict sub-Coulomb bounded-chi family, Q_N<=C b_N N^(s/(s+2))(N^(-(1-s/d))+nu). Critical decay holds when s(s+2)<2d; bounded-chi decay also holds for s<min(2,d-2), and the exact other sufficient conditions remain in the card. The accepted R8 domain and R10 sharp floor separately supply the conditional premises. Outside these ranges PO024 is OPEN; within them PO001's actual integrated cubic/lower drift is the first open assertion. No fluctuation law or hierarchy closure follows.
 
 THM032 spatial and THM034 actual-noise gates now pass both fresh axes. They concern the same full terminal-zero pair inverse with both response slots, not a new corrector or truncated construction. R11 weighted local C1/global W1,1 response-only limit is a separate module; R13 uses earlier fixed-N derivative/domain modules and does not require R11. Cubic C Phi and the next hierarchy remain open.
+
+
+Round014 final gate,2026-09-18 UTC. R14 THM035 preserves the genuine full pair inverse and terminal source, both responses and R8 representatives. The lower-plus-scalar drift now has accepted uniform scaled decay in its exact bounded-chi range. Cubic smallness, general evolved endpoints and higher orders are separate claims. No cutoff inverse is substituted.
+
+
+Round015 final gate,2026-09-18 UTC. R15 genuine full pair inverse remains unchanged. The terminal-zero exact R8 identity plus accepted actual source bound, initial endpoint, lower contractions and whole martingale give actual integrated cubic smallness in the critical restricted range. This neither bounds the instantaneous absolute cubic nor certifies all higher correctors.

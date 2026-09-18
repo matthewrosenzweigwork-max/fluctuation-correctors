@@ -1,0 +1,173 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\E}{\mathbb E}
+\newcommand{\dd}{\,\mathrm d}
+\title{The actual quadratic source and integrated cubic residual}
+\author{HOCF--RIESZ, Round 015}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status.} THM--036 and THM--037 have complete sealed construction
+and fresh reconstruction; AUD--049 compares the entire conjunction.
+Separate fresh hostile review AUD--050 also passes. Its three damaged fraction
+command prefixes have a separately sealed rendering clarification, with no
+mathematical change and all original bytes preserved. This synthesis records their exact
+conditional implications; it does not certify a fluctuation law or the higher
+hierarchy. The complete proofs and source qualifications are in the separately
+sealed Round 015 memoranda and audit packets.
+
+\section*{The actual energy controls a positive omitted part}
+Fix $d\ge4$, $0<s<2$, finite $T$, a fixed smooth real terminal test $h$,
+and $0\le\nu\le\nu_*<\infty$. Use the coefficient-one periodic Riesz
+kernel on the unit Haar torus, $K=-\nabla g$, actual particles with drift
+$N^{-1}\sum_{j\ne i}K(X_i-X_j)$ and noise $\sqrt{2\nu}$, initially iid Haar.
+Let $f_t$ be the actual backward Fourier test and
+\[
+ J_t(x,y)=K(x-y)\cdot(\nabla f_t(x)-\nabla f_t(y)),\qquad
+ P_N[F]=\frac{1}{2N^2}\sum_{i\ne j}F_{ij}
+ -\frac1N\sum_i\int F(X_i,y)\dd y+\frac12\int F.
+\]
+All singular kernels use only off-diagonal empirical evaluations and genuine
+Haar contractions. Put $\alpha=(d-s)/2>1$ and
+$A=4^\alpha\pi^{d/2}/\Gamma(s/2)$. The positive heat representation is
+\[
+ g(z)=A\int_0^\infty t^{\alpha-1}(p_t(z)-1)\dd t.
+\]
+For $r>0$ set
+\[
+ g_r=A\int_r^\infty t^{\alpha-1}(p_t-1)\dd t,\qquad
+ H_r=A\int_0^r t^{\alpha-1}p_t\dd t\ge0,\qquad c_r=Ar^\alpha/\alpha.
+\]
+Then $g=g_r+H_r-c_r$ off zero. With $D_2=N^{-2}\sum_{i\ne j}$,
+$H_N=N^{-1}\sum_{i<j}g_{ij}$ and $a_r(k)=\widehat g_r(k)>0$ for $k\ne0$,
+\[
+ \mathcal E_r=\sum_{k\ne0}a_r(k)|\widehat\eta_N(k)|^2\ge0,\qquad
+ \mathcal E_r+D_2[H_r]
+ =\frac{2H_N}{N}+\frac{g_r(0)}N+\left(1-\frac1N\right)c_r.
+\]
+The actual energy satisfies $\E H_N(t)\le0$: at positive noise use smooth
+free-energy dissipation, nonnegative entropy and the fixed-$N$ same-noise
+heat passage with shifted Fatou; at zero noise use deterministic energy decrease.
+Since $g_r(0)\le Cr^{-s/2}$,
+\[
+ \E\mathcal E_r+\E D_2[H_r]\le C(N^{-1}r^{-s/2}+r^\alpha).
+\]
+The different labelled-pair coefficient is
+$\E H_r(X_1-X_2)\le g_r(0)/(N-1)+c_r$.
+The energy self subtraction is smooth; no singular diagonal value is assigned.
+
+\newpage
+\section*{A summable Fourier commutator bound}
+For each smooth test $v$ let $J_r[v]$ use $-\nabla g_r$ in place of $K$.
+The Gaussian estimate, translate by translate, is
+\[
+ \operatorname{dist}(z,0)|\nabla p_t(z)|\le C p_{2t}(z).
+\]
+Thus $|J[v]-J_r[v]|\le C\|D^2v\|_\infty H_{2r}$. Retaining all three
+parts of $P_N$ yields an absolute tail bound by
+$C\|D^2v\|_\infty(N^{-1}r^{-s/2}+r^\alpha)$.
+
+For a nonzero terminal mode $n=k+l$, the exact pair Fourier coefficient is
+\[
+ -4\pi^2\,n\cdot(k a_r(k)+l a_r(l)).
+\]
+For $k,l\ne0$ and $r|n|^2\le1$, direct differentiation of the heat integral,
+followed by a split at $|k|=2|n|$, gives
+\[
+ |n\cdot(k a_r(k)+l a_r(l))|
+ \le C(1+|n|)^{2\alpha+2}\sqrt{a_{r/32}(k)a_{r/32}(l)}.
+\]
+Indeed $\|D_v(v a_r(v))\|\le C|v|^{-2\alpha}e^{-2\pi^2r|v|^2}$,
+while $a_r(v)\ge c|v|^{-2\alpha}e^{-4\pi^2r|v|^2}$.
+The far segment stays away from zero; the near nonzero integer frequencies
+have norms at least one. The slack cutoff absorbs the Gaussian shift with
+only polynomial dependence on $n$.
+
+The smooth source has $J_r[v](x,x)=0$ exactly, so
+$P_N[J_r[v]]=\langle\rho_N^{\otimes2},J_r[v]\rangle/2$.
+Weighted Cauchy--Schwarz in $k$ bounds the corresponding quadratic expression
+by $C(1+|n|)^{2\alpha+2}\mathcal E_{r/32}$. Choosing
+\[
+ r_{N,n}=N^{-2/d}(1+|n|)^{-2}
+\]
+inside this estimating argument and retaining the omitted positive part gives
+\[
+ \E|P_N[J[e_n]]|\le C(1+|n|)^{d+2}N^{s/d-1}.
+\]
+The actual backward coefficients have modulus at most $|\widehat h(n)|$.
+Their weighted sum is finite for fixed smooth $h$. Fourier partial sums
+converge in $C^2$; the actual pair $w_s$ moment is uniformly bounded by the
+energy and the local coefficient-one comparison. These facts identify the
+summed estimate with the genuine singular source in actual $L^1$. Hence
+\[
+ \boxed{\ \sup_{0\le t\le T}\E|P_N[J_t]|\le C N^{s/d-1}.\ }
+\]
+This is THM--037, uniform in the bounded noise interval, including zero.
+Writing $b=\min(1,\nu^{-1})$ for positive noise and $b=1$ at zero,
+\[
+ \sqrt{Nb}\,\E\int_0^T|P_N[J_t]|\dd t
+ \le C\sqrt b\,N^{s/d-1/2}\longrightarrow0.
+\]
+The constructor uses an alternative low/high terminal-frequency split with
+cutoff $r/64$ and a finite Fourier seminorm of order $d+4$; the complete
+fresh reconstruction above instead uses the mode-dependent cutoff. Both
+prove the same frozen uniform bound without an exponentially growing test cost.
+
+\newpage
+\section*{The exact integrated cubic conclusion}
+Now take positive finite microscopic criticality
+\[
+ \lambda_N=\beta_NN^{s/d-1}\to\lambda\in(0,\infty),\quad
+ \nu_N=\beta_N^{-1},\quad\theta=1-s/d,\quad p=s+2,\quad a=s/p.
+\]
+Then $b_N=1$ eventually and
+$\nu_NN^{2/p}=\lambda_N^{-1}N^{s(s+2-d)/(dp)}\to0$.
+Let $\Phi$ be the genuine symmetric terminal-zero pair inverse with both
+coefficient-one response slots. Define
+\[
+ C\Phi=\operatorname{Sym}_3[K(x-z)\cdot\nabla_x\Phi(x,y)],\quad
+ B\Phi=K(x-y)\cdot(\nabla_x-\nabla_y)\Phi,
+\]
+where $\operatorname{Sym}_3$ averages all six permutations. The accepted R8
+domain supplies the genuine singular identity and true square-integrable
+martingale. Literal ordered-label counting gives
+\[
+ \dd P_N[\Phi_t]=\left[-P_N[J_t]+U_3[C\Phi_t]
+ +\frac1N\rho_t[(B\Phi_t)_\mu]+\frac1{2N}\int B\Phi_t\right]\dd t+\dd M_t.
+\]
+The cubic $U_3$ has denominator $N^3$ and every Haar contraction; its
+background terms remain even at $N=2$. Terminal zero gives
+\begin{align*}
+ \int_0^T U_3[C\Phi_t]\dd t
+ ={}&\int_0^T P_N[J_t]\dd t-P_N[\Phi_0]-M_T\\
+ &-\frac1N\int_0^T\rho_t[(B\Phi_t)_\mu]\dd t
+ -\frac1{2N}\int_0^T\int B\Phi_t\dd t.
+\end{align*}
+Each term is estimated in its genuine law and domain. The supplied full
+inverse has uniformly bounded Haar $L^2$ norm because $2s<d$. Exact initial
+iid counting gives $\sqrt{Nb_N}\E|P_N[\Phi_0]|\le CN^{-1/2}$.
+Set $\epsilon=\min(s,d-s-2)/2$, $q=1+\epsilon$ and $e=(s-\epsilon)/p$.
+The admitted R12 gradient bound is
+$|\nabla_{x,y}\Phi|\le CN^e w_q$. Since $s+1+q<d$, each lower contraction
+has absolute scaled integral at most $CN^{e-1/2}$, retaining its exact coefficient.
+The complete actual R12 bracket satisfies
+\[
+ \sigma_N^2\E\langle M\rangle_T
+ \le Cb_NN^a(N^{-\theta}+\nu_N),\qquad \sigma_N=\sqrt{Nb_N}.
+\]
+Isometry gives $\sigma_N\E|M_T|\le CN^{(a-\theta)/2}$ on the critical tail.
+Consequently THM--036 is the precise bound
+\[
+ \boxed{\ \sigma_N\E\left|\int_0^T U_3[C\Phi_t]\dd t\right|
+ \le C\left(N^{1/2-\theta}+N^{-1/2}+N^{e-1/2}+N^{(a-\theta)/2}\right)\to0.\ }
+\]
+All exponents are strictly negative for $d\ge4$, $0<s<2$; the last uses
+$s(s+2)<2d$. Constants may depend on the fixed data and bounds for the
+critical coupling on its eventual tail. The absolute value remains after
+time integration. There is no claim about the integral of the absolute cubic,
+an evolved iid endpoint, a broader singular range, or a full limiting law.
+The old energy-floor and full microscopic subcritical conditions remain
+separate from the critical condition used here.
+\end{document}

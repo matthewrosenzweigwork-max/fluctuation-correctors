@@ -49,3 +49,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 proves a genuine actual-noise sufficient power from a smaller gradient weight and the actual divergence occupation. It is not a general lambda-per-vertex rule or a critical truncation theorem. The cubic drift and lower contractions still require explicit independent power/law control.
 
 R13 accepted rate: p=s+2,a=s/p,theta=1-s/d; small-noise cutoff N^-1/(6p^2), radial clipping N^1/(4p), tail weight q_-=1+s/4,r=4(s+2)/(s+4)>2. Decay exponents are theta-a,(2-s)/(12p^2),s/(4p(s+4)),1/(2p),2/p. All are strictly positive for d>=4,0<s<2. This closes noise diagrams only; critical integrated cubic and all-order truncation table remain open.
+
+
+Round014 final gate,2026-09-18 UTC. R14 discharges the lower/scalar contraction contribution at scaled rate N^-kappa in its strict range and identifies exact residual equivalences. This supplies no higher-order order gain, critical diagram truncation, or cubic-smallness theorem; PO004 remains OPEN.
+
+
+Round015 final gate,2026-09-18 UTC. R15 critical integrated U3 smallness is accepted only in its exact range, from the terminal integrated identity and actual source estimate. This does not provide a bound uniform in hierarchy order, an instantaneous cubic estimate or infinite resummation. PO004 remains OPEN.

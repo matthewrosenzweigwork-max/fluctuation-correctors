@@ -1,0 +1,9 @@
+{
+  "inputs": 25,
+  "payload_outputs_including_dossier": 32,
+  "members": 33,
+  "archive_sha256": "eddf35a5a4c8261552a17594c6a8ff5e68fa3c11a7a803a76decf8625447d506",
+  "proof_sha256": "266d8fe2cdbaa4111c3f5b515ed22c791f291508987618de525c49f9c67d3f14",
+  "root_rerun_exact_checks": 57186,
+  "root_rerun_byte_identical": true
+}

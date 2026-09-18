@@ -45,3 +45,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 whole-square control retains the exact literal gradient N^-2[sum G-N A]. After actual expectation its coefficients are2(N-1)^2/N^3 and2/N; physical scaling yields4nu b[(N-1)^2/N^2 EG12^2+||A||2^2]. It bounds the full nonnegative bracket without claiming separate absolute pair/triple/mixed law-error estimates. The evolved cubic and lower drift contractions are unchanged and remain unclosed.
 
 R13 full/noise split retains pair, ordered triple, mixed and row-square terms with exact coefficients and physical2nu Nb. Every radial tail uses its own row; no orthogonality is asserted. THM035's pending lower drift is N^-1 rho[(B Phi)_Haar]+(2N)^-1 integral B Phi, with B Phi=K dot(grad_x-grad_y)Phi. THM036 uses the six-permutation average in C Phi and all ordered U3 background contractions. No counterterm or centering is altered.
+
+
+Round014 final gate,2026-09-18 UTC. R14 AUD047/048 retain both actual lower contractions and no new counterterm: ell=rho[g]/N+c/(2N). C1=(A_a+R Phi)/6,C2=v/3,C0=0; both R slots coefficient one. The repeated ordered pair contributes D2[B Phi]/(2N), with no hidden extra N^-2 term. Accepted rendering erratum changes no coefficient or issued bytes.
+
+
+Round015 final gate,2026-09-18 UTC. R15 retains exact C1=(A_a+R Phi)/6,C2=v/3,C0=0, two response slots and rho[(B Phi)_mu]/N+(integral B Phi)/(2N). The positive heat split retains smooth energy self coefficient1/N and separate labelled-pair1/(N-1); smooth source diagonal is exactly zero only at its observable cutoff. No counterterm introduced or singular diagonal assigned.

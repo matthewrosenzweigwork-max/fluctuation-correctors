@@ -96,3 +96,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 keeps physical2nu Nb, ordered deletion and original mean-field centering. With p=s+2,a=s/p,theta=1-s/d, critical chi=lambda^-1 N^[s(p-d)/(dp)] tends to zero, and a-theta=(s(s+2)-2d)/(dp). Both strict signs are required. No Coulomb/equality limit is silently included; old energy-floor, full-subcritical and finite positive critical powers remain distinct.
 
 R11/R13 gate scaling check: R11 chi=nu N^(2/(s+2)) equals lambda_N^-1 N^[s(s+2-d)/(d(s+2))], so criticality lies in bounded chi through Coulomb, but general full subcriticality does not. R13 covers all bounded nu,d>=4,0<s<2 with sigma^2=N min(1/nu,1). No beta exponent is replaced. THM035 uses b=1,sigma=sqrt(N) at zero noise for deterministic drift; this differs from setting the noise bracket to zero.
+
+
+Round014 final gate,2026-09-18 UTC. R14 accepted: alpha=(s+1-q)/(s+2),kappa=(2q-s)/(2(s+2))>0; sigma integral|ell|<=C sqrt(b)N^-kappa pathwise. Both centered rho[g]/N+c/(2N) and regrouped eta[g]/N-c/(2N) are exact. Critical chi=lambda_N^-1 N^[s(s+2-d)/(d(s+2))] tends to zero in strict sub-Coulombity. Zero noise uses b1 directly. No old-floor/full-subcritical/critical exponent changes.
+
+
+Round015 final gate,2026-09-18 UTC. R15: theta=1-s/d,a=s/(s+2),omega=min(s,d-s-2)/2,e=(s-omega)/(s+2). The scaled critical integrated cubic is bounded by C[N^(1/2-theta)+N^-1/2+N^(e-1/2)+N^((a-theta)/2)], all strictly decaying for d>=4,0<s<2. Source sup_t E|PJ|<=C N^-theta uniformly over bounded nu; scaled absolute time integral<=C sqrt(b)N^(s/d-1/2). Critical nu=lambda_N^-1N^-theta and bounded chi are checked. No exponent or original normalization changes.

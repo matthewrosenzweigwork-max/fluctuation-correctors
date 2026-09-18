@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "input_files": 27,
+  "archive_members": 36,
+  "archive_sha256": "e1c0db90a1660c40ef2c8590f78985ee544e32e56a91e5c72c107643ef77d40d",
+  "proof_sha256": "5ac57cf35afdfa16c8923966f6984be3e18dbc6f70049aaf09acebdababe23cc",
+  "exact_assertions": 6865,
+  "rerun_byte_identical": true,
+  "root_copies_byte_identical": true,
+  "archive_exact_member_set": true,
+  "disposable_rerun": "/private/tmp/hocf-r015-root-ep3se_fl",
+  "scope": "Integrity and exact algebra reproduction; analytic audit pending."
+}

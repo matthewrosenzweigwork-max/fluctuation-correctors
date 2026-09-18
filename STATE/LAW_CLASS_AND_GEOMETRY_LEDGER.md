@@ -67,3 +67,9 @@ R10 gate update: the preceding R10 conditional claims/reductions now also pass t
 R12 controls the whole actual bracket under iid-Haar-prepared homogeneous singular gradient dynamics. Only exchangeability and one-body Haar are used in the configuration-space square inequality; no pair/triple product law or uniform density bound. Geometry d>=3,strict0<s<d-2,bounded chi and bounded diffusivity; actual noise decay is restricted further by the displayed sufficient powers.
 
 R13 actual uniform noise gate applies only to homogeneous unit torus, zero external drift, actual singular particles initially iid Haar independent of Brownian drivers,d>=4,0<s<2 and bounded diffusivity. Actual higher marginals remain correlated. R11 spatial limit includes Coulomb,d>=3, bounded chi, but supplies no interacting-law convergence. No general-background or logarithmic extension.
+
+
+Round014 final gate,2026-09-18 UTC. R14 accepted scope: unit-Haar torus, coefficient-one periodic repulsive Riesz, d>=3,0<s<d-2,3s<2d-2,zero external drift,actual iid-Haar-prepared dynamics,bounded rescaled diffusivity including zero noise. Pointwise lower estimate does not extend the particle-domain theorem or full law to arbitrary preparation; Coulomb and general backgrounds remain excluded.
+
+
+Round015 final gate,2026-09-18 UTC. R15 accepted: homogeneous unit-Haar torus, actual singular gradient particles from iid Haar, d>=4,0<s<2. Source holds for bounded nu including zero; integrated cubic holds at positive finite microscopic critical lambda. No Coulomb,d3,s2,logarithmic,general background/preparation or full limiting-law claim enters. THM038/039 remain separate open scope extensions.

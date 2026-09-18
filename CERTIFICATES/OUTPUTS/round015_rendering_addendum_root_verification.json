@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "archive_members": 7,
+  "archive_sha256": "0ec3040e5a884695f57d7b90885a7b8f4c766b111573219612d55c512b8f15d7",
+  "addendum_sha256": "202d96230dbcd33436b085b65532c34caf9f0463ab0e6ba9ee92a146766aff02",
+  "original_44_files_byte_preserved": true,
+  "form_feed_offsets": [
+    23058,
+    23080,
+    26372
+  ],
+  "new_addendum_control_scan": "PASS",
+  "mathematical_verdict_changed": false,
+  "independence": "Post-seal clarification by original reviewer, not a new gate."
+}

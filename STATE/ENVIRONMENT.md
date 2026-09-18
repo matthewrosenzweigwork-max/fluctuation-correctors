@@ -41,3 +41,14 @@ Round010–012 actual allocation: root gpt-6-astra ultra. Fresh TASK064 clipping
 
 
 Current allocation: root Astra Ultra, TASK069 Max hostile R11, TASK071 Ultra blind R13, TASK072 Max hostile R13. TASK070 R10 and TASK068 R11 blind complete/root-compared; TASK067 R12 hostile sealed, awaiting root inspection. Configured ten workers; actual runtime three workers plus root.
+
+2026-09-18 operational update: configured spawned-worker cap10 excluding root remains in committed .codex/config.toml; runtime4 total permits3 actual workers. Current root gpt-6-astra ultra, active workers TASK075 gpt-6-astra max, TASK076 gpt-6-astra max, TASK077 gpt-6-astra ultra in isolated specified worktrees. Fresh Ultra escalation is for the unexpectedly strong critical cubic/source conjunction, not routine computation. Existing Python3.9.6/TeX Live2026 used; no dependency/global configuration change.
+
+
+20260918T045742Z: TASK075/077 sealed and stopped. TASK078 fresh Astra Max hostile with30-input dossier at R13base; TASK079 fresh Astra Max full-range source construction with9-input dossier at R13base. TASK076 Max remains active sealing its report. Root Ultra, actual3 spawned workers, configured cap10; runtime still4 total.
+
+
+2026-09-18T05:13:39.086257+00:00: TASK076 sealed/stopped; TASK080 fresh Max R16 statement-only reconstruction is active in hocf-r016-source-blind with9-input dossier. TASK078 issued full R15 hostile packet; root found three form-feed formatting bytes and requested only a separate sealed rendering addendum, preserving original bytes. TASK079 remains active finalizing the wider-source candidate. Root final R14 proof/source/payload/build gates pass; publication is being combined with R15 after complete last checks. No runtime or model allocation change.
+
+
+Round015 final gate,2026-09-18 UTC. R15 TASK078 full review/addendum sealed and stopped. R16 TASK079 candidate sealed; root verified/read/copied/reproduced, then launched TASK081/AUD052 fresh Max hostile with11 inputs. TASK080/AUD051 fresh Max R16 blind remains active. TASK082/AUD053 fresh Ultra R17 full statement-only reconstruction active with11 inputs, escalation justified by first proposed critical limiting-law gate and isolated high-depth scrutiny. Actual3 workers plus Ultra root; project cap10 unchanged.

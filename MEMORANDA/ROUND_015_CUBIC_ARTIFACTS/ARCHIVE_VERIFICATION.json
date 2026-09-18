@@ -1,0 +1,29 @@
+{
+  "archive_members": 36,
+  "archive_path": "MEMORANDA/ROUND_015_CUBIC_ARTIFACTS/hocf_r015_cubic_construction_20260918_044719_UTC.zip",
+  "archive_sha256": "e1c0db90a1660c40ef2c8590f78985ee544e32e56a91e5c72c107643ef77d40d",
+  "base": "1df1805ed7cd8f7c295945f99273c8ffdb598e74",
+  "branch": "codex/hocf-r015-cubic",
+  "checks": {
+    "all_input_sha256": true,
+    "base_and_branch": true,
+    "copied_manifest_exact": true,
+    "git_diff_check": true,
+    "output_manifest": true,
+    "zip_crc": true,
+    "zip_every_member_matches_intended_bytes": true,
+    "zip_exact_member_list": true,
+    "zip_no_duplicate_or_unsafe_paths": true,
+    "zip_no_symlinks": true
+  },
+  "evidence_class": "CONSTRUCTION / SELF_CHECKED; independent analytic audit pending",
+  "exact_assertions": 6865,
+  "input_files": 27,
+  "issued_utc": "20260918_044719_UTC",
+  "mutations": "No canonical edit, tracked-base edit, commit, push, install, or child.",
+  "output_files": 7,
+  "output_manifest_sha256": "6fb5c568d280e030d415ca894ca99fc7cd80c52a11e05255cc1b6324fcfb4ca6",
+  "proof_sha256": "5ac57cf35afdfa16c8923966f6984be3e18dbc6f70049aaf09acebdababe23cc",
+  "status": "PASS",
+  "task": "TASK-075"
+}
