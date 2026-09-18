@@ -135,3 +135,8 @@ R21 final whole gate accepted,2026-09-18 UTC. THM043/PO030 is PROVED_CANDIDATE w
 
 
 R22 gate,2026-09-18 UTC: R22 root/blind/hostile diagnostics47437/59033/28182 assertions reproduce byte-identically;12/15/17 mathematical mutations.16/16/19-input25/26/28-member packets verify; seven blind archive rejection controls pass. Reproduction supports but does not replace full analytic audits. Exact acceptance/source/scope: AUDITS/ROUND_022_GATE_INTEGRATION.md.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+R23 root1549 exact checks/24 categories/10 mutations, blind230 rational checks/8 mutations plus a separate binary64 transverse probe, hostile384 mixed exact/numerical checks/22 categories/12 mutations all reproduce saved bytes in fresh code-only directories. Status REPRODUCED; no numerical roundoff enclosure. All8/8/11 inputs and17/20/20 members verify unchanged. Pre-seal failures and assertion-disabled blind inspection are retained and disqualified as final validation. CERTIFICATES/ROUND_023_VERIFICATION.md.

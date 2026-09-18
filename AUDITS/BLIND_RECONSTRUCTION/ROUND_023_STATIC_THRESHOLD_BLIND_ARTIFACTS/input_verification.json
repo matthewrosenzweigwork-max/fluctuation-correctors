@@ -1,0 +1,46 @@
+{
+  "base": "64ac0538dff37a37d0883661b401ad04c311a5e5",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 8174,
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+    },
+    {
+      "path": "MODEL_ORCHESTRATION.md",
+      "bytes": 4350,
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1"
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "bytes": 5031,
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "bytes": 36096,
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be"
+    },
+    {
+      "path": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "bytes": 35077,
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b"
+    },
+    {
+      "path": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "bytes": 34431,
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26"
+    },
+    {
+      "path": "THEOREMS/THM-045_ENERGY_HAAR_INPUT_INSUFFICIENCY_AT_THRESHOLD.md",
+      "bytes": 2117,
+      "sha256": "d90de95162169adf306c422ea38775ca2605ce08e53a41d4242360d47e493f77"
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-100_ROUND023_STATIC_THRESHOLD_BLIND.md",
+      "bytes": 2244,
+      "sha256": "416570a346d90603e521f35c67d10e6d79edf20c8d8aab9e6dbb23a271d30e1b"
+    }
+  ],
+  "all_eight_exact": true
+}

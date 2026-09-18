@@ -116,3 +116,8 @@ R21 final whole gate accepted,2026-09-18 UTC. THM043/PO030 is PROVED_CANDIDATE w
 
 
 R22 gate,2026-09-18 UTC: R22 constructs actual Hilbert paths after the fixed-N singular particle passage. Positive minimum separation is used only for pathwise continuity, never a uniform constant. Countable modes/rational times plus continuous Hilbert versions give one simultaneous event. Exact acceptance/source/scope: AUDITS/ROUND_022_GATE_INTEGRATION.md.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+R23 heat subtraction defines the lattice regular part with integrable endpoint majorants. Moving-scale source limit passes second derivatives after a C delta^2 diagonal-tube estimate, before inserting a/m. Final static densities use collision-free smooth jitter and compact group averaging; no singular diagonal value or stochastic Ito passage is claimed. Original line153 is corrected separately before use.

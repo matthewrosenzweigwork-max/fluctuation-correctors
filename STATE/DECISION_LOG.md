@@ -226,3 +226,13 @@ R21 final whole gate accepted,2026-09-18 UTC. THM043/PO030 is PROVED_CANDIDATE w
 
 
 R22 gate,2026-09-18 UTC: Accept entire THM044 after full fresh AUD063 reconstruction, AUD064 hostile review, complete root comparison and source matching to published4ab1d492. Preserve source conditional histories. Start bounded R24 actual threshold subgate under unchanged mission; R23 hostile reports a non-load-bearing translation-text issue, not yet dispositioned before final report. Exact acceptance/source/scope: AUDITS/ROUND_022_GATE_INTEGRATION.md.
+
+
+R23 AUD066-F01,2026-09-18 UTC: ancillary false line153 support-translation assertion found before theorem promotion. Original sealed proof preserved. Separate AUDITS/ROUND_023_SUPPORT_TRANSLATION_ERRATUM.md restricts final-support inheritance to separation/energy and keeps source-coordinate closeness pretranslation. Entire static theorem remains supported by the already present amplitude argument; independent blind/root integration pending. No promoted theorem retraction or scientific scope change.
+
+
+## R23 static threshold gate — 2026-09-18 UTC
+
+THM045/PO032 is accepted after whole isolated reconstruction AUD065 and separate hostile review AUD066. Exact scope and eleven-part comparison: AUDITS/ROUND_023_GATE_INTEGRATION.md and ROUND_023_RECONSTRUCTION_COMPARISON.md. Bounded smooth exchangeable common-translation-invariant static densities at d4,s2, N=m^4 have exact Haar one-body marginals, support separation c/m and pointwise H_N<=-c m^2, yet sqrt(N) E|P[J_cos(4pi x1)]| tends to16pi^3a^2>0. No uniform N-body density bound or actual-evolved-law identification is asserted. This closes the static insufficiency claim only; THM046/PO033 actual integrated critical source and the flagships remain open.
+
+Root proof requires the separate AUD066-F01 support-translation erratum. The original claim that all three support-neighborhood inequalities survive translation is false; only separation and energy do. The pretranslation coordinate estimate already controls the invariant source amplitude and proves the same theorem. No theorem was promoted before the finding, no theorem scope changed and no issued evidence was edited. Root assigns no independent status to itself.

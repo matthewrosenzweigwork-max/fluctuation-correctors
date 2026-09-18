@@ -1,0 +1,5 @@
+# R23 root static-threshold packet
+
+Complete exposed root construction of THM045: static smooth exchangeable translation-invariant laws with exact Haar one-body marginal and negative energy do not force scaled absolute source decay at d4,s2. This is not an actual iid dynamical counterexample. Fresh whole blind/hostile gates remain pending.
+
+The full memo copy, eight exact source inputs, source/exposure records, new exact diagnostic and results, portable verifier and manifests are included. Diagnostic1549 assertions/24 categories/10 detecting mutations supports algebra only. Reproduce by running round023_static_checks.py in a fresh temporary directory and comparing its JSON/stdout with EXACT_RESULTS.json. It writes only stdout and needs the standard library. Run verify_packet.py from any directory to check every source/output/archive member and byte, standalone proof identity and nine unsafe-name controls without extraction. The verifier is adapted transparently from root R22, not an independent checker of analysis. All issued bytes are read-only; corrections require a new artifact.

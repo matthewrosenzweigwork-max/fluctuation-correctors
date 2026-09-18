@@ -1,0 +1,9 @@
+{
+  "archive_members": 17,
+  "archive_name": "ROUND_023_ROOT_STATIC_THRESHOLD_20260918T073042Z.zip",
+  "archive_sha256": "a7c6ddf00043fa4df3fc702dccfa195704a4e27973abc9fed432050c99e38a23",
+  "output_manifest_sha256": "e9910a96a4401fb7b3f962cbbd3ae6aed6127e4cbf9f4fd7d0b2401899005f8e",
+  "proof_sha256": "4cf376ce886714eb2de2d1c100d10c1e5b29db4510bd5684cca60f4d9af51855",
+  "status": "SELF_CHECKED; fresh axes pending; static law only",
+  "utc": "20260918T073042Z"
+}

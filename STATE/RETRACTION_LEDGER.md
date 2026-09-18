@@ -36,3 +36,6 @@ No promoted campaign theorem was retracted. OBS-001 and OBS-002 were provisional
 - Independent finding: fresh hostile reviewer /root/r003_fresh_hostile. Preserve original hash 91ec6efbfb51b8eb1a4f76cd2beddf8d12031e424b1f95a01ce8e939cf1ede2a and its final audit.
 - Correction: AUDITS/ROUND_003_DIFFUSION_RESCALING_ERRATUM.md restricts rate-dependent alternatives to d>s+2 and provides explicit sequences. Chain-rule identity and critical classification survive unchanged.
 - Downstream: next local diffusion task must use the corrected fixed-parameter trichotomy. No THM015–019 or previously audited theorem changes. This unpushed candidate is corrected before research publication; no separate outside communication is needed.
+
+
+R23 AUD066-F01,2026-09-18 UTC: ancillary false line153 support-translation assertion found before theorem promotion. Original sealed proof preserved. Separate AUDITS/ROUND_023_SUPPORT_TRANSLATION_ERRATUM.md restricts final-support inheritance to separation/energy and keeps source-coordinate closeness pretranslation. Entire static theorem remains supported by the already present amplitude argument; independent blind/root integration pending. No promoted theorem retraction or scientific scope change.

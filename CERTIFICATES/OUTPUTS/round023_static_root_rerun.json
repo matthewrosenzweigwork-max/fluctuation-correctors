@@ -1,0 +1,84 @@
+{
+  "byte_identical": true,
+  "diagnostic": {
+    "arithmetic": "Gaussian rational pairs; no floating point, randomness, external dependencies or tolerances.",
+    "assertions": 1549,
+    "categories": {
+      "absolute_translation_limit_constant": 1,
+      "coefficient_one_physical_source": 1,
+      "continuum_bilinear_matches_pullback": 1,
+      "detecting_mutation": 10,
+      "energy_grid_self_subtraction": 95,
+      "exact_grid_selection": 570,
+      "exp_three_lower_bound": 1,
+      "grid_energy_normalization": 28,
+      "moving_grid_low_derivative_selection": 180,
+      "ordered_half_count": 28,
+      "particle_threshold_scale": 95,
+      "scaled_jitter_error": 95,
+      "sin_cos_triple_integral": 1,
+      "small_deformation_energy_margin": 95,
+      "smooth_probe_first_order": 1,
+      "smooth_probe_second_coefficient": 1,
+      "smooth_probe_third_coefficient": 1,
+      "smooth_probe_zero_order": 1,
+      "theta_fourth_minus_one": 1,
+      "theta_geometric_exponent": 99,
+      "theta_power_integer_test": 1,
+      "theta_rational_majorant": 1,
+      "translation_quadratic_mean": 121,
+      "translation_signed_mean": 121
+    },
+    "code_sha256": "1669ab5b028694322c6da8e6bb22d01ec1273ad166d6bbb277a5738d5ee3edd2",
+    "evidence": "Exact finite Fourier, rational and coefficient checks only; not analytic certification or actual iid dynamics.",
+    "mutation_count": 10,
+    "mutations": {
+      "assert_threshold_source_power_negative": {
+        "correct": "0",
+        "wrong": "-1/6"
+      },
+      "double_grid_energy": {
+        "correct": "12",
+        "wrong": "24"
+      },
+      "infer_absolute_decay_from_signed_mean": {
+        "correct": "16",
+        "wrong": "0"
+      },
+      "insufficient_jitter_accuracy": {
+        "correct": "1/25",
+        "wrong": "1"
+      },
+      "omit_grid_regular_self_subtraction": {
+        "correct": "12",
+        "wrong": "25/2"
+      },
+      "omit_one_physical_derivative_factor": {
+        "correct": "-8",
+        "wrong": "-2"
+      },
+      "remove_source_half": {
+        "correct": "-1/2",
+        "wrong": "-1"
+      },
+      "reverse_force_sign": {
+        "correct": "-8",
+        "wrong": "8"
+      },
+      "wrong_density_first_variation": {
+        "correct": "-8",
+        "wrong": "-2"
+      },
+      "wrong_particle_square_root": {
+        "correct": "25",
+        "wrong": "625"
+      }
+    },
+    "normalized_smooth_probe_second_coefficient": "-1/2",
+    "physical_absolute_limit_div_pi3_a2": 16,
+    "physical_source_coefficient_div_pi4": "-8",
+    "status": "PASS"
+  },
+  "fresh_temporary_directory": "/private/tmp/hocf-r023-root-8ny0doxt",
+  "status": "PASS"
+}

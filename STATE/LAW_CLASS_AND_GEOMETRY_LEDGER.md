@@ -104,3 +104,8 @@ R21 final whole gate accepted,2026-09-18 UTC. THM043/PO030 is PROVED_CANDIDATE w
 
 
 R22 gate,2026-09-18 UTC: R22 is actual homogeneous iid-Haar-prepared periodic gradient dynamics only, exact one-body Haar centering. Pending R23 static laws cannot negate new R24 actual iid-flow assertion. Exact acceptance/source/scope: AUDITS/ROUND_022_GATE_INTEGRATION.md.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+R23 accepted static d4 Coulomb law is a jittered coherently deformed grid, common-Haar translated and label-permuted. It is bounded smooth at each N and has strict negative full-support energy, separation and exact Haar one-body marginals. It is not iid or a law identified along the actual singular evolution. THM046 remains an actual dynamic question.

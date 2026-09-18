@@ -56,3 +56,8 @@ R9 full inverse energy route passes its exact homogeneous reference-law gate. Co
 
 
 R10 accepted exact reduction: complete THM030/031 pass AUD038/039/042. Actual clipped and smoothed approximations vanish, and original singular-noise smallness is equivalent to their actual complementary tail. Positive fixed-time tail smallness remains open. R12 THM033 and R13 THM034 target sufficient subranges using actual Laplacian occupation; their remaining gates must finish before those ranges are accepted. R11 weighted spatial convergence is a separate module and does not itself transfer to the interacting law. No new obstruction to full-inverse existence or the scientific mission is claimed.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+R23 static energy-only threshold extension is ruled out in its exact class by accepted THM045. R24 actual dynamic construction TASK102, independent actual-law BBGKY/falsification TASK103 and distinct Coulomb trace source audit TASK104 remain active in separate worktrees. Preliminary lower-contraction closure is unsealed and not promoted; true integrated cubic/residual-martingale cancellation remains open.

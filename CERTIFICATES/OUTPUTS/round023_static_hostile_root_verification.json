@@ -1,0 +1,19 @@
+{
+  "archive_bytes": 91590,
+  "archive_extracted": false,
+  "archive_members": 20,
+  "archive_sha256": "4041c8547f566951b134b20b317ddb042ac885fdc11f9087c70b36180457c15d",
+  "archive_uncompressed_bytes": 215009,
+  "artifact_files_including_manifest": 20,
+  "audit": "AUD066",
+  "byte_comparison": "every member equals its corresponding disk bytes",
+  "exact_input_count": 11,
+  "input_manifest_sha256": "5d586a805f690d07113b351da22ae08f29f7b65d96dfb7e60987c874380744ba",
+  "output_manifest_sha256": "c29c371891c844d65ecdc0c90f000f073f0ffe704def69e5bc05b3354d4fcb87",
+  "output_payload_files": 19,
+  "read_only_checked": true,
+  "read_only_paths": 30,
+  "safe_paths_and_types": true,
+  "standalone_review_sha256": "c1eb5bb0a05202d1bd7147d1a5a8d0be30b7780dcf49cafc004a39b82bcdbe5f",
+  "status": "PASS"
+}

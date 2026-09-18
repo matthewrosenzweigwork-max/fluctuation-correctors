@@ -1,0 +1,9 @@
+{
+  "returncode": 0,
+  "temporary_code_only_directory": "/private/tmp/hocf-r023-blind-rerun-bohs87h_",
+  "byte_identical": true,
+  "saved_sha256": "c6956ef81cfebcc9599376ed88ea9587793f9262549e6c16757d8a912d943b5a",
+  "fresh_sha256": "c6956ef81cfebcc9599376ed88ea9587793f9262549e6c16757d8a912d943b5a",
+  "stdout": "{\n  \"exact\": \"PASS\",\n  \"exact_assertions\": 230,\n  \"detected_mutations\": 8,\n  \"approximate\": \"PASS_SUPPORTING_ONLY\",\n  \"last_row\": {\n    \"m\": 192,\n    \"N\": 1358954496,\n    \"a\": 0.05,\n    \"m_squared_times_literal_source_at_theta_zero\": -1.9489924919443296,\n    \"target_at_theta_zero\": -1.9481818206800483,\n    \"absolute_error\": 0.0008106712642812486,\n    \"wrong_without_background\": -3.89717257393798,\n    \"H_N_over_m_squared\": -2.747838338197756,\n    \"minimum_first_coordinate_gap_times_m\": 0.9983640458588923,\n    \"scaled_source_analytic_cube_tail_bound\": 1.4318847448101402e-07\n  }\n}\n",
+  "stderr": ""
+}

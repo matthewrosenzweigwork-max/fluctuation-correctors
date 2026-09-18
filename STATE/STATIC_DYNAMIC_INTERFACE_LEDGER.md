@@ -64,3 +64,8 @@ THM040/PO027 and the entire THM041/PO028 conjunction now pass both fresh indepen
 
 
 2026-09-18 R21 acceptance: R21 uses only the actual iid-Haar dynamics and accepted R8 domain, R5 initial law, R12 whole bracket, R14 lower terms and R16 source; no positive-time product law or static-to-dynamic transfer. R23 pending static energy/Haar obstruction cannot refute actual iid-flow threshold cancellation. See AUDITS/ROUND_021_GATE_INTEGRATION.md.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+THM045 disproves sufficiency of the specified static energy/Haar/separation inputs alone for threshold instantaneous absolute source decay. It does not imply failure of the integrated source or actual iid-flow fluctuation law. R24 must exploit additional actual correlations or corrector cancellation. Exact boundary and F01 correction: AUDITS/ROUND_023_GATE_INTEGRATION.md.

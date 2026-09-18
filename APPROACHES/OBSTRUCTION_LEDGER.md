@@ -84,3 +84,8 @@ OBS013 final R4 gate: fresh AUD025 now closes the withheld-proof reconstruction,
 
 
 R10 accepted exact reduction: complete THM030/031 pass AUD038/039/042. Actual clipped and smoothed approximations vanish, and original singular-noise smallness is equivalent to their actual complementary tail. Positive fixed-time tail smallness remains open. R12 THM033 and R13 THM034 target sufficient subranges using actual Laplacian occupation; their remaining gates must finish before those ranges are accepted. R11 weighted spatial convergence is a separate module and does not itself transfer to the interacting law. No new obstruction to full-inverse existence or the scientific mission is claimed.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+R23/THM045 is an accepted explicit counterexample to the implication from the stated energy/Haar/separation static class to threshold instantaneous absolute quadratic-source decay. It is not a counterexample to actual iid dynamics or integrated cancellation. Full construction, independent gates and corrected root proof: AUDITS/ROUND_023_GATE_INTEGRATION.md.

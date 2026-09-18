@@ -138,3 +138,8 @@ R21 final whole gate accepted,2026-09-18 UTC. THM043/PO030 is PROVED_CANDIDATE w
 
 
 R22 gate,2026-09-18 UTC: R22 retains real/complex pair normalization and full initial/thermal covariance. Source scaled exponent s/d-1/2 remains strictly negative; r threshold is sufficient, not optimal. R24 freezes d4,s2,lambda=beta N^-1/2 critical, where the source exponent is exactly zero and R16 alone gives O(1). Exact acceptance/source/scope: AUDITS/ROUND_022_GATE_INTEGRATION.md.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+R23 fixes d4,s2, g_hat(k)=|k|^-2 and div K=4pi^2(delta_0-dx). Exact ordered pair factor1/(2N^2), original row+4pi^2 eta[h], deformation a/m, N=m^4 and translation factor2/pi yield the positive absolute limit16pi^3a^2. Signed expectation remains zero. No beta/nu or any of the three frozen regime exponents changes.

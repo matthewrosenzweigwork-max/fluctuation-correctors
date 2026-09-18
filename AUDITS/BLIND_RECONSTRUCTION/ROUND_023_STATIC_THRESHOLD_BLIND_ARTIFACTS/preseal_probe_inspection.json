@@ -1,0 +1,207 @@
+{
+  "approximate": {
+    "arithmetic": "Python binary64; deterministic, no random seed",
+    "expected_absolute_limit_for_a": 1.2402510672119929,
+    "robin_approximation": -5.545177444479562,
+    "robin_four_dimensional_cube_cutoff": 4,
+    "rows": [
+      {
+        "H_N_over_m_squared": -2.703955195908991,
+        "N": 4096,
+        "a": 0.05,
+        "absolute_error": 0.4090222891023836,
+        "m": 8,
+        "m_squared_times_literal_source_at_theta_zero": -2.357204109782432,
+        "minimum_first_coordinate_gap_times_m": 0.9646446609406727,
+        "scaled_source_analytic_cube_tail_bound": 2.4859110152953823e-10,
+        "target_at_theta_zero": -1.9481818206800483,
+        "wrong_without_background": -4.304384689277708
+      },
+      {
+        "H_N_over_m_squared": -2.728369441885795,
+        "N": 20736,
+        "a": 0.05,
+        "absolute_error": 0.19571337357410723,
+        "m": 12,
+        "m_squared_times_literal_source_at_theta_zero": -2.1438951942541555,
+        "minimum_first_coordinate_gap_times_m": 0.9750000000000005,
+        "scaled_source_analytic_cube_tail_bound": 5.59329978441461e-10,
+        "target_at_theta_zero": -1.9481818206800483,
+        "wrong_without_background": -4.091631965474995
+      },
+      {
+        "H_N_over_m_squared": -2.736918963667775,
+        "N": 65536,
+        "a": 0.05,
+        "absolute_error": 0.11296271554420567,
+        "m": 16,
+        "m_squared_times_literal_source_at_theta_zero": -2.061144536224254,
+        "minimum_first_coordinate_gap_times_m": 0.9808658283817451,
+        "scaled_source_analytic_cube_tail_bound": 9.94364406118153e-10,
+        "target_at_theta_zero": -1.9481818206800483,
+        "wrong_without_background": -4.009076007198736
+      },
+      {
+        "H_N_over_m_squared": -2.7430272232097135,
+        "N": 331776,
+        "a": 0.05,
+        "absolute_error": 0.05113748043025579,
+        "m": 24,
+        "m_squared_times_literal_source_at_theta_zero": -1.999319301110304,
+        "minimum_first_coordinate_gap_times_m": 0.9870590477448742,
+        "scaled_source_analytic_cube_tail_bound": 2.237319913765844e-09,
+        "target_at_theta_zero": -1.9481818206800483,
+        "wrong_without_background": -3.9473898522762125
+      },
+      {
+        "H_N_over_m_squared": -2.745165402679356,
+        "N": 1048576,
+        "a": 0.05,
+        "absolute_error": 0.02895048195382266,
+        "m": 32,
+        "m_squared_times_literal_source_at_theta_zero": -1.977132302633871,
+        "minimum_first_coordinate_gap_times_m": 0.9902454838991943,
+        "scaled_source_analytic_cube_tail_bound": 3.977457624472612e-09,
+        "target_at_theta_zero": -1.9481818206800483,
+        "wrong_without_background": -3.9252515336231046
+      },
+      {
+        "H_N_over_m_squared": -2.7466927656391817,
+        "N": 5308416,
+        "a": 0.05,
+        "absolute_error": 0.012926130191413199,
+        "m": 48,
+        "m_squared_times_literal_source_at_theta_zero": -1.9611079508714615,
+        "minimum_first_coordinate_gap_times_m": 0.9934736903889974,
+        "scaled_source_analytic_cube_tail_bound": 8.949279655063376e-09,
+        "target_at_theta_zero": -1.9481818206800483,
+        "wrong_without_background": -3.909261953725998
+      },
+      {
+        "H_N_over_m_squared": -2.7472273607935076,
+        "N": 16777216,
+        "a": 0.05,
+        "absolute_error": 0.007282647777901774,
+        "m": 64,
+        "m_squared_times_literal_source_at_theta_zero": -1.95546446845795,
+        "minimum_first_coordinate_gap_times_m": 0.9950991429835199,
+        "scaled_source_analytic_cube_tail_bound": 1.5909830497890447e-08,
+        "target_at_theta_zero": -1.9481818206800483,
+        "wrong_without_background": -3.903630641571736
+      },
+      {
+        "H_N_over_m_squared": -2.7476092202316167,
+        "N": 84934656,
+        "a": 0.05,
+        "absolute_error": 0.0032404514380137694,
+        "m": 96,
+        "m_squared_times_literal_source_at_theta_zero": -1.951422272118062,
+        "minimum_first_coordinate_gap_times_m": 0.9967298435384926,
+        "scaled_source_analytic_cube_tail_bound": 3.5797118620253505e-08,
+        "target_at_theta_zero": -1.9481818206800483,
+        "wrong_without_background": -3.8995971382913157
+      }
+    ],
+    "status": "PASS_SUPPORTING_ONLY",
+    "tail_scope": "Analytic truncation bound only; floating-roundoff is not interval certified.",
+    "transverse_cube_cutoff": 12
+  },
+  "audit": "AUD065 / TASK100",
+  "diagnostic": "new independent exact Fourier/finite-label and transverse singular probes",
+  "epistemic_scope": "Finite diagnostics support the analytic proof and do not certify it.",
+  "exact": {
+    "arithmetic": "fractions.Fraction Gaussian rationals; no tolerance",
+    "density_coefficient": [
+      {
+        "literal_source": {
+          "imag": "0",
+          "real": "-1/2"
+        },
+        "normalization": "coefficient of (2*pi)^4*t^2 at theta=0",
+        "quadratic": {
+          "imag": "0",
+          "real": "-1/2"
+        },
+        "raw_pair": {
+          "imag": "0",
+          "real": "-1"
+        },
+        "subtracted_background": {
+          "imag": "0",
+          "real": "-1/2"
+        }
+      }
+    ],
+    "exact_assertions": 230,
+    "finite_label_cases": 28,
+    "mutations": {
+      "divide_energy_self_by_N": {
+        "cases": 28,
+        "detected": true,
+        "detecting_cases": 28
+      },
+      "halve_kernel_and_background": {
+        "correct": {
+          "imag": "0",
+          "real": "-1/2"
+        },
+        "detected": true,
+        "wrong": {
+          "imag": "0",
+          "real": "-1/4"
+        }
+      },
+      "omit_energy_self": {
+        "cases": 28,
+        "detected": true,
+        "detecting_cases": 28
+      },
+      "omit_original_background": {
+        "correct": {
+          "imag": "0",
+          "real": "-1/2"
+        },
+        "detected": true,
+        "wrong": {
+          "imag": "0",
+          "real": "-1"
+        }
+      },
+      "omit_pair_factor_one_half": {
+        "correct": {
+          "imag": "0",
+          "real": "-1/2"
+        },
+        "detected": true,
+        "wrong": {
+          "imag": "0",
+          "real": "-3/2"
+        }
+      },
+      "replace_constant_pair_fraction_by_one": {
+        "cases": 28,
+        "detected": true,
+        "detecting_cases": 28
+      },
+      "replace_source_N_squared_by_falling_factorial": {
+        "cases": 28,
+        "detected": true,
+        "detecting_cases": 14
+      },
+      "reverse_background_sign": {
+        "correct": {
+          "imag": "0",
+          "real": "-1/2"
+        },
+        "detected": true,
+        "wrong": {
+          "imag": "0",
+          "real": "-3/2"
+        }
+      }
+    },
+    "status": "PASS"
+  },
+  "python": "3.9.6",
+  "script_sha256": "7a8fb4908610f14dacaa636c96e5108fa7d2bd841f26274598f648031bf6fa63"
+}

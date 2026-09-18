@@ -1,0 +1,73 @@
+{
+  "audit": "AUD066",
+  "base": "64ac0538dff37a37d0883661b401ad04c311a5e5",
+  "branch": "codex/hocf-r023-static-threshold-hostile",
+  "canonical_or_source_edits": false,
+  "commit_or_push": false,
+  "diagnostic_command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r023-static-threshold-hostile/AUDITS/HOSTILE/ROUND_023_STATIC_THRESHOLD_HOSTILE_ARTIFACTS/hostile_diagnostic.py",
+    "--verify"
+  ],
+  "diagnostic_recomputed_without_write": {
+    "assertions": 384,
+    "categories": 22,
+    "detected_mutations": 12,
+    "h0": -5.545177444479562,
+    "scaled_sources": [
+      [
+        5,
+        -2.890456936265842
+      ],
+      [
+        7,
+        -2.4610686058549547
+      ],
+      [
+        9,
+        -2.280509646257444
+      ],
+      [
+        13,
+        -2.1164035357163082
+      ],
+      [
+        17,
+        -2.0486247356263365
+      ]
+    ],
+    "status": "PASS",
+    "target": -1.9481818206800483
+  },
+  "issued_utc": "2026-09-18T07:54:24.028884+00:00",
+  "packet_command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r023-static-threshold-hostile/AUDITS/HOSTILE/ROUND_023_STATIC_THRESHOLD_HOSTILE_ARTIFACTS/verify_packet.py"
+  ],
+  "packet_verification": {
+    "archive_bytes": 91590,
+    "archive_extracted": false,
+    "archive_members": 20,
+    "archive_sha256": "4041c8547f566951b134b20b317ddb042ac885fdc11f9087c70b36180457c15d",
+    "archive_uncompressed_bytes": 215009,
+    "artifact_files_including_manifest": 20,
+    "audit": "AUD066",
+    "byte_comparison": "every member equals its corresponding disk bytes",
+    "exact_input_count": 11,
+    "input_manifest_sha256": "5d586a805f690d07113b351da22ae08f29f7b65d96dfb7e60987c874380744ba",
+    "output_manifest_sha256": "c29c371891c844d65ecdc0c90f000f073f0ffe704def69e5bc05b3354d4fcb87",
+    "output_payload_files": 19,
+    "read_only_checked": true,
+    "read_only_paths": 30,
+    "safe_paths_and_types": true,
+    "standalone_review_sha256": "c1eb5bb0a05202d1bd7147d1a5a8d0be30b7780dcf49cafc004a39b82bcdbe5f",
+    "status": "PASS"
+  },
+  "proof_text_verdict": "NOT CLEAN: AUD066-F01 requires separately issued non-load-bearing correction",
+  "python": "3.9.6",
+  "receipt_scope": "External final verification receipt; intentionally outside archive to avoid circular self-hash.",
+  "task": "TASK101",
+  "whole_theorem_verdict": "VERIFIED",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r023-static-threshold-hostile",
+  "worktree_overlay_hashes_rechecked": 11
+}

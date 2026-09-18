@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,hyperref}
+\newcommand{\E}{\mathbb E}
+\begin{document}
+\begin{center}
+{\large Energy and Haar centering at the Coulomb fluctuation threshold}\\[4pt]
+HOCF--RIESZ, Round 023 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Scope and status.}
+This is a static-law obstruction to an estimate based only on energy and one-body Haar centering. It is not a counterexample to the actual iid-prepared dynamics or to a time-integrated source estimate. The entire static conjunction has passed fresh isolated reconstruction AUD065 and separate hostile review AUD066, with complete root comparison and exact source matching. Mathematical use of the root proof requires the separate support-translation erratum AUD066-F01. The sealed original proof is preserved; the correction below is explicit.
+
+On the unit four-torus use the coefficient-one mean-zero Coulomb kernel,
+\[
+ \widehat g(k)=|k|^{-2}\quad(k\ne0),\qquad K=-\nabla g,
+ \qquad \operatorname{div}K=4\pi^2(\delta_0-dx).
+\]
+Set $h(x)=\cos(4\pi x_1)$, $J_h(x,y)=K(x-y)\cdot(\nabla h(x)-\nabla h(y))$ and
+\[
+ H_N(x)=\frac1N\sum_{i<j}g(x_i-x_j),\qquad
+ P_N[J_h]=\frac1{2N^2}\sum_{i\ne j}J_h(x_i,x_j)+4\pi^2\eta_N[h].
+\]
+The last term is the original Haar row subtraction: its row is $-4\pi^2h$ and its double Haar mean is zero. The empirical diagonal remains deleted.
+
+\noindent\textbf{The static assertion.}
+There are fixed $a,c>0$ and $m_0$ such that, for every integer $m\ge m_0$ and $N=m^4$, a bounded smooth probability density $F_N$ exists on the full labelled configuration torus. Its law is exchangeable and invariant under common translations, with exactly Haar one-body marginals. Every configuration in its support satisfies
+\[
+ \min_{i\ne j}\operatorname{dist}(x_i,x_j)\ge c/m,
+ \qquad H_N(x)\le-cm^2,
+\]
+yet
+\[
+ \sqrt N\,\E_{F_N}|P_N[J_h]|\longrightarrow16\pi^3a^2>0.
+\]
+No bound on $F_N$ uniform in $N$ is asserted. The strict negative energy is of the sharp floor order. Thus these static hypotheses alone cannot imply vanishing of this instantaneous absolute source at the fluctuation scale.
+
+\noindent\textbf{The negative grid energy.}
+The exact heat representation is $g=4\pi^2\int_0^\infty(p_t-1)\,dt$. Write $g(x)=|x|^{-2}+H(x)$ near zero and $H_0=H(0)$. Removing the central Euclidean Gaussian and using the two equivalent heat-kernel representations gives
+\[
+ H_0=2\pi\left[\sum_{k\in\mathbb Z^4\setminus\{0\}}
+ \frac{e^{-\pi|k|^2}}{\pi|k|^2}-1\right]<-5\pi/3.
+\]
+For example, the elementary bounds $e^{-\pi}<1/20$, $e^{-3\pi}<1/8000$ and $n^2\ge1+3(n-1)$ give
+\[
+ \sum_{n\in\mathbb Z}e^{-\pi n^2}<8799/7999,
+ \qquad (8799/7999)^4<3/2.
+\]
+The positive sum in the preceding formula is then less than $1/(2\pi)<1/6$. The heat subtraction has integrable majorants at both endpoints; the formula does not use an unverified lattice-energy value.
+
+For $G_m=(m^{-1}\mathbb Z/\mathbb Z)^4$, exact Fourier filtering gives
+\[
+ \sum_{y\in G_m}g(x-y)=m^2g(mx).
+\]
+Subtracting the identical coefficient-one singularity at $x=0$ yields
+\[
+ \sum_{y\in G_m\setminus\{0\}}g(y)=(m^2-1)H_0,
+ \qquad H_N(G_m)=\tfrac12(m^2-1)H_0.
+\]
+Every grid particle has zero force by oddness, including order-two displacements. This proves the vanishing first variation of energy, without asserting energy minimality.
+
+\noindent\textbf{A coherent small deformation.}
+Let $v(x)=\sin(2\pi x_1)e_1$ and $T_\varepsilon x=x+\varepsilon v(x)$. For a fixed sufficiently small $\varepsilon_0$, these maps are uniformly bi-Lipschitz diffeomorphisms. The differentiated pair potential satisfies
+\[
+ |\partial_\varepsilon^2g(T_\varepsilon x-T_\varepsilon y)|
+ \le C(1+\operatorname{dist}(x,y)^{-2}).
+\]
+The four-dimensional grid shell count gives a uniform normalized sum of this bound and a diagonal-tube remainder at most $C\delta^2$. Hence $|\partial_\varepsilon^2H_N(T_\varepsilon G_m)|\le C_EN$. Choosing one fixed sufficiently small $a>0$ and setting $\varepsilon=a/m$ preserves separation at least $3/(4m)$ and gives $H_N\le-c_Em^2$.
+
+Put $F_m(\varepsilon)=P_N[J_h](T_\varepsilon G_m)$. Each derivative through order three of the pulled-back source has the same integrable upper bound $C(1+\operatorname{dist}^{-2})$. Each derivative falling on the force costs one distance power, canceled by the corresponding displacement difference; the test-gradient difference supplies one further distance power. Thus $\sup_m\|F_m'''\|_\infty<\infty$ on the fixed deformation interval.
+
+For $m\ge5$, grid Fourier selection gives $F_m(0)=F'_m(0)=0$ exactly. The source test has frequencies $\pm2e_1$, and its first variation with $v$ has total frequencies $\pm e_1,\pm3e_1$, none in $m\mathbb Z^4$. This argument includes the Haar row. Removing a diagonal tube, passing the smooth product-grid Riemann sum, then shrinking the tube proves
+\[
+ F_m''(0)\longrightarrow F_\infty''(0).
+\]
+The continuum pushforward has density difference
+\[
+ \rho_\varepsilon=(T_\varepsilon)_\#dx-dx
+ =-2\pi\varepsilon\cos(2\pi x_1)+O(\varepsilon^2)
+\]
+in every fixed smooth norm. Its exact centered source is
+\[
+ F_\infty(\varepsilon)=\int\rho_\varepsilon\nabla h\cdot(K*\rho_\varepsilon)
+ =-8\pi^4\varepsilon^2+O(\varepsilon^3).
+\]
+The convolution is bounded on bounded densities because $K\in L^1$. Uniform Taylor remainder now gives
+\[
+ m^2F_m(a/m)=\frac{a^2}{2}F_m''(0)+O(a^3/m)
+ \longrightarrow-8\pi^4a^2.
+\]
+The derivative-level passage is essential; zeroth-order Riemann convergence alone would not control this moving-scale error.
+
+\newpage
+\noindent\textbf{Common translation, smoothing and the erratum.}
+For a collision-free configuration write $C=P_N[J_{\cos(4\pi x_1)}]$ and $S=P_N[J_{\sin(4\pi x_1)}]$. Common Haar translation $Y$ rotates this pair, and exactly
+\[
+ \E_Y|P_N[J_h](x+Y)|=\frac2\pi\sqrt{C^2+S^2}.
+\]
+The deformed grid is invariant under inversion, so $S=0$ there. Its signed translation average is zero, while its scaled absolute average has the stated positive limit.
+
+At each fixed $m$, continuity on a compact collision-free product neighborhood permits independent smooth jitters of sufficiently small radius so that, \emph{before translation},
+\[
+ \min_{i\ne j}\operatorname{dist}(x_i,x_j)\ge1/(2m),\quad
+ H_N\le-(c_E/2)m^2,\quad |C-F_m(a/m)|+|S|\le m^{-3}.
+\]
+Apply common Haar translation and a uniform label permutation to the product bump density. Compact group averaging preserves bounded smoothness at each fixed $N$, gives the required symmetries and exact Haar one-body marginals, and preserves the first two support inequalities, including closure points.
+
+The third inequality is a pretranslation coordinate estimate. It is \emph{not} invariant under translations. This explicitly corrects the false ancillary sentence at line 153 of the original sealed proof. A translation with $Y_1=1/8$ rotates $(F_m,0)$ to $(0,F_m)$ up to sign, and makes the claimed coordinate error $2|F_m|$, of positive order $m^{-2}$ rather than $m^{-3}$.
+
+The already established amplitude argument uses only the pretranslation estimate:
+\[
+ \left|\sqrt{C^2+S^2}-|F_m(a/m)|\right|\le m^{-3}.
+\]
+Its effect on the translated absolute moment is at most $(2/\pi)m^{-3}$ and vanishes after multiplication by $m^2$. Thus the theorem's support conditions and exact limiting constant do not require the false ancillary assertion. The original proof, independent finding and separate erratum are all retained.
+
+\noindent\textbf{Dynamic boundary.}
+These laws are not claimed to arise from iid Haar under the singular particle evolution. The result does not decide the actual critical four-dimensional Coulomb integrated-source assertion. That remains a distinct dynamic correlation or corrector obligation; the three frozen temperature regimes and the wider campaign mission are unchanged.
+\end{document}

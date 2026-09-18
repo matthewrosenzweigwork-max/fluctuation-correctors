@@ -73,3 +73,8 @@ Current allocation 2026-09-18T07:44:25.653678+00:00: root Astra Ultra; fresh Ast
 
 
 R22 accepted; current Ultra root and Max TASK100/101/102 active. TASK10320-input independent actual-law falsification dossier prepared, not dispatched. Next freeTASK104,AUD067,THM047,PO034. R23 hostile reports a non-load-bearing false all-(6.1)-translation sentence; final audit and root disposition pending.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+R23 accepted; R24 current allocation root Astra Ultra with three fresh Astra Max workers TASK102/103/104. Repository cap remains10 workers excluding root; initialized tool runtime is still3 workers plus root. No unsupported hot reload, bypass or claim of ten active workers. R22 last published aadf9694d4183e60fb65e08dc962a07dac4df3e2; R23 ordinary publication follows final reviewed gate checks.

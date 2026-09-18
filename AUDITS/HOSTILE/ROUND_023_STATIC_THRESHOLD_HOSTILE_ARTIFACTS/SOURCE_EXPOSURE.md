@@ -1,0 +1,15 @@
+# Source and exposure record — AUD066
+
+The exact authoritative record is the eleven-entry `INPUT_SHA256SUMS.txt`. Each file was read in full and copied byte-for-byte to `INPUTS/`; the full source-role and line-location table is in `REVIEW.md`, Section 2. Input copies in this packet preserve the original R23 line-153 false sentence.
+
+First reads: TASK101 and its prescribed input manifest, before any other repository read. Worktree creation: `codex/hocf-r023-static-threshold-hostile` at the required path from published base `64ac0538dff37a37d0883661b401ad04c311a5e5`. The eleven input hashes were checked before the overlay and again after it. Base and branch were later confirmed by Git metadata queries; no history was read. The base commit subject was incidentally printed by worktree creation and is not evidence for a mathematical claim.
+
+Read order after isolation: AGENTS, orchestration, R1 model, THM045, root source preflight and exposure; full root proof; full R4 (541 lines), full R10 (562 lines), full R16 (544 lines). References to nonallowlisted materials within these documents were not followed. No other audit, blind material, root checker/result, scratch, state, history, memory file, source URL, private input, or earlier diagnostic was opened. The supplied root diagnostic summaries were seen only as narrative. They were not relied on as reproduced results.
+
+The role was dispatched as fresh Astra Max hostile review. No separate runtime configuration source was queried, and no child was launched. The surrounding application instructions unavoidably include a high-level memory summary; it was neither queried nor used as evidence. The root's chronology is an attestation. Its source hashes authenticate byte content, not construction chronology or isolation. The current reviewer is exposed to the full candidate proof, as required for a hostile review, and is not described as blind.
+
+After discovering AUD066-F01 locally, the reviewer notified root of the exact false support-invariance sentence and explained that the theorem requirements still follow from the already written pretranslation amplitude argument. Root replied only to preserve the frozen bytes and report the precise defect, dependencies, and whole-theorem distinction. No mathematical proof, alternative checker, blind result, or other audit was supplied through that exchange.
+
+New diagnostic: independent standard-library Ewald force/potential calculation, integer multiplicities and exact trigonometric moments. New packet verifier: written in this context without reading root packaging code. Neither is independent of this reviewer; the mathematical evidence is a fresh hostile reconstruction plus supporting diagnostics, not a second audit of this audit.
+
+No external lookup, installation, canonical edit, source edit, commit, push, publication, contact, or child occurred. The only Git mutation was the specifically assigned isolated worktree/branch creation. The task-specific isolation instructions superseded general requests to inspect current state, README, frozen specifications, or other files. No new claim beyond the frozen static law was certified.

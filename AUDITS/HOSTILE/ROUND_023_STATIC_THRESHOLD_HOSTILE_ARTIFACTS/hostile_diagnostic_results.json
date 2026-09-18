@@ -1,0 +1,274 @@
+{
+  "absolute_limit_target": 1.2402510672119929,
+  "assertions": 384,
+  "audit": "AUD066",
+  "categories": {
+    "common_translation_absolute_factor": 1,
+    "common_translation_signed_mean": 1,
+    "continuum_coefficient": 1,
+    "detecting_mutations": 12,
+    "even_grid_deformation_parity": 1,
+    "ewald_cutoff_stability": 2,
+    "ewald_h0_convergence": 1,
+    "ewald_h0_sign": 1,
+    "false_final_support_coordinate_bound_detected": 1,
+    "final_limit_constant": 1,
+    "grid_frequency_selection": 216,
+    "integer_multiplicities": 10,
+    "inversion_sine_source": 5,
+    "moving_scale_convergence": 2,
+    "negative_energy_probe": 5,
+    "singular_lattice_identity": 3,
+    "small_grid_alias_control": 1,
+    "smoothing_budget": 3,
+    "source_correct_sign": 5,
+    "theta_rational_bound": 3,
+    "trig_moments": 108,
+    "undeformed_source": 1
+  },
+  "cutoff_repeat": {
+    "a": 0.05,
+    "cutoff": 3,
+    "energy": -131.835015770426,
+    "fundamental_real": -0.022434298167851,
+    "m": 7,
+    "raw": -0.08995807505093739,
+    "row": 0.03973218513553029,
+    "scaled_energy": -2.690510525927061,
+    "scaled_source": -2.461068605854948,
+    "source": -0.0502258899154071,
+    "source_sine": 4.939479174590231e-15
+  },
+  "ewald": "split t=1/(4*pi), spatial image cutoff and cubic Fourier cutoff documented in code",
+  "exact_arithmetic": "integer and rational auxiliary tests",
+  "h0": {
+    "2": -5.545177444480732,
+    "3": -5.545177444479562,
+    "4": -5.545177444479562
+  },
+  "kernel": "d=4, g_hat(k)=|k|^-2, coefficient-one local singularity",
+  "lattice": [
+    {
+      "actual": -66.54212933375467,
+      "error": 7.105427357601002e-14,
+      "expected": -66.54212933375474,
+      "m": 5
+    },
+    {
+      "actual": -97.04060527839206,
+      "error": 2.7000623958883807e-13,
+      "expected": -97.04060527839233,
+      "m": 6
+    },
+    {
+      "actual": -133.0842586675094,
+      "error": 8.526512829121202e-14,
+      "expected": -133.0842586675095,
+      "m": 7
+    }
+  ],
+  "mutations": [
+    {
+      "name": "omit_regular_self_subtraction",
+      "reference": -66.54212933375474,
+      "separation": 2.7725887222397034,
+      "tolerance": 1,
+      "wrong": -69.31471805599445
+    },
+    {
+      "name": "omit_central_image_finite_part",
+      "reference": -66.54212933375474,
+      "separation": 1.5707963267949623,
+      "tolerance": 1,
+      "wrong": -64.97133300695978
+    },
+    {
+      "name": "replace_m_squared_by_N",
+      "reference": -66.54212933375474,
+      "separation": 1663.5532333438687,
+      "tolerance": 1,
+      "wrong": -1730.0953626776234
+    },
+    {
+      "name": "omit_Haar_row",
+      "reference": -2.0486247356263365,
+      "separation": 1.9479600563976924,
+      "tolerance": 0.5,
+      "wrong": -3.996584792024029
+    },
+    {
+      "name": "reverse_Haar_row",
+      "reference": -2.0486247356263365,
+      "separation": 3.8959201127953853,
+      "tolerance": 1,
+      "wrong": -5.944544848421722
+    },
+    {
+      "name": "halve_raw_pair_coefficient",
+      "reference": -2.0486247356263365,
+      "separation": 1.9982923960120147,
+      "tolerance": 0.5,
+      "wrong": -0.05033233961432188
+    },
+    {
+      "name": "flip_full_force_and_row_sign",
+      "reference": -2.0486247356263365,
+      "separation": 4.097249471252673,
+      "tolerance": 1,
+      "wrong": 2.0486247356263365
+    },
+    {
+      "name": "replace_N_squared_by_falling_factorial",
+      "reference": -2.890456936265842,
+      "separation": 0.007815446612884802,
+      "tolerance": 0.0001,
+      "wrong": -2.898272382878727
+    },
+    {
+      "name": "permutation_without_common_Haar_translation",
+      "reference": 0,
+      "separation": 0.009239583956779035,
+      "tolerance": 0.001,
+      "wrong": -0.009239583956779035
+    },
+    {
+      "name": "deformation_at_m_to_minus_two",
+      "reference": -2.4610686058549547,
+      "separation": 2.410817477291334,
+      "tolerance": 1,
+      "wrong": -0.05025112856362027
+    },
+    {
+      "name": "signed_mean_substituted_for_absolute_mean",
+      "reference": 0.004813348535012995,
+      "separation": 0.004813348535012995,
+      "tolerance": 0.001,
+      "wrong": 2.813803746109383e-19
+    },
+    {
+      "name": "omit_two_over_pi_factor",
+      "reference": 0.004813348535012995,
+      "separation": 0.002747441663369014,
+      "tolerance": 0.001,
+      "wrong": 0.007560790198382009
+    }
+  ],
+  "negative_deformation": {
+    "a": -0.05,
+    "cutoff": 4,
+    "energy": -96.11304434909829,
+    "fundamental_real": 0.026170967978661686,
+    "m": 6,
+    "raw": -0.1264331886130599,
+    "row": 0.054079081220205695,
+    "scaled_energy": -2.6698067874749523,
+    "scaled_source": -2.604747866142752,
+    "source": -0.07235410739285422,
+    "source_sine": -4.5559242054007375e-15
+  },
+  "numerical_evidence": "nonrigorous float64 finite Ewald diagnostic; not an enclosure or proof",
+  "proof_text_defect": {
+    "amplitude_unchanged": true,
+    "claimed_budget": 0.0002035416242621616,
+    "coordinate_error_after_rotation": 0.014177333810562881,
+    "line": 153,
+    "phase": "pi/2"
+  },
+  "script_sha256": "7622a6a2d535a00ffe683222037668ba72edb6d9cdba1f81aaf08714ea4d1414",
+  "seed": "none; deterministic",
+  "source_energy": [
+    {
+      "a": 0.05,
+      "cutoff": 4,
+      "energy": -65.88747291984207,
+      "fundamental_real": -0.031400385367066706,
+      "m": 5,
+      "raw": -0.19507354745760264,
+      "row": 0.07945527000696895,
+      "scaled_energy": -2.635498916793683,
+      "scaled_source": -2.890456936265842,
+      "source": -0.11561827745063369,
+      "source_sine": -1.2742961994296142e-15
+    },
+    {
+      "a": 0.05,
+      "cutoff": 4,
+      "energy": -131.835015770426,
+      "fundamental_real": -0.022434298167851,
+      "m": 7,
+      "raw": -0.08995807505093753,
+      "row": 0.03973218513553029,
+      "scaled_energy": -2.690510525927061,
+      "scaled_source": -2.4610686058549547,
+      "source": -0.05022588991540724,
+      "source_sine": 4.772945720896458e-15
+    },
+    {
+      "a": 0.05,
+      "cutoff": 4,
+      "energy": -219.7672654532291,
+      "fundamental_real": -0.01745063436643297,
+      "m": 9,
+      "raw": -0.052196300255035834,
+      "row": 0.02404186017778344,
+      "scaled_energy": -2.7131761167065322,
+      "scaled_source": -2.280509646257444,
+      "source": -0.028154440077252395,
+      "source_sine": 2.167201287983792e-15
+    },
+    {
+      "a": 0.05,
+      "cutoff": 4,
+      "energy": -461.5829349074734,
+      "fundamental_real": -0.012082166626170242,
+      "m": 13,
+      "raw": -0.024048557028701567,
+      "row": 0.01152545918422637,
+      "scaled_energy": -2.731259969866706,
+      "scaled_source": -2.1164035357163082,
+      "source": -0.012523097844475197,
+      "source_sine": 1.349381346550633e-15
+    },
+    {
+      "a": 0.05,
+      "cutoff": 4,
+      "energy": -791.3323823532395,
+      "fundamental_real": -0.009239583956779035,
+      "m": 17,
+      "raw": -0.013829013121190411,
+      "row": 0.006740346215908971,
+      "scaled_energy": -2.738174333402213,
+      "scaled_source": -2.0486247356263365,
+      "source": -0.0070886669052814405,
+      "source_sine": -1.5852073799194895e-15
+    }
+  ],
+  "source_target": -1.9481818206800483,
+  "status": "PASS",
+  "wrong_scale": {
+    "a": 0.0071428571428571435,
+    "cutoff": 4,
+    "energy": -133.0587685440975,
+    "fundamental_real": -0.0032056903175928836,
+    "m": 7,
+    "raw": -0.0018369264618267322,
+    "row": 0.0008113932258344817,
+    "scaled_energy": -2.71548507232852,
+    "scaled_source": -0.05025112856362027,
+    "source": -0.0010255332359922504,
+    "source_sine": -1.3077627695622525e-15
+  },
+  "zero_deformation": {
+    "a": 0,
+    "cutoff": 4,
+    "energy": -133.08425866750954,
+    "fundamental_real": -1.9825411154020653e-17,
+    "m": 7,
+    "raw": 5.856426454897701e-15,
+    "row": -7.826758607165132e-16,
+    "scaled_energy": -2.7160052789287663,
+    "scaled_source": 2.486137791148782e-13,
+    "source": 5.0737505941811876e-15,
+    "source_sine": 3.1740368350377963e-15
+  }
+}

@@ -80,3 +80,8 @@ THM040/PO027 and the entire THM041/PO028 conjunction now pass both fresh indepen
 
 
 2026-09-18 R21 acceptance: R21 retains exact Haar one-body centering and every cubic/background and lower contraction. It changes neither centering nor deterministic counterterms. R23 pending static-law construction preserves Haar one-body marginals but is not an iid-flow law. See AUDITS/ROUND_021_GATE_INTEGRATION.md.
+
+
+## R23 gate / R24 resumption — 2026-09-18 UTC
+
+R23 has exactly Haar one-body marginals and zero signed source expectation under common translation. The positive scaled absolute expectation survives. Exact mean centering therefore does not imply this absolute residual bound. Coordinate closeness is used only before translation; the source amplitude is invariant.

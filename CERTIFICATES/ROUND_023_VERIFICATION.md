@@ -1,0 +1,16 @@
+# Round 023 verification
+
+2026-09-18 UTC. Full mathematical comparison and disposition are AUDITS/ROUND_023_RECONSTRUCTION_COMPARISON.md and ROUND_023_GATE_INTEGRATION.md; the support-translation erratum is indispensable when citing the root proof. Original evidence is preserved, including the erroneous sentence and its independent falsification.
+
+Root packet verification and fresh diagnostic reproduction: CERTIFICATES/OUTPUTS/round023_static_root_verification.json and round023_static_root_rerun.json.8 inputs,17 members,1549 exact assertions,24 categories,10 mutations. ArchiveSHAa7c6ddf00043fa4df3fc702dccfa195704a4e27973abc9fed432050c99e38a23.
+
+Blind copy, independent read-only verification and fresh code-only reproduction: round023_blind_copy_verification.json, round023_static_blind_root_verification.json and round023_static_blind_root_rerun.json.8 inputs,20 members,25 issued files,230 rational assertions,8 mutations; separate nonrigorous binary64 probe. ArchiveSHAdb5a2520dd33057b5f18a66e349d7544075824f758cfe70ee6d5e39f1a4b0ba6. Run python3 VERIFICATION_CODE/round023_blind_readonly_verify.py; reproduce by copying only diagnostic_v2.py into a fresh temporary directory and running python3 diagnostic_v2.py --output results_v2.json. Complete results match sealed SHA c6956ef81cfebcc9599376ed88ea9587793f9262549e6c16757d8a912d943b5a. Do not rerun seal_packet.py: it issues an archive and is not the read-only verifier.
+
+Hostile copy, portable verifier and fresh diagnostic: round023_hostile_copy_verification.json, round023_static_hostile_root_verification.json and round023_static_hostile_root_rerun.json.11 inputs,20 members,384 mixed exact/numerical assertions,22 categories,12 mutations. ArchiveSHA4041c8547f566951b134b20b317ddb042ac885fdc11f9087c70b36180457c15d. Run python3 AUDITS/HOSTILE/ROUND_023_STATIC_THRESHOLD_HOSTILE_ARTIFACTS/verify_packet.py. The diagnostic writes adjacent results, so reproduce only in a fresh code-only directory. No original evidence is rewritten.
+
+All archive members are safe, unique and regular; exact member sets/bytes, source/output/outer hashes and read-only issued modes pass. Source/gate matching to the published checkpoint is round023_source_gate_match.json. Each diagnostic's pre-seal failures and changes remain disclosed; assertion-disabled blind inspection is not accepted validation. Numerical truncation control does not certify floating roundoff or replace the analytic proof.
+
+Protected-input, final TeX rendering, staged-diff and publication verification are recorded separately before the ordinary atomic checkpoint. This certificate does not prematurely claim publication.
+
+
+Final R23 synthesis MEMORANDA/hocf_round023_20260918T080100Z.tex compiled with latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=BUILD/round023. The complete final log and all three final rendered pages were inspected. Final PDF3 pages160499 bytes. An overcrowded draft page ending was corrected by an explicit break before the translation argument, followed by final rebuild and full visual reinspection. No undefined references/citations, font substitutions, overfull boxes, clipping or broken glyphs remain. Canonical PDF and verbatim log are retained; compilation is not mathematical certification.

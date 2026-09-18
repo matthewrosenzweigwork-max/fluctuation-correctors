@@ -192,3 +192,10 @@ R21 final whole gate accepted,2026-09-18 UTC. THM043/PO030 is PROVED_CANDIDATE w
 
 
 R22 gate,2026-09-18 UTC: THM044 accepted: entire bounded-convergent-noise weak law in C([0,T],H^-r), r>2d+5-s/2, d>=3,0<s<=d-2,s<d/2, actual iid-Haar dynamics; quantitative source and linear tail included. Both fresh axes AUD063/064 pass after exact published source matching. Exact acceptance/source/scope: AUDITS/ROUND_022_GATE_INTEGRATION.md.
+
+
+## R23 static threshold gate — 2026-09-18 UTC
+
+THM045/PO032 is accepted after whole isolated reconstruction AUD065 and separate hostile review AUD066. Exact scope and eleven-part comparison: AUDITS/ROUND_023_GATE_INTEGRATION.md and ROUND_023_RECONSTRUCTION_COMPARISON.md. Bounded smooth exchangeable common-translation-invariant static densities at d4,s2, N=m^4 have exact Haar one-body marginals, support separation c/m and pointwise H_N<=-c m^2, yet sqrt(N) E|P[J_cos(4pi x1)]| tends to16pi^3a^2>0. No uniform N-body density bound or actual-evolved-law identification is asserted. This closes the static insufficiency claim only; THM046/PO033 actual integrated critical source and the flagships remain open.
+
+Root proof requires the separate AUD066-F01 support-translation erratum. The original claim that all three support-neighborhood inequalities survive translation is false; only separation and energy do. The pretranslation coordinate estimate already controls the invariant source amplitude and proves the same theorem. No theorem was promoted before the finding, no theorem scope changed and no issued evidence was edited. Root assigns no independent status to itself.

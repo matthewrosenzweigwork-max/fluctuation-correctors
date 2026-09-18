@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-18T08:09:12.599254+00:00",
+  "published_head": "aadf9694d4183e60fb65e08dc962a07dac4df3e2",
+  "sources": [
+    {
+      "source": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "gate_sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_010.md",
+      "gate_sha256": "56d4605864a0023c35ae542d1ec96317eef69f80c1b0975944d5bf870749e5cd",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "gate_record": "AUDITS/ROUND_016_GATE_INTEGRATION.md",
+      "gate_sha256": "68207163d5e576722b48953526f0d22b244a53badf7ae02e374251255aa1def9",
+      "matches_published_HEAD": true
+    }
+  ],
+  "dossiers": [
+    {
+      "path": "AUDITS/ROUND_023_STATIC_THRESHOLD_BLIND_INPUT_SHA256SUMS.txt",
+      "sha256": "910d8b2d89500c4461906cb22ec8c3fb416271300689a715492b3c210ed397f5",
+      "inputs": 8,
+      "all_canonical_inputs_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_023_STATIC_THRESHOLD_HOSTILE_INPUT_SHA256SUMS.txt",
+      "sha256": "5d586a805f690d07113b351da22ae08f29f7b65d96dfb7e60987c874380744ba",
+      "inputs": 11,
+      "all_canonical_inputs_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_023_STATIC_THRESHOLD_ROOT_INPUT_SHA256SUMS.txt",
+      "sha256": "e24bba0308a738777177f6fe2936620f0338f46c09820a6eec9a3def1df22a95",
+      "inputs": 8,
+      "all_canonical_inputs_match": true
+    }
+  ],
+  "scope": "R4 kernel and compensated divergence are load-bearing. R10/R16 delimit accepted energy/source scope, not an assumption that the constructed law is an actual evolved law. Blind read disclosed excerpts and rederived all used facts; hostile read full inputs. No invented full-reading attestation for the blind."
+}

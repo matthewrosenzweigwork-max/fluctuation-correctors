@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "inputs": 8,
+  "outputs": 19,
+  "archive_members": 20,
+  "issued_files": 25,
+  "safe_unique_regular_readonly_members": true,
+  "all_bytes_equal": true,
+  "archive_sha256": "db5a2520dd33057b5f18a66e349d7544075824f758cfe70ee6d5e39f1a4b0ba6",
+  "proof_sha256": "a79a2a7625bd3bf2376eca21011c89e0aecfae356e9add30f3ac648658123acb",
+  "issuance_builder_executed": false,
+  "verifier_sha256": "5b7d734ea452bff06cf54d9b3637a39704e5ed0e0c34fa4129839489e1f8ad71"
+}
