@@ -1,0 +1,24 @@
+[
+  {
+    "tag": "round013_noise_blind",
+    "inputs": 27,
+    "outputs": 8,
+    "members": 36,
+    "manifest_checks": 38,
+    "archive_sha256": "00201979e141ed12883bfbbfa3213dbf543210c21c0053cc0aa05ca03d3a3c23",
+    "proof_sha256": "ea7e8ace0a45554b3a3c94cde097240cdddba84800e10c264a2ed8fda573ca96",
+    "exact_checks": 2513,
+    "fresh_rerun_byte_identical": true
+  },
+  {
+    "tag": "round013_noise_hostile",
+    "inputs": 28,
+    "outputs": 8,
+    "members": 38,
+    "manifest_checks": 36,
+    "archive_sha256": "1569f015ccfff87e6616bb364d05a42f76c068c8f7d234c227c72dfe2f3913c2",
+    "proof_sha256": "8a549469c8b20d0cbe0d37c1bb5557c1817e3eecb00164de4f5b46eeb8e3f675",
+    "exact_checks": 56353,
+    "fresh_rerun_byte_identical": true
+  }
+]

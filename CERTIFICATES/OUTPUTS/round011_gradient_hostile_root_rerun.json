@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "evidence_class": "EXACT_FINITE_DIAGNOSTICS_NOT_ANALYTIC_CERTIFICATION",
+  "total_checks": 6927,
+  "counts": {
+    "full_pair_jacobian": 756,
+    "expansion_not_absolute_norm": 63,
+    "radial_laplacian": 630,
+    "all_required_moments": 630,
+    "generator_and_relative_factors": 1890,
+    "positive_part_majorant": 1890,
+    "source_difference_and_derivative": 126,
+    "source_gradient_constant": 21,
+    "rescaling_exponents": 42,
+    "microscopic_regime": 42,
+    "integrability_and_boundary": 21,
+    "density_versus_atom": 21,
+    "young_optimizer": 210,
+    "both_coulomb_responses": 49,
+    "direct_fourier_sign": 42,
+    "weak_derivative_commutation": 147,
+    "time_simplex_and_limit_equation": 294,
+    "radial_exact_profile": 30,
+    "radial_weight_bounds": 15,
+    "excluded_weighted_sup_limit": 5,
+    "sobolev_spatial_exponent": 1,
+    "no_h1_from_weight": 1,
+    "zero_horizon": 1
+  },
+  "parameter_rows": [
+    {
+      "d": 3,
+      "s": "1"
+    },
+    {
+      "d": 3,
+      "s": "1/2"
+    },
+    {
+      "d": 3,
+      "s": "1/3"
+    },
+    {
+      "d": 4,
+      "s": "2"
+    },
+    {
+      "d": 4,
+      "s": "1"
+    },
+    {
+      "d": 4,
+      "s": "2/3"
+    },
+    {
+      "d": 5,
+      "s": "3"
+    },
+    {
+      "d": 5,
+      "s": "3/2"
+    },
+    {
+      "d": 5,
+      "s": "1"
+    },
+    {
+      "d": 6,
+      "s": "4"
+    },
+    {
+      "d": 6,
+      "s": "2"
+    },
+    {
+      "d": 6,
+      "s": "4/3"
+    },
+    {
+      "d": 7,
+      "s": "5"
+    },
+    {
+      "d": 7,
+      "s": "5/2"
+    },
+    {
+      "d": 7,
+      "s": "5/3"
+    },
+    {
+      "d": 8,
+      "s": "6"
+    },
+    {
+      "d": 8,
+      "s": "3"
+    },
+    {
+      "d": 8,
+      "s": "2"
+    },
+    {
+      "d": 9,
+      "s": "7"
+    },
+    {
+      "d": 9,
+      "s": "7/2"
+    },
+    {
+      "d": 9,
+      "s": "7/3"
+    }
+  ],
+  "integer_particle_numbers": [
+    2,
+    3,
+    17
+  ],
+  "arithmetic": "fractions.Fraction and truncated formal Taylor series",
+  "random_seed": null,
+  "floating_point_tolerance": null,
+  "dependencies": "Python standard library only",
+  "source_reads": "none; no prior or constructor checker was read",
+  "unverified_by_computation": [
+    "singular stochastic stopping passages",
+    "simultaneous local starts",
+    "uniform integrability of derivatives",
+    "infinite response series convergence",
+    "weighted convolution estimates",
+    "uniform local and global convergence"
+  ]
+}

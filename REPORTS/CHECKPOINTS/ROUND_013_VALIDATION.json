@@ -1,0 +1,39 @@
+{
+  "baseline_commit": "1df1805ed7cd8f7c295945f99273c8ffdb598e74",
+  "accepted_gates": [
+    "THM032 AUD043/044",
+    "THM033 AUD040/041",
+    "THM034 AUD045/046"
+  ],
+  "open_follow_on": [
+    "THM035 TASK073/074",
+    "THM036 TASK075"
+  ],
+  "protected_entries": 51,
+  "documented_mutable_entries": 23,
+  "campaign_verification": "PASS",
+  "issued_manifests_and_seals": 148,
+  "issued_digest_checks": 1478,
+  "issued_digest_errors": [],
+  "prestage_working_diff_check": "PASS",
+  "initial_explicit_staged_paths": 97,
+  "final_explicit_paths": 100,
+  "staged_byte_comparison": "PASS",
+  "staged_diff_review": "complete new proof/audit and exposed packet records read; canonical diff and statistics inspected; explicit path bytes compared",
+  "cached_diff_check_returncode": 2,
+  "cached_diff_check_output": "CERTIFICATES/OUTPUTS/round011_012_tex_build.txt:101: new blank line at EOF.\nCERTIFICATES/OUTPUTS/round013_tex_build.txt:203: new blank line at EOF.\n",
+  "whitespace_disposition": "Preserve the two verbatim build transcripts; no source/issued evidence normalization. No other warning.",
+  "synthesis_pdf_pages": [
+    3,
+    3
+  ],
+  "synthesis_pdf_bytes": [
+    215207,
+    225820
+  ],
+  "complete_final_tex_logs": "PASS; first R13 outline rerun warning resolved on second pass",
+  "all_synthesis_pages_visually_inspected": true,
+  "remote_change": false,
+  "history_rewrite": false,
+  "user_authorized_ordinary_push": true
+}

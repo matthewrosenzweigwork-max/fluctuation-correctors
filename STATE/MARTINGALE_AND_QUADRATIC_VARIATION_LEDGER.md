@@ -62,3 +62,8 @@ R10 controls actual clipped and smoothed bracket functionals with the physical2n
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 accepted actual-noise gate: THM033 passes fresh AUD040 reconstruction and AUD041 hostile review. In the homogeneous strict sub-Coulomb bounded-chi family, Q_N<=C b_N N^(s/(s+2))(N^(-(1-s/d))+nu). Critical decay holds when s(s+2)<2d; bounded-chi decay also holds for s<min(2,d-2), and the exact other sufficient conditions remain in the card. The accepted R8 domain and R10 sharp floor separately supply the conditional premises. Outside these ranges PO024 is OPEN; within them PO001's actual integrated cubic/lower drift is the first open assertion. No fluctuation law or hierarchy closure follows.
+
+R13 THM034 now passes fresh AUD045/046: Q_N=2nu Nb E integral sum_i|grad_i P_N[Phi]|^2 tends uniformly to zero over0<=nu<=nu_* for d>=4,0<s<2, with the exact five-term rate. The leading bracket is uniformly bounded and expected integral of absolute scaled cross-variation<=C sqrt(Q_N). Zero-noise bracket is identically zero. Entire actual bracket, not just smooth/clipped/reference component. PO024 is still open outside accepted R12/R13 union; drift remains separate.

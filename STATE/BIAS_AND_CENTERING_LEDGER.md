@@ -52,3 +52,8 @@ R10 proves exact actual E P[Phi]=0 using the vanishing common-translation orbit 
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 changes no centering: mean-field Haar background remains. One-body Haar controls only its actual background square; the full pair is not assumed independent. An actual noise estimate does not upgrade R10 exact zero mean to endpoint concentration. Initial terminal-zero-corrector contribution is separately controlled at iid time zero by R5.
+
+R13 preserves exactly P_N=U2/2 and mean-field Haar centering. Radially clipped and tail fields each use their own row A; full gradient is N^-2(sum G-N A), retaining the missing-self subtraction after centering. Noise smallness proves no evolved residual centering. THM035 now freezes both lower and scalar drift terms; neither may be silently dropped.

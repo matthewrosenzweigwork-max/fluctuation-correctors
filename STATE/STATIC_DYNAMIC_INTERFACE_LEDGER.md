@@ -36,3 +36,8 @@ R10 now supplies actual entropy/Fourier quantitative bridges for bounded clipped
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 accepted actual-noise gate: THM033 passes fresh AUD040 reconstruction and AUD041 hostile review. In the homogeneous strict sub-Coulomb bounded-chi family, Q_N<=C b_N N^(s/(s+2))(N^(-(1-s/d))+nu). Critical decay holds when s(s+2)<2d; bounded-chi decay also holds for s<min(2,d-2), and the exact other sufficient conditions remain in the card. The accepted R8 domain and R10 sharp floor separately supply the conditional premises. Outside these ranges PO024 is OPEN; within them PO001's actual integrated cubic/lower drift is the first open assertion. No fluctuation law or hierarchy closure follows.
+
+R13 closes the actual noise interface,d>=4,0<s<2,bounded nu, by the true particle energy occupation and recentered clipped tail, not positive-time product law. The next dynamic interface is actual integrated cubic U3[C Phi]; the lower/scalar contribution is separately frozen in THM035. A mean-zero orbit or initial endpoint estimate does not imply cubic concentration.

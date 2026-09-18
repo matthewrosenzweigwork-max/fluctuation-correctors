@@ -74,3 +74,8 @@ R10 proves actual free-energy passage at fixed N using same-noise convergence, p
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 uses the previously proved fixed-N genuine derivative and particle-energy/domain passages before applying its uniform estimates. The actual Laplacian occupation follows from the exact unstopped energy identity and deterministic sharp floor; no new singular Ito formula or N/cutoff interchange is presumed. Both fresh audits retain those prerequisite histories.
+
+R11 tube tails give global W1,1 only after uniform local C1 and in the declared order; no diagonal trace. R13 actual w_(s+2) occupation is proved at fixed N by singular energy/domain passages before uniform estimates. A quantitative actual tail at the moving clipping threshold supplies the missing uniformity; fixed-N density approximation alone is not used. All issued source/archive bytes remain unchanged.

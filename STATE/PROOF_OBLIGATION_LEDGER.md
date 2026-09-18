@@ -83,3 +83,8 @@ R10 sharpens PO024 to exact actual radial-clipping and Fourier-smoothing tail cr
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 accepted actual-noise gate: THM033 passes fresh AUD040 reconstruction and AUD041 hostile review. In the homogeneous strict sub-Coulomb bounded-chi family, Q_N<=C b_N N^(s/(s+2))(N^(-(1-s/d))+nu). Critical decay holds when s(s+2)<2d; bounded-chi decay also holds for s<min(2,d-2), and the exact other sufficient conditions remain in the card. The accepted R8 domain and R10 sharp floor separately supply the conditional premises. Outside these ranges PO024 is OPEN; within them PO001's actual integrated cubic/lower drift is the first open assertion. No fluctuation law or hierarchy closure follows.
+
+R13 scoped PO024 discharge: the full bounded-noise assertion passes AUD045/046 for d>=4,0<s<2. The accepted union with R12 is explicit in the round reports; outside it PO024 remains OPEN. First downstream assertion PO001 is actual integrated cubic drift with lower/scalar contractions. New PO025 (THM035), OPEN: prove the exact lower-plus-scalar expected absolute-integral bound for bounded chi,0<s<d-2,3s<2d-2. TASK073 construction and TASK074 fresh reconstruction are active. THM036/TASK075 freezes the actual scaled L1 integrated U3 assertion at positive finite critical lambda,d>=4,0<s<2; no cubic smallness is assumed. PO004 remains OPEN.

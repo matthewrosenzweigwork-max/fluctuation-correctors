@@ -38,3 +38,8 @@ R9 full-source audit explicitly checks R5 pointwise barrier constants and both r
 
 
 R10–R13 use complete locally frozen earlier proofs with explicit conditional histories; no new external quantitative theorem, unverifiable remembered citation or novelty claim. Private[N] remains absent and unused; the one-dimensional source mismatch stays quarantined. Read-only source/BASELINE authority remains protected. R10 clip metadata and R13 package-timing errata qualify provenance statements without changing mathematical sources or any issued byte.
+
+
+R12 source interface resolved by separately accepted R8 full homogeneous domain and R10 sharp deterministic floor. Original hostile/reconstruction dossiers remain explicitly conditional; no source-level audit was retroactively attributed to those workers. No new external theorem, private[N], citation, source normalization or novelty claim.
+
+R11/R13 gates use complete version-locked local source modules with exact historical conditional statuses. Fresh audits read only hashed permitted dossiers before seal; root comparison maps their prerequisites to the separate accepted R4–R10 homogeneous gates. No private[N], new external theorem, attribution or novelty claim. THM036 sprint is restricted to its complete27-input local dossier; an outside theorem would require a separate verified source obligation.

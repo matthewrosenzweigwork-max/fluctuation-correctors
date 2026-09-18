@@ -1,0 +1,137 @@
+[
+  {
+    "path": "THEOREMS/THM-028_HOMOGENEOUS_PARTICLE_CORRECTOR_DOMAIN.md",
+    "sha256": "262f2ef32cfb9fa7757774e09970862c06c38891b2ef2d1bd1af875947e928a3",
+    "verified": true
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+    "verified": true
+  },
+  {
+    "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+    "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+    "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+    "sha256": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+    "sha256": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+    "sha256": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+    "sha256": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md",
+    "sha256": "aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+    "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+    "sha256": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+    "sha256": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+    "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+    "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+    "verified": true
+  },
+  {
+    "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+    "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec",
+    "verified": true
+  },
+  {
+    "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+    "sha256": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_008_HOMOGENEOUS_PARTICLE_DOMAIN.md",
+    "sha256": "753c9a431cd0b403d3a784fc5faee79631ecc0cc249ec494ac751131dd2b1311",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-027_WEIGHTED_PAIR_GRADIENT.md",
+    "sha256": "45a1e5a6b43b9cdebd02513131b41ae8bb1b201dfcf65ff7a0169940d735e108",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_007_WEIGHTED_PAIR_GRADIENT.md",
+    "sha256": "eb65ed8680416032ca2667db1cab9b39b493fcb1c578985c632a8bbfd1e9953a",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+    "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-031_ACTUAL_FOURIER_SMOOTHING_AND_TAIL.md",
+    "sha256": "2b8ffeae89b33742353c06e9e975b726f4b705ab7f1ef2bb8d830675d6195ba4",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_010_ACTUAL_NOISE_LAW_TRANSFER.md",
+    "sha256": "0b5af571f3bfca553b1584f521125d70fe255f556db8d1b34c1eb650403d766f",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-030_ACTUAL_ENTROPY_CLIPPING_AND_TAIL.md",
+    "sha256": "7615c0d73abe2d768fe08937c547bc8f5c08167f4335523bdfb1597a5e9d31aa",
+    "verified": true
+  },
+  {
+    "path": "MEMORANDA/ROUND_009_HAAR_NOISE_ENERGY.md",
+    "sha256": "dd0710cfb8a1b8a87abce3f746efc02364c4fa408056144f678f8c519b31e077",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-029_HAAR_NOISE_ENERGY_AND_LAW_REDUCTION.md",
+    "sha256": "03707f82aa66688496a43a4555b57c497baaf9c4c5ec3417634eb4f50cc86b30",
+    "verified": true
+  },
+  {
+    "path": "THEOREMS/THM-034_BOUNDED_NOISE_SMALL_RIESZ.md",
+    "sha256": "d4033888db7b7ae91bd826e31713a7ab5a0855e809a118c6277d12685a925a97",
+    "verified": true
+  },
+  {
+    "path": "TASKS/ACTIVE/TASK-071_ROUND013_BOUNDED_NOISE_BLIND.md",
+    "sha256": "f7ed579e1035336ce025edf71048bb71ab6bd3d1b3dc83c6146ab6619e6ba05e",
+    "verified": true
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "all_member_names_unique": true,
+  "analytic_verdict": "CONDITIONAL_PASS",
+  "archive_bytes": 167392,
+  "archive_name": "ROUND_013_BOUNDED_NOISE_HOSTILE_20260918_040707_UTC.tar.gz",
+  "archive_regular_member_count": 38,
+  "archive_sha256": "1569f015ccfff87e6616bb364d05a42f76c068c8f7d234c227c72dfe2f3913c2",
+  "archived_worktree_bytes_identical": true,
+  "checker_stdout_sha256": "f8e63c91f3e77ea74050d1182c334b378dd04f6dff8b23f1d808df0f288e183f",
+  "extracted_sealed_checker_check_count": 56353,
+  "extracted_sealed_checker_exit_code": 0,
+  "extracted_sealed_checker_results_identical": true,
+  "immutability": "Archive and issued output payloads made mode 0444 after verification; later changes require a superseding seal.",
+  "input_count": 28,
+  "input_manifest_verified_inside_archive": true,
+  "no_canonical_promotion": true,
+  "output_manifest_verified_inside_archive": true,
+  "output_payload_count": 8,
+  "safe_regular_members_only": true,
+  "sealed_at_utc": "2026-09-18 04:11:18 UTC",
+  "task": "TASK072",
+  "verification": "PASS"
+}

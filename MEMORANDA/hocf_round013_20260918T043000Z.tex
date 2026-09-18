@@ -1,0 +1,178 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\E}{\mathbb E}
+\newcommand{\dd}{\,\mathrm d}
+\title{Uniform actual corrector noise at bounded diffusivity}
+\author{HOCF--RIESZ, Round 013}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status.} This internal synthesis records THM--034, accepted
+through fresh reconstruction AUD--045 and separate hostile review AUD--046.
+The complete proofs and version-locked prior particle, full-inverse, domain
+and energy premises remain in the campaign records. This result controls
+noise; the integrated cubic drift and the fluctuation theorem remain open.
+
+\section*{Statement and fixed conventions}
+Fix $d\ge4$, $0<s<2$, $0\le T,\nu_*<\infty$ and a smooth real terminal test
+$h$. Use the unit Haar torus, Fourier characters $e^{2\pi i k\cdot x}$,
+coefficient-one periodic Riesz potential $g$, and $K=-\nabla g$. The actual
+particles start iid Haar independently of their Brownian drivers and satisfy
+\[
+ \dd X_i=\frac1N\sum_{j\ne i}K(X_i-X_j)\dd t+\sqrt{2\nu}\dd W_i.
+\]
+There is no external drift. The reference remains Haar. Let $\Phi_t$ be the
+genuine symmetric terminal-zero full pair inverse with both response slots
+and the source $J_t(x,y)=K(x-y)\cdot(\nabla f_t(x)-\nabla f_t(y))$, where
+$f$ is the actual homogeneous Fourier backward test. Set
+\[
+ p=s+2,\qquad a=s/p,\qquad\theta=1-s/d,\qquad
+ b=\min(1,\nu^{-1}),\qquad\sigma_N^2=Nb\quad(\nu>0).
+\]
+The corrector is the literal ordered deleted-pair statistic
+\[
+ P_N[\Phi]=\frac1{2N^2}\sum_{i\ne j}\Phi(X_i,X_j)
+ -\frac1N\sum_i\int\Phi(X_i,y)\dd y+\frac12\int\Phi(x,y)\dd x\dd y.
+\]
+Its actual scaled expected martingale bracket is
+\[
+ Q_N=2\nu Nb\,\E\int_0^T\sum_i|\nabla_iP_N[\Phi_t](X_t)|^2\dd t.
+\]
+At zero noise define $Q_N=0$ directly. Uniformly in every $N\ge2$ and every
+$0<\nu\le\nu_*$,
+\[
+ Q_N\le Cb\min(N^a,\nu^{-s/2})(N^{-\theta}+\nu).
+\]
+Moreover the entire bounded interval satisfies
+\[
+ \sup_{0\le\nu\le\nu_*}Q_N\longrightarrow0,
+\]
+with the sufficient uniform rate
+\[
+ Q_N\le C\left[N^{a-\theta}+N^{-(2-s)/(12p^2)}
+ +N^{-s/(4p(s+4))}+N^{-1/(2p)}+N^{-2/p}\right].
+\]
+Constants depend only on the fixed displayed data and weights. No limiting
+or boundedness assumption on $\nu N^{2/p}$ is made.
+
+\newpage
+\section*{Two occupation estimates for the genuine derivative}
+Use the fixed periodic multiplicative weights $w_q=w_1^q$, with
+$w_q(z)=|z|^{-q}$ near zero and $w_1\ge1$. For each fixed
+\[
+ 1<q<\min(d-2,d/2),\qquad q\le s+1,\qquad\eta=s+1-q<2,
+\]
+the full inverse satisfies
+\[
+ \sup_t\sup_{x\ne y}\frac{|\nabla_{x,y}\Phi_t(x,y)|}{w_q(x-y)}
+ \le C_q\min(N^{\eta/p},\nu^{-\eta/2}).
+\]
+Write $\mathcal G=\nu\Delta_{x,y}+N^{-1}K(x-y)\cdot(\nabla_x-\nabla_y)$.
+The largest transverse eigenvalue of its drift Jacobian is
+$2s|x-y|^{-p}/N$; the radial eigenvalue is negative. Let $\ell$ be this
+nonnegative upper bound with the fixed smooth remainder included.
+For a fixed inner radius $R$, direct differentiation gives
+\[
+ (\mathcal G+\ell)w_q\le C_qw_q
+ -2q(d-2-q)\nu\,\mathbf1_{\{r\le R\}}w_{q+2}
+ -\frac{2s(q-1)}N\mathbf1_{\{r\le R\}}w_{q+p}.
+\]
+Both coefficients are strictly favorable. Annular errors cost a fixed
+constant because diffusivity is bounded. Stopped nonnegative weighted
+It\^o inequalities give a terminal bound and both occupation bounds, with
+coefficients $\nu$ and $1/N$. Noncollision, Fatou and monotone convergence
+remove the stops at each fixed $N,\nu$.
+
+The source gradient has weight $w_{s+1}$. Dividing by $w_q$ and using either
+occupation moment bounds its time-path integral by $CN^{\eta/p}w_q$ or
+$C\nu^{-\eta/2}w_q$. Fixed-$N$ higher moments and common local starts from
+the earlier derivative theorem justify differentiation of expectation
+\emph{before} these improved uniform estimates are applied. The old
+constants are not relabeled uniform.
+
+With $D=\operatorname{div}K$, the two homogeneous responses are
+\[
+ \mathcal RF=-\int F(x+w,y)D(\dd w)-\int F(x,y+w)D(\dd w).
+\]
+Their weak derivatives differentiate $F$, not the singular measure.
+Separated-singularity convolution gives a bound in the derivative seminorm
+alone; there is no value-amplitude term. The full differentiated Volterra
+series has a factorial tail and identifies the same bounded Borel inverse.
+Equivalently, Gronwall applies to that existing finite-$N$ inverse.
+
+\section*{Actual higher-power occupation}
+For $H_N=N^{-1}\sum_{i<j}g(X_i-X_j)$, the sharp heat-integral floor is
+$H_N\ge-CN^{s/d}$. Strictly below Coulomb,
+$D_{\rm cl}\ge c w_p-C$ with $c>0$, and $p<d$. The exact actual energy
+identity, initially of mean zero, retains the whole force square and the
+coefficient $\nu(N-1)$ on pair-divergence occupation. Hence
+\[
+ \nu\E\int_0^T w_p(X_1-X_2)\dd t\le C(N^{-\theta}+\nu).
+\]
+No individual pair-force square is extracted from the total-force square.
+The background compensation contributes the retained $C\nu$ term.
+
+\newpage
+\section*{From the exact square to the uniform singular tail}
+Set $G=\nabla_x\Phi$ and $A(x)=\int G(x,y)\dd y$. Literal differentiation
+of the ordered statistic yields
+\[
+ v_i=\nabla_iP_N=N^{-2}\left[\sum_{j\ne i}G(X_i,X_j)-NA(X_i)\right].
+\]
+The subtraction is $N A$, not $(N-1)A$. For any field $F$ with its own row,
+exchangeability, the actual one-body Haar law and finite-sum
+Cauchy--Schwarz give
+\[
+ Q_N[F]\le4\nu b\int_0^T\left[
+ \frac{(N-1)^2}{N^2}\E|F(X_1,X_2)|^2+\|F\|_{L^2(\mathrm{Haar}^2)}^2
+ \right]\dd t.
+\]
+This bounds the complete nonnegative square; no signed triple term is
+discarded. With $q=p/2$, the derivative estimate gives
+$|G|^2\le C\min(N^a,\nu^{-s/2})w_p$, proving the direct bound for $Q_N$.
+For $0<\nu\le N^{-\epsilon}$ it implies
+\[
+ Q_N\le C[N^{a-\theta}+N^{-\epsilon(1-s/2)}].
+\]
+
+For the remaining interval choose
+\[
+ q_-=1+s/4,\qquad\eta_-=3s/4,\qquad
+ r=p/q_-=\frac{4(s+2)}{s+4}>2.
+\]
+Radially clip $G$ at magnitude $L$, writing $G=G^L+R_L$, and recompute the
+Haar row for each field. Since $w_{q_-}^r=w_p$,
+\[
+ |R_L|^2\le L^{2-r}|G|^r
+ \le C\nu^{-\eta_-r/2}L^{2-r}w_p.
+\]
+The actual occupation therefore yields the residual bracket bound
+\[
+ \mathcal T_N(L)\le Cb\nu^{-\eta_-r/2}L^{2-r}(N^{-\theta}+\nu).
+\]
+The physical $\nu$ is already included in the occupation estimate.
+No additional inverse-noise factor is needed.
+The separately accepted R10 actual clipping estimate, at
+$L_N=N^{1/(4p)}$, gives
+\[
+ Q_N[G^{L_N}]\le C(N^{-2/p}+N^{-1/(2p)}).
+\]
+The probability-time-particle Hilbert triangle inequality gives
+$Q_N\le2Q_N[G^{L_N}]+2\mathcal T_N(L_N)$, without orthogonality.
+Choose $\epsilon=1/(6p^2)$. On $\nu\ge N^{-\epsilon}$ the tail exponent is
+\[
+ \epsilon\eta_-r/2-(r-2)/(4p)=-s/[4p(s+4)].
+\]
+Combining both intervals proves the stated rate. Since
+$a-\theta=(s(s+2)-2d)/(dp)<0$ for $d\ge4,0<s<2$, every term decays.
+
+The leading scaled bracket is bounded by $2T\sup\|\nabla f\|_\infty^2$.
+The expected integral of the absolute scaled cross-variation is bounded
+by $C\sqrt{Q_N}$ and also vanishes uniformly. No dimension-three, $s=2$,
+Coulomb, logarithmic, general-background or unbounded-diffusivity extension
+is inferred. The old condition $\beta_NN^{2s/d-1}\to0$, full subcriticality
+$\lambda_N=\beta_NN^{s/d-1}\to0$, and positive finite criticality remain
+distinct. The actual cubic drift is the next open assertion.
+\end{document}

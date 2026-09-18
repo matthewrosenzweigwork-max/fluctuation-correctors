@@ -1,0 +1,188 @@
+{
+  "status": "SEALED_AND_VERIFIED",
+  "time_utc": "2026-09-18T04:05:53.562546+00:00",
+  "archive_name": "ROUND_011_RESCALED_GRADIENT_HOSTILE_20260918_040553_UTC.tar.gz",
+  "archive_path": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r011-gradient-hostile/AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/ROUND_011_RESCALED_GRADIENT_HOSTILE_20260918_040553_UTC.tar.gz",
+  "archive_sha256": "4ee86a4f4033430136bdaf28877ff916dc779fdd259d9f10ac3d30bd259e4d4a",
+  "archive_bytes": 142898,
+  "member_count": 33,
+  "members": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "bytes": 8174
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/INPUT_SHA256SUMS.txt",
+      "sha256": "d9031493c7e687e96e96639dc6c03f76e3819a537a36cd65b23b3e23975c5c9a",
+      "bytes": 2506
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/INPUT_VERIFICATION.json",
+      "sha256": "973287dd1f4043f333d70de0ad91e9bbf8c8c1eb3b6584d402968136f94dda93",
+      "bytes": 6359
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/OUTPUT_SHA256SUMS.txt",
+      "sha256": "8de756344e6ffee7c99dfd1acdd4d9d7ae8a8eeb0efa59cfa58bb09194b25b4b",
+      "bytes": 1118
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/OUTPUT_VERIFICATION.json",
+      "sha256": "768c313e2b2fd642619052a26a96cfbe2a686524ee2921ca20f61ce3695cdce2",
+      "bytes": 1778
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/README.md",
+      "sha256": "91ace323114771d23c5544f8bc7057916c30a690ec491af92ada1bd9e8fa3e9a",
+      "bytes": 7787
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/REVIEW_CHECKS.json",
+      "sha256": "7798ea3a72cef1642a617345d0fb2a51ccfcba73d59ec2360a6ee12c6b2167fe",
+      "bytes": 6695
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/check_rescaled_gradient_hostile.py",
+      "sha256": "bdcb361ebba562d1921e1f0e5ac064d5530e322e4555eea05e636758ebdfc9c5",
+      "bytes": 11099
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/rescaled_gradient_hostile_exact_results.json",
+      "sha256": "9ead8122ea1ece5e5f539c3c47c46a4ab71c14930272d7693f75a039fbc2b4c7",
+      "bytes": 2447
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/verify_and_seal.py",
+      "sha256": "69298c3e4a47a83af02767964c39a8f59c3f75ccc04f59291cc30a5f5a992963",
+      "bytes": 10246
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_RESCALED_GRADIENT_REVIEW.md",
+      "sha256": "273aa2c29c357b0721b0bf4ae8572bc63d2985c5f4c07e776e7685b5c643fd2e",
+      "bytes": 36975
+    },
+    {
+      "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+      "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec",
+      "bytes": 3617
+    },
+    {
+      "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+      "sha256": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210",
+      "bytes": 1052
+    },
+    {
+      "path": "AUDITS/ROUND_011_RESCALED_GRADIENT_HOSTILE_INPUT_SHA256SUMS.txt",
+      "sha256": "d9031493c7e687e96e96639dc6c03f76e3819a537a36cd65b23b3e23975c5c9a",
+      "bytes": 2506
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "bytes": 30796
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "bytes": 36096
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+      "sha256": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+      "bytes": 9007
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+      "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+      "bytes": 8896
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+      "sha256": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+      "bytes": 35187
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "bytes": 37944
+    },
+    {
+      "path": "MEMORANDA/ROUND_007_WEIGHTED_PAIR_GRADIENT.md",
+      "sha256": "eb65ed8680416032ca2667db1cab9b39b493fcb1c578985c632a8bbfd1e9953a",
+      "bytes": 34446
+    },
+    {
+      "path": "MEMORANDA/ROUND_008_HOMOGENEOUS_PARTICLE_DOMAIN.md",
+      "sha256": "753c9a431cd0b403d3a784fc5faee79631ecc0cc249ec494ac751131dd2b1311",
+      "bytes": 46908
+    },
+    {
+      "path": "MEMORANDA/ROUND_011_BOUNDED_RESCALED_DIFFUSION_GRADIENT.md",
+      "sha256": "6388c95bebd832b18c39d1089ce71555bfc033a257b0e994cad126bbbafa47eb",
+      "bytes": 40713
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "bytes": 5031
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-069_ROUND011_RESCALED_GRADIENT_HOSTILE.md",
+      "sha256": "ef3c13fe1803f0f492e70f7df6aeb9d53e25a80ada86f679b9b2029c57ffa24d",
+      "bytes": 1794
+    },
+    {
+      "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+      "sha256": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed",
+      "bytes": 3777
+    },
+    {
+      "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+      "sha256": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f",
+      "bytes": 2783
+    },
+    {
+      "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+      "sha256": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6",
+      "bytes": 2611
+    },
+    {
+      "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+      "sha256": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db",
+      "bytes": 3204
+    },
+    {
+      "path": "THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a",
+      "bytes": 2552
+    },
+    {
+      "path": "THEOREMS/THM-027_WEIGHTED_PAIR_GRADIENT.md",
+      "sha256": "45a1e5a6b43b9cdebd02513131b41ae8bb1b201dfcf65ff7a0169940d735e108",
+      "bytes": 2927
+    },
+    {
+      "path": "THEOREMS/THM-028_HOMOGENEOUS_PARTICLE_CORRECTOR_DOMAIN.md",
+      "sha256": "262f2ef32cfb9fa7757774e09970862c06c38891b2ef2d1bd1af875947e928a3",
+      "bytes": 3241
+    },
+    {
+      "path": "THEOREMS/THM-032_BOUNDED_RESCALED_GRADIENT_AND_LIMIT.md",
+      "sha256": "065e7b022dfc650682713ae72bc898db86600337900c92fff7dbbf990ecc2a69",
+      "bytes": 2765
+    }
+  ],
+  "allowed_input_count": 22,
+  "input_manifest_sha256": "d9031493c7e687e96e96639dc6c03f76e3819a537a36cd65b23b3e23975c5c9a",
+  "output_manifest_sha256": "8de756344e6ffee7c99dfd1acdd4d9d7ae8a8eeb0efa59cfa58bb09194b25b4b",
+  "archive_verification": "all unique safe regular members re-read in memory and hash-matched",
+  "mathematical_verdict": "CONDITIONAL PASS of frozen THM032; no repair implemented",
+  "source_condition": "Earlier full-source prerequisites remain conditional as issued.",
+  "exposure_record": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/README.md",
+  "no_canonical_edits": true,
+  "no_commits": true,
+  "no_pushes": true,
+  "no_installations": true,
+  "immutability": "Issued outputs set read-only; corrections require a separately named superseding report."
+}

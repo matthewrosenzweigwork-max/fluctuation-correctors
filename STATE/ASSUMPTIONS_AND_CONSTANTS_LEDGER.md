@@ -67,3 +67,8 @@ R10 constants depend on fixed d,s,T,h,nu_*,periodic kernel and fixed cutoff, nev
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 explicit constants are reconstructed in hostile H4–H13 and H16–H21. The bounded-chi Jacobian-weight cost, fixed annular terms, derivative-only two-response bound and Gronwall contain no hidden C_N. The positive occupation coefficient is s(d-2-s), so it cannot be used at Coulomb. R7 fixed-N higher moments justify identities only; all N/nu dependence remaining in the result is displayed.
+
+R11/R13 accepted constants: R11 fixes d>=3,0<s<=d-2,T,L,h,weights and controls every fixed moment alpha>m by C(chi^((s+2)/s)),chi<=L. R13 fixes d>=4,0<s<2,T,nu_*,h,q,weights; q is strictly1<q<min(d-2,d/2),q<=s+1,eta<2. Its negative diffusion and repulsive coefficients both remain positive; no uniform endpoint-in-s/q/d/nu_* constant is claimed. Complete formula records are the immutable proofs and accepted round reports.

@@ -1,0 +1,142 @@
+{
+  "time_utc": "2026-09-18T03:47:52.931796+00:00",
+  "source_root": "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r011-gradient-hostile",
+  "base_commit": "29d7ce427ad7a98739b18d07781e71c4598b3579",
+  "input_count": 22,
+  "manifest_sha256": "d9031493c7e687e96e96639dc6c03f76e3819a537a36cd65b23b3e23975c5c9a",
+  "files": [
+    {
+      "path": "THEOREMS/THM-028_HOMOGENEOUS_PARTICLE_CORRECTOR_DOMAIN.md",
+      "expected": "262f2ef32cfb9fa7757774e09970862c06c38891b2ef2d1bd1af875947e928a3",
+      "actual": "262f2ef32cfb9fa7757774e09970862c06c38891b2ef2d1bd1af875947e928a3",
+      "match": true
+    },
+    {
+      "path": "AGENTS.md",
+      "expected": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "actual": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "match": true
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "expected": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "actual": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "expected": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "actual": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "match": true
+    },
+    {
+      "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+      "expected": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed",
+      "actual": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed",
+      "match": true
+    },
+    {
+      "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+      "expected": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f",
+      "actual": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f",
+      "match": true
+    },
+    {
+      "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+      "expected": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6",
+      "actual": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6",
+      "match": true
+    },
+    {
+      "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+      "expected": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db",
+      "actual": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db",
+      "match": true
+    },
+    {
+      "path": "THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md",
+      "expected": "aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a",
+      "actual": "aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "expected": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "actual": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+      "expected": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+      "actual": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+      "expected": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+      "actual": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+      "expected": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+      "actual": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "expected": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "actual": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "match": true
+    },
+    {
+      "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+      "expected": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec",
+      "actual": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec",
+      "match": true
+    },
+    {
+      "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+      "expected": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210",
+      "actual": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_008_HOMOGENEOUS_PARTICLE_DOMAIN.md",
+      "expected": "753c9a431cd0b403d3a784fc5faee79631ecc0cc249ec494ac751131dd2b1311",
+      "actual": "753c9a431cd0b403d3a784fc5faee79631ecc0cc249ec494ac751131dd2b1311",
+      "match": true
+    },
+    {
+      "path": "THEOREMS/THM-027_WEIGHTED_PAIR_GRADIENT.md",
+      "expected": "45a1e5a6b43b9cdebd02513131b41ae8bb1b201dfcf65ff7a0169940d735e108",
+      "actual": "45a1e5a6b43b9cdebd02513131b41ae8bb1b201dfcf65ff7a0169940d735e108",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_007_WEIGHTED_PAIR_GRADIENT.md",
+      "expected": "eb65ed8680416032ca2667db1cab9b39b493fcb1c578985c632a8bbfd1e9953a",
+      "actual": "eb65ed8680416032ca2667db1cab9b39b493fcb1c578985c632a8bbfd1e9953a",
+      "match": true
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-069_ROUND011_RESCALED_GRADIENT_HOSTILE.md",
+      "expected": "ef3c13fe1803f0f492e70f7df6aeb9d53e25a80ada86f679b9b2029c57ffa24d",
+      "actual": "ef3c13fe1803f0f492e70f7df6aeb9d53e25a80ada86f679b9b2029c57ffa24d",
+      "match": true
+    },
+    {
+      "path": "THEOREMS/THM-032_BOUNDED_RESCALED_GRADIENT_AND_LIMIT.md",
+      "expected": "065e7b022dfc650682713ae72bc898db86600337900c92fff7dbbf990ecc2a69",
+      "actual": "065e7b022dfc650682713ae72bc898db86600337900c92fff7dbbf990ecc2a69",
+      "match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_011_BOUNDED_RESCALED_DIFFUSION_GRADIENT.md",
+      "expected": "6388c95bebd832b18c39d1089ce71555bfc033a257b0e994cad126bbbafa47eb",
+      "actual": "6388c95bebd832b18c39d1089ce71555bfc033a257b0e994cad126bbbafa47eb",
+      "match": true
+    }
+  ]
+}

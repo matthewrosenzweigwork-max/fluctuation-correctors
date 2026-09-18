@@ -83,3 +83,8 @@ R10 root reproduced20300 constructor,1421 independent constructor/falsifier,1851
 
 
 R10 whole-card blind4955 exact supporting assertions rerun byte-identically after safe32-member archive mapping. R11 fresh blind16207 assertions pass; its rerun matches every JSON field except checked_at_utc, which intentionally changes. This is not byte identity. AUD043 full conditional comparison passes after root reads647 lines, checks weighted-space semantics and preserves the extra Coulomb counterexamples as separately constructed observations.
+
+
+R12 hostile22725 exact assertions rerun byte-identically from its safe34-member extraction, including25 input/count checks; all24 input and8 output hashes and archive sidecar pass. Root read all426 lines and22 claim dispositions. Combined R11/R12 final TeX/PDF3 pages,215207 bytes, clean complete log, all pages visually checked. Initial literal-quad rendering defect corrected before final build; verbatim transcript retained.
+
+R11 hostile6927 exact checks rerun byte-identically after all22 input/8 output/33 member checks; blind16207 semantic reproduction differs only by disclosed timestamp. R13 blind2513 and hostile56353 exact checks rerun byte-identically in separate safe extractions; respective27/28 inputs,8/8 outputs,36/38 members and all detached seals pass. Root R13 checker3570 earlier reproduced; chronology erratum preserved. None of these finite diagnostics certifies singular analytic passages. Machine records are under CERTIFICATES/OUTPUTS/.

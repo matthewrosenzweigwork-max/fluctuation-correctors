@@ -91,3 +91,8 @@ R10 submitted/audited-hostile powers use p=s+2, a=s/p, theta=1-s/d. The two ener
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 keeps physical2nu Nb, ordered deletion and original mean-field centering. With p=s+2,a=s/p,theta=1-s/d, critical chi=lambda^-1 N^[s(p-d)/(dp)] tends to zero, and a-theta=(s(s+2)-2d)/(dp). Both strict signs are required. No Coulomb/equality limit is silently included; old energy-floor, full-subcritical and finite positive critical powers remain distinct.
+
+R11/R13 gate scaling check: R11 chi=nu N^(2/(s+2)) equals lambda_N^-1 N^[s(s+2-d)/(d(s+2))], so criticality lies in bounded chi through Coulomb, but general full subcriticality does not. R13 covers all bounded nu,d>=4,0<s<2 with sigma^2=N min(1/nu,1). No beta exponent is replaced. THM035 uses b=1,sigma=sqrt(N) at zero noise for deterministic drift; this differs from setting the noise bracket to zero.

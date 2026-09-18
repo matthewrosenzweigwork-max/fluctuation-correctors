@@ -71,3 +71,8 @@ R10 uniform L1 uses the genuine Borel measure bound for S, bounded signed-measur
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 proves |grad_pair Phi|/w_q<=C_q N^((s+1-q)/(s+2)) for1<q<d/2,q<=s+1 at bounded chi. The source split cancels the occupation factor N. Both homogeneous finite signed-measure responses act on the derivative only, with no extra value norm. Root Gronwall and fresh Ultra full differentiated-series constructions identify the same existing inverse. THM032 spatial convergence is not a premise.
+
+R11 passes the full weighted-space assertion and response-only limit integral exp((a-t)R)J_a^0 da, uniquely in uniformly weighted-value bounded pointwise mild class. Both responses remain. Uniform local C1 convergence passes through separated singularity convolution and factorial tails; no weighted-sup/H1/time-derivative convergence is asserted. R13 improves only the derivative norm using simultaneous diffusion/repulsion occupation and derivative-only homogeneous response bounds.

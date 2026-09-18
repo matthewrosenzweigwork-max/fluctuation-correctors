@@ -44,3 +44,8 @@ R10 approximation powers follow exact label coefficients and entropy/Fourier bou
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 proves a genuine actual-noise sufficient power from a smaller gradient weight and the actual divergence occupation. It is not a general lambda-per-vertex rule or a critical truncation theorem. The cubic drift and lower contractions still require explicit independent power/law control.
+
+R13 accepted rate: p=s+2,a=s/p,theta=1-s/d; small-noise cutoff N^-1/(6p^2), radial clipping N^1/(4p), tail weight q_-=1+s/4,r=4(s+2)/(s+4)>2. Decay exponents are theta-a,(2-s)/(12p^2),s/(4p(s+4)),1/(2p),2/p. All are strictly positive for d>=4,0<s<2. This closes noise diagrams only; critical integrated cubic and all-order truncation table remain open.

@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "time_utc": "2026-09-18T04:05:53.562546+00:00",
+  "base_commit": "29d7ce427ad7a98739b18d07781e71c4598b3579",
+  "branch": "codex/hocf-r011-gradient-hostile",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r011-gradient-hostile",
+  "verified_inputs": [
+    {
+      "path": "THEOREMS/THM-028_HOMOGENEOUS_PARTICLE_CORRECTOR_DOMAIN.md",
+      "sha256": "262f2ef32cfb9fa7757774e09970862c06c38891b2ef2d1bd1af875947e928a3",
+      "verified": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "verified": true
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "verified": true
+    },
+    {
+      "path": "THEOREMS/THM-021_SINGULAR_RESPONSE_OPERATOR.md",
+      "sha256": "0dfa0d0fff1b6b7516e7779a0ac58f8fe03ab40625d81379d4c3abf8f2e4c4ed",
+      "verified": true
+    },
+    {
+      "path": "THEOREMS/THM-023_PERIODIC_BASE_PAIR.md",
+      "sha256": "bae6f221e3869a05a7244022ff49c1a2b82174b9200045e77dfc0187f1e7fb5f",
+      "verified": true
+    },
+    {
+      "path": "THEOREMS/THM-024_CONDITIONAL_FULL_PAIR.md",
+      "sha256": "841b9a5ea07714c62f6c969e1c6bc873876552e04b95f6a195742f2e8fa6dac6",
+      "verified": true
+    },
+    {
+      "path": "THEOREMS/THM-025_FULL_PAIR_INITIAL_ENDPOINT.md",
+      "sha256": "f886dd8e95c403d8e4150bfd971f78d99b162999407a6ef23bbe4dddfa6554db",
+      "verified": true
+    },
+    {
+      "path": "THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+      "sha256": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+      "sha256": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+      "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "verified": true
+    },
+    {
+      "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+      "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec",
+      "verified": true
+    },
+    {
+      "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+      "sha256": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_008_HOMOGENEOUS_PARTICLE_DOMAIN.md",
+      "sha256": "753c9a431cd0b403d3a784fc5faee79631ecc0cc249ec494ac751131dd2b1311",
+      "verified": true
+    },
+    {
+      "path": "THEOREMS/THM-027_WEIGHTED_PAIR_GRADIENT.md",
+      "sha256": "45a1e5a6b43b9cdebd02513131b41ae8bb1b201dfcf65ff7a0169940d735e108",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_007_WEIGHTED_PAIR_GRADIENT.md",
+      "sha256": "eb65ed8680416032ca2667db1cab9b39b493fcb1c578985c632a8bbfd1e9953a",
+      "verified": true
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-069_ROUND011_RESCALED_GRADIENT_HOSTILE.md",
+      "sha256": "ef3c13fe1803f0f492e70f7df6aeb9d53e25a80ada86f679b9b2029c57ffa24d",
+      "verified": true
+    },
+    {
+      "path": "THEOREMS/THM-032_BOUNDED_RESCALED_GRADIENT_AND_LIMIT.md",
+      "sha256": "065e7b022dfc650682713ae72bc898db86600337900c92fff7dbbf990ecc2a69",
+      "verified": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_011_BOUNDED_RESCALED_DIFFUSION_GRADIENT.md",
+      "sha256": "6388c95bebd832b18c39d1089ce71555bfc033a257b0e994cad126bbbafa47eb",
+      "verified": true
+    }
+  ],
+  "input_count": 22,
+  "exact_diagnostic_status": "PASS",
+  "exact_diagnostic_count": 6927,
+  "python_syntax": "both new scripts compiled in memory; no bytecode generated",
+  "text_checks": [
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_RESCALED_GRADIENT_REVIEW.md",
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_control_bytes": true
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/README.md",
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_control_bytes": true
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/INPUT_SHA256SUMS.txt",
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_control_bytes": true
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/INPUT_VERIFICATION.json",
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_control_bytes": true
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/check_rescaled_gradient_hostile.py",
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_control_bytes": true
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/rescaled_gradient_hostile_exact_results.json",
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_control_bytes": true
+    },
+    {
+      "path": "AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/verify_and_seal.py",
+      "terminal_newline": true,
+      "no_trailing_whitespace": true,
+      "no_control_bytes": true
+    }
+  ],
+  "markdown_display_pairs": 20,
+  "markdown_inline_math_pairs": 78,
+  "dangling_single_backslash_lines": 0,
+  "git_diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "commands": [
+    "python3 AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/check_rescaled_gradient_hostile.py",
+    "python3 AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS/verify_and_seal.py",
+    "git rev-parse HEAD",
+    "git rev-parse --abbrev-ref HEAD",
+    "git diff --check -- AUDITS/HOSTILE/ROUND_011_RESCALED_GRADIENT_REVIEW.md AUDITS/HOSTILE/ROUND_011_GRADIENT_HOSTILE_ARTIFACTS"
+  ],
+  "scope": "Only explicitly listed input and output files inspected; no canonical state/history read."
+}

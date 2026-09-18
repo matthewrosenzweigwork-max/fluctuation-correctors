@@ -40,3 +40,8 @@ R10 preserves all coefficients of the exact two-/three-/mixed bracket expansion,
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 whole-square control retains the exact literal gradient N^-2[sum G-N A]. After actual expectation its coefficients are2(N-1)^2/N^3 and2/N; physical scaling yields4nu b[(N-1)^2/N^2 EG12^2+||A||2^2]. It bounds the full nonnegative bracket without claiming separate absolute pair/triple/mixed law-error estimates. The evolved cubic and lower drift contractions are unchanged and remain unclosed.
+
+R13 full/noise split retains pair, ordered triple, mixed and row-square terms with exact coefficients and physical2nu Nb. Every radial tail uses its own row; no orthogonality is asserted. THM035's pending lower drift is N^-1 rho[(B Phi)_Haar]+(2N)^-1 integral B Phi, with B Phi=K dot(grad_x-grad_y)Phi. THM036 uses the six-permutation average in C Phi and all ordered U3 background contractions. No counterterm or centering is altered.

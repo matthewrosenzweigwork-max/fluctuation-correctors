@@ -1,0 +1,199 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\E}{\mathbb E}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\R}{\mathcal R}
+\title{Weighted corrector limits and an actual martingale estimate}
+\author{HOCF--RIESZ, Rounds 011--012}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Scope and audit record.}
+This internal synthesis records the exact THM--032 and THM--033 implications.
+Complete proofs, independent reconstructions and hostile dispositions are
+preserved separately in the campaign memoranda and audit ledgers. Earlier
+particle and full-inverse modules are used only in their stated scopes.
+Neither module proves the cubic drift residual or a fluctuation law.
+
+\section*{The full inverse at bounded rescaled diffusivity}
+Use the unit Haar torus, coefficient-one periodic Riesz kernel, $K=-\nabla g$,
+zero external drift, and a smooth real terminal test $h$. Fix
+\[
+ d\ge3,\quad 0<s\le d-2,\quad 0\le T,L<\infty,\quad N\ge2,\quad
+ 0\le\nu\le L N^{-2/p},\qquad p=s+2.
+\]
+The actual homogeneous Fourier test and source are
+\[
+ f_t^\nu=\widehat h(0)+\sum_{k\ne0}\widehat h(k)
+ e^{-(T-t)(4\pi^2\nu|k|^2+d_k)}e^{2\pi i k\cdot x},\qquad
+ d_k=4\pi^2c_{d,s}|k|^{s+2-d},
+\]
+\[
+ J_t^\nu(x,y)=K(x-y)\cdot(\nabla f_t^\nu(x)-\nabla f_t^\nu(y)).
+\]
+Let $S^{N,\nu}$ be the genuine auxiliary pair evolution and let
+$D=\operatorname{div}K$ be the complete compensated finite signed measure.
+Both response slots remain:
+\[
+ \R v=-\int v(x+w,y)D(\dd w)-\int v(x,y+w)D(\dd w),
+\]
+\[
+ \Phi_t^{N,\nu}=\int_t^T S_{a-t}^{N,\nu}
+                 (J_a^\nu+\R\Phi_a^{N,\nu})\dd a.
+\]
+For the fixed positive periodic weights $w_q=w_1^q$, equal to $|x-y|^{-q}$
+near the diagonal, define
+\[
+ \|v\|_X=\sup_{x\ne y}\frac{|v|}{w_s}
+         +\sup_{x\ne y}\frac{|\nabla_{x,y}v|}{w_{s+1}}.
+\]
+Then $\sup_{N,\nu,t}\|\Phi_t^{N,\nu}\|_X\le C$.
+The derivatives are actual jointly continuous derivatives off the diagonal
+and global weak Haar derivatives. In particular the kernels are uniformly
+bounded in $W^{1,1}$, and the one-variable contractions and their first
+derivatives are continuous and uniformly bounded.
+
+The mechanism is explicit. For every moment order $\alpha>m$, the radial
+weighted generator has the retained negative term
+$-2s(\alpha-m)r^{-p}/N$ and possible positive term
+$2\nu\alpha(\alpha+2-d)_+r^{-2}$. Maximizing half of the latter competition
+costs a fixed multiple of
+\[
+ N^{2/s}\nu^{p/s}=(\nu N^{2/p})^{p/s}\le L^{p/s}.
+\]
+The fixed annular costs are also uniform. Terminal moments control the
+source in its own value and gradient weights. Both responses are bounded
+on $X$, and the full ordered Volterra series has a uniform factorial tail.
+Common-start flow construction and higher-moment uniform integrability
+justify the expectation derivatives before these uniform estimates are used.
+
+\newpage
+\section*{Identification and topology of the limit}
+The limiting full kernel retains the response operator:
+\[
+ \Phi_t^0=\int_t^T e^{(a-t)\R}J_a^0\dd a,\qquad
+ \partial_t\Phi_t^0+\R\Phi_t^0=-J_t^0,\qquad\Phi_T^0=0.
+\]
+The exponential is the norm-convergent series of the bounded signed
+operator on $X$ and on the pointwise weighted-value space $Y_s$.
+The source is continuous into $X$, so the integral is a genuine
+norm-valued integral. Factorial iteration gives uniqueness among uniformly
+$Y_s$-bounded pointwise mild solutions.
+
+For every compact $H$ away from the diagonal,
+\[
+ \sup_{0\le\nu\le L N^{-2/p}}\sup_{t\le T}
+ \|\Phi_t^{N,\nu}-\Phi_t^0\|_{C^1(H)}\longrightarrow0,
+\]
+\[
+ \sup_{0\le\nu\le L N^{-2/p}}\sup_{t\le T}
+ \|\Phi_t^{N,\nu}-\Phi_t^0\|_{W^{1,1}(\mathrm{Haar}^2)}
+ \longrightarrow0.
+\]
+On a fixed compact set, small Brownian motion, drift of order $1/N$ and
+its Jacobian give the base evolution's local convergence to the identity.
+Higher moments control the complementary event. Separated-singularity
+bounds preserve this local convergence under both nonlocal responses.
+First compare finitely many Volterra terms; then use their uniform tails.
+Finally delete a relative tube of radius $\delta$. Its value and gradient
+integrals are bounded by
+\[
+ C\delta^{d-s}\quad\hbox{and}\quad C\delta^{d-s-1},
+\]
+respectively. Sending $N$ to infinity before $\delta$ to zero gives the
+global result and uniform contraction convergence. No uncountable
+intersection of probability-one sets over diffusivities is needed.
+
+The limit need not be bounded at the diagonal, and its gradient need not
+belong to Haar $L^2$. There is no assertion of weighted-supremum,
+second-derivative or time-derivative convergence. These deterministic
+kernel estimates alone do not transfer to a correlated particle law.
+
+\section*{A separate, stronger derivative weight}
+For the actual-noise implication restrict to
+\[
+ 0<s<d-2,\qquad a=s/p,\qquad\theta=1-s/d,
+ \qquad \nu N^{2/p}\le L,\quad 0\le\nu\le\nu_*.
+\]
+For each $1<q<d/2$ with $q\le s+1$, a separate argument proves
+\[
+ \sup_t\sup_{x\ne y}\frac{|\nabla_{x,y}\Phi_t|}{w_q}
+ \le C_q N^{(s+1-q)/p}.
+\]
+Set $\eta=s+1-q$. The weighted stopped evolution retains both a terminal
+bound and an occupation bound with coefficient $1/N$. Split the actual
+source-gradient weight at the repulsion scale:
+\[
+ w_{s+1}\le C N^{\eta/p}w_q
+       +N^{\eta/p-1}\mathbf1_{\{r\le1/16\}}w_{q+p}.
+\]
+The occupation factor $N$ cancels the last coefficient's $N^{-1}$.
+The derivative-only homogeneous response bound has no extra value-amplitude
+term, so Gronwall on the genuine full inverse gives the stated power.
+The separate THM--032 spatial limit is not a prerequisite for this proof.
+
+\newpage
+\section*{The genuine interacting-law bracket}
+The actual particles start iid Haar independently of their Brownian drivers:
+\[
+ \dd X_i=B_i\dd t+\sqrt{2\nu}\dd W_i,\qquad
+ B_i=\frac1N\sum_{j\ne i}K(X_i-X_j),\qquad
+ H_N=\frac1N\sum_{i<j}g(X_i-X_j).
+\]
+At positive noise put $\beta=1/\nu$, $b_N=\min(\beta,1)$ and
+$\sigma_N^2=Nb_N$. The exact earlier energy identity and sharp R10 floor give
+\[
+ \E H_N(X_T)+\E\int_0^T\sum_i|B_i|^2\dd t
+       +\nu(N-1)\int_0^T\E D_{\rm cl}(X_1-X_2)\dd t=0,
+ \qquad H_N\ge-CN^{s/d}.
+\]
+Strictly below Coulomb,
+$D_{\rm cl}\ge c w_p-C$ with $c>0$ because $s(d-2-s)>0$.
+Discarding only the whole nonnegative force square therefore proves
+\[
+ \nu\E\int_0^T w_p(X_1-X_2)\dd t\le C(N^{-\theta}+\nu).
+\]
+No individual pair-force square is extracted from a signed expansion.
+At Coulomb the positive singular-density coefficient vanishes, so this
+occupation argument is unavailable.
+
+Choose $q=p/2\in(1,d/2)$. The gradient estimate gives
+$|G|^2\le C N^a w_p$, with $G=\nabla_x\Phi$ and
+$A(x)=\int G(x,y)\dd y$. The exact ordered deleted-pair statistic satisfies
+\[
+ \nabla_iP_N[\Phi]=N^{-2}\sum_{j\ne i}G(X_i,X_j)-N^{-1}A(X_i).
+\]
+Exchangeability, the actual one-body Haar law and the finite-sum square
+inequality yield
+\[
+ Q_N:=2\nu Nb_N\E\int_0^T\sum_i|\nabla_iP_N[\Phi_t]|^2\dd t
+ \le4\nu b_N\int_0^T
+ \left[\frac{(N-1)^2}{N^2}\E|G_{12}|^2+\|A\|_2^2\right]\dd t
+ \le Cb_NN^a(N^{-\theta}+\nu).
+\]
+This is the entire actual bracket of the genuine earlier-domain
+martingale. It is not a Haar reference integral or a clipped replacement.
+The leading scaled bracket is bounded by $C\nu b_N\le C$; the expected
+time integral of absolute scaled cross-variation is at most $C\sqrt{Q_N}$.
+Zero-noise brackets vanish directly, without dividing by zero.
+
+At microscopic criticality $\lambda_N=\beta_NN^{-\theta}\to\lambda>0$,
+\[
+ \nu_N=\lambda_N^{-1}N^{-\theta},\qquad
+ \nu_NN^{2/p}=\lambda_N^{-1}N^{s(p-d)/(dp)}\longrightarrow0.
+\]
+Hence $Q_N\to0$ whenever $s(s+2)<2d$. On any bounded-rescaled-diffusivity
+sequence it also vanishes if $s<\min(2,d-2)$. Equality boundaries and the
+Coulomb endpoint are excluded. General unrestricted bounded-noise
+sequences require a separate argument.
+
+\medskip\noindent
+Within these noise ranges, the next open load-bearing assertion is the
+actual evolved cubic drift residual with every lower contraction retained.
+The broader actual-noise range and critical hierarchy remain open. The old
+condition $\beta_NN^{2s/d-1}\to0$, full subcriticality $\lambda_N\to0$,
+and finite positive criticality remain distinct; the logarithmic case is
+separate. No completed fluctuation law is asserted.
+\end{document}

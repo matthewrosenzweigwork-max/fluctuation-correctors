@@ -62,3 +62,8 @@ R10 actual free-energy and energy statements concern the unique singular homogen
 
 
 R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.
+
+
+R12 controls the whole actual bracket under iid-Haar-prepared homogeneous singular gradient dynamics. Only exchangeability and one-body Haar are used in the configuration-space square inequality; no pair/triple product law or uniform density bound. Geometry d>=3,strict0<s<d-2,bounded chi and bounded diffusivity; actual noise decay is restricted further by the displayed sufficient powers.
+
+R13 actual uniform noise gate applies only to homogeneous unit torus, zero external drift, actual singular particles initially iid Haar independent of Brownian drivers,d>=4,0<s<2 and bounded diffusivity. Actual higher marginals remain correlated. R11 spatial limit includes Coulomb,d>=3, bounded chi, but supplies no interacting-law convergence. No general-background or logarithmic extension.
