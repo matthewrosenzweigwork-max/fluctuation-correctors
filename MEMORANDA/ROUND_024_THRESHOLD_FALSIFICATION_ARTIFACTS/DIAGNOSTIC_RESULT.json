@@ -1,0 +1,241 @@
+{
+  "arithmetic": "exact fractions; sparse Fourier polynomials; no random seed or tolerance",
+  "assertions": 2434,
+  "categories": {
+    "Coulomb positive occupation coefficient": 1,
+    "N2 triple coefficient": 8,
+    "canonical first row": 8,
+    "canonical second row": 8,
+    "compensated Coulomb mass": 3,
+    "critical inverse temperature exponent": 1,
+    "critical radial source square exponent": 1,
+    "critical response test polynomial domination exponent": 1,
+    "endpoint self and distinct labels": 120,
+    "finite N row compensation": 40,
+    "iid canonical mixed means": 160,
+    "initial distinct tag": 120,
+    "initial empirical variance": 120,
+    "initial endpoint defect derivative": 120,
+    "initial pair BBGKY": 120,
+    "initial same tag": 120,
+    "initial source first cross": 120,
+    "literal one body duality": 120,
+    "mixed endpoint generator": 120,
+    "mutation:Coulomb omit atom": 2,
+    "mutation:Coulomb omit compensation": 1,
+    "mutation:Ito bracket missing two": 80,
+    "mutation:delete ordered pair half": 40,
+    "mutation:endpoint N instead Nminus1": 120,
+    "mutation:falling factorial denominator": 40,
+    "mutation:initial BBGKY missing two": 120,
+    "mutation:initial BBGKY sign": 120,
+    "mutation:mixed pair overlap extra N": 40,
+    "mutation:mixed triple missing half": 32,
+    "mutation:omit contact d_over_N": 40,
+    "mutation:pair overlap extra N": 40,
+    "mutation:response sign": 120,
+    "mutation:reverse background sign": 40,
+    "mutation:reverse contact sign": 40,
+    "mutation:triple overlap missing half": 32,
+    "row response sign": 8,
+    "same time overlap coefficients": 40,
+    "two time overlap coefficients": 40,
+    "variance generator including Ito diagonal": 120,
+    "zero full Haar contraction": 8
+  },
+  "nonvacuous_mutations": {
+    "Coulomb omit atom": {
+      "case": {
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "difference": "-1"
+    },
+    "Coulomb omit compensation": {
+      "case": {
+        "mode": [
+          0,
+          0
+        ]
+      },
+      "difference": "1"
+    },
+    "Ito bracket missing two": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ],
+        "nu": "1/7"
+      },
+      "coefficient_key": "(0, 0, 0, 0, 0, 0, 0, 0)",
+      "difference": "1/7"
+    },
+    "delete ordered pair half": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "(-1, -1, 0, 0, 2, 1, 0, 0)",
+      "difference": "-1/8"
+    },
+    "endpoint N instead Nminus1": {
+      "case": {
+        "N": 2,
+        "a": "1/3",
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "((-1, 0, 0, 0), (0, 0, 1, 0))",
+      "difference": "1/3"
+    },
+    "falling factorial denominator": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "(-1, -1, 0, 0, 2, 1, 0, 0)",
+      "difference": "-1/8"
+    },
+    "initial BBGKY missing two": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ],
+        "nu": "0"
+      },
+      "difference": "-1/2"
+    },
+    "initial BBGKY sign": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ],
+        "nu": "0"
+      },
+      "difference": "-2"
+    },
+    "mixed pair overlap extra N": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "((-1, -1, -1, 0), (2, 1, 0, 0))",
+      "difference": "1/8"
+    },
+    "mixed triple missing half": {
+      "case": {
+        "N": 3,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "((-1, -1, 0, 0), (0, 0, -1, 0), (2, 1, 0, 0))",
+      "difference": "-1/3"
+    },
+    "omit contact d_over_N": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "(0, 0, 0, 0, 1, 0, 0, 0)",
+      "difference": "1/4"
+    },
+    "pair overlap extra N": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "((-1, 0, 0, 0), (1, 0, 0, 0))",
+      "difference": "1/8"
+    },
+    "response sign": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ],
+        "nu": "0"
+      },
+      "coefficient_key": "(0, 0, 0, 0, 1, 0, 0, 0)",
+      "difference": "-1"
+    },
+    "reverse background sign": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "(0, 0, 0, 0, 1, 0, 0, 0)",
+      "difference": "1"
+    },
+    "reverse contact sign": {
+      "case": {
+        "N": 2,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "(0, 0, 0, 0, 1, 0, 0, 0)",
+      "difference": "1/2"
+    },
+    "triple overlap missing half": {
+      "case": {
+        "N": 3,
+        "kernel_variant": 0,
+        "mode": [
+          1,
+          0
+        ]
+      },
+      "coefficient_key": "((-1, -1, 0, 0), (-1, 0, 0, 0), (2, 1, 0, 0))",
+      "difference": "-1/3"
+    }
+  },
+  "normalization": "generator, source and Coulomb constant divided by (2*pi)^2; dimension two embedded in T^4",
+  "scope": "finite smooth algebra support only; no singular evolution or limiting estimate certified",
+  "script_sha256": "cb24689a0e0fd7f04ddb574fde18c1254673eb736f2872114fa4510af7cbe85b",
+  "status": "PASS"
+}

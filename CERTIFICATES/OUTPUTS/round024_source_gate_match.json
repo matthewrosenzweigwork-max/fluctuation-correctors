@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-18T08:43:58.276625+00:00",
+  "published_head": "3efdbb96e7b94529b280234e83eb36f5fca3ef36",
+  "sources": [
+    {
+      "source": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "gate_sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+      "sha256": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_005.md",
+      "gate_sha256": "fba51213eb5d7c2e71f8bb4d69a071a08724856e40cd5c4262eb952c449268b1",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+      "sha256": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_005.md",
+      "gate_sha256": "fba51213eb5d7c2e71f8bb4d69a071a08724856e40cd5c4262eb952c449268b1",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+      "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_005.md",
+      "gate_sha256": "fba51213eb5d7c2e71f8bb4d69a071a08724856e40cd5c4262eb952c449268b1",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_008_HOMOGENEOUS_PARTICLE_DOMAIN.md",
+      "sha256": "753c9a431cd0b403d3a784fc5faee79631ecc0cc249ec494ac751131dd2b1311",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_008.md",
+      "gate_sha256": "d99bc73c9c348c8bfdd9823159a919d323fbaefa6efda419a111769c452d348c",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_010.md",
+      "gate_sha256": "56d4605864a0023c35ae542d1ec96317eef69f80c1b0975944d5bf870749e5cd",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "gate_record": "AUDITS/ROUND_016_GATE_INTEGRATION.md",
+      "gate_sha256": "68207163d5e576722b48953526f0d22b244a53badf7ae02e374251255aa1def9",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_006.md",
+      "gate_sha256": "1d0d901e2e96dbd6013cb847225ea2b2340aac13379ef34197f0f00d80be11b6",
+      "matches_published_HEAD": true
+    }
+  ],
+  "clarifications": [
+    {
+      "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+      "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec"
+    },
+    {
+      "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+      "sha256": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210"
+    }
+  ],
+  "dossiers": [
+    {
+      "path": "AUDITS/ROUND_024_COULOMB_REDUCTION_BLIND_INPUT_SHA256SUMS.txt",
+      "inputs": 21,
+      "sha256": "ed4fb5c4d8b92c5567b72d953727206f480eec331cb428c0a513bf924e912a24",
+      "all_canonical_inputs_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_024_COULOMB_REDUCTION_HOSTILE_INPUT_SHA256SUMS.txt",
+      "inputs": 24,
+      "sha256": "acc3de073b87e34d512f2d9bb9d08c0303c1f987697d8035b94a0989587cbb83",
+      "all_canonical_inputs_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_024_COULOMB_TRACE_AUDIT_INPUT_SHA256SUMS.txt",
+      "inputs": 20,
+      "sha256": "70621cf12edaa4fd1125b0c2d9096c8db062d88f5170dbb4f1b4d266771a816e",
+      "all_canonical_inputs_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_024_THRESHOLD_CONSTRUCTION_INPUT_SHA256SUMS.txt",
+      "inputs": 20,
+      "sha256": "4261224964821fa1f3ce6437406ef0cac54a3e3a9da2e9ab3f2549b7d67d39ee",
+      "all_canonical_inputs_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_024_THRESHOLD_FALSIFICATION_INPUT_SHA256SUMS.txt",
+      "inputs": 20,
+      "sha256": "8e7882057dc3681cec5f8ef5b4317063b6635ca35d2116f1491323db3be983c3",
+      "all_canonical_inputs_match": true
+    }
+  ],
+  "scope_note": "Final exact prior-source/accepted-gate and five current dossier byte match. Root full-source qualification comparison is AUDITS/ROUND_024_RECONSTRUCTION_COMPARISON.md. This record authenticates bytes and the separately inspected prior gate records, not model identity or external chronology. Current whole-theorem promotion additionally requires both complete reports, all evidence and final root disposition. No Coulomb use of strict R12/R14; R8 law constants remain fixed-N only."
+}

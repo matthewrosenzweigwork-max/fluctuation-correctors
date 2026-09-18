@@ -1,0 +1,10 @@
+{
+  "archive_members": 32,
+  "archive_sha256": "b0219153bd74df48a00e4bac943a3b853f51b565649c25433f8f31a2cbc6c6ad",
+  "extracted": false,
+  "local_files": 31,
+  "local_payload_bytes": 472733,
+  "manifest_sha256": "689d2da685e26436d3092d44838521969b9a1b4ee59885b69ee2e11b8ad144da",
+  "read_only_required": true,
+  "status": "PASS"
+}

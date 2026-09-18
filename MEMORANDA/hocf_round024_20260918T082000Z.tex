@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\newcommand{\E}{\mathbb E}
+\begin{document}
+\begin{center}
+{\large Coulomb lower contractions and the remaining dynamic cancellation}\\[4pt]
+HOCF--RIESZ, Round 024 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Status and scope.}
+The entire THM047 conjunction has passed fresh isolated reconstruction (AUD067) and hostile mathematical review (AUD068). Root has completed the full comparison, exact source qualification and sealed-evidence verification; the bounded gate is accepted. The original critical dynamic source assertion THM046 remains open. Work on the unit four-torus with coefficient-one Coulomb kernel, $K=-\nabla g$, $c=4\pi^2$ and $\operatorname{div}K=c(\delta_0-dx)$. The actual particles start from iid Haar, with drift $N^{-1}\sum_{j\ne i}K(X_i-X_j)$ and independent noise $\sqrt{2\nu_N}\,dW_i$. Here $\nu_N=\beta_N^{-1}$ and $\lambda_N=\beta_NN^{-1/2}\to\lambda\in(0,\infty)$.
+
+For smooth real $h$ and finite $T$, set $f_t=Q_{T-t}^{\nu_N}h$. The operator $Q_a^{\nu_N}$ preserves constants and has multiplier $e^{-a(c+c\nu_N|k|^2)}$ on nonzero modes. Define
+\[
+ J_t(x,y)=K(x-y)\cdot(\nabla f_t(x)-\nabla f_t(y)).
+\]
+Let $\Phi_t$ be the genuine symmetric pair inverse with terminal value zero and both responses. Write $q_t(x)=\int\Phi_t(x,y)\,dy$. Its off-diagonal equation is
+\[
+ \partial_t\Phi+\nu_N\Delta_{x,y}\Phi+N^{-1}B\Phi+R\Phi=-J,
+\]
+\[
+ B\Phi=K(x-y)\cdot(\nabla_x-\nabla_y)\Phi,\qquad
+ R\Phi=-2c\Phi+cq(x)+cq(y).
+\]
+All contractions and particle martingales use the already proved fixed-$N$ domain. In particular $B\Phi$ has absolutely integrable Haar slices by its structural equation. This does not follow from an absolute bound on $|K||\nabla\Phi|$.
+
+\noindent\textbf{Averaged trace and lower contraction.}
+The inverse sup bound and its common-translation covariance give, for every multi-index $\alpha$,
+\[
+ \|\Phi_t[h]\|_\infty\le C\sqrt N\|h\|_{C^2},\qquad
+ (\partial_x+\partial_y)^\alpha\Phi_t[h]=\Phi_t[\partial^\alpha h].
+\]
+Difference quotients converge in the off-diagonal sup norm; individual relative derivatives need not have such a uniform bound. Put $\psi_x(z)=\Phi_t(x,x-z)$ and $D=\nabla_x+\nabla_y$. Then
+\[
+ B\Phi_t(x,x-z)=K(z)\cdot D\Phi_t(x,x-z)+2K(z)\cdot\nabla_z\psi_x(z).
+\]
+The first term is integrable because $K\in L^1$; the second scalar product is integrable by subtraction from the legitimate contraction. On the punctured torus the inner normal is $-\theta$ and $K(\varepsilon\theta)\cdot(-\theta)\varepsilon^3=-2+O(\varepsilon^4)$. Thus
+\[
+ \int_{|z|>\varepsilon}K\cdot\nabla\psi_x
+ =c\int_{|z|>\varepsilon}\psi_x
+ -2\int_{\mathbb S^3}\psi_x(\varepsilon\theta)\,dS
+ +O(\varepsilon^4\|\Phi_t\|_\infty).
+\]
+The two volume integrals converge, proving existence of the normalized spherical average $\tau_t(x)$ and $|\tau_t(x)|\le\|\Phi_t\|_\infty$. No directionwise or pointwise diagonal value is assigned. With $b_t(x)=\int B\Phi_t(x,y)\,dy$ and $c=2|\mathbb S^3|$, the exact identity is
+\[
+ b_t(x)=\int K(z)\cdot D\Phi_t(x,x-z)\,dz+2c\bigl(q_t(x)-\tau_t(x)\bigr).
+\]
+Both the negative spherical flux and positive periodic compensation remain. It follows that $\|b_t[h]\|_\infty\le C\sqrt N\|h\|_{C^3}$. The bounded linear map $h\mapsto b_t[h]$ is translation covariant, so difference quotients yield
+\[
+ \sup_t\|b_t[h]/\sqrt N\|_{C^j}\le C\|h\|_{C^{j+3}},\qquad
+ \int b_t[h]=b_t[\textstyle\int h]=0.
+\]
+The last equality uses that a constant terminal test has zero source. It is not true for every arbitrary symmetric pair kernel.
+
+\newpage
+\noindent\textbf{Actual lower-drift estimate.}
+For $\rho_t=\eta_N(t)-dx$, the actual energy inequality and positive heat split give
+\[
+ \E|\widehat\eta_N(t,k)|^2\le\min(1,CN^{-1/2}|k|^2),\qquad k\ne0.
+\]
+Consequently every deterministic smooth test $a$, including an $N,t,\nu_N$ dependent one, satisfies
+\[
+ \E|\rho_t[a]|\le C N^{-1/4}\sum_{k\ne0}|k|\,|\widehat a(k)|
+ \le C N^{-1/4}\|a\|_{C^6}.
+\]
+The last series converges in dimension four using $(1-\Delta)^3$. Therefore the entire lower drift
+\[
+ \ell_N(t)=\frac1N\rho_t[b_t]+\frac1{2N}\int b_t
+\]
+obeys $\sqrt N\,\E\int_0^T|\ell_N(t)|\,dt\le C N^{-1/4}$. This is an absolute estimate under the actual evolved law; it does not replace that law by a product measure.
+
+\noindent\textbf{Exact source identity and controlled noise.}
+The literal deleted statistic is
+\[
+ P_N[v]=\frac1{2N^2}\sum_{i\ne j}v(X_i,X_j)-\frac1N\sum_i\int v(X_i,y)\,dy
+ +\frac12\iint v.
+\]
+All $U_3$ backgrounds have their original coefficients. If $C\Phi=\operatorname{Sym}_3[K(x-z)\cdot\nabla_x\Phi(x,y)]$, with the six-permutation average, the exact domain identity gives
+\[
+ \int_0^T P_N[J_t]dt=P_N[\Phi_0]+\int_0^T U_3[C\Phi_t]dt
+ +\int_0^T\ell_N(t)dt+M_T^2[\Phi],
+\]
+\[
+ M_t^2[v]=\sqrt{2\nu_N}\sum_i\int_0^t\nabla_iP_N[v_a](X_a)\cdot dW_i(a).
+\]
+The iid initial endpoint has $\E|\sqrt N P_N[\Phi_0]|\le C\sqrt{(1+\log N)/N}$, retaining the small first projection and mean before bounding them.
+
+Let $\Psi_{t,\delta}=e^{\delta\Delta_x}e^{\delta\Delta_y}\Phi_t$. Its uniform Haar $L^1$ bound and heat Fourier sums imply
+\[
+ Q_N[\Psi_\delta]:=2\nu_N N\E\int_0^T\sum_i|\nabla_iP_N[\Psi_{t,\delta}]|^2dt
+ \le C\nu_N\bigl(N^{-1/2}\delta^{-10}+N^{-2}\delta^{-9}\bigr).
+\]
+The second term retains the missing empirical self label. With $\delta_N=N^{-1/40}$ and $\nu_N=O(N^{-1/2})$, this gives $Q_N[\Psi_{\delta_N}]\le C N^{-3/4}$ and $\E|\sqrt N M_T^2[\Psi_{\delta_N}]|\le C N^{-3/8}$.
+
+Set $V_N=\Phi-\Psi_{\delta_N}$, $S_N=\sqrt N\int_0^T P_N[J_t]dt$ and
+\[
+ W_N=\sqrt N\left[\int_0^T U_3[C\Phi_t]dt+M_T^2[V_N]\right].
+\]
+Both martingales are genuine at each finite $N$, and
+\[
+ \E|S_N-W_N|\le C\left(N^{-1/4}+\sqrt{\frac{1+\log N}{N}}+N^{-3/8}\right)\longrightarrow0.
+\]
+Thus the original assertion is equivalent to $\E|W_N|\to0$, which remains unproved. The cubic and residual martingale are retained together; their separate decay would be sufficient, but is not asserted necessary. The finite initial segment with $\min(\beta_N,1)\ne1$ changes no limit. This result gives no Gaussian law, static-law counterexample or hierarchy closure.
+\end{document}

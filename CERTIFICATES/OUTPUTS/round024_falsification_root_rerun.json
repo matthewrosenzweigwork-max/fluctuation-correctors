@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "fresh_code_only_directory": "/private/tmp/hocf-r024-falsifier-rerun-itvw8n41",
+  "runs": [
+    {
+      "program": "round024_independent_diagnostic.py",
+      "args": [],
+      "returncode": 0,
+      "byte_identical": true,
+      "saved_sha256": "906300bab7133cc6fb8b71fc2bd3ebcbee00b713ca63899f9553d7f619d6293f",
+      "fresh_sha256": "906300bab7133cc6fb8b71fc2bd3ebcbee00b713ca63899f9553d7f619d6293f",
+      "stdout": "PASS: 2434 exact assertions, 40 categories, 16 nonvacuous mutations\n",
+      "stderr": ""
+    },
+    {
+      "program": "verify_packet.py",
+      "args": [
+        "--self-test"
+      ],
+      "returncode": 0,
+      "byte_identical": true,
+      "saved_sha256": "23127813bcc47c9c4cd94ee9dceed80b53f74802a175b5aa6607a0b25fda7edb",
+      "fresh_sha256": "23127813bcc47c9c4cd94ee9dceed80b53f74802a175b5aa6607a0b25fda7edb",
+      "stdout": "PASS: valid exact-member fixture plus 10 rejected mutations\n",
+      "stderr": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py:1505: UserWarning: Duplicate name: 'MEMORANDA/ROUND_024_THRESHOLD_DYNAMIC_FALSIFICATION.md'\n  return self._open_to_write(zinfo, force_zip64=force_zip64)\n"
+    }
+  ],
+  "evidence_class": "2434 exact supporting assertions,40 categories,16 mathematical mutations;10 integrity mutation rejections; not independent theorem certification."
+}

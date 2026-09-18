@@ -106,3 +106,6 @@ R21 final whole gate accepted,2026-09-18 UTC. THM043/PO030 is PROVED_CANDIDATE w
 
 
 R22 gate,2026-09-18 UTC: R22 driving modal martingale has bracket density <=4nu b a; deterministic integration by parts bounds stochastic-convolution supremum by twice driving supremum. Weighted Tonelli yields the exact linear Fourier tail. No Gaussian integrand, cross-mode independence or moving-terminal martingale assertion. Exact acceptance/source/scope: AUDITS/ROUND_022_GATE_INTEGRATION.md.
+
+
+2026-09-18 UTC. R24 whole THM047/PO034 accepted: PROVED_CANDIDATE; ISOLATED_RECONSTRUCTION_PASS(AUD067), HOSTILE_REVIEW_PASS(AUD068); VERSION_LOCKED. Complete constructor/blind/hostile and all source/code/evidence root-read; no repair. Exact averaged trace and contraction integral K.D Phi+2c(q-tau), all Cj bounds C sqrt(N), source-specific scalar0, actual absolute scaled lower drift O(N^-1/4), iid endpoint O(sqrt((1+logN)/N)) and smooth true-noise O(N^-3/8) give the entire cubic-plus-residual-martingale L1 equivalence. Both responses, all backgrounds, N2 and fixed-N singular limits retained. THM046/PO033 remains OPEN. See AUDITS/ROUND_024_GATE_INTEGRATION.md and ROUND_024_RECONSTRUCTION_COMPARISON.md.

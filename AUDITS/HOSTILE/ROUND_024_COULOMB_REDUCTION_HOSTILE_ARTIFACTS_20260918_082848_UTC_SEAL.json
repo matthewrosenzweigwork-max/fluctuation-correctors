@@ -1,0 +1,17 @@
+{
+  "archive_member_count": 37,
+  "archive_name": "ROUND_024_COULOMB_REDUCTION_HOSTILE_ARTIFACTS_20260918_082848_UTC.zip",
+  "archive_sha256": "4c9a91dc27bd981b7ce3643a4f9e3b672c028d86736811e731b75ac6cb516c71",
+  "artifact_directory": "ROUND_024_COULOMB_REDUCTION_HOSTILE_ARTIFACTS_20260918_082848_UTC",
+  "evidence_boundary": "Integrity seal, not a digital signature or authenticated chronology.",
+  "format": "AUD068_SHA256_SEAL_V1",
+  "frozen_input_count": 24,
+  "issued_utc": "2026-09-18T08:44:39.940890+00:00",
+  "member_inventory_sha256": "77273b6b1a03f1f7c4ccc6eee760820a0b9f3493340c914bd7799a033a0199b6",
+  "original_THM046": "OPEN",
+  "output_manifest_sha256": "10fb12695753b1f1a4a0adc55c3cf6863cf85598dcccecd11d9c370c901c326d",
+  "report_name": "ROUND_024_COULOMB_REDUCTION_REVIEW.md",
+  "report_sha256": "781b4225fba4488522580cbcda5740489339253504056f511bf0cbca21e7dedd",
+  "task": "TASK106/AUD068",
+  "whole_conjunction_verdict": "HOSTILE PASS; precise supplied-source and current-gate qualification in report"
+}

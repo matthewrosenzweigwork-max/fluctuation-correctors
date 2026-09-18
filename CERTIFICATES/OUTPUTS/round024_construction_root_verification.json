@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "archive_sha256": "94889de18eeda0e4369691cd9eb0ea3a757933f751c005d4417e93e26c672d9a",
+  "members": 32,
+  "frozen_inputs": 20,
+  "mathematical_checks": 1446,
+  "mathematical_mutation_categories": 15,
+  "verifier_mutations": [
+    {
+      "mutation": "changed_report",
+      "detected": true,
+      "reason": "inventory byte mismatch: REPORT.md"
+    },
+    {
+      "mutation": "missing_member",
+      "detected": true,
+      "reason": "archive exact inventory mismatch"
+    },
+    {
+      "mutation": "path_traversal",
+      "detected": true,
+      "reason": "unsafe member name"
+    },
+    {
+      "mutation": "absolute_path",
+      "detected": true,
+      "reason": "unsafe member name"
+    },
+    {
+      "mutation": "unexpected_member",
+      "detected": true,
+      "reason": "archive exact inventory mismatch"
+    },
+    {
+      "mutation": "symlink_member",
+      "detected": true,
+      "reason": "member is not a regular file"
+    }
+  ],
+  "diagnostic_reexecuted": false,
+  "evidence_class": "SELF_CHECKED packet integrity and reproducibility"
+}

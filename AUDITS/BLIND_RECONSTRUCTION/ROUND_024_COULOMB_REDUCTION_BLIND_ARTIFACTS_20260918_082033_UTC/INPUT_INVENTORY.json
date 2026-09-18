@@ -1,0 +1,107 @@
+[
+  {
+    "path": "AGENTS.md",
+    "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+    "bytes": 8174
+  },
+  {
+    "path": "MODEL_ORCHESTRATION.md",
+    "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+    "bytes": 4350
+  },
+  {
+    "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+    "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+    "bytes": 5031
+  },
+  {
+    "path": "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+    "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+    "bytes": 2035
+  },
+  {
+    "path": "TASKS/ACTIVE/TASK-105_ROUND024_COULOMB_REDUCTION_BLIND.md",
+    "sha256": "93ba525cfa64ae191a28d109748f240e3d4e2c652693242349998e991af78353",
+    "bytes": 2745
+  },
+  {
+    "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+    "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+    "bytes": 36096
+  },
+  {
+    "path": "MEMORANDA/ROUND_005_PERIODIC_PAIR_POTENTIAL.md",
+    "sha256": "80abe107bc5dc4c832962868f38b43537ca1d6d1c5c560baa2f77d90a2cdba7e",
+    "bytes": 35187
+  },
+  {
+    "path": "MEMORANDA/ROUND_005_CONDITIONAL_FULL_PAIR_INVERSE.md",
+    "sha256": "94daaa28057a10fc29ce601c7754dea4b4ed86972795b77d96e1b146b26c978d",
+    "bytes": 9007
+  },
+  {
+    "path": "MEMORANDA/ROUND_005_FULL_PAIR_INTERFACE_AND_HOMOGENEOUS_DATA.md",
+    "sha256": "875e499ec401d4d7ee01f080fc52df5f28af227da099981d1dc4313384857ddc",
+    "bytes": 8896
+  },
+  {
+    "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+    "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+    "bytes": 37944
+  },
+  {
+    "path": "MEMORANDA/ROUND_007_WEIGHTED_PAIR_GRADIENT.md",
+    "sha256": "eb65ed8680416032ca2667db1cab9b39b493fcb1c578985c632a8bbfd1e9953a",
+    "bytes": 34446
+  },
+  {
+    "path": "MEMORANDA/ROUND_008_HOMOGENEOUS_PARTICLE_DOMAIN.md",
+    "sha256": "753c9a431cd0b403d3a784fc5faee79631ecc0cc249ec494ac751131dd2b1311",
+    "bytes": 46908
+  },
+  {
+    "path": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+    "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+    "bytes": 35077
+  },
+  {
+    "path": "MEMORANDA/ROUND_012_SUBCOULOMB_ACTUAL_NOISE.md",
+    "sha256": "3160cce5d6389b5b3e1eefb2aceb6cc07fd29c421102931f3dcb80ccc4ca3a22",
+    "bytes": 11828
+  },
+  {
+    "path": "MEMORANDA/ROUND_014_LOWER_DRIFT_CONTRACTIONS.md",
+    "sha256": "266d8fe2cdbaa4111c3f5b515ed22c791f291508987618de525c49f9c67d3f14",
+    "bytes": 27473
+  },
+  {
+    "path": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+    "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+    "bytes": 34431
+  },
+  {
+    "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+    "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+    "bytes": 30796
+  },
+  {
+    "path": "AUDITS/ROUND_005_INTERFACE_SOURCE_AND_CONSTANT_ADDENDUM.md",
+    "sha256": "2abad6a860b99f00ada1b6e6610689c4a3c77031e078c1f11fe362fa7e2aceec",
+    "bytes": 3617
+  },
+  {
+    "path": "AUDITS/ROUND_005_SYMMETRY_AND_RENDERING_CLARIFICATION.md",
+    "sha256": "82839dd056c29fe6e9f5c3ee478d5ec1ce34d77d29ffe986553c46b1516b6210",
+    "bytes": 1052
+  },
+  {
+    "path": "MEMORANDA/ROUND_011_BOUNDED_RESCALED_DIFFUSION_GRADIENT.md",
+    "sha256": "6388c95bebd832b18c39d1089ce71555bfc033a257b0e994cad126bbbafa47eb",
+    "bytes": 40713
+  },
+  {
+    "path": "THEOREMS/THM-047_COULOMB_LOWER_CONTRACTIONS_AND_DYNAMIC_REDUCTION.md",
+    "sha256": "304a791005b190f7b5e658b4f6c64fd097d0ae7e087ead286d87588e51bcfe30",
+    "bytes": 3829
+  }
+]

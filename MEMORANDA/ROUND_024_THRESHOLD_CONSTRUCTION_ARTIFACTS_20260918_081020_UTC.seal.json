@@ -1,0 +1,34 @@
+{
+  "issued_utc": "20260918_081020_UTC",
+  "base": "4ab1d492c3bb9bb3537732f2d75502971f5ee6da",
+  "status": "SELF_CHECKED EXACT REDUCTION; FULL TARGET OPEN",
+  "archive_name": "ROUND_024_THRESHOLD_CONSTRUCTION_ARTIFACTS_20260918_081020_UTC.zip",
+  "archive_sha256": "94889de18eeda0e4369691cd9eb0ea3a757933f751c005d4417e93e26c672d9a",
+  "report_sha256": "ad310df1be0b04d27163ba0eddc7333eb5eb6592a43f5a4c1fc5b341b2fde0b0",
+  "output_manifest_sha256": "22118ac98916230b32b02278f17d5b42a85408dbc5e758ab7c78f3adf119d07f",
+  "inventory_sha256": "b4de12662f3583dc9421f9289c177703338aa419dd0013b991272639386e8148",
+  "archive_members": 32,
+  "input_count": 20,
+  "verified_utc": "2026-09-18T08:11:57Z",
+  "verification": {
+    "status": "PASS",
+    "mathematical_checks": 1446,
+    "mathematical_mutation_categories": 15,
+    "diagnostic_reexecuted_without_writes": true,
+    "original_live_input_hashes_passed": 20,
+    "archive_inventory_and_crc": "PASS",
+    "verifier_mutations_detected": [
+      "changed_report",
+      "missing_member",
+      "path_traversal",
+      "absolute_path",
+      "unexpected_member",
+      "symlink_member"
+    ],
+    "external_report_byte_identity": "PASS",
+    "output_text_hygiene": "PASS",
+    "git_diff_check": "PASS",
+    "scope": "SELF_CHECKED; no independent audit or target promotion"
+  },
+  "read_only_issuance": "All issued files 0444; all artifact directories 0555."
+}

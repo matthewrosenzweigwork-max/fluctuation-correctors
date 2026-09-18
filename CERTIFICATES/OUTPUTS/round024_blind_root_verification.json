@@ -1,0 +1,14 @@
+{
+  "archive_member_count": 32,
+  "archive_safety": "unique canonical names; regular read-only Unix files; exact byte digests; no extraction; CRC passed",
+  "archive_sha256": "748e89c6877819c5e6f04a7f6b9b525be6eeaab1db4c0e24f7cefd8e2f6a78d5",
+  "diagnostic_assertions": 593,
+  "diagnostic_categories": 19,
+  "input_count": 21,
+  "nonzero_mutation_witnesses": 11,
+  "output_digest_rows": 31,
+  "read_only_verifier": true,
+  "report_sha256": "ae39838dec3932665e661948d69321fbf31e1183454b35f618c159734239c101",
+  "source_scope": "entire THM047 reconstruction relative to explicitly supplied prior modules; current constructor withheld; THM046 remains open",
+  "status": "PASS"
+}

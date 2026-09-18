@@ -1,0 +1,11 @@
+{
+  "returncode": 0,
+  "temporary_code_only_directory": "/private/tmp/hocf-r024-constructor-rerun-ie_ovezx",
+  "byte_identical": true,
+  "saved_sha256": "63a65004beab3705eb7148972b0ddbafd251a991a5e35ab37363ecebcab183b3",
+  "fresh_sha256": "63a65004beab3705eb7148972b0ddbafd251a991a5e35ab37363ecebcab183b3",
+  "all_archive_disk_bytes_and_modes_equal": true,
+  "assertions": 1446,
+  "evidence": "Rational algebra plus explicitly approximate 50-digit RK4 limiting ODE; not all assertions are exact.",
+  "stderr": ""
+}

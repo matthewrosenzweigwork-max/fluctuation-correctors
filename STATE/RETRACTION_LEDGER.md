@@ -39,3 +39,6 @@ No promoted campaign theorem was retracted. OBS-001 and OBS-002 were provisional
 
 
 R23 AUD066-F01,2026-09-18 UTC: ancillary false line153 support-translation assertion found before theorem promotion. Original sealed proof preserved. Separate AUDITS/ROUND_023_SUPPORT_TRANSLATION_ERRATUM.md restricts final-support inheritance to separation/energy and keeps source-coordinate closeness pretranslation. Entire static theorem remains supported by the already present amplitude argument; independent blind/root integration pending. No promoted theorem retraction or scientific scope change.
+
+
+2026-09-18 UTC. R24 whole THM047/PO034 accepted: PROVED_CANDIDATE; ISOLATED_RECONSTRUCTION_PASS(AUD067), HOSTILE_REVIEW_PASS(AUD068); VERSION_LOCKED. Complete constructor/blind/hostile and all source/code/evidence root-read; no repair. Exact averaged trace and contraction integral K.D Phi+2c(q-tau), all Cj bounds C sqrt(N), source-specific scalar0, actual absolute scaled lower drift O(N^-1/4), iid endpoint O(sqrt((1+logN)/N)) and smooth true-noise O(N^-3/8) give the entire cubic-plus-residual-martingale L1 equivalence. Both responses, all backgrounds, N2 and fixed-N singular limits retained. THM046/PO033 remains OPEN. See AUDITS/ROUND_024_GATE_INTEGRATION.md and ROUND_024_RECONSTRUCTION_COMPARISON.md.

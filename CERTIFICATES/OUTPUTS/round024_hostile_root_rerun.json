@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "code_only": true,
+  "temporary_directory": "/private/tmp/hocf-r024-hostile-rerun-17k44my6",
+  "byte_identical_saved_result": true,
+  "result_sha256": "b7f90bb39be6a608881c7254c12cfdc85321f467f5fb05bac73c4deb2dee6ae9",
+  "stdout": "{\"assertions\": 889, \"code_sha256\": \"fec384535da1f152b8ae56af755be39407aae2dba9427aa477065912d4b9b480\", \"mutation_count\": 18, \"verdict\": \"PASS_SUPPORTING_EXACT_DIAGNOSTIC\"}\n",
+  "stderr": ""
+}

@@ -121,3 +121,6 @@ R22 gate,2026-09-18 UTC: R22 constructs actual Hilbert paths after the fixed-N s
 ## R23 gate / R24 resumption — 2026-09-18 UTC
 
 R23 heat subtraction defines the lattice regular part with integrable endpoint majorants. Moving-scale source limit passes second derivatives after a C delta^2 diagonal-tube estimate, before inserting a/m. Final static densities use collision-free smooth jitter and compact group averaging; no singular diagonal value or stochastic Ito passage is claimed. Original line153 is corrected separately before use.
+
+
+2026-09-18 UTC. R24 whole THM047/PO034 accepted: PROVED_CANDIDATE; ISOLATED_RECONSTRUCTION_PASS(AUD067), HOSTILE_REVIEW_PASS(AUD068); VERSION_LOCKED. Complete constructor/blind/hostile and all source/code/evidence root-read; no repair. Exact averaged trace and contraction integral K.D Phi+2c(q-tau), all Cj bounds C sqrt(N), source-specific scalar0, actual absolute scaled lower drift O(N^-1/4), iid endpoint O(sqrt((1+logN)/N)) and smooth true-noise O(N^-3/8) give the entire cubic-plus-residual-martingale L1 equivalence. Both responses, all backgrounds, N2 and fixed-N singular limits retained. THM046/PO033 remains OPEN. See AUDITS/ROUND_024_GATE_INTEGRATION.md and ROUND_024_RECONSTRUCTION_COMPARISON.md.

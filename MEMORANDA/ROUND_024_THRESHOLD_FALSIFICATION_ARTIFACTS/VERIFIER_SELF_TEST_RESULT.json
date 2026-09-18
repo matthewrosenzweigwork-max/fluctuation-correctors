@@ -1,0 +1,48 @@
+{
+  "baseline": "accepted",
+  "rejected_mutations": {
+    "absolute": {
+      "reason": "absolute member",
+      "rejected": true
+    },
+    "backslash": {
+      "reason": "non-POSIX or drive path",
+      "rejected": true
+    },
+    "duplicate": {
+      "reason": "duplicate ZIP member",
+      "rejected": true
+    },
+    "extra_member": {
+      "reason": "exact membership",
+      "rejected": true
+    },
+    "missing_member": {
+      "reason": "exact membership",
+      "rejected": true
+    },
+    "outer_digest": {
+      "reason": "archive digest",
+      "rejected": true
+    },
+    "payload_digest": {
+      "reason": "payload digest: MEMORANDA/ROUND_024_THRESHOLD_DYNAMIC_FALSIFICATION.md",
+      "rejected": true
+    },
+    "symlink": {
+      "reason": "nonregular member",
+      "rejected": true
+    },
+    "unsafe_parent": {
+      "reason": "unsafe path component",
+      "rejected": true
+    },
+    "writable": {
+      "reason": "writable or wrong member mode",
+      "rejected": true
+    }
+  },
+  "scope": "in-memory safety/byte verifier fixtures; final packet verified separately",
+  "script_sha256": "aeaf852e27e00223992a411fd4d013da337182300a6476a0ef79caaad71cf585",
+  "status": "PASS"
+}

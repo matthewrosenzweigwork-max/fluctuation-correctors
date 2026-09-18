@@ -143,3 +143,6 @@ R22 gate,2026-09-18 UTC: R22 retains real/complex pair normalization and full in
 ## R23 gate / R24 resumption — 2026-09-18 UTC
 
 R23 fixes d4,s2, g_hat(k)=|k|^-2 and div K=4pi^2(delta_0-dx). Exact ordered pair factor1/(2N^2), original row+4pi^2 eta[h], deformation a/m, N=m^4 and translation factor2/pi yield the positive absolute limit16pi^3a^2. Signed expectation remains zero. No beta/nu or any of the three frozen regime exponents changes.
+
+
+2026-09-18 UTC. R24 whole THM047/PO034 accepted: PROVED_CANDIDATE; ISOLATED_RECONSTRUCTION_PASS(AUD067), HOSTILE_REVIEW_PASS(AUD068); VERSION_LOCKED. Complete constructor/blind/hostile and all source/code/evidence root-read; no repair. Exact averaged trace and contraction integral K.D Phi+2c(q-tau), all Cj bounds C sqrt(N), source-specific scalar0, actual absolute scaled lower drift O(N^-1/4), iid endpoint O(sqrt((1+logN)/N)) and smooth true-noise O(N^-3/8) give the entire cubic-plus-residual-martingale L1 equivalence. Both responses, all backgrounds, N2 and fixed-N singular limits retained. THM046/PO033 remains OPEN. See AUDITS/ROUND_024_GATE_INTEGRATION.md and ROUND_024_RECONSTRUCTION_COMPARISON.md.

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "temporary_directory": "/private/tmp/hocf-r024-trace-rerun-98t0pjx8",
+  "copied_inputs": "Only three programs and twenty exact frozen inputs plus manifest; no saved outputs copied.",
+  "fresh_runs": [
+    {
+      "program": "exact_diagnostic.py",
+      "returncode": 0,
+      "byte_identical": true,
+      "saved_sha256": "0f941e3ea45c8be8853134bd57d817cb3f137dbe2769ca6e798a74b7981830ad",
+      "actual_sha256": "0f941e3ea45c8be8853134bd57d817cb3f137dbe2769ca6e798a74b7981830ad"
+    },
+    {
+      "program": "verifier_negative_checks.py",
+      "returncode": 0,
+      "byte_identical": true,
+      "saved_sha256": "aafcfeba2fba091c844a0e9af0a1865d6c6f3cda4b4ea8ced67c00d514341733",
+      "actual_sha256": "aafcfeba2fba091c844a0e9af0a1865d6c6f3cda4b4ea8ced67c00d514341733"
+    }
+  ],
+  "all_archive_disk_bytes_and_modes_equal": true,
+  "counts": "2030 exact assertions include21 input/count integrity checks; 96 Fourier and20 annular cases;8 mathematical mutations.13 adverse-verifier cases.",
+  "scope": "Reproduction and bytes, not an independent theorem audit."
+}

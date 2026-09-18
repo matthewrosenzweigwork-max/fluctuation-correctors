@@ -1,0 +1,26 @@
+{
+  "external_seal_name": "ROUND_024_COULOMB_REDUCTION_HOSTILE_ARTIFACTS_20260918_082848_UTC_SEAL.json",
+  "external_seal_sha256": "5ff14babc8df50b589e1c215d01913ff0e546c3fb9c0ce1fc94025dd4192ab83",
+  "format": "AUD068_READ_ONLY_VERIFICATION_SEAL_V1",
+  "independent_arithmetic_check_observed_before_sealing": {
+    "assertions": 889,
+    "code_sha256": "fec384535da1f152b8ae56af755be39407aae2dba9427aa477065912d4b9b480",
+    "command": "python3 hostile_diagnostic.py --check RESULTS.json",
+    "exit_code": 0,
+    "nonzero_mutations": 18
+  },
+  "note": "Verification record and integrity seal; not authentication of model identity, another context, or current source-gate status.",
+  "read_only_packet_snapshot_unchanged": true,
+  "verified_utc": "2026-09-18T08:45:18.765986+00:00",
+  "verifier_exit_code": 0,
+  "verifier_result": {
+    "archive_sha256": "4c9a91dc27bd981b7ce3643a4f9e3b672c028d86736811e731b75ac6cb516c71",
+    "frozen_input_count": 24,
+    "limitations": "Integrity and recorded-witness verification; run hostile_diagnostic.py --check RESULTS.json separately to recompute diagnostic arithmetic. No source-gate or chronology authentication.",
+    "nonzero_mutation_count": 18,
+    "packet_and_archive_member_count": 37,
+    "recorded_diagnostic_assertions": 889,
+    "report_sha256": "781b4225fba4488522580cbcda5740489339253504056f511bf0cbca21e7dedd",
+    "verdict": "PASS_READ_ONLY_PACKET_VERIFICATION"
+  }
+}

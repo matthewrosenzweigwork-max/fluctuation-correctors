@@ -1,0 +1,117 @@
+{
+  "arithmetic": "exact fractions and rational Laurent polynomials; no random seed or tolerance",
+  "assertions": 593,
+  "categories": {
+    "Coulomb_radial_diffusion_sign": 36,
+    "absolute_lower_drift_power": 1,
+    "all_mutations_have_nonzero_witnesses": 1,
+    "critical_smoothed_martingale_rate": 1,
+    "direct_force_and_backgrounds": 36,
+    "energy_self_diagonal": 6,
+    "exact_Coulomb_flux_and_compensation": 6,
+    "full_instantaneous_inverse_identity": 72,
+    "iid_endpoint_inequality": 36,
+    "iid_exact_second_moment": 36,
+    "literal_subset_U2": 36,
+    "physical_bracket_coefficient": 72,
+    "signed_mean_is_not_absolute_control": 1,
+    "smooth_self_remainder_smaller": 1,
+    "smoothed_gradient_self_subtraction": 108,
+    "solvable_profile_bounds": 36,
+    "solvable_radial_transport_identity": 36,
+    "solvable_sqrtN_trace_scale": 36,
+    "two_lower_coefficients": 36
+  },
+  "critical_exponents": {
+    "bracket_main": "-3/4",
+    "bracket_self": "-91/40",
+    "lower_drift": "-1/4",
+    "martingale_L1": "-3/8"
+  },
+  "mutation_witnesses": {
+    "dropped_N2_cubic": {
+      "case": "N=2;g=two_mode;phi=additive",
+      "difference": "1/16",
+      "nonzero_frequency": [
+        -3,
+        2
+      ]
+    },
+    "falling_factorial_denominator": {
+      "case": "N=2;g=zero;phi=constant",
+      "difference": "-5/28",
+      "nonzero_frequency": [
+        0,
+        0
+      ]
+    },
+    "halved_lower_coefficient": {
+      "case": "N=2;g=two_mode;phi=additive",
+      "difference": "1/16",
+      "nonzero_frequency": [
+        -1,
+        0
+      ]
+    },
+    "halved_relative_drift": {
+      "case": "N=2;r=1/2;u=3",
+      "difference": "11/3",
+      "nonzero_frequency": []
+    },
+    "halved_trace_flux": {
+      "case": "constant",
+      "difference": "-5/7",
+      "nonzero_frequency": [
+        0
+      ]
+    },
+    "omitted_common_translation_term": {
+      "case": "additive",
+      "difference": "1/2",
+      "nonzero_frequency": [
+        -1
+      ]
+    },
+    "omitted_energy_self_diagonal": {
+      "case": "N=2",
+      "difference": "-5/8",
+      "nonzero_frequency": [
+        0,
+        0
+      ]
+    },
+    "omitted_periodic_compensation": {
+      "case": "constant",
+      "difference": "10/7",
+      "nonzero_frequency": [
+        0
+      ]
+    },
+    "omitted_response_slot": {
+      "case": "N=2;g=two_mode;phi=additive",
+      "difference": "1/16",
+      "nonzero_frequency": [
+        -1,
+        0
+      ]
+    },
+    "omitted_scalar": {
+      "case": "N=2;g=two_mode;phi=relative",
+      "difference": "1/2",
+      "nonzero_frequency": [
+        0,
+        0
+      ]
+    },
+    "omitted_smooth_self_label": {
+      "case": "N=2;g=zero;phi=additive",
+      "difference": "1/8",
+      "nonzero_frequency": [
+        -1,
+        0
+      ]
+    }
+  },
+  "scope": "supporting identities and solvable tests only; no stochastic asymptotic certification",
+  "status": "PASS"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "positive_archive_checks": 1,
+  "negative_cases_detected": [
+    "wrong_bytes",
+    "missing_member",
+    "duplicate_member",
+    "extra_member",
+    "traversal",
+    "absolute_path",
+    "symlink",
+    "hardlink",
+    "directory_member",
+    "wrong_manifest_bytes",
+    "duplicate_manifest_path",
+    "bad_manifest_digest",
+    "manifest_traversal"
+  ],
+  "extraction": false
+}

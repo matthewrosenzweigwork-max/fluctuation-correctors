@@ -1,0 +1,19 @@
+{
+  "archive_bytes": 203418,
+  "archive_filename": "ROUND_024_THRESHOLD_FALSIFICATION_PACKET_20260918_082248_UTC.zip",
+  "archive_sha256": "c57e4839ffa602fd62eaa9cf5cae4267b75092dd693dbe98bfc52ccf8df2ea5a",
+  "base": "4ab1d492c3bb9bb3537732f2d75502971f5ee6da",
+  "created_utc": "2026-09-18T08:22:48Z",
+  "diagnostic_assertions": 2434,
+  "diagnostic_categories": 40,
+  "diagnostic_mutations": 16,
+  "input_count": 20,
+  "input_manifest_sha256": "8e7882057dc3681cec5f8ef5b4317063b6635ca35d2116f1491323db3be983c3",
+  "manifest_path": "MEMORANDA/ROUND_024_THRESHOLD_FALSIFICATION_ARTIFACTS/OUTPUT_MANIFEST.json",
+  "manifest_sha256": "d96f914bd1b51cb9b2e566424d9adb89f03e2ab37e7c6088313a22dafb367a80",
+  "mathematical_status": "SELF_CHECKED; THM046_OPEN; no independent certification",
+  "member_count": 31,
+  "read_only_issued": true,
+  "schema": "hocf-task103-seal-v1",
+  "verifier_mutations": 10
+}

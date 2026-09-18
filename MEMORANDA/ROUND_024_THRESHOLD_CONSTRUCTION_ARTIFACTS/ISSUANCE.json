@@ -1,0 +1,13 @@
+{
+  "task": "TASK-102",
+  "target": "THM-046 / PO-033",
+  "status": "SELF_CHECKED EXACT REDUCTION; FULL TARGET OPEN",
+  "issued_utc": "20260918_081020_UTC",
+  "base": "4ab1d492c3bb9bb3537732f2d75502971f5ee6da",
+  "frozen_inputs": 20,
+  "archive_name": "ROUND_024_THRESHOLD_CONSTRUCTION_ARTIFACTS_20260918_081020_UTC.zip",
+  "seal_name": "ROUND_024_THRESHOLD_CONSTRUCTION_ARTIFACTS_20260918_081020_UTC.seal.json",
+  "external_report": "MEMORANDA/ROUND_024_THRESHOLD_DYNAMIC_CONSTRUCTION.md",
+  "new_gate": "Coulomb lower drift removed; source equivalent to actual cubic plus singular martingale tail",
+  "independent_audit": false
+}
