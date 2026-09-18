@@ -1,0 +1,17 @@
+{
+  "THM046": "OPEN",
+  "archive": "ROUND_025_SOURCE_UI_BLIND_ARTIFACTS_20260918_084259_UTC.tar.gz",
+  "archive_inventory": "ROUND_025_SOURCE_UI_BLIND_ARTIFACTS_20260918_084259_UTC_ARCHIVE_MEMBERS.json",
+  "archive_inventory_sha256": "2a30c33cacf5c7c61409a76b16f0b419c729cf8cbe1f86a753f686bf56ed2713",
+  "archive_sha256": "b30529fcb3dbd098b858d9136323abb272131aa048a3c8ee38e6ebea83f58f97",
+  "external_report": "ROUND_025_SOURCE_UI_RECONSTRUCTION.md",
+  "external_report_sha256": "7070fcc2d1a39a11b0e94cb525545a203a202acde62222b49e1204c0b3a40416",
+  "format": "AUD069-SEAL-V1",
+  "immutable_issuance": "Read-only files; corrections require a separately issued superseding packet.",
+  "issued_utc": "2026-09-18T09:01:55Z",
+  "joint_verdict": "RECONSTRUCTED",
+  "packet": "ROUND_025_SOURCE_UI_BLIND_ARTIFACTS_20260918_084259_UTC",
+  "payload_manifest_sha256": "3c9f47c0ef3f458a6cb20e4d082292c4a780ff475467d873663f18b5b9eb89e8",
+  "payload_member_count": 27,
+  "permitted_distinct_input_count": 13
+}

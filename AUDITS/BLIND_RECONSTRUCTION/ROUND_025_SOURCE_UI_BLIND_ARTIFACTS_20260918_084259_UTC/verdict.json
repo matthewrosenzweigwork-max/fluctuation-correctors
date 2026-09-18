@@ -1,0 +1,22 @@
+{
+  "THM046": "OPEN",
+  "THM048": "RECONSTRUCTED",
+  "THM049": "RECONSTRUCTED",
+  "audit": "AUD069",
+  "canonical_promotion": "NOT AUTHORIZED",
+  "current_constructor_or_audit_read": false,
+  "diagnostic_assertions": 2203,
+  "entire_modal_identity_and_rates": true,
+  "every_L1_L2_endpoint_equivalence": true,
+  "finite_N_L2": true,
+  "fixed_mode_positive_limsup_witness_equivalence": true,
+  "independent_of_current_constructor": true,
+  "joint": "RECONSTRUCTED",
+  "limitation": "Neither source decay nor a positive-limsup witness is proved.",
+  "mode_to_smooth_original_L1_equivalence": true,
+  "next_audit": "Root source and dependence comparison, then separately isolated hostile review.",
+  "nonzero_mutation_families": 16,
+  "signed_correlation_cancellation": "OPEN",
+  "squared_overshoot_and_UI": true,
+  "task": "TASK108"
+}

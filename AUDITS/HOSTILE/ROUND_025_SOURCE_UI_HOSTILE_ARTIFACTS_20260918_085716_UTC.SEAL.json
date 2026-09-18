@@ -1,0 +1,29 @@
+{
+  "archive_bytes": 114663,
+  "archive_format": "USTAR inside deterministic gzip; unique safe relative regular files only; each mode 0444",
+  "archive_name": "ROUND_025_SOURCE_UI_HOSTILE_ARTIFACTS_20260918_085716_UTC.tar.gz",
+  "archive_sha256": "f0ae444525bead494c0d0fac3f1ef1d50d5fa352360dbdd1b2038d014404eb52",
+  "audit": "AUD070",
+  "candidate_line_count": 687,
+  "content_digest_count": 25,
+  "content_manifest_sha256": "97ac7346d9680c4a4cb1e3d9b9c930c83208943d60c17b667ca6ea929e66754f",
+  "diagnostic_assertions": 1906,
+  "diagnostic_categories": 33,
+  "diagnostic_mutations": 20,
+  "frozen_input_count": 15,
+  "immutability": "Read-only content issuance; corrections require a distinct superseding artifact.",
+  "input_manifest_sha256": "b7dcc5d3cb9ab9debcc24fd3a2a221e54d9ece75b5feca4cb5e23fbdf68d9a14",
+  "issued_utc": "2026-09-18T09:13:16.999444+00:00",
+  "member_inventory_sha256": "114b5e50163c76b5ec6b1e90550285f6f568134319fd4411c821ef63e5a20890",
+  "payload_file_count": 26,
+  "payload_preflight": "PASS; 26 regular read-only files; 25 content digests; all 15 frozen copies match; no archive extraction",
+  "report_sha256": "d50cd63cdd469614844b2144379e8bc4a1af22c7286bfc23559c13c1d6c41e29",
+  "task": "TASK109",
+  "task_description_line_count": 663,
+  "verdicts": {
+    "THM046": "OPEN",
+    "THM048": "PASS",
+    "THM049": "PASS",
+    "joint": "PASS"
+  }
+}

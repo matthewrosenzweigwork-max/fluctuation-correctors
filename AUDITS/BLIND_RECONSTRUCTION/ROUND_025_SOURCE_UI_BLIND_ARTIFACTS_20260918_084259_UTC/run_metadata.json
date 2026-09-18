@@ -1,0 +1,16 @@
+{
+  "audit": "AUD069",
+  "branch": "codex/hocf-r025-source-ui-blind",
+  "companion": "THM049 via separately frozen two-input addendum",
+  "completed_utc": "2026-09-18T09:01:10Z",
+  "input_count": 13,
+  "model_attestation": "Per parent launch/card; runtime introspection not performed",
+  "provisioned_base_from_card": "3efdbb96e7b94529b280234e83eb36f5fca3ef36",
+  "python_version": "Python 3.9.6",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning": "max",
+  "stamp": "20260918_084259_UTC",
+  "status": "READY_FOR_IMMUTABLE_ISSUANCE",
+  "task": "TASK108",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r025-source-ui-blind"
+}

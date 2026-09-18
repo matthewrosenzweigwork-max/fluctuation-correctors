@@ -1,0 +1,257 @@
+{
+  "arithmetic": "exact Fraction and Gaussian rational; formal logarithmic coefficients",
+  "assertions": 1906,
+  "audit": "AUD070",
+  "categories": {
+    "all_mutations_nonvacuous": 1,
+    "bad_pair_union": 12,
+    "bounded_nonzero_not_decay": 5,
+    "centered_j_zero_row": 4,
+    "clip_energy_exact_variance": 12,
+    "clip_good_event_identity": 180,
+    "clip_good_event_positive_part": 180,
+    "clip_overlap_orthogonality": 3,
+    "clip_zero_rows": 3,
+    "deleted_energy_identity": 336,
+    "deleted_modal_source_identity": 5,
+    "endpoint_shared_noise_cross": 1,
+    "energy_laplacian_pair_count": 28,
+    "heat_beta_product": 20,
+    "heat_discarded_mass": 4,
+    "heat_log_slope": 20,
+    "initial_event_isometry": 1,
+    "modal_cross_bracket": 80,
+    "modal_current_overlap_count": 5,
+    "modal_initial_overlap_count": 5,
+    "modal_self_bracket": 20,
+    "original_J_row": 4,
+    "overshoot_tail_scalar": 229,
+    "radial_capped_second_moment": 6,
+    "radial_clipped_mean": 6,
+    "radial_clipped_variance": 6,
+    "rare_spike_not_UI": 5,
+    "response_lower_bound": 28,
+    "retained_commutator_exact": 336,
+    "signed_correlation_solution_algebra": 32,
+    "smooth_diagnostic_J_diagonal": 4,
+    "tail_to_L1_L2_scalar": 324,
+    "terminal_event_countermodel": 1
+  },
+  "dependencies": "Python standard library only",
+  "details": {
+    "radial_exact_forms": [
+      {
+        "L": 0,
+        "mean": "-1/2",
+        "variance_log_coefficient": "2",
+        "variance_rational_part": "-5/4"
+      },
+      {
+        "L": 1,
+        "mean": "-1/3",
+        "variance_log_coefficient": "2",
+        "variance_rational_part": "-16/9"
+      },
+      {
+        "L": 2,
+        "mean": "-1/4",
+        "variance_log_coefficient": "2",
+        "variance_rational_part": "-33/16"
+      },
+      {
+        "L": 7,
+        "mean": "-1/9",
+        "variance_log_coefficient": "2",
+        "variance_rational_part": "-208/81"
+      },
+      {
+        "L": 31,
+        "mean": "-1/33",
+        "variance_log_coefficient": "2",
+        "variance_rational_part": "-3136/1089"
+      },
+      {
+        "L": 100,
+        "mean": "-1/102",
+        "variance_log_coefficient": "2",
+        "variance_rational_part": "-30805/10404"
+      }
+    ]
+  },
+  "limitation": "Diagnostics do not prove continuum singular stochastic passages or THM046 decay.",
+  "mutation_count": 20,
+  "mutations": {
+    "bad_event_missing_pair_count": {
+      "correct": "True",
+      "datum": {
+        "N": 3,
+        "actual_probability": "5/8",
+        "wrong_bound": "1/4"
+      },
+      "mutated": "False"
+    },
+    "clip_shift_missing_N_minus_one": {
+      "correct": "Fraction(-3, 1)",
+      "datum": {
+        "N": 3,
+        "level": "0",
+        "x": [
+          0,
+          1,
+          2
+        ]
+      },
+      "mutated": "Fraction(-15, 8)"
+    },
+    "clip_variance_missing_half": {
+      "correct": "Fraction(27, 64)",
+      "datum": {
+        "N": 2,
+        "level": "0"
+      },
+      "mutated": "Fraction(27, 32)"
+    },
+    "commutator_missing_half": {
+      "correct": "(4,0)",
+      "datum": {
+        "N": 2,
+        "x": [
+          0,
+          0
+        ]
+      },
+      "mutated": "(8,0)"
+    },
+    "correlation_missing_initial_response": {
+      "correct": "Fraction(-71, 576)",
+      "datum": {
+        "A": "1/8",
+        "G_integral": "-1/3",
+        "q": "1/4"
+      },
+      "mutated": "Fraction(265, 576)"
+    },
+    "current_current_one_slot": {
+      "correct": "Fraction(-79, 7)",
+      "datum": {
+        "N": 2
+      },
+      "mutated": "Fraction(-79, 14)"
+    },
+    "current_initial_two_slots": {
+      "correct": "Fraction(-79, 14)",
+      "datum": {
+        "N": 2
+      },
+      "mutated": "Fraction(-79, 7)"
+    },
+    "endpoint_noise_independence": {
+      "correct": "Fraction(1, 2)",
+      "datum": {
+        "cross": "15/2"
+      },
+      "mutated": "Fraction(31, 2)"
+    },
+    "energy_background_undeleted": {
+      "correct": "Fraction(15, 8)",
+      "datum": {
+        "N": 2,
+        "x": [
+          0,
+          0
+        ]
+      },
+      "mutated": "Fraction(1, 1)"
+    },
+    "energy_laplacian_missing_two": {
+      "correct": "Fraction(5, 1)",
+      "datum": {
+        "N": 2
+      },
+      "mutated": "Fraction(5, 2)"
+    },
+    "energy_self_N_squared": {
+      "correct": "Fraction(15, 8)",
+      "datum": {
+        "N": 2,
+        "x": [
+          0,
+          0
+        ]
+      },
+      "mutated": "Fraction(19, 8)"
+    },
+    "isometry_terminal_event": {
+      "correct": "Fraction(17, 4)",
+      "datum": {
+        "event": "r2=1"
+      },
+      "mutated": "Fraction(15, 4)"
+    },
+    "modal_current_disjoint_missing_half": {
+      "correct": "(-2/9,-4/9)",
+      "datum": {
+        "A_or_B3": "(-2/3,-4/3)",
+        "N": 3
+      },
+      "mutated": "(-4/9,-8/9)"
+    },
+    "modal_deleted_correction_sign": {
+      "correct": "(1,0)",
+      "datum": {
+        "N": 2
+      },
+      "mutated": "(0,0)"
+    },
+    "modal_initial_disjoint_missing_half": {
+      "correct": "(-2/9,0)",
+      "datum": {
+        "A_or_B3": "(2/3,2/3)",
+        "N": 3
+      },
+      "mutated": "(0,2/9)"
+    },
+    "off_mode_bracket_zero": {
+      "correct": "(6/7,0)",
+      "datum": {
+        "N": 2,
+        "k": -2,
+        "l": -1
+      },
+      "mutated": "(0,0)"
+    },
+    "omit_overshoot_remainder": {
+      "correct": "True",
+      "datum": {
+        "A": "0",
+        "x": "1/7"
+      },
+      "mutated": "False"
+    },
+    "radial_variance_uncentered": {
+      "correct": "(Fraction(2, 1), Fraction(-5, 4))",
+      "datum": {
+        "level": 0
+      },
+      "mutated": "(Fraction(2, 1), Fraction(-1, 1))"
+    },
+    "slope_cap_two_is_false": {
+      "correct": "True",
+      "datum": {
+        "r": "1/8",
+        "slope": "16131279760442/7731032303475",
+        "z": "1/7"
+      },
+      "mutated": "False"
+    },
+    "uncentered_clip_overlap": {
+      "correct": "Fraction(0, 1)",
+      "datum": {
+        "level": "0"
+      },
+      "mutated": "Fraction(81, 16)"
+    }
+  },
+  "randomness": "none",
+  "status": "PASS"
+}

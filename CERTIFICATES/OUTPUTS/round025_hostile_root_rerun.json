@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "copied_read_only_files": 31,
+  "inputs_matched_canonical": 15,
+  "outer_checksum_rows": 6,
+  "fresh_code_only_directory": "/private/tmp/hocf-r025-hostile-rerun-ocs8rwqd",
+  "result_sha256": "9e35d404bb5c2085d0d501cc69d7984a33b6dab62e574d492fcf96c3c57d8dd7",
+  "assertions": 1906,
+  "categories": 33,
+  "nonzero_mutation_families": 20
+}

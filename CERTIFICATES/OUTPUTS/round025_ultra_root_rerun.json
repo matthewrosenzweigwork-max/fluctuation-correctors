@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "code_only": true,
+  "temporary_directory": "/private/tmp/hocf-r025-ultra-rerun-g5172k0k",
+  "byte_identical_saved_output": true,
+  "result_sha256": "9f94bfb8b7eff3eceb9a94bbc43d8d0b63db707f4b74950291633ff053453ed1",
+  "stdout": "{\"assertions\": 19132, \"categories\": 32, \"mutation_types\": 12, \"status\": \"PASS\"}\n",
+  "stderr": ""
+}

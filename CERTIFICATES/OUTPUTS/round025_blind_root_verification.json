@@ -1,0 +1,14 @@
+{
+  "archive_member_count": 27,
+  "archive_safe_unique_regular_members": true,
+  "archive_sha256": "b30529fcb3dbd098b858d9136323abb272131aa048a3c8ee38e6ebea83f58f97",
+  "diagnostic_assertions": 2203,
+  "diagnostic_replay_equal": true,
+  "mathematical_promotion": "None; integrity and diagnostic checks only",
+  "nonzero_mutation_families": 16,
+  "payload_member_count": 27,
+  "permitted_input_count": 13,
+  "read_only_issued_modes": true,
+  "report_sha256": "7070fcc2d1a39a11b0e94cb525545a203a202acde62222b49e1204c0b3a40416",
+  "status": "PASS"
+}

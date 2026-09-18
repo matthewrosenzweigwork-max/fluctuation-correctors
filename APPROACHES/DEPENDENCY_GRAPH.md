@@ -51,3 +51,6 @@ Round009: accepted THM028 domain plus R5 amplitude/source and homogeneous Fourie
 
 
 R10 accepted exact reduction: complete THM030/031 pass AUD038/039/042. Actual clipped and smoothed approximations vanish, and original singular-noise smallness is equivalent to their actual complementary tail. Positive fixed-time tail smallness remains open. R12 THM033 and R13 THM034 target sufficient subranges using actual Laplacian occupation; their remaining gates must finish before those ranges are accepted. R11 weighted spatial convergence is a separate module and does not itself transfer to the interacting law. No new obstruction to full-inverse existence or the scientific mission is claimed.
+
+
+R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE_INTEGRATION.md. THM048's auxiliary initial-energy clipping and time-zero conditional isometry establish squared UI without altering dynamics or squaring instantaneous source; full THM049 converts the original L1 target to the actual signed modal correlation cancellation using degree10 L1 Fourier domination. Neither original cancellation nor its positive-limsup negation is proved. The dependence uses exact R4/R6/R10/R16 sources, with both fresh whole AUD069/070 passes and no pair-inverse/THM047 premise. No prior immutable statement is rewritten.

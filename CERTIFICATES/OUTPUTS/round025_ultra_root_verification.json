@@ -1,0 +1,1 @@
+{"archive_sha256": "9dec3cf7885d3880affe1953c9223501b39b9233f93d89a080247d5041730bc0", "diagnostic": {"assertions": 19132, "categories": 32, "mutation_types": 12, "status": "PASS"}, "inputs": 26, "malformed_or_corruption_controls": 10, "original_sources_checked": true, "payload_files": 36, "regular_archive_members": 38, "status": "PASS"}

@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\newcommand{\E}{\mathbb E}
+\begin{document}
+\begin{center}
+{\large Critical Coulomb source tails and the exact correlation gate}\\[4pt]
+HOCF--RIESZ, Round 025 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Status.} THM048 and THM049 passed both fresh audit gates and root comparison. AUD069 reconstructed both claims; AUD070 reviewed them as a hostile referee. The original dynamic assertion THM046 remains open.
+
+Work on the unit four-torus with $\widehat g(k)=|k|^{-2}$ for $k\ne0$, $\widehat g(0)=0$, $K=-\nabla g$, and $c=4\pi^2$. The actual particles start from iid Haar and solve
+\[
+ dX_i=B_i\,dt+\sqrt{2\nu_N}\,dW_i,\qquad
+ B_i=\frac1N\sum_{j\ne i}K(X_i-X_j),\qquad
+ \nu_N=\beta_N^{-1}.
+\]
+Assume $\lambda_N=\beta_NN^{-1/2}\to\lambda\in(0,\infty)$. All constants below are uniform on a fixed eventual positive bounded interval for $\lambda_N$, with fixed smooth real $h$ and finite $T$. There is no prescribed rate or universal starting index. The old energy-floor condition in this row is $\beta_N\to0$; full microscopic subcriticality is $\beta_N/\sqrt N\to0$; neither is the present critical regime.
+
+Let $f_t=Q_{T-t}^{\nu_N}h$, where $Q_a^\nu$ preserves constants and has multiplier $e^{-a(c+c\nu|k|^2)}$ on nonzero modes. Put
+\[
+ J_t(x,y)=K(x-y)\cdot(\nabla f_t(x)-\nabla f_t(y)),\qquad
+ S_N=\sqrt N\int_0^T P_N[J_t]dt,
+\]
+\[
+ P_N[v]=\frac1{2N^2}\sum_{i\ne j}v(X_i,X_j)
+       -\frac1N\sum_i\int v(X_i,y)dy+\frac12\iint v.
+\]
+Write $\rho_t=\eta_N(t)-dx$ and $\Delta_N=\sqrt N(\rho_T[h]-\rho_0[Q_T^{\nu_N}h])$.
+
+\noindent\textbf{Energy and two complementary bounds.}
+For $H_N=N^{-1}\sum_{i<j}g(X_i-X_j)$, the complete force square and true energy martingale satisfy
+\[
+ H_N(X_t)+\int_0^t\sum_i|B_i|^2da
+ =H_N(X_0)+\nu_Nc(N-1)t+E_t,
+\qquad
+ \langle E\rangle_t=2\nu_N\int_0^t\sum_i|B_i|^2da.
+\]
+The heat-split floor is $H_N\ge-C\sqrt N$. Since $\E H_N(X_0)=0$, localization, isometry and the maximal inequality give
+\[
+ \E\int_0^T\sum_i|B_i|^2dt\le C\sqrt N+\nu_Nc(N-1)T,
+ \qquad \E\sup_{t\le T}|E_t|^2\le C.
+\]
+The deterministic source version of the R16 heat split, with every self and Haar term retained, gives $\sqrt N|P_N[J_t](x)|\le C_h(G+H_N(x)/\sqrt N)$. Therefore, for fixed $A,a\ge0$,
+\[
+ |S_N|\le A+\frac a{\sqrt N}
+     \bigl(H_N(X_0)^++\sup_{t\le T}|E_t|\bigr).
+\]
+This bound alone cannot be squared: the initial energy has infinite second moment.
+
+The exact one-body identity supplies the complementary estimate
+\[
+ S_N=\Delta_N-L_T,\qquad
+ L_t=\sqrt{\frac{2\nu_N}{N}}\sum_i\int_0^t\nabla f_a(X_i(a))\cdot dW_i(a),
+\]
+\[
+ |\Delta_N|\le2\|h-\bar h\|_\infty\sqrt N,\qquad
+ \langle L\rangle_T\le2\nu_N T\|\nabla h\|_\infty^2.
+\]
+All identities are genuine at each finite $N$, after collision localization. In particular the time-integrated source is square integrable even when the instantaneous source is not.
+
+\newpage
+\noindent\textbf{Initial clipping and squared uniform integrability.}
+For $L\ge L_0$ let $m_L=\int\min(g,L)$ and $g^{[L]}=\min(g,L)-m_L$. The local Coulomb singularity gives
+\[
+ |\{g>L\}|\le CL^{-2},\qquad -C/L\le m_L\le0,\qquad
+ \|g^{[L]}\|_2^2\le C(1+\log L).
+\]
+At iid time zero, $H_N^{[L]}=N^{-1}\sum_{i<j}g^{[L]}(X_i-X_j)$ has
+\[
+ \E(H_N^{[L]})^2=\frac{N-1}{2N}\|g^{[L]}\|_2^2.
+\]
+Pairs sharing one label have zero covariance by conditioning on that label, not by independence. Set $L=L_0N^2$ and let $B_N$ be the initial event that some pair exceeds $L$. Then
+\[
+ \mathbb P(B_N)\le CN^{-2},\qquad
+ H_N(X_0)=H_N^{[L]}+\frac{N-1}{2}m_L\le H_N^{[L]}
+ \quad\hbox{on }B_N^c.
+\]
+On $B_N^c$ the energy bound costs $C(1+\log N)/N$ in squared excess. On $B_N$ the endpoint bound costs $CN\mathbb P(B_N)$, and initial measurability gives exactly
+\[
+ \E[\mathbf1_{B_N}|L_T|^2]=\E[\mathbf1_{B_N}\langle L\rangle_T]
+ \le C\nu_N\mathbb P(B_N).
+\]
+This is conditional isometry, not independence from the flow. Together,
+\[
+ \E(|S_N|-A)_+^2\le C\frac{1+\log N}{N}=:\varepsilon_N\to0,
+ \qquad
+ (\E|S_N|)^2\le\E|S_N|^2\le2A\E|S_N|+2\varepsilon_N.
+\]
+The squared sources are uniformly integrable, including the finite initial segment. Since $\E|L_T|^2=O(\nu_N)\to0$, the squared endpoint defects are too, and
+\[
+ \E|S_N|\to0\ \Longleftrightarrow\ \E|S_N|^2\to0
+ \ \Longleftrightarrow\ \E|\Delta_N|^2\to0
+ \ \Longleftrightarrow\ \E|\Delta_N|\to0.
+\]
+The original normalization equals $\sqrt N$ eventually. No assertion here proves any of these limits; the threshold $A$ need not vanish.
+
+\noindent\textbf{The remaining signed-correlation criterion.}
+For fixed $k\ne0$, put $e_k=e^{2\pi i k\cdot x}$, $Z_k=\eta_N[e_k]$, $\ell_k=c|k|^2$, $a_k=c+\nu_N\ell_k$, $\widetilde a_k=a_k-c/N$ and
+\[
+ j_k(x,y)=J^{e_k}(x,y)+c(e_k(x)+e_k(y)).
+\]
+Let $A_2=\E[j_k(X_1(t),X_2(t))\overline{e_k(X_1(t))}]$ and define $A_3$ by replacing the last label by $3$. Define $B_2,B_3$ by replacing only that last time by $0$. Set
+\[
+ F_N=\frac{N-1}{N}A_2+\frac{(N-1)(N-2)}{2N}A_3,\qquad
+ G_N=\frac{N-1}{N}B_2+\frac{(N-1)(N-2)}{2N}B_3.
+\]
+The three-label terms are absent at $N=2$. All expectations use the actual law. Exact It\^o and overlap counting give
+\[
+ \begin{split}
+ N\E|Z_k(T)-e^{-a_kT}Z_k(0)|^2
+ &= (e^{-\widetilde a_kT}-e^{-a_kT})^2
+ +\frac{\nu_N\ell_k}{\widetilde a_k}(1-e^{-2\widetilde a_kT})+2\Re\mathcal R_N,\\
+ \mathcal R_N&=\int_0^T\left[e^{-2\widetilde a_k(T-t)}F_N(t)
+ -e^{-a_kT}e^{-\widetilde a_k(T-t)}G_N(t)\right]dt.
+ \end{split}
+\]
+The explicit errors are $O(N^{-2})$ and $O_k(N^{-1/2})$. With the new tail lemma and a polynomial L1 mode majorant, the original assertion for every fixed smooth real test is equivalent to $\Re\mathcal R_N(k,T)\to0$ for each fixed mode. This signed cancellation remains open. A positive limsup would give an admitted fixed cosine or sine counterexample; no such witness is constructed.
+\end{document}

@@ -1,0 +1,318 @@
+{
+  "assertions": 19132,
+  "categories": {
+    "L1_L2_scalar_transfer": 400,
+    "bad_event_N_cost": 48,
+    "canonical_energy_mean": 24,
+    "canonical_one_label_overlap": 6,
+    "canonical_variance_coefficient": 24,
+    "clip_centered": 6,
+    "clip_mean_nonpositive": 6,
+    "dynamic_distinct_coefficient": 8,
+    "dynamic_distinct_count": 8,
+    "dynamic_overlap_coefficient": 8,
+    "dynamic_overlap_count": 8,
+    "good_event_exact_recenter": 9080,
+    "good_event_positive_domination": 9080,
+    "initial_energy_mean": 24,
+    "kernel_even": 2,
+    "kernel_zero_mean": 2,
+    "nonvacuous_mutation_witness": 12,
+    "radial_capped_second_log_rate": 6,
+    "radial_capped_second_nonnegative": 6,
+    "radial_clip_mean_sign": 5,
+    "radial_clipped_variance_quadrature": 5,
+    "rare_spike_L1": 5,
+    "rare_spike_L2": 5,
+    "rare_spike_breaks_new_overshoot": 5,
+    "shared_driver_cross_term": 1,
+    "tail_bound_does_not_force_zero": 1,
+    "tail_mean_identity": 6,
+    "terminal_event_countercontrol_nonzero": 1,
+    "time_zero_event_isometry": 2,
+    "uncentered_overlap_equals_mean_square": 6,
+    "uniform_integrability_tail": 308,
+    "unordered_bad_union_bound": 24
+  },
+  "finite_cases": [
+    {
+      "N": 2,
+      "bad_probability": "1/5",
+      "cap": "2",
+      "variance": "87/50"
+    },
+    {
+      "N": 3,
+      "bad_probability": "13/25",
+      "cap": "2",
+      "variance": "58/25"
+    },
+    {
+      "N": 4,
+      "bad_probability": "101/125",
+      "cap": "2",
+      "variance": "261/100"
+    },
+    {
+      "N": 5,
+      "bad_probability": "601/625",
+      "cap": "2",
+      "variance": "348/125"
+    },
+    {
+      "N": 2,
+      "bad_probability": "1/5",
+      "cap": "4",
+      "variance": "123/50"
+    },
+    {
+      "N": 3,
+      "bad_probability": "13/25",
+      "cap": "4",
+      "variance": "82/25"
+    },
+    {
+      "N": 4,
+      "bad_probability": "101/125",
+      "cap": "4",
+      "variance": "369/100"
+    },
+    {
+      "N": 5,
+      "bad_probability": "601/625",
+      "cap": "4",
+      "variance": "492/125"
+    },
+    {
+      "N": 2,
+      "bad_probability": "0",
+      "cap": "10",
+      "variance": "7/2"
+    },
+    {
+      "N": 3,
+      "bad_probability": "0",
+      "cap": "10",
+      "variance": "14/3"
+    },
+    {
+      "N": 4,
+      "bad_probability": "0",
+      "cap": "10",
+      "variance": "21/4"
+    },
+    {
+      "N": 5,
+      "bad_probability": "0",
+      "cap": "10",
+      "variance": "28/5"
+    },
+    {
+      "N": 2,
+      "bad_probability": "1/5",
+      "cap": "2",
+      "variance": "21/25"
+    },
+    {
+      "N": 3,
+      "bad_probability": "13/25",
+      "cap": "2",
+      "variance": "28/25"
+    },
+    {
+      "N": 4,
+      "bad_probability": "101/125",
+      "cap": "2",
+      "variance": "63/50"
+    },
+    {
+      "N": 5,
+      "bad_probability": "601/625",
+      "cap": "2",
+      "variance": "168/125"
+    },
+    {
+      "N": 2,
+      "bad_probability": "1/5",
+      "cap": "4",
+      "variance": "41/25"
+    },
+    {
+      "N": 3,
+      "bad_probability": "13/25",
+      "cap": "4",
+      "variance": "164/75"
+    },
+    {
+      "N": 4,
+      "bad_probability": "101/125",
+      "cap": "4",
+      "variance": "123/50"
+    },
+    {
+      "N": 5,
+      "bad_probability": "601/625",
+      "cap": "4",
+      "variance": "328/125"
+    },
+    {
+      "N": 2,
+      "bad_probability": "0",
+      "cap": "10",
+      "variance": "21/5"
+    },
+    {
+      "N": 3,
+      "bad_probability": "0",
+      "cap": "10",
+      "variance": "28/5"
+    },
+    {
+      "N": 4,
+      "bad_probability": "0",
+      "cap": "10",
+      "variance": "63/10"
+    },
+    {
+      "N": 5,
+      "bad_probability": "0",
+      "cap": "10",
+      "variance": "168/25"
+    }
+  ],
+  "mutation_types": 12,
+  "mutation_witnesses": {
+    "clip_at_N_gives_vanishing_bad_cost": {
+      "context": "N=2",
+      "correct": "2",
+      "wrong": "1/2"
+    },
+    "drop_dynamic_distinct_half": {
+      "context": "N=3",
+      "correct": "1/3",
+      "wrong": "2/3"
+    },
+    "drop_dynamic_overlap_two": {
+      "context": "N=2",
+      "correct": "1/2",
+      "wrong": "1/4"
+    },
+    "drop_shared_driver_cross": {
+      "context": "U and 2U+V",
+      "correct": "2",
+      "wrong": "0"
+    },
+    "missing_unordered_half": {
+      "context": "N=2,cap=2",
+      "correct": "87/50",
+      "wrong": "87/25"
+    },
+    "omit_clip_mean": {
+      "context": "N=2,cap=2,x=(0, 1)",
+      "correct": "1/2",
+      "wrong": "9/10"
+    },
+    "radial_omit_centering": {
+      "context": "L=1.0",
+      "correct": "0.4194467995584417",
+      "wrong": "0.5305579106695528"
+    },
+    "replace_N_by_Nminus1": {
+      "context": "N=2,cap=2",
+      "correct": "87/50",
+      "wrong": "174/25"
+    },
+    "replace_initial_by_terminal_event": {
+      "context": "terminal event M=5",
+      "correct": "25/8",
+      "wrong": "13/8"
+    },
+    "reverse_clip_mean": {
+      "context": "N=2,cap=2,x=(0, 1)",
+      "correct": "1/2",
+      "wrong": "13/10"
+    },
+    "uncentered_clip_is_degenerate": {
+      "context": "cap=2,mean=-4/5",
+      "correct": "16/25",
+      "wrong": "0"
+    },
+    "wrong_N_denominator": {
+      "context": "N=2,cap=2",
+      "correct": "87/50",
+      "wrong": "87/100"
+    }
+  },
+  "radial_cases": [
+    {
+      "L": 0.0,
+      "mean": -0.5,
+      "quadrature": 0.1362943611198908,
+      "tail": 0.25,
+      "variance": 0.13629436111989057
+    },
+    {
+      "L": 1.0,
+      "mean": -0.3333333333333333,
+      "quadrature": 0.4194467995584422,
+      "tail": 0.1111111111111111,
+      "variance": 0.4194467995584417
+    },
+    {
+      "L": 5.0,
+      "mean": -0.14285714285714285,
+      "quadrature": 1.4428407062738915,
+      "tail": 0.02040816326530612,
+      "variance": 1.4428407062738917
+    },
+    {
+      "L": 30.0,
+      "mean": -0.03125,
+      "quadrature": 4.055495243099452,
+      "tail": 0.0009765625,
+      "variance": 4.055495243099453
+    },
+    {
+      "L": 100.0,
+      "mean": -0.00980392156862745,
+      "quadrature": 6.289065195964941,
+      "tail": 9.611687812379854e-05,
+      "variance": 6.289065195964927
+    },
+    {
+      "N": 2,
+      "capped_second": 0.1931471805599454
+    },
+    {
+      "N": 4,
+      "capped_second": 0.21597281100072152
+    },
+    {
+      "N": 16,
+      "capped_second": 0.16354196105591634
+    },
+    {
+      "N": 256,
+      "capped_second": 0.030215346424579438
+    },
+    {
+      "N": 4096,
+      "capped_second": 0.003235153901946621
+    },
+    {
+      "N": 65536,
+      "capped_second": 0.00028678188300044203
+    }
+  ],
+  "reproducibility": {
+    "arithmetic": "Fraction exact except labeled radial float quadrature",
+    "python": "standard library >=3.9",
+    "radial_simpson_subintervals": 20000,
+    "radial_tolerance": "2e-10 * max(1,abs(exact_expression))",
+    "random_seed": null,
+    "sampling": "none",
+    "scope": "coefficient/tail diagnostics, not a singular-SDE simulation or proof"
+  },
+  "script_sha256": "887ae1e7121f6d7e796aae9b92a78ef01ac29cf42c214bf644ecea55aaee6576",
+  "status": "PASS"
+}

@@ -1,0 +1,13 @@
+{
+  "all_13_live_inputs_still_match_original_hashes_and_copies": true,
+  "both_live_manifests_unchanged": true,
+  "diagnostic_assertions": 2203,
+  "diagnostic_categories": 32,
+  "first_diagnostic_run": "PASS",
+  "model_attestation": "Requested launch/card configuration only; no runtime introspection.",
+  "nonzero_mutation_families": 16,
+  "python_AST_parse": true,
+  "report_copy_identical": true,
+  "scope": "Checks completed before the final payload manifest and archive were created. Final read-only archive verification is reproducible with verify_packet.py.",
+  "status": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "all_payload_files_regular_readonly": true,
+  "archive_bytes": 114663,
+  "archive_name": "ROUND_025_SOURCE_UI_HOSTILE_ARTIFACTS_20260918_085716_UTC.tar.gz",
+  "archive_sha256": "f0ae444525bead494c0d0fac3f1ef1d50d5fa352360dbdd1b2038d014404eb52",
+  "audit": "AUD070",
+  "content_digest_count": 25,
+  "content_manifest_sha256": "97ac7346d9680c4a4cb1e3d9b9c930c83208943d60c17b667ca6ea929e66754f",
+  "frozen_input_count": 15,
+  "member_inventory_sha256": "114b5e50163c76b5ec6b1e90550285f6f568134319fd4411c821ef63e5a20890",
+  "mode": "complete-issued-archive",
+  "no_writes_extraction_or_code_execution": true,
+  "payload_file_count": 26,
+  "report_sha256": "d50cd63cdd469614844b2144379e8bc4a1af22c7286bfc23559c13c1d6c41e29",
+  "safe_unique_regular_readonly_archive_members": 26,
+  "status": "PASS"
+}

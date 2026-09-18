@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "copied_read_only_files": 31,
+  "inputs_matched_canonical": 13,
+  "fresh_code_only_directory": "/private/tmp/hocf-r025-blind-rerun-2jmo4z4c",
+  "result_sha256": "0c92e41905ee4428bb6a5395fca6db831c030eb9705caf75f9d5db608f7189ea",
+  "assertions": 2203,
+  "categories": 32,
+  "nonzero_mutation_families": 16
+}

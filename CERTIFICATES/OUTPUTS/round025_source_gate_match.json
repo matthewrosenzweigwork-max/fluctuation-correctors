@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-18T09:11:17.768369+00:00",
+  "published_head": "06bf56dae256085646228aa28159210b567bf409",
+  "sources": [
+    {
+      "source": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "gate_sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_010.md",
+      "gate_sha256": "56d4605864a0023c35ae542d1ec96317eef69f80c1b0975944d5bf870749e5cd",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "gate_record": "AUDITS/ROUND_016_GATE_INTEGRATION.md",
+      "gate_sha256": "68207163d5e576722b48953526f0d22b244a53badf7ae02e374251255aa1def9",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_006.md",
+      "gate_sha256": "1d0d901e2e96dbd6013cb847225ea2b2340aac13379ef34197f0f00d80be11b6",
+      "matches_published_HEAD": true
+    }
+  ],
+  "dossiers": [
+    {
+      "path": "AUDITS/ROUND_025_CRITICAL_THRESHOLD_ULTRA_INPUT_SHA256SUMS.txt",
+      "inputs": 26,
+      "sha256": "2383241149ad3dbedc13e975a7b883cee96ff163453153ad3a142913f37a31a3",
+      "canonical_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_025_SOURCE_UI_BLIND_INPUT_SHA256SUMS.txt",
+      "inputs": 11,
+      "sha256": "2d11a51a50c5058f9002148d3ca907262fd067d021a31220be349ebb74345bfb",
+      "canonical_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_025_SOURCE_UI_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "inputs": 2,
+      "sha256": "1e7edeb8dc5a1cd2dd5a4628e3f269df17bea3dd56fc231de66cd3c8d8a2d900",
+      "canonical_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_025_SOURCE_UI_HOSTILE_INPUT_SHA256SUMS.txt",
+      "inputs": 15,
+      "sha256": "b7dcc5d3cb9ab9debcc24fd3a2a221e54d9ece75b5feca4cb5e23fbdf68d9a14",
+      "canonical_match": true
+    }
+  ],
+  "scope": "Final exact prior proof/gate bytes and four R25 dossiers only. Root source agreement does not substitute for the two fresh whole current mathematical axes."
+}

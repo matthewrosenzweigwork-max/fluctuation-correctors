@@ -1,0 +1,5 @@
+# Round024 publication receipt
+
+Observed 2026-09-18T08:52:21.843704+00:00. Local main, origin/main and live origin refs/heads/main all equal `06bf56dae256085646228aa28159210b567bf409`. Commit message: campaign: certify Coulomb lower contractions and exact dynamic reduction. Ordinary authorized push to unchanged origin https://github.com/matthewrosenzweigwork-max/fluctuation-correctors.git succeeded. No history rewrite, force push, remote alteration or unrelated user change.
+
+The accepted whole THM047 gate contains243 reviewed paths,46560 insertions and27 deletions. Prepublication validation and precise evidence-only whitespace disposition are ROUND_024_PUBLICATION_VALIDATION.md. Ten future R25 claim/task/dossier/draft files were held outside this checkpoint; newer R25 outputs remain pending their own full gates. The original critical THM046 and flagship campaign mission remain open. This receipt is outside its own commit to avoid hash self-reference and will be included in the next ordinary checkpoint.

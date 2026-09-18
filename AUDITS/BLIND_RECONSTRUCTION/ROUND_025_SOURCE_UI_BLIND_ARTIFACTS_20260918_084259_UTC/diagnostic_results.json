@@ -1,0 +1,145 @@
+{
+  "arithmetic": "exact rational and Gaussian rational",
+  "categories": {
+    "N2_no_third_particle": 1,
+    "all_label_count": 14,
+    "anticipative_event_warning": 1,
+    "complex_noise_bracket": 27,
+    "constant_conditional_row": 15,
+    "endpoint_moment_expansion": 32,
+    "finite_group_zero_mean": 1,
+    "heat_beta_identity": 7,
+    "heat_log_slope_bound": 7,
+    "heat_log_slope_identity": 7,
+    "initial_energy_first_moment_integrable": 1,
+    "initial_event_conditional_isometry": 1,
+    "initial_event_conditional_mean": 1,
+    "instantaneous_square_log_divergence": 1,
+    "literal_finite_label_correction": 336,
+    "literal_haar_row": 4,
+    "ordered_pair_symmetrization": 336,
+    "positive_remainder_mass": 1,
+    "principal_pair_flow": 18,
+    "principal_pair_integral": 18,
+    "rare_event_endpoint_square_power": 99,
+    "rare_event_probability_power": 99,
+    "shared_label_centered_covariance": 3,
+    "shifted_modal_drift": 1008,
+    "source_noise_cross_not_zero": 1,
+    "source_noise_cross_retained": 1,
+    "three_label_overlap": 14,
+    "truncated_bias_power": 99,
+    "truncated_energy_mean": 12,
+    "truncated_energy_second_moment": 12,
+    "truncated_energy_variance": 12,
+    "two_label_overlap": 14
+  },
+  "details": {
+    "conditioning": {
+      "anticipative_mean": "3/4",
+      "conditional_second_moment": "5/2",
+      "nonzero_source_noise_cross": "1"
+    },
+    "heat_mass_over_cr": "49/20",
+    "singular_test_scope": "Principal-part zero-noise diagnostic only; actual proof uses localization and endpoint duality.",
+    "truncated_iid_exact_cases": [
+      {
+        "N": 2,
+        "cap": 3,
+        "mean": "-17/10",
+        "variance": "309/25"
+      },
+      {
+        "N": 3,
+        "cap": 3,
+        "mean": "-17/5",
+        "variance": "412/25"
+      },
+      {
+        "N": 4,
+        "cap": 3,
+        "mean": "-51/10",
+        "variance": "927/50"
+      },
+      {
+        "N": 5,
+        "cap": 3,
+        "mean": "-34/5",
+        "variance": "2472/125"
+      },
+      {
+        "N": 2,
+        "cap": 7,
+        "mean": "-13/10",
+        "variance": "389/25"
+      },
+      {
+        "N": 3,
+        "cap": 7,
+        "mean": "-13/5",
+        "variance": "1556/75"
+      },
+      {
+        "N": 4,
+        "cap": 7,
+        "mean": "-39/10",
+        "variance": "1167/50"
+      },
+      {
+        "N": 5,
+        "cap": 7,
+        "mean": "-26/5",
+        "variance": "3112/125"
+      },
+      {
+        "N": 2,
+        "cap": 17,
+        "mean": "-3/10",
+        "variance": "729/25"
+      },
+      {
+        "N": 3,
+        "cap": 17,
+        "mean": "-3/5",
+        "variance": "972/25"
+      },
+      {
+        "N": 4,
+        "cap": 17,
+        "mean": "-9/10",
+        "variance": "2187/50"
+      },
+      {
+        "N": 5,
+        "cap": 17,
+        "mean": "-6/5",
+        "variance": "5832/125"
+      }
+    ]
+  },
+  "diagnostic_sha256": "0b9f372ec4a41f6a64299e3c4e15d5673738380868f4cb402d5f7b8262c5417d",
+  "external_dependencies": [],
+  "limitations": "These checks support finite algebra and scaling. They do not certify singular SDE limits or prove source decay.",
+  "mutation_nonzero_case_counts": {
+    "assume_raw_shared_product_zero": 3,
+    "complex_noise_missing_two": 27,
+    "cut_pairs_at_N_instead_of_N_squared": 99,
+    "missing_noise_factor": 32,
+    "missing_overlap_two": 14,
+    "omit_current_initial_correlation": 32,
+    "omit_finite_label_correction": 296,
+    "omit_heat_factorial": 7,
+    "omit_pair_half": 256,
+    "omit_truncated_bias": 12,
+    "replace_N_minus_2_by_N": 14,
+    "replace_energy_N_by_N_squared": 12,
+    "silently_drop_source_noise_cross": 1,
+    "use_unshifted_modal_drift": 888,
+    "wrong_relative_force_two": 18,
+    "wrong_row_sign": 4
+  },
+  "random_seed": null,
+  "source_reads": "This fresh script only; no earlier checker or external mathematical input.",
+  "status": "PASS",
+  "total_assertions": 2203
+}
