@@ -1,0 +1,50 @@
+[
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/verify_read_only.py",
+      "--control",
+      "digest_corruption"
+    ],
+    "control": "digest_corruption",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"control\": \"digest_corruption\",\n  \"error\": \"digest mismatch: deliberate corruption: 34f8bf4083ec15e056df717fdd8f42354e2f8d8091233f7a858811139058e548 != 95bc7d277692d7369b761d95a567c2433ae022737112bb6d85e028b2480dfa8e\",\n  \"writes\": 0,\n  \"extractions\": 0\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/verify_read_only.py",
+      "--control",
+      "unsafe_archive_path"
+    ],
+    "control": "unsafe_archive_path",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"control\": \"unsafe_archive_path\",\n  \"error\": \"unsafe path component: ../escape\",\n  \"writes\": 0,\n  \"extractions\": 0\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/verify_read_only.py",
+      "--control",
+      "archive_symlink"
+    ],
+    "control": "archive_symlink",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"control\": \"archive_symlink\",\n  \"error\": \"archive member is not a regular file: packet/link\",\n  \"writes\": 0,\n  \"extractions\": 0\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/verify_read_only.py",
+      "--control",
+      "extra_inventory_member"
+    ],
+    "control": "extra_inventory_member",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"control\": \"extra_inventory_member\",\n  \"error\": \"deliberate inventory corruption member mismatch: missing=[] extra=['unlisted']\",\n  \"writes\": 0,\n  \"extractions\": 0\n}\n",
+    "stderr": ""
+  }
+]

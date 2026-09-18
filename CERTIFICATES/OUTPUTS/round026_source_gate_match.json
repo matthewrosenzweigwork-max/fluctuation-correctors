@@ -1,0 +1,56 @@
+{
+  "utc": "2026-09-18T09:49:30.524774+00:00",
+  "published_head": "ef438b612f732d21af1fa1756dd7559ef63c6d61",
+  "status": "PASS",
+  "sources": [
+    {
+      "source": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "gate": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "gate_sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "matches_published": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "gate": "REPORTS/ROUND_REPORTS/ROUND_006.md",
+      "gate_sha256": "1d0d901e2e96dbd6013cb847225ea2b2340aac13379ef34197f0f00d80be11b6",
+      "matches_published": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "gate": "REPORTS/ROUND_REPORTS/ROUND_010.md",
+      "gate_sha256": "56d4605864a0023c35ae542d1ec96317eef69f80c1b0975944d5bf870749e5cd",
+      "matches_published": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "gate": "AUDITS/ROUND_016_GATE_INTEGRATION.md",
+      "gate_sha256": "68207163d5e576722b48953526f0d22b244a53badf7ae02e374251255aa1def9",
+      "matches_published": true
+    },
+    {
+      "source": "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "matches_published": true
+    },
+    {
+      "source": "AUDITS/ROUND_025_GATE_INTEGRATION.md",
+      "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+      "matches_published": true
+    },
+    {
+      "source": "AUDITS/ROUND_025_RECONSTRUCTION_COMPARISON.md",
+      "sha256": "c681b9b71699a8a3c30037db021489492f482b66fc6dabd31e4d88cc630a8e33",
+      "matches_published": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "sha256": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+      "matches_published": true
+    }
+  ],
+  "scope": "Exact prior source/gate equality; R26/R27 theorem judgments remain in their separate integration records."
+}

@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "seconds": 3.4364004169999998,
+  "command": "python3 -B diagnostic.py"
+}

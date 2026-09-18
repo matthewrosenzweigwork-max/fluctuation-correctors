@@ -1,0 +1,3 @@
+# R25 publication receipt
+
+Observed at 2026-09-18T09:22:36.612659+00:00: local main, tracking origin/main and live remote refs/heads/main all equal ef438b612f732d21af1fa1756dd7559ef63c6d61. Ordinary commit `campaign: certify critical Coulomb source tails and exact correlation gate`, followed by ordinary push to the unchanged origin.149 reviewed paths23951insertions20deletions; seven future R26 paths were held at commit. No unrelated changes, force push, history rewrite or remote alteration. Both entire THM048/049 gates are accepted; original THM046 remains open. This receipt follows its own commit and is intentionally outside it.

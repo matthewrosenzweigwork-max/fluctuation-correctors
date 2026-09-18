@@ -1,0 +1,12 @@
+{
+  "command": [
+    "shasum",
+    "-a",
+    "256",
+    "-c",
+    "AUDITS/ROUND_026_RESPONSE_BLIND_INPUT_SHA256SUMS.txt"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "note": "Packaging-time repeat; all eight also passed before mathematical reading."
+}

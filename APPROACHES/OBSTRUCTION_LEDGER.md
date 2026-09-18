@@ -95,3 +95,9 @@ R23/THM045 is an accepted explicit counterexample to the implication from the st
 
 
 R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE_INTEGRATION.md. THM048's auxiliary initial-energy clipping and time-zero conditional isometry establish squared UI without altering dynamics or squaring instantaneous source; full THM049 converts the original L1 target to the actual signed modal correlation cancellation using degree10 L1 Fourier domination. Neither original cancellation nor its positive-limsup negation is proved. The dependence uses exact R4/R6/R10/R16 sources, with both fresh whole AUD069/070 passes and no pair-inverse/THM047 premise. No prior immutable statement is rewritten.
+
+
+2026-09-18 UTC. R26 THM050 accepted after fresh AUD071/072 and complete root comparison: the proposed global fourth-power response-gradient control fails for the actual d4 Coulomb semigroup. The full periodic process retains a near-pair anisotropic sqrt(t) response on a positive-volume slow-coordinate set. Full coordinate energy has codimension4 radial dr/r divergence. This rules out that precise route; it neither rules out global W1,2 nor gives an actual critical-source counterexample. Root comparison records different independent cap-average and harmonic-projection mechanisms.
+
+
+2026-09-18 UTC — R26 whole acceptance. THM051 removes both two-label overlaps quantitatively. The exact signed three-distinct-label current/mixed correlation remains the first unresolved term; multiplying a coarse absolute estimate by its N-size prefactor does not close it.

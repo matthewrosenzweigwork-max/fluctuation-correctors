@@ -80,3 +80,9 @@ R24 TASK104 distinct trace/source lane sealed and fully root-read333lines, sourc
 
 
 2026-09-18 UTC. R25 entire THM048/PO035 and THM049/PO036 accepted: PROVED_CANDIDATE, ISOLATED_RECONSTRUCTION_PASS(AUD069), HOSTILE_REVIEW_PASS(AUD070), VERSION_LOCKED. Full687/545-line constructor/blind plus entire hostile, all sources/code/evidence read and compared; four exact prior proof/gate pairs match06bf56d. Genuine squared-source overshoot C(1+logN)/N, source/endpoint squared UI and every L1/L2 equivalence pass; the exact finite-N signed-correlation identity, full smooth-test equivalence and fixed-mode positive-limsup negation pass. No source cancellation or witness is proved: THM046/PO033 remains OPEN. All26/13/15 inputs,38/27/26 archive members and19132/2203/1906 supporting checks verify/reproduce unchanged. No mathematical repair or retraction. Exact scope/comparison AUDITS/ROUND_025_GATE_INTEGRATION.md and ROUND_025_RECONSTRUCTION_COMPARISON.md. Frozen claim inputs remain unchanged.
+
+
+2026-09-18 UTC. R26 root source-gate matching against published ef438b6: complete R4/R6/R10/R16 proof-gate pairs, THM049 card, full R25 proof/gate/comparison exactly match their published bytes. Records CERTIFICATES/OUTPUTS/round026_source_gate_match.json. Independent AUD071/072/073 reconstruct used historical mechanisms and explicitly do not authenticate all historical labels or the separate R25 source bridge; root supplies that separate exact-version check. No external citation, private input or novelty claim added.
+
+
+2026-09-18 UTC — R26 whole acceptance. THM051 root matched all allowed historical R4/R6/R10/R16 proof/gate pairs and THM049/R25 source bytes against published ef438b6. All current proof/audit inputs verify. No external or private source added.

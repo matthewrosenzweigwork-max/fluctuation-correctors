@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-18T09:46:20.586591+00:00",
+  "fresh_directory": "/var/folders/yh/pqv2cz6539gc8j2cm154bcrr0000gn/T/hocf-r026-response-blind-rerun-kzb0xa8n",
+  "copied_code_only": true,
+  "byte_identical": true,
+  "result_sha256": "2a7edb8f86a13b2b2a486ffe76b07a7ea02363fbd3d61d4d721141d385df6ff3",
+  "checks": 256,
+  "nonzero_mutant_witnesses": 30,
+  "limitations": "Exact supporting algebra; not singular-process certification."
+}

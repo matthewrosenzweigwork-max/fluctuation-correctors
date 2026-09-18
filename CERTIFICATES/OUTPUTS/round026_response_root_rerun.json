@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "copied_read_only_files": 40,
+  "inputs_matched_canonical": 17,
+  "archive_members": 37,
+  "fresh_code_only_directory": "/private/tmp/hocf-r026-response-rerun-_511apdu",
+  "runs": [
+    {
+      "mode": null,
+      "exit": 0,
+      "sha256": "7ccff4e890013e9a91cf830e31cf1388aac4f3c2246fd4da402a60b40b4a4816"
+    },
+    {
+      "mode": "pair_drift",
+      "exit": 1,
+      "sha256": "afa0b95e6c8bb6f02956bdfbbaf5c2a16198e1485ba429c57366118a7000f72b"
+    },
+    {
+      "mode": "diffusion",
+      "exit": 1,
+      "sha256": "24de8aa947202abda4189dc9f050eb4a0a3b78f0cc5ddd204d2931e168b5db7a"
+    },
+    {
+      "mode": "projection",
+      "exit": 1,
+      "sha256": "58381ee51698e0f681350b265e1c76387a8952609cd6bdb5e9aade6e95dc9edc"
+    },
+    {
+      "mode": "cross_bracket",
+      "exit": 1,
+      "sha256": "f8663fd6eb2ada98c430a0f09806fe7624b9e2f40d9ca92db6b43e49d1ffa8ed"
+    },
+    {
+      "mode": "omit_bias",
+      "exit": 1,
+      "sha256": "417a21ada977c5629c06e879145c388b9fd0b01369ae749c50a53e8160dd70fd"
+    },
+    {
+      "mode": "radial_power",
+      "exit": 1,
+      "sha256": "1e4c31ccb2e1cca5eb8ac3e0fae75766c9eef2d610409ff55315555482fb4532"
+    }
+  ],
+  "assertions": 1588,
+  "categories": 33,
+  "six_mathematical_mutations_nonzero": true,
+  "two_in_memory_verifier_controls_nonzero": true,
+  "limitation": "Mixed exact and approximate radial checks; no SDE simulation or continuum certification."
+}

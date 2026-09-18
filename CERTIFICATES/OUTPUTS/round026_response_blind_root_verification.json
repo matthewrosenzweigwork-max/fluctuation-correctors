@@ -1,0 +1,16 @@
+{
+  "archive_member_count": 22,
+  "archive_sha256": "9e918ca90ae9a22e077cff7464927a1ccc92f48f95f8356e3d69c61f9407aa0b",
+  "complete_inventory": true,
+  "detected_nonzero_mutants": 30,
+  "diagnostic_checks": 256,
+  "input_count": 8,
+  "inventory_sha256": "c2ce6421157eb0d9f2591431d39908c3d16f29e443228089758f655bf3748ffc",
+  "packet": "ROUND_026_RESPONSE_BLIND_ARTIFACTS_20260918_092359_UTC",
+  "packet_read_only": true,
+  "regular_member_count": 22,
+  "report_sha256": "8db695cd0e2c2ec5b449c04efa63dbd260ac0d3c7301373488603d740b79ad3c",
+  "safe_regular_only_archive": true,
+  "status": "PASS",
+  "verifier_writes_files": false
+}

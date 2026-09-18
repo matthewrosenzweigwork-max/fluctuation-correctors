@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-18T09:48:25.175577+00:00",
+  "fresh_code_only_directory": "/var/folders/yh/pqv2cz6539gc8j2cm154bcrr0000gn/T/hocf-r026-overlap-blind-rerun-1b_rcsw2",
+  "byte_identical": true,
+  "stdout_sha256": "0f6019134e38338b142ac3c0dba30e7f632f8ae666ade58c6c441a33ee376ca6",
+  "checks": 134,
+  "nonzero_mutant_witnesses": 34,
+  "all_frequency_binary64_probes": 43344,
+  "read_only_regular_issued_files": 28,
+  "limitations": "Finite supportive rational and binary64 diagnostics, not actual SDE or uniform-frequency certification."
+}

@@ -1,0 +1,17 @@
+{
+  "allowed_inputs": 15,
+  "archive_members": 34,
+  "archive_no_extraction": "PASS",
+  "assertions": 187032,
+  "categories": 25,
+  "complete_digest_inventory": "PASS",
+  "diagnostic_rerun": "PASS; every recorded mathematical output reproduced",
+  "directories": 7,
+  "nonzero_mutations": 20,
+  "packet": "ROUND_026_OVERLAP_HOSTILE_ARTIFACTS_20260918_094616_UTC",
+  "read_only_modes": "PASS",
+  "regular_files": 27,
+  "report_copy": "PASS",
+  "verdict": "PASS",
+  "writes_performed": false
+}

@@ -127,3 +127,9 @@ R23 heat subtraction defines the lattice regular part with integrable endpoint m
 
 
 R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE_INTEGRATION.md. THM048's auxiliary initial-energy clipping and time-zero conditional isometry establish squared UI without altering dynamics or squaring instantaneous source; full THM049 converts the original L1 target to the actual signed modal correlation cancellation using degree10 L1 Fourier domination. Neither original cancellation nor its positive-limsup negation is proved. The dependence uses exact R4/R6/R10/R16 sources, with both fresh whole AUD069/070 passes and no pair-inverse/THM047 premise. No prior immutable statement is rewritten.
+
+
+2026-09-18 UTC. THM050 accepted fixedN-first actual heat passage: same-noise pathwise local C1 force convergence yields bounded endpoint/semigroup convergence. Angular fourth-gradient obstruction uses actual P_t^epsilon, fixed positive annulus first, then inner radius to0; full-parameter liminf follows from sequences/Fatou. Divergence is genuine Haar fourth-gradient at fixed positive small time and fixedN; no square-gradient divergence, entrance process, N-uniform time interval or arbitrary smoothing replacement. Exactcomparison AUDITS/ROUND_026_RESPONSE_RECONSTRUCTION_COMPARISON.md.
+
+
+2026-09-18 UTC — R26 whole acceptance. THM051 actual pair estimates hold uniformly in deterministic time and finite diffusivity. Positive heat representation gives small-ball C(R^4+1/N), truncated source square C[1+log(1/r)+1/(Nr^2)], and truncation error C(r+1/(Nr)). These do not assert pathwise minimum separation.

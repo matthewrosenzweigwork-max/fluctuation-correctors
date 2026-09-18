@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\newcommand{\E}{\mathbb E}
+\begin{document}
+\begin{center}
+{\large Coulomb response regularity and the remaining three-label term}\\[4pt]
+HOCF--RIESZ, Round 026 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Status.} THM050 and THM051 have passed both complete fresh audit axes and root comparison. The original critical source assertion THM046 remains open.
+
+Use the actual iid-Haar-prepared gradient particles on the unit four-torus,
+\[
+ dX_i=\frac1N\sum_{j\ne i}K(X_i-X_j)dt+\sqrt{2\nu}\,dW_i,
+ \quad K=-\nabla g,\quad \widehat g(m)=|m|^{-2}\ (m\ne0),\quad\widehat g(0)=0.
+\]
+Put $c=4\pi^2$, $e_k(x)=e^{2\pi i k\cdot x}$, $\ell_k=c|k|^2$ and
+$F_k(x)=N^{-1}\sum_i e_k(x_i)$. Superscript $\epsilon$ means the actual dynamics with $K_\epsilon=p_\epsilon*K$. All singular passages in the first part take place at fixed finite $N\ge2$ and $\nu>0$.
+
+\noindent\textbf{Exact response costs.}
+Let $P_t$ denote the actual configuration semigroup, $a=c+\nu\ell_k$ and $A=e^{-aT}$. Conditional orthogonality under the original initial Haar law gives
+\[
+ \begin{split}
+ D_N&:=N\E|F_k(X_T)-AF_k(X_0)|^2=C_N+J_N,\\
+ C_N&:=N\|P_TF_k-AF_k\|_{L^2(dx^N)}^2,\\
+ J_N&:=N\E|F_k(X_T)-P_TF_k(X_0)|^2.
+ \end{split}
+\]
+These are nonnegative finite numbers. For $u_s^\epsilon=P_{T-s}^\epsilon F_k$, the actual smooth backward martingale has Brownian coefficients $\sqrt{2\nu}\nabla_i u_s^\epsilon$. Its conjugate bracket is $2\nu\sum_i|\nabla_i u_s^\epsilon|^2ds$, and its cross bracket with the empirical forward martingale is
+\[
+ \frac{2\nu}{N}\sum_i\nabla_i u_s^\epsilon(X_s^\epsilon)
+       \cdot\overline{\nabla e_k(X_i^\epsilon(s))}\,ds.
+\]
+The frozen backward weight contributes $e^{-a(T-s)}$ when that weighted one-body martingale is used. It is not the cutoff-linearized response eigenvalue. Coupled bounded endpoint convergence proves
+\[
+ J_N=\lim_{\epsilon\downarrow0}2\nu N\int_0^T
+       \E\sum_i|\nabla_iP_{T-s}^\epsilon F_k(X_s^\epsilon)|^2ds.
+\]
+This is a limit of costs, with no assertion about limiting singular gradients. Thus $D_N\to0$ if and only if both $C_N,J_N\to0$. At $k=0$ the expressly artificial comparison $a=c$ gives $J_N=0$ and $C_N=D_N=N(1-e^{-cT})^2$; the physical constant-preserving response is unchanged.
+
+\newpage
+\noindent\textbf{A fixed-particle angular obstruction.}
+Write $x_1=z+r\theta/2$, $x_2=z-r\theta/2$, $q=(z,x_3,\ldots,x_N)$ and
+$H_k(q)=2e_k(z)/N+N^{-1}\sum_{j\ge3}e_k(x_j)$. Let $Q$ be a compact positive-volume slow-coordinate set with separated neighborhoods. For some $C,t_0>0$, depending on these fixed data, every $0<t\le t_0$ satisfies
+\[
+ \limsup_{r\downarrow0}\sup_{q\in Q,\theta\in S^3}
+ \left|P_tF_k(q,r\theta)-H_k(q)
+       +\frac{4\pi^2}{N^{3/2}}e_k(z)(k\cdot\theta)^2\sqrt t\right|
+ \le Ct^{3/4}.
+\]
+The relative drift is $4y/(N|y|^4)+O(y)$ and its noise covariance is $4\nu I$. Stopped radial moments, inverse-square occupation and angular It\^o calculus give the displayed expansion while retaining every other particle. It needs no directional entrance limit.
+
+For $f=\Re F_{(1,0,0,0)}$, the nonconstant angular profile persists on a positive-volume $Q$. Its full fourth-gradient cost contains a positive multiple of $t^2\int_0^{r_t}dr/r$. Therefore, for every fixed $N,\nu$, at every sufficiently small positive time,
+\[
+ P_tf\notin W^{1,4}(dx^N),\qquad
+ \liminf_{\epsilon\downarrow0}\int|\nabla P_t^\epsilon f|^4dx^N=\infty.
+\]
+The second assertion follows on fixed annuli before shrinking their inner radius. This gives no $W^{1,2}$ conclusion and no interval uniform in $N$.
+
+\noindent\textbf{Actual pair estimates and the two-label cancellation.}
+Fix $k\ne0$. Write $Z_m(t)=F_m(X_t)$ and
+\[
+ g_r=p_r*g,\quad q_r=c\int_0^r p_u\,du,\quad
+ a_r(m)=|m|^{-2}e^{-cr|m|^2}\ (m\ne0),\quad a_r(0)=0.
+\]
+The exact positive splitting $g=g_r+q_r-cr$, the actual energy sign $\E H_N(X_t)\le0$ and smooth self subtraction give, uniformly in all finite times and positive diffusivities,
+\[
+ \frac N{N-1}\E\sum_{m\ne0}a_r(m)|Z_m(t)|^2+\E q_r(X_1-X_2)
+ \le\frac{g_r(0)}{N-1}+cr\le C\bigl((Nr)^{-1}+r\bigr).
+\]
+The first inequality holds for $0<r\le1$ with its exact coefficients. The central heat contribution at $r=R^2$ yields
+\[
+ \mathbb P\{\operatorname{dist}(X_1(t),X_2(t))\le R\}\le C(R^4+N^{-1})
+ \quad(0<R\le R_0<1/8).
+\]
+This is a deterministic-time bound. Let
+\[
+ \begin{split}
+ j_k(x,y)&=K(x-y)\cdot(\nabla e_k(x)-\nabla e_k(y))+c(e_k(x)+e_k(y)),\\
+ j_{k,r}(x,y)&=K_r(x-y)\cdot(\nabla e_k(x)-\nabla e_k(y))
+                      +d_r(e_k(x)+e_k(y)),\quad d_r=ce^{-r\ell_k}.
+ \end{split}
+\]
+The smooth rows vanish and its diagonal is $2d_re_k(x)$. For $0<r\le r_0\le1/2$,
+\[
+ \E|j_k-j_{k,r}|\le C_k\bigl(r+(Nr)^{-1}\bigr),\qquad
+ \E|j_{k,r}|^2\le C_k\bigl(1+\log(1/r)+(Nr^2)^{-1}\bigr).
+\]
+The first estimate retains the correct heat response; the second uses the small-ball bound and layer-cake after truncation. No untruncated square estimate is used.
+
+\newpage
+The Fourier coefficients of $j_{k,r}(x,y)\overline{e_k(x)}$ are
+\[
+ b_r(m)=c\{(k\cdot m)a_r(m)-(k\cdot(m+k))a_r(m+k)\}
+              +d_r(\mathbf1_{m=0}+\mathbf1_{m=-k}).
+\]
+They satisfy $b_r(0)=b_r(-k)=0$, $\sum_{m\ne0}b_r(m)=2d_r$ and
+$|b_r(m)|\le C_k a_{r/8}(m)$ at every nonzero frequency. Hence
+\[
+ \E[j_{k,r}(X_1,X_2)\overline{e_k(X_1)}]
+ =\frac N{N-1}\E\sum_{m\ne0}b_r(m)|Z_m|^2-\frac{2d_r}{N-1}.
+\]
+Set $A_2(t)=\E[j_k(X_1(t),X_2(t))\overline{e_k(X_1(t))}]$ and
+$B_2(t)=\E[j_k(X_1(t),X_2(t))\overline{e_k(X_1(0))}]$.
+On every fixed window $0<\lambda_-\le\beta/\sqrt N\le\lambda_+<\infty$, all $N\ge2$ obey
+\[
+ \sup_{t\le T}|A_2(t)|\le C N^{-1/2},\qquad
+ \sup_{t\le T}|B_2(t)|\le C N^{-1/4}\sqrt{1+\log N}.
+\]
+Indeed choose $r$ a fixed multiple of $N^{-1/2}$. The complete drift-square energy identity gives tagged mean-square displacement $O(N^{-1/2}+\nu)$; Cauchy--Schwarz is applied only to the truncated kernel and displacement.
+
+\noindent\textbf{The remaining assertion.}
+Define $A_3,B_3$ by replacing only the last label above by $3$, and retain the same current or initial time. With $\widetilde a=a-c/N$, the R25 signed remainder differs by at most $CN^{-1/4}\sqrt{1+\log N}$ from
+\[
+ \mathcal R_N^{(3)}=\frac{(N-1)(N-2)}{2N}\int_0^T
+ \left[e^{-2\widetilde a(T-t)}A_3(t)
+       -e^{-aT}e^{-\widetilde a(T-t)}B_3(t)\right]dt,
+\]
+interpreted as zero at $N=2$. Thus its zero-limit and positive-limsup alternatives agree with those for the original signed remainder, for the same fixed data. The three-label term has not been shown to vanish and no admitted witness is known. The critical regime $\beta_N/\sqrt N\to\lambda>0$, microscopic subcriticality $\beta_N/\sqrt N\to0$, and the old energy-floor condition $\beta_N\to0$ remain distinct.
+\end{document}

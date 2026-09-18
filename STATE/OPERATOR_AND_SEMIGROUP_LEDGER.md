@@ -116,3 +116,9 @@ R22 gate,2026-09-18 UTC: R22 constructs strongly continuous modal contractions a
 
 
 R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE_INTEGRATION.md. THM048's auxiliary initial-energy clipping and time-zero conditional isometry establish squared UI without altering dynamics or squaring instantaneous source; full THM049 converts the original L1 target to the actual signed modal correlation cancellation using degree10 L1 Fourier domination. Neither original cancellation nor its positive-limsup negation is proved. The dependence uses exact R4/R6/R10/R16 sources, with both fresh whole AUD069/070 passes and no pair-inverse/THM047 premise. No prior immutable statement is rewritten.
+
+
+2026-09-18 UTC. THM050 accepted whole A-C after AUD071/072 and root646/423/521-line comparison. Actual P_t at fixedN,nu admits the exact conditional endpoint/noise decomposition and fixed-N limit of smooth backward Dirichlet costs. Target one-body weighting exp[-(c+nu ell)(T-s)] is distinguished from heat-linearized damping c exp(-epsilon ell)+nu ell. No singular gradient limit or uniform-N sensitivity theorem follows. For the real first mode, every sufficiently small positive time at each fixedN,nu has no full Haar W1,4 response; no W1,2 conclusion. R27 killed-attractive duality is separately SELF_CHECKED, awaiting both fresh axes.
+
+
+2026-09-18 UTC — R26 whole acceptance. THM051 retains the actual singular flow, exact smooth heat cutoff of the kernel and all-frequency coefficient bound with r/8 heat scale. No replacement Gibbs, static or mollified flow enters the signed overlap reduction.

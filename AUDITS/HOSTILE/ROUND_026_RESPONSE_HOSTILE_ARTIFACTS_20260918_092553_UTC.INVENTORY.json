@@ -1,0 +1,152 @@
+{
+  "format": "AUD072-portable-regular-inventory-v1",
+  "packet_name": "ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC",
+  "directories": [
+    "INPUTS",
+    "INPUTS/MEMORANDA",
+    "INPUTS/MEMORANDA/ROUND_026_SIGNED_CORRELATION_ARTIFACTS_20260918_090236_UTC",
+    "INPUTS/TASKS",
+    "INPUTS/TASKS/ACTIVE",
+    "INPUTS/THEOREMS"
+  ],
+  "files": [
+    {
+      "path": "DIAGNOSTIC_RESULTS.json",
+      "bytes": 10465,
+      "mode": "0444",
+      "sha256": "ffbaf965ad936d619c8acf84cf07bee2dda16a20d62cc286d7ab615599cff9b8"
+    },
+    {
+      "path": "EXPOSURE_AND_HISTORY.md",
+      "bytes": 12653,
+      "mode": "0444",
+      "sha256": "a90fd41556c946f5cf5b822b92fd93edb96e7751b7f674157fe14964945374ed"
+    },
+    {
+      "path": "INPUTS/AGENTS.md",
+      "bytes": 8174,
+      "mode": "0444",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_001_ALGEBRA.md",
+      "bytes": 30796,
+      "mode": "0444",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "bytes": 36096,
+      "mode": "0444",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "bytes": 37944,
+      "mode": "0444",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_026_SIGNED_CORRELATION_ARTIFACTS_20260918_090236_UTC/CLAIM_CARD.md",
+      "bytes": 3384,
+      "mode": "0444",
+      "sha256": "89af030e94ad850fca9191f2516421760d1667a75ec8ef93125c306a781f9775"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_026_SIGNED_CORRELATION_ARTIFACTS_20260918_090236_UTC/EXPOSURE_AND_SOURCES.md",
+      "bytes": 5893,
+      "mode": "0444",
+      "sha256": "9bf49c5453993e2a902e872eec578471f9bc45eb9c9eb9360c31d125178cb924"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_026_SIGNED_CORRELATION_ATTEMPT.md",
+      "bytes": 27308,
+      "mode": "0444",
+      "sha256": "749d9da1cd355065841880fdce4c1a253d9d3b02ad18417aeb30c0a6f2a5ce58"
+    },
+    {
+      "path": "INPUTS/MODEL_ORCHESTRATION.md",
+      "bytes": 4350,
+      "mode": "0444",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1"
+    },
+    {
+      "path": "INPUTS/TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "bytes": 5031,
+      "mode": "0444",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+    },
+    {
+      "path": "INPUTS/TASKS/ACTIVE/TASK-113_ROUND026_RESPONSE_HOSTILE.md",
+      "bytes": 2857,
+      "mode": "0444",
+      "sha256": "cb15f83cede13a7826b56341b5b85e20328d5157c1ade9391061e33551b4813c"
+    },
+    {
+      "path": "INPUTS/THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "bytes": 2035,
+      "mode": "0444",
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d"
+    },
+    {
+      "path": "INPUTS/THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "bytes": 3353,
+      "mode": "0444",
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e"
+    },
+    {
+      "path": "INPUTS/THEOREMS/THM-050_COULOMB_CONDITIONAL_RESPONSE_AND_ANGULAR_OBSTRUCTION.md",
+      "bytes": 4551,
+      "mode": "0444",
+      "sha256": "f24b505c4b3e5dfc6d930b30ceb2757836eed24622761fb548842dfd431f0565"
+    },
+    {
+      "path": "INPUT_SHA256SUMS.txt",
+      "bytes": 1526,
+      "mode": "0444",
+      "sha256": "c3fafa72904352716535a6841a0da4e329f261464e13f948280a10f32f74be08"
+    },
+    {
+      "path": "INPUT_VERIFICATION.json",
+      "bytes": 3082,
+      "mode": "0444",
+      "sha256": "665014976dbc7583d17bc47099dcaf2b5c5dbd82b0e4a73457d099599c03794e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4486,
+      "mode": "0444",
+      "sha256": "7c0d0a96795670b39a2fc35170793e3b7a46375351ff441c1196daac2cbd8a37"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 29261,
+      "mode": "0444",
+      "sha256": "0590500b274ae507c4e34720c9cabb280214dec8fc06ff656f7181f481628adb"
+    },
+    {
+      "path": "VERIFIER_CONTROL_RESULTS.json",
+      "bytes": 2193,
+      "mode": "0444",
+      "sha256": "bf2cc4bf64dffa264a69964e450005cc53386a5a3b4595ea23f97e39f80bc6df"
+    },
+    {
+      "path": "hostile_diagnostic.py",
+      "bytes": 14828,
+      "mode": "0444",
+      "sha256": "19f7919d583a2d6f931cf55fb883a97065c0d5f04c7b429f0c3a7a82280945b7"
+    },
+    {
+      "path": "issue_packet.py",
+      "bytes": 4625,
+      "mode": "0444",
+      "sha256": "e679ee87b81eaaa58611bb11b512d31fcffd2f3c3ddb972877026cb41ef96eb6"
+    },
+    {
+      "path": "verify_read_only.py",
+      "bytes": 8762,
+      "mode": "0444",
+      "sha256": "32ba22388c50a0a3d43839adb6770c25b8b114071e1dacdac7f17561ac3c8b39"
+    }
+  ]
+}

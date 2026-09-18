@@ -1,0 +1,437 @@
+{
+  "status": "PASS",
+  "python": "3.9.6",
+  "assertions": 343521,
+  "categories": {
+    "both zero Haar rows": 8,
+    "constant overlap Fourier coefficient": 8,
+    "deleted residual row": 32,
+    "derived overlap Fourier coefficient": 8,
+    "exact current overlaps": 32,
+    "exact dyadic logarithmic moment": 20,
+    "exact energy diagonal": 32,
+    "exact mixed initial overlaps": 32,
+    "finer cutoff retains N inverse epsilon squared error": 20,
+    "finite heat divided-difference envelope": 342720,
+    "finite smooth self trace": 8,
+    "mixed-overlap Cauchy Schwarz": 32,
+    "new overlap spectral self subtraction": 32,
+    "nonvacuous mutation coverage": 1,
+    "pair symmetry": 258,
+    "self error gives constant at microscopic heat cutoff": 20,
+    "translation covariance": 258
+  },
+  "mutation_controls": {
+    "Coulomb response inserted at finite heat cutoff": {
+      "expected": [
+        "0",
+        "0"
+      ],
+      "mutated": [
+        "1/2",
+        "0"
+      ],
+      "detail": {
+        "heat": "1/2",
+        "k": [
+          1,
+          0
+        ]
+      }
+    },
+    "wrong background sign": {
+      "expected": [
+        "0",
+        "0"
+      ],
+      "mutated": [
+        "-1",
+        "0"
+      ],
+      "detail": {
+        "heat": "1/2",
+        "k": [
+          1,
+          0
+        ]
+      }
+    },
+    "delete residual row": {
+      "expected": [
+        "-21/160",
+        "-21/160"
+      ],
+      "mutated": [
+        "-41/160",
+        "-41/160"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "reverse residual row": {
+      "expected": [
+        "-21/160",
+        "-21/160"
+      ],
+      "mutated": [
+        "-61/160",
+        "-61/160"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "omit overlap self subtraction": {
+      "expected": [
+        "-41/40",
+        "0"
+      ],
+      "mutated": [
+        "-1/40",
+        "0"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "wrong overlap self denominator": {
+      "expected": [
+        "-41/40",
+        "0"
+      ],
+      "mutated": [
+        "-21/40",
+        "0"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "omit ordered half": {
+      "expected": [
+        "-41/80",
+        "0"
+      ],
+      "mutated": [
+        "-41/40",
+        "0"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "falling-factorial source denominator": {
+      "expected": [
+        "-41/80",
+        "0"
+      ],
+      "mutated": [
+        "-41/40",
+        "0"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "miss one pair overlap": {
+      "expected": [
+        "-41/80",
+        "0"
+      ],
+      "mutated": [
+        "-41/160",
+        "0"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "replace initial phase by current phase": {
+      "expected": [
+        "0",
+        "0"
+      ],
+      "mutated": [
+        "-41/40",
+        "0"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "omit energy self term": {
+      "expected": [
+        "2491/5120",
+        "0"
+      ],
+      "mutated": [
+        "287/160",
+        "0"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "factor two energy self term": {
+      "expected": [
+        "2491/5120",
+        "0"
+      ],
+      "mutated": [
+        "-2101/2560",
+        "0"
+      ],
+      "detail": {
+        "n": 2,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "double distinct-label coefficient": {
+      "expected": [
+        "-19/180",
+        "0"
+      ],
+      "mutated": [
+        "0",
+        "0"
+      ],
+      "detail": {
+        "n": 3,
+        "k": [
+          1,
+          0
+        ],
+        "heat": "1/2"
+      }
+    },
+    "drop finite N cutoff term": {
+      "expected": [
+        "16",
+        "0"
+      ],
+      "mutated": [
+        "1",
+        "0"
+      ],
+      "detail": {
+        "m": 1,
+        "n": 16
+      }
+    },
+    "drop growing logarithmic truncated moment": {
+      "expected": [
+        "31",
+        "0"
+      ],
+      "mutated": [
+        "16",
+        "0"
+      ],
+      "detail": {
+        "m": 2,
+        "n": 256
+      }
+    }
+  },
+  "mutation_count": 15,
+  "heat_multiplier_sample_max_ratio": 96.68740188045656,
+  "radial_diagnostics": [
+    {
+      "m": 1,
+      "N": "16",
+      "epsilon": "1/4",
+      "dyadic_second_moment": "16",
+      "finer_cutoff_term": "16"
+    },
+    {
+      "m": 2,
+      "N": "256",
+      "epsilon": "1/16",
+      "dyadic_second_moment": "31",
+      "finer_cutoff_term": "256"
+    },
+    {
+      "m": 3,
+      "N": "4096",
+      "epsilon": "1/64",
+      "dyadic_second_moment": "46",
+      "finer_cutoff_term": "4096"
+    },
+    {
+      "m": 4,
+      "N": "65536",
+      "epsilon": "1/256",
+      "dyadic_second_moment": "61",
+      "finer_cutoff_term": "65536"
+    },
+    {
+      "m": 5,
+      "N": "1048576",
+      "epsilon": "1/1024",
+      "dyadic_second_moment": "76",
+      "finer_cutoff_term": "1048576"
+    },
+    {
+      "m": 6,
+      "N": "16777216",
+      "epsilon": "1/4096",
+      "dyadic_second_moment": "91",
+      "finer_cutoff_term": "16777216"
+    },
+    {
+      "m": 7,
+      "N": "268435456",
+      "epsilon": "1/16384",
+      "dyadic_second_moment": "106",
+      "finer_cutoff_term": "268435456"
+    },
+    {
+      "m": 8,
+      "N": "4294967296",
+      "epsilon": "1/65536",
+      "dyadic_second_moment": "121",
+      "finer_cutoff_term": "4294967296"
+    },
+    {
+      "m": 9,
+      "N": "68719476736",
+      "epsilon": "1/262144",
+      "dyadic_second_moment": "136",
+      "finer_cutoff_term": "68719476736"
+    },
+    {
+      "m": 10,
+      "N": "1099511627776",
+      "epsilon": "1/1048576",
+      "dyadic_second_moment": "151",
+      "finer_cutoff_term": "1099511627776"
+    },
+    {
+      "m": 11,
+      "N": "17592186044416",
+      "epsilon": "1/4194304",
+      "dyadic_second_moment": "166",
+      "finer_cutoff_term": "17592186044416"
+    },
+    {
+      "m": 12,
+      "N": "281474976710656",
+      "epsilon": "1/16777216",
+      "dyadic_second_moment": "181",
+      "finer_cutoff_term": "281474976710656"
+    },
+    {
+      "m": 13,
+      "N": "4503599627370496",
+      "epsilon": "1/67108864",
+      "dyadic_second_moment": "196",
+      "finer_cutoff_term": "4503599627370496"
+    },
+    {
+      "m": 14,
+      "N": "72057594037927936",
+      "epsilon": "1/268435456",
+      "dyadic_second_moment": "211",
+      "finer_cutoff_term": "72057594037927936"
+    },
+    {
+      "m": 15,
+      "N": "1152921504606846976",
+      "epsilon": "1/1073741824",
+      "dyadic_second_moment": "226",
+      "finer_cutoff_term": "1152921504606846976"
+    },
+    {
+      "m": 16,
+      "N": "18446744073709551616",
+      "epsilon": "1/4294967296",
+      "dyadic_second_moment": "241",
+      "finer_cutoff_term": "18446744073709551616"
+    },
+    {
+      "m": 17,
+      "N": "295147905179352825856",
+      "epsilon": "1/17179869184",
+      "dyadic_second_moment": "256",
+      "finer_cutoff_term": "295147905179352825856"
+    },
+    {
+      "m": 18,
+      "N": "4722366482869645213696",
+      "epsilon": "1/68719476736",
+      "dyadic_second_moment": "271",
+      "finer_cutoff_term": "4722366482869645213696"
+    },
+    {
+      "m": 19,
+      "N": "75557863725914323419136",
+      "epsilon": "1/274877906944",
+      "dyadic_second_moment": "286",
+      "finer_cutoff_term": "75557863725914323419136"
+    },
+    {
+      "m": 20,
+      "N": "1208925819614629174706176",
+      "epsilon": "1/1099511627776",
+      "dyadic_second_moment": "301",
+      "finer_cutoff_term": "1208925819614629174706176"
+    }
+  ],
+  "limitations": [
+    "No SDE simulation or numerical asymptotic theorem.",
+    "Finite Fourier algebra is a regularized diagnostic; c=(2*pi)^2 is divided out.",
+    "Rational heat multipliers in exact tests are powers of 1/2 or 3/4; no singular law is substituted.",
+    "Heat-envelope sample uses IEEE double arithmetic and bound 500, not interval certification.",
+    "Dyadic atom model is a negative control for a majorant, not an admitted dynamic counterexample."
+  ]
+}

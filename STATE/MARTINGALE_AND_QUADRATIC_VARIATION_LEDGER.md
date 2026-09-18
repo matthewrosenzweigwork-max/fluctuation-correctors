@@ -112,3 +112,9 @@ R22 gate,2026-09-18 UTC: R22 driving modal martingale has bracket density <=4nu 
 
 
 R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE_INTEGRATION.md. THM048's auxiliary initial-energy clipping and time-zero conditional isometry establish squared UI without altering dynamics or squaring instantaneous source; full THM049 converts the original L1 target to the actual signed modal correlation cancellation using degree10 L1 Fourier domination. Neither original cancellation nor its positive-limsup negation is proved. The dependence uses exact R4/R6/R10/R16 sources, with both fresh whole AUD069/070 passes and no pair-inverse/THM047 premise. No prior immutable statement is rewritten.
+
+
+2026-09-18 UTC. THM050(A), AUD071/072 accepted: smooth backward u_s=P_(T-s)^epsilon F has true Brownian coefficient sqrt(2nu)grad_i u_s, conjugate bracket2nu sum|grad_i u_s|², cross with empirical mode(2nu/N)sum grad_i u_s dot conjugate grad e_k. Keep specified backward factor if weighting empirical noise. Conditional endpoint orthogonality D=C+J does not erase this common-noise cross bracket. J is the fixed-N numeric limit of2nu N integrated squared gradients by bounded coupled endpoints, not by convergence of singular gradients.
+
+
+2026-09-18 UTC — R26 whole acceptance. THM051 mixed two-label bound uses actual full-force displacement/energy action and the true tagged noise. It supplies no instantaneous untruncated source square and no estimate of the signed triple term.

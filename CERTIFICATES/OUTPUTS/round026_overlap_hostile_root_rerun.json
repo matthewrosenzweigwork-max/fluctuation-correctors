@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-18T10:08:28.178309+00:00",
+  "fresh_code_only_directory": "/var/folders/yh/pqv2cz6539gc8j2cm154bcrr0000gn/T/hocf-r026-overlap-hostile-rerun-bsk5b6ih",
+  "all_saved_bytes_identical": true,
+  "stdout_sha256": "29f488f9b39838c079a977f2c1277f207f4678131dd760c15f4ad17eead2b9a7",
+  "assertions": 187032,
+  "categories": 25,
+  "nonzero_mutant_witnesses": 20,
+  "limitations": "Exact Fourier/radial algebra plus separately labeled binary64 heat sweep; no actual process simulation."
+}

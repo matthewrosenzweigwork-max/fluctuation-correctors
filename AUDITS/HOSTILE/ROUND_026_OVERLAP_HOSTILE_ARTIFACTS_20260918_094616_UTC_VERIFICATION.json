@@ -1,0 +1,7 @@
+{
+  "command": "python3 -B PACKET/verify.py --rerun-diagnostic",
+  "returncode": 0,
+  "seconds": 5.079612625,
+  "stdout": "{\n  \"allowed_inputs\": 15,\n  \"archive_members\": 34,\n  \"archive_no_extraction\": \"PASS\",\n  \"assertions\": 187032,\n  \"categories\": 25,\n  \"complete_digest_inventory\": \"PASS\",\n  \"diagnostic_rerun\": \"PASS; every recorded mathematical output reproduced\",\n  \"directories\": 7,\n  \"nonzero_mutations\": 20,\n  \"packet\": \"ROUND_026_OVERLAP_HOSTILE_ARTIFACTS_20260918_094616_UTC\",\n  \"read_only_modes\": \"PASS\",\n  \"regular_files\": 27,\n  \"report_copy\": \"PASS\",\n  \"verdict\": \"PASS\",\n  \"writes_performed\": false\n}\n",
+  "stderr": ""
+}

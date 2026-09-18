@@ -1,0 +1,204 @@
+{
+  "directories": [
+    {
+      "mode": 365,
+      "path": "."
+    },
+    {
+      "mode": 365,
+      "path": "INPUTS"
+    },
+    {
+      "mode": 365,
+      "path": "INPUTS/MEMORANDA"
+    },
+    {
+      "mode": 365,
+      "path": "INPUTS/MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION_ARTIFACTS"
+    },
+    {
+      "mode": 365,
+      "path": "INPUTS/TASKS"
+    },
+    {
+      "mode": 365,
+      "path": "INPUTS/TASKS/ACTIVE"
+    },
+    {
+      "mode": 365,
+      "path": "INPUTS/THEOREMS"
+    }
+  ],
+  "external_report": {
+    "mode": 292,
+    "name": "ROUND_026_OVERLAP_REVIEW.md",
+    "sha256": "4355c2d732e65ea6d9b7a9bbda363b63b6898cd2e84912cdef5e74545a12c1ef",
+    "size": 31844
+  },
+  "format": "AUD074 complete regular-member inventory v1",
+  "packet_name": "ROUND_026_OVERLAP_HOSTILE_ARTIFACTS_20260918_094616_UTC",
+  "regular_files": [
+    {
+      "mode": 292,
+      "path": "EXPOSURE_AND_SOURCES.md",
+      "sha256": "d8cde5bf55896cf2491dc61b067b4c7c992e1c016f7fde65172969b56aaa451b",
+      "size": 6753
+    },
+    {
+      "mode": 292,
+      "path": "FINAL_INPUT_VERIFICATION.json",
+      "sha256": "811a916bc0af5f755fa4e4e6518f50933239ea1392714816e8ea5122d0217923",
+      "size": 3634
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "size": 8174
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "size": 30796
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "size": 36096
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "size": 37944
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "size": 35077
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "size": 34431
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+      "sha256": "f4035c691bfbd1c48191335942ac57ffa161078729c992552913e417da41f9fe",
+      "size": 28994
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION_ARTIFACTS/CLAIM_CARD.md",
+      "sha256": "0dfe80c65d2317dc8dd1960b107a9e039346f38b848011228b5490931d3211fa",
+      "size": 2389
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION_ARTIFACTS/EXPOSURE_AND_SOURCES.md",
+      "sha256": "989dfd5406a0b640ddae24360bc7ed12ab3adb60f3d66de88b5f908cd4e807c2",
+      "size": 5976
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/MODEL_ORCHESTRATION.md",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "size": 4350
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "size": 5031
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/TASKS/ACTIVE/TASK-115_ROUND026_OVERLAP_HOSTILE.md",
+      "sha256": "c41e24768485776bbf1209e6e4755c1fe521a0dbed22409725d7f3aa8fdafa66",
+      "size": 2742
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+      "size": 2035
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "size": 3353
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS/THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md",
+      "sha256": "f8114c60684145aaad4e458c1ee867d9190dac2d26c60cdb95dd04dbcb4e5d8a",
+      "size": 3740
+    },
+    {
+      "mode": 292,
+      "path": "INPUTS_ORIGINAL_SHA256SUMS.txt",
+      "sha256": "d6089da6cd0d17bc2b138d7a2ca884cfc898bcbf32f904939cef0e02e6a659bd",
+      "size": 1704
+    },
+    {
+      "mode": 292,
+      "path": "INPUT_VERIFICATION.json",
+      "sha256": "26ca2d7612dac08ea9c3c1b96940580436e3e941e221ed1a62779ccee8f6020c",
+      "size": 3910
+    },
+    {
+      "mode": 292,
+      "path": "README.md",
+      "sha256": "9571f9ed23edef92ce5a631963df5a1453e8b739f991be5c8387c835f22d0cf3",
+      "size": 2615
+    },
+    {
+      "mode": 292,
+      "path": "REPORT.md",
+      "sha256": "4355c2d732e65ea6d9b7a9bbda363b63b6898cd2e84912cdef5e74545a12c1ef",
+      "size": 31844
+    },
+    {
+      "mode": 292,
+      "path": "RUN_001_PROCESS.json",
+      "sha256": "aa35ff859c6d54e1615f69b08c0b483896e91ceda48214b9f2bdf0615a892331",
+      "size": 96
+    },
+    {
+      "mode": 292,
+      "path": "RUN_001_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "mode": 292,
+      "path": "RUN_001_STDOUT.json",
+      "sha256": "29f488f9b39838c079a977f2c1277f207f4678131dd760c15f4ad17eead2b9a7",
+      "size": 10738
+    },
+    {
+      "mode": 292,
+      "path": "RUN_HISTORY.md",
+      "sha256": "c7770b437ebbf622b92ea071af0ea03beb6c21d68fa003814f265f19a0adb30b",
+      "size": 3343
+    },
+    {
+      "mode": 292,
+      "path": "diagnostic.py",
+      "sha256": "447990b9d1068b2cdc654ffbf087a7eac350072c923feca050450a68d4f039f5",
+      "size": 12690
+    },
+    {
+      "mode": 292,
+      "path": "verify.py",
+      "sha256": "a6ec1e6204c2caf861c3195e6f47c70435f4acb0aac75810a2840b414726ed7c",
+      "size": 9843
+    }
+  ]
+}

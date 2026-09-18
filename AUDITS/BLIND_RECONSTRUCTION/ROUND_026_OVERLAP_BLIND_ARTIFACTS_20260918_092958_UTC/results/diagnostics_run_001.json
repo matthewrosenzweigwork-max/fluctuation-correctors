@@ -1,0 +1,1320 @@
+{
+  "actual_singular_law_simulated": false,
+  "check_count": 134,
+  "checks": [
+    {
+      "detail": null,
+      "name": "exact Haar rows k=(1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact smooth diagonal k=(1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(-1, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(-2, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(1, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(0, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(0, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(2, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(0, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(-1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(3, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(2, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(-1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(2, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(1, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(1, 0, -1, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 0, 0, 0) u=(0, 0, -1, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact coefficient dictionary k=(1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact exceptional coefficients k=(1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact sum b k=(1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "-95/231 + (0)i",
+        "spectral": "-95/231 + (0)i"
+      },
+      "name": "exact overlap k=(1, 0, 0, 0) N=2",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "4/21 + (0)i",
+        "spectral": "4/21 + (0)i"
+      },
+      "name": "exact overlap k=(1, 0, 0, 0) N=3",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "5/21 + (0)i",
+        "spectral": "5/21 + (0)i"
+      },
+      "name": "exact overlap k=(1, 0, 0, 0) N=5",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "38/147 + (0)i",
+        "spectral": "38/147 + (0)i"
+      },
+      "name": "exact overlap k=(1, 0, 0, 0) N=7",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact Haar rows k=(1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact smooth diagonal k=(1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(-1, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(-1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(-2, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(0, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(2, 2, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(1, 2, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(0, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(1, 1, 1, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(0, 2, 0, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(-1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(3, 2, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(2, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(2, 0, 0, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(1, 1, -1, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(1, 1, 0, 0) u=(0, 0, -1, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact coefficient dictionary k=(1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact exceptional coefficients k=(1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact sum b k=(1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "4/5 + (0)i",
+        "spectral": "4/5 + (0)i"
+      },
+      "name": "exact overlap k=(1, 1, 0, 0) N=2",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "4/15 + (0)i",
+        "spectral": "4/15 + (0)i"
+      },
+      "name": "exact overlap k=(1, 1, 0, 0) N=3",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "8/25 + (0)i",
+        "spectral": "8/25 + (0)i"
+      },
+      "name": "exact overlap k=(1, 1, 0, 0) N=5",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "12/35 + (0)i",
+        "spectral": "12/35 + (0)i"
+      },
+      "name": "exact overlap k=(1, 1, 0, 0) N=7",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact Haar rows k=(2, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact smooth diagonal k=(2, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(0, -2, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(-2, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(4, -2, 2, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(2, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(2, -2, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(0, -1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(2, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(0, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(3, -2, 1, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(1, -1, 0, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(1, 0, 1, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(-1, 1, 0, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(4, 0, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(2, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(0, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(-2, 1, -1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(2, -1, 2, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(0, 0, 1, 1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(2, -1, 0, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "translation frequency k=(2, -1, 1, 0) u=(0, 0, -1, -1)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact coefficient dictionary k=(2, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact exceptional coefficients k=(2, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact sum b k=(2, -1, 1, 0)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "-6254/15015 + (0)i",
+        "spectral": "-6254/15015 + (0)i"
+      },
+      "name": "exact overlap k=(2, -1, 1, 0) N=2",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "88/105 + (0)i",
+        "spectral": "88/105 + (0)i"
+      },
+      "name": "exact overlap k=(2, -1, 1, 0) N=3",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "1926/2275 + (0)i",
+        "spectral": "1926/2275 + (0)i"
+      },
+      "name": "exact overlap k=(2, -1, 1, 0) N=5",
+      "passed": true
+    },
+    {
+      "detail": {
+        "direct": "2708/3185 + (0)i",
+        "spectral": "2708/3185 + (0)i"
+      },
+      "name": "exact overlap k=(2, -1, 1, 0) N=7",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lhs": "261/1540 + (-39/1540)i",
+        "rhs": "261/1540 + (-39/1540)i",
+        "triple": "0 + (0)i"
+      },
+      "name": "exact current label expansion N=2",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "N2 no third label current",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lhs": "303/3094 + (-319/6188)i",
+        "rhs": "303/3094 + (-319/6188)i",
+        "triple": "0 + (0)i"
+      },
+      "name": "exact initial label expansion N=2",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "N2 no third label initial",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lhs": "208/315 + (-394/3465)i",
+        "rhs": "208/315 + (-394/3465)i",
+        "triple": "184/315 + (-386/3465)i"
+      },
+      "name": "exact current label expansion N=3",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lhs": "619/1547 + (-177/1547)i",
+        "rhs": "619/1547 + (-177/1547)i",
+        "triple": "4939/13923 + (-107/819)i"
+      },
+      "name": "exact initial label expansion N=3",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lhs": "217/55 + (-419/385)i",
+        "rhs": "217/55 + (-419/385)i",
+        "triple": "4057/2310 + (-235/462)i"
+      },
+      "name": "exact current label expansion N=5",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lhs": "192/91 + (-11/1547)i",
+        "rhs": "192/91 + (-11/1547)i",
+        "triple": "4541/4641 + (-463/9282)i"
+      },
+      "name": "exact initial label expansion N=5",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lhs": "11373/440 + (-3909/440)i",
+        "rhs": "11373/440 + (-3909/440)i",
+        "triple": "5147/770 + (-929/385)i"
+      },
+      "name": "exact current label expansion N=8",
+      "passed": true
+    },
+    {
+      "detail": {
+        "lhs": "17001/1768 + (177/68)i",
+        "rhs": "17001/1768 + (177/68)i",
+        "triple": "8087/3094 + (1933/3094)i"
+      },
+      "name": "exact initial label expansion N=8",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "T0 all remainders zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=0.0",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=1e-08",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=0.0001",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=0.1",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=1",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=2",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=4",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=8",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=12",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=32",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=128",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Gaussian doubled heat v=1000",
+      "passed": true
+    },
+    {
+      "detail": {
+        "asserted_lower": 0.07581633246407918,
+        "scaled_value": 99999999.75
+      },
+      "name": "small-ball central heat x=0.0001",
+      "passed": true
+    },
+    {
+      "detail": {
+        "asserted_lower": 0.07581633246407918,
+        "scaled_value": 9999.750003124973
+      },
+      "name": "small-ball central heat x=0.01",
+      "passed": true
+    },
+    {
+      "detail": {
+        "asserted_lower": 0.07581633246407918,
+        "scaled_value": 99.750312239746
+      },
+      "name": "small-ball central heat x=0.1",
+      "passed": true
+    },
+    {
+      "detail": {
+        "asserted_lower": 0.07581633246407918,
+        "scaled_value": 3.7576522512539032
+      },
+      "name": "small-ball central heat x=0.5",
+      "passed": true
+    },
+    {
+      "detail": {
+        "asserted_lower": 0.07581633246407918,
+        "scaled_value": 0.7788007830714049
+      },
+      "name": "small-ball central heat x=1.0",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=2 r=0.5",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=2 r=0.1",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=2 r=0.001",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=2 r=1e-06",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=7 r=0.5",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=7 r=0.1",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=7 r=0.001",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=7 r=1e-06",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=100 r=0.5",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=100 r=0.1",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=100 r=0.001",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=100 r=1e-06",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=10000 r=0.5",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=10000 r=0.1",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=10000 r=0.001",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "layer-cake majorant N=10000 r=1e-06",
+      "passed": true
+    },
+    {
+      "detail": {
+        "argmax": {
+          "m": [
+            -2,
+            0,
+            0,
+            0
+          ],
+          "r": 0.006332573977646111,
+          "tau": 1
+        },
+        "max_ratio_c_divided_out": 2.696263570981365,
+        "probes": 14448
+      },
+      "name": "finite all-frequency stress k=(1, 0, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "argmax": {
+          "m": [
+            -2,
+            -2,
+            0,
+            0
+          ],
+          "r": 0.0031662869888230555,
+          "tau": 1
+        },
+        "max_ratio_c_divided_out": 5.39252714196273,
+        "probes": 14448
+      },
+      "name": "finite all-frequency stress k=(1, 1, 0, 0)",
+      "passed": true
+    },
+    {
+      "detail": {
+        "argmax": {
+          "m": [
+            -3,
+            1,
+            -1,
+            0
+          ],
+          "r": 0.2302754173689495,
+          "tau": 100
+        },
+        "max_ratio_c_divided_out": 665.2303438768413,
+        "probes": 14448
+      },
+      "name": "finite all-frequency stress k=(2, -1, 1, 0)",
+      "passed": true
+    }
+  ],
+  "details": {
+    "all_frequency": {
+      "binary64_only": true,
+      "sampled_bounds": [
+        {
+          "argmax": {
+            "m": [
+              -2,
+              0,
+              0,
+              0
+            ],
+            "r": 0.006332573977646111,
+            "tau": 1
+          },
+          "k": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "max_ratio_c_divided_out": 2.696263570981365,
+          "probes": 14448
+        },
+        {
+          "argmax": {
+            "m": [
+              -2,
+              -2,
+              0,
+              0
+            ],
+            "r": 0.0031662869888230555,
+            "tau": 1
+          },
+          "k": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "max_ratio_c_divided_out": 5.39252714196273,
+          "probes": 14448
+        },
+        {
+          "argmax": {
+            "m": [
+              -3,
+              1,
+              -1,
+              0
+            ],
+            "r": 0.2302754173689495,
+            "tau": 100
+          },
+          "k": [
+            2,
+            -1,
+            1,
+            0
+          ],
+          "max_ratio_c_divided_out": 665.2303438768413,
+          "probes": 14448
+        }
+      ],
+      "unchanged_heat_scale_log_ratio": 790.2357308485545
+    },
+    "exact_fourier": [
+      {
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "response_c_divided_out": "1/3",
+        "sum_b_c_divided_out": "2/3",
+        "support_size": 10
+      },
+      {
+        "k": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "response_c_divided_out": "2/5",
+        "sum_b_c_divided_out": "4/5",
+        "support_size": 10
+      },
+      {
+        "k": [
+          2,
+          -1,
+          1,
+          0
+        ],
+        "response_c_divided_out": "6/13",
+        "sum_b_c_divided_out": "12/13",
+        "support_size": 10
+      }
+    ],
+    "exact_label_counts": [
+      {
+        "N": 2,
+        "kind": "current",
+        "three_label_coefficient": "0",
+        "two_label_coefficient": "1/2"
+      },
+      {
+        "N": 2,
+        "kind": "initial",
+        "three_label_coefficient": "0",
+        "two_label_coefficient": "1/2"
+      },
+      {
+        "N": 3,
+        "kind": "current",
+        "three_label_coefficient": "1/3",
+        "two_label_coefficient": "2/3"
+      },
+      {
+        "N": 3,
+        "kind": "initial",
+        "three_label_coefficient": "1/3",
+        "two_label_coefficient": "2/3"
+      },
+      {
+        "N": 5,
+        "kind": "current",
+        "three_label_coefficient": "6/5",
+        "two_label_coefficient": "4/5"
+      },
+      {
+        "N": 5,
+        "kind": "initial",
+        "three_label_coefficient": "6/5",
+        "two_label_coefficient": "4/5"
+      },
+      {
+        "N": 8,
+        "kind": "current",
+        "three_label_coefficient": "21/8",
+        "two_label_coefficient": "7/8"
+      },
+      {
+        "N": 8,
+        "kind": "initial",
+        "three_label_coefficient": "21/8",
+        "two_label_coefficient": "7/8"
+      }
+    ],
+    "gaussian_layer": {
+      "gaussian_ratios": [
+        {
+          "gradient_to_doubled_heat_ratio": 0.0,
+          "squared_distance_over_time": 0.0
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 1.9999999975e-08,
+          "squared_distance_over_time": 1e-08
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 0.00019999750001562495,
+          "squared_distance_over_time": 0.0001
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 0.1975155600987763,
+          "squared_distance_over_time": 0.1
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 1.764993805169191,
+          "squared_distance_over_time": 1
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 3.1152031322856195,
+          "squared_distance_over_time": 2
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 4.852245277701067,
+          "squared_distance_over_time": 4
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 5.886071058743077,
+          "squared_distance_over_time": 8
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 5.355123843562316,
+          "squared_distance_over_time": 12
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 1.1722008888789874,
+          "squared_distance_over_time": 32
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 2.8809004728130334e-05,
+          "squared_distance_over_time": 128
+        },
+        {
+          "gradient_to_doubled_heat_ratio": 1.0332841265675723e-51,
+          "squared_distance_over_time": 1000
+        }
+      ],
+      "radial_law_layer_checks": [
+        {
+          "N": 2,
+          "constructed_radial_expectation": 3.1931471805599454,
+          "majorant": 7.386294361119891,
+          "r": 0.5
+        },
+        {
+          "N": 2,
+          "constructed_radial_expectation": 52.802585092994036,
+          "majorant": 106.60517018598807,
+          "r": 0.1
+        },
+        {
+          "N": 2,
+          "constructed_radial_expectation": 500007.407755279,
+          "majorant": 1000015.815510558,
+          "r": 0.001
+        },
+        {
+          "N": 2,
+          "constructed_radial_expectation": 500000000014.31555,
+          "majorant": 1000000000029.631,
+          "r": 1e-06
+        },
+        {
+          "N": 7,
+          "constructed_radial_expectation": 2.616823738102764,
+          "majorant": 4.529151503977033,
+          "r": 0.5
+        },
+        {
+          "N": 7,
+          "constructed_radial_expectation": 19.090145873704074,
+          "majorant": 35.17659875741666,
+          "r": 0.1
+        },
+        {
+          "N": 7,
+          "constructed_radial_expectation": 142869.84186619252,
+          "majorant": 285730.1012248437,
+          "r": 0.001
+        },
+        {
+          "N": 7,
+          "constructed_radial_expectation": 142857142881.68372,
+          "majorant": 285714285743.9168,
+          "r": 1e-06
+        },
+        {
+          "N": 100,
+          "constructed_radial_expectation": 2.402431417508692,
+          "majorant": 3.466294361119891,
+          "r": 0.5
+        },
+        {
+          "N": 100,
+          "constructed_radial_expectation": 6.54911848412821,
+          "majorant": 8.605170185988092,
+          "r": 0.1
+        },
+        {
+          "N": 100,
+          "constructed_radial_expectation": 10014.667355452384,
+          "majorant": 20015.815510557964,
+          "r": 0.001
+        },
+        {
+          "N": 100,
+          "constructed_radial_expectation": 10000000028.344713,
+          "majorant": 20000000029.63102,
+          "r": 1e-06
+        },
+        {
+          "N": 10000,
+          "constructed_radial_expectation": 2.3864557316837787,
+          "majorant": 3.3870943611198907,
+          "r": 0.5
+        },
+        {
+          "N": 10000,
+          "constructed_radial_expectation": 5.614609668969493,
+          "majorant": 6.625170185988091,
+          "r": 0.1
+        },
+        {
+          "N": 10000,
+          "constructed_radial_expectation": 114.81402900690847,
+          "majorant": 215.81551055796427,
+          "r": 0.001
+        },
+        {
+          "N": 10000,
+          "constructed_radial_expectation": 100000028.62815803,
+          "majorant": 200000029.6310211,
+          "r": 1e-06
+        }
+      ]
+    }
+  },
+  "diagnostic_id": "AUD073-FRESH-20260918",
+  "exact_arithmetic": "fractions.Fraction with rational complex pairs; c divided out for algebra",
+  "floating_arithmetic": "Python binary64; finite supportive probes only",
+  "limitations": [
+    "No floating-point or finite-grid result proves a uniform infinite-frequency estimate.",
+    "Finite Fourier models test coefficient algebra only; they do not replace the actual singular law.",
+    "Constructed radial law tests the strength of a small-ball premise only.",
+    "No critical signed three-label cancellation or counterexample is inferred."
+  ],
+  "mutation_count": 34,
+  "mutations": [
+    {
+      "detail": "Substituting response 1 for the actual smooth response leaves a nonzero Haar row (c divided out).",
+      "name": "unheated response k=(1, 0, 0, 0)",
+      "nonzero_residual": "2/3",
+      "rejected": true
+    },
+    {
+      "detail": "Changing the J row sign while retaining the response gives a nonzero row.",
+      "name": "wrong source sign k=(1, 0, 0, 0)",
+      "nonzero_residual": "2/3",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(1, 0, 0, 0) N=2",
+      "nonzero_residual": "2/3 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(1, 0, 0, 0) N=3",
+      "nonzero_residual": "1/3 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(1, 0, 0, 0) N=5",
+      "nonzero_residual": "1/6 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(1, 0, 0, 0) N=7",
+      "nonzero_residual": "1/9 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Substituting response 1 for the actual smooth response leaves a nonzero Haar row (c divided out).",
+      "name": "unheated response k=(1, 1, 0, 0)",
+      "nonzero_residual": "3/5",
+      "rejected": true
+    },
+    {
+      "detail": "Changing the J row sign while retaining the response gives a nonzero row.",
+      "name": "wrong source sign k=(1, 1, 0, 0)",
+      "nonzero_residual": "4/5",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(1, 1, 0, 0) N=2",
+      "nonzero_residual": "4/5 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(1, 1, 0, 0) N=3",
+      "nonzero_residual": "2/5 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(1, 1, 0, 0) N=5",
+      "nonzero_residual": "1/5 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(1, 1, 0, 0) N=7",
+      "nonzero_residual": "2/15 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Substituting response 1 for the actual smooth response leaves a nonzero Haar row (c divided out).",
+      "name": "unheated response k=(2, -1, 1, 0)",
+      "nonzero_residual": "7/13",
+      "rejected": true
+    },
+    {
+      "detail": "Changing the J row sign while retaining the response gives a nonzero row.",
+      "name": "wrong source sign k=(2, -1, 1, 0)",
+      "nonzero_residual": "12/13",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(2, -1, 1, 0) N=2",
+      "nonzero_residual": "12/13 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(2, -1, 1, 0) N=3",
+      "nonzero_residual": "6/13 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(2, -1, 1, 0) N=5",
+      "nonzero_residual": "3/13 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Dropping the smooth 2d/(N-1) subtraction gives this nonzero residual on the same finite Fourier model.",
+      "name": "missing self k=(2, -1, 1, 0) N=7",
+      "nonzero_residual": "2/13 + (0)i",
+      "rejected": true
+    },
+    {
+      "detail": "Omitting the second overlapping label loses a nonzero contribution.",
+      "name": "one overlap only current N=2",
+      "nonzero_residual": "261/3080 + (-39/3080)i",
+      "rejected": true
+    },
+    {
+      "detail": "Omitting the second overlapping label loses a nonzero contribution.",
+      "name": "one overlap only initial N=2",
+      "nonzero_residual": "303/6188 + (-319/12376)i",
+      "rejected": true
+    },
+    {
+      "detail": "Omitting the second overlapping label loses a nonzero contribution.",
+      "name": "one overlap only current N=3",
+      "nonzero_residual": "44/189 + (-398/10395)i",
+      "rejected": true
+    },
+    {
+      "detail": "A denominator 2N^2 instead of 2N loses a nonzero contribution.",
+      "name": "extra N in triple current N=3",
+      "nonzero_residual": "368/2835 + (-772/31185)i",
+      "rejected": true
+    },
+    {
+      "detail": "Omitting the second overlapping label loses a nonzero contribution.",
+      "name": "one overlap only initial N=3",
+      "nonzero_residual": "841/5967 + (-1480/41769)i",
+      "rejected": true
+    },
+    {
+      "detail": "A denominator 2N^2 instead of 2N loses a nonzero contribution.",
+      "name": "extra N in triple initial N=3",
+      "nonzero_residual": "9878/125307 + (-214/7371)i",
+      "rejected": true
+    },
+    {
+      "detail": "Omitting the second overlapping label loses a nonzero contribution.",
+      "name": "one overlap only current N=5",
+      "nonzero_residual": "1769/1925 + (-92/385)i",
+      "rejected": true
+    },
+    {
+      "detail": "A denominator 2N^2 instead of 2N loses a nonzero contribution.",
+      "name": "extra N in triple current N=5",
+      "nonzero_residual": "16228/9625 + (-188/385)i",
+      "rejected": true
+    },
+    {
+      "detail": "Omitting the second overlapping label loses a nonzero contribution.",
+      "name": "one overlap only initial N=5",
+      "nonzero_residual": "517/1105 + (12/455)i",
+      "rejected": true
+    },
+    {
+      "detail": "A denominator 2N^2 instead of 2N loses a nonzero contribution.",
+      "name": "extra N in triple initial N=5",
+      "nonzero_residual": "36328/38675 + (-1852/38675)i",
+      "rejected": true
+    },
+    {
+      "detail": "Omitting the second overlapping label loses a nonzero contribution.",
+      "name": "one overlap only current N=8",
+      "nonzero_residual": "1461/352 + (-51/40)i",
+      "rejected": true
+    },
+    {
+      "detail": "A denominator 2N^2 instead of 2N loses a nonzero contribution.",
+      "name": "extra N in triple current N=8",
+      "nonzero_residual": "108087/7040 + (-19509/3520)i",
+      "rejected": true
+    },
+    {
+      "detail": "Omitting the second overlapping label loses a nonzero contribution.",
+      "name": "one overlap only initial N=8",
+      "nonzero_residual": "573/416 + (3405/7072)i",
+      "rejected": true
+    },
+    {
+      "detail": "A denominator 2N^2 instead of 2N loses a nonzero contribution.",
+      "name": "extra N in triple initial N=8",
+      "nonzero_residual": "169827/28288 + (40593/28288)i",
+      "rejected": true
+    },
+    {
+      "detail": "Constructed radial-law stress test, not an admitted actual-law counterexample: the small-ball premise alone does not imply a pure logarithmic square bound.",
+      "name": "omit finite-N truncated-square term",
+      "nonzero_residual": "499999999984.68445",
+      "rejected": true
+    },
+    {
+      "detail": "For k=e1,m=-100e1,r=.1 the log ratio |b|/(c*a_r) exceeds 700. This tests a stronger excluded bound, not THM051.",
+      "name": "replace weakened heat scale by identical scale",
+      "nonzero_residual": "90.23573084855445",
+      "rejected": true
+    }
+  ],
+  "randomness": "none",
+  "status": "PASS",
+  "theorem_proof": "RECONSTRUCTION.md sections 2-10, not this program"
+}

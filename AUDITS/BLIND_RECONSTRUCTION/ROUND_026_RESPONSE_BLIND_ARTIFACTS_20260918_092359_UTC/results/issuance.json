@@ -1,0 +1,22 @@
+{
+  "issued_utc": "2026-09-18 09:39:43 UTC",
+  "task": "TASK112",
+  "audit": "AUD071",
+  "packet": "ROUND_026_RESPONSE_BLIND_ARTIFACTS_20260918_092359_UTC",
+  "report": "ROUND_026_RESPONSE_RECONSTRUCTION.md",
+  "input_count": 8,
+  "diagnostic_checks": 256,
+  "detected_nonzero_mutants": 30,
+  "packaging": "USTAR regular files only; no links or directory entries; gzip mtime zero; no extraction",
+  "archive_identity_metadata": {
+    "uid": 0,
+    "gid": 0,
+    "uname": "",
+    "gname": "",
+    "mtime": 0
+  },
+  "source_edits": [],
+  "git_actions": [],
+  "remote_actions": [],
+  "dependencies_installed": []
+}

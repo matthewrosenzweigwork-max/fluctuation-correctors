@@ -1,0 +1,11 @@
+{
+  "archive_regular_members_verified": 23,
+  "diagnostic_checks": 134,
+  "exact_inputs_verified": 12,
+  "full_diagnostic_output_reproduced": true,
+  "nonzero_mutations_rejected": 34,
+  "packet_regular_files": 23,
+  "read_only": true,
+  "scope": "integrity and reproducibility; mathematical verdict is in RECONSTRUCTION.md",
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "copied_read_only_files": 37,
+  "inputs_matched_canonical": 17,
+  "archive_members": 32,
+  "fresh_code_only_directory": "/private/tmp/hocf-r026-overlap-rerun-76jvc8ik",
+  "result_sha256": "9f06a7aa0f7f78c020912238c10d041b763ad3eabae7a47a493c5752acecb7de",
+  "assertions": 343521,
+  "categories": 17,
+  "nonzero_mutation_types": 15,
+  "active_read_only_check_pass": true,
+  "historical_comparison_failure_reproduced": true,
+  "limitation": "Exact finite Fourier/radial identities plus separately floating heat-envelope samples; no continuum certification."
+}

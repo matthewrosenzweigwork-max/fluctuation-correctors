@@ -1,0 +1,1770 @@
+{
+  "all_mutants_nonzero": true,
+  "arithmetic": "exact rational; Python standard library",
+  "baseline_failures": [],
+  "check_count": 256,
+  "checks": [
+    {
+      "actual": "4261/4000",
+      "expected": "4261/4000",
+      "name": "complex conditional decomposition",
+      "pass": true
+    },
+    {
+      "actual": [
+        "0",
+        "0"
+      ],
+      "expected": [
+        "0",
+        "0"
+      ],
+      "name": "conditional complex cross term",
+      "pass": true
+    },
+    {
+      "actual": "True",
+      "expected": "True",
+      "name": "both conditional costs positive",
+      "pass": true
+    },
+    {
+      "actual": "8",
+      "expected": "8",
+      "name": "relative covariance",
+      "pass": true
+    },
+    {
+      "actual": "2",
+      "expected": "2",
+      "name": "center covariance",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "relative-center cross covariance",
+      "pass": true
+    },
+    {
+      "actual": "9469/180",
+      "expected": "9469/180",
+      "name": "self bracket N=2",
+      "pass": true
+    },
+    {
+      "actual": [
+        "-26/15",
+        "76/3"
+      ],
+      "expected": [
+        "-26/15",
+        "76/3"
+      ],
+      "name": "cross bracket N=2",
+      "pass": true
+    },
+    {
+      "actual": [
+        "-52/75",
+        "152/15"
+      ],
+      "expected": [
+        "-52/75",
+        "152/15"
+      ],
+      "name": "backward weighted cross N=2",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "zero mode J N=2",
+      "pass": true
+    },
+    {
+      "actual": "8/9",
+      "expected": "8/9",
+      "name": "zero mode D=C N=2",
+      "pass": true
+    },
+    {
+      "actual": "17279/225",
+      "expected": "17279/225",
+      "name": "self bracket N=3",
+      "pass": true
+    },
+    {
+      "actual": [
+        "-34/45",
+        "224/9"
+      ],
+      "expected": [
+        "-34/45",
+        "224/9"
+      ],
+      "name": "cross bracket N=3",
+      "pass": true
+    },
+    {
+      "actual": [
+        "-68/225",
+        "448/45"
+      ],
+      "expected": [
+        "-68/225",
+        "448/45"
+      ],
+      "name": "backward weighted cross N=3",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "zero mode J N=3",
+      "pass": true
+    },
+    {
+      "actual": "4/3",
+      "expected": "4/3",
+      "name": "zero mode D=C N=3",
+      "pass": true
+    },
+    {
+      "actual": "28973/180",
+      "expected": "28973/180",
+      "name": "self bracket N=5",
+      "pass": true
+    },
+    {
+      "actual": [
+        "106/175",
+        "632/21"
+      ],
+      "expected": [
+        "106/175",
+        "632/21"
+      ],
+      "name": "cross bracket N=5",
+      "pass": true
+    },
+    {
+      "actual": [
+        "212/875",
+        "1264/105"
+      ],
+      "expected": [
+        "212/875",
+        "1264/105"
+      ],
+      "name": "backward weighted cross N=5",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "zero mode J N=5",
+      "pass": true
+    },
+    {
+      "actual": "20/9",
+      "expected": "20/9",
+      "name": "zero mode D=C N=5",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 0 N2 nu1/3 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "25896398/128625",
+      "expected": "25896398/128625",
+      "name": "radial p2 N2 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "17492932/2100875",
+      "expected": "17492932/2100875",
+      "name": "radial p4 N2 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "26582398/102942875",
+      "expected": "26582398/102942875",
+      "name": "radial p6 N2 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "64/352947",
+      "expected": "64/352947",
+      "name": "radial fourth bracket N2 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-256674/4375",
+      "expected": "-256674/4375",
+      "name": "angle i0 N2 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-343432/4375",
+      "expected": "-343432/4375",
+      "name": "angle i1 N2 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N2 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N2 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 1 N2 nu1/3 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "34183549/169785",
+      "expected": "34183549/169785",
+      "name": "radial p2 N2 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "69272618/8319465",
+      "expected": "69272618/8319465",
+      "name": "radial p4 N2 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "35089069/135884595",
+      "expected": "35089069/135884595",
+      "name": "radial p6 N2 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "64/352947",
+      "expected": "64/352947",
+      "name": "radial fourth bracket N2 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-677923/13860",
+      "expected": "-677923/13860",
+      "name": "angle i0 N2 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-680299/13860",
+      "expected": "-680299/13860",
+      "name": "angle i1 N2 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-225923/4620",
+      "expected": "-225923/4620",
+      "name": "angle i2 N2 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-680569/13860",
+      "expected": "-680569/13860",
+      "name": "angle i3 N2 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 0 N2 nu1/3 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "1990217/65625",
+      "expected": "1990217/65625",
+      "name": "radial p2 N2 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "5773912/546875",
+      "expected": "5773912/546875",
+      "name": "radial p4 N2 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "37443472/13671875",
+      "expected": "37443472/13671875",
+      "name": "radial p6 N2 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4096/46875",
+      "expected": "4096/46875",
+      "name": "radial fourth bracket N2 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-64473/8750",
+      "expected": "-64473/8750",
+      "name": "angle i0 N2 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-44182/4375",
+      "expected": "-44182/4375",
+      "name": "angle i1 N2 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N2 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N2 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 1 N2 nu1/3 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "2628301/86625",
+      "expected": "2628301/86625",
+      "name": "radial p2 N2 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "22874408/2165625",
+      "expected": "22874408/2165625",
+      "name": "radial p4 N2 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "49444816/18046875",
+      "expected": "49444816/18046875",
+      "name": "radial p6 N2 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4096/46875",
+      "expected": "4096/46875",
+      "name": "radial fourth bracket N2 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-21352/3465",
+      "expected": "-21352/3465",
+      "name": "angle i0 N2 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-21946/3465",
+      "expected": "-21946/3465",
+      "name": "angle i1 N2 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-14209/2310",
+      "expected": "-14209/2310",
+      "name": "angle i2 N2 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-44027/6930",
+      "expected": "-44027/6930",
+      "name": "angle i3 N2 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 0 N2 nu5/2 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "10118466/42875",
+      "expected": "10118466/42875",
+      "name": "radial p2 N2 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "21951932/2100875",
+      "expected": "21951932/2100875",
+      "name": "radial p4 N2 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "35500398/102942875",
+      "expected": "35500398/102942875",
+      "name": "radial p6 N2 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "160/117649",
+      "expected": "160/117649",
+      "name": "radial fourth bracket N2 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-1928799/4375",
+      "expected": "-1928799/4375",
+      "name": "angle i0 N2 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-2572932/4375",
+      "expected": "-2572932/4375",
+      "name": "angle i1 N2 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N2 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N2 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 1 N2 nu5/2 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "40069429/169785",
+      "expected": "40069429/169785",
+      "name": "radial p2 N2 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "86930258/8319465",
+      "expected": "86930258/8319465",
+      "name": "radial p4 N2 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "46860829/135884595",
+      "expected": "46860829/135884595",
+      "name": "radial p6 N2 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "160/117649",
+      "expected": "160/117649",
+      "name": "radial fourth bracket N2 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5092333/13860",
+      "expected": "-5092333/13860",
+      "name": "angle i0 N2 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5094709/13860",
+      "expected": "-5094709/13860",
+      "name": "angle i1 N2 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1697393/4620",
+      "expected": "-1697393/4620",
+      "name": "angle i2 N2 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5094979/13860",
+      "expected": "-5094979/13860",
+      "name": "angle i3 N2 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 0 N2 nu5/2 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "1421739/21875",
+      "expected": "1421739/21875",
+      "name": "radial p2 N2 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "14873912/546875",
+      "expected": "14873912/546875",
+      "name": "radial p4 N2 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "110243472/13671875",
+      "expected": "110243472/13671875",
+      "name": "radial p6 N2 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "2048/3125",
+      "expected": "2048/3125",
+      "name": "radial fourth bracket N2 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-982071/17500",
+      "expected": "-982071/17500",
+      "name": "angle i0 N2 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-328557/4375",
+      "expected": "-328557/4375",
+      "name": "angle i1 N2 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N2 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N2 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 1 N2 nu5/2 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "5631301/86625",
+      "expected": "5631301/86625",
+      "name": "radial p2 N2 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "58910408/2165625",
+      "expected": "58910408/2165625",
+      "name": "radial p4 N2 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "145540816/18046875",
+      "expected": "145540816/18046875",
+      "name": "radial p6 N2 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "2048/3125",
+      "expected": "2048/3125",
+      "name": "radial fourth bracket N2 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1296941/27720",
+      "expected": "-1296941/27720",
+      "name": "angle i0 N2 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1301693/27720",
+      "expected": "-1301693/27720",
+      "name": "angle i1 N2 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-432211/9240",
+      "expected": "-432211/9240",
+      "name": "angle i2 N2 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1302233/27720",
+      "expected": "-1302233/27720",
+      "name": "angle i3 N2 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "2",
+      "expected": "2",
+      "name": "squared angular coefficient after removing pi^2 N2",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 0 N3 nu1/3 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "5830966/42875",
+      "expected": "5830966/42875",
+      "name": "radial p2 N3 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "35671796/6302625",
+      "expected": "35671796/6302625",
+      "name": "radial p4 N3 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "18178898/102942875",
+      "expected": "18178898/102942875",
+      "name": "radial p6 N3 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "64/352947",
+      "expected": "64/352947",
+      "name": "radial fourth bracket N3 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-256674/4375",
+      "expected": "-256674/4375",
+      "name": "angle i0 N3 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-343432/4375",
+      "expected": "-343432/4375",
+      "name": "angle i1 N3 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N3 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N3 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 1 N3 nu1/3 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "23090929/169785",
+      "expected": "23090929/169785",
+      "name": "radial p2 N3 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "47087378/8319465",
+      "expected": "47087378/8319465",
+      "name": "radial p4 N3 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "23996449/135884595",
+      "expected": "23996449/135884595",
+      "name": "radial p6 N3 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "64/352947",
+      "expected": "64/352947",
+      "name": "radial fourth bracket N3 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-677923/13860",
+      "expected": "-677923/13860",
+      "name": "angle i0 N3 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-680299/13860",
+      "expected": "-680299/13860",
+      "name": "angle i1 N3 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-225923/4620",
+      "expected": "-225923/4620",
+      "name": "angle i2 N3 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-680569/13860",
+      "expected": "-680569/13860",
+      "name": "angle i3 N3 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 0 N3 nu1/3 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "481114/21875",
+      "expected": "481114/21875",
+      "name": "radial p2 N3 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "12946736/1640625",
+      "expected": "12946736/1640625",
+      "name": "radial p4 N3 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "28693472/13671875",
+      "expected": "28693472/13671875",
+      "name": "radial p6 N3 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4096/46875",
+      "expected": "4096/46875",
+      "name": "radial fourth bracket N3 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-64473/8750",
+      "expected": "-64473/8750",
+      "name": "angle i0 N3 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-44182/4375",
+      "expected": "-44182/4375",
+      "name": "angle i1 N3 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N3 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N3 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 1 N3 nu1/3 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "1906426/86625",
+      "expected": "1906426/86625",
+      "name": "radial p2 N3 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "17099408/2165625",
+      "expected": "17099408/2165625",
+      "name": "radial p4 N3 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "37894816/18046875",
+      "expected": "37894816/18046875",
+      "name": "radial p6 N3 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4096/46875",
+      "expected": "4096/46875",
+      "name": "radial fourth bracket N3 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-21352/3465",
+      "expected": "-21352/3465",
+      "name": "angle i0 N3 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-21946/3465",
+      "expected": "-21946/3465",
+      "name": "angle i1 N3 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-14209/2310",
+      "expected": "-14209/2310",
+      "name": "angle i2 N3 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-44027/6930",
+      "expected": "-44027/6930",
+      "name": "angle i3 N3 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 0 N3 nu5/2 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "21951898/128625",
+      "expected": "21951898/128625",
+      "name": "radial p2 N3 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "49048796/6302625",
+      "expected": "49048796/6302625",
+      "name": "radial p4 N3 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "27096898/102942875",
+      "expected": "27096898/102942875",
+      "name": "radial p6 N3 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "160/117649",
+      "expected": "160/117649",
+      "name": "radial fourth bracket N3 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-1928799/4375",
+      "expected": "-1928799/4375",
+      "name": "angle i0 N3 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-2572932/4375",
+      "expected": "-2572932/4375",
+      "name": "angle i1 N3 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N3 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N3 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 1 N3 nu5/2 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "28976809/169785",
+      "expected": "28976809/169785",
+      "name": "radial p2 N3 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "64745018/8319465",
+      "expected": "64745018/8319465",
+      "name": "radial p4 N3 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "35768209/135884595",
+      "expected": "35768209/135884595",
+      "name": "radial p6 N3 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "160/117649",
+      "expected": "160/117649",
+      "name": "radial fourth bracket N3 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5092333/13860",
+      "expected": "-5092333/13860",
+      "name": "angle i0 N3 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5094709/13860",
+      "expected": "-5094709/13860",
+      "name": "angle i1 N3 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1697393/4620",
+      "expected": "-1697393/4620",
+      "name": "angle i2 N3 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5094979/13860",
+      "expected": "-5094979/13860",
+      "name": "angle i3 N3 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 0 N3 nu5/2 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "3718342/65625",
+      "expected": "3718342/65625",
+      "name": "radial p2 N3 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "40246736/1640625",
+      "expected": "40246736/1640625",
+      "name": "radial p4 N3 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "101493472/13671875",
+      "expected": "101493472/13671875",
+      "name": "radial p6 N3 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "2048/3125",
+      "expected": "2048/3125",
+      "name": "radial fourth bracket N3 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-982071/17500",
+      "expected": "-982071/17500",
+      "name": "angle i0 N3 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-328557/4375",
+      "expected": "-328557/4375",
+      "name": "angle i1 N3 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N3 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N3 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 1 N3 nu5/2 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "4909426/86625",
+      "expected": "4909426/86625",
+      "name": "radial p2 N3 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "53135408/2165625",
+      "expected": "53135408/2165625",
+      "name": "radial p4 N3 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "133990816/18046875",
+      "expected": "133990816/18046875",
+      "name": "radial p6 N3 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "2048/3125",
+      "expected": "2048/3125",
+      "name": "radial fourth bracket N3 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1296941/27720",
+      "expected": "-1296941/27720",
+      "name": "angle i0 N3 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1301693/27720",
+      "expected": "-1301693/27720",
+      "name": "angle i1 N3 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-432211/9240",
+      "expected": "-432211/9240",
+      "name": "angle i2 N3 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1302233/27720",
+      "expected": "-1302233/27720",
+      "name": "angle i3 N3 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "16/27",
+      "expected": "16/27",
+      "name": "squared angular coefficient after removing pi^2 N3",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 0 N7 nu1/3 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "7888898/128625",
+      "expected": "7888898/128625",
+      "name": "radial p2 N7 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "5487932/2100875",
+      "expected": "5487932/2100875",
+      "name": "radial p4 N7 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "8574898/102942875",
+      "expected": "8574898/102942875",
+      "name": "radial p6 N7 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "64/352947",
+      "expected": "64/352947",
+      "name": "radial fourth bracket N7 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-256674/4375",
+      "expected": "-256674/4375",
+      "name": "angle i0 N7 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-343432/4375",
+      "expected": "-343432/4375",
+      "name": "angle i1 N7 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N7 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N7 nu1/3 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 1 N7 nu1/3 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "10413649/169785",
+      "expected": "10413649/169785",
+      "name": "radial p2 N7 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "21732818/8319465",
+      "expected": "21732818/8319465",
+      "name": "radial p4 N7 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "11319169/135884595",
+      "expected": "11319169/135884595",
+      "name": "radial p6 N7 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "64/352947",
+      "expected": "64/352947",
+      "name": "radial fourth bracket N7 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-677923/13860",
+      "expected": "-677923/13860",
+      "name": "angle i0 N7 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-680299/13860",
+      "expected": "-680299/13860",
+      "name": "angle i1 N7 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-225923/4620",
+      "expected": "-225923/4620",
+      "name": "angle i2 N7 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-680569/13860",
+      "expected": "-680569/13860",
+      "name": "angle i3 N7 nu1/3 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 0 N7 nu1/3 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "116906/9375",
+      "expected": "116906/9375",
+      "name": "radial p2 N7 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "378416/78125",
+      "expected": "378416/78125",
+      "name": "radial p4 N7 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "2670496/1953125",
+      "expected": "2670496/1953125",
+      "name": "radial p6 N7 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4096/46875",
+      "expected": "4096/46875",
+      "name": "radial fourth bracket N7 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-64473/8750",
+      "expected": "-64473/8750",
+      "name": "angle i0 N7 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-44182/4375",
+      "expected": "-44182/4375",
+      "name": "angle i1 N7 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N7 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N7 nu1/3 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 1 N7 nu1/3 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "1081426/86625",
+      "expected": "1081426/86625",
+      "name": "radial p2 N7 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "10499408/2165625",
+      "expected": "10499408/2165625",
+      "name": "radial p4 N7 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "24694816/18046875",
+      "expected": "24694816/18046875",
+      "name": "radial p6 N7 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4096/46875",
+      "expected": "4096/46875",
+      "name": "radial fourth bracket N7 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-21352/3465",
+      "expected": "-21352/3465",
+      "name": "angle i0 N7 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-21946/3465",
+      "expected": "-21946/3465",
+      "name": "angle i1 N7 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-14209/2310",
+      "expected": "-14209/2310",
+      "name": "angle i2 N7 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-44027/6930",
+      "expected": "-44027/6930",
+      "name": "angle i3 N7 nu1/3 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 0 N7 nu5/2 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "4115966/42875",
+      "expected": "4115966/42875",
+      "name": "radial p2 N7 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "9946932/2100875",
+      "expected": "9946932/2100875",
+      "name": "radial p4 N7 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "17492898/102942875",
+      "expected": "17492898/102942875",
+      "name": "radial p6 N7 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "160/117649",
+      "expected": "160/117649",
+      "name": "radial fourth bracket N7 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-1928799/4375",
+      "expected": "-1928799/4375",
+      "name": "angle i0 N7 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-2572932/4375",
+      "expected": "-2572932/4375",
+      "name": "angle i1 N7 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N7 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N7 nu5/2 r1/7 unit0",
+      "pass": true
+    },
+    {
+      "actual": "1/49",
+      "expected": "1/49",
+      "name": "unit vector 1 N7 nu5/2 r1/7",
+      "pass": true
+    },
+    {
+      "actual": "16299529/169785",
+      "expected": "16299529/169785",
+      "name": "radial p2 N7 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "39390458/8319465",
+      "expected": "39390458/8319465",
+      "name": "radial p4 N7 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "23090929/135884595",
+      "expected": "23090929/135884595",
+      "name": "radial p6 N7 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "160/117649",
+      "expected": "160/117649",
+      "name": "radial fourth bracket N7 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5092333/13860",
+      "expected": "-5092333/13860",
+      "name": "angle i0 N7 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5094709/13860",
+      "expected": "-5094709/13860",
+      "name": "angle i1 N7 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1697393/4620",
+      "expected": "-1697393/4620",
+      "name": "angle i2 N7 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-5094979/13860",
+      "expected": "-5094979/13860",
+      "name": "angle i3 N7 nu5/2 r1/7 unit1",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 0 N7 nu5/2 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "147302/3125",
+      "expected": "147302/3125",
+      "name": "radial p2 N7 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "1678416/78125",
+      "expected": "1678416/78125",
+      "name": "radial p4 N7 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "13070496/1953125",
+      "expected": "13070496/1953125",
+      "name": "radial p6 N7 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "2048/3125",
+      "expected": "2048/3125",
+      "name": "radial fourth bracket N7 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-982071/17500",
+      "expected": "-982071/17500",
+      "name": "angle i0 N7 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "-328557/4375",
+      "expected": "-328557/4375",
+      "name": "angle i1 N7 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i2 N7 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "0",
+      "expected": "0",
+      "name": "angle i3 N7 nu5/2 r2/5 unit0",
+      "pass": true
+    },
+    {
+      "actual": "4/25",
+      "expected": "4/25",
+      "name": "unit vector 1 N7 nu5/2 r2/5",
+      "pass": true
+    },
+    {
+      "actual": "4084426/86625",
+      "expected": "4084426/86625",
+      "name": "radial p2 N7 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "46535408/2165625",
+      "expected": "46535408/2165625",
+      "name": "radial p4 N7 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "120790816/18046875",
+      "expected": "120790816/18046875",
+      "name": "radial p6 N7 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "2048/3125",
+      "expected": "2048/3125",
+      "name": "radial fourth bracket N7 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1296941/27720",
+      "expected": "-1296941/27720",
+      "name": "angle i0 N7 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1301693/27720",
+      "expected": "-1301693/27720",
+      "name": "angle i1 N7 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-432211/9240",
+      "expected": "-432211/9240",
+      "name": "angle i2 N7 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "-1302233/27720",
+      "expected": "-1302233/27720",
+      "name": "angle i3 N7 nu5/2 r2/5 unit1",
+      "pass": true
+    },
+    {
+      "actual": "16/343",
+      "expected": "16/343",
+      "name": "squared angular coefficient after removing pi^2 N7",
+      "pass": true
+    },
+    {
+      "actual": "48",
+      "expected": "48",
+      "name": "fourth radial drift coefficient",
+      "pass": true
+    },
+    {
+      "actual": "96",
+      "expected": "96",
+      "name": "sixth radial drift coefficient",
+      "pass": true
+    },
+    {
+      "actual": "3/4",
+      "expected": "3/4",
+      "name": "radial moment error exponent",
+      "pass": true
+    },
+    {
+      "actual": "3/4",
+      "expected": "3/4",
+      "name": "angular product error exponent",
+      "pass": true
+    },
+    {
+      "actual": "-1",
+      "expected": "-1",
+      "name": "codimension-four fourth-gradient radial exponent",
+      "pass": true
+    },
+    {
+      "actual": "1/4",
+      "expected": "1/4",
+      "name": "sphere theta1^2 mean",
+      "pass": true
+    },
+    {
+      "actual": "1/8",
+      "expected": "1/8",
+      "name": "sphere theta1^4 mean",
+      "pass": true
+    },
+    {
+      "actual": "3/8",
+      "expected": "3/8",
+      "name": "normalized fourth angular energy of theta1^2",
+      "pass": true
+    },
+    {
+      "actual": "3/8",
+      "expected": "3/8",
+      "name": "logarithmic energy in 1 dyadic shells divided by log 2",
+      "pass": true
+    },
+    {
+      "actual": "3/2",
+      "expected": "3/2",
+      "name": "logarithmic energy in 4 dyadic shells divided by log 2",
+      "pass": true
+    },
+    {
+      "actual": "6",
+      "expected": "6",
+      "name": "logarithmic energy in 16 dyadic shells divided by log 2",
+      "pass": true
+    },
+    {
+      "actual": "24",
+      "expected": "24",
+      "name": "logarithmic energy in 64 dyadic shells divided by log 2",
+      "pass": true
+    },
+    {
+      "actual": "True",
+      "expected": "True",
+      "name": "positive slow volume N2",
+      "pass": true
+    },
+    {
+      "actual": "True",
+      "expected": "True",
+      "name": "positive slow volume N3",
+      "pass": true
+    },
+    {
+      "actual": "True",
+      "expected": "True",
+      "name": "positive slow volume N5",
+      "pass": true
+    },
+    {
+      "actual": "1/4",
+      "expected": "1/4",
+      "name": "uniform cap gap after two errors",
+      "pass": true
+    }
+  ],
+  "evidence_class": "supporting algebra; not singular-process simulation or certification",
+  "mutant_count": 30,
+  "mutants": [
+    {
+      "detected": true,
+      "exact_residual": "306109/720000",
+      "name": "replace conditional mean by unconditional mean"
+    },
+    {
+      "detected": true,
+      "exact_residual": "70789/144000",
+      "name": "discard conditional martingale cost"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-4",
+      "name": "relative Brownian covariance not doubled"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "-26/15",
+        "76/3"
+      ],
+      "name": "omit 1/N cross factor N=2"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "84/5",
+        "-32/3"
+      ],
+      "name": "omit complex conjugation N=2"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "-26/25",
+        "76/5"
+      ],
+      "name": "omit backward weight N=2"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-8/9",
+      "name": "artificial zero-mode comparison set to zero N=2"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "-68/45",
+        "448/9"
+      ],
+      "name": "omit 1/N cross factor N=3"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "84/5",
+        "-160/9"
+      ],
+      "name": "omit complex conjugation N=3"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "-34/75",
+        "224/15"
+      ],
+      "name": "omit backward weight N=3"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-4/3",
+      "name": "artificial zero-mode comparison set to zero N=3"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "424/175",
+        "2528/21"
+      ],
+      "name": "omit 1/N cross factor N=5"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "84/5",
+        "-112/3"
+      ],
+      "name": "omit complex conjugation N=5"
+    },
+    {
+      "detected": true,
+      "exact_residual": [
+        "318/875",
+        "632/35"
+      ],
+      "name": "omit backward weight N=5"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-20/9",
+      "name": "artificial zero-mode comparison set to zero N=5"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-4",
+      "name": "missing second pair drift N2"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-1",
+      "name": "missing pair factor in squared angular coefficient N2"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-8/3",
+      "name": "missing second pair drift N3"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-8/27",
+      "name": "missing pair factor in squared angular coefficient N3"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-8/7",
+      "name": "missing second pair drift N7"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-8/343",
+      "name": "missing pair factor in squared angular coefficient N7"
+    },
+    {
+      "detected": true,
+      "exact_residual": "3",
+      "name": "angular Ito drift uses three instead of six"
+    },
+    {
+      "detected": true,
+      "exact_residual": "2",
+      "name": "replace fourth-gradient obstruction by second-gradient assertion"
+    },
+    {
+      "detected": true,
+      "exact_residual": "1",
+      "name": "use dimension-five radial volume at the same endpoint"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-3/8",
+      "name": "replace angular profile by its isotropic mean"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-3/80000",
+      "name": "replace slow-volume set by one slice N2"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-3/800000000",
+      "name": "replace slow-volume set by one slice N3"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-3/80000000000000000",
+      "name": "replace slow-volume set by one slice N5"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-3/4",
+      "name": "omit slack in cap separation by allowing half-amplitude errors"
+    },
+    {
+      "detected": true,
+      "exact_residual": "-1/3",
+      "name": "identify cutoff response with the frozen uncut response"
+    }
+  ],
+  "numerical_tolerance": null,
+  "random_seed": null,
+  "status": "PASS"
+}

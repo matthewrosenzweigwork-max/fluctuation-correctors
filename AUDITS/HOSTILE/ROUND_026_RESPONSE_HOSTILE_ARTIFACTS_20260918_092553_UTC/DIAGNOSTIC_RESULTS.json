@@ -1,0 +1,168 @@
+[
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py"
+    ],
+    "mutation": null,
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"mutation\": null,\n  \"assertions\": 283,\n  \"categories\": {\n    \"conditional\": 12,\n    \"coordinates\": 11,\n    \"labels\": 12,\n    \"radial_generator\": 45,\n    \"radial_bracket\": 9,\n    \"angle\": 81,\n    \"bracket\": 9,\n    \"sphere\": 7,\n    \"ODE\": 45,\n    \"terminal\": 4,\n    \"cosine_numeric\": 36,\n    \"polar\": 6,\n    \"constant_mode\": 6\n  },\n  \"observations\": {\n    \"conditional_N2\": {\n      \"D\": \"1249/90\",\n      \"C\": \"991/360\",\n      \"J\": \"89/8\",\n      \"endpoint_noise\": \"(Fraction(89, 16), Fraction(0, 1))\"\n    },\n    \"conditional_N3\": {\n      \"D\": \"1249/60\",\n      \"C\": \"991/240\",\n      \"J\": \"267/16\",\n      \"endpoint_noise\": \"(Fraction(89, 16), Fraction(0, 1))\"\n    },\n    \"conditional_N7\": {\n      \"D\": \"8743/180\",\n      \"C\": \"6937/720\",\n      \"J\": \"623/16\",\n      \"endpoint_noise\": \"(Fraction(89, 16), Fraction(0, 1))\"\n    }\n  },\n  \"arithmetic\": \"Exact rational except 36 deterministic cosine checks; absolute slack 2e-15.\",\n  \"randomness\": \"None; no SDE discretization.\",\n  \"scope\": \"Supporting finite-probability, differential-algebra and ODE checks only. No numerical continuum theorem.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "omit_conditional_mean"
+    ],
+    "mutation": "omit_conditional_mean",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"omit_conditional_mean\",\n  \"completed_or_failing_assertions\": 2,\n  \"witness\": \"conditional: D=C+J N=2: observed 1249/90 != asserted 89/8\",\n  \"last_check\": {\n    \"category\": \"conditional\",\n    \"label\": \"D=C+J N=2\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "zero_endpoint_noise_covariance"
+    ],
+    "mutation": "zero_endpoint_noise_covariance",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"zero_endpoint_noise_covariance\",\n  \"completed_or_failing_assertions\": 3,\n  \"witness\": \"conditional: endpoint-noise covariance N=2: observed (Fraction(89, 16), Fraction(0, 1)) != asserted (Fraction(0, 1), Fraction(0, 1))\",\n  \"last_check\": {\n    \"category\": \"conditional\",\n    \"label\": \"endpoint-noise covariance N=2\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "halve_relative_drift"
+    ],
+    "mutation": "halve_relative_drift",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"halve_relative_drift\",\n  \"completed_or_failing_assertions\": 16,\n  \"witness\": \"coordinates: relative Coulomb drift N=2: observed 2 != asserted 1\",\n  \"last_check\": {\n    \"category\": \"coordinates\",\n    \"label\": \"relative Coulomb drift N=2\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "halve_relative_noise"
+    ],
+    "mutation": "halve_relative_noise",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"halve_relative_noise\",\n  \"completed_or_failing_assertions\": 13,\n  \"witness\": \"coordinates: relative quadratic variation: observed 12/7 != asserted 6/7\",\n  \"last_check\": {\n    \"category\": \"coordinates\",\n    \"label\": \"relative quadratic variation\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "halve_angle_drift"
+    ],
+    "mutation": "halve_angle_drift",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"halve_angle_drift\",\n  \"completed_or_failing_assertions\": 43,\n  \"witness\": \"angle: Ito drift N=2 component=0: observed -18/7 != asserted -9/7\",\n  \"last_check\": {\n    \"category\": \"angle\",\n    \"label\": \"Ito drift N=2 component=0\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "omit_cutoff_cross_bracket"
+    ],
+    "mutation": "omit_cutoff_cross_bracket",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"omit_cutoff_cross_bracket\",\n  \"completed_or_failing_assertions\": 171,\n  \"witness\": \"bracket: retained cross bracket N=2: observed (Fraction(-6840, 7007), Fraction(-9216, 7007)) != asserted (Fraction(0, 1), Fraction(0, 1))\",\n  \"last_check\": {\n    \"category\": \"bracket\",\n    \"label\": \"retained cross bracket N=2\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "remove_backward_factor"
+    ],
+    "mutation": "remove_backward_factor",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"remove_backward_factor\",\n  \"completed_or_failing_assertions\": 172,\n  \"witness\": \"bracket: target backward factor N=2: observed (Fraction(-2565, 7007), Fraction(-3456, 7007)) != asserted (Fraction(-6840, 7007), Fraction(-9216, 7007))\",\n  \"last_check\": {\n    \"category\": \"bracket\",\n    \"label\": \"target backward factor N=2\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "halve_empirical_pair_coefficient"
+    ],
+    "mutation": "halve_empirical_pair_coefficient",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"halve_empirical_pair_coefficient\",\n  \"completed_or_failing_assertions\": 232,\n  \"witness\": \"terminal: quadratic coefficient in pi^2 N=2: observed -1/2 != asserted -1/4\",\n  \"last_check\": {\n    \"category\": \"terminal\",\n    \"label\": \"quadratic coefficient in pi^2 N=2\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "change_spherical_projection"
+    ],
+    "mutation": "change_spherical_projection",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"change_spherical_projection\",\n  \"completed_or_failing_assertions\": 184,\n  \"witness\": \"sphere: quadratic projection: observed 1/16 != asserted 1/12\",\n  \"last_check\": {\n    \"category\": \"sphere\",\n    \"label\": \"quadratic projection\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "halve_full_gradient_factor"
+    ],
+    "mutation": "halve_full_gradient_factor",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"halve_full_gradient_factor\",\n  \"completed_or_failing_assertions\": 274,\n  \"witness\": \"polar: fourth-power equality at zero center gradient: observed 3600 != asserted 1800\",\n  \"last_check\": {\n    \"category\": \"polar\",\n    \"label\": \"fourth-power equality at zero center gradient\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "use_full_dimension_for_radius"
+    ],
+    "mutation": "use_full_dimension_for_radius",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"use_full_dimension_for_radius\",\n  \"completed_or_failing_assertions\": 276,\n  \"witness\": \"polar: fourth-gradient logarithmic radial exponent: observed 3 != asserted -1\",\n  \"last_check\": {\n    \"category\": \"polar\",\n    \"label\": \"fourth-gradient logarithmic radial exponent\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "omit_overlap_labels"
+    ],
+    "mutation": "omit_overlap_labels",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"omit_overlap_labels\",\n  \"completed_or_failing_assertions\": 24,\n  \"witness\": \"labels: overlap coefficient N=2: observed 1/2 != asserted 0\",\n  \"last_check\": {\n    \"category\": \"labels\",\n    \"label\": \"overlap coefficient N=2\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "AUDITS/HOSTILE/ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC/hostile_diagnostic.py",
+      "--mutation",
+      "erase_constant_mode_defect"
+    ],
+    "mutation": "erase_constant_mode_defect",
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"FAIL\",\n  \"mutation\": \"erase_constant_mode_defect\",\n  \"completed_or_failing_assertions\": 278,\n  \"witness\": \"constant_mode: artificial target defect N=2: observed 18/25 != asserted 0\",\n  \"last_check\": {\n    \"category\": \"constant_mode\",\n    \"label\": \"artificial target defect N=2\"\n  }\n}\n",
+    "stderr": ""
+  }
+]

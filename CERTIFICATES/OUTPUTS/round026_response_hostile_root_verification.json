@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "packet_name": "ROUND_026_RESPONSE_HOSTILE_ARTIFACTS_20260918_092553_UTC",
+  "payload_regular_files": 23,
+  "archive_regular_members": 23,
+  "input_hashes": 13,
+  "exact_directory_inventory": true,
+  "safe_regular_archive": true,
+  "archive_directory_equality": true,
+  "external_report_equality": true,
+  "read_only_file_modes": true,
+  "sibling_seal_checked": true,
+  "writes": 0,
+  "extractions": 0
+}

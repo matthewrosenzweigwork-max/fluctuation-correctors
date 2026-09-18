@@ -54,3 +54,9 @@ R10 accepted exact reduction: complete THM030/031 pass AUD038/039/042. Actual cl
 
 
 R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE_INTEGRATION.md. THM048's auxiliary initial-energy clipping and time-zero conditional isometry establish squared UI without altering dynamics or squaring instantaneous source; full THM049 converts the original L1 target to the actual signed modal correlation cancellation using degree10 L1 Fourier domination. Neither original cancellation nor its positive-limsup negation is proved. The dependence uses exact R4/R6/R10/R16 sources, with both fresh whole AUD069/070 passes and no pair-inverse/THM047 premise. No prior immutable statement is rewritten.
+
+
+2026-09-18 UTC. THM050(A) depends only on local actual realization and fixed-N heat convergence; its exact D=C+J relation connects to the separately accepted THM049 modal criterion. THM050(B) uses local coefficient-one Coulomb relative/slow equations and stopped moments; C uses B plus positive-volume angular slicing and actual cutoff convergence. All A-C passed fresh AUD071/072. Neither R25 source UI nor pending THM051/052 is a premise. THM046 remains OPEN.
+
+
+2026-09-18 UTC — R26 whole acceptance. THM048 + THM049 + THM051 => original fixed-smooth-test critical L1 target iff the specified signed three-label integral tends to zero for every fixed mode. No converse failure witness or vanishing is proved. THM052 still awaits complete root gate.

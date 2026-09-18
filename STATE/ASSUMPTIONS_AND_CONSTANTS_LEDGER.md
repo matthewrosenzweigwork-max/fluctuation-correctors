@@ -103,3 +103,9 @@ R23 constants a,c>0 and m0 are fixed before m; all sufficiently large integer gr
 
 
 2026-09-18 UTC. R24 whole THM047/PO034 accepted: PROVED_CANDIDATE; ISOLATED_RECONSTRUCTION_PASS(AUD067), HOSTILE_REVIEW_PASS(AUD068); VERSION_LOCKED. Complete constructor/blind/hostile and all source/code/evidence root-read; no repair. Exact averaged trace and contraction integral K.D Phi+2c(q-tau), all Cj bounds C sqrt(N), source-specific scalar0, actual absolute scaled lower drift O(N^-1/4), iid endpoint O(sqrt((1+logN)/N)) and smooth true-noise O(N^-3/8) give the entire cubic-plus-residual-martingale L1 equivalence. Both responses, all backgrounds, N2 and fixed-N singular limits retained. THM046/PO033 remains OPEN. See AUDITS/ROUND_024_GATE_INTEGRATION.md and ROUND_024_RECONSTRUCTION_COMPARISON.md.
+
+
+2026-09-18 UTC. THM050 A every finiteN>=2,nu>0,T>=0,integerk; zero mode retains explicitly artificiala=c comparison and is not a physical decay claim. B constants/time interval depend on fixedN,nu,k and compact positive-volume separated slow-coordinate set; supremum over that set/directions precedes radial limsup, with no simultaneous all-start probability-one event required. C every fixedN,nu admits one interval on which both W1,4 and actual cutoff divergence conclusions hold at every positive time. Both fresh whole axes pass; no uniformity added.
+
+
+2026-09-18 UTC — R26 whole acceptance. THM051 constants retain fixed mode/horizon and positive finite critical-window endpoints. Auxiliary pair statements cover every finite positive diffusivity. Quantitative mixed decay is stated only in the specified critical window. N=2 triple contribution is exactly zero.

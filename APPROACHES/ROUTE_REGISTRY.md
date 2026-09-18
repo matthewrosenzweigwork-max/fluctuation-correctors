@@ -67,3 +67,9 @@ R23 static energy-only threshold extension is ruled out in its exact class by ac
 
 
 R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE_INTEGRATION.md. THM048's auxiliary initial-energy clipping and time-zero conditional isometry establish squared UI without altering dynamics or squaring instantaneous source; full THM049 converts the original L1 target to the actual signed modal correlation cancellation using degree10 L1 Fourier domination. Neither original cancellation nor its positive-limsup negation is proved. The dependence uses exact R4/R6/R10/R16 sources, with both fresh whole AUD069/070 passes and no pair-inverse/THM047 premise. No prior immutable statement is rewritten.
+
+
+2026-09-18 UTC. R26 response route now yields accepted exact conditional mean/noise reduction plus a rigorously audited fourth-gradient obstruction (THM050, AUD071/072). Needed L2 conditional response remains OPEN. R26 two-label/three-label route awaits separate hostile whole gate after fresh AUD073. R27 exact killed-attractive dual construction has fresh Ultra AUD075 and Max AUD076 active; no claimed limit. TASK119 R28 actual three-label construction has a prepared21-input worktree, not yet dispatched.
+
+
+2026-09-18 UTC — R26 whole acceptance. THM051 actual heat small-ball/Fourier route accepted through whole AUD073/074. R28 now pursues signed triple cancellation and the exact killed-attractive conditional representation in parallel, preserving fixed-data quantifiers.

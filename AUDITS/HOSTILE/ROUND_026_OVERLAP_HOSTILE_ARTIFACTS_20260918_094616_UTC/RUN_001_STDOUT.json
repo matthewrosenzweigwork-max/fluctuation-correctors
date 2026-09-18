@@ -1,0 +1,581 @@
+{
+  "arithmetic": "exact Gaussian rationals except declared heat sweep",
+  "assertion_count": 187032,
+  "categories": {
+    "N2_no_third_label": 16,
+    "T0_identity": 1,
+    "coupled_exact_heat_split": 80,
+    "critical_cutoff_error_balance": 5,
+    "critical_cutoff_square_balance": 5,
+    "current_label_decomposition": 80,
+    "endpoint_modal_identity": 2,
+    "energy_self_subtraction": 80,
+    "finite_N_cutoff_term": 120,
+    "finite_N_overlap_identity": 80,
+    "haar_rows": 8,
+    "heat_high_frequency_envelope": 167720,
+    "heat_low_frequency_finite": 15960,
+    "layer_cake_log_growth": 30,
+    "literal_pair_symmetry": 1120,
+    "literal_spectral_overlap": 1120,
+    "mixed_Cauchy_Schwarz": 80,
+    "mixed_label_decomposition": 80,
+    "modal_cross_bracket": 320,
+    "mutation_is_nonzero": 20,
+    "nonzero_mutation_inventory": 1,
+    "positive_residual_row": 80,
+    "smooth_diagonal_coefficient": 8,
+    "spectral_self_sum": 8,
+    "spectral_zero_modes": 8
+  },
+  "heat_sweep": {
+    "heat_scales": [
+      0.5,
+      0.25,
+      0.0625,
+      0.00390625,
+      0.000244140625,
+      9.5367431640625e-07,
+      9.313225746154785e-10
+    ],
+    "high_bound": 8,
+    "m_box": "[-4,4]^4 excluding zero",
+    "max_high": {
+      "at": {
+        "k": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "m": [
+          -2,
+          2,
+          -2,
+          0
+        ],
+        "r": 0.00390625
+      },
+      "value": 2.777844181806905
+    },
+    "max_low": {
+      "at": {
+        "k": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "m": [
+          -3,
+          0,
+          0,
+          0
+        ],
+        "r": 0.5
+      },
+      "value": 53.06292625155662
+    },
+    "ratio": "abs(b)/(c*abs(k)^2*a_(r/8)(m))",
+    "type": "finite double-precision supporting sweep, not proof"
+  },
+  "limits": [
+    "No SDE simulation or actual-law asymptotic certification.",
+    "Finite Fourier/radial models test algebra and majorants.",
+    "Infinite-frequency and singular-law proofs are in the audit.",
+    "No constructor code, results, or run history were read."
+  ],
+  "mutation_count": 20,
+  "mutations": {
+    "change_mixed_response_weight": {
+      "context": {
+        "formal_ODE": true
+      },
+      "correct": {
+        "imag": "0",
+        "real": "1021/1680"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "2923/5040"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-1/36"
+      }
+    },
+    "delete_finite_N_cutoff_term": {
+      "context": {
+        "L": 1,
+        "N": 2,
+        "r": "1/4"
+      },
+      "correct": {
+        "imag": "0",
+        "real": "287/32"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "31/32"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-8"
+      }
+    },
+    "delete_logarithmic_term": {
+      "context": {
+        "L": 1
+      },
+      "correct": {
+        "imag": "0",
+        "real": "31/16"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "1"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-15/16"
+      }
+    },
+    "double_three_label_weight": {
+      "context": {
+        "N": 3,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "-3/14",
+        "real": "-11/126"
+      },
+      "mutated": {
+        "imag": "-3/7",
+        "real": "-4/21"
+      },
+      "nonzero_difference": {
+        "imag": "-3/14",
+        "real": "-13/126"
+      }
+    },
+    "halve_overlap_self": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "-7/6"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "-2/3"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "1/2"
+      }
+    },
+    "lose_endpoint_factor_two": {
+      "context": {
+        "formal_ODE": true
+      },
+      "correct": {
+        "imag": "0",
+        "real": "1021/1680"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "2053/5040"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-101/504"
+      }
+    },
+    "lose_ordered_half": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "-7/24",
+        "real": "-7/24"
+      },
+      "mutated": {
+        "imag": "-7/12",
+        "real": "-7/12"
+      },
+      "nonzero_difference": {
+        "imag": "-7/24",
+        "real": "-7/24"
+      }
+    },
+    "missing_one_overlap": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "-7/12"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "-7/24"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "7/24"
+      }
+    },
+    "omit_energy_self": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "11/70"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "7/2"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "117/35"
+      }
+    },
+    "omit_overlap_self": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "-7/6"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "-1/6"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "1"
+      }
+    },
+    "omit_residual_row": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "-1/6",
+        "real": "-1/6"
+      },
+      "mutated": {
+        "imag": "-7/24",
+        "real": "-7/24"
+      },
+      "nonzero_difference": {
+        "imag": "-1/8",
+        "real": "-1/8"
+      }
+    },
+    "omit_split_constant": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "9"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "7"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-2"
+      }
+    },
+    "replace_initial_phase": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "0"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "-7/6"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-7/6"
+      }
+    },
+    "reverse_overlap_self": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "-7/6"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "5/6"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "2"
+      }
+    },
+    "reverse_positive_q": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "9"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "5"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-4"
+      }
+    },
+    "reverse_residual_row": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "-1/6",
+        "real": "-1/6"
+      },
+      "mutated": {
+        "imag": "-5/12",
+        "real": "-5/12"
+      },
+      "nonzero_difference": {
+        "imag": "-1/4",
+        "real": "-1/4"
+      }
+    },
+    "reversed_centering": {
+      "context": {
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1
+      },
+      "correct": {
+        "imag": "0",
+        "real": "0"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "-1"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-1"
+      }
+    },
+    "use_falling_factorial": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "-7/24",
+        "real": "-7/24"
+      },
+      "mutated": {
+        "imag": "-7/12",
+        "real": "-7/12"
+      },
+      "nonzero_difference": {
+        "imag": "-7/24",
+        "real": "-7/24"
+      }
+    },
+    "wrong_overlap_empirical_factor": {
+      "context": {
+        "N": 2,
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1,
+        "shift": 0
+      },
+      "correct": {
+        "imag": "0",
+        "real": "-7/6"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "-13/12"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "1/12"
+      }
+    },
+    "wrong_unsmoothed_response": {
+      "context": {
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "kernel": 1
+      },
+      "correct": {
+        "imag": "0",
+        "real": "0"
+      },
+      "mutated": {
+        "imag": "0",
+        "real": "1/2"
+      },
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "1/2"
+      }
+    }
+  },
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "radial_examples": [
+    {
+      "L": 1,
+      "r": "1/4",
+      "truncated_square": "31/16"
+    },
+    {
+      "L": 4,
+      "r": "1/256",
+      "truncated_square": "19/4"
+    },
+    {
+      "L": 16,
+      "r": "1/4294967296",
+      "truncated_square": "16"
+    },
+    {
+      "L": 30,
+      "r": "1/1152921504606846976",
+      "truncated_square": "233/8"
+    }
+  ],
+  "verdict": "PASS"
+}

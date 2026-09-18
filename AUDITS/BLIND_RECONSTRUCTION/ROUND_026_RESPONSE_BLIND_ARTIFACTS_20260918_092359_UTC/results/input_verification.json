@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "input_count": 8,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "bytes": 8174
+    },
+    {
+      "path": "MODEL_ORCHESTRATION.md",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "bytes": 4350
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "bytes": 5031
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-112_ROUND026_RESPONSE_BLIND.md",
+      "sha256": "5047305cd6fa51ebd16ed4ede7cf05b4412e489c53f0b7dba94c9848bd78b4c7",
+      "bytes": 2522
+    },
+    {
+      "path": "THEOREMS/THM-050_COULOMB_CONDITIONAL_RESPONSE_AND_ANGULAR_OBSTRUCTION.md",
+      "sha256": "f24b505c4b3e5dfc6d930b30ceb2757836eed24622761fb548842dfd431f0565",
+      "bytes": 4551
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "bytes": 30796
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "bytes": 36096
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "bytes": 37944
+    }
+  ]
+}

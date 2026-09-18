@@ -1,0 +1,300 @@
+{
+  "assertions": 1588,
+  "categories": {
+    "actual_radial_tangential_blowup": 15,
+    "angular_cosine_moment": 20,
+    "center_brownian_variance": 93,
+    "center_relative_cross_bracket": 93,
+    "conditional_noise_zero": 60,
+    "conditional_pythagoras": 20,
+    "cosine_tail_control": 20,
+    "degree_two_harmonic_polynomial": 1,
+    "empirical_pair_taylor_factor": 15,
+    "exact_radial_flow": 15,
+    "fourth_gradient_log_threshold": 1,
+    "fourth_radial_log_integral": 11,
+    "independent_sphere_moment_forms": 20,
+    "initial_conditional_orthogonality": 20,
+    "nonzero_bias_control": 20,
+    "nonzero_degree_two_projection": 1,
+    "nonzero_noise_control": 20,
+    "radial_flow_determinant": 15,
+    "radial_fourth_true_bracket": 279,
+    "radial_ito_fourth": 279,
+    "radial_ito_second": 279,
+    "radial_projection_asymptotic": 20,
+    "radial_projection_sign": 20,
+    "radial_tangential_coefficient": 15,
+    "relative_brownian_variance": 93,
+    "relative_pair_drift": 93,
+    "sphere_eigenvalue": 1,
+    "sphere_fourth_moment": 1,
+    "sphere_second_moment": 1,
+    "square_gradient_not_excluded": 1,
+    "square_radial_integral_bounded": 11,
+    "tangential_expansion_nonzero": 15,
+    "terminal_noise_cross_retained": 20
+  },
+  "conventions": {
+    "SDE_discretization": false,
+    "alpha": "4/N",
+    "dimension": 4,
+    "floating_tolerances": "absolute 1e-12; projection relative 8*sqrt(t)+1e-12",
+    "random_sampling": false,
+    "rational_checks": "fractions.Fraction",
+    "relative_noise_variance": "4*nu",
+    "sphere_measure": "mass one"
+  },
+  "failures": [
+    {
+      "actual": "11/9",
+      "category": "conditional_pythagoras",
+      "expected": "4/3"
+    },
+    {
+      "actual": "11/9",
+      "category": "conditional_pythagoras",
+      "expected": "34/27"
+    },
+    {
+      "actual": "11/9",
+      "category": "conditional_pythagoras",
+      "expected": "19/12"
+    },
+    {
+      "actual": "11/9",
+      "category": "conditional_pythagoras",
+      "expected": "2"
+    },
+    {
+      "actual": "11/6",
+      "category": "conditional_pythagoras",
+      "expected": "2"
+    },
+    {
+      "actual": "11/6",
+      "category": "conditional_pythagoras",
+      "expected": "17/9"
+    },
+    {
+      "actual": "11/6",
+      "category": "conditional_pythagoras",
+      "expected": "19/8"
+    },
+    {
+      "actual": "11/6",
+      "category": "conditional_pythagoras",
+      "expected": "3"
+    },
+    {
+      "actual": "55/18",
+      "category": "conditional_pythagoras",
+      "expected": "10/3"
+    },
+    {
+      "actual": "55/18",
+      "category": "conditional_pythagoras",
+      "expected": "85/27"
+    },
+    {
+      "actual": "55/18",
+      "category": "conditional_pythagoras",
+      "expected": "95/24"
+    },
+    {
+      "actual": "55/18",
+      "category": "conditional_pythagoras",
+      "expected": "5"
+    },
+    {
+      "actual": "121/18",
+      "category": "conditional_pythagoras",
+      "expected": "22/3"
+    },
+    {
+      "actual": "121/18",
+      "category": "conditional_pythagoras",
+      "expected": "187/27"
+    },
+    {
+      "actual": "121/18",
+      "category": "conditional_pythagoras",
+      "expected": "209/24"
+    },
+    {
+      "actual": "121/18",
+      "category": "conditional_pythagoras",
+      "expected": "11"
+    },
+    {
+      "actual": "319/18",
+      "category": "conditional_pythagoras",
+      "expected": "58/3"
+    },
+    {
+      "actual": "319/18",
+      "category": "conditional_pythagoras",
+      "expected": "493/27"
+    },
+    {
+      "actual": "319/18",
+      "category": "conditional_pythagoras",
+      "expected": "551/24"
+    },
+    {
+      "actual": "319/18",
+      "category": "conditional_pythagoras",
+      "expected": "29"
+    }
+  ],
+  "limitations": [
+    "Same-context diagnostic, not an independent audit.",
+    "The radial ODE is a local solvable model, not the actual law.",
+    "The continuum singular-limit and W1,4 proofs are in REPORT.md.",
+    "No critical source decay or actual positive-limsup negation is proved."
+  ],
+  "mutation": "omit_bias",
+  "radial_series_observations": [
+    {
+      "N": 2,
+      "leading": -0.008723580249548599,
+      "projection": -0.00857243663179702,
+      "ratio": 0.982674129952619,
+      "t": 0.0001
+    },
+    {
+      "N": 2,
+      "leading": -0.0008723580249548598,
+      "projection": -0.000870837069690756,
+      "ratio": 0.9982565010917593,
+      "t": 1e-06
+    },
+    {
+      "N": 2,
+      "leading": -8.723580249548598e-05,
+      "projection": -8.722058338716579e-05,
+      "ratio": 0.9998255405706735,
+      "t": 1e-08
+    },
+    {
+      "N": 2,
+      "leading": -8.723580249548599e-06,
+      "projection": -8.723428048906051e-06,
+      "ratio": 0.999982552961262,
+      "t": 1e-10
+    },
+    {
+      "N": 3,
+      "leading": -0.004748515631470046,
+      "projection": -0.004681254668769457,
+      "ratio": 0.9858353708988914,
+      "t": 0.0001
+    },
+    {
+      "N": 3,
+      "leading": -0.00047485156314700465,
+      "projection": -0.0004741754964610961,
+      "ratio": 0.9985762567960648,
+      "t": 1e-06
+    },
+    {
+      "N": 3,
+      "leading": -4.7485156314700465e-05,
+      "projection": -4.747839217993472e-05,
+      "ratio": 0.9998575526482231,
+      "t": 1e-08
+    },
+    {
+      "N": 3,
+      "leading": -4.748515631470047e-06,
+      "projection": -4.748447986653395e-06,
+      "ratio": 0.9999857545342793,
+      "t": 1e-10
+    },
+    {
+      "N": 5,
+      "leading": -0.0022069106351866904,
+      "projection": -0.0021826655858523925,
+      "ratio": 0.9890140321281079,
+      "t": 0.0001
+    },
+    {
+      "N": 5,
+      "leading": -0.00022069106351866902,
+      "projection": -0.00022044764825131073,
+      "ratio": 0.9988970316084516,
+      "t": 1e-06
+    },
+    {
+      "N": 5,
+      "leading": -2.2069106351866904e-05,
+      "projection": -2.2066671232075e-05,
+      "ratio": 0.9998896593385759,
+      "t": 1e-08
+    },
+    {
+      "N": 5,
+      "leading": -2.2069106351866904e-06,
+      "projection": -2.2068862830214184e-06,
+      "ratio": 0.9999889654955285,
+      "t": 1e-10
+    },
+    {
+      "N": 17,
+      "leading": -0.00035201921651169856,
+      "projection": -0.00034991765445021905,
+      "ratio": 0.9940299791519771,
+      "t": 0.0001
+    },
+    {
+      "N": 17,
+      "leading": -3.5201921651169856e-05,
+      "projection": -3.518086071323264e-05,
+      "ratio": 0.9994017105615449,
+      "t": 1e-06
+    },
+    {
+      "N": 17,
+      "leading": -3.520192165116986e-06,
+      "projection": -3.5199815103605974e-06,
+      "ratio": 0.9999401581656604,
+      "t": 1e-08
+    },
+    {
+      "N": 17,
+      "leading": -3.520192165116986e-07,
+      "projection": -3.520171099187517e-07,
+      "ratio": 0.999994015687644,
+      "t": 1e-10
+    },
+    {
+      "N": 41,
+      "leading": -9.398617363844317e-05,
+      "projection": -9.362456196471053e-05,
+      "ratio": 0.9961525013761734,
+      "t": 0.0001
+    },
+    {
+      "N": 41,
+      "leading": -9.398617363844317e-06,
+      "projection": -9.394996227692363e-06,
+      "ratio": 0.9996147160787836,
+      "t": 1e-06
+    },
+    {
+      "N": 41,
+      "leading": -9.398617363844317e-07,
+      "projection": -9.398255199992408e-07,
+      "ratio": 0.9999614662627608,
+      "t": 1e-08
+    },
+    {
+      "N": 41,
+      "leading": -9.398617363844318e-08,
+      "projection": -9.398581146956715e-08,
+      "ratio": 0.9999961465728201,
+      "t": 1e-10
+    }
+  ],
+  "status": "FAIL"
+}

@@ -1,0 +1,136 @@
+{
+  "utc": "2026-09-18T09:47:19.180537+00:00",
+  "fresh_code_only_directory": "/var/folders/yh/pqv2cz6539gc8j2cm154bcrr0000gn/T/hocf-r026-response-hostile-rerun-39z6d014",
+  "runs": [
+    {
+      "kind": "mutation",
+      "value": null,
+      "exit": 0,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "22c5e45b106270d8ade006999c5483daf4a1f8b12512bca03951f3bccfbb45c7"
+    },
+    {
+      "kind": "mutation",
+      "value": "omit_conditional_mean",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "abdaaef6d8a5e621bbcd55140880c938282ea36843a8ee808c946edc053cc337"
+    },
+    {
+      "kind": "mutation",
+      "value": "zero_endpoint_noise_covariance",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "3403e10e76f89b915a320307c2de33afe5eec71e63aee1b8a25174420de7f9eb"
+    },
+    {
+      "kind": "mutation",
+      "value": "halve_relative_drift",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "58dd25f9f01d861549c1fde413dd2f7110c8d6159d3dde13cadbfdc62fa92db1"
+    },
+    {
+      "kind": "mutation",
+      "value": "halve_relative_noise",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "2557388250444ff513ace0542d00bb813991903aedb2f2bb0365da740f6fc53f"
+    },
+    {
+      "kind": "mutation",
+      "value": "halve_angle_drift",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "8ed1c11db0d3cd0093c3ea692bc4b67cdd4e5e1cf2632cbd9e7af7aae3be2665"
+    },
+    {
+      "kind": "mutation",
+      "value": "omit_cutoff_cross_bracket",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "bf207656b36b82301add7dde7814c43ce15620e3a35ca05e6be2ae3c8bb13426"
+    },
+    {
+      "kind": "mutation",
+      "value": "remove_backward_factor",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "f0211ec4ae07d529d9f85d9d6915d043d149776b6485eaf8cf82078b8309d2a2"
+    },
+    {
+      "kind": "mutation",
+      "value": "halve_empirical_pair_coefficient",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "5ab480ea4cc3a52bb197781b299200b71afcc5d8678846c321fe8251685574fe"
+    },
+    {
+      "kind": "mutation",
+      "value": "change_spherical_projection",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "27f8668c9270ccc394537426963c9acef53dccd8e02c053d3ebe48d99cd7029b"
+    },
+    {
+      "kind": "mutation",
+      "value": "halve_full_gradient_factor",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "5b87e67cadfe587e7d88e2bacc241614807ec2fd7b128bda7189f07ab4be2e8f"
+    },
+    {
+      "kind": "mutation",
+      "value": "use_full_dimension_for_radius",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "361dda8a954f3e5d18e9916095f9c354c280e9028318d64d5c8d06e5e18839bb"
+    },
+    {
+      "kind": "mutation",
+      "value": "omit_overlap_labels",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "3917fb2b4c8aa8b8644d2a2e2a14c954995fa126b766433d0975da18a939c3bb"
+    },
+    {
+      "kind": "mutation",
+      "value": "erase_constant_mode_defect",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "26b31a9dfa2e653fb310eda3846288ca49d18e33b44120e23f594fe59d360d0b"
+    },
+    {
+      "kind": "control",
+      "value": "digest_corruption",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "908f9c02a4b9324455804f7f81c5cb592b109e301810f77dc4813e4fee5532c6"
+    },
+    {
+      "kind": "control",
+      "value": "unsafe_archive_path",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "41e719e1dd931cdafcc28281c1c9c1ec7271886aae08fc9d294bfe3db62f11ba"
+    },
+    {
+      "kind": "control",
+      "value": "archive_symlink",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "de924b49af4aa73fe7410e3556348d1f1df99074f4981cf25827f2b1cb497b7e"
+    },
+    {
+      "kind": "control",
+      "value": "extra_inventory_member",
+      "exit": 1,
+      "byte_identical_stdout_stderr": true,
+      "stdout_sha256": "4b1f2b683471776d763ba74dca486de2c3bc40ce37d7b58b146d6869aaedc5d1"
+    }
+  ],
+  "assertions": 283,
+  "mathematical_mutations": 13,
+  "in_memory_guard_controls": 4,
+  "limitation": "36 bounded floating cosine checks; other diagnostic arithmetic exact; no continuum certification."
+}

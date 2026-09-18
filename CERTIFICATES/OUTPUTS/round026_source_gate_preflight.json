@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-18T09:31:13.526233+00:00",
+  "published_head": "ef438b612f732d21af1fa1756dd7559ef63c6d61",
+  "sources": [
+    {
+      "source": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "gate": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "gate_sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "matches_published": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "gate": "REPORTS/ROUND_REPORTS/ROUND_006.md",
+      "gate_sha256": "1d0d901e2e96dbd6013cb847225ea2b2340aac13379ef34197f0f00d80be11b6",
+      "matches_published": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "gate": "REPORTS/ROUND_REPORTS/ROUND_010.md",
+      "gate_sha256": "56d4605864a0023c35ae542d1ec96317eef69f80c1b0975944d5bf870749e5cd",
+      "matches_published": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "gate": "AUDITS/ROUND_016_GATE_INTEGRATION.md",
+      "gate_sha256": "68207163d5e576722b48953526f0d22b244a53badf7ae02e374251255aa1def9",
+      "matches_published": true
+    }
+  ],
+  "dossiers": [
+    {
+      "path": "AUDITS/ROUND_026_CORRELATION_FALSIFICATION_INPUT_SHA256SUMS.txt",
+      "inputs": 17,
+      "sha256": "dce43905394a2a44257b27d4ae56af0b8044b8e8caac828fb7f2b1aec038400e",
+      "canonical_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_026_OVERLAP_BLIND_INPUT_SHA256SUMS.txt",
+      "inputs": 12,
+      "sha256": "6a8a31f91d7388393231ea0a7196343ce86326ae0a1eb2719086b5686df7addd",
+      "canonical_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_026_OVERLAP_HOSTILE_INPUT_SHA256SUMS.txt",
+      "inputs": 15,
+      "sha256": "d6089da6cd0d17bc2b138d7a2ca884cfc898bcbf32f904939cef0e02e6a659bd",
+      "canonical_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_026_RESPONSE_BLIND_INPUT_SHA256SUMS.txt",
+      "inputs": 8,
+      "sha256": "7e972ad4ee63ee0402ee1f5cde5b5f9ec5e1a0df77dc8d777472be8114e53c78",
+      "canonical_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_026_RESPONSE_HOSTILE_INPUT_SHA256SUMS.txt",
+      "inputs": 13,
+      "sha256": "c3fafa72904352716535a6841a0da4e329f261464e13f948280a10f32f74be08",
+      "canonical_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_026_SIGNED_CORRELATION_INPUT_SHA256SUMS.txt",
+      "inputs": 17,
+      "sha256": "14ce78f1442013fd40c8f2f8efde57e0aa533708da4574d03a7a01f8f8a9fec4",
+      "canonical_match": true
+    }
+  ],
+  "scope": "Source and dossier byte checks only; both complete R26 mathematical gates remain pending."
+}

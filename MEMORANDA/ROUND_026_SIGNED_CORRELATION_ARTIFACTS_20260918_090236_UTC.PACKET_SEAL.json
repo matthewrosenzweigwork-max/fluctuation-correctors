@@ -1,0 +1,28 @@
+{
+  "archive_bytes": 134067,
+  "archive_filename": "ROUND_026_SIGNED_CORRELATION_ARTIFACTS_20260918_090236_UTC.tar.gz",
+  "archive_sha256": "d45bac47f401252e9480a551ff13d21daf5247c5b393b87363ffa6942afc69ea",
+  "claim_card_sha256": "89af030e94ad850fca9191f2516421760d1667a75ec8ef93125c306a781f9775",
+  "final_byte_verification": {
+    "archive_checked": true,
+    "archive_sha256": "d45bac47f401252e9480a551ff13d21daf5247c5b393b87363ffa6942afc69ea",
+    "input_files": 17,
+    "packet_files": 37,
+    "payload_files_hashed": 36,
+    "readonly_checked": true,
+    "seal_checked": false,
+    "status": "PASS"
+  },
+  "input_count": 17,
+  "issued_utc": "2026-09-18T09:18:42Z",
+  "mathematical_status": "Signed-correlation target OPEN; actual semigroup sensitivity obstruction SELF_CHECKED.",
+  "member_count": 37,
+  "member_inventory_sha256": "3f42521cf553a6dd362f4593491555e2cd3458bd6840fbf0e18fd3b58bf4026b",
+  "memorandum_filename": "ROUND_026_SIGNED_CORRELATION_ATTEMPT.md",
+  "memorandum_sha256": "749d9da1cd355065841880fdce4c1a253d9d3b02ad18417aeb30c0a6f2a5ce58",
+  "original_input_manifest_sha256": "14ce78f1442013fd40c8f2f8efde57e0aa533708da4574d03a7a01f8f8a9fec4",
+  "packet_directory": "ROUND_026_SIGNED_CORRELATION_ARTIFACTS_20260918_090236_UTC",
+  "payload_manifest_sha256": "9a6455f513d3f408dbbd9bc3203beaaefe80072782f164e45757d8c6c2543655",
+  "report_sha256": "749d9da1cd355065841880fdce4c1a253d9d3b02ad18417aeb30c0a6f2a5ce58",
+  "status": "SELF_CHECKED_CONSTRUCTION_ONLY"
+}

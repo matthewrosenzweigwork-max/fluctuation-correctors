@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "allowed_source_count": 13,
+  "manifest_sha256": "c3fafa72904352716535a6841a0da4e329f261464e13f948280a10f32f74be08",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "bytes": 8174,
+      "newline_count": 123
+    },
+    {
+      "path": "MODEL_ORCHESTRATION.md",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "bytes": 4350,
+      "newline_count": 123
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "bytes": 5031,
+      "newline_count": 54
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-113_ROUND026_RESPONSE_HOSTILE.md",
+      "sha256": "cb15f83cede13a7826b56341b5b85e20328d5157c1ade9391061e33551b4813c",
+      "bytes": 2857,
+      "newline_count": 11
+    },
+    {
+      "path": "THEOREMS/THM-050_COULOMB_CONDITIONAL_RESPONSE_AND_ANGULAR_OBSTRUCTION.md",
+      "sha256": "f24b505c4b3e5dfc6d930b30ceb2757836eed24622761fb548842dfd431f0565",
+      "bytes": 4551,
+      "newline_count": 42
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "bytes": 30796,
+      "newline_count": 917
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "bytes": 36096,
+      "newline_count": 541
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "bytes": 37944,
+      "newline_count": 584
+    },
+    {
+      "path": "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+      "bytes": 2035,
+      "newline_count": 15
+    },
+    {
+      "path": "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "bytes": 3353,
+      "newline_count": 42
+    },
+    {
+      "path": "MEMORANDA/ROUND_026_SIGNED_CORRELATION_ATTEMPT.md",
+      "sha256": "749d9da1cd355065841880fdce4c1a253d9d3b02ad18417aeb30c0a6f2a5ce58",
+      "bytes": 27308,
+      "newline_count": 646
+    },
+    {
+      "path": "MEMORANDA/ROUND_026_SIGNED_CORRELATION_ARTIFACTS_20260918_090236_UTC/CLAIM_CARD.md",
+      "sha256": "89af030e94ad850fca9191f2516421760d1667a75ec8ef93125c306a781f9775",
+      "bytes": 3384,
+      "newline_count": 59
+    },
+    {
+      "path": "MEMORANDA/ROUND_026_SIGNED_CORRELATION_ARTIFACTS_20260918_090236_UTC/EXPOSURE_AND_SOURCES.md",
+      "sha256": "9bf49c5453993e2a902e872eec578471f9bc45eb9c9eb9360c31d125178cb924",
+      "bytes": 5893,
+      "newline_count": 74
+    }
+  ],
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "verification_utc": "2026-09-18T09:28:28.841597+00:00"
+}

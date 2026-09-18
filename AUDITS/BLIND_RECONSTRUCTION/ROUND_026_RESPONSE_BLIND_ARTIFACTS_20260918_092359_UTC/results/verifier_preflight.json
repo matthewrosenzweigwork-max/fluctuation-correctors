@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "code_compilation": "both scripts passed without writing bytecode",
+  "valid_path_cases": 3,
+  "rejected_unsafe_path_cases": [
+    "",
+    "../escape",
+    "/absolute",
+    "a//b",
+    "a/./b",
+    "a/../b",
+    "a\\b"
+  ],
+  "external_dependencies": []
+}
