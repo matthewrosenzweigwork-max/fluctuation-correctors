@@ -1,0 +1,215 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\E}{\mathbb E}
+\newcommand{\dd}{\,\mathrm d}
+\title{Actual-law estimates and two exact singular-tail reductions}
+\author{HOCF--RIESZ, Round 010}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Scope and provenance.}
+This synthesis records the submitted THM--030 and THM--031 estimates.
+Their complete proofs are the separately sealed reports from TASK060 and
+the independent TASK061 falsification route. Fresh review dispositions
+are recorded separately in the audit and theorem ledgers. Earlier particle,
+full-inverse and domain statements retain their precise hypotheses. The
+full expected singular-corrector bracket remains open in this round.
+
+\section*{Actual free energy and the two energy floors}
+Fix $d\ge3$, $0<s\le d-2$, $T<\infty$, a smooth real terminal test $h$, and
+$0<\nu\le\nu_*$. Use the unit Haar torus, the frozen coefficient-one Riesz
+kernel $g$ of mean zero, and $K=-\nabla g$. The actual particles solve
+\[
+ \dd X_i=\frac1N\sum_{j\ne i}K(X_i-X_j)\dd t+\sqrt{2\nu}\dd W_i,
+ \qquad N\ge2,
+\]
+from iid Haar initial positions independent of their Brownian motions.
+Write $F_N(t)$ for their density and
+\[
+ H_N=\frac1N\sum_{i<j}g(X_i-X_j),\quad
+ \beta=\nu^{-1},\quad b_N=\min(\beta,1),\quad\sigma_N^2=Nb_N.
+\]
+At positive heat cutoff, the genuine smooth gradient dynamics satisfy
+\[
+ \frac{\dd}{\dd t}\left[\nu\operatorname{Ent}(F_N^\epsilon)
+                         +\E H_N^\epsilon\right]
+ =-\int F_N^\epsilon
+       |\nabla H_N^\epsilon+\nu\nabla\log F_N^\epsilon|^2\le0.
+\]
+Initial free energy is zero. The fixed-$N$ same-noise path passage, local
+uniform convergence away from collisions, a common lower energy bound, and
+weak lower semicontinuity of entropy yield
+\[
+ \nu\operatorname{Ent}(F_N(t))+\E H_N(X_t)\le0,
+ \qquad \E H_N(X_t)\le0.
+\]
+No singular Fisher-information identity is passed. Exchangeability and common
+translation invariance give a Haar one-body marginal. In particular, with
+$g_*:=\inf g<0$, the actual pair moment obeys
+$\E|g(X_1-X_2)|\le2|g_*|$, uniformly in time and parameters.
+
+Set $p=s+2$ and $a=s/p$. The first construction uses heat convolution and
+$g_\epsilon\ge g_{\epsilon+r}-\kappa r$ to obtain
+$H_N^\epsilon\ge-C_0N^a$. The independent route instead truncates the heat
+integral. With $\alpha=(d-s)/2$ and
+$A=4^{(d-s)/2}\pi^{d/2}/\Gamma(s/2)$, put
+\[
+ g^{>r}=A\int_r^\infty t^{\alpha-1}(p_t-1)\dd t,
+ \qquad a_r(k)=A\int_r^\infty t^{\alpha-1}e^{-4\pi^2|k|^2t}\dd t>0.
+\]
+Positivity and exact subtraction of the smooth self diagonal give
+\[
+ H_N\ge\frac N2\sum_{k\ne0}a_r(k)|\widehat\eta_N(k)|^2
+          -\frac12g^{>r}(0)-\frac{A(N-1)}{2\alpha}r^\alpha,
+ \qquad\eta_N=\frac1N\sum_i\delta_{X_i}.
+\]
+Since $g^{>r}(0)\le Cr^{-s/2}$, choosing $r=N^{-2/d}$ gives the stronger
+floor $H_N\ge-CN^{s/d}$. The two powers agree at Coulomb and are compatible
+throughout $d\ge s+2$. The cutoff constructions are different objects.
+
+\newpage
+\section*{A clipped part of the genuine martingale}
+Let $\Phi_t$ be the genuine symmetric terminal-zero full pair inverse, with
+both exact compensated responses, and put
+\[
+ G_t=\nabla_x\Phi_t,\quad A_t(x)=\int G_t(x,y)\dd y,\quad H_t=G_t-A_t.
+\]
+Its actual domain theorem supplies the true square-integrable martingale
+with configuration gradient
+\[
+ v_{i,t}=\nabla_iP_N[\Phi_t]
+  =N^{-2}\left[\sum_{j\ne i}H_t(X_i,X_j)-A_t(X_i)\right],
+ \quad Q_N=2\nu Nb_N\E\int_0^T\sum_i|v_{i,t}|^2\dd t.
+\]
+Clip $G_t$ radially to length $L$, obtaining $G_t^L$, and define its own row
+mean $A_t^L$ and row-centered field $H_t^L$. The corresponding $v_i^L$
+is bounded and defines an actual martingale. It need not be the gradient
+of another pair potential: this is an additive decomposition of the genuine
+martingale integrand.
+
+For $2\le k\le N$, the entropy chain rule, exchangeability and one-body
+Haar give
+\[
+ \operatorname{Ent}(F_N^{(k)})
+ \le\frac{k-1}{N-1}\operatorname{Ent}(F_N)
+ \le\frac{C_0(k-1)N^a}{\nu(N-1)}.
+\]
+The conditional entropy increments increase with the number of conditioning
+labels; their averages prove the first inequality. Pinsker's inequality in
+the convention $\|F-1\|_1\le\sqrt{2\operatorname{Ent}(F)}$ then controls
+every bounded pair and triple test. Using the exact deleted-label square
+and the independently supplied Haar energy gives
+\[
+ Q_N^L\le C_E b_NN^{-2/p}
+       +16T\sqrt{2C_0}\,b_N\sqrt\nu\,L^2N^{-1/p}.
+\]
+Here $b_N\sqrt\nu=\min(\sqrt\nu,\nu^{-1/2})\le1$. Thus for the explicit
+threshold $L_N=N^{1/(4p)}$,
+\[
+ Q_N^{L_N}\le C_E b_NN^{-2/p}+C_*N^{-1/(2p)}\longrightarrow0.
+\]
+No evolved iid assumption is used.
+
+Write $G^{>,L}=G-G^L$, with its own row mean and centered field, and let
+$\mathcal T_N(L)$ be the expected scaled bracket of $v-v^L$. The Hilbert
+norm of a predictable field is the square root of its expected bracket, so
+\[
+ \left|\sqrt{Q_N}-\sqrt{\mathcal T_N(L)}\right|\le\sqrt{Q_N^L}.
+\]
+Consequently,
+\[
+ Q_N\longrightarrow0
+ \quad\Longleftrightarrow\quad
+ \mathcal T_N\bigl(N^{1/(4(s+2))}\bigr)\longrightarrow0.
+ \tag{A}
+\]
+The right-hand assertion is open. For any of these fields, the full quadratic
+quantity has the exact four-term form
+\[
+ \frac{2\nu b_N}{N^2}\int_0^T\!\left[
+ (N-1)\E|H_{12}|^2+(N-1)(N-2)\E H_{12}\cdot H_{13}
+ -2(N-1)\E H_{12}\cdot A_1+\|A_1\|_2^2\right]\dd t.
+\]
+At $N=2$ the triple object is omitted entirely. The whole expression is
+nonnegative; separate contractions need not be. No orthogonality of the
+clipped and tail martingales is asserted.
+
+\newpage
+\section*{Actual Fourier control and a smoothing reduction}
+Put $q=1-s/d>0$. Combining the stronger heat-integral floor with
+$\E H_N\le0$, and using positivity of each Fourier coefficient, yields
+\[
+ \E|\widehat\eta_N(t,k)|^2
+ \le\min\{1,CN^{-q}|k|^{d-s}\},\qquad k\ne0.
+\]
+For $|k|\le N^{1/d}$, integrate $a_{N^{-2/d}}(k)$ over
+$[|k|^{-2},2|k|^{-2}]$ to obtain a fixed multiple of $|k|^{s-d}$.
+For higher frequencies use $|\widehat\eta_N(k)|\le1$. The estimate is uniform
+at deterministic times, including critical sequences; it becomes
+uninformative at particle-spacing frequencies.
+
+The same floor gives $\operatorname{Ent}(F_N)\le CN\lambda_N$, where
+$\lambda_N=\beta_NN^{s/d-1}$. Entropy subadditivity over disjoint fixed-size
+blocks implies fixed-marginal total-variation convergence when
+$\lambda_N\to0$. At criticality this gives no such convergence. In
+particular, neither conclusion supplies uniform integrability of singular,
+$N$-dependent gradients.
+
+The Borel pair measure inequality and the two finite-measure response
+bounds give $\sup_{t,N,\nu}\|\Phi_t\|_1\le C_h$ by the complete Volterra
+series. Smooth this already constructed full inverse in both slots:
+\[
+ \Psi_{t,\delta}=e^{\delta\Delta_x}e^{\delta\Delta_y}\Phi_t,
+ \qquad G_\delta=\nabla_x\Psi_\delta,
+ \quad r_*=(5d-s+2)/2.
+\]
+Writing $m$ for unit Haar measure, the exact particle derivative is
+\[
+ \nabla_iP_N[\Psi_\delta]
+ =\frac1N\left[\int G_\delta(X_i,y)\,(\eta_N-m)(\dd y)
+                    -\frac1N G_\delta(X_i,X_i)\right].
+\]
+Only the smooth diagnostic has this diagonal value. Fourier summation, the
+actual moment bound, and a supremum in the tagged coordinate give
+\[
+ Q_N[\Psi_\delta]
+ \le C\nu b_N\left[N^{-q}\delta^{-r_*}
+                         +N^{-2}\delta^{-(2d+1)}\right]
+ \le CN^{-q}\delta^{-r_*}.
+\]
+No independence between a tagged particle and the empirical measure is
+needed. Choose
+\[
+ \delta_N=N^{-\gamma},\qquad
+ \gamma=\frac{d-s}{d(5d-s+2)}=\frac{q}{2r_*}.
+\]
+Then $Q_N[\Psi_{\delta_N}]\le CN^{-q/2}\to0$, and the same Hilbert-space
+triangle inequality proves the second exact equivalence
+\[
+ Q_N[\Phi]\longrightarrow0
+ \quad\Longleftrightarrow\quad
+ Q_N[\Phi-\Psi_{\delta_N}]\longrightarrow0.
+ \tag{B}
+\]
+The right side is open. Fixed-$N$ smoothing convergence in Haar $H^1$ and
+finite-$N$ density domination do not interchange these limits.
+
+For a real smooth row-centered vector probe $H_t$, $C^1$ near time zero,
+the actual hierarchy also gives the independent sign test, for $N\ge3$,
+\[
+ \left.\frac{\dd}{\dd t}\E H_t(X_1,X_2)\cdot H_t(X_1,X_3)\right|_{t=0}
+ =-\frac2N\int\sum_{k\ne0}4\pi^2c_{d,s}|k|^{s+2-d}
+                          |\widehat H_0(x,k)|^2\dd x\le0.
+\]
+The two other pair contractions vanish by row centering. Coulomb
+compensation is retained. This is a fixed-smoothing initial derivative,
+not a later-time sign or a uniform singular Taylor remainder.
+
+\medskip\noindent
+The first open assertion is either equivalent actual-law tail in (A) or
+(B). The old condition $\beta_NN^{2s/d-1}\to0$, full microscopic
+subcriticality $\lambda_N\to0$, and positive finite microscopic criticality
+remain distinct. No completed fluctuation law or critical hierarchy follows.
+\end{document}

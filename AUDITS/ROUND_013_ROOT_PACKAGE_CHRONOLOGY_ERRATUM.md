@@ -1,0 +1,3 @@
+# Round013 root package chronology erratum
+
+The issued root package README says that reproduction was byte-identical before seal. That timing statement is incorrect: the first 3570-assertion exact diagnostic run passed before seal, but the separate temporary-extraction rerun was performed after the archive was sealed. The latter completed successfully and its full JSON is byte-identical to the issued result; the copy is CERTIFICATES/OUTPUTS/round013_root_constructor_rerun.json. This is a root self-check, not independent mathematical certification. No proof, claim, diagnostic, result, manifest or archive byte was altered. The original README is preserved, and its erroneous timing statement must not be repeated as evidence.

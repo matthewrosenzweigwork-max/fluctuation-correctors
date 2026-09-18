@@ -1,0 +1,50 @@
+{
+  "task": "TASK070",
+  "sealed_at_utc": "2026-09-18T03:48:13.012133+00:00",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r010-reductions-blind",
+  "branch": "codex/hocf-r010-reductions-blind",
+  "base_commit": "29d7ce427ad7a98739b18d07781e71c4598b3579",
+  "permitted_input_count": 23,
+  "input_manifest_sha256": "e3524d5cfc49ec15c006e2acbd9e34b64341eee4b52bb7a9b8252cb710c5dd3d",
+  "complete_card_scope": [
+    "THM030",
+    "THM031",
+    "complete statement-only supplement"
+  ],
+  "verdict": "COMPLETE CONDITIONAL RECONSTRUCTION; root comparison and separate hostile review required",
+  "conditional_premises": [
+    "issued complete prior particle/full-pair modules",
+    "complete THM028 domain premise for unsmoothed assertions",
+    "integrated THM029 Haar energy only where used"
+  ],
+  "candidate_exposure_before_seal": false,
+  "current_audit_exposure_before_seal": false,
+  "root_seed_exposure": false,
+  "memory_file_access": false,
+  "prior_checker_access": false,
+  "canonical_edit": false,
+  "commit": false,
+  "push": false,
+  "dependency_install": false,
+  "child_agent": false,
+  "exposure_record": "ROUND_010_TWO_REDUCTIONS_EXPOSURE.md",
+  "diagnostics_status": "PASS",
+  "diagnostic_check_count": 4955,
+  "format_verification": {
+    "input_hashes_reverified": 23,
+    "report_lines": 884,
+    "unique_equation_tags": 72,
+    "balanced_display_pairs": 83,
+    "trailing_whitespace": "none",
+    "control_characters": "none",
+    "terminal_newlines": "verified",
+    "diagnostic_source_hash_matches_result": true
+  },
+  "output_manifest": "ROUND_010_TWO_REDUCTIONS_OUTPUT_SHA256SUMS.txt",
+  "archive": "ROUND_010_TWO_REDUCTIONS_RECONSTRUCTION_20260918_034813_UTC.zip",
+  "archive_layout": {
+    "input_files": "INPUT_DOSSIER/<original relative path>",
+    "outputs": "OUTPUTS/<worktree-relative output path>"
+  },
+  "immutability": "Non-self-referential SHA-256 input/output/archive seals; all copied inputs and final outputs set read-only after final verification. No sealed byte changes after issuance."
+}

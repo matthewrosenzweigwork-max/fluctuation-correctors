@@ -1,0 +1,21 @@
+{
+  "sealed_utc": "2026-09-18T03:22:58.698652+00:00",
+  "task": "TASK066",
+  "claim": "THM033",
+  "status": "RECONSTRUCTION_COMPLETE_CONDITIONAL_DERIVATION_NO_PASS_ASSIGNED",
+  "base_commit": "29d7ce427ad7a98739b18d07781e71c4598b3579",
+  "branch": "codex/hocf-r012-noise-blind",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r012-noise-blind",
+  "permitted_input_count": 23,
+  "comparison_before_seal": false,
+  "output_files": [
+    "ROUND_012_ACTUAL_NOISE_RECONSTRUCTION.md",
+    "round012_noise_exact.py",
+    "round012_noise_exact_result.json",
+    "README.md",
+    "EXPOSURE.md",
+    "INPUT_SHA256SUMS.txt",
+    "SEAL_METADATA.json"
+  ],
+  "notes": "No root derivation or current hostile review was seen. All source statuses remain as issued."
+}

@@ -30,3 +30,9 @@ R7 closes weighted first derivatives, not an actual-law bridge. The R8 domain ca
 R8 closes the homogeneous fixed-N dynamic domain bridge: genuine inverse to actual singular particle Ito identity, absolute drift and true L2 martingale. The density exponential is used only to transfer previously proved Haar integrability. The next bridge PO024 is quantitative actual-law noise control; R9 candidate equations (10.2)–(10.3) isolate exact pair/triple/mixed deviations. A reference Haar estimate cannot be evaluated at positive interacting time without that bridge.
 
 R9 passes the uniform reference-energy side and exact dynamic-law reduction, not the quantitative static-to-dynamic bridge. All four exchangeable square terms exist at fixed N. The actual leading bracket uses only the proved one-body marginal; the corrector bracket needs joint-law control. TASK060/061 are independent actual-law attempts. Their clipping/smoothing approximations must retain a proved actual-law tail passage before any claim for the original singular gradient.
+
+
+R10 now supplies actual entropy/Fourier quantitative bridges for bounded clipped and smoothed derivatives, exact zero mean and fixed-label displacement, with the singular tail isolated as an equivalent requirement. These have hostile passes and pending whole-card blind. Neither total variation on fixed marginals nor the reference Haar energy alone controls an N-dependent singular test. The R12/R13 Laplacian-occupation routes are separate pending candidates, not retroactive assertions in the original R10 packets.
+
+
+R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.

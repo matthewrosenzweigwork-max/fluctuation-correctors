@@ -1,0 +1,29 @@
+{
+  "arithmetic": "exact integers and fractions; no numerical tolerance or random seed",
+  "assertions_passed": 16207,
+  "checked_at_utc": "2026-09-18T03:48:13Z",
+  "dependencies": "Python standard library only",
+  "evidence_limit": "Same-context diagnostics; not a proof or independent audit of analytic passages.",
+  "groups": {
+    "coulomb_responses": 51,
+    "coulomb_singular_limit": 45,
+    "input_seal": 44,
+    "mutation_detection": 39,
+    "normalization": 32,
+    "pair_jacobian": 1728,
+    "radial_generator": 9252,
+    "range_and_tails": 295,
+    "response_equation": 2160,
+    "response_exponential": 720,
+    "scaling": 128,
+    "young_maximum": 486,
+    "zero_noise_radial": 1080,
+    "zero_parameters": 147
+  },
+  "input_count": 21,
+  "parameter_rows": 32,
+  "python_version": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "status": "PASS",
+  "task": "TASK-068",
+  "theorem": "THM-032"
+}

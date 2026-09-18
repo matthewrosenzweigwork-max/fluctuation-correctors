@@ -1,0 +1,20 @@
+{
+  "task": "TASK070 whole-card statement-only reconstruction",
+  "status": "PASS",
+  "arithmetic": "exact fractions; deterministic exhaustive finite-grid and Laurent-polynomial checks",
+  "python": "3.9.6",
+  "source_sha256": "428f37538a7a1c59f40ab56a124504affc3e13496fe75b62d9464788c01439b5",
+  "check_count": 4955,
+  "check_name_digest": "3eb88f4e6381a86c117e1ff0d79531ce82dd0305e6b7c170d8e83bf96b949d23",
+  "groups": [
+    "deleted-label four contractions",
+    "Haar identity",
+    "radial clipping with own row",
+    "missing-self coefficient",
+    "tail norm polarization",
+    "initial covariance from generator",
+    "BBGKY and Coulomb factors",
+    "exponents and uniform constants"
+  ],
+  "limitations": "These exact checks do not prove analytic estimates, singular limit passages, prior modules, or the unproved actual singular tail. No numerical simulation or external dependency is used."
+}

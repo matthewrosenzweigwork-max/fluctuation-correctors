@@ -68,3 +68,9 @@ R7 passes the first-gradient source passage independently of heat terminal-data 
 R8 singular particle identity passes by direct compact collision stops. Deleted-tube errors for weak first/second derivatives vanish by bounded Phi and q1<d-1; q2<d and2q1<d give W2,1/H1. Moving-tube contractions justify background derivatives. Already-integrable drifts pass in L1 and stopped martingales in L2 using fixed-N density domination. No corrector heat-source convergence or diagonal trace is asserted; earlier heat exclusions remain.
 
 R9 constructor retains the nonpositive Coulomb inner flux and sends collision-tube radius to zero at fixed N before uniform estimates. Below Coulomb it vanishes. Blind proof uses increasing radial cutoffs with ||grad theta_epsilon||2=O(epsilon^((d-2)/2)), fixed-N H1 diffusion error, and B theta>=0. No diagonal trace, force-gradient absolute majorant, corrector heat-source convergence or N/regularization interchange. Both routes retain the full domain prerequisite.
+
+
+R10 proves actual free-energy passage at fixed N using same-noise convergence, positive minimum separation on compact times, local convergence of the heat kernel potential, a common lower energy bound with Fatou, and entropy variational lower semicontinuity. The sharper heat-integral energy floor is a separate positive Fourier truncation, not convolution. True-inverse smoothing occurs after construction; only the explicit actual residual-tail estimate would allow its N-uniform removal. No fixed-N H1/density limit is exchanged with N by assumption.
+
+
+R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.

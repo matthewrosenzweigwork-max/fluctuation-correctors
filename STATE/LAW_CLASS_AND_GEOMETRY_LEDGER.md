@@ -56,3 +56,9 @@ THM026 now supplies actual finite-N gradient Riesz particle paths from every dis
 R8 domain passage is periodic homogeneous gradient Riesz d>=3,0<s<=d-2, bounded nu including zero. Any bounded N-body initial density independent of Brownian drivers is allowed; exchangeability and iid are not needed for fixed-N integrability. The cost ||F0||infty exp((N-1)kappa T) is explicit. No independence persists by assumption. R9 reference Haar functionals and actual exchangeable two-/three-marginal integrals are separate objects, still under review.
 
 R9 actual iid-Haar preparation preserves exchangeability and Haar one-body marginals by uniqueness/equivariance; no higher independence. The uniform energy and reference noise are integrals under Haar^N, while the actual law enters a separate exact pair/triple/mixed formula. Arbitrary exchangeable-law identity assumes all fields/products are defined and integrable; it assigns no singular derivative at collisions. Invariant nonproduct countermodels refute only a symmetry-to-independence shortcut, not the dynamics.
+
+
+R10 actual free-energy and energy statements concern the unique singular homogeneous gradient dynamics from iid Haar, obtained through fixed-N heat paths. Exchangeability and Haar one-body invariance are used only as proved. Finite marginal total variation closes for lambda->0, not finite positive critical lambda. Uniform empirical Fourier second moments do not imply product law. Smooth clipped/smoothed tests admit quantitative true-law control; the unbounded singular tail remains an explicit additional requirement.
+
+
+R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.

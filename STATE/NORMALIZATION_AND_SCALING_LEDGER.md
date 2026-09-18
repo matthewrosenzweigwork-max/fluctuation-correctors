@@ -85,3 +85,9 @@ THM025 AUD028/029: full inverse initial iid orders b_N/N, b_N(1+logN)/N, b_N N^(
 R8 adds a domain theorem with unchanged ordered-label/N^k normalization, P=U2/2, internal coefficient1/N, lower1/N and scalar1/(2N). Fixed-N derivative/density estimates supply no new power count. Pending R9 reference-noise claims use sigma_N^2=N b_N,b_N=min(beta_N,1),nu=1/beta_N with beta bounded below. The old floor, full microscopic lambda and positive finite critical limit remain separate; logarithmic interaction is still separate.
 
 R9 accepted reference scaling: nu||grad_pair Phi||_L2(time,Haar)^2<=C N^a,a=s/(s+2); sigma_N^2=N b_N,b_N=min(beta_N,1),nu=1/beta_N. Pair symmetry reduces full gradient norm squared to2||G||2^2, leaving b_N(N-1)/N^2 times the full nu-energy. Thus self-noise<=C b_N N^(a-1) and absolute cross<=C sqrt(b_N)N^((a-1)/2). Zero-noise handled separately. No relation among the three frozen temperature regimes is changed; critical sequences eventually have bounded nu, general beta-to-zero subcritical sequences need a new uniformity argument.
+
+
+R10 submitted/audited-hostile powers use p=s+2, a=s/p, theta=1-s/d. The two energy floors are -C N^a and -C N^(s/d), with s/d<=a. Clipping level N^(1/(4p)) yields approximate actual noise O(N^(-1/(2p))) plus its faster Haar rate. Smoothing delta=N^(-theta/(5d-s+2)) yields O(N^(-theta/2)). These are actual bounded/regularized fields, with full-tail equivalences separately stated. No fixed exponent is silently transferred to the original full noise. Full subcritical lambda, old energy floor and finite positive critical lambda are distinct; logarithm separate.
+
+
+R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.

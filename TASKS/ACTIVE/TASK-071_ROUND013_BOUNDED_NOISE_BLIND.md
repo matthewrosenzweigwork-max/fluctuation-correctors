@@ -1,0 +1,11 @@
+# TASK-071 — fresh blind examination of THM034
+
+Use a fresh Astra Ultra context with fork_turns=none. Read this task and AUDITS/ROUND_013_BOUNDED_NOISE_BLIND_INPUT_SHA256SUMS.txt first. Exact claim and logical negation are in THEOREMS/THM-034_BOUNDED_NOISE_SMALL_RIESZ.md; the statement is frozen and the scientific mission is unchanged.
+
+Create branch codex/hocf-r013-noise-blind and worktree /Users/matthewrosenzweig/.codex/worktrees/hocf-r013-noise-blind from published R9 29d7ce427ad7a98739b18d07781e71c4598b3579. Copy and hash-check only this permitted dossier from root before reading its mathematics. Ignore inherited non-allowlisted files. Do not read current state/history, memory files, any current R11/R12/R13 constructions/audits outside the dossier, or prior checker programs/results. Disclose ambient summary exposure. Earlier source premises remain conditional as issued; unseen root status is not proof.
+
+Reconstruct every frozen claim from the complete earlier sources and statement without seeing the R13 constructor proof, root seed or checker. Supply a full derivation or exact first unsupported line; seal before any comparison. Do not request or inspect the constructor narrative.
+
+Check genuine inverse/derivative identification, both finite-measure response slots, N/nu/time uniformity, stopped singular expectation passages, actual-law rather than product-law estimates, every physical and deleted-label factor, exact endpoints and all stated exclusions. The stronger bounded-noise conclusion must have an actual proof, not only a rescaled subfamily or a formal radial diagnostic. Do not assume a full fluctuation law from a noise estimate.
+
+Output AUDITS/BLIND_RECONSTRUCTION/ROUND_013_BOUNDED_NOISE_RECONSTRUCTION.md, a fresh supporting exact checker/result, README/exposure record, verified input/output manifests and sealed archive. Put auxiliary files in a unique ROUND_013_NOISE_BLIND_ARTIFACTS directory to avoid generic-name collisions. Preserve originals and seal before handoff. No canonical edits, commits, pushes, installs or children. Root alone compares/promotes. Acceptance requires a full exact conditional proof and source/normalization preflight; on failure give the precise unsupported line and maximal valid scope, with no in-place repair.

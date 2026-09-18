@@ -1,0 +1,5 @@
+# Round010 clipping review: separate rendering and metadata qualification
+
+The original491-line TASK064 review and environment JSON remain immutable. Its displayed higher-moment inequality contains C_(N,q) with exponent comma-r (the TeX token C_{N,q}^{,r}); the intended exponent is r=s/q, exactly as the immediately preceding definition, original candidate(8.2), subsequent estimate and independent diagnostic use. The extra comma is rendering only; no inequality or conclusion is changed.
+
+The environment JSON field root_tracked_state_before_copy says clean. This is not a verified description of the campaign main checkout at TASK064 dispatch: root main already contained pending canonical edits and new R10 artifacts, all preserved. Do not use that field to infer a clean campaign-main tree or absence of pre-existing work. The review's exact branch/base,22 copied source hashes, immutable candidate bytes and root nonmutation were separately checked. The ambiguity does not alter mathematical source exposure or the conditional review verdict.

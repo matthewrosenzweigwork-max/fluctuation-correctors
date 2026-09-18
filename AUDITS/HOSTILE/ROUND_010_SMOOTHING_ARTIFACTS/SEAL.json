@@ -1,0 +1,26 @@
+{
+  "archive": "AUDITS/HOSTILE/ROUND_010_SMOOTHING_ARTIFACTS/ROUND_010_SMOOTHING_REVIEW_20260918_032517_UTC.tar.gz",
+  "archive_root": "hocf-r010-smoothing-hostile",
+  "base_commit": "29d7ce427ad7a98739b18d07781e71c4598b3579",
+  "branch": "codex/hocf-r010-smoothing-hostile",
+  "conditional_premises": [
+    "supplied earlier particle/kernel/full-pair modules",
+    "complete THM028 domain premise for unsmoothed assertions",
+    "integrated THM029 Haar energy for Section 9 only"
+  ],
+  "immutability": "Issued payload, manifests, and archive read-only; any correction requires separate superseding issue",
+  "independent_diagnostic": {
+    "exact_assertions": 2024,
+    "outcome": "PASS",
+    "reproduced_byte_identically": true
+  },
+  "input_count": 22,
+  "input_manifest": "AUDITS/ROUND_010_SMOOTHING_HOSTILE_INPUT_SHA256SUMS.txt",
+  "input_manifest_sha256": "f71f76c78adb1aec5f0de43d04e908226a0abfba19902125dffb88a811463b80",
+  "issued_at_utc": "2026-09-18T03:25:17Z",
+  "output_manifest": "AUDITS/HOSTILE/ROUND_010_SMOOTHING_ARTIFACTS/OUTPUT_SHA256SUMS.txt",
+  "output_manifest_sha256": "cfcd69743bca62e71333a1ed105dbf4130609c181373f9b4083d6c5dc4a1205e",
+  "scope": "Fresh hostile review; no candidate repair; no canonical edits, commits, pushes, installs or children",
+  "task": "TASK065",
+  "verdict": "CONDITIONAL PASS: all asserted Sections 2-9 claims; full singular tail remains OPEN at (7.4)"
+}

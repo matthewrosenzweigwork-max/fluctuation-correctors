@@ -34,3 +34,9 @@ Round004: the finite measure D=divK has mass zero. At Coulomb it is c_d(delta0-H
 R8 exact distinct-label identity: drift -P[J]+U3[C Phi]+rho[(B Phi)_mu]/N+integral(B Phi)/(2N), with C Phi the average over six permutations of K(x-z).grad_x Phi(x,y). The one-background cubic contraction is (A_a+R Phi)/6, two-background contraction v/3, full scalar zero; (R Phi)_mu=v and integral R Phi=0. Repeated internal pairs are grouped into B Phi before absolute estimation. Triple products use separate relative variables. No singular diagonal value, omitted scalar or additional Brownian trace is introduced.
 
 R9 exact exchangeable square is N^-3[(N-1)E|H12|^2+(N-1)(N-2)E H12.H13-2(N-1)E H12.A1+E|A1|^2]. The triple is omitted as an object at N=2. The actual-minus-Haar scaled difference retains coefficients(N-1),(N-1)(N-2),-2(N-1) on delta2,delta3,deltaA, with outside2nu b_N/N^2. One-body invariance removes only the fourth difference. No additional Wick subtraction or diagonal trace.
+
+
+R10 preserves all coefficients of the exact two-/three-/mixed bracket expansion, with no X3 object at N=2. The smoothed empirical-gradient representation retains -G_delta(Xi,Xi)/N inside the outer1/N. The initial smooth centered triple derivative is the negative Fourier quadratic form from the interacting 2-3 pair; other first-order pair terms vanish only by row centering. No positive-time sign or singular diagonal counterterm is inferred.
+
+
+R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.

@@ -41,3 +41,9 @@ THM027 adds genuine weighted C1 derivatives and global weak Haar H1 to the full 
 R8 THM028 passes the actual homogeneous COR001 particle domain. The true full inverse, both responses and exact source appear in a justified singular Ito identity with its true square-integrable martingale. This adds no higher corrector or critical tail closure. Uniform self/cross noise and the evolved cubic residual remain PO024/PO001.
 
 R9 THM029 adds an N-uniform nu-weighted Haar gradient-energy bound for the same genuine COR001. It retains source, both responses and full domain. This closes reference self/cross-noise functionals only. Actual-law tail/correlation control, evolved cubic residual and all higher-corrector closure remain separate open tasks.
+
+
+The same genuine COR001 now has R10 actual bounded-field approximation reductions, keeping both response terms and exact source. No new higher corrector is constructed. R11 spatial limit, R12 strict sub-Coulomb noise, and R13 bounded-noise small-s candidates are separate modules awaiting their own remaining audit gates; no approximate vector-field martingale is silently substituted for COR001.
+
+
+R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.

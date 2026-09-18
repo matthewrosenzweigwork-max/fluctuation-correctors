@@ -46,3 +46,9 @@ R5 actual full-inverse initial estimate retains deterministic -theta/(2N), first
 R8 exact particle identity retains mean-field centering with q(x)=integral Phi(x,y)dy and r=integral Phi. P[Phi]=(2N^2)^-1 sum_(i!=j)Phi_ij-N^-1 sum_i q_i+r/2. No exact-law recentering or new counterterm. Its gradient is N^-2 sum_(j!=i) grad_x Phi_ij-N^-1 grad q_i, including the finite-N background deletion.
 
 R9 keeps the exact finite-N deletion in grad_iP=N^-2[sum_(j!=i)H_ij-A_i], H=G-A and A=integral Gdy. Haar conditional centering cancels only distinct H products and mixed H-A averages under product Haar. Additive kernels leave ||A||2^2/N^3 in the summed gradient square. Actual one-body Haar cancels the A-square difference between laws, not the pair/triple/mixed differences. No centering or denominator changes.
+
+
+R10 proves exact actual E P[Phi]=0 using the vanishing common-translation orbit average of the genuine full inverse and the actual invariant law; scalar Haar mean zero alone is insufficient. This exact expectation is not concentration. Radial clipping uses its own mean A^L, and the residual uses A-A^L. Fourier smoothing retains the exact smooth self-diagonal term. No renormalization, denominator or centering convention changes.
+
+
+R10 gate update: the preceding R10 conditional claims/reductions now also pass the complete fresh reconstruction AUD042, alongside hostile AUD038/039. See AUDITS/ROUND_010_WHOLE_CARD_RECONSTRUCTION_COMPARISON.md for every exact scope and source qualification. No full singular-tail, cubic-residual or hierarchy conclusion is added.

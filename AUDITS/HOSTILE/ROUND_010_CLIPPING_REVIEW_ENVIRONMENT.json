@@ -1,0 +1,30 @@
+{
+  "task": "TASK-064",
+  "base_commit": "29d7ce427ad7a98739b18d07781e71c4598b3579",
+  "branch": "codex/hocf-r010-clipping-hostile",
+  "copied_input_count": 22,
+  "input_manifest_sha256": "85f1c8ad72cd82fc864927344162000c4ada83053ff2b194d5ae794fdd368da1",
+  "all_copied_hashes_verified": true,
+  "root_tracked_state_before_copy": "clean",
+  "ambient_exposure": "System/developer instructions, user-supplied global/project AGENTS instructions, and ambient MEMORY_SUMMARY were exposed before isolation. No memory file, history, non-allowlisted Round 10 proof, audit, state, or diagnostic was read. Only the task and source manifest were read before the worktree was created; Git location/status metadata was inspected. Inherited worktree files outside the 22-path allowlist are excluded from review.",
+  "review_completed_utc": "2026-09-18 03:17:05 UTC",
+  "python_version": "3.9.6",
+  "review_verdict": "CONDITIONAL_PASS_AS_STATED",
+  "exact_checker_assertions": 18517,
+  "exact_checker_groups": 56,
+  "conditional_prerequisites": [
+    "THM028 genuine corrector domain",
+    "THM029 uniform Haar energy"
+  ],
+  "prior_source_status": "Source contents and scope checked; no historical audit verdict adopted or changed.",
+  "issued_candidate_inputs_unchanged": true,
+  "root_canonical_edits": false,
+  "commits_pushes_installations_children": false,
+  "control_inputs_read_before_worktree": [
+    "TASKS/ACTIVE/TASK-064_ROUND010_CLIPPING_HOSTILE.md",
+    "AUDITS/ROUND_010_CLIPPING_HOSTILE_INPUT_SHA256SUMS.txt"
+  ],
+  "sealed_proof_exposure": "The complete allowed TASK060 proof includes self-reported historical/diagnostic descriptions. These were read as part of the required proof; no diagnostic or prior checker file was read or imported.",
+  "archive_relative_path": "AUDITS/HOSTILE/ROUND_010_CLIPPING_TASK064_20260918_031705_UTC.tar.gz",
+  "output_manifest_relative_path": "AUDITS/HOSTILE/ROUND_010_CLIPPING_OUTPUT_SHA256SUMS.txt"
+}

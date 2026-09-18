@@ -1,0 +1,13 @@
+{
+  "arithmetic": "exact fractions; no random seed or tolerance",
+  "counts": {
+    "boundary_controls": 3,
+    "configuration_bound": 351,
+    "coulomb_occupation_excluded": 10,
+    "physical_prefactor": 1053,
+    "strict_exponent_scope": 210
+  },
+  "exact_cases": 1627,
+  "scope": "root finite algebra self-check only; not proof, audit, or actual-law simulation",
+  "status": "PASS"
+}
