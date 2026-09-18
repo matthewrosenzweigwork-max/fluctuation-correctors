@@ -86,3 +86,6 @@ R24 TASK104 distinct trace/source lane sealed and fully root-read333lines, sourc
 
 
 2026-09-18 UTC — R26 whole acceptance. THM051 root matched all allowed historical R4/R6/R10/R16 proof/gate pairs and THM049/R25 source bytes against published ef438b6. All current proof/audit inputs verify. No external or private source added.
+
+
+2026-09-18 UTC — R27 whole acceptance. Root separately verified R4/R6 complete source and round-gate bytes, THM048/049 cards and R25 gate/comparison against published 24b766b; 10/8/11 current inputs match. No private source, external citation or novelty claim. Isolated auditors did not authenticate absent historical gates.

@@ -1,0 +1,116 @@
+{
+  "utc": "2026-09-18T10:04:55.723080+00:00",
+  "fresh_code_only_directory": "/var/folders/yh/pqv2cz6539gc8j2cm154bcrr0000gn/T/hocf-r027-duality-blind-rerun-dng5f6um",
+  "runs": [
+    {
+      "mutation": null,
+      "exit": 0,
+      "stdout_sha256": "94bed4161737305cf72fecefb67d4424386ab88e04d0440c2007266f07519e84",
+      "byte_identical": true
+    },
+    {
+      "mutation": "pair_half",
+      "exit": 1,
+      "stdout_sha256": "9154317e6914729c42c7f9fff0e071bd8826a0730aaaea30253282e7b51dd025",
+      "byte_identical": true
+    },
+    {
+      "mutation": "atom_deleted",
+      "exit": 1,
+      "stdout_sha256": "9b9a9eee672625ee382b0ee0a62270a00a125e3b5d4bcf3760d874b4ef450dee",
+      "byte_identical": true
+    },
+    {
+      "mutation": "noise_half",
+      "exit": 1,
+      "stdout_sha256": "94e855b26064037c5a6b0f6c15a8551ad9655b60af0328d92c3dfdc188692ca1",
+      "byte_identical": true
+    },
+    {
+      "mutation": "reverse_noise_sign",
+      "exit": 1,
+      "stdout_sha256": "2e1de296a18fc156221d815f900acfcf24aaae5eca1bd65f0c9223aefa30b0d2",
+      "byte_identical": true
+    },
+    {
+      "mutation": "endpoint_orientation",
+      "exit": 1,
+      "stdout_sha256": "810052e7aef10b0ca1dbe718b28683b9ef132eade1838de17a8e4d04e15395fa",
+      "byte_identical": true
+    },
+    {
+      "mutation": "drop_conditioning",
+      "exit": 1,
+      "stdout_sha256": "39c24e7fdde7063dc6088786eb8524a70ec391b203c26f4d315903823605453b",
+      "byte_identical": true
+    },
+    {
+      "mutation": "endpoint_only_kill",
+      "exit": 1,
+      "stdout_sha256": "e41556045582a8db818b801adc723e81fcba79ab3a61be9d42eb985895ef370a",
+      "byte_identical": true
+    },
+    {
+      "mutation": "fourier_response_sign",
+      "exit": 1,
+      "stdout_sha256": "b4ebb534b90779c4a1f5d07b1d7e86c5784e409bda99f51ea0f28af5e057e646",
+      "byte_identical": true
+    },
+    {
+      "mutation": "path_order",
+      "exit": 1,
+      "stdout_sha256": "115be264f3aee7472b408e93cbd68a9f9241087c604b3343f50eec8054b54f02",
+      "byte_identical": true
+    }
+  ],
+  "baseline_assertions": 322,
+  "exact_arithmetic": true,
+  "limitations": "Finite affine-flow/local-jet diagnostics, not a continuum theorem.",
+  "fresh_in_memory_guard_mutations": [
+    {
+      "name": "changed_payload",
+      "exit": 1,
+      "parsed_output_exact": true
+    },
+    {
+      "name": "missing_payload",
+      "exit": 1,
+      "parsed_output_exact": true
+    },
+    {
+      "name": "extra_payload",
+      "exit": 1,
+      "parsed_output_exact": true
+    },
+    {
+      "name": "unsafe_path",
+      "exit": 1,
+      "parsed_output_exact": true
+    },
+    {
+      "name": "archive_link",
+      "exit": 1,
+      "parsed_output_exact": true
+    },
+    {
+      "name": "archive_duplicate",
+      "exit": 1,
+      "parsed_output_exact": true
+    },
+    {
+      "name": "archive_unsafe",
+      "exit": 1,
+      "parsed_output_exact": true
+    },
+    {
+      "name": "archive_changed",
+      "exit": 1,
+      "parsed_output_exact": true
+    },
+    {
+      "name": "archive_missing",
+      "exit": 1,
+      "parsed_output_exact": true
+    }
+  ]
+}

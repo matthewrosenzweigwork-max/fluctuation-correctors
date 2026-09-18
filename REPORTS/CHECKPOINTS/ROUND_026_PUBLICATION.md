@@ -1,0 +1,3 @@
+# R26 publication receipt
+
+Observed at 2026-09-18T10:19:36.330582+00:00: local main, tracking origin/main and live remote refs/heads/main all equal 24b766bb63c6d69ca09171f36622ef2a87d67bfd. Ordinary commit `campaign: certify Coulomb response obstruction and two-label cancellation`, followed by ordinary push to unchanged origin. 252 reviewed paths, 48525 insertions and 48 deletions. Pending R27/R28 scientific artifacts and task cards were held; their current status remains explicitly unpromoted. No unrelated work absorbed, force push, history rewrite or remote change. Both entire THM050/051 gates are accepted; original THM046 remains open. This receipt follows its own commit and is outside it.

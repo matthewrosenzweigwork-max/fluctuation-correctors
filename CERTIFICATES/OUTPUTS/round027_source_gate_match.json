@@ -1,0 +1,63 @@
+{
+  "published_commit": "24b766bb63c6d69ca09171f36622ef2a87d67bfd",
+  "source_gate_matches": [
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "published_equal": true
+    },
+    {
+      "path": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "published_equal": true
+    },
+    {
+      "path": "REPORTS/ROUND_REPORTS/ROUND_006.md",
+      "sha256": "1d0d901e2e96dbd6013cb847225ea2b2340aac13379ef34197f0f00d80be11b6",
+      "published_equal": true
+    },
+    {
+      "path": "THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md",
+      "sha256": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+      "published_equal": true
+    },
+    {
+      "path": "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_025_GATE_INTEGRATION.md",
+      "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_025_RECONSTRUCTION_COMPARISON.md",
+      "sha256": "c681b9b71699a8a3c30037db021489492f482b66fc6dabd31e4d88cc630a8e33",
+      "published_equal": true
+    }
+  ],
+  "current_inputs": [
+    {
+      "manifest": "AUDITS/ROUND_027_KILLED_DUALITY_ROOT_INPUT_SHA256SUMS.txt",
+      "count": 10,
+      "all_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_027_DUALITY_BLIND_INPUT_SHA256SUMS.txt",
+      "count": 8,
+      "all_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_027_DUALITY_HOSTILE_INPUT_SHA256SUMS.txt",
+      "count": 11,
+      "all_match": true
+    }
+  ],
+  "history": "First lookup of a guessed R4 audit filename failed before source comparison; actual versioned R4/R6 gates are their round reports. Correct paths resolved from the already verified R26 source map."
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "mutant": "pair_half",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 4,
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "atom_deleted",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 4,
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "noise_half",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 4,
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "reverse_noise_sign",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 16,
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "endpoint_orientation",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 1,
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "drop_conditioning",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 1,
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "endpoint_only_kill",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 1,
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "fourier_response_sign",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 3,
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "path_order",
+    "returncode": 1,
+    "checks": 322,
+    "failed_count": 104,
+    "stderr": "",
+    "detected": true
+  }
+]

@@ -1,0 +1,1942 @@
+{
+  "schema": "AUD075-rational-diagnostic-v1",
+  "mutant": "path_order",
+  "arithmetic": "exact fractions; deterministic exhaustive signals; no Monte Carlo",
+  "checks": 322,
+  "failed_count": 104,
+  "status": "FAIL",
+  "records": [
+    {
+      "name": "configuration_laplacian_N2",
+      "actual": "7/3",
+      "expected": "7/3",
+      "pass": true
+    },
+    {
+      "name": "configuration_gradient_N2",
+      "actual": "[Fraction(-103813, 725904), Fraction(-103813, 362952), Fraction(-726691, 1451808), Fraction(-103813, 120984), Fraction(103813, 725904), Fraction(103813, 362952), Fraction(726691, 1451808), Fraction(103813, 120984)]",
+      "expected": "[Fraction(-103813, 725904), Fraction(-103813, 362952), Fraction(-726691, 1451808), Fraction(-103813, 120984), Fraction(103813, 725904), Fraction(103813, 362952), Fraction(726691, 1451808), Fraction(103813, 120984)]",
+      "pass": true
+    },
+    {
+      "name": "ito_noise_N2",
+      "actual": "80/7",
+      "expected": "80/7",
+      "pass": true
+    },
+    {
+      "name": "configuration_laplacian_N3",
+      "actual": "14/3",
+      "expected": "14/3",
+      "pass": true
+    },
+    {
+      "name": "configuration_gradient_N3",
+      "actual": "[Fraction(-38380370923351, 132447181855896), Fraction(-5218288544173, 7358176769772), Fraction(-423178663999165, 264894363711792), Fraction(-81301500794381, 22074530309316), Fraction(-200064397312, 106868009855187), Fraction(-28504269938591, 213736019710374), Fraction(-252137012706455, 427472039420748), Fraction(-46440106445321, 23748446634486), Fraction(668519206003477783, 2292190854329877144), Fraction(8690725602615780139, 10314858844484447148), Fraction(3342579979731101555, 1528127236219918096), Fraction(19386936596953700507, 3438286281494815716)]",
+      "expected": "[Fraction(-38380370923351, 132447181855896), Fraction(-5218288544173, 7358176769772), Fraction(-423178663999165, 264894363711792), Fraction(-81301500794381, 22074530309316), Fraction(-200064397312, 106868009855187), Fraction(-28504269938591, 213736019710374), Fraction(-252137012706455, 427472039420748), Fraction(-46440106445321, 23748446634486), Fraction(668519206003477783, 2292190854329877144), Fraction(8690725602615780139, 10314858844484447148), Fraction(3342579979731101555, 1528127236219918096), Fraction(19386936596953700507, 3438286281494815716)]",
+      "pass": true
+    },
+    {
+      "name": "ito_noise_N3",
+      "actual": "120/7",
+      "expected": "120/7",
+      "pass": true
+    },
+    {
+      "name": "configuration_laplacian_N4",
+      "actual": "7",
+      "expected": "7",
+      "pass": true
+    },
+    {
+      "name": "configuration_gradient_N4",
+      "actual": "[Fraction(-81551817764045681915519, 187009455447752483681424), Fraction(-39304808016835419685897, 31168242574625413946904), Fraction(-81700390022282707404311, 23376181930969060460178), Fraction(-317909251097624005293877, 31168242574625413946904), Fraction(-59072892519764597381, 401208727281456470544), Fraction(-137083902994010027257, 200604363640728235272), Fraction(-996618579683310293677, 401208727281456470544), Fraction(-566147093685558858707, 66868121213576078424), Fraction(24016449902204834327334750463, 164697537667115457599580190128), Fraction(24015464202192549121997807743, 82348768833557728799790095064), Fraction(24010594144614590012114831263, 82348768833557728799790095064), Fraction(-24025165355692822730562602623, 27449589611185909599930031688), Fraction(3374291495451640649495002711, 7712671808607354977584412304), Fraction(6373661306741248458507259399, 3856335904303677488792206152), Fraction(43865784459080365905563919587, 7712671808607354977584412304), Fraction(8373240594363516943172584231, 428481767144853054310245128)]",
+      "expected": "[Fraction(-81551817764045681915519, 187009455447752483681424), Fraction(-39304808016835419685897, 31168242574625413946904), Fraction(-81700390022282707404311, 23376181930969060460178), Fraction(-317909251097624005293877, 31168242574625413946904), Fraction(-59072892519764597381, 401208727281456470544), Fraction(-137083902994010027257, 200604363640728235272), Fraction(-996618579683310293677, 401208727281456470544), Fraction(-566147093685558858707, 66868121213576078424), Fraction(24016449902204834327334750463, 164697537667115457599580190128), Fraction(24015464202192549121997807743, 82348768833557728799790095064), Fraction(24010594144614590012114831263, 82348768833557728799790095064), Fraction(-24025165355692822730562602623, 27449589611185909599930031688), Fraction(3374291495451640649495002711, 7712671808607354977584412304), Fraction(6373661306741248458507259399, 3856335904303677488792206152), Fraction(43865784459080365905563919587, 7712671808607354977584412304), Fraction(8373240594363516943172584231, 428481767144853054310245128)]",
+      "pass": true
+    },
+    {
+      "name": "ito_noise_N4",
+      "actual": "160/7",
+      "expected": "160/7",
+      "pass": true
+    },
+    {
+      "name": "configuration_laplacian_N6",
+      "actual": "35/3",
+      "expected": "35/3",
+      "pass": true
+    },
+    {
+      "name": "configuration_gradient_N6",
+      "actual": "[Fraction(-797313240449637155343458227644852279269476328243, 1094875692397478405489541986743579798771332453168), Fraction(-1506953549771648092009596605122728278531076019435, 547437846198739202744770993371789899385666226584), Fraction(-23144799254729506172645891826071075362552180350599, 2189751384794956810979083973487159597542664906336), Fraction(-40249220556732096967463709240920441624057348974627, 912396410331232004574618322286316498976110377640), Fraction(-494972894663398912857991394574502489534036147, 1128951356590359405639816402284202305907658800), Fraction(-1226697250317478460712003930709332526442981917, 564475678295179702819908201142101152953829400), Fraction(-21575010650660891326095228329288222311754036269, 2257902713180718811279632804568404611815317600), Fraction(-7973213295301427897975284623100917369471080201, 188158559431726567606636067047367050984609800), Fraction(-971724466542208835565872868075607588281310200209008981, 6662894621511144247752170999560873253505596345121039504), Fraction(-1331576997558753683183349402705211559539970244644777579, 1110482436918524041292028499926812208917599390853506584), Fraction(-10040705407822257398704076608358783902975794970327858969, 1480643249224698721722704666569082945223465854471342112), Fraction(-64382579771536196552571869080206682311314702952482842387, 1850804061530873402153380833211353681529332318089177640), Fraction(2833987749611894510172701331460537419025972787147903, 19433086029599424126505746845265004439263655184307632), Fraction(174936865226850508170604105029268896275842451765195, 1079615890533301340361430380292500246625758621350424), Fraction(-2833997823710676623310643235896634879766475901144959, 2045588003115728855421657562659474151501437387821856), Fraction(-232702378758186111491330801710843625555333713676022773, 16194238357999520105421455704387503699386379320256360), Fraction(416612254001317443870199483913879393194239406678244322344398338841741, 952256605053545229049371342403208445105545986630508925758341044255408), Fraction(910374921256033686446166699671014714382306767708921239597583659576397, 476128302526772614524685671201604222552772993315254462879170522127704), Fraction(14303687251495725222639370420015294178018059120571565915628443997366441, 1904513210107090458098742684806416890211091973261017851516682088510816), Fraction(1517291519023245516375740602702710816066088545282615781606976131973995, 52903144725196957169409519022400469172530332590583829208796724680856), Fraction(54297353298822147675023301676702072703371184975544367589272939, 74464941778906560850407259872456645376891115203885822158915600), Fraction(1862049152484376496716261400381542330290081638778368703652209, 459660134437694820064242344891707687511673550641270507153800), Fraction(343883237415603216944794213319448077629627739270600990009184217, 16547764839757013522312724416101476750420247823085738257536800), Fraction(23289648368477827697342740460859984187858104117155591944674661, 217733747891539651609377952843440483558161155566917608651800)]",
+      "expected": "[Fraction(-797313240449637155343458227644852279269476328243, 1094875692397478405489541986743579798771332453168), Fraction(-1506953549771648092009596605122728278531076019435, 547437846198739202744770993371789899385666226584), Fraction(-23144799254729506172645891826071075362552180350599, 2189751384794956810979083973487159597542664906336), Fraction(-40249220556732096967463709240920441624057348974627, 912396410331232004574618322286316498976110377640), Fraction(-494972894663398912857991394574502489534036147, 1128951356590359405639816402284202305907658800), Fraction(-1226697250317478460712003930709332526442981917, 564475678295179702819908201142101152953829400), Fraction(-21575010650660891326095228329288222311754036269, 2257902713180718811279632804568404611815317600), Fraction(-7973213295301427897975284623100917369471080201, 188158559431726567606636067047367050984609800), Fraction(-971724466542208835565872868075607588281310200209008981, 6662894621511144247752170999560873253505596345121039504), Fraction(-1331576997558753683183349402705211559539970244644777579, 1110482436918524041292028499926812208917599390853506584), Fraction(-10040705407822257398704076608358783902975794970327858969, 1480643249224698721722704666569082945223465854471342112), Fraction(-64382579771536196552571869080206682311314702952482842387, 1850804061530873402153380833211353681529332318089177640), Fraction(2833987749611894510172701331460537419025972787147903, 19433086029599424126505746845265004439263655184307632), Fraction(174936865226850508170604105029268896275842451765195, 1079615890533301340361430380292500246625758621350424), Fraction(-2833997823710676623310643235896634879766475901144959, 2045588003115728855421657562659474151501437387821856), Fraction(-232702378758186111491330801710843625555333713676022773, 16194238357999520105421455704387503699386379320256360), Fraction(416612254001317443870199483913879393194239406678244322344398338841741, 952256605053545229049371342403208445105545986630508925758341044255408), Fraction(910374921256033686446166699671014714382306767708921239597583659576397, 476128302526772614524685671201604222552772993315254462879170522127704), Fraction(14303687251495725222639370420015294178018059120571565915628443997366441, 1904513210107090458098742684806416890211091973261017851516682088510816), Fraction(1517291519023245516375740602702710816066088545282615781606976131973995, 52903144725196957169409519022400469172530332590583829208796724680856), Fraction(54297353298822147675023301676702072703371184975544367589272939, 74464941778906560850407259872456645376891115203885822158915600), Fraction(1862049152484376496716261400381542330290081638778368703652209, 459660134437694820064242344891707687511673550641270507153800), Fraction(343883237415603216944794213319448077629627739270600990009184217, 16547764839757013522312724416101476750420247823085738257536800), Fraction(23289648368477827697342740460859984187858104117155591944674661, 217733747891539651609377952843440483558161155566917608651800)]",
+      "pass": true
+    },
+    {
+      "name": "ito_noise_N6",
+      "actual": "240/7",
+      "expected": "240/7",
+      "pass": true
+    },
+    {
+      "name": "response_over_pi_squared_(1, 0, 0, 0)",
+      "actual": "-4",
+      "expected": "-4",
+      "pass": true
+    },
+    {
+      "name": "response_over_pi_squared_(1, 2, 0, -1)",
+      "actual": "-4",
+      "expected": "-4",
+      "pass": true
+    },
+    {
+      "name": "response_over_pi_squared_(0, 0, 0, 3)",
+      "actual": "-4",
+      "expected": "-4",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_mmmm",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_mmmp",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_mmpm",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_mmpp",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_mpmm",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_mpmp",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_mppm",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_mppp",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_pmmm",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_pmmp",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_pmpm",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_pmpp",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_ppmm",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_ppmp",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_pppm",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "fixed_signal_inverse_pppp",
+      "actual": "[Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(1, 1)]",
+      "pass": true
+    },
+    {
+      "name": "survival_steps_0",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m0_power0",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m0_power1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m0_power2",
+      "actual": "1/3",
+      "expected": "1/3",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m0_power3",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m0_power4",
+      "actual": "1/5",
+      "expected": "1/5",
+      "pass": true
+    },
+    {
+      "name": "survival_steps_1",
+      "actual": "1/2",
+      "expected": "1/2",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m1_power0",
+      "actual": "1/2",
+      "expected": "1/2",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m1_power1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m1_power2",
+      "actual": "1/6",
+      "expected": "1/6",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m1_power3",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m1_power4",
+      "actual": "1/10",
+      "expected": "1/10",
+      "pass": true
+    },
+    {
+      "name": "survival_steps_2",
+      "actual": "1/4",
+      "expected": "1/4",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m2_power0",
+      "actual": "1/4",
+      "expected": "1/4",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m2_power1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m2_power2",
+      "actual": "1/12",
+      "expected": "1/12",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m2_power3",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m2_power4",
+      "actual": "1/20",
+      "expected": "1/20",
+      "pass": true
+    },
+    {
+      "name": "survival_steps_3",
+      "actual": "1/8",
+      "expected": "1/8",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m3_power0",
+      "actual": "1/8",
+      "expected": "1/8",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m3_power1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m3_power2",
+      "actual": "1/24",
+      "expected": "1/24",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m3_power3",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m3_power4",
+      "actual": "1/40",
+      "expected": "1/40",
+      "pass": true
+    },
+    {
+      "name": "survival_steps_4",
+      "actual": "1/16",
+      "expected": "1/16",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m4_power0",
+      "actual": "1/16",
+      "expected": "1/16",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m4_power1",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m4_power2",
+      "actual": "1/48",
+      "expected": "1/48",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m4_power3",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "survivor_haar_m4_power4",
+      "actual": "1/80",
+      "expected": "1/80",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00000",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00001",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00002",
+      "actual": "259/3072",
+      "expected": "1/3",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00010",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00011",
+      "actual": "67/1536",
+      "expected": "1/6",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00012",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00020",
+      "actual": "67/768",
+      "expected": "7/48",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00021",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00022",
+      "actual": "35663/3932160",
+      "expected": "17/240",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00100",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00101",
+      "actual": "19/768",
+      "expected": "1/12",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00102",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00110",
+      "actual": "19/384",
+      "expected": "7/96",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00111",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00112",
+      "actual": "11903/1966080",
+      "expected": "17/480",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00120",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00121",
+      "actual": "1941/327680",
+      "expected": "9/320",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00122",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00200",
+      "actual": "19/192",
+      "expected": "19/192",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00201",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00202",
+      "actual": "8863/983040",
+      "expected": "37/960",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00210",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00211",
+      "actual": "2783/491520",
+      "expected": "47/1920",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00212",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00220",
+      "actual": "2783/245760",
+      "expected": "323/15360",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_00221",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_00222",
+      "actual": "483269/352321536",
+      "expected": "251/21504",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01000",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01001",
+      "actual": "7/384",
+      "expected": "1/24",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01002",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01010",
+      "actual": "7/192",
+      "expected": "7/192",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01011",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01012",
+      "actual": "4523/983040",
+      "expected": "17/960",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01020",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01021",
+      "actual": "761/163840",
+      "expected": "9/640",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01022",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01100",
+      "actual": "7/96",
+      "expected": "19/384",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01101",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01102",
+      "actual": "3403/491520",
+      "expected": "37/1920",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01110",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01111",
+      "actual": "1163/245760",
+      "expected": "47/3840",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01112",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01120",
+      "actual": "1163/122880",
+      "expected": "323/30720",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01121",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01122",
+      "actual": "213601/176160768",
+      "expected": "251/43008",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01200",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01201",
+      "actual": "201/40960",
+      "expected": "29/2560",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01202",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01210",
+      "actual": "201/20480",
+      "expected": "201/20480",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01211",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01212",
+      "actual": "551797/440401920",
+      "expected": "2207/430080",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01220",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_01221",
+      "actual": "281653/220200960",
+      "expected": "3523/860160",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_01222",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02000",
+      "actual": "7/48",
+      "expected": "67/768",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02001",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02002",
+      "actual": "1041/81920",
+      "expected": "39/1280",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02010",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02011",
+      "actual": "883/122880",
+      "expected": "127/7680",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02012",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02020",
+      "actual": "883/61440",
+      "expected": "883/61440",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02021",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02022",
+      "actual": "718229/440401920",
+      "expected": "1053/143360",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02100",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02101",
+      "actual": "323/61440",
+      "expected": "167/15360",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02102",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02110",
+      "actual": "323/30720",
+      "expected": "1163/122880",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02111",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02112",
+      "actual": "296101/220200960",
+      "expected": "4111/860160",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02120",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02121",
+      "actual": "151397/110100480",
+      "expected": "6547/1720320",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02122",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02200",
+      "actual": "323/15360",
+      "expected": "2783/245760",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02201",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02202",
+      "actual": "74583/36700160",
+      "expected": "8339/1720320",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02210",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02211",
+      "actual": "15809/11010048",
+      "expected": "2323/688128",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_02212",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02220",
+      "actual": "15809/5505024",
+      "expected": "15809/5505024",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02221",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_02222",
+      "actual": "6375571/16911433728",
+      "expected": "27793/16515072",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10000",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10001",
+      "actual": "1/48",
+      "expected": "1/48",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10002",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10010",
+      "actual": "1/24",
+      "expected": "7/384",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10011",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10012",
+      "actual": "647/122880",
+      "expected": "17/1920",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10020",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10021",
+      "actual": "109/20480",
+      "expected": "9/1280",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10022",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10100",
+      "actual": "1/12",
+      "expected": "19/768",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10101",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10102",
+      "actual": "487/61440",
+      "expected": "37/3840",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10110",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10111",
+      "actual": "167/30720",
+      "expected": "47/7680",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10112",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10120",
+      "actual": "167/15360",
+      "expected": "323/61440",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10121",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10122",
+      "actual": "10257/7340032",
+      "expected": "251/86016",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10200",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10201",
+      "actual": "29/5120",
+      "expected": "29/5120",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10202",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10210",
+      "actual": "29/2560",
+      "expected": "201/40960",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10211",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10212",
+      "actual": "79823/55050240",
+      "expected": "2207/860160",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10220",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_10221",
+      "actual": "40847/27525120",
+      "expected": "3523/1720320",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_10222",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11000",
+      "actual": "1/6",
+      "expected": "67/1536",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11001",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11002",
+      "actual": "149/10240",
+      "expected": "39/2560",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11010",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11011",
+      "actual": "127/15360",
+      "expected": "127/15360",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11012",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11020",
+      "actual": "127/7680",
+      "expected": "883/122880",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11021",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11022",
+      "actual": "34597/18350080",
+      "expected": "1053/286720",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11100",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11101",
+      "actual": "47/7680",
+      "expected": "167/30720",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11102",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11110",
+      "actual": "47/3840",
+      "expected": "1163/245760",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11111",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11112",
+      "actual": "43199/27525120",
+      "expected": "4111/1720320",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11120",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11121",
+      "actual": "7381/4587520",
+      "expected": "6547/3440640",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11122",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11200",
+      "actual": "47/1920",
+      "expected": "2783/491520",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11201",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11202",
+      "actual": "32671/13762560",
+      "expected": "8339/3440640",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11210",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11211",
+      "actual": "2323/1376256",
+      "expected": "2323/1376256",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11212",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11220",
+      "actual": "2323/688128",
+      "expected": "15809/11010048",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_11221",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_11222",
+      "actual": "941491/2113929216",
+      "expected": "27793/33030144",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12000",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12001",
+      "actual": "9/1280",
+      "expected": "109/20480",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12002",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12010",
+      "actual": "9/640",
+      "expected": "761/163840",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12011",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12012",
+      "actual": "24691/13762560",
+      "expected": "7919/3440640",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12020",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12021",
+      "actual": "2519/1376256",
+      "expected": "2519/1376256",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12022",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12100",
+      "actual": "9/320",
+      "expected": "1941/327680",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12101",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12102",
+      "actual": "18643/6881280",
+      "expected": "16627/6881280",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12110",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12111",
+      "actual": "6547/3440640",
+      "expected": "7381/4587520",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12112",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12120",
+      "actual": "6547/1720320",
+      "expected": "151397/110100480",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12121",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12122",
+      "actual": "527935/1056964608",
+      "expected": "51889/66060288",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12200",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12201",
+      "actual": "3523/1720320",
+      "expected": "40847/27525120",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12202",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12210",
+      "actual": "3523/860160",
+      "expected": "281653/220200960",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12211",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12212",
+      "actual": "1406603/2642411520",
+      "expected": "456773/660602880",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_12220",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12221",
+      "actual": "730187/1321205760",
+      "expected": "730187/1321205760",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_12222",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20000",
+      "actual": "1/3",
+      "expected": "259/3072",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20001",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20002",
+      "actual": "437/15360",
+      "expected": "437/15360",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20010",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20011",
+      "actual": "39/2560",
+      "expected": "149/10240",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20012",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20020",
+      "actual": "39/1280",
+      "expected": "1041/81920",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20021",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20022",
+      "actual": "6029/1835008",
+      "expected": "2155/344064",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20100",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20101",
+      "actual": "37/3840",
+      "expected": "487/61440",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20102",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20110",
+      "actual": "37/1920",
+      "expected": "3403/491520",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20111",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20112",
+      "actual": "33203/13762560",
+      "expected": "3909/1146880",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20120",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20121",
+      "actual": "16627/6881280",
+      "expected": "18643/6881280",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20122",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20200",
+      "actual": "37/960",
+      "expected": "8863/983040",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20201",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20202",
+      "actual": "1661/458752",
+      "expected": "1661/458752",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20210",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20211",
+      "actual": "8339/3440640",
+      "expected": "32671/13762560",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20212",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20220",
+      "actual": "8339/1720320",
+      "expected": "74583/36700160",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_20221",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_20222",
+      "actual": "651541/1056964608",
+      "expected": "10855/9437184",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21000",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21001",
+      "actual": "17/1920",
+      "expected": "647/122880",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21002",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21010",
+      "actual": "17/960",
+      "expected": "4523/983040",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21011",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21012",
+      "actual": "3107/1376256",
+      "expected": "3107/1376256",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21020",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21021",
+      "actual": "7919/3440640",
+      "expected": "24691/13762560",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21022",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21100",
+      "actual": "17/480",
+      "expected": "11903/1966080",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21101",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21102",
+      "actual": "3909/1146880",
+      "expected": "33203/13762560",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21110",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21111",
+      "actual": "4111/1720320",
+      "expected": "43199/27525120",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21112",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21120",
+      "actual": "4111/860160",
+      "expected": "296101/220200960",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21121",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21122",
+      "actual": "331057/528482304",
+      "expected": "100081/132120576",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21200",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21201",
+      "actual": "2207/860160",
+      "expected": "79823/55050240",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21202",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21210",
+      "actual": "2207/430080",
+      "expected": "551797/440401920",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21211",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21212",
+      "actual": "880517/1321205760",
+      "expected": "880517/1321205760",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21220",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_21221",
+      "actual": "456773/660602880",
+      "expected": "1406603/2642411520",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_21222",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22000",
+      "actual": "17/240",
+      "expected": "35663/3932160",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22001",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22002",
+      "actual": "2155/344064",
+      "expected": "6029/1835008",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22010",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22011",
+      "actual": "1053/286720",
+      "expected": "34597/18350080",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22012",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22020",
+      "actual": "1053/143360",
+      "expected": "718229/440401920",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22021",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22022",
+      "actual": "227617/264241152",
+      "expected": "227617/264241152",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22100",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22101",
+      "actual": "251/86016",
+      "expected": "10257/7340032",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22102",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22110",
+      "actual": "251/43008",
+      "expected": "213601/176160768",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22111",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22112",
+      "actual": "100081/132120576",
+      "expected": "331057/528482304",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22120",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22121",
+      "actual": "51889/66060288",
+      "expected": "527935/1056964608",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22122",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22200",
+      "actual": "251/21504",
+      "expected": "483269/352321536",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22201",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22202",
+      "actual": "10855/9437184",
+      "expected": "651541/1056964608",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22210",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22211",
+      "actual": "27793/33030144",
+      "expected": "941491/2113929216",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22212",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22220",
+      "actual": "27793/16515072",
+      "expected": "6375571/16911433728",
+      "pass": false
+    },
+    {
+      "name": "path_cylinder_22221",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "path_cylinder_22222",
+      "actual": "210562439/930128855040",
+      "expected": "210562439/930128855040",
+      "pass": true
+    },
+    {
+      "name": "complex_endpoint_defect",
+      "actual": "1026144047/3538944000",
+      "expected": "1026144047/3538944000",
+      "pass": true
+    },
+    {
+      "name": "interior_domain_kill",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_00",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_01",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_02",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_03",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_10",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_11",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_12",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_13",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_20",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_21",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_22",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_23",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_30",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_31",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_32",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "reverse_increment_covariance_33",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    }
+  ]
+}

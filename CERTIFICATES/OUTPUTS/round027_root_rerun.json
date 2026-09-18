@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "fresh_code_only_directory": "/private/tmp/hocf-r027-duality-rerun-p22cd0_5",
+  "result_sha256": "2163e43251f1727a9018e4484091f884a318c1398c0cf69c32dd5122e421f704",
+  "assertions": 3771,
+  "categories": 17,
+  "mutations": 13,
+  "byte_identical": true
+}

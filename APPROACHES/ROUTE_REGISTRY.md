@@ -73,3 +73,6 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R26 whole acceptance. THM051 actual heat small-ball/Fourier route accepted through whole AUD073/074. R28 now pursues signed triple cancellation and the exact killed-attractive conditional representation in parallel, preserving fixed-data quantifiers.
+
+
+2026-09-18 UTC — R27 whole acceptance. THM052 dual route accepted after whole AUD075/AUD076; R28 now pursues an actual boundary-response estimate, separate marked exit law and actual triple cancellation. These ordinary constructions are not independent audits of one another.

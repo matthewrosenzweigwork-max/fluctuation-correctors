@@ -101,3 +101,6 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R26 whole acceptance. THM051 removes both two-label overlaps quantitatively. The exact signed three-distinct-label current/mixed correlation remains the first unresolved term; multiplying a coarse absolute estimate by its N-size prefactor does not close it.
+
+
+2026-09-18 UTC — R27 whole acceptance. THM052 leaves the fixed-T rare-survival initial/current correlation unresolved. Unconditional auxiliary Haar estimates cannot be multiplied by a presumed bounded conditioning factor: the exact factor grows as exp[c(N-1)T].

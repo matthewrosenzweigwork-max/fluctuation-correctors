@@ -75,3 +75,6 @@ THM045 disproves sufficiency of the specified static energy/Haar/separation inpu
 
 
 R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE_INTEGRATION.md. THM048's auxiliary initial-energy clipping and time-zero conditional isometry establish squared UI without altering dynamics or squaring instantaneous source; full THM049 converts the original L1 target to the actual signed modal correlation cancellation using degree10 L1 Fourier domination. Neither original cancellation nor its positive-limsup negation is proved. The dependence uses exact R4/R6/R10/R16 sources, with both fresh whole AUD069/070 passes and no pair-inverse/THM047 premise. No prior immutable statement is rewritten.
+
+
+2026-09-18 UTC — R27 whole acceptance. THM052 auxiliary exact survivor Haar law follows from a killed dynamic dual, not an assumed equilibrium closure. Its full path reversal is conditioned on the exponentially rare survival event and does not transfer arbitrary static Haar estimates to the original positive-time law.

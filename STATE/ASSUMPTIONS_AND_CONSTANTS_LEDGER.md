@@ -109,3 +109,6 @@ R23 constants a,c>0 and m0 are fixed before m; all sufficiently large integer gr
 
 
 2026-09-18 UTC — R26 whole acceptance. THM051 constants retain fixed mode/horizon and positive finite critical-window endpoints. Auxiliary pair statements cover every finite positive diffusivity. Quantitative mixed decay is stated only in the specified critical window. N=2 triple contribution is exactly zero.
+
+
+2026-09-18 UTC — R27 whole acceptance. THM052 holds for every finite N>=2, nu>0 and finite horizon, bounded Borel real/complex tests. Current conditional Haar and lifetime Exp(c(N-1)) require iid-Haar initial preparation. The reciprocal survival exp[c(N-1)T] is exact and not uniformly bounded.

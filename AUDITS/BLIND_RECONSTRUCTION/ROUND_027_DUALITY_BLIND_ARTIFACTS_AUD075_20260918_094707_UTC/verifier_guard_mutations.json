@@ -1,0 +1,101 @@
+[
+  {
+    "mutant": "changed_payload",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "changed_payload",
+      "reason": "SHA-256 mismatch: a.txt"
+    },
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "missing_payload",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "missing_payload",
+      "reason": "inventory names differ; missing=['a.txt'] extra=[]"
+    },
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "extra_payload",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "extra_payload",
+      "reason": "inventory names differ; missing=[] extra=['extra']"
+    },
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "unsafe_path",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "unsafe_path",
+      "reason": "unsafe member name: ../escape"
+    },
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "archive_link",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "archive_link",
+      "reason": "archive member is not an ordinary regular file: packet/a.txt"
+    },
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "archive_duplicate",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "archive_duplicate",
+      "reason": "duplicate archive member: a.txt"
+    },
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "archive_unsafe",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "archive_unsafe",
+      "reason": "unsafe member name: ../escape"
+    },
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "archive_changed",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "archive_changed",
+      "reason": "SHA-256 mismatch: a.txt"
+    },
+    "stderr": "",
+    "detected": true
+  },
+  {
+    "mutant": "archive_missing",
+    "returncode": 1,
+    "stdout": {
+      "status": "FAIL",
+      "guard_mutant": "archive_missing",
+      "reason": "inventory names differ; missing=['a.txt'] extra=[]"
+    },
+    "stderr": "",
+    "detected": true
+  }
+]

@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\newcommand{\E}{\mathbb E}
+\begin{document}
+\begin{center}
+{\large An exact killed attractive dual of the Coulomb flow}\\[4pt]
+HOCF--RIESZ, Round 027 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Status.} THM052 has passed both complete fresh audit axes and root comparison. The original critical source assertion remains open.
+
+Fix $N\ge2$ and $0<\nu<\infty$. Let $\Omega\subset(\mathbb T^4)^N$ be the collision-free configuration space, with unit product Haar measure $dx$. For the coefficient-one periodic Coulomb kernel,
+\[
+ \widehat g(m)=|m|^{-2}\ (m\ne0),\quad\widehat g(0)=0,\qquad
+ H(x)=\frac1N\sum_{i<j}g(x_i-x_j),\quad c=4\pi^2,\quad\kappa=c(N-1).
+\]
+On $\Omega$, $\Delta H=\kappa$. The full distributional identity retains the collision atom; it is not used as a pointwise identity there. The original process and an explicitly auxiliary process solve
+\[
+ dX=-\nabla H(X)dt+\sqrt{2\nu}\,dW,\qquad
+ dY=+\nabla H(Y)dt+\sqrt{2\nu}\,dW.
+\]
+The original process is conservative. The auxiliary process is killed at its maximal lifetime $\zeta$ in $\Omega$, with no entrance rule at collision. Define
+\[
+ P_th(x)=\E_xh(X_t),\qquad Q_tf(x)=\E_x[f(Y_t)\mathbf1_{\{t<\zeta\}}].
+\]
+
+\noindent\textbf{Accepted statement.}
+For bounded nonnegative measurable $f,h$, every $t\ge0$ satisfies
+\[
+ \int fP_th\,dx=e^{\kappa t}\int hQ_tf\,dx.\tag{1}
+\]
+The identity extends to bounded signed or complex tests by linearity. From iid Haar, the actual repulsive density at time $t$ is $e^{\kappa t}Q_t1$, hence bounded by $e^{\kappa t}$. In the auxiliary attractive process,
+\[
+ \E_{\rm Haar}[f(Y_t)\mathbf1_{\{t<\zeta\}}]
+   =e^{-\kappa t}\int f\,dx,\qquad
+ \mathbb P_{\rm Haar}(\zeta>t)=e^{-\kappa t}.\tag{2}
+\]
+Thus this lifetime has an exact exponential distribution, and its current configuration conditional on survival is product Haar. These statements are for the specified initial law; the point-start survival probability need not be constant.
+
+For each finite $T\ge0$, the complete original path law equals
+\[
+ \mathcal L_{\rm Haar}((X_t)_{0\le t\le T})
+ =\mathcal L_{\rm Haar}((Y_{T-t})_{0\le t\le T}\mid\zeta>T),\tag{3}
+\]
+as probability measures on $C([0,T],(\mathbb T^4)^N)$ with the uniform topology. This does not make the original positive-time law product Haar.
+
+\newpage
+\noindent\textbf{Construction and finite-domain identity.}
+Locally $g(z)=|z|^{-2}$ plus a smooth even remainder. Therefore $H$ is bounded below and diverges at every partial collision. Local Lipschitz equations construct both paths up to compact exits, with measurable, unique restart. For the original path, stopped It\^o calculus gives
+\[
+ dH(X_t)=\{-|\nabla H(X_t)|^2+\nu\kappa\}dt
+                   +\sqrt{2\nu}\nabla H(X_t)\cdot dW_t.
+\]
+The shifted energy is a nonnegative barrier; its expected stopped value bounds the probability of reaching height $R$ by $C_{x,\nu,T}/R$. Letting $R$ increase proves noncollision and conservativity. No such conservativity is assumed for the auxiliary process.
+
+Use increasing domains $D_L=\{\min_{i<j}\operatorname{dist}(x_i,x_j)>1/L\}$, whose closures lie in $\Omega$. Extend the two drifts smoothly and boundedly near each closure, and kill upon exiting $D_L$. Boundary corners cause no difficulty in the path argument below. All following bounds are at fixed $L,N,\nu$.
+
+Write $D=D_L$ and let $B$ be torus Brownian motion with generator $\nu\Delta$. On paths remaining in $D$,
+\[
+ \int_0^t\nabla H(B_s)\cdot dB_s=H(B_t)-H(B_0)-\nu\kappa t.
+\]
+For a bounded drift $b$, the Girsanov density is
+\[
+ \exp\left\{\frac1{2\nu}\int_0^t b(B_s)\cdot dB_s
+                  -\frac1{4\nu}\int_0^t|b(B_s)|^2ds\right\}.
+\]
+Its martingale condition holds because the drift extension is bounded. Set
+\[
+ V=\frac{|\nabla H|^2}{4\nu},\qquad
+ K_t^Dv(x)=\E_x^B\!\left[\mathbf1_{\{\tau_D>t\}}
+             e^{-\int_0^tV(B_s)ds}v(B_t)\right].
+\]
+Stationary torus Brownian motion is reversible by its symmetric heat densities. The event of staying in $D$ and the time integral of $V$ are invariant under reversal, so $K_t^D$ is Haar symmetric. Bounded-domain Girsanov then gives
+\[
+ P_t^Dh=e^{H/(2\nu)+\kappa t/2}K_t^D(e^{-H/(2\nu)}h),\qquad
+ Q_t^Df=e^{-H/(2\nu)-\kappa t/2}K_t^D(e^{H/(2\nu)}f).
+\]
+All multipliers are bounded on this fixed domain. Symmetry gives (1) for the killed-domain semigroups. Increasing-domain killed expectations are monotone for nonnegative tests. Their limits are respectively the conservative original semigroup and the minimal attractive semigroup killed at $\zeta$. Monotone convergence gives (1) on $\Omega$, with no formal collision boundary integration or uniform exponential-energy estimate. Setting $f=1$ gives the density; setting $h=1$ gives (2).
+
+\newpage
+\noindent\textbf{Full path identification.}
+For $0=t_0<\cdots<t_m=T$ and bounded nonnegative $h_j$, repeated transposition by (1) yields
+\[
+ \begin{split}
+ &\int h_0P_{t_1-t_0}\bigl(h_1P_{t_2-t_1}(\cdots h_m)\bigr)dx\\
+ &\qquad=e^{\kappa T}\int h_mQ_{t_m-t_{m-1}}
+                   \bigl(h_{m-1}Q_{t_{m-1}-t_{m-2}}(\cdots h_0)\bigr)dx.
+ \end{split}
+\]
+The right side is exactly the attractive reversed cylinder expectation with survival indicator, divided by its survival probability. On survival beyond $T$ the path is continuous. Rational-time evaluations generate the Borel sigma-field of the uniform continuous-path space, so equality of these cylinders proves (3) as an equality of full path laws. No additional tightness argument or endpoint-only inference is used; $T=0$ is the initial-law identity.
+
+The independent reconstruction also proves (3) directly: at a fixed continuous driving path, the repulsive endpoint flow has Jacobian $e^{-\kappa T}$, and its inverse is the attractive flow driven by reversed increments on the corresponding surviving sets. Change of variables and Wiener reversal give the same full path identity.
+
+\noindent\textbf{Exact defect and the unresolved limit.}
+For every bounded complex configuration observable $F$ and $A\in\mathbb C$, (3) gives
+\[
+ \E_{\rm rep}|F(X_T)-AF(X_0)|^2
+ =\E_{\rm att}\bigl[|F(Y_0)-AF(Y_T)|^2\mid\zeta>T\bigr].\tag{4}
+\]
+Bounded measurable $F$ also follows directly from the endpoint kernel identity. For fixed nonzero $k$, take
+\[
+ F(x)=\frac1N\sum_i e^{2\pi i k\cdot x_i},\qquad
+ A=e^{-(c+\nu c|k|^2)T}.
+\]
+Multiplying (4) by $N$ gives the identical modal endpoint defect used in THM049. Along $\beta_N/\sqrt N\to\lambda\in(0,\infty)$, with $\nu_N=\beta_N^{-1}$, its vanishing and positive-limsup alternatives therefore agree exactly with those of the conditional attractive expression. The conditioning probability is $e^{-c(N-1)T}$; it cannot be dropped from an estimate. No decay rate, positive-limsup witness, endpoint independence, original product law, or new fluctuation theorem follows from this representation alone.
+\end{document}

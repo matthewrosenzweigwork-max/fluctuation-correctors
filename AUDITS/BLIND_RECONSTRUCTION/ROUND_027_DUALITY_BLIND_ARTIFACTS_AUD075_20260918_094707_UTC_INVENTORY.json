@@ -1,0 +1,247 @@
+{
+  "schema": "AUD075-inventory-v1",
+  "packet": "ROUND_027_DUALITY_BLIND_ARTIFACTS_AUD075_20260918_094707_UTC",
+  "scope": "Every regular member of the complete packet and archive; no omitted self-seals.",
+  "files": [
+    {
+      "path": "EXECUTION_HISTORY.md",
+      "bytes": 4548,
+      "sha256": "dd3e1212cf4f9c1b5a513fa84b5d66fcd3eb8efc17c7c12e74f19fdc8d37a994",
+      "mode": "0444"
+    },
+    {
+      "path": "FROZEN_INPUT_SHA256SUMS.txt",
+      "bytes": 820,
+      "sha256": "b17212999d66d854b4c0b15a5fcc3e1d07ab579224639a2d5048155b5e1eefd8",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUTS/AGENTS.md",
+      "bytes": 8174,
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_001_ALGEBRA.md",
+      "bytes": 30796,
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "bytes": 36096,
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "bytes": 37944,
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUTS/MODEL_ORCHESTRATION.md",
+      "bytes": 4350,
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUTS/TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "bytes": 5031,
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUTS/TASKS/ACTIVE/TASK-117_ROUND027_DUALITY_BLIND.md",
+      "bytes": 2568,
+      "sha256": "9425649c574b9fafd04406057aed668259d8c53faf02b427d404aa413e80d433",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUTS/THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md",
+      "bytes": 3271,
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309",
+      "mode": "0444"
+    },
+    {
+      "path": "INPUT_INVENTORY.json",
+      "bytes": 1290,
+      "sha256": "78b6f97836fdec8b903f75b11ca89f5d1ce10db59bd0f3ce5479096e74fc39a2",
+      "mode": "0444"
+    },
+    {
+      "path": "PAYLOAD_INVENTORY.json",
+      "bytes": 7458,
+      "sha256": "088b3e2f19e629f3916258a20746c713c13c2f8bc62a3887260a6ba20e65f05d",
+      "mode": "0444"
+    },
+    {
+      "path": "PAYLOAD_SHA256SUMS.txt",
+      "bytes": 3721,
+      "sha256": "684a427efcfcfc4867088c63cdb0057c05afeb5fb1e306deb652a594ba1a05fe",
+      "mode": "0444"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3459,
+      "sha256": "e0bbf2de4b7d3ec3c01fe0d57bd14128348e82bbf008b288689c77b02c842971",
+      "mode": "0444"
+    },
+    {
+      "path": "ROUND_027_DUALITY_RECONSTRUCTION.md",
+      "bytes": 30773,
+      "sha256": "805aca97bf9a60b4dbb5a1f1d53d47dd0809a18c2e03d8524c394406dfd5e435",
+      "mode": "0444"
+    },
+    {
+      "path": "SOURCE_EXPOSURE_HISTORY.md",
+      "bytes": 6152,
+      "sha256": "1e82a83187216d296de1c023954616010765c4307cf5597bf6a3c72fc1d349dc",
+      "mode": "0444"
+    },
+    {
+      "path": "VERIFICATION_RESULTS.json",
+      "bytes": 4586,
+      "sha256": "63572372d0b1a8786f992b245e34d974b7183f39b0d0da924f65f2fabb80433b",
+      "mode": "0444"
+    },
+    {
+      "path": "diagnostic_baseline.json",
+      "bytes": 50251,
+      "sha256": "94bed4161737305cf72fecefb67d4424386ab88e04d0440c2007266f07519e84",
+      "mode": "0444"
+    },
+    {
+      "path": "diagnostics.py",
+      "bytes": 6872,
+      "sha256": "af9b0ed9801c54fdcf2b85eb8848174e9ad560d4296613f9e82234b62d2f5652",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_atom_deleted.json",
+      "bytes": 50251,
+      "sha256": "9b9a9eee672625ee382b0ee0a62270a00a125e3b5d4bcf3760d874b4ef450dee",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_atom_deleted.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_drop_conditioning.json",
+      "bytes": 50262,
+      "sha256": "39c24e7fdde7063dc6088786eb8524a70ec391b203c26f4d315903823605453b",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_drop_conditioning.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_endpoint_only_kill.json",
+      "bytes": 50262,
+      "sha256": "e41556045582a8db818b801adc723e81fcba79ab3a61be9d42eb985895ef370a",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_endpoint_only_kill.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_endpoint_orientation.json",
+      "bytes": 50264,
+      "sha256": "810052e7aef10b0ca1dbe718b28683b9ef132eade1838de17a8e4d04e15395fa",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_endpoint_orientation.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_fourier_response_sign.json",
+      "bytes": 50264,
+      "sha256": "b4ebb534b90779c4a1f5d07b1d7e86c5784e409bda99f51ea0f28af5e057e646",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_fourier_response_sign.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_noise_half.json",
+      "bytes": 50255,
+      "sha256": "94e855b26064037c5a6b0f6c15a8551ad9655b60af0328d92c3dfdc188692ca1",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_noise_half.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_pair_half.json",
+      "bytes": 50257,
+      "sha256": "9154317e6914729c42c7f9fff0e071bd8826a0730aaaea30253282e7b51dd025",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_pair_half.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_path_order.json",
+      "bytes": 50359,
+      "sha256": "115be264f3aee7472b408e93cbd68a9f9241087c604b3343f50eec8054b54f02",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_path_order.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_reverse_noise_sign.json",
+      "bytes": 50292,
+      "sha256": "2e1de296a18fc156221d815f900acfcf24aaae5eca1bd65f0c9223aefa30b0d2",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_reverse_noise_sign.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "mutation_summary.json",
+      "bytes": 1302,
+      "sha256": "c42f85c13b79fbfd9b3307f9d3105076eb78e015858c56515df48c6fbe8b6533",
+      "mode": "0444"
+    },
+    {
+      "path": "verifier_guard_mutations.json",
+      "bytes": 2213,
+      "sha256": "25f9fb426234733ab51323d36e716bf5238e4ef68bf3a767214e038c8705c9f4",
+      "mode": "0444"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 10971,
+      "sha256": "8f6fb709beab0dffc19b20dd07c8136289f8974af3cadbe01161d6269519f261",
+      "mode": "0444"
+    }
+  ]
+}

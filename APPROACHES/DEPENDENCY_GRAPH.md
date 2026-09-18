@@ -60,3 +60,6 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R26 whole acceptance. THM048 + THM049 + THM051 => original fixed-smooth-test critical L1 target iff the specified signed three-label integral tends to zero for every fixed mode. No converse failure witness or vanishing is proved. THM052 still awaits complete root gate.
+
+
+2026-09-18 UTC — R27 whole acceptance. THM052 + accepted THM048/049 give exact equivalence of original critical source decay and the N-scaled survival-conditioned attractive endpoint defect. This does not supply the estimate. New THM053 marked collision flux remains OPEN pending its own whole fresh gates.

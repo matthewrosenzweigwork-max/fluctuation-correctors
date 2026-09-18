@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "61943721974ebbd90bbc3b9b281b8c61cb9cf1f79e86340fdee1bf70558474b6",
+  "input_count": 10,
+  "issued_utc": "2026-09-18T09:38:25.085670+00:00",
+  "manifest_sha256": "01c4bcb7f55528ec31a613c9b11ebf0734c5798ba7cd997f303e01bb7f7040e2",
+  "member_count": 20,
+  "report_sha256": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc",
+  "status": "SELF_CHECKED_ONLY"
+}

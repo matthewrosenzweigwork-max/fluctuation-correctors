@@ -1,0 +1,8 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "AUDITS/HOSTILE/ROUND_027_DUALITY_HOSTILE_ARTIFACTS_20260918_094638_UTC/DIAGNOSTICS/fresh_exact_diagnostic.py"
+  ],
+  "returncode": 0
+}

@@ -133,3 +133,6 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R26 whole acceptance. THM051 actual pair estimates hold uniformly in deterministic time and finite diffusivity. Positive heat representation gives small-ball C(R^4+1/N), truncated source square C[1+log(1/r)+1/(Nr^2)], and truncation error C(r+1/(Nr)). These do not assert pathwise minimum separation.
+
+
+2026-09-18 UTC — R27 whole acceptance. THM052 uses collision-free bounded domains, then monotone nonnegative killed expectations. It takes no uniform N or domain bound on exponential-energy multipliers and performs no formal integration across the collision diagonal. Exact equality-time survival convention retained.

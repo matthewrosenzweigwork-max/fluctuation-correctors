@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "ed58f75033897e9a7f4e80b847aea46a92cf5c1b57894bb6f7714f76d40cb17e",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-B",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r027-duality-hostile/AUDITS/HOSTILE/ROUND_027_DUALITY_HOSTILE_ARTIFACTS_20260918_094638_UTC/verify_readonly.py",
+    "--pre-receipt"
+  ],
+  "returncode": 0,
+  "seal_sha256": "18c43485ae45d0ce27709afdeda3ff1a3ed03612babbd6b81a9934547f6a6c58",
+  "stderr": "",
+  "stdout": "{\n  \"archive_sha256\": \"ed58f75033897e9a7f4e80b847aea46a92cf5c1b57894bb6f7714f76d40cb17e\",\n  \"diagnostic_byte_replay\": \"PASS\",\n  \"diagnostic_checks\": 1239,\n  \"exact_inputs\": 11,\n  \"nonzero_mutations\": 14,\n  \"packet_name\": \"ROUND_027_DUALITY_HOSTILE_ARTIFACTS_20260918_094638_UTC\",\n  \"phase\": \"pre-receipt\",\n  \"read_only_permissions\": \"PASS\",\n  \"regular_archive_members\": 23,\n  \"regular_packet_files\": 23,\n  \"report_sha256\": \"1a7c182d0434bbf7ad847b3fa140b604aacc11abe5a90e2d8a90d39c701392d2\",\n  \"seal_sha256\": \"18c43485ae45d0ce27709afdeda3ff1a3ed03612babbd6b81a9934547f6a6c58\",\n  \"status\": \"PASS\",\n  \"unsafe_archive_members\": 0\n}\n"
+}

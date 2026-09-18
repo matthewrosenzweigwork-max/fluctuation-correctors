@@ -122,3 +122,6 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R26 whole acceptance. THM051 retains the actual singular flow, exact smooth heat cutoff of the kernel and all-frequency coefficient bound with r/8 heat scale. No replacement Gibbs, static or mollified flow enters the signed overlap reduction.
+
+
+2026-09-18 UTC — R27 whole acceptance. Exact Haar bilinear adjoint P_t*=exp[kappa t]Q_t, kappa=c(N-1), with Q minimal killed attractive semigroup. Fixed-domain Girsanov and symmetric Brownian killing, followed by monotone exhaustion with strict t<zeta, justify the actual domains. Independent flow Jacobian gives the same full path law.

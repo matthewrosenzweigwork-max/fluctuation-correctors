@@ -1,0 +1,136 @@
+{
+  "archive": {
+    "name": "ROUND_027_DUALITY_HOSTILE_ARTIFACTS_20260918_094638_UTC.tar.gz",
+    "regular_member_count": 23,
+    "sha256": "ed58f75033897e9a7f4e80b847aea46a92cf5c1b57894bb6f7714f76d40cb17e",
+    "size": 83432
+  },
+  "files": [
+    {
+      "path": "DIAGNOSTICS/fresh_exact_diagnostic.py",
+      "sha256": "83c4529a4b6af801b304af790b2ff06f3d5bfc7be959621aed3fac0ad5aa3b59",
+      "size": 11067
+    },
+    {
+      "path": "DIAGNOSTICS/run_001.status.json",
+      "sha256": "fae5e647ef45354ccd321ff72f0932f49b25ac0f6cedaf7db2d52b47e89fd6d8",
+      "size": 182
+    },
+    {
+      "path": "DIAGNOSTICS/run_001.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "DIAGNOSTICS/run_001.stdout.json",
+      "sha256": "fef2fea6f2677cc106dec1bad9fb35d81a3edf77a1e1ee75581e14c9fc1402bc",
+      "size": 92622
+    },
+    {
+      "path": "INPUTS/AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "size": 8174
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "size": 30796
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "size": 36096
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "size": 37944
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_027_KILLED_ATTRACTIVE_DUALITY.md",
+      "sha256": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc",
+      "size": 12467
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_027_KILLED_DUALITY_ARTIFACTS/CLAIM_CARD.md",
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309",
+      "size": 3271
+    },
+    {
+      "path": "INPUTS/MEMORANDA/ROUND_027_KILLED_DUALITY_ARTIFACTS/EXPOSURE_AND_SOURCES.md",
+      "sha256": "829cb85967ceb37f2fb20bfdd0f4d0b063d246c35b94041e6a1cb4e2227abc0e",
+      "size": 2291
+    },
+    {
+      "path": "INPUTS/MODEL_ORCHESTRATION.md",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "size": 4350
+    },
+    {
+      "path": "INPUTS/TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "size": 5031
+    },
+    {
+      "path": "INPUTS/TASKS/ACTIVE/TASK-118_ROUND027_DUALITY_HOSTILE.md",
+      "sha256": "da3cb1f8fd2ed3c3001ea76a64ea720cf65885b1c22bc548e91db1c57c93cb33",
+      "size": 2646
+    },
+    {
+      "path": "INPUTS/THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md",
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309",
+      "size": 3271
+    },
+    {
+      "path": "INPUT_SHA256SUMS.txt",
+      "sha256": "a9e39b2803ecb9871d62b4ba123963353247511b1c42d14277726db99b201d1d",
+      "size": 1197
+    },
+    {
+      "path": "INPUT_VERIFICATION.json",
+      "sha256": "4b7bbbcadd3fae6b919fce94143cb4e7e546b4045bac42caba4be99ca0827a2c",
+      "size": 2688
+    },
+    {
+      "path": "INVENTORY.json",
+      "sha256": "bf5ccbfd14cbf1cdfeb56ee520245253f648130393aad9e764f20b94105099b2",
+      "size": 3852
+    },
+    {
+      "path": "README.md",
+      "sha256": "dcfcfb267a529f4535232b91ead9de3adc4c5bcae9eab82428f80c5ab13d9cea",
+      "size": 4149
+    },
+    {
+      "path": "READ_EXPOSURE_HISTORY.md",
+      "sha256": "9c48b806d55fcb344e74a6ccd69ec9fade70e6078a7e37b2792b5cbc8544fdf7",
+      "size": 12872
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "1a7c182d0434bbf7ad847b3fa140b604aacc11abe5a90e2d8a90d39c701392d2",
+      "size": 28529
+    },
+    {
+      "path": "assemble_and_seal.py",
+      "sha256": "7b54d4b6128e96137a93ebe20a94b216dae7bf5b8d02f969db54d2d0b037ab81",
+      "size": 5547
+    },
+    {
+      "path": "verify_readonly.py",
+      "sha256": "ae824fea60c0cf91a4ecd79d8852cd67070209af3c34a2bfada000ccae6dadb4",
+      "size": 9986
+    }
+  ],
+  "input_count": 11,
+  "input_manifest_sha256": "a9e39b2803ecb9871d62b4ba123963353247511b1c42d14277726db99b201d1d",
+  "issued_utc": "2026-09-18T10:03:45.208777+00:00",
+  "packet_name": "ROUND_027_DUALITY_HOSTILE_ARTIFACTS_20260918_094638_UTC",
+  "report": {
+    "name": "ROUND_027_DUALITY_REVIEW.md",
+    "sha256": "1a7c182d0434bbf7ad847b3fa140b604aacc11abe5a90e2d8a90d39c701392d2",
+    "size": 28529
+  },
+  "schema": "AUD076-READONLY-EVIDENCE-1",
+  "scope": "Hostile-axis evidence only; no gate promotion or modal decay claim."
+}

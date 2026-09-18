@@ -118,3 +118,6 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R26 whole acceptance. THM051 mixed two-label bound uses actual full-force displacement/energy action and the true tagged noise. It supplies no instantaneous untruncated source square and no estimate of the signed triple term.
+
+
+2026-09-18 UTC — R27 whole acceptance. THM052 retains covariance 2nu, Girsanov coefficient 1/(2nu), complete force-square penalty 1/(4nu), and stopped true energy martingale. No stopped martingale is simply conditioned on a future rare survival event to infer mean zero.

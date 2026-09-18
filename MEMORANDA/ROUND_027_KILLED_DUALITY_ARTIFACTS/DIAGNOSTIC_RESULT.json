@@ -1,0 +1,138 @@
+{
+  "arithmetic": "exact Fraction",
+  "assertions": 3771,
+  "categories": {
+    "Feynman_Kac_force_square_coefficient": 120,
+    "Girsanov_Ito_divergence_half": 120,
+    "P_conservative": 3,
+    "Q_subMarkov": 3,
+    "actual_density_from_survival": 18,
+    "all_mutations_nonzero": 1,
+    "bounded_domain_conjugation": 54,
+    "conditional_endpoint_defect_orientation": 48,
+    "entire_discrete_path_reversal": 3276,
+    "exact_survival_normalization": 6,
+    "killed_Haar_left_eigenmeasure": 3,
+    "killed_generator_left_eigenmeasure": 3,
+    "killed_generator_nonpositive_row_sum": 3,
+    "semigroup_adjoint_factor": 54,
+    "survival_depends_on_start": 1,
+    "surviving_terminal_Haar": 18,
+    "two_coordinate_Coulomb_laplacian": 40
+  },
+  "dependencies": "Python standard library",
+  "mutation_count": 13,
+  "mutations": {
+    "drop_exponential_factor": {
+      "correct": "1/2",
+      "mutated": "1/4"
+    },
+    "mistake_repulsive_law_for_Haar": {
+      "correct": "7/8",
+      "mutated": "1"
+    },
+    "omit_Girsanov_quadratic_half": {
+      "correct": "11/4",
+      "mutated": "11/2"
+    },
+    "omit_pair_coordinate_two": {
+      "correct": "1",
+      "mutated": "1/2"
+    },
+    "omit_path_reversal": {
+      "correct": "1/9",
+      "mutated": "1/12"
+    },
+    "one_step_normalization_for_long_path": {
+      "correct": "1/12",
+      "mutated": "1/24"
+    },
+    "pretend_attractive_conservative": {
+      "correct": "7/16",
+      "mutated": "1"
+    },
+    "pretend_pointwise_survival_constant": {
+      "correct": "7/16",
+      "mutated": "1/2"
+    },
+    "reverse_exponential_sign": {
+      "correct": "1/2",
+      "mutated": "1/8"
+    },
+    "reverse_response_orientation": {
+      "correct": "109/72",
+      "mutated": "5/3"
+    },
+    "use_half_divergence_exponent": {
+      "correct": "3/101",
+      "mutated": "2/101"
+    },
+    "use_noise_variance_nu": {
+      "correct": "1/2",
+      "mutated": "1/4"
+    },
+    "wrong_potential_weight_direction": {
+      "correct": "3/404",
+      "mutated": "3/101"
+    }
+  },
+  "observations": [
+    {
+      "actual_density": [
+        "7/8",
+        "29/24",
+        "11/12"
+      ],
+      "steps": 1,
+      "survival": "1/2"
+    },
+    {
+      "actual_density": [
+        "41/48",
+        "119/96",
+        "29/32"
+      ],
+      "steps": 2,
+      "survival": "1/4"
+    },
+    {
+      "actual_density": [
+        "653/768",
+        "2867/2304",
+        "1043/1152"
+      ],
+      "steps": 3,
+      "survival": "1/8"
+    },
+    {
+      "actual_density": [
+        "1957/2304",
+        "1275/1024",
+        "8345/9216"
+      ],
+      "steps": 4,
+      "survival": "1/16"
+    },
+    {
+      "actual_density": [
+        "20869/24576",
+        "275429/221184",
+        "100151/110592"
+      ],
+      "steps": 5,
+      "survival": "1/32"
+    },
+    {
+      "actual_density": [
+        "375611/442368",
+        "1101739/884736",
+        "801247/884736"
+      ],
+      "steps": 6,
+      "survival": "1/64"
+    }
+  ],
+  "scope": "Finite sub-Markov and coefficient diagnostics only. No singular process simulation, proof of lifetime law by computation, or critical cancellation.",
+  "seed": null,
+  "status": "PASS"
+}

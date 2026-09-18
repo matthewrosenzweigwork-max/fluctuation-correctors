@@ -1,0 +1,191 @@
+{
+  "status": "PRESEAL_CHECKS_PASS",
+  "frozen_inputs_verified": 8,
+  "baseline": {
+    "returncode": 0,
+    "checks": 322,
+    "failed_count": 0
+  },
+  "semantic_mutations": [
+    {
+      "mutant": "pair_half",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 4,
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "atom_deleted",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 4,
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "noise_half",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 4,
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "reverse_noise_sign",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 16,
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "endpoint_orientation",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 1,
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "drop_conditioning",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 1,
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "endpoint_only_kill",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 1,
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "fourier_response_sign",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 3,
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "path_order",
+      "returncode": 1,
+      "checks": 322,
+      "failed_count": 104,
+      "stderr": "",
+      "detected": true
+    }
+  ],
+  "synthetic_guard_mutations": [
+    {
+      "mutant": "changed_payload",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "changed_payload",
+        "reason": "SHA-256 mismatch: a.txt"
+      },
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "missing_payload",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "missing_payload",
+        "reason": "inventory names differ; missing=['a.txt'] extra=[]"
+      },
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "extra_payload",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "extra_payload",
+        "reason": "inventory names differ; missing=[] extra=['extra']"
+      },
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "unsafe_path",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "unsafe_path",
+        "reason": "unsafe member name: ../escape"
+      },
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "archive_link",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "archive_link",
+        "reason": "archive member is not an ordinary regular file: packet/a.txt"
+      },
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "archive_duplicate",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "archive_duplicate",
+        "reason": "duplicate archive member: a.txt"
+      },
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "archive_unsafe",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "archive_unsafe",
+        "reason": "unsafe member name: ../escape"
+      },
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "archive_changed",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "archive_changed",
+        "reason": "SHA-256 mismatch: a.txt"
+      },
+      "stderr": "",
+      "detected": true
+    },
+    {
+      "mutant": "archive_missing",
+      "returncode": 1,
+      "stdout": {
+        "status": "FAIL",
+        "guard_mutant": "archive_missing",
+        "reason": "inventory names differ; missing=['a.txt'] extra=[]"
+      },
+      "stderr": "",
+      "detected": true
+    }
+  ],
+  "final_strict_verification": "Named sibling VERIFICATION.json records post-seal complete archive/source/read-only rerun; not inserted into the archive to avoid self-reference.",
+  "limitations": [
+    "Exact tests are supporting checks, not a proof of singular domain passage.",
+    "THM049 source text is outside the allowed input boundary; only the displayed frozen modal definition and allowed response convention are used.",
+    "No critical decay or witness is established."
+  ],
+  "unexpected_failures": []
+}

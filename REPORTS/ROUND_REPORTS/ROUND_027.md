@@ -1,0 +1,11 @@
+# R27 killed attractive duality gate
+
+2026-09-18 UTC. Whole unchanged THM052/PO039(A)-(C) is accepted: PROVED_CANDIDATE, ISOLATED_RECONSTRUCTION_PASS(AUD075), HOSTILE_REVIEW_PASS(AUD076), VERSION_LOCKED. The root read and compared all 99/280/187 constructor/blind/hostile lines, their complete evidence and code, and matched the exact historical sources separately. Full component dispositions and limits are in AUDITS/ROUND_027_RECONSTRUCTION_COMPARISON.md.
+
+For every finite N>=2 and nu>0 in the specified d4 periodic Coulomb model, the actual conservative repulsive diffusion is Haar adjoint, with factor exp[c(N-1)t], to the minimal attractive diffusion killed at its maximal collision-free lifetime. For the latter started from iid Haar, survival is exactly exp[-c(N-1)t] and its surviving current configuration is product Haar. The entire reversed conditional path law equals the original law in the uniform continuous-path space. Every bounded complex endpoint defect retains its exact orientation; the original modal critical criterion is identical to its conditional attractive counterpart.
+
+The isolated Ultra reconstruction supplies an independent additive-noise flow/Jacobian proof. The separate Max hostile axis recomputes every bounded-domain Girsanov, lifetime, exhaustion, full-path and ancillary step of the constructor. There is no mathematical repair. The original positive-time law is not asserted product Haar, no point-start exponential law is inferred, and the exponentially small survival normalizer is retained. No actual critical decay, witness or higher hierarchy is proved. THM046/PO033 and THM053/PO040 remain OPEN.
+
+Evidence and execution are recorded in CERTIFICATES/ROUND_027_VERIFICATION.md. R26 is published at 24b766bb63c6d69ca09171f36622ef2a87d67bfd. Root Ultra now integrates the R28 actual-triple, dual-boundary response and first-collision flux workstreams; all ordinary workers are Max in distinct worktrees. Configured ceiling 10 workers; effective initialized capacity 3 workers plus root. No stopping gate has been reached.
+
+Natural resumption is the actual fixed-data critical defect after its exact dual and three-label reductions. R28 constructions must pass their own entire fresh reconstruction and hostile gates; the current candidates are not used as premises of this round.

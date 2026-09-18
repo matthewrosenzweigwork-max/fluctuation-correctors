@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "packet": "ROUND_027_DUALITY_BLIND_ARTIFACTS_AUD075_20260918_094707_UTC",
+  "regular_packet_members": 40,
+  "frozen_inputs": 8,
+  "baseline_checks": 322,
+  "semantic_mutants_detected": 9,
+  "read_only": true,
+  "archive_extracted": false,
+  "archive_regular_members": 40,
+  "archive_sha256": "3e66c869d2f8a303cb9d757328e2b8a22af5715ae3ecd1896758d5e4939cfadb",
+  "report_sha256": "805aca97bf9a60b4dbb5a1f1d53d47dd0809a18c2e03d8524c394406dfd5e435",
+  "fresh_read_only_runs": [
+    {
+      "mutant": "baseline",
+      "returncode": 0
+    },
+    {
+      "mutant": "pair_half",
+      "returncode": 1
+    },
+    {
+      "mutant": "atom_deleted",
+      "returncode": 1
+    },
+    {
+      "mutant": "noise_half",
+      "returncode": 1
+    },
+    {
+      "mutant": "reverse_noise_sign",
+      "returncode": 1
+    },
+    {
+      "mutant": "endpoint_orientation",
+      "returncode": 1
+    },
+    {
+      "mutant": "drop_conditioning",
+      "returncode": 1
+    },
+    {
+      "mutant": "endpoint_only_kill",
+      "returncode": 1
+    },
+    {
+      "mutant": "fourier_response_sign",
+      "returncode": 1
+    },
+    {
+      "mutant": "path_order",
+      "returncode": 1
+    }
+  ]
+}
