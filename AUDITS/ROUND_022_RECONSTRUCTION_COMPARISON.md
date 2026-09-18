@@ -1,0 +1,22 @@
+# R22 whole distribution-path comparison
+
+2026-09-18 UTC. Root read the entire86-line exposed construction,427-line fresh AUD063 reconstruction and203-line separate AUD064 hostile review; full source/exposure/preflight/README/verifier records and both entire diagnostic programs. A combined display was truncated; omitted report spans were reread in bounded calls. Root is an exposed integrator, not a third independent reviewer. Root chronology remains attested, not authenticated by digests.
+
+| Entire THM044 element | Root / blind / hostile comparison |
+|---|---|
+| Model, exact law and centering | Root section1; blind1–2,5; hostileC01,C04: identical coefficient-one kernel, Haar starts, force/noise factors, actual noncollision/heat passage and exact one-body translation centering. |
+| Simultaneous source family | Root2; blind3; hostileC02: the complete R16 proof supplies a pointwise A_R envelope, with R=(d-s)/2+d+5, not separate fixed-mode expectations. Every original row/self/background term remains. |
+| Actual Hilbert source and continuity | Root2; blind4; hostileC03: strict r>R+d/2 sums the deterministic squared mode envelope; only the first moment of the common random envelope is used. Fixed-N minimum separation justifies continuous uniform Fourier limits. Blind also constructs the same Bochner integral explicitly. |
+| Linear path and required tail | Root3; blind5; hostileC04–05: countable modes/rational times plus continuity, true adapted driving martingale, deterministic convolution integration by parts, sup convolution<=2 sup drive, Tonelli. No terminal-time martingale or cross-mode independence assumption. |
+| Gaussian existence and covariance | Root4; blind6; hostileC06–07: almost-sure and L2 uniform Hilbert convergence, Gaussian functional passage, exact real/complex factors and initial/thermal covariance. Blind/hostile additionally spell out path-linear Gaussianity by Fourier then time interpolation, a consequence of the supplied bounds. |
+| Actual full-path tightness | Root5; blind7–8; hostileC08: finite-mode compact path sets plus uniform spatial-tail control. Root handles residual small-N prefixes by compact path images; blind proves a stronger uniform source-tail estimate and uses it directly. Both yield closed totally bounded full-path sets, never compact neighborhoods. |
+| All bounded continuous weak tests | Root5; blind7,9; hostileC09–10: finite projection first, then projection size; true compact sets and clipped infimal Lipschitz approximation give the full claimed topology. |
+| Quantifiers and edges | Root6; blind9,11; hostileC11–12: same sufficient strict r, simultaneous d>=3,0<s<=d-2,s<d/2, bounded convergent noise without rate; T0, zero noise, constants and degeneracy all included. |
+
+The blind source-tail strengthening is E||(Id-Pi_K)E_N||_C <= C sqrt(b)N^(s/d-1/2) S_R(K)^(1/2). It follows directly from the same pointwise envelope, and is independently supplied in blind(13)–(14). It is not the unsupported assertion that the actual source has the linear process's faster Fourier-tail rate. The hostile countermodel correctly rejects that latter inference. This distinction creates no disagreement or theorem repair.
+
+Fresh falsification mechanisms are independent of the root's program. Blind uses exact Brownian particle-label brackets, exponential-polynomial covariance, heavy-tailed source variables and escaping modes. Hostile uses adaptive Rademacher-tree martingales, OU innovation recursion, attained simultaneous-source bounds and finite-prefix compactness bookkeeping. Their analytic reports rule out shortcut-based claims; finite examples are not admitted particle counterexamples or proofs of analysis.
+
+All complete prior source/gate pairs R4/R6/R10/R16/R18/R20 match published4ab1d492c3bb9bb3537732f2d75502971f5ee6da byte-for-byte; current sixteen/sixteen/nineteen input dossiers match canonical sources. R20 entire accepted path gate AUD059/060 now supplies exactly the source premise in both reports. The original conditional source histories remain unedited. Source matching is CERTIFICATES/OUTPUTS/round022_source_gate_match.json. No new missing source, proof repair, narrowing, external citation or novelty claim.
+
+Disposition: full ISOLATED_RECONSTRUCTION_PASS AUD063 and separate HOSTILE_REVIEW_PASS AUD064, source VERSION_LOCKED and exact accepted-source matching. Every frozen conjunct and its exact negation was reviewed; PO031 closes only this sufficient-regularity bounded-noise distribution-path assertion.

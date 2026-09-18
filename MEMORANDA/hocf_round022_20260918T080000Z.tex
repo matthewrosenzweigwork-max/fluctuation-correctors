@@ -1,0 +1,101 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,hyperref}
+\newcommand{\E}{\mathbb E}
+\newcommand{\T}{\mathbb T}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\begin{document}
+\begin{center}
+{\large Distribution-valued continuous-path fluctuations}\\[4pt]
+HOCF--RIESZ, Round 022 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Status and scope.}
+The entire frozen THM--044 has passed the fresh whole reconstruction AUD063 and separate hostile review AUD064. The root compared all three complete proofs, matched the exact published source gates, and reproduced every sealed diagnostic. The complete proof, exposure and source records remain in the Round 022 Markdown memoranda and audit packets. This synthesis states the accepted sufficient topology; no optimality or higher-corrector closure is asserted.
+
+Fix an integer $d\ge3$, $0<s\le d-2$, $s<d/2$, and a finite horizon $T\ge0$. On the unit Haar torus, the actual noncolliding singular gradient dynamics start iid Haar, independently of the Brownian drivers, and satisfy
+\[
+ dX_i=\frac1N\sum_{j\ne i}K(X_i-X_j)\,dt+\sqrt{2\nu_N}\,dW_i,
+ \qquad K=-\nabla g,
+\]
+where $g$ is the mean-zero coefficient-one periodic Riesz kernel. Thus
+\[
+ \widehat g(k)=c_{d,s}|k|^{s-d}\quad(k\ne0),\qquad
+ c_{d,s}=\pi^{s-d/2}\frac{\Gamma((d-s)/2)}{\Gamma(s/2)}.
+\]
+Assume $0\le\nu_N\le\nu_*<\infty$ and $\nu_N\to\bar\nu\ge0$, without a rate. Put $b(0)=1$, $b(\nu)=\min(1,\nu^{-1})$ for $\nu>0$, $b_N=b(\nu_N)$ and
+\[
+ Z_N(t)=\sqrt{Nb_N}\left(\frac1N\sum_i\delta_{X_i(t)}-dx\right).
+\]
+Translation invariance and pathwise uniqueness give exact one-body Haar centering. No positive-time product law is assumed.
+
+\noindent\textbf{The accepted assertion.}
+Set $\alpha=(d-s)/2$, $M=d+2$, and $R=\alpha+M+3$. For every fixed real
+\[
+ r>R+d/2=2d+5-s/2,
+ \qquad \norm{u}_{-r}^2=\sum_{k\in\mathbb Z^d}(1+|k|^2)^{-r}|\widehat u(k)|^2,
+\]
+one has $Z_N\Longrightarrow G$ in $C([0,T],H^{-r})$, with the uniform Hilbert norm, against every bounded continuous functional. All paths have zero constant coefficient.
+
+Use the real orthonormal sine/cosine basis $(e_l)$, with two modes per opposite nonzero frequency pair. Write
+\[
+ a_l=4\pi^2|k_l|^2,\quad D_l=4\pi^2c_{d,s}|k_l|^{s+2-d},
+ \quad L_l=D_l+\bar\nu a_l,\quad\bar b=b(\bar\nu).
+\]
+For independent standard normals $\xi_l$ and independent Brownian motions $B_l$,
+\[
+ G(t)=\sum_l e_l\sqrt{\bar b}\left[e^{-L_lt}\xi_l+
+ \sqrt{2\bar\nu a_l}\int_0^t e^{-L_l(t-u)}\,dB_l(u)\right].
+\]
+This series converges almost surely and in expected squared uniform Hilbert norm. It defines a continuous centered Gaussian random distribution, with modal covariance
+\[
+ \E G_l(t)G_l(u)=\bar b\left[
+ \frac{D_l}{L_l}e^{-(t+u)L_l}
+ +\frac{\bar\nu a_l}{L_l}e^{-|t-u|L_l}\right].
+\]
+The initial and thermal terms remain distinct. The real basis gives exactly the prescribed complex Fourier covariance when tested against smooth functions.
+
+\noindent\textbf{The common source envelope.}
+Let $P_N=U_2/2$ retain the ordered deleted labels and every Haar background contraction, and set $J^f(x,y)=K(x-y)\cdot(\nabla f(x)-\nabla f(y))$. The complete Round 016 positive-kernel argument supplies, simultaneously for all smooth $f$ and every collision-free configuration,
+\[
+ |P_N[J^f](x)|\le C\norm f_{\mathcal A_R}V_{\ell}(x),
+ \qquad \norm f_{\mathcal A_R}=\sum_k(1+|k|)^R|\widehat f(k)|.
+\]
+Here $V_\ell$ is the nonnegative retained-energy and omitted-kernel envelope, including the exact self and background subtractions. At $\ell=N^{-2/d}$, the actual expected-energy bound yields
+\[
+ \sup_{u\le T}\E V_\ell(X(u))\le C N^{s/d-1}.
+\]
+The simultaneous inequality is essential. Separate bounds on the expectation for each test would not permit a Hilbert sum or a terminal-time supremum.
+
+\noindent\textbf{Genuine continuous decomposition and spatial tails.}
+Write $\norm{\cdot}_{C H^{-r}}$ for the uniform path norm. The actual one-body It\^o identity gives $Z_N=Y_N+E_N$, where $Y_N$ is the damped initial field plus its modal stochastic convolutions. If $\Pi_K$ projects onto $|k|\le K$ and
+\[
+ S_R(K)=\sum_{|k|>K}(1+|k|^2)^{-r}(1+|k|)^{2R},
+\]
+then the same common envelope gives the stronger source-tail bound
+\[
+ \E\norm{(1-\Pi_K)E_N}_{C H^{-r}}
+ \le C\sqrt{b_N}N^{s/d-1/2}S_R(K)^{1/2}.
+\]
+In particular $\E\norm{E_N}_{C H^{-r}}\to0$. The strict restriction on $r$ makes $S_R(0)$ finite. Only a first source moment is used. Positive minimum separation on each realized finite-$N$ path and this summable mode envelope justify continuous uniform Fourier limits; they do not supply a uniform separation estimate.
+
+For the actual driving modal martingale $U_{N,l}$, the independent Brownian labels give bracket density at most $4\nu_Nb_Na_l$. Put $L_{N,l}=D_l+\nu_Na_l$. The stochastic convolution is a continuous process in its terminal time, and deterministic integration by parts gives
+\[
+ M_{N,l}(t)=U_{N,l}(t)-L_{N,l}\int_0^t
+ e^{-L_{N,l}(t-u)}U_{N,l}(u)\,du,
+ \qquad \sup_t|M_{N,l}(t)|\le2\sup_t|U_{N,l}(t)|.
+\]
+The martingale square maximal inequality, iid initial variance and Tonelli therefore prove
+\[
+ \E\norm{(1-\Pi_K)Y_N}_{C H^{-r}}^2
+ \le C_T\sum_{|k|>K}(1+|k|^2)^{-r}(1+|k|^2).
+\]
+No terminal-time martingale property or independence of actual modes is assumed. The expected sum of weighted coordinate suprema is finite, so the Fourier sums converge uniformly to genuine continuous Hilbert paths. Countably many modes and rational times, followed by continuity, identify the full path decomposition. The same bounds construct $G$ and justify its covariance and Gaussianity.
+
+\noindent\textbf{Tightness and full weak convergence.}
+At fixed $K$, the accepted Round 020 theorem supplies actual finite-mode path tightness and convergence. Uniform spatial tails come from the two displayed estimates. Given a summable probability budget and errors tending to zero, choose increasing cutoffs and compact sets of projected paths. Impose every projected compact-set constraint and every vanishing full-path tail bound. The resulting set is closed and totally bounded: at any tolerance a sufficiently large finite projection has a finite net, while the remaining tail is uniformly small. Completeness makes it compact. This proves actual tightness in the full uniform Hilbert topology.
+
+For bounded Lipschitz functionals, first let $N$ tend to infinity at fixed projection, then let the projection grow using the uniform tails. Compact sets of arbitrarily high probability and clipped infimal Lipschitz approximation extend this to every bounded continuous functional. Thus the claim includes its stated topology and genuine random-path existence, not just smooth-test convergence.
+
+\noindent\textbf{Remaining scope.}
+Zero horizon, zero limiting or identically zero noise, constant tests and degenerate covariances are included. The restriction $s<d/2$ remains; four-dimensional Coulomb is excluded. Unbounded-noise path laws, sharper topology, general preparation, inhomogeneous or logarithmic settings and the higher-order hierarchy remain open. The old condition $\beta_NN^{2s/d-1}\to0$, full microscopic subcriticality $\lambda_N=\beta_NN^{s/d-1}\to0$, and finite positive microscopic criticality remain distinct.
+\end{document}

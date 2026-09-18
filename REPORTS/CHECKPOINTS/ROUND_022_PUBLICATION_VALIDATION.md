@@ -1,0 +1,7 @@
+# R22 publication validation
+
+2026-09-18 UTC. Whole proof/source/reconstruction/hostile gates are ROUND_022_GATE_INTEGRATION.md and comparison; fresh diagnostics and packet checks are the certificate and OUTPUTS records.51 protected baseline files remain byte-identical;23 documented mutable manifest entries refreshed; shipped campaign verification passes. Supplemental all-campaign scanner checks274 manifests and3406 entries without error, and checks all164 pending paths for permitted scope, parseable code/JSON and unexpected control bytes. It does not replace each issued archive verifier.
+
+Final synthesis has3 pages150878 bytes; complete final log and all three final rendered pages inspected. The two new explanatory definitions were inserted before final build. Staged diff inspected: only R22 accepted outputs, exact source copies, audit packets, reproducibility records, previous publication receipt and canonical state updates.34 R23/R24 future payload paths held. Every staged blob is compared byte-for-byte with its reviewed working file before commit. No unrelated user change is included.
+
+The staged diff has exactly four whitespace warnings, solely in the verbatim generated build log: trailing spaces on289,342,345 and blank EOF373. These evidence bytes are preserved deliberately, not normalized. No mathematical source or issued report has a new whitespace defect. Ordinary commit/push only; literal hash recorded after live-ref equality, outside its own commit.

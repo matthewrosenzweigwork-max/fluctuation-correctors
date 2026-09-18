@@ -1,0 +1,31 @@
+{
+  "archive_extracted": false,
+  "archive_members": 28,
+  "archive_uncompressed_bytes": 422145,
+  "audit": "AUD064",
+  "base_commit": "64ac0538dff37a37d0883661b401ad04c311a5e5",
+  "branch": "codex/hocf-r022-distribution-path-hostile",
+  "component_sha256": {
+    "archive": "87f6a0d35d0ff9d7b916dbc5215294b1536b8dacf209f555bc63464939df209b",
+    "archive_members_manifest": "d10fbd9669f89b6b562079f3060b3cfa2e77a638f09b4f1a60f1b5996823ce1e",
+    "input_manifest": "5d890a38e495176aa4efccae2c10f7ff0098aa17ee028448ec42815d7b7003ec",
+    "output_manifest": "e602df126eefeea28cb72f476dbef5cbeb9d3c84b86819f6c6245c430d7015d0",
+    "standalone_report": "b5919ee37274ffd37850517d9c31d302a84404bcba280abdae8c99e5720d5ea7"
+  },
+  "diagnostic": {
+    "assertions": 28182,
+    "categories": 17,
+    "mutations": 17,
+    "program_sha256": "ef290dc4ae2cbe086229e42f3982c63ad88078072839ab59c62debd579b4239b",
+    "status": "PASS"
+  },
+  "immutable_correction_policy": "Separately issued superseding artifact only",
+  "input_files": 19,
+  "issued_utc": "2026-09-18T07:36:24Z",
+  "packet_files": 28,
+  "source_gate_boundary": "R20 and all source statuses remain conditional as issued; exact gate matching and canonical promotion belong to root",
+  "task": "TASK098",
+  "verdict": "HOSTILE PASS: entire frozen THM044 conditional implication; no repair or narrowing",
+  "verification_status": "PASS",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r022-distribution-path-hostile"
+}

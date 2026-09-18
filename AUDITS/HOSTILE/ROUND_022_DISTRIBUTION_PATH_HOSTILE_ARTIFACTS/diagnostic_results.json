@@ -1,0 +1,1345 @@
+{
+  "arithmetic": "integer and fractions.Fraction only; no random seed or tolerance",
+  "assertions": 28182,
+  "audit": "AUD064",
+  "categories": {
+    "OU_skeleton_covariance": 1170,
+    "adaptive_convolution_identity": 16320,
+    "adaptive_convolution_maximum": 2580,
+    "adaptive_isometry_and_maximum": 180,
+    "bounded_continuous_approximation": 462,
+    "escaping_modes_countermodel": 250,
+    "exact_range_and_scaling": 1210,
+    "expectation_supremum_countermodel": 5,
+    "finite_prefix_compact_construction": 19,
+    "integrated_source_envelope": 5,
+    "lattice_shell_count": 120,
+    "mutation_witnesses": 17,
+    "orthogonal_projection_identity": 250,
+    "real_complex_pair": 650,
+    "simultaneous_source_operator": 2300,
+    "small_error_has_no_fixed_tail_rate": 4,
+    "source_shell_decay": 2640
+  },
+  "evidence": "SUPPORTING_EXACT_FINITE_DIAGNOSTIC",
+  "examples": {
+    "adaptive_tree_cases": [
+      {
+        "bracket": "2",
+        "maxB": "5/2",
+        "maxM": "1",
+        "q": "0",
+        "steps": 2,
+        "strategy": 0,
+        "terminal": "2"
+      },
+      {
+        "bracket": "7/2",
+        "maxB": "15/4",
+        "maxM": "5/2",
+        "q": "0",
+        "steps": 2,
+        "strategy": 1,
+        "terminal": "7/2"
+      },
+      {
+        "bracket": "5/4",
+        "maxB": "13/8",
+        "maxM": "1",
+        "q": "0",
+        "steps": 2,
+        "strategy": 2,
+        "terminal": "5/4"
+      },
+      {
+        "bracket": "2",
+        "maxB": "5/2",
+        "maxM": "41/32",
+        "q": "1/4",
+        "steps": 2,
+        "strategy": 0,
+        "terminal": "2"
+      },
+      {
+        "bracket": "7/2",
+        "maxB": "15/4",
+        "maxM": "171/64",
+        "q": "1/4",
+        "steps": 2,
+        "strategy": 1,
+        "terminal": "7/2"
+      },
+      {
+        "bracket": "5/4",
+        "maxB": "13/8",
+        "maxM": "1",
+        "q": "1/4",
+        "steps": 2,
+        "strategy": 2,
+        "terminal": "5/4"
+      },
+      {
+        "bracket": "2",
+        "maxB": "5/2",
+        "maxM": "13/8",
+        "q": "1/2",
+        "steps": 2,
+        "strategy": 0,
+        "terminal": "2"
+      },
+      {
+        "bracket": "7/2",
+        "maxB": "15/4",
+        "maxM": "47/16",
+        "q": "1/2",
+        "steps": 2,
+        "strategy": 1,
+        "terminal": "7/2"
+      },
+      {
+        "bracket": "5/4",
+        "maxB": "13/8",
+        "maxM": "1",
+        "q": "1/2",
+        "steps": 2,
+        "strategy": 2,
+        "terminal": "5/4"
+      },
+      {
+        "bracket": "2",
+        "maxB": "5/2",
+        "maxM": "65/32",
+        "q": "3/4",
+        "steps": 2,
+        "strategy": 0,
+        "terminal": "2"
+      },
+      {
+        "bracket": "7/2",
+        "maxB": "15/4",
+        "maxM": "211/64",
+        "q": "3/4",
+        "steps": 2,
+        "strategy": 1,
+        "terminal": "7/2"
+      },
+      {
+        "bracket": "5/4",
+        "maxB": "13/8",
+        "maxM": "41/32",
+        "q": "3/4",
+        "steps": 2,
+        "strategy": 2,
+        "terminal": "5/4"
+      },
+      {
+        "bracket": "2",
+        "maxB": "5/2",
+        "maxM": "5/2",
+        "q": "1",
+        "steps": 2,
+        "strategy": 0,
+        "terminal": "2"
+      },
+      {
+        "bracket": "7/2",
+        "maxB": "15/4",
+        "maxM": "15/4",
+        "q": "1",
+        "steps": 2,
+        "strategy": 1,
+        "terminal": "7/2"
+      },
+      {
+        "bracket": "5/4",
+        "maxB": "13/8",
+        "maxM": "13/8",
+        "q": "1",
+        "steps": 2,
+        "strategy": 2,
+        "terminal": "5/4"
+      },
+      {
+        "bracket": "3",
+        "maxB": "15/4",
+        "maxM": "1",
+        "q": "0",
+        "steps": 3,
+        "strategy": 0,
+        "terminal": "3"
+      },
+      {
+        "bracket": "21/4",
+        "maxB": "27/4",
+        "maxM": "5/2",
+        "q": "0",
+        "steps": 3,
+        "strategy": 1,
+        "terminal": "21/4"
+      },
+      {
+        "bracket": "31/18",
+        "maxB": "349/144",
+        "maxM": "1",
+        "q": "0",
+        "steps": 3,
+        "strategy": 2,
+        "terminal": "31/18"
+      },
+      {
+        "bracket": "3",
+        "maxB": "15/4",
+        "maxM": "729/512",
+        "q": "1/4",
+        "steps": 3,
+        "strategy": 0,
+        "terminal": "3"
+      },
+      {
+        "bracket": "21/4",
+        "maxB": "27/4",
+        "maxM": "6003/2048",
+        "q": "1/4",
+        "steps": 3,
+        "strategy": 1,
+        "terminal": "21/4"
+      },
+      {
+        "bracket": "31/18",
+        "maxB": "349/144",
+        "maxM": "9313/9216",
+        "q": "1/4",
+        "steps": 3,
+        "strategy": 2,
+        "terminal": "31/18"
+      },
+      {
+        "bracket": "3",
+        "maxB": "15/4",
+        "maxM": "63/32",
+        "q": "1/2",
+        "steps": 3,
+        "strategy": 0,
+        "terminal": "3"
+      },
+      {
+        "bracket": "21/4",
+        "maxB": "27/4",
+        "maxM": "15/4",
+        "q": "1/2",
+        "steps": 3,
+        "strategy": 1,
+        "terminal": "21/4"
+      },
+      {
+        "bracket": "31/18",
+        "maxB": "349/144",
+        "maxM": "43/36",
+        "q": "1/2",
+        "steps": 3,
+        "strategy": 2,
+        "terminal": "31/18"
+      },
+      {
+        "bracket": "3",
+        "maxB": "15/4",
+        "maxM": "1385/512",
+        "q": "3/4",
+        "steps": 3,
+        "strategy": 0,
+        "terminal": "3"
+      },
+      {
+        "bracket": "21/4",
+        "maxB": "27/4",
+        "maxM": "2573/512",
+        "q": "3/4",
+        "steps": 3,
+        "strategy": 1,
+        "terminal": "21/4"
+      },
+      {
+        "bracket": "31/18",
+        "maxB": "349/144",
+        "maxM": "15433/9216",
+        "q": "3/4",
+        "steps": 3,
+        "strategy": 2,
+        "terminal": "31/18"
+      },
+      {
+        "bracket": "3",
+        "maxB": "15/4",
+        "maxM": "15/4",
+        "q": "1",
+        "steps": 3,
+        "strategy": 0,
+        "terminal": "3"
+      },
+      {
+        "bracket": "21/4",
+        "maxB": "27/4",
+        "maxM": "27/4",
+        "q": "1",
+        "steps": 3,
+        "strategy": 1,
+        "terminal": "21/4"
+      },
+      {
+        "bracket": "31/18",
+        "maxB": "349/144",
+        "maxM": "349/144",
+        "q": "1",
+        "steps": 3,
+        "strategy": 2,
+        "terminal": "31/18"
+      },
+      {
+        "bracket": "5",
+        "maxB": "55/8",
+        "maxM": "1",
+        "q": "0",
+        "steps": 5,
+        "strategy": 0,
+        "terminal": "5"
+      },
+      {
+        "bracket": "149/16",
+        "maxB": "207/16",
+        "maxM": "23/8",
+        "q": "0",
+        "steps": 5,
+        "strategy": 1,
+        "terminal": "149/16"
+      },
+      {
+        "bracket": "1783/900",
+        "maxB": "89929/28800",
+        "maxM": "1",
+        "q": "0",
+        "steps": 5,
+        "strategy": 2,
+        "terminal": "1783/900"
+      },
+      {
+        "bracket": "5",
+        "maxB": "55/8",
+        "maxM": "1649949/1048576",
+        "q": "1/4",
+        "steps": 5,
+        "strategy": 0,
+        "terminal": "5"
+      },
+      {
+        "bracket": "149/16",
+        "maxB": "207/16",
+        "maxM": "230339/65536",
+        "q": "1/4",
+        "steps": 5,
+        "strategy": 1,
+        "terminal": "149/16"
+      },
+      {
+        "bracket": "1783/900",
+        "maxB": "89929/28800",
+        "maxM": "9313/9216",
+        "q": "1/4",
+        "steps": 5,
+        "strategy": 2,
+        "terminal": "1783/900"
+      },
+      {
+        "bracket": "5",
+        "maxB": "55/8",
+        "maxM": "10009/4096",
+        "q": "1/2",
+        "steps": 5,
+        "strategy": 0,
+        "terminal": "5"
+      },
+      {
+        "bracket": "149/16",
+        "maxB": "207/16",
+        "maxM": "19817/4096",
+        "q": "1/2",
+        "steps": 5,
+        "strategy": 1,
+        "terminal": "149/16"
+      },
+      {
+        "bracket": "1783/900",
+        "maxB": "89929/28800",
+        "maxM": "43/36",
+        "q": "1/2",
+        "steps": 5,
+        "strategy": 2,
+        "terminal": "1783/900"
+      },
+      {
+        "bracket": "5",
+        "maxB": "55/8",
+        "maxM": "4112365/1048576",
+        "q": "3/4",
+        "steps": 5,
+        "strategy": 0,
+        "terminal": "5"
+      },
+      {
+        "bracket": "149/16",
+        "maxB": "207/16",
+        "maxM": "15961115/2097152",
+        "q": "3/4",
+        "steps": 5,
+        "strategy": 1,
+        "terminal": "149/16"
+      },
+      {
+        "bracket": "1783/900",
+        "maxB": "89929/28800",
+        "maxM": "201406949/117964800",
+        "q": "3/4",
+        "steps": 5,
+        "strategy": 2,
+        "terminal": "1783/900"
+      },
+      {
+        "bracket": "5",
+        "maxB": "55/8",
+        "maxM": "55/8",
+        "q": "1",
+        "steps": 5,
+        "strategy": 0,
+        "terminal": "5"
+      },
+      {
+        "bracket": "149/16",
+        "maxB": "207/16",
+        "maxM": "207/16",
+        "q": "1",
+        "steps": 5,
+        "strategy": 1,
+        "terminal": "149/16"
+      },
+      {
+        "bracket": "1783/900",
+        "maxB": "89929/28800",
+        "maxM": "89929/28800",
+        "q": "1",
+        "steps": 5,
+        "strategy": 2,
+        "terminal": "1783/900"
+      },
+      {
+        "bracket": "7",
+        "maxB": "645/64",
+        "maxM": "1",
+        "q": "0",
+        "steps": 7,
+        "strategy": 0,
+        "terminal": "7"
+      },
+      {
+        "bracket": "853/64",
+        "maxB": "619/32",
+        "maxM": "49/16",
+        "q": "0",
+        "steps": 7,
+        "strategy": 1,
+        "terminal": "853/64"
+      },
+      {
+        "bracket": "74603/35280",
+        "maxB": "3289667/940800",
+        "maxM": "1",
+        "q": "0",
+        "steps": 7,
+        "strategy": 2,
+        "terminal": "74603/35280"
+      },
+      {
+        "bracket": "7",
+        "maxB": "645/64",
+        "maxM": "860163/524288",
+        "q": "1/4",
+        "steps": 7,
+        "strategy": 0,
+        "terminal": "7"
+      },
+      {
+        "bracket": "853/64",
+        "maxB": "619/32",
+        "maxM": "1032713439/268435456",
+        "q": "1/4",
+        "steps": 7,
+        "strategy": 1,
+        "terminal": "853/64"
+      },
+      {
+        "bracket": "74603/35280",
+        "maxB": "3289667/940800",
+        "maxM": "9313/9216",
+        "q": "1/4",
+        "steps": 7,
+        "strategy": 2,
+        "terminal": "74603/35280"
+      },
+      {
+        "bracket": "7",
+        "maxB": "645/64",
+        "maxM": "179033/65536",
+        "q": "1/2",
+        "steps": 7,
+        "strategy": 0,
+        "terminal": "7"
+      },
+      {
+        "bracket": "853/64",
+        "maxB": "619/32",
+        "maxM": "1455677/262144",
+        "q": "1/2",
+        "steps": 7,
+        "strategy": 1,
+        "terminal": "853/64"
+      },
+      {
+        "bracket": "74603/35280",
+        "maxB": "3289667/940800",
+        "maxM": "43/36",
+        "q": "1/2",
+        "steps": 7,
+        "strategy": 2,
+        "terminal": "74603/35280"
+      },
+      {
+        "bracket": "7",
+        "maxB": "645/64",
+        "maxM": "5153844169/1073741824",
+        "q": "3/4",
+        "steps": 7,
+        "strategy": 0,
+        "terminal": "7"
+      },
+      {
+        "bracket": "853/64",
+        "maxB": "619/32",
+        "maxM": "637485865/67108864",
+        "q": "3/4",
+        "steps": 7,
+        "strategy": 1,
+        "terminal": "853/64"
+      },
+      {
+        "bracket": "74603/35280",
+        "maxB": "3289667/940800",
+        "maxM": "20245719182921/11838003609600",
+        "q": "3/4",
+        "steps": 7,
+        "strategy": 2,
+        "terminal": "74603/35280"
+      },
+      {
+        "bracket": "7",
+        "maxB": "645/64",
+        "maxM": "645/64",
+        "q": "1",
+        "steps": 7,
+        "strategy": 0,
+        "terminal": "7"
+      },
+      {
+        "bracket": "853/64",
+        "maxB": "619/32",
+        "maxM": "619/32",
+        "q": "1",
+        "steps": 7,
+        "strategy": 1,
+        "terminal": "853/64"
+      },
+      {
+        "bracket": "74603/35280",
+        "maxB": "3289667/940800",
+        "maxM": "3289667/940800",
+        "q": "1",
+        "steps": 7,
+        "strategy": 2,
+        "terminal": "74603/35280"
+      }
+    ],
+    "range_rows": [
+      {
+        "THM044_admitted": true,
+        "d": 3,
+        "s": "1/2",
+        "threshold": "43/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 3,
+        "s": "1",
+        "threshold": "21/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 4,
+        "s": "1/2",
+        "threshold": "51/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 4,
+        "s": "1",
+        "threshold": "25/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 4,
+        "s": "3/2",
+        "threshold": "49/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 4,
+        "s": "2",
+        "threshold": "12"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 5,
+        "s": "1/2",
+        "threshold": "59/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 5,
+        "s": "1",
+        "threshold": "29/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 5,
+        "s": "3/2",
+        "threshold": "57/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 5,
+        "s": "2",
+        "threshold": "14"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 5,
+        "s": "5/2",
+        "threshold": "55/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 5,
+        "s": "3",
+        "threshold": "27/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 6,
+        "s": "1/2",
+        "threshold": "67/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 6,
+        "s": "1",
+        "threshold": "33/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 6,
+        "s": "3/2",
+        "threshold": "65/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 6,
+        "s": "2",
+        "threshold": "16"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 6,
+        "s": "5/2",
+        "threshold": "63/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 6,
+        "s": "3",
+        "threshold": "31/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 6,
+        "s": "7/2",
+        "threshold": "61/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 6,
+        "s": "4",
+        "threshold": "15"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 7,
+        "s": "1/2",
+        "threshold": "75/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 7,
+        "s": "1",
+        "threshold": "37/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 7,
+        "s": "3/2",
+        "threshold": "73/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 7,
+        "s": "2",
+        "threshold": "18"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 7,
+        "s": "5/2",
+        "threshold": "71/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 7,
+        "s": "3",
+        "threshold": "35/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 7,
+        "s": "7/2",
+        "threshold": "69/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 7,
+        "s": "4",
+        "threshold": "17"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 7,
+        "s": "9/2",
+        "threshold": "67/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 7,
+        "s": "5",
+        "threshold": "33/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 8,
+        "s": "1/2",
+        "threshold": "83/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 8,
+        "s": "1",
+        "threshold": "41/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 8,
+        "s": "3/2",
+        "threshold": "81/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 8,
+        "s": "2",
+        "threshold": "20"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 8,
+        "s": "5/2",
+        "threshold": "79/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 8,
+        "s": "3",
+        "threshold": "39/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 8,
+        "s": "7/2",
+        "threshold": "77/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 8,
+        "s": "4",
+        "threshold": "19"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 8,
+        "s": "9/2",
+        "threshold": "75/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 8,
+        "s": "5",
+        "threshold": "37/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 8,
+        "s": "11/2",
+        "threshold": "73/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 8,
+        "s": "6",
+        "threshold": "18"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 9,
+        "s": "1/2",
+        "threshold": "91/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 9,
+        "s": "1",
+        "threshold": "45/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 9,
+        "s": "3/2",
+        "threshold": "89/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 9,
+        "s": "2",
+        "threshold": "22"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 9,
+        "s": "5/2",
+        "threshold": "87/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 9,
+        "s": "3",
+        "threshold": "43/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 9,
+        "s": "7/2",
+        "threshold": "85/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 9,
+        "s": "4",
+        "threshold": "21"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 9,
+        "s": "9/2",
+        "threshold": "83/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 9,
+        "s": "5",
+        "threshold": "41/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 9,
+        "s": "11/2",
+        "threshold": "81/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 9,
+        "s": "6",
+        "threshold": "20"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 9,
+        "s": "13/2",
+        "threshold": "79/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 9,
+        "s": "7",
+        "threshold": "39/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "1/2",
+        "threshold": "99/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "1",
+        "threshold": "49/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "3/2",
+        "threshold": "97/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "2",
+        "threshold": "24"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "5/2",
+        "threshold": "95/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "3",
+        "threshold": "47/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "7/2",
+        "threshold": "93/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "4",
+        "threshold": "23"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 10,
+        "s": "9/2",
+        "threshold": "91/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 10,
+        "s": "5",
+        "threshold": "45/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 10,
+        "s": "11/2",
+        "threshold": "89/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 10,
+        "s": "6",
+        "threshold": "22"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 10,
+        "s": "13/2",
+        "threshold": "87/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 10,
+        "s": "7",
+        "threshold": "43/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 10,
+        "s": "15/2",
+        "threshold": "85/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 10,
+        "s": "8",
+        "threshold": "21"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "1/2",
+        "threshold": "107/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "1",
+        "threshold": "53/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "3/2",
+        "threshold": "105/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "2",
+        "threshold": "26"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "5/2",
+        "threshold": "103/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "3",
+        "threshold": "51/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "7/2",
+        "threshold": "101/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "4",
+        "threshold": "25"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "9/2",
+        "threshold": "99/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 11,
+        "s": "5",
+        "threshold": "49/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 11,
+        "s": "11/2",
+        "threshold": "97/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 11,
+        "s": "6",
+        "threshold": "24"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 11,
+        "s": "13/2",
+        "threshold": "95/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 11,
+        "s": "7",
+        "threshold": "47/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 11,
+        "s": "15/2",
+        "threshold": "93/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 11,
+        "s": "8",
+        "threshold": "23"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 11,
+        "s": "17/2",
+        "threshold": "91/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 11,
+        "s": "9",
+        "threshold": "45/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "1/2",
+        "threshold": "115/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "1",
+        "threshold": "57/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "3/2",
+        "threshold": "113/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "2",
+        "threshold": "28"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "5/2",
+        "threshold": "111/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "3",
+        "threshold": "55/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "7/2",
+        "threshold": "109/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "4",
+        "threshold": "27"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "9/2",
+        "threshold": "107/4"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "5",
+        "threshold": "53/2"
+      },
+      {
+        "THM044_admitted": true,
+        "d": 12,
+        "s": "11/2",
+        "threshold": "105/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "6",
+        "threshold": "26"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "13/2",
+        "threshold": "103/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "7",
+        "threshold": "51/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "15/2",
+        "threshold": "101/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "8",
+        "threshold": "25"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "17/2",
+        "threshold": "99/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "9",
+        "threshold": "49/2"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "19/2",
+        "threshold": "97/4"
+      },
+      {
+        "THM044_admitted": false,
+        "d": 12,
+        "s": "10",
+        "threshold": "24"
+      }
+    ],
+    "source_error_to_prescribed_tail_ratio": [
+      "1",
+      "4",
+      "256",
+      "4194304"
+    ]
+  },
+  "limits": "Finite diagnostics do not prove singular particle estimates, infinite sums, or weak convergence. Countermodels attack inference shortcuts, not admitted particle laws.",
+  "mutation_controls": [
+    {
+      "correct": "13",
+      "mutated": "13/2",
+      "name": "omit_sqrt2_in_real_basis",
+      "witness": "Real coefficients (2,3): orthonormal pair norm squared is 13."
+    },
+    {
+      "correct": "13",
+      "mutated": "13/2",
+      "name": "count_only_one_complex_frequency",
+      "witness": "The opposite complex frequency has the same squared modulus."
+    },
+    {
+      "correct": "13",
+      "mutated": "26",
+      "name": "double_count_real_opposite_pair",
+      "witness": "There are two real modes, not four, per opposite complex pair."
+    },
+    {
+      "correct": "6637420489/48828125",
+      "mutated": "128",
+      "name": "replace_squared_sum_by_maximum",
+      "witness": "Two simultaneously active modes attain the sum, not its maximum."
+    },
+    {
+      "correct": "16",
+      "mutated": "1",
+      "name": "move_supremum_outside_expectation",
+      "witness": "Sixteen equiprobable atoms, S_j=16 times indicator of atom j."
+    },
+    {
+      "correct": "1/2",
+      "mutated": "1",
+      "name": "convolution_is_terminal_time_martingale",
+      "witness": "At first node M_1=1, q=1/2; conditional E[M_2|F_1]=1/2."
+    },
+    {
+      "correct": "1/2",
+      "mutated": "1",
+      "name": "drop_old_history_in_integration_by_parts",
+      "witness": "B=(0,1,1), q=1/2; M_2=1/2, whereas B_2=1."
+    },
+    {
+      "correct": "7/2",
+      "mutated": "2",
+      "name": "replace_adapted_bracket_by_iid_coefficient",
+      "witness": "Two steps, first coefficient 1, second coefficient 2 on B_1>0 and 1 otherwise."
+    },
+    {
+      "correct": "5/8",
+      "mutated": "7/16",
+      "name": "remove_Brownian_factor_two",
+      "witness": "One OU step, q=1/2, thermal fraction 1/2, initial variance 1."
+    },
+    {
+      "correct": "5/8",
+      "mutated": "1",
+      "name": "replace_initial_time_sum_by_difference",
+      "witness": "Equal one-step times for the same q and thermal fraction."
+    },
+    {
+      "correct": "5/8",
+      "mutated": "1/4",
+      "name": "suppress_thermal_contribution",
+      "witness": "Positive thermal fraction; pure damped initial variance is too small."
+    },
+    {
+      "correct": "8",
+      "mutated": "0",
+      "name": "allow_source_summation_endpoint",
+      "witness": "At r=R+d/2, eight dyadic shell lower terms sum to 8; no decay occurs."
+    },
+    {
+      "correct": "0",
+      "mutated": "-1/2",
+      "name": "infer_decay_at_s_equal_d_over_two",
+      "witness": "The residual N exponent is s/d-1/2=0 at this excluded endpoint."
+    },
+    {
+      "correct": "1",
+      "mutated": "0",
+      "name": "finite_projections_imply_field_tightness",
+      "witness": "Constant paths in successive Hilbert unit modes: every fixed projection eventually zero, norms stay one."
+    },
+    {
+      "correct": "2",
+      "mutated": "0",
+      "name": "compact_neighborhood_is_compact",
+      "witness": "The radius-one neighborhood of {0} contains unit modes at squared pair distance 2."
+    },
+    {
+      "correct": "1/1024",
+      "mutated": "1/4294967296",
+      "name": "assign_linear_tail_rate_to_actual_error",
+      "witness": "Error path e_(2^N)/N with N=32 has small total norm but violates the proposed geometric high-mode rate."
+    },
+    {
+      "correct": "1",
+      "mutated": "0",
+      "name": "fixed_zero_L_approximates_all_continuous_functions",
+      "witness": "F(x)=sqrt(x) on compact [0,1]; its L=0 infimal envelope is zero."
+    }
+  ],
+  "mutation_count": 17,
+  "program_sha256": "ef290dc4ae2cbe086229e42f3982c63ad88078072839ab59c62debd579b4239b",
+  "status": "PASS"
+}

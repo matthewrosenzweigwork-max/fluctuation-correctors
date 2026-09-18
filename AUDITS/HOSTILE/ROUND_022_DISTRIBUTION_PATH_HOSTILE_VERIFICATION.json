@@ -1,0 +1,32 @@
+{
+  "archive_extracted": false,
+  "archive_members": 28,
+  "archive_uncompressed_bytes": 422145,
+  "audit": "AUD064",
+  "checks": [
+    "nineteen input bytes",
+    "exact local output member set and bytes",
+    "standalone and packet report equality",
+    "safe regular archive names",
+    "no archive duplicates or links",
+    "exact archive membership and bytes",
+    "archive/local byte equality",
+    "exact read-only diagnostic replay",
+    "seal hashes/counts",
+    "read-only issuance modes"
+  ],
+  "component_sha256": {
+    "archive": "87f6a0d35d0ff9d7b916dbc5215294b1536b8dacf209f555bc63464939df209b",
+    "archive_members_manifest": "d10fbd9669f89b6b562079f3060b3cfa2e77a638f09b4f1a60f1b5996823ce1e",
+    "input_manifest": "5d890a38e495176aa4efccae2c10f7ff0098aa17ee028448ec42815d7b7003ec",
+    "output_manifest": "e602df126eefeea28cb72f476dbef5cbeb9d3c84b86819f6c6245c430d7015d0",
+    "standalone_report": "b5919ee37274ffd37850517d9c31d302a84404bcba280abdae8c99e5720d5ea7"
+  },
+  "diagnostic_assertions": 28182,
+  "diagnostic_categories": 17,
+  "diagnostic_mutations": 17,
+  "input_files": 19,
+  "packet_files": 28,
+  "seal_sha256": "4121456ccf7231d994c578c08e2406caf599188a06eab74ef1448bb6d970416e",
+  "status": "PASS"
+}

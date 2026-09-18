@@ -1,0 +1,2 @@
+PASS: 59033 exact assertions in 27 categories; 15 nonvacuous mutations rejected.
+These finite checks support the independent analytic reconstruction; they do not certify analysis.

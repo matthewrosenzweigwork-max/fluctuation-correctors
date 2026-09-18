@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-18T07:48:55.830907+00:00",
+  "published_head": "4ab1d492c3bb9bb3537732f2d75502971f5ee6da",
+  "sources": [
+    {
+      "source": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "gate_sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_006.md",
+      "gate_sha256": "1d0d901e2e96dbd6013cb847225ea2b2340aac13379ef34197f0f00d80be11b6",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_010.md",
+      "gate_sha256": "56d4605864a0023c35ae542d1ec96317eef69f80c1b0975944d5bf870749e5cd",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "gate_record": "AUDITS/ROUND_016_GATE_INTEGRATION.md",
+      "gate_sha256": "68207163d5e576722b48953526f0d22b244a53badf7ae02e374251255aa1def9",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_018_BOUNDED_NOISE_GAUSSIAN.md",
+      "sha256": "0ef01a670c4b8533196e7eed26bbaf4e1f42789a3867c0f3b54ce492b42ac371",
+      "gate_record": "AUDITS/ROUND_018_GATE_INTEGRATION.md",
+      "gate_sha256": "fbe144497840b3c62811997da30ce54a49270686a543f31b7e39ad9464e1b4e9",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_020_CONTINUOUS_PATH_GAUSSIAN.md",
+      "sha256": "e5193f460dc6e979459105a60091ecb6c57827552fe1773edae01e7c44cf211f",
+      "gate_record": "AUDITS/ROUND_020_GATE_INTEGRATION.md",
+      "gate_sha256": "9601358ae20650d967a2e3be08ea76b8bfa09e675f8b6fc6ff5c831bdfd40dd6",
+      "matches_published_HEAD": true
+    }
+  ],
+  "dossier_manifests": [
+    {
+      "path": "AUDITS/ROUND_022_DISTRIBUTION_PATH_BLIND_INPUT_SHA256SUMS.txt",
+      "sha256": "b4b8b9441d99b8c57d53cc0fcdfb59a901f4a23dd598471cdd4c72d727d750a7",
+      "input_count": 16,
+      "all_canonical_inputs_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_022_DISTRIBUTION_PATH_HOSTILE_INPUT_SHA256SUMS.txt",
+      "sha256": "5d890a38e495176aa4efccae2c10f7ff0098aa17ee028448ec42815d7b7003ec",
+      "input_count": 19,
+      "all_canonical_inputs_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_022_DISTRIBUTION_PATH_ROOT_INPUT_SHA256SUMS.txt",
+      "sha256": "af2c71c1dd78a696e31ab47e7c4e5d2561d1aeb1665cda589f3fcdfbc008fb55",
+      "input_count": 16,
+      "all_canonical_inputs_match": true
+    }
+  ],
+  "scope_note": "Entire R20 accepted gate now matches exact constructor source supplied to both R22 axes. Earlier conditional source status is preserved in issued packets; root semantic matching is separate."
+}

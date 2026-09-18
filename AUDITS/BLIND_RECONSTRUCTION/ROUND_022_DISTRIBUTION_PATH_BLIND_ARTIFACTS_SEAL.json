@@ -1,0 +1,21 @@
+{
+  "archive_extraction": "NONE",
+  "archive_member_manifest_sha256": "f87089f637280fb370b3efab2cdc2c51cfffb36768be1692d2f496f7910a77e9",
+  "archive_members": 26,
+  "archive_payload_bytes": 400098,
+  "archive_sha256": "126b5901a3924760c283807cec929fe646739d3b1346c8d801428e7ac8b35698",
+  "audit": "AUD063",
+  "authored_output_count": 8,
+  "base_commit": "64ac0538dff37a37d0883661b401ad04c311a5e5",
+  "branch": "codex/hocf-r022-distribution-path-blind",
+  "content_manifest_sha256": "27b2d4bdc6d8cccc65d8686c9c9d51ec1b487be2952533de6d34a27bd5863ff0",
+  "disposition": "Whole frozen THM044/PO031 reconstructed; conditional full-source premises; root gate matching and hostile review remain.",
+  "immutability": "Read-only files and packet directories after successful pre-seal verification; corrections require a new artifact.",
+  "input_count": 16,
+  "input_manifest_sha256": "b4b8b9441d99b8c57d53cc0fcdfb59a901f4a23dd598471cdd4c72d727d750a7",
+  "issued_utc": "2026-09-18T07:43:36.677285+00:00",
+  "output_manifest_sha256": "f19c3d050a8a768da17f61b3fad94960133e6e978ab18ee36698d23f3370091c",
+  "report_sha256": "729bdb56413fe0702fe4fda23ebfd60bc6cef13fe258492ab3aee97d69b9cc63",
+  "task": "TASK097",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r022-distribution-path-blind"
+}

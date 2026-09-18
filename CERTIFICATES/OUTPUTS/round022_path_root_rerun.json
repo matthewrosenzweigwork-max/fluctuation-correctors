@@ -1,0 +1,79 @@
+{
+  "assertions": 47437,
+  "categories": {
+    "actual_delta_continuity_range": 5451,
+    "dyadic_lattice_shell_upper_count": 30,
+    "escaping_mode_pair_distance": 132,
+    "escaping_mode_unit_norm": 12,
+    "fixed_projection_can_miss_entire_path": 78,
+    "frozen_topology_threshold": 1817,
+    "iid_orthonormal_cosine_variance": 5,
+    "iid_orthonormal_sine_variance": 5,
+    "linear_Hilbert_summability": 5451,
+    "literal_convolution_integration_by_parts": 12500,
+    "literal_real_complex_Hilbert_pair": 5456,
+    "orthogonal_projection_Pythagoras": 324,
+    "pathwise_convolution_maximum": 3125,
+    "projection_tail_contraction": 324,
+    "source_Hilbert_summability": 5451,
+    "source_scaled_decay": 5451,
+    "source_threshold_equality_no_geometric_decay": 1817,
+    "supremum_sum_direction": 3,
+    "two_opposite_mode_trace": 5
+  },
+  "limitations": "Exact finite normalization, convolution, projection and range checks. Escaping-mode sequences challenge invalid inference, not the admitted particle law. Singular source estimates, infinite series and weak path convergence require the analytic proof and fresh independent gates.",
+  "mutation_witnesses": {
+    "coordinate_convergence_implies_Hilbert_tightness": {
+      "correct": "1",
+      "mutated": "0"
+    },
+    "drop_real_basis_normalization_N2": {
+      "correct": "2",
+      "mutated": "1"
+    },
+    "drop_real_basis_normalization_N3": {
+      "correct": "2",
+      "mutated": "1"
+    },
+    "drop_real_basis_normalization_N4": {
+      "correct": "2",
+      "mutated": "1"
+    },
+    "drop_real_basis_normalization_N5": {
+      "correct": "2",
+      "mutated": "1"
+    },
+    "drop_real_basis_normalization_N6": {
+      "correct": "2",
+      "mutated": "1"
+    },
+    "fixed_radius_compact_neighborhood_is_compact": {
+      "correct": "2",
+      "mutated": "0"
+    },
+    "moving_terminal_convolution_is_martingale": {
+      "correct": "-1/2",
+      "mutated": "0"
+    },
+    "omit_mode_count_in_source_threshold": {
+      "correct": "0",
+      "mutated": "-3"
+    },
+    "supremum_sum_equality_r11": {
+      "correct": "1/2048",
+      "mutated": "24418163/50000000000"
+    },
+    "supremum_sum_equality_r2": {
+      "correct": "1/4",
+      "mutated": "1/2"
+    },
+    "supremum_sum_equality_r5": {
+      "correct": "1/32",
+      "mutated": "1631/50000"
+    }
+  },
+  "script_sha256": "afb2552bc9248b5b86e6334702e6f650a6ba7ec5cb7bb051753398dc67c529d5",
+  "seed": null,
+  "status": "PASS",
+  "tolerance": null
+}

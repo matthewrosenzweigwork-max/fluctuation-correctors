@@ -1,0 +1,552 @@
+{
+  "arithmetic": "Python standard-library Fraction; exact rational and exponential-polynomial arithmetic.",
+  "assertions": 59033,
+  "audit": "AUD063",
+  "categories": {
+    "convolution_identity": 240,
+    "convolution_kernel_mass": 240,
+    "convolution_maximal_factor": 240,
+    "diverging_second_moment": 30,
+    "endpoint_not_included": 29,
+    "endpoint_shell_partial_sums": 870,
+    "escape_pair_distance": 190,
+    "exact_haar_cross_bracket": 480,
+    "finite_first_moment": 30,
+    "frozen_regularity_identity": 29,
+    "heavy_tail_mass": 30,
+    "initial_variance": 36,
+    "invisible_low_projection": 465,
+    "linear_shell_gap": 29,
+    "modal_covariance": 576,
+    "modal_covariance_symmetry": 576,
+    "mutation_rejections": 15,
+    "noise_normalization": 15,
+    "normalized_high_mode": 30,
+    "raw_brownian_label_bracket": 53760,
+    "real_complex_pair_isometry": 16,
+    "real_pair_gradient_norm": 4,
+    "source_scaling": 29,
+    "source_shell_gap": 29,
+    "summable_shell_partial_sums": 870,
+    "sup_sum_direction": 31,
+    "zero_noise_covariance": 144
+  },
+  "convolution_cases": [
+    {
+      "max_convolution": "111070208/40353607",
+      "max_driver": "2",
+      "q": "1/7",
+      "steps": 17
+    },
+    {
+      "max_convolution": "35918/16807",
+      "max_driver": "2",
+      "q": "1/7",
+      "steps": 7
+    },
+    {
+      "max_convolution": "13/7",
+      "max_driver": "1",
+      "q": "1/7",
+      "steps": 24
+    },
+    {
+      "max_convolution": "12171590/4782969",
+      "max_driver": "2",
+      "q": "1/3",
+      "steps": 17
+    },
+    {
+      "max_convolution": "550/243",
+      "max_driver": "2",
+      "q": "1/3",
+      "steps": 7
+    },
+    {
+      "max_convolution": "5/3",
+      "max_driver": "1",
+      "q": "1/3",
+      "steps": 24
+    },
+    {
+      "max_convolution": "79895/32768",
+      "max_driver": "2",
+      "q": "1/2",
+      "steps": 17
+    },
+    {
+      "max_convolution": "73/32",
+      "max_driver": "2",
+      "q": "1/2",
+      "steps": 7
+    },
+    {
+      "max_convolution": "3/2",
+      "max_driver": "1",
+      "q": "1/2",
+      "steps": 24
+    },
+    {
+      "max_convolution": "3646053415/1610612736",
+      "max_driver": "2",
+      "q": "3/4",
+      "steps": 17
+    },
+    {
+      "max_convolution": "2195/1024",
+      "max_driver": "2",
+      "q": "3/4",
+      "steps": 7
+    },
+    {
+      "max_convolution": "5/4",
+      "max_driver": "1",
+      "q": "3/4",
+      "steps": 24
+    },
+    {
+      "max_convolution": "2",
+      "max_driver": "2",
+      "q": "1",
+      "steps": 17
+    },
+    {
+      "max_convolution": "2",
+      "max_driver": "2",
+      "q": "1",
+      "steps": 7
+    },
+    {
+      "max_convolution": "1",
+      "max_driver": "1",
+      "q": "1",
+      "steps": 24
+    }
+  ],
+  "evidence_class": "Exact finite supporting diagnostics; not certification of singular passages, infinite sums, tightness, or weak convergence.",
+  "heavy_tail_partial_moments": [
+    {
+      "first_partial": "3/2",
+      "levels": 1,
+      "second_partial": "3"
+    },
+    {
+      "first_partial": "9/4",
+      "levels": 2,
+      "second_partial": "6"
+    },
+    {
+      "first_partial": "21/8",
+      "levels": 3,
+      "second_partial": "9"
+    },
+    {
+      "first_partial": "45/16",
+      "levels": 4,
+      "second_partial": "12"
+    },
+    {
+      "first_partial": "93/32",
+      "levels": 5,
+      "second_partial": "15"
+    },
+    {
+      "first_partial": "189/64",
+      "levels": 6,
+      "second_partial": "18"
+    },
+    {
+      "first_partial": "381/128",
+      "levels": 7,
+      "second_partial": "21"
+    },
+    {
+      "first_partial": "765/256",
+      "levels": 8,
+      "second_partial": "24"
+    },
+    {
+      "first_partial": "1533/512",
+      "levels": 9,
+      "second_partial": "27"
+    },
+    {
+      "first_partial": "3069/1024",
+      "levels": 10,
+      "second_partial": "30"
+    },
+    {
+      "first_partial": "6141/2048",
+      "levels": 11,
+      "second_partial": "33"
+    },
+    {
+      "first_partial": "12285/4096",
+      "levels": 12,
+      "second_partial": "36"
+    },
+    {
+      "first_partial": "24573/8192",
+      "levels": 13,
+      "second_partial": "39"
+    },
+    {
+      "first_partial": "49149/16384",
+      "levels": 14,
+      "second_partial": "42"
+    },
+    {
+      "first_partial": "98301/32768",
+      "levels": 15,
+      "second_partial": "45"
+    },
+    {
+      "first_partial": "196605/65536",
+      "levels": 16,
+      "second_partial": "48"
+    },
+    {
+      "first_partial": "393213/131072",
+      "levels": 17,
+      "second_partial": "51"
+    },
+    {
+      "first_partial": "786429/262144",
+      "levels": 18,
+      "second_partial": "54"
+    },
+    {
+      "first_partial": "1572861/524288",
+      "levels": 19,
+      "second_partial": "57"
+    },
+    {
+      "first_partial": "3145725/1048576",
+      "levels": 20,
+      "second_partial": "60"
+    },
+    {
+      "first_partial": "6291453/2097152",
+      "levels": 21,
+      "second_partial": "63"
+    },
+    {
+      "first_partial": "12582909/4194304",
+      "levels": 22,
+      "second_partial": "66"
+    },
+    {
+      "first_partial": "25165821/8388608",
+      "levels": 23,
+      "second_partial": "69"
+    },
+    {
+      "first_partial": "50331645/16777216",
+      "levels": 24,
+      "second_partial": "72"
+    },
+    {
+      "first_partial": "100663293/33554432",
+      "levels": 25,
+      "second_partial": "75"
+    },
+    {
+      "first_partial": "201326589/67108864",
+      "levels": 26,
+      "second_partial": "78"
+    },
+    {
+      "first_partial": "402653181/134217728",
+      "levels": 27,
+      "second_partial": "81"
+    },
+    {
+      "first_partial": "805306365/268435456",
+      "levels": 28,
+      "second_partial": "84"
+    },
+    {
+      "first_partial": "1610612733/536870912",
+      "levels": 29,
+      "second_partial": "87"
+    },
+    {
+      "first_partial": "3221225469/1073741824",
+      "levels": 30,
+      "second_partial": "90"
+    }
+  ],
+  "mutation_count": 15,
+  "mutations": {
+    "admit_source_endpoint": {
+      "mutated": "True",
+      "oracle": "False",
+      "status": "REJECTED",
+      "witness": "At r = R + d/2 the squared shell contribution is one at every level."
+    },
+    "compact_hilbert_ball": {
+      "mutated": "0",
+      "oracle": "2",
+      "status": "REJECTED",
+      "witness": "Distinct normalized modes have squared distance two, so a unit ball need not have a finite small net."
+    },
+    "convolution_wrong_ibp_sign": {
+      "mutated": "3/2",
+      "oracle": "1/2",
+      "status": "REJECTED",
+      "witness": "q=1/2 and U=(0,1,1): direct damped sum is 1/2; the positive-integral mutation gives 3/2."
+    },
+    "delete_noise_factor_two": {
+      "mutated": "1",
+      "oracle": "2",
+      "status": "REJECTED",
+      "witness": "nu=b=a=1: Haar quadratic variation for one real normalized mode is two."
+    },
+    "discard_thermal_covariance": {
+      "mutated": "{Fraction(6, 1): Fraction(1, 1)}",
+      "oracle": "{Fraction(2, 1): Fraction(1, 2), Fraction(6, 1): Fraction(1, 2)}",
+      "status": "REJECTED",
+      "witness": "The same positive-noise mode retains a distinct exponent-two thermal contribution."
+    },
+    "double_real_fourier_pair": {
+      "mutated": "2",
+      "oracle": "1",
+      "status": "REJECTED",
+      "witness": "A normalized cosine has unit L2 norm; its two complex coefficients each have squared magnitude 1/2."
+    },
+    "drop_prior_noise_increment": {
+      "mutated": "0",
+      "oracle": "-1/2",
+      "status": "REJECTED",
+      "witness": "For the same drive, M_2-M_1=-1/2 while the recent drive increment is zero."
+    },
+    "exchange_sup_and_sum_as_equality": {
+      "mutated": "2",
+      "oracle": "1",
+      "status": "REJECTED",
+      "witness": "Two continuous disjoint unit tents attain these values, as witnessed by their peak samples."
+    },
+    "infer_norm_from_fixed_projection": {
+      "mutated": "0",
+      "oracle": "1",
+      "status": "REJECTED",
+      "witness": "The constant path (1+j^2)^3 e_j has H^-6 norm one although Pi_4 is zero for j>4."
+    },
+    "initial_time_sum_to_difference": {
+      "mutated": "{Fraction(2, 1): Fraction(1, 1)}",
+      "oracle": "{Fraction(2, 1): Fraction(1, 2), Fraction(6, 1): Fraction(1, 2)}",
+      "status": "REJECTED",
+      "witness": "D=a=nu=1, t=1,u=2: the true coefficients are one half at exponents 6 and 2."
+    },
+    "insert_deleted_pair_factor_in_noise": {
+      "mutated": "4/3",
+      "oracle": "2",
+      "status": "REJECTED",
+      "witness": "At N=3, nu=b=a=1, independent Brownian labels give two, not two times (N-1)/N."
+    },
+    "omit_b_normalization_above_one": {
+      "mutated": "{Fraction(0, 1): Fraction(1, 1)}",
+      "oracle": "{Fraction(0, 1): Fraction(1, 2)}",
+      "status": "REJECTED",
+      "witness": "At nu=2, b=1/2, so the initial modal variance is 1/2."
+    },
+    "omit_dimension_in_threshold": {
+      "mutated": "True",
+      "oracle": "False",
+      "status": "REJECTED",
+      "witness": "d=3, R=9, r=10: r>R, but d+2R-2r=1; the shell series grows."
+    },
+    "retain_spurious_noise_N_inverse": {
+      "mutated": "2/3",
+      "oracle": "2",
+      "status": "REJECTED",
+      "witness": "At N=3 the scaled label sum cancels the remaining particle number."
+    },
+    "square_source_first_moment": {
+      "mutated": "9",
+      "oracle": "30",
+      "status": "REJECTED",
+      "witness": "The first ten levels of A=2^n with mass 3/4^n already have second moment 30; the full first moment is only 3."
+    }
+  },
+  "program_sha256": "bbd9d977c8eb4f20a6e22f784d7c4ba5e5dee36ba8db150ed12716e474e5788c",
+  "python": "3.9.6",
+  "randomness": "None; no random seed, sampling or floating-point tolerance.",
+  "shell_cases": [
+    {
+      "R": "37/4",
+      "d": 3,
+      "r": "45/4",
+      "s": "1/2"
+    },
+    {
+      "R": "9",
+      "d": 3,
+      "r": "11",
+      "s": "1"
+    },
+    {
+      "R": "43/4",
+      "d": 4,
+      "r": "53/4",
+      "s": "1/2"
+    },
+    {
+      "R": "21/2",
+      "d": 4,
+      "r": "13",
+      "s": "1"
+    },
+    {
+      "R": "81/8",
+      "d": 4,
+      "r": "101/8",
+      "s": "7/4"
+    },
+    {
+      "R": "49/4",
+      "d": 5,
+      "r": "61/4",
+      "s": "1/2"
+    },
+    {
+      "R": "12",
+      "d": 5,
+      "r": "15",
+      "s": "1"
+    },
+    {
+      "R": "91/8",
+      "d": 5,
+      "r": "115/8",
+      "s": "9/4"
+    },
+    {
+      "R": "55/4",
+      "d": 6,
+      "r": "69/4",
+      "s": "1/2"
+    },
+    {
+      "R": "27/2",
+      "d": 6,
+      "r": "17",
+      "s": "1"
+    },
+    {
+      "R": "101/8",
+      "d": 6,
+      "r": "129/8",
+      "s": "11/4"
+    },
+    {
+      "R": "61/4",
+      "d": 7,
+      "r": "77/4",
+      "s": "1/2"
+    },
+    {
+      "R": "15",
+      "d": 7,
+      "r": "19",
+      "s": "1"
+    },
+    {
+      "R": "111/8",
+      "d": 7,
+      "r": "143/8",
+      "s": "13/4"
+    },
+    {
+      "R": "67/4",
+      "d": 8,
+      "r": "85/4",
+      "s": "1/2"
+    },
+    {
+      "R": "33/2",
+      "d": 8,
+      "r": "21",
+      "s": "1"
+    },
+    {
+      "R": "121/8",
+      "d": 8,
+      "r": "157/8",
+      "s": "15/4"
+    },
+    {
+      "R": "73/4",
+      "d": 9,
+      "r": "93/4",
+      "s": "1/2"
+    },
+    {
+      "R": "18",
+      "d": 9,
+      "r": "23",
+      "s": "1"
+    },
+    {
+      "R": "131/8",
+      "d": 9,
+      "r": "171/8",
+      "s": "17/4"
+    },
+    {
+      "R": "79/4",
+      "d": 10,
+      "r": "101/4",
+      "s": "1/2"
+    },
+    {
+      "R": "39/2",
+      "d": 10,
+      "r": "25",
+      "s": "1"
+    },
+    {
+      "R": "141/8",
+      "d": 10,
+      "r": "185/8",
+      "s": "19/4"
+    },
+    {
+      "R": "85/4",
+      "d": 11,
+      "r": "109/4",
+      "s": "1/2"
+    },
+    {
+      "R": "21",
+      "d": 11,
+      "r": "27",
+      "s": "1"
+    },
+    {
+      "R": "151/8",
+      "d": 11,
+      "r": "199/8",
+      "s": "21/4"
+    },
+    {
+      "R": "91/4",
+      "d": 12,
+      "r": "117/4",
+      "s": "1/2"
+    },
+    {
+      "R": "45/2",
+      "d": 12,
+      "r": "29",
+      "s": "1"
+    },
+    {
+      "R": "161/8",
+      "d": 12,
+      "r": "213/8",
+      "s": "23/4"
+    }
+  ],
+  "status": "PASS"
+}

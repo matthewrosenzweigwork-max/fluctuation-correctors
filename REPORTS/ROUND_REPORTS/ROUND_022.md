@@ -1,0 +1,17 @@
+# Round022 — full distribution-path Gaussian gate
+
+# R22 full distribution-valued continuous-path gate
+
+2026-09-18 UTC. Entire unchanged THM044/PO031 passes the fresh whole reconstruction AUD063 and separate hostile review AUD064. Root complete analytic comparison, exact prior source/gate matching and all packet reproductions are complete. Mathematical axis PROVED_CANDIDATE, audit axes ISOLATED_RECONSTRUCTION_PASS and HOSTILE_REVIEW_PASS, source VERSION_LOCKED. Root does not certify its own construction or its chronology.
+
+Scope: actual homogeneous iid-Haar-prepared singular gradient particles, d>=3,0<s<=d-2,s<d/2, finite T, bounded convergent nonnegative diffusivity with no convergence rate, and any fixed r>2d+5-s/2. The fluctuation sqrt(Nb_N)(eta_N-dx) converges weakly in C([0,T],H^-r), uniform Hilbert norm, to the continuous Gaussian series of the frozen card. The entire genuine decomposition, source expected-supremum bound C sqrt(b_N)N^(s/d-1/2), and linear expected-squared Fourier-tail bound C sum_(|k|>K)(1+|k|^2)^(-r)(1+|k|^2) are included. Exact centering, both initial/thermal covariance terms and all zero/constant/degenerate cases remain.
+
+The proof upgrade is infinite-mode construction with a simultaneous deterministic source envelope, true modal martingale/convolution maxima, actual compact path sets and the full bounded-continuous weak passage. Root's finite-prefix and blind's stronger actual source-tail constructions agree; the new topology is not inferred from fixed-test convergence alone. Whole comparison: AUDITS/ROUND_022_RECONSTRUCTION_COMPARISON.md.
+
+The complete R20 source supplied to both reviewers is now accepted in published4ab1d492 after AUD059/060. Its exact proof and gate, with R4/R6/R10/R16/R18, match CERTIFICATES/OUTPUTS/round022_source_gate_match.json. These exact same-law/same-range interfaces discharge both reports' prior-source qualifications without editing issued bytes. No pair-domain, cubic, static-law or higher-hierarchy claim supplies a hidden premise.
+
+Proof hashes: rootaeb80c4b794fc8433faeefcbd5d244b48b26aa776e50f4294b677b050d501bd2; blind729bdb56413fe0702fe4fda23ebfd60bc6cef13fe258492ab3aee97d69b9cc63; hostileb5919ee37274ffd37850517d9c31d302a84404bcba280abdae8c99e5720d5ea7. All16/16/19 inputs and25/26/28 archive members verify. Root read both complete programs and reproduced47437/59033/28182 exact diagnostic assertions, with12/15/17 detecting mathematical mutations, byte-for-byte in separate fresh code-only directories. Blind verifier rejects seven actual adverse archive fixtures. Every report copy, source/output/outer manifest, exact safe archive member byte and issued read-only mode matches. These computations support coefficients/inference checks only; the full analytic proofs supply certification on the independent audit axes.
+
+PO031 closes exactly this row. Regularity threshold is sufficient, not optimal. Unbounded-noise path convergence, s>=d/2, larger singularities, arbitrary preparation, inhomogeneous/logarithmic settings and the full higher-corrector hierarchy remain open. No scientific mission, temperature exponent or normalization changed.
+
+Input published4ab1d492; output hash is recorded in the subsequent publication receipt. Next actions: integrate R23 whole static-obstruction audits with any explicit erratum; execute TASK102 actual critical d4Coulomb source construction; allocate a separate dynamical falsification/BBGKY route. The flagships remain open.
