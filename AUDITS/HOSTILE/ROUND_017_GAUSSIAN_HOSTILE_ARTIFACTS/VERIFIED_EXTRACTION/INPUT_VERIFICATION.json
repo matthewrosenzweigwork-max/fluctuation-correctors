@@ -1,0 +1,7 @@
+{
+  "base_commit": "072cab684b9ce41855ead6c48f435c8fc184ec35",
+  "branch": "codex/hocf-r017-gaussian-hostile",
+  "verified_input_count": 14,
+  "all_hashes_match": true,
+  "manifest_sha256": "0d4c561dbad0cde60df0122092d3a5bfdb70419053d129f7662bdf98f4677bf7"
+}

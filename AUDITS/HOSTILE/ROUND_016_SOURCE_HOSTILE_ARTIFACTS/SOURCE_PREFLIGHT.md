@@ -1,0 +1,21 @@
+# AUD052 complete source preflight
+
+All eleven byte strings match the frozen task manifest. The manifest was read before any other source and is packet metadata. No additional mathematical source or external literature input was used. Earlier complete reports remain conditional as issued; only the necessary mechanisms are reconstructed in the hostile report.
+
+| Input | SHA-256 | Bytes | Intentional read range | Use and retained limitation |
+|---|---|---:|---|---|
+| `AGENTS.md` | `cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3` | 8174 | Full file | Research discipline; bounded-task isolation overrides generic state-reading or integration instructions. |
+| `TASKS/ACTIVE/ROUND_001_MODEL.md` | `3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57` | 5031 | Full file | Authoritative model and kernel coefficient, noise, ordered labels, denominator, deleted source, and centering. |
+| `MEMORANDA/ROUND_001_ALGEBRA.md` | `e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de` | 30796 | Lines 1-190; section-heading inventory | Smooth source, response sign, and half/background conventions only. No singular diagonal imported. |
+| `MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md` | `135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be` | 36096 | Lines 65-197; section-heading inventory | Heat normalization, local coefficient, integrable force, exact finite divergence and Coulomb compensation. |
+| `THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md` | `aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a` | 2552 | Full file | Earlier card scope; its OPEN/UNAUDITED status does not supply proof and remains unchanged. |
+| `MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md` | `d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017` | 37944 | Lines 80-545; section-heading inventory | Necessary homogeneous particle realization, stopping, measurability, heat passage, and finite-N density mechanisms; no certification of its complete theorem. |
+| `MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md` | `f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b` | 35077 | Lines 76-236 and 442-497; section-heading inventory | Necessary smooth free-energy/Fatou, exact self subtraction, and initial generator passages; other conditional statements not imported. |
+| `THEOREMS/THM-038_FULL_SUBCOULOMB_COULOMB_QUADRATIC_SOURCE.md` | `257260a31d299f2d22d38deb0aea4add7b183b739d83d1031705d5d31f9982cb` | 2569 | Full file | Entire frozen assertion, quantitative consequence, exclusions, and exact negation. |
+| `TASKS/ACTIVE/TASK-081_ROUND016_SOURCE_EXTENSION_HOSTILE.md` | `bcd14cb3d7cf191bea7deec0db4a86035e1876c4cb15a76b4fcb7e0936a93596` | 2357 | Full file, read first with manifest | Fresh hostile protocol, eleven-input allowlist, isolated worktree, assigned outputs and sealed stopping point. |
+| `MEMORANDA/ROUND_016_SOURCE_EXTENSION.md` | `62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26` | 34431 | Full lines 1-544; truncated splitting interval reread separately | Intentional hostile target, every substantive claim and stronger mathematical assertion. Reported prior diagnostic totals not used as evidence. |
+| `MEMORANDA/ROUND_016_SOURCE_EXTENSION_ARTIFACTS/EXPOSURE.md` | `f371d5068e0189812e3f33bbfa2ceaa93ae07fceff7f11d4ac2dc9805db83503` | 2802 | Full file | Constructor exposure declaration only; not an independent forensic certification. |
+
+The normalized coefficient and both Coulomb measure components were recomputed from Gaussian integration and gamma recurrence. Particle noncollision, fixed-particle heat passage, density domination, and the actual expected-energy sign were checked with their local proofs, not by importing a status label. The complete positive splitting, multiplier estimate, absolute discarded-source estimate, background terms, optimized powers, initial derivative, and possible source-square failure are all reviewed in the issued report.
+
+There is no unverified literature citation or indispensable private source. General local instructions and the already-supplied memory summary were ambient routing context only. No memory file, state/history, current reconstruction, forbidden round result, root scratch/R17 proof, previous checker, browser, or external source was read.

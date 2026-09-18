@@ -1,0 +1,7 @@
+# R17 sealed root construction
+
+The complete proof ../ROUND_017_CRITICAL_FINITE_DIMENSIONAL_GAUSSIAN.md proves the exact THM039 conditional implication, using the full R16 source construction as explicitly conditional as issued. Its source gate and both fresh current audit axes remain pending. INPUT_SHA256SUMS.txt and preserved INPUTS lock eleven source/task byte strings; SOURCE_PREFLIGHT.md and EXPOSURE.md disclose all dependencies and construction exposure.
+
+Run round017_exact_checks.py only in a disposable writable copy; it writes EXACT_RESULTS.json beside itself.11741 exact assertions pass, including first-order deleted-label/background identities, full noise coefficients, initial iid covariance, joint-time covariance/degeneracy and strict exponents. The common physical (2pi)^2 factors are explicitly restored. Rational semigroup probes check covariance algebra, not a numerical physical exponential. Four deliberate mutation types are detected. No random seed, numerical tolerance, dependency installation or singular-law simulation. This is constructor supporting evidence, not independent analytic certification.
+
+OUTPUT_SHA256SUMS.txt locks all payload bytes. The safe ZIP contains only that exact payload and its manifest. ARCHIVE_SHA256SUMS.txt and ARCHIVE_VERIFICATION.json are outside the ZIP to avoid self-reference; each archive byte and CRC was checked and a fresh extracted exact diagnostic reproduced byte-identically. Original issued bytes must remain unchanged; corrections require a separately issued addendum.

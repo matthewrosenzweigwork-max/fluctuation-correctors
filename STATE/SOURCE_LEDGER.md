@@ -49,3 +49,9 @@ Round014 final gate,2026-09-18 UTC. R14 complete new sources are constructor266d
 
 
 Round015 final gate,2026-09-18 UTC. R15 full674/543/480-line records and all source/exposure qualifications read; new conjunction passes AUD049/050 with matching independently accepted R5/R6/R7/R8/R10/R12 premises. Source hashes and scope mapping are ROUND_015_GATE_INTEGRATION.md. Hostile three-byte rendering damage has a separately sealed same-reviewer clarification, no new independent-gate claim. No new external source or private[N].
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 full constructor and fresh blind proof hashes are62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26 andcd406a520e19c6ad9e12ef1215b9502523a34684e94a46e714ce643926248443. R17 root/blind hashes14c72f321d45073b355366822c3bdb8c569c3629cfaf5061772a36477785325f and7eb315e9c973c3932151e96671da37b3e9ff219572d024204eb12328caa3a7c9. Exact source scopes and conditional histories are in ROUND_016/017_RECONSTRUCTION_COMPARISON.md. No unseen/private/external theorem or novelty claim.
+
+
+R17 final gate,2026-09-18 UTC. R17 source gate mapping now resolves AUD054-Q01 by accepted THM038/AUD051/052 and matching R4/R6/R10 modules. AUD054-Q02 is retained as the reviewers limited ability to verify constructor chronology. New hostile hashb107bccede7aef91a4dad4ca880ea41853d845d855ef55b8ccf9145e147a5a2c. No new external/private source or novelty claim.

@@ -1,0 +1,30 @@
+{
+  "all_input_output_hashes_match": true,
+  "all_member_bytes_match": true,
+  "all_members_regular": true,
+  "archive_member_manifest_matches_payload": true,
+  "archive_members": 27,
+  "archive_name": "AUD054_20260918_055644_UTC.zip",
+  "archive_sha256": "c4b14742970baa2fbd128ffe43106271df08d6c35850579e9008be10e4fa7185",
+  "assigned_report_matches_packet_copy": true,
+  "assigned_report_sha256": "b107bccede7aef91a4dad4ca880ea41853d845d855ef55b8ccf9145e147a5a2c",
+  "audit": "AUD054",
+  "diagnostic_results_byte_reproduced": true,
+  "exact_member_set": true,
+  "input_count": 14,
+  "payload_files": 27,
+  "read_only_after_verification": true,
+  "safe_fresh_extraction_verified": true,
+  "status": "PASS",
+  "verification_command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r017-gaussian-hostile/AUDITS/HOSTILE/ROUND_017_GAUSSIAN_HOSTILE_ARTIFACTS/verify_sealed_packet.py",
+    "--directory",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r017-gaussian-hostile/AUDITS/HOSTILE/ROUND_017_GAUSSIAN_HOSTILE_ARTIFACTS",
+    "--archive",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r017-gaussian-hostile/AUDITS/HOSTILE/ROUND_017_GAUSSIAN_HOSTILE_ARTIFACTS/AUD054_20260918_055644_UTC.zip",
+    "--extract-to",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r017-gaussian-hostile/AUDITS/HOSTILE/ROUND_017_GAUSSIAN_HOSTILE_ARTIFACTS/VERIFIED_EXTRACTION"
+  ],
+  "verified_at_utc": "2026-09-18 05:56:44 UTC"
+}

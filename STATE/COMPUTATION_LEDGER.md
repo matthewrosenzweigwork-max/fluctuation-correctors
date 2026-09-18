@@ -99,3 +99,9 @@ Round014 final gate,2026-09-18 UTC. R14 hostile diagnostic REPRODUCED:236686 exa
 
 
 Round015 final gate,2026-09-18 UTC. R15 complete fresh extracted diagnostics REPRODUCED:6865 constructor,5045 blind,1422 hostile exact assertions, all byte-identical. Dossiers27/28/30 inputs; packet members36/36/41; all hashes/bytes verify. Rendering addendum7-member archive and44 original byte-preservation check pass. Root additionally read/verified/reproduced R16 candidate2892 exact assertions,9 inputs18 members; this is construction reproducibility only, independent R16 audits pending.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 blind packet9 inputs18 payload19 safe ZIP members verified,2018 assertions reproduce byte-identically; full477-line report/source/exposure read. R17 root packet11 inputs19 payload20 ZIP members verified,11741 assertions byte-identical; fresh blind11 inputs21 payload22 safe tar members verified,2447 assertions/31 categories byte-identical. Full435-line report/exposure/self-review read. Every seal/archive/copy checked; programs are independent supporting exact diagnostics, not analytic certification.
+
+
+R17 final gate,2026-09-18 UTC. R17 hostile14 inputs27 safe ZIP members verify;1031 exact assertions4974 coefficient comparisons15 mutation controls reproduce byte-identically. Complete216-line report/source/exposure read. All three R17 packets and R16 packets pass. Final combined TeX/PDF3 pages189787 bytes, complete log clean and all final pages viewed.

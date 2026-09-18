@@ -82,3 +82,9 @@ Round014 final gate,2026-09-18 UTC. R14 uses only the complete R8 genuine-domain
 
 
 Round015 final gate,2026-09-18 UTC. R15 new source bound uses positive heat coefficients and a Fourier commutator cancellation with polynomial cost; it does not need the pair inverse. Cubic closure additionally invokes the exact genuine full inverse and both responses through accepted R5/R8/R12 sources. Complete current R11/R13/R14 results are nondependencies.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R17 zero-noise response S_t multiplier exp(-tD_s(k)), backward f_r=S_(t-r)exp(nu(t-r)Delta)h. Uniform Fourier smooth seminorms and L2 contraction are used; no positivity-preserving claim for S_t is required. Its covariance has timesum damping. THM040 proposed Q_t uses L_k=D_s(k)+nu_bar4pi^2|k|^2 and explicitly adds thermal covariance; this extension is OPEN.
+
+
+R17 final gate,2026-09-18 UTC. R17 accepted finite-dimensional limit uses the genuine zero-noise response S_t and covariance with sum of times. No high-frequency smoothing or positivity-preserving property of S_t is assumed, including Coulomb. Broader temperature Q_t^nu limits are separately frozen.

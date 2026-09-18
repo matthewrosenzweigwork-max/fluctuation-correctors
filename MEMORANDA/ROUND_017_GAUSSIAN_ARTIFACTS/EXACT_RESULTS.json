@@ -1,0 +1,39 @@
+{
+  "arithmetic": "fractions.Fraction; exact Laurent coefficients; no random seed or tolerance",
+  "assertions": 11741,
+  "counts": {
+    "Coulomb_inclusive_kernel_range": 2812,
+    "admitted_degenerate_covariance": 15,
+    "all_background_first_order_identity": 36,
+    "backward_generator_cancellation": 108,
+    "backward_test_replacement_exponent": 2812,
+    "initial_iid_vector_covariance": 36,
+    "joint_time_covariance_uses_sum": 15,
+    "mutation_detected_doubled_pair_source": 1,
+    "mutation_detected_falling_factorial_source": 1,
+    "mutation_detected_flipped_response": 1,
+    "mutation_detected_stationary_time_difference_covariance": 1,
+    "ordered_force_symmetrization": 36,
+    "scaled_Haar_bracket": 108,
+    "smooth_source_diagonal_zero": 9,
+    "source_row_is_full_response": 9,
+    "source_scalar_zero": 9,
+    "source_scaled_exponent": 2812,
+    "thermal_scaled_exponent": 2812,
+    "whole_first_order_bracket": 108
+  },
+  "limitations": [
+    "No actual singular law is simulated.",
+    "Polynomial semigroup probes check covariance factors only.",
+    "Finite algebra and rational exponents do not certify continuum estimates or weak convergence.",
+    "Root constructor self-check, not independent audit."
+  ],
+  "mutation_witnesses": {
+    "doubled_pair_source": 16,
+    "falling_factorial_source": 16,
+    "flipped_response": 16,
+    "stationary_time_difference_covariance": 9
+  },
+  "physical_convention": "Force/generator/bracket second-order expressions restore (2*pi)^2; normalized diffusion has Laplacian multiplier -k^2.",
+  "status": "PASS"
+}

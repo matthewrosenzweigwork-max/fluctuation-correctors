@@ -73,3 +73,9 @@ Round014 final gate,2026-09-18 UTC. R14 verifies the existing full Ito coefficie
 
 
 Round015 final gate,2026-09-18 UTC. R15 uses the exact actual R12 whole bracket Q<=C b N^a(N^-theta+nu), full four-term particle-gradient square and true R8 martingale. At criticality isometry gives sigma E|M_T^2|<=C N^((a-theta)/2). No signed component is independently discarded and no Haar-to-law transfer is presumed. Full first-order limiting noise/finite-dimensional law remains separately open THM039.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R17 conditional first-order actual martingale is sqrt(2nu)/N sum_i integral grad f(X_i)dW_i, bracket2nu/N integral eta|grad f|^2. Scaled cross bracket2nu b integral_0^min(ti,tj) eta[grad fi dot grad fj]. At finite positive criticality it vanishes as nu_N->0; pair-corrector noise estimates are nondependencies. THM040 must prove a generally nonzero deterministic thermal bracket limit and joint law, without finite-N independence.
+
+
+R17 final gate,2026-09-18 UTC. R17 whole first-order thermal vector vanishes in L2 on critical tails using its exact physical bracket. Conditional source expectation gives the other L1 residual. Neither finite-N independence from initial data nor pair-corrector bracket inputs are used. Surviving thermal covariance remains the new THM040/041 gate.

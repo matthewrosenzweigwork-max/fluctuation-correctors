@@ -102,3 +102,9 @@ Round014 final gate,2026-09-18 UTC. R14 accepted: alpha=(s+1-q)/(s+2),kappa=(2q-
 
 
 Round015 final gate,2026-09-18 UTC. R15: theta=1-s/d,a=s/(s+2),omega=min(s,d-s-2)/2,e=(s-omega)/(s+2). The scaled critical integrated cubic is bounded by C[N^(1/2-theta)+N^-1/2+N^(e-1/2)+N^((a-theta)/2)], all strictly decaying for d>=4,0<s<2. Source sup_t E|PJ|<=C N^-theta uniformly over bounded nu; scaled absolute time integral<=C sqrt(b)N^(s/d-1/2). Critical nu=lambda_N^-1N^-theta and bounded chi are checked. No exponent or original normalization changes.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 raw N^(s/d-1) source is reconstructed through Coulomb, but sqrt(Nb) absolute-time-integral bound only decays at s<d/2. R17 has nu_N=lambda_N^-1N^(s/d-1),b_N1 eventually and error C[N^(s/d-1/2)+sqrt(nu_N)+nu_N]. THM040 uses b(nu)=min(1/nu,1) with b0=1, no convergence rate in bounded nu_N->nu_bar assumed. The three old/full-subcritical/critical conditions remain distinct.
+
+
+R17 final gate,2026-09-18 UTC. R17 accepted critical nu=lambda^-1 N^(s/d-1), eventual b1, exact error C[N^(s/d-1/2)+sqrt(nu)+nu]. Timesum covariance and strict s<d/2 remain. THM041 proposes all finite diffusivities with b=min(1/nu,1),b0=1 and nu b<=1, but that new uniformity is unaudited and does not follow solely from the bounded-noise card.

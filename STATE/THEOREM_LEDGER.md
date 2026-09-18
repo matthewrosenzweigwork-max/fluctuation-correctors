@@ -153,3 +153,12 @@ Round014 final gate,2026-09-18 UTC. R14 THM035: exact conditional implication, s
 
 
 Round015 final gate,2026-09-18 UTC. THM036/037 accepted in their exact frozen d>=4,0<s<2 scopes with fresh AUD049 reconstruction and AUD050 hostile PASS. Full root comparison, rendering clarification, source interfaces and seals are ROUND_015_GATE_INTEGRATION.md. THM038 larger source and THM039 finite-dimensional law remain OPEN; their complete candidates/independent audits are separate.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. THM038 whole-card AUD051 reconstruction PASS after full root544/477-line comparison; AUD052 hostile still pending sealed root review. THM039 conditional whole-card AUD053 PASS after full root435-line blind comparison; AUD054 and the source gate still pending. THM040 frozen separately OPEN/UNAUDITED: bounded convergent diffusivity finite-dimensional Gaussian law with initial and thermal covariance. No wider flagship promotion.
+
+
+R16 final gate: THM038 accepted with full fresh AUD051 reconstruction and AUD052 hostile PASS, exact scopes and prior source interface in ROUND_016_GATE_INTEGRATION.md. No extra derivative observation is mislabeled whole-blind-certified. THM039 remains pending its own AUD054; source premise now separately accepted.
+
+
+R17 final gate,2026-09-18 UTC. THM039 accepted with fresh AUD053 reconstruction and AUD054 hostile PASS; exact matching THM038 source gate supplied separately by AUD051/052. Entire finite-dimensional claim, approximation, centering and degeneracy pass. THM040/041 remain separate OPEN assertions.

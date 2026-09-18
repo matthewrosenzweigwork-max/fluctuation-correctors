@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "proof_sha256": "7eb315e9c973c3932151e96671da37b3e9ff219572d024204eb12328caa3a7c9",
+  "proof_lines": 435,
+  "archive_sha256": "3054d35b4e0c872aa6d1dc26e2d53204bf7b9e4882e9ea21085aff05dfb7d99f",
+  "input_count": 11,
+  "output_count": 21,
+  "safe_exact_members": 22,
+  "byte_identical_rerun": true,
+  "assertions": 2447,
+  "extraction": "/private/tmp/hocf-r017-blind-root-quwh3a6q",
+  "portable_verifier": {
+    "status": "PASS",
+    "inputs": 11,
+    "manifest_payload_files": 21,
+    "packet_files": 22,
+    "worktree_input_comparison": false,
+    "packet_files_read_only": true,
+    "archive": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r017-gaussian-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_017_GAUSSIAN_BLIND_TASK082_20260918_053625_UTC.tar.gz",
+    "archive_sha256": "3054d35b4e0c872aa6d1dc26e2d53204bf7b9e4882e9ea21085aff05dfb7d99f",
+    "archive_regular_files": 22,
+    "archive_safe_members": true,
+    "archive_disk_payload_identical": true
+  }
+}

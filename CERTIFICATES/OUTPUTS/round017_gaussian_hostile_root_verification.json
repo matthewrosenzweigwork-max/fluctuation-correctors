@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "report_sha256": "b107bccede7aef91a4dad4ca880ea41853d845d855ef55b8ccf9145e147a5a2c",
+  "report_lines": 216,
+  "input_count": 14,
+  "safe_exact_archive_members": 27,
+  "archive_sha256": "c4b14742970baa2fbd128ffe43106271df08d6c35850579e9008be10e4fa7185",
+  "assertions": 1031,
+  "coefficient_comparisons": 4974,
+  "mutation_controls": 15,
+  "byte_identical_rerun": true,
+  "all_copied_bytes_verified": true,
+  "extraction": "/private/tmp/hocf-r017-hostile-root-2hxn57hw",
+  "portable_verifier": {
+    "all_input_output_hashes_match": true,
+    "all_member_bytes_match": true,
+    "all_members_regular": true,
+    "archive_members": 27,
+    "archive_sha256": "c4b14742970baa2fbd128ffe43106271df08d6c35850579e9008be10e4fa7185",
+    "exact_member_set": true,
+    "input_count": 14,
+    "payload_files": 27,
+    "safe_fresh_extraction_verified": true,
+    "status": "PASS"
+  }
+}

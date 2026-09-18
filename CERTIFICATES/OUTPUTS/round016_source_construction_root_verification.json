@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "input_files": 9,
+  "output_files": 17,
+  "archive_members": 18,
+  "archive_sha256": "3db9a414f3992692a633a6c6de5ab756126533534864434878af7606567ff439",
+  "proof_sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+  "exact_assertions": 2892,
+  "rerun_byte_identical": true,
+  "copied_bytes_identical": true,
+  "archive_exact_member_set": true,
+  "disposable_rerun": "/private/tmp/hocf-r016-root-1kb6sw4x",
+  "scope": "Integrity and exact algebra; independent analytic gates pending."
+}

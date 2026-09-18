@@ -58,3 +58,9 @@ Round014 final gate,2026-09-18 UTC. R14 THM035 preserves the genuine full pair i
 
 
 Round015 final gate,2026-09-18 UTC. R15 genuine full pair inverse remains unchanged. The terminal-zero exact R8 identity plus accepted actual source bound, initial endpoint, lower contractions and whole martingale give actual integrated cubic smallness in the critical restricted range. This neither bounds the instantaneous absolute cubic nor certifies all higher correctors.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R17 first-order route, conditional on the separate actual source bound, needs no pair inverse, pair-domain,cubic or corrector-noise module. This nondependency does not erase accepted corrector results or close the higher hierarchy. THM040 is a new finite-list probability target, not a new corrector or silent hierarchy truncation.
+
+
+R17 final gate,2026-09-18 UTC. R17 is accepted by a direct first-order actual-source route, without pair inverse or higher-corrector hypotheses. Earlier corrector results remain accepted in their scopes. No all-order hierarchy truncation is inferred.

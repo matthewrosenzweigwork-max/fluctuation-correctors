@@ -51,3 +51,9 @@ Round014 final gate,2026-09-18 UTC. R14 AUD047/048 retain both actual lower cont
 
 
 Round015 final gate,2026-09-18 UTC. R15 retains exact C1=(A_a+R Phi)/6,C2=v/3,C0=0, two response slots and rho[(B Phi)_mu]/N+(integral B Phi)/(2N). The positive heat split retains smooth energy self coefficient1/N and separate labelled-pair1/(N-1); smooth source diagonal is exactly zero only at its observable cutoff. No counterterm introduced or singular diagonal assigned.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 source proofs agree on row -D*f and scalar0 with full Coulomb atom/compensation; smooth zero source diagonal alone permits the rho-square representation, while smooth energy self subtraction is retained. R17 first-order interaction is P[J]+eta[-D*f], exactly canceling its backward response. No new self term, falling factorial or counterterm.
+
+
+R17 final gate,2026-09-18 UTC. R17 accepted ordered first-order identity retains source coefficient1, pair half,N^2 denominator,full row -D*f and computed scalar0. No additional finite-N response factor, singular self assignment or counterterm. Existing second/higher-order contractions remain unchanged.

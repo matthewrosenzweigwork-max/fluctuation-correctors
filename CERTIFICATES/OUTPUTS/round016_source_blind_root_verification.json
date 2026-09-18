@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "proof_sha256": "cd406a520e19c6ad9e12ef1215b9502523a34684e94a46e714ce643926248443",
+  "proof_lines": 477,
+  "archive_sha256": "11d544f099b66f6987293859a7356527384dc92ef840da2e352156d5c5d7a012",
+  "input_count": 9,
+  "output_count": 18,
+  "safe_exact_members": 19,
+  "byte_identical_rerun": true,
+  "assertions": 2018,
+  "extraction": "/private/tmp/hocf-r016-blind-root-lgi57xw0",
+  "portable_verifier": {
+    "archive": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r016-source-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_016_SOURCE_BLIND_ARTIFACTS_20260918_052517_UTC.zip",
+    "archive_bytes": 92337,
+    "archive_member_count": 19,
+    "archive_sha256": "11d544f099b66f6987293859a7356527384dc92ef840da2e352156d5c5d7a012",
+    "crc_pass": true,
+    "exact_bytes": true,
+    "exact_members": true,
+    "hashed_payload_file_count": 18,
+    "input_count": 9,
+    "no_symlinks": true,
+    "output_manifest_sha256": "11f5e0f181ba9e6a319c59110913534e719fb4f96846597ff9c20afd523c9f3c",
+    "payload_file_count": 19,
+    "safe_paths": true,
+    "status": "PASS"
+  }
+}

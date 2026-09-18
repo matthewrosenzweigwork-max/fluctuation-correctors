@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "input_count": 11,
+  "payload_count": 19,
+  "archive_members": 20,
+  "archive_sha256": "7a2e484289819e5ec0e0957a6c1008a71a2006d54c3ad7f470557f1f984abd90",
+  "proof_sha256": "14c72f321d45073b355366822c3bdb8c569c3629cfaf5061772a36477785325f",
+  "safe_exact_members_and_bytes": true,
+  "input_and_output_hashes": true,
+  "zip_crc": true,
+  "exact_assertions": 11741,
+  "byte_identical_rerun": true,
+  "extraction": "/var/folders/yh/pqv2cz6539gc8j2cm154bcrr0000gn/T/hocf-r017-root-p9vsmuvr",
+  "verified_at": "2026-09-18T05:36:32.498977+00:00"
+}

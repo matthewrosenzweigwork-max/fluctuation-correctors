@@ -85,3 +85,9 @@ Round014 final gate,2026-09-18 UTC. R14 new bound uses the genuine off-diagonal 
 
 
 Round015 final gate,2026-09-18 UTC. R15 particle heat regularization is removed at fixed N using same-noise paths and shifted Fatou for expected energy. A different positive heat-integral observable splitting is then used at r=N^-2/d, with exact omitted positive remainder and retained smooth energy. Arbitrary smooth-test passage is explicit. The genuine inverse/domain are never replaced by a cutoff inverse; R8 supplies full fixed-N drift/martingale passages.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 removes particle heat regularization at each fixed N before positive observable heat decomposition/scales. R17 root uses actual collision-stopped identity and L1 drift/L2 noise passage; fresh reconstruction uses exact heat backward tests and pathwise source convergence on separated coupled paths, then actual L1 control. Neither interchanges N/cutoff limits nor assigns a singular diagonal.
+
+
+R17 final gate,2026-09-18 UTC. R17 actual first-order identity has two independently justified fixed-N singular passages; both precede the uniform critical limit. No cutoff/N interchange or inferred convergence of source expectations from path convergence. Current source gate supplies actual L1 separately.

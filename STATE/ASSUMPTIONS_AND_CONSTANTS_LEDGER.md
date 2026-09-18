@@ -78,3 +78,9 @@ Round014 final gate,2026-09-18 UTC. R14 accepted fixed-family constant can be (3
 
 
 Round015 final gate,2026-09-18 UTC. R15 complete fixed-data uniform source constant uses finite smooth terminal Fourier seminorm, constructor powerd+4 or independent modewise reconstruction powerd+2. No exponential terminal-frequency cost, noise-dependent energy constant or positive-time iid factor. Cubic constants may depend on fixed bounds for the critical tail and admitted R12 gradient constants; no endpoint uniformity in s approaching2 is claimed.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 constructor polynomial-tail weight d+2 and uniform logarithmic symbol slope give a finite smooth Fourier seminorm; fresh blind uses per-mode cutoff and polynomial |m|^(d+2) with Gaussian margin51/512. R17 constants depend on fixed finite tuple,kernel,d,s,T and critical tail bounds; no N or unbounded-noise uniformity. THM040 requests only a fixed bounded noise interval and fixed tuple, without a rate for nu_N->nu_bar.
+
+
+R17 final gate,2026-09-18 UTC. R17 constants are uniform on each admitted eventual critical tail for the fixed finite tuple; the proof establishes eventual b1 explicitly. R16 gives all bounded-noise source constants. No all-noise constant is promoted until THM041 independent gates.

@@ -187,3 +187,12 @@ Round014 final gate,2026-09-18 UTC. Accept R14 only after complete fresh blind a
 
 
 Round015 final gate,2026-09-18 UTC. Promote the exact R15 conjunction only after full fresh reconstruction and hostile reviews, whole root comparisons and reproduced safe packets. Preserve original hostile form-feed bytes under exact-hash exception, attach verified same-reviewer rendering addendum; no mathematical repair or additional independent audit is claimed. R16 candidate uses an independently constructed polynomial-tail heat splitting, withheld from its fresh blind worker. R17 fresh Ultra whole reconstruction receives only its frozen card and complete prior conditional source dossier, not root proof.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. Published R14/R15 as faf6f775a55579722319795cd9a9921e5829a903, matching HEAD/tracking/live main at2026-09-18T05:35:38.033593+00:00.254 explicit paths,36 future candidate/dossier paths held. Preserve all3 exact staged whitespace findings and AUD050 rendering issue with separate clarification. Root sealed R17 only after complete conditional R16 source and new diagnostic; unsolicited blind progress summaries before rootseal disclosed, no proof/program opened. Fresh R17 hostile receives14 frozen candidate/source/exposure inputs. Freeze THM040 separately, default Max constructor and statement-only Max blind; no change to THM039 or mission.
+
+
+Accept R16 only after full independent reconstruction and hostile review, original seals and fresh exact reproduction. Preserve hostile line109 spacing typo with separate root annotation, not byte edits or a mathematical repair. TASK081 complete; dispatch fresh Max TASK085/AUD055 R18wholeblind with12-source statement-only dossier. Actual3 workers remain TASK083,084,085.
+
+
+R17 final gate,2026-09-18 UTC. Accept exact R17 only after both whole independent axes and separately accepted matching R16 source gate. Preserve hostile Q02 provenance qualification and constructor exposed status; no independent forensic chronology certification claimed. No proof/statement repair. R19 root already has a complete unsealed two-part construction before fresh TASK088 Ultra wholeblind dispatch; worker progress after dispatch is disclosed exposure, not independent root status.

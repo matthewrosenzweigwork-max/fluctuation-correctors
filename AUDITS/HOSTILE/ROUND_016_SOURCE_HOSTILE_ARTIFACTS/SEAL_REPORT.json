@@ -1,0 +1,46 @@
+{
+  "archive_checks": [
+    "exact literal member order and set",
+    "all member bytes",
+    "relative canonical paths only",
+    "no duplicate names",
+    "regular files only; no symlinks or hard links",
+    "fixed owner, mode, timestamp and gzip metadata"
+  ],
+  "archive_filename": "ROUND_016_SOURCE_HOSTILE_AUD052_20260918_053542_UTC.tar.gz",
+  "archive_member_count": 21,
+  "archive_negative_controls": [
+    "absolute path",
+    "altered bytes",
+    "duplicate member",
+    "hard link",
+    "symlink",
+    "traversal",
+    "unexpected member",
+    "writable member"
+  ],
+  "archive_sha256": "99cff2f7b2fde6d6748bd21a7beaeea8a18fef9924b6872beb1eee4e50fe0aca",
+  "audit": "AUD052",
+  "branch": "codex/hocf-r016-source-hostile",
+  "canonical_edit_commit_push_install_external_search_children": false,
+  "diagnostic_assertions": 1700,
+  "diagnostic_categories": 37,
+  "diagnostic_mutation_controls_detected": 8,
+  "earlier_complete_modules_promoted": false,
+  "input_count": 11,
+  "mathematical_verdict": "whole frozen THM038 and stronger candidate claims PASS",
+  "original_worktree_inputs_rechecked": true,
+  "payload_hashes": {
+    "AUDITS/HOSTILE/ROUND_016_SOURCE_EXTENSION_REVIEW.md": "95710fb4d35134802badf5976f734395ff2091db82b4551b4a2eca8077189b4b",
+    "AUDITS/HOSTILE/ROUND_016_SOURCE_HOSTILE_ARTIFACTS/ARCHIVE_MEMBERS.txt": "5a3a7fd215dacd00600947b1245619817966896995a063701d3d432a5065f5e9",
+    "AUDITS/HOSTILE/ROUND_016_SOURCE_HOSTILE_ARTIFACTS/INPUT_SHA256SUMS.txt": "06919322a00bd6d2aea0e27ca05f76d745dbdf022d585183656af038d6d62b8c",
+    "AUDITS/HOSTILE/ROUND_016_SOURCE_HOSTILE_ARTIFACTS/OUTPUT_SHA256SUMS.txt": "dae138f6803bfa3a8865c841e96898506a5e50fe743d13dd061c591bc49637eb"
+  },
+  "published_base": "072cab684b9ce41855ead6c48f435c8fc184ec35",
+  "read_only_files": "0444",
+  "read_only_packet_directories": "0555",
+  "sealed_at_utc": "2026-09-18T05:44:39.808695+00:00",
+  "status": "PASS",
+  "withheld_reconstruction_read": false,
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r016-source-hostile"
+}

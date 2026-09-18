@@ -1,0 +1,16 @@
+{
+  "audit": "AUD053",
+  "task": "TASK-082",
+  "seal_utc": "2026-09-18T05:36:25.090782+00:00",
+  "branch": "codex/hocf-r017-gaussian-blind",
+  "published_base": "072cab684b9ce41855ead6c48f435c8fc184ec35",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r017-gaussian-blind",
+  "root_integration": "required after sealed comparison; no canonical state changed",
+  "verdict": "entire THM039 reconstructed conditionally on explicit complete R16 actual-source premise; source gate not presumed passed",
+  "report_sha256": "7eb315e9c973c3932151e96671da37b3e9ff219572d024204eb12328caa3a7c9",
+  "input_manifest_sha256": "ba605de5c6bf44631dc6f3c13592822646405c39acf5382edc44336e588fbb81",
+  "diagnostic_assertions": 2447,
+  "diagnostic_categories": 31,
+  "diagnostic_sha256": "55a4ec4881b918f54d93b2fcb8d6a43d3d7a39f3aa57db607774338b1f29147e",
+  "artifact_prefix": "ROUND_017_GAUSSIAN_BLIND_TASK082_20260918_053625_UTC"
+}

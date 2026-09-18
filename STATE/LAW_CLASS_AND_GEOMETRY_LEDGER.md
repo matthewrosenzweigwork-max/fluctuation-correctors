@@ -73,3 +73,9 @@ Round014 final gate,2026-09-18 UTC. R14 accepted scope: unit-Haar torus, coeffic
 
 
 Round015 final gate,2026-09-18 UTC. R15 accepted: homogeneous unit-Haar torus, actual singular gradient particles from iid Haar, d>=4,0<s<2. Source holds for bounded nu including zero; integrated cubic holds at positive finite microscopic critical lambda. No Coulomb,d3,s2,logarithmic,general background/preparation or full limiting-law claim enters. THM038/039 remain separate open scope extensions.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 reconstruction covers d>=3,0<s<=d-2,actual homogeneous iid-Haar preparation,all bounded diffusivity including zero. R17 additionally s<d/2 and positive finite critical lambda; finite fixed tuples only. THM040 freezes the same d,s law with arbitrary bounded diffusivity sequence converging to nu_bar>=0. No unbounded-noise,general background/preparation,logarithmic,path-space or hierarchy extension.
+
+
+R17 final gate,2026-09-18 UTC. R17 accepted full tuple law only for actual homogeneous iid-Haar-prepared gradient dynamics,d>=3,0<s<=d-2,s<d/2,positive finite critical lambda. This includes three-dimensional Coulomb. No path-space, arbitrary-law/background or larger-exponent promotion.

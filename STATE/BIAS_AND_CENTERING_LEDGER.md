@@ -63,3 +63,9 @@ Round014 final gate,2026-09-18 UTC. R14 lower bound is pathwise for any empirica
 
 
 Round015 final gate,2026-09-18 UTC. R15 keeps mean-field Haar centering and all explicit scalar/linear contractions. Actual source bound uses E|PJ|, not signed mean-zero symmetry. Initial iid pair second moment includes m^2/(4N^2) bias, first projection/N^3 and degenerate pair coefficient(N-1)/(2N^3). Product sampling is used only initially; no evolved iid endpoint.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R17 conditional finite-list implication derives exact one-body Haar centering from common translations and unique measurable actual realization. Initial iid is used only for zero-mean triangular-test replacement and initial Gaussian vector. No correction or positive-time factorization. THM040 separately requires the same exact centering and retains dependence between thermal martingale and initial data until its limit is proved.
+
+
+R17 final gate,2026-09-18 UTC. R17 exact actual Haar centering and absence of additional counterterm are accepted in its finite-dimensional critical scope. Initial triangular-test mean is exactly zero. Higher marginals are not independent, and no new centering in THM040/041 is approved by this gate.

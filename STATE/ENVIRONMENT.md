@@ -52,3 +52,9 @@ Current allocation: root Astra Ultra, TASK069 Max hostile R11, TASK071 Ultra bli
 
 
 Round015 final gate,2026-09-18 UTC. R15 TASK078 full review/addendum sealed and stopped. R16 TASK079 candidate sealed; root verified/read/copied/reproduced, then launched TASK081/AUD052 fresh Max hostile with11 inputs. TASK080/AUD051 fresh Max R16 blind remains active. TASK082/AUD053 fresh Ultra R17 full statement-only reconstruction active with11 inputs, escalation justified by first proposed critical limiting-law gate and isolated high-depth scrutiny. Actual3 workers plus Ultra root; project cap10 unchanged.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. Actual root Astra Ultra; TASK081 Max R16hostile, TASK083 Max R17hostile, TASK084 Max bounded-noise construction are active in separate prescribed worktrees. TASK080/082 are sealed, fully root-read/reproduced/compared and stopped. TASK085/AUD055 fresh Max R18blind is prepared but not yet dispatched. Configured cap10, actual runtime3 spawned-worker slots plus root; no bypass, global change or installation.
+
+
+R17 final gate,2026-09-18 UTC. R16 TASK081 and R17 TASK083 sealed/stopped, fully integrated. Active isolated workers: TASK084 Astra Max R18construction, TASK085 Astra Max R18blind, TASK088 Astra Ultra R19wholeblind. Root Astra Ultra owns TASK087 exposed cross-regime construction. Ultra escalation under MODEL_ORCHESTRATION section4 concerns stronger all-diffusivity uniform approximation. Configured10, actual3 workers plus root.

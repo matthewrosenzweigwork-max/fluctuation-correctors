@@ -94,3 +94,15 @@ Round014 final gate,2026-09-18 UTC. R14 closes PO025 exactly for d>=3,0<s<d-2,3s
 
 
 Round015 final gate,2026-09-18 UTC. R15 discharges PO001 actual scaled L1 integrated cubic only for positive finite critical lambda,d>=4,0<s<2,homogeneous actual iid-Haar preparation. THM037 additionally supplies actual uniform quadratic-source absolute expectation for all bounded noise there. Outside that scope PO001 and broader PO024/hierarchy PO004 remain OPEN. THM038 wider source and THM039/PO026 finite-dimensional law are the next separate gates; no full fluctuation theorem is inferred.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. PO026 remains pending final THM039 hostile/source gates, despite complete fresh reconstruction. New PO027 OPEN: prove/audit entire THM040 joint bounded-noise finite-list law, deterministic actual bracket limit and initial/thermal dependence, retaining exact covariance and all frozen edge cases. THM038 source is conditional until its separate final gate. Broader PO001/PO004/PO024 scopes remain unchanged.
+
+
+R16 final gate closes the exact THM038 wider actual-source obligation, supplying PO026/027 source premise in their entire admitted ranges. Scaled decay only s<d/2; no high-range, path-space or higher-order closure.
+
+
+New PO028 OPEN: whole THM041 two-part conjunction, source constant uniform over every finite nu>=0 and fixed-list bounded-Lipschitz Gaussian approximation uniformly over that same set. Root TASK087 exposed construction must supply exact unbounded-noise source/actual-Fourier constant audit, joint probability and metric-supremum passage; both independent axes remain required. No widening of earlier cards.
+
+
+R17 final gate,2026-09-18 UTC. PO026 closes exactly for THM039. PO027/028 remain OPEN for bounded-noise and uniformly all-noise Gaussian laws. Broader PO001/PO004/PO024, higher exponents and path-space/flagship obligations are unchanged.

@@ -1,0 +1,21 @@
+{
+  "assertions": 1031,
+  "assigned_report_matches_packet_copy": true,
+  "audit": "AUD054",
+  "base_commit": "072cab684b9ce41855ead6c48f435c8fc184ec35",
+  "development_harness_failure": "First development run raised StopIteration when centering the zero polynomial. Explicit empty-polynomial handling fixed the helper; the constant-test case is retained. This did not identify a candidate defect.",
+  "first_final_command": "python3 AUDITS/HOSTILE/ROUND_017_GAUSSIAN_HOSTILE_ARTIFACTS/hostile_exact_diagnostics.py",
+  "input_copies_reverified": 14,
+  "json_byte_identical": true,
+  "mutation_controls": 15,
+  "no_dependencies_installed": true,
+  "no_randomness": true,
+  "no_tex_created": true,
+  "polynomial_coefficients_compared": 4974,
+  "program_hash_matches_results": true,
+  "python_version": "3.9.6",
+  "reproduction_command": "python3 AUDITS/HOSTILE/ROUND_017_GAUSSIAN_HOSTILE_ARTIFACTS/hostile_exact_diagnostics.py --output AUDITS/HOSTILE/ROUND_017_GAUSSIAN_HOSTILE_ARTIFACTS/REPRODUCED_DIAGNOSTIC_RESULTS.json",
+  "results_sha256": "63f1d7d644b458a825a9a79a8ff01152aa9023047b1242044f280e2029405f0c",
+  "status": "PASS",
+  "tracked_git_diff_empty": true
+}

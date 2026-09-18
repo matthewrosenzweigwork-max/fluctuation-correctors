@@ -55,3 +55,9 @@ Round014 final gate,2026-09-18 UTC. R14 discharges the lower/scalar contraction 
 
 
 Round015 final gate,2026-09-18 UTC. R15 critical integrated U3 smallness is accepted only in its exact range, from the terminal integrated identity and actual source estimate. This does not provide a bound uniform in hierarchy order, an instantaneous cubic estimate or infinite resummation. PO004 remains OPEN.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R17 source exponent s/d-1/2 is strictly negative in its frozen range; thermal error exponent at criticality is(s/d-1)/2. The finite-dimensional route does not control order-uniform higher diagrams or give any decay at s=d/2. THM040 retains a thermal contribution when nu_bar>0 rather than asserting it small.
+
+
+R17 final gate,2026-09-18 UTC. R17 closes its finite-dimensional critical source residual only at strict s<d/2. This does not turn fixed-order power counting into a proof for s>=d/2 or an order-uniform critical hierarchy.

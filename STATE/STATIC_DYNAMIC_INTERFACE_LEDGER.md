@@ -47,3 +47,9 @@ Round014 final gate,2026-09-18 UTC. R14 needs no quantitative law-comparison bri
 
 
 Round015 final gate,2026-09-18 UTC. R15 actual expected-energy sign controls jointly positive retained Fourier energy and omitted short-distance remainder. This yields absolute source control under the evolving law, closing a quantitative interface without critical total-variation convergence. Positivity applies only to the explicit Fourier weights and heat remainder, never an arbitrary weighted Riesz kernel.
+
+
+R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 positive retained energy and omitted heat remainder supply actual source L1, no mean-to-concentration shortcut. R17 conditional full probability passage converts that source bound, bounded first-order thermal bracket and initial iid cancellation into a fixed-list law with exact joint covariance. This is not process tightness. THM040 asks for a new actual deterministic thermal-bracket bridge.
+
+
+R17 final gate,2026-09-18 UTC. The accepted R16 actual source bound and R17 genuine identity/initial iid approximation now prove a full fixed finite-dimensional critical law in the stated range. The probability passage includes degenerate covariance and actual expected vector error. It is not a path-space bridge.

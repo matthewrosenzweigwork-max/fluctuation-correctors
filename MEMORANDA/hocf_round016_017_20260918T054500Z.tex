@@ -1,0 +1,126 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\newcommand{\E}{\mathbb E}
+\newcommand{\T}{\mathbb T}
+\newcommand{\R}{\mathbb R}
+\begin{document}
+\title{Actual quadratic sources and finite-dimensional critical fluctuations}
+\author{HOCF--RIESZ, Rounds 016--017}
+\date{18 September 2026}
+\maketitle
+\noindent\textbf{Status.} The full source assertion THM--038 passes fresh reconstruction AUD--051 and separate hostile review AUD--052. The finite-dimensional implication THM--039 passes fresh reconstruction AUD--053 and separate hostile review AUD--054, with its exact source premise supplied by the independently accepted source gate. The complete proofs, source qualifications, independent reviews and immutable packets are the separate Round 016/017 Markdown records. This synthesis does not assert a full campaign or path-space theorem.
+
+\paragraph{The actual model and source.}
+Fix $d\ge3$, $0<s\le d-2$, finite $T$, a coefficient-one periodic Riesz interaction on the unit-Haar torus, and a bounded diffusivity interval $0\le\nu\le\nu_*$. Initial particles are iid Haar, independent of their Brownian drivers, and
+\[
+ dX_i=\frac1N\sum_{j\ne i}K(X_i-X_j)\,dt+\sqrt{2\nu}\,dW_i,
+ \qquad K=-\nabla g,
+ \qquad \widehat g(k)=c_{d,s}|k|^{s-d}\quad(k\ne0),
+\]
+where $\widehat g(0)=0$ and
+$c_{d,s}=\pi^{s-d/2}\Gamma((d-s)/2)/\Gamma(s/2)$.
+Write $\rho_N=\eta_N-dx$ and
+\[
+ P_N[J]=\frac1{2N^2}\sum_{i\ne j}J(X_i,X_j)
+ -\frac1N\sum_i\int J(X_i,y)\,dy+\frac12\iint J.
+\]
+For a fixed smooth real terminal test $h$, let $f_t^\nu$ be its exact backward test with multiplier
+$\exp[-(T-t)(4\pi^2\nu|k|^2+D_s(k))]$, where
+$D_s(k)=4\pi^2c_{d,s}|k|^{s+2-d}$. Set
+$J_f(x,y)=K(x-y)\cdot(\nabla f(x)-\nabla f(y))$ off the diagonal.
+The full measure $D=\operatorname{div}K$ gives the row $-D*f$ and zero scalar contraction. At Coulomb,
+$D=(d-2)|\mathbb S^{d-1}|(\delta_0-dx)$; its atom is retained.
+
+\paragraph{Two complete source arguments.}
+Put $\alpha=(d-s)/2\ge1$ and $A=4^\alpha\pi^{d/2}/\Gamma(s/2)$. The positive heat representation is
+\[
+ g(z)=A\int_0^\infty u^{\alpha-1}(p_u(z)-1)\,du.
+\]
+Actual expected energy satisfies $\E H_N(t)\le0$, where
+$H_N=N^{-1}\sum_{i<j}g(X_i-X_j)$.
+At positive noise this follows from smooth free-energy decrease, nonnegative entropy and fixed-$N$ heat path passage followed by shifted Fatou. At zero noise it follows from deterministic energy decrease. No positive-time product law or uniform configuration density is used.
+
+The constructor retains the heat weight
+$w_r(u)=(1-e^{-u/r})^{d+2}$ and omits $\psi_r=1-w_r\ge0$.
+Writing $g=g_r+Q_r-c_r$ with $Q_r\ge0$ and $c_r=\int Q_r$, define
+\[
+ E_r=\frac12\sum_{k\ne0}\widehat g_r(k)|\widehat\rho_N(k)|^2,
+ \qquad S_r=\frac1{2N^2}\sum_{i\ne j}Q_r(X_i-X_j).
+\]
+The exact identity and its consequence are
+\[
+ \frac{H_N}{N}=E_r+S_r-\frac{g_r(0)}{2N}-\frac{N-1}{2N}c_r,
+ \qquad \E(E_r+S_r)\le C(N^{-1}r^{-s/2}+r^\alpha).
+\]
+The retained Fourier symbol has a bounded logarithmic derivative, uniformly in $r$. Its commutator controls the smooth source by $C_hE_r$. The differentiated Gaussian estimate controls the absolute omitted source by $C_hQ_{2r}$, retaining all Haar contractions. Choosing $r=N^{-2/d}$ yields the genuine actual-law bound below.
+
+The fresh reconstruction instead splits the heat integral sharply at
+$R=N^{-2/d}|m|^{-2}$ for each nonzero terminal mode $m$. With
+$a_R(k)=A\int_R^\infty u^{\alpha-1}e^{-4\pi^2u|k|^2}\,du$, it proves
+\[
+ |m\cdot[k a_R(k)+(m-k)a_R(m-k)]|
+ \le C|m|^{2\alpha+2}\sqrt{a_{R/64}(k)a_{R/64}(m-k)}.
+\]
+The near/far frequency argument uses a strictly positive Gaussian margin $51/512$. The wider retained heat range is essential. Its mode bound costs only $|m|^{d+2}$, summable against the coefficients of a fixed smooth $h$. Both arguments prove
+\[
+ \boxed{\sup_{0\le t\le T}\E|P_N[J_{f_t^\nu}]|\le C N^{s/d-1}.}
+\]
+Every constant is uniform in $N$, deterministic time and the bounded diffusivity interval, with dependence on fixed $d,s,T,h$ and kernel allowed. Only smooth energy kernels have self values; no singular empirical diagonal is assigned. With $b=\min(1/\nu,1)$ at positive noise and $b(0)=1$,
+\[
+ \sqrt{Nb}\,\E\int_0^T|P_N[J_{f_t^\nu}]|\,dt
+ \le C\sqrt b\,N^{s/d-1/2}.
+\]
+Thus scaled decay is obtained only when $s<d/2$. Equality gives a bounded estimate, not decay; above it no decay follows. Raw source control still holds throughout $0<s\le d-2$.
+
+\paragraph{The critical finite-dimensional implication.}
+Now impose $s<d/2$ and positive finite microscopic criticality
+\[
+ \lambda_N=\beta_NN^{s/d-1}\longrightarrow\lambda\in(0,\infty),
+ \qquad \nu_N=\beta_N^{-1}=\lambda_N^{-1}N^{s/d-1}\longrightarrow0.
+\]
+Then $b_N=1$ and $\sigma_N=\sqrt N$ eventually. Fix a finite deterministic list $(t_j,h_j)$, with real smooth $h_j$ and $t_j\in[0,T]$. Common-translation equivariance and uniqueness give exactly Haar one-body marginals at every deterministic time. Higher marginals remain correlated.
+
+For one terminal pair $(t,h)$, let $S_t$ preserve constants and have nonzero Fourier multiplier $e^{-tD_s(k)}$, and put
+$f_r^\nu=S_{t-r}e^{\nu(t-r)\Delta}h$.
+Literal ordered-pair symmetrization, retaining the row contraction, gives the genuine singular identity
+\[
+ \rho_N(t)[h]=\rho_N(0)[f_0^\nu]+
+ \int_0^tP_N[J_{f_r^\nu}]\,dr+M_N(t),
+ \qquad
+ M_N(t)=\frac{\sqrt{2\nu}}N\sum_i\int_0^t\nabla f_r^\nu(X_i)\cdot dW_i.
+\]
+Root proves the identity through collision stops and actual drift integrability; the fresh reconstruction passes the exact heat backward identity pathwise before applying actual $L^1$ bounds. Both pass the martingale in $L^2$ by bounded gradients. Its full bracket is
+\[
+ \langle M_N\rangle_t=\frac{2\nu}{N}\int_0^t\eta_N(r)[|\nabla f_r^\nu|^2]\,dr.
+\]
+The source estimate bounds the scaled drift by $C N^{s/d-1/2}$; the martingale has scaled first moment at most $C\sqrt{\nu_N}$. The initial replacement has exact mean zero and
+\[
+ \|f_0^{\nu_N}-S_th\|_2\le\nu_Nt\|\Delta h\|_2,
+ \qquad
+ \E\left|\frac1{\sqrt N}\sum_i(f_0^{\nu_N}-S_th)(X_i(0))\right|^2
+ =\|f_0^{\nu_N}-S_th\|_2^2.
+\]
+This initial iid cancellation avoids a spurious factor $\sqrt N$. Consequently, for $Z_{N,j}=\sigma_N(\eta_N(t_j)[h_j]-\int h_j)$,
+\[
+ \boxed{\E\left|Z_{N,j}-\frac1{\sqrt N}\sum_i
+ (S_{t_j}h_j(X_i(0))-\textstyle\int h_j)\right|
+ \le C\big(N^{s/d-1/2}+\sqrt{\nu_N}+\nu_N\big).}
+\]
+
+\paragraph{The whole joint limit.}
+The initial vectors $V_i=(S_{t_j}h_j(X_i(0))-\int h_j)_j$ are fixed, bounded and iid. Taylor expansion of their characteristic function has error $O(N^{-3/2})$ for each fixed argument, so the characteristic function of $N^{-1/2}\sum_iV_i$ converges to that of a centered Gaussian with Gram covariance $C=\int VV^T$.
+A complete probability passage is included in both proofs: add an independent Gaussian of positive variance, apply Fourier dominated convergence to its density, pass bounded tests using density convergence and tightness, then remove the added Gaussian by bounded-Lipschitz coupling. Uniform second moments and compact approximation give all bounded continuous tests. This argument covers singular $C$ without inverting it. The displayed expected vector error transfers the limit to the actual particle statistics.
+
+The covariance is precisely
+\[
+ C_{ij}=\int(S_{t_i}h_i-\textstyle\int h_i)(S_{t_j}h_j-\textstyle\int h_j)\,dx
+ =\sum_{k\ne0}\widehat h_i(k)\overline{\widehat h_j(k)}e^{-(t_i+t_j)D_s(k)}.
+\]
+The sum of times records the common initial field. The thermal martingale vanishes in this critical regime. Zero and repeated times, constants and degenerate covariance are included. No centering counterterm is introduced.
+
+\paragraph{Limits of this checkpoint.}
+The source and finite-dimensional assertions have separately passed their required gates; all earlier issued source qualifications remain preserved. The older condition $\beta_NN^{2s/d-1}\to0$, full subcriticality $\lambda_N\to0$ and positive finite criticality are distinct. These arguments do not prove path-space tightness, convergence for growing lists, $s\ge d/2$ fluctuation laws, unbounded diffusivity, logarithmic or inhomogeneous results, arbitrary preparation, or closure of the higher hierarchy. Those require separate assertions and audits.
+\end{document}
