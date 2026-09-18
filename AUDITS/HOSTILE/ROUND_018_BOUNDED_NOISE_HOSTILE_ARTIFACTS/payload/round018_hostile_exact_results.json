@@ -1,0 +1,270 @@
+{
+  "arithmetic": "exact rational and Gaussian rational; formal exponential polynomials",
+  "assertions": 1381,
+  "audit": "AUD056 / TASK-086",
+  "categories": {
+    "Coulomb_atom_constant": 6,
+    "Coulomb_full_response_kills_constant": 1,
+    "Gaussian_marginal_first": 13,
+    "Gaussian_marginal_second": 13,
+    "actual_initial_cross_time_derivative": 72,
+    "actual_initial_equal_time_derivative": 72,
+    "backward_cancellation": 36,
+    "conditional_positive_compensator": 18,
+    "constant_test_zero": 100,
+    "energy_exact_self_and_background": 3,
+    "entire_cross_covariance_formula": 100,
+    "exact_positive_heat_split": 27,
+    "finite_dimensional_Coulomb_scope": 6,
+    "first_order_deleted_identity": 9,
+    "full_cross_carre_du_champ": 72,
+    "heat_Fourier_coefficient_one": 21,
+    "iid_initial_exact_gram": 18,
+    "joint_covariance_exact_PSD": 12,
+    "joint_covariance_exact_null_direction": 12,
+    "limiting_equal_time_slope": 200,
+    "limiting_initial_time_slope": 200,
+    "literal_force_from_energy": 18,
+    "mixture_correct_cross_covariance": 1,
+    "mutation_rejected": 22,
+    "ordinary_diffusion_trace": 9,
+    "original_double_background": 9,
+    "original_source_row": 9,
+    "positive_remainder_mass": 9,
+    "real_covariance_symmetry": 100,
+    "repeated_test_time_rows": 100,
+    "retained_Laplace_weight_positive": 27,
+    "subCoulomb_gamma_recurrence": 15,
+    "thermal_scaling_Lipschitz": 4,
+    "uniform_logarithmic_slope": 27,
+    "zero_time_thermal": 20
+  },
+  "dependencies": "Python standard library only",
+  "joint_counterexample": {
+    "E_M1_squared_M2_squared": "4",
+    "E_S_M1_M2": "1",
+    "Gaussian_covariance_prediction": "2",
+    "covariance": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "definition": "S equiprobable +/-1; M1=W1; M2=S*W1+W2; independent S,W1,W2",
+    "warning": "not an admitted particle-law counterexample"
+  },
+  "mutation_witnesses": [
+    {
+      "mutation": "remove_source_half",
+      "nonzero_difference": [
+        {
+          "key": "(-1, -1, 0)",
+          "value": "0+4/81i"
+        },
+        {
+          "key": "(-1, 0, -1)",
+          "value": "0+4/81i"
+        }
+      ]
+    },
+    {
+      "mutation": "reverse_response_sign",
+      "nonzero_difference": [
+        {
+          "key": "(-1, 0, 0)",
+          "value": "-1/9+0i"
+        },
+        {
+          "key": "(-2, 0, 0)",
+          "value": "0-8/45i"
+        }
+      ]
+    },
+    {
+      "mutation": "remove_original_background",
+      "nonzero_difference": [
+        {
+          "key": "(-1, 0, 0)",
+          "value": "1/18+0i"
+        },
+        {
+          "key": "(-2, 0, 0)",
+          "value": "0+4/45i"
+        }
+      ]
+    },
+    {
+      "mutation": "drop_Brownian_factor_two",
+      "nonzero_difference": [
+        {
+          "key": "(-1, 0, 0)",
+          "value": "0+2/27i"
+        },
+        {
+          "key": "(-2, 0, 0)",
+          "value": "-1/36+0i"
+        }
+      ]
+    },
+    {
+      "mutation": "insert_spurious_bracket_N",
+      "nonzero_difference": [
+        {
+          "key": "(-1, 0, 0)",
+          "value": "0+8/81i"
+        },
+        {
+          "key": "(-2, 0, 0)",
+          "value": "-1/27+0i"
+        }
+      ]
+    },
+    {
+      "mutation": "replace_deleted_N_minus_one_by_N",
+      "nonzero_difference": "31/135+0i"
+    },
+    {
+      "mutation": "omit_diffusion_in_cross_time_derivative",
+      "nonzero_difference": "-25/54+0i"
+    },
+    {
+      "mutation": "omit_variance_Ito_trace",
+      "nonzero_difference": "25/27+0i"
+    },
+    {
+      "mutation": "energy_delete_self_subtraction",
+      "nonzero_difference": [
+        {
+          "key": "(0, 0, 0)",
+          "value": "-1/15+0i"
+        }
+      ]
+    },
+    {
+      "mutation": "energy_constant_wrong_label_count",
+      "nonzero_difference": [
+        {
+          "key": "(0, 0, 0)",
+          "value": "1/2+0i"
+        }
+      ]
+    },
+    {
+      "mutation": "Coulomb_omit_compensating_Haar",
+      "nonzero_difference": [
+        {
+          "key": "0",
+          "value": "21+0i"
+        }
+      ]
+    },
+    {
+      "mutation": "Coulomb_omit_atom",
+      "nonzero_difference": [
+        {
+          "key": "-1",
+          "value": "-14+0i"
+        },
+        {
+          "key": "0",
+          "value": "-21+0i"
+        }
+      ]
+    },
+    {
+      "mutation": "suppress_thermal_cross_bracket",
+      "nonzero_difference": [
+        {
+          "key": "15/2",
+          "value": "2/5"
+        },
+        {
+          "key": "15/4",
+          "value": "-1/10"
+        }
+      ]
+    },
+    {
+      "mutation": "drop_entire_thermal_covariance",
+      "nonzero_difference": [
+        {
+          "key": "0",
+          "value": "1"
+        },
+        {
+          "key": "10",
+          "value": "-4/5"
+        }
+      ]
+    },
+    {
+      "mutation": "halve_thermal_covariance",
+      "nonzero_difference": [
+        {
+          "key": "0",
+          "value": "1/2"
+        },
+        {
+          "key": "10",
+          "value": "-2/5"
+        }
+      ]
+    },
+    {
+      "mutation": "initial_time_sum_replaced_by_difference",
+      "nonzero_difference": [
+        {
+          "key": "0",
+          "value": "-3"
+        },
+        {
+          "key": "10",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "mutation": "omit_scaling_b_above_one",
+      "nonzero_difference": [
+        {
+          "key": "0",
+          "value": "-91/88"
+        },
+        {
+          "key": "11",
+          "value": "-15/44"
+        }
+      ]
+    },
+    {
+      "mutation": "Gaussian_marginals_and_covariance_imply_joint_Gaussian",
+      "nonzero_difference": "2"
+    },
+    {
+      "mutation": "zero_initial_cross_mean_implies_initial_independence",
+      "nonzero_difference": "1"
+    },
+    {
+      "mutation": "wrong_stochastic_compensator_sign",
+      "nonzero_difference": "13"
+    },
+    {
+      "mutation": "replace_random_joint_bracket_by_expectation",
+      "nonzero_difference": "-2"
+    },
+    {
+      "mutation": "ignore_time_zero_weight_in_joint_passage",
+      "nonzero_difference": "2"
+    }
+  ],
+  "mutations_rejected": 22,
+  "physical_units": "Laurent derivatives / (2*pi); generator and bracket / (2*pi)^2",
+  "program_sha256": "b840ffadfa77774a2fec69559982beca1ea038ec32ff579bde90e2f5b4cc1b64",
+  "randomness": null,
+  "scope": "finite smooth algebra and solvable Gaussian diagnostics, not analytic proof",
+  "status": "PASS"
+}

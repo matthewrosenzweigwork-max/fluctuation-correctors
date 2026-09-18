@@ -1,0 +1,118 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[left=0.85in,right=0.85in,top=0.75in,bottom=0.75in]{geometry}
+\usepackage{hyperref}
+\newcommand{\E}{\mathbb E}
+\newcommand{\T}{\mathbb T}
+\newcommand{\R}{\mathbb R}
+\begin{document}
+\title{Finite-dimensional fluctuations with thermal noise}
+\author{HOCF--RIESZ, Rounds 018--019}
+\date{18 September 2026}
+\begin{center}
+{\Large Finite-dimensional fluctuations with thermal noise}\\[4pt]
+HOCF--RIESZ, Rounds 018--019 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Status.} THM--040 and the entire THM--041 conjunction pass fresh whole-statement reconstructions AUD--055/057 and separate hostile reviews AUD--056/058. Exact source gates are matched; these finite-dimensional assertions are accepted within their stated scope. The complete mathematical arguments, exact source qualifications, exposure records and sealed diagnostics are the separate Round 018/019 Markdown memoranda and audits. This document is a synthesis, not a substitute for those proofs.
+
+\paragraph{Model and scope.}
+Fix $d\ge3$, $0<s\le d-2$ and finite $T\ge0$. On the mass-one torus, initial particles are iid Haar and independent of their independent Brownian drivers. The actual noncolliding singular dynamics is
+\[
+ dX_i=\frac1N\sum_{\ell\ne i}K(X_i-X_\ell)\,dt+\sqrt{2\nu}\,dW_i,
+ \qquad K=-\nabla g,
+ \qquad \widehat g(k)=c_{d,s}|k|^{s-d}\quad(k\ne0),
+\]
+where $\widehat g(0)=0$ and
+$c_{d,s}=\pi^{s-d/2}\Gamma((d-s)/2)/\Gamma(s/2)$ for the Fourier convention $e^{2\pi i k\cdot x}$.
+Set $b(0)=1$, $b(\nu)=\min(1,\nu^{-1})$ for $\nu>0$, and
+$\rho_N=\eta_N-dx$. Thus $b\le1$ and $\nu b\le1$ for every finite diffusivity.
+Common translations and pathwise uniqueness preserve the initial translation invariance. Every one-body marginal is exactly Haar, so this centering equals exact first-marginal centering; higher marginals remain correlated.
+
+For the law statements add $s<d/2$ and fix a finite list of deterministic times and real smooth tests $(t_j,h_j)_{j=1}^m$.
+Let $Q_t^\nu$ preserve constants and have nonzero multiplier $e^{-tL_k(\nu)}$, with
+\[
+ a_k=4\pi^2|k|^2,\qquad
+ D_k=4\pi^2c_{d,s}|k|^{s+2-d},\qquad L_k(\nu)=D_k+\nu a_k>0.
+\]
+The covariance is the sum of two Gram matrices:
+\begin{align*}
+ C_{ij}(\nu)={}&b\int(Q_{t_i}^\nu h_i-\textstyle\int h_i)
+                        (Q_{t_j}^\nu h_j-\textstyle\int h_j)\,dx\\
+ &+2\nu b\int_0^{t_i\wedge t_j}\int
+             \nabla Q_{t_i-r}^\nu h_i\cdot\nabla Q_{t_j-r}^\nu h_j\,dx\,dr.
+\end{align*}
+Equivalently, the exact modal weights are
+\[
+ C_{ij}(\nu)=b\sum_{k\ne0}\widehat h_i(k)\overline{\widehat h_j(k)}
+ \left[\frac{D_k}{L_k}e^{-(t_i+t_j)L_k}
+       +\frac{\nu a_k}{L_k}e^{-|t_i-t_j|L_k}\right].
+\]
+The initial component has time-sum damping; the thermal component also contains the time difference. Constants, zero/repeated times and singular covariance are included.
+
+\paragraph{The two accepted assertions.}
+For a bounded sequence $\nu_N\to\bar\nu\ge0$, define the finite vector by
+\[ Z_{N,j}=\sqrt{Nb(\nu_N)}\,\rho_N(t_j)[h_j]. \]
+THM--040 states its joint convergence to the centered Gaussian with covariance $C(\bar\nu)$. No diffusivity convergence rate is assumed.
+THM--041 first extends the actual source estimate uniformly over \emph{every finite} $\nu\ge0$, then states
+\[
+ \sup_{0\le\nu<\infty}
+ d_{\rm BL}\bigl(\mathcal L(Z_{N,\nu}),\mathcal N_m(0,C(\nu))\bigr)
+ \longrightarrow0,
+\]
+where the distance is the supremum over real functions of sup norm at most one and Lipschitz constant at most one. The supremum is for a fixed finite time/test list. Infinity is never a coefficient in the particle equation.
+
+\paragraph{Source uniformity and the singular identity.}
+The original statistic is
+\[
+ P_N[J]=\frac1{2N^2}\sum_{i\ne\ell}J(X_i,X_\ell)
+       -\eta_N\left[\int J(\cdot,y)\,dy\right]+\frac12\iint J.
+\]
+For $J_f(x,y)=K(x-y)\cdot(\nabla f(x)-\nabla f(y))$ off the diagonal, its row is $-D*f$ and its scalar contraction is zero, where $D=\operatorname{div}K$ is the full finite measure. At Coulomb,
+$D=(d-2)|\mathbb S^{d-1}|(\delta_0-dx)$; both atom and compensation remain.
+
+At each fixed positive finite $\nu$, smooth free-energy decrease, nonnegative entropy and fixed-$N$ same-noise heat passage followed by shifted Fatou give $\E_\nu H_N(t)\le0$, with $H_N=N^{-1}\sum_{i<\ell}g(X_i-X_\ell)$. At zero noise use deterministic energy decrease. This upper bound is independent of all finite $\nu$, although constants used to construct each individual smooth law may depend on it.
+
+The full Round 016 proof retains the positive heat weight $(1-e^{-u/r})^{d+2}$ and writes $g=g_r+Q_r-c_r$, with $Q_r\ge0$. Its exact retained/omitted energy identity, logarithmic Fourier-symbol bound and commutator estimate use only the preceding energy sign and spatial seminorms of the test. Every such seminorm of $Q_{T-t}^\nu h$ is bounded uniformly in all finite $\nu$. The positive omitted heat kernel controls the absolute source and all original contractions. Choosing $r=N^{-2/d}$ gives
+\[
+ \sup_{\nu<\infty,\,t\le T}\E_\nu|P_N[J_{Q_{T-t}^\nu h}]|
+ \le C_hN^{s/d-1}.
+\]
+No uniform time-derivative bound as $\nu\to\infty$ is needed. The original singular observable is integrable by the actual pair-energy moment. The bounded-noise theorem card alone does not prove this extension; the complete proof constants are checked directly.
+
+Stopped smooth one-body It\^o calculus, exact ordered-pair symmetrization and removal of collision stops give
+\[
+ Z_{N,\nu}=A_{N,\nu}+M_{N,\nu}+R_{N,\nu},
+ \qquad \sup_{\nu<\infty}\E|R_{N,\nu}|\le CN^{s/d-1/2}.
+\]
+Here $A_j=\sqrt{b/N}\sum_i(Q_{t_j}^\nu h_j(X_i(0))-\int h_j)$ and
+\[
+ M_j=\sqrt{2\nu b/N}\sum_i\int_0^{t_j}
+              \nabla Q_{t_j-r}^\nu h_j(X_i(r))\cdot dW_i(r).
+\]
+Bounded gradients pass the stochastic integrals in $L^2$; the actual source passes in $L^1$. No source-square estimate or singular self value is asserted.
+
+\paragraph{The joint probability argument.}
+Positive heat retention and the actual energy sign give
+$\E|\widehat\rho_N(k)|^2\le\min(1,CN^{-(1-s/d)}|k|^{d-s})$ uniformly in all finite $\nu$. Absolute Fourier summation therefore controls the first absolute moment of every smooth gradient-product bracket test. For a fixed real vector $u$, let $M=u\cdot M_{N,\nu}$, $q=\langle M\rangle_T$ and let $v$ be its deterministic Haar bracket. Then
+\[
+ \E|q-v|\le C_uN^{-(1-s/d)/2},\qquad 0\le q,v\le K_u,
+\]
+uniformly in $\nu$, because $\nu b\le1$. The complex exponential
+$\exp(iM_t+\langle M\rangle_t/2)$ is a true martingale with conditional expectation one given the initial sigma field. Multiplying by $e^{iu\cdot A}$ and replacing its bounded compensator by $v$ costs at most $C_u\E|q-v|$. This proves the needed asymptotic factorization without finite-$N$ independence.
+
+The initial bounded iid triangular summands give a uniform characteristic-function error $O_u(N^{-1/2})$. Adding the source error proves compact-uniform characteristic convergence to $e^{-u^TC(\nu)u/2}$. Gaussian convolution, uniform second-moment tails for $A+M$, and the $L^1$ source remainder prove the full bounded-Lipschitz supremum. Removing the smoothing by a Lipschitz coupling includes degenerate covariances.
+
+\paragraph{Consequences and remaining scope.}
+For finite $\nu_N\to\bar\nu$, dominated Fourier summation gives covariance continuity, and positive semidefinite square-root coupling identifies the Gaussian limit. At $\bar\nu=0$ the thermal part vanishes. If $\nu_N\to\infty$, then
+$\operatorname{tr}C(\nu_N)\le b(\nu_N)\sum_j\|h_j-\int h_j\|_2^2\to0$,
+so the actual finite vector converges to zero in probability without a growth-rate restriction.
+The strict threshold $s<d/2$ is needed for the scaled source; equality supplies no decay. No continuous-path, distribution-valued, growing-test, larger-exponent, logarithmic, inhomogeneous or higher-hierarchy theorem is asserted here. THM--042 separately asks for bounded-noise continuous-path convergence.
+The three original conditions remain distinct:
+\[
+ \beta_NN^{2s/d-1}\to0,\qquad
+ \lambda_N:=\beta_NN^{s/d-1}\to0,\qquad
+ \lambda_N\to\lambda\in(0,\infty).
+\]
+The restricted homogeneous results do not equate these conditions or resolve every campaign flagship.
+\end{document}

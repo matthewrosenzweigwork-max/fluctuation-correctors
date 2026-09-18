@@ -91,3 +91,11 @@ R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 removes particle heat regu
 
 
 R17 final gate,2026-09-18 UTC. R17 actual first-order identity has two independently justified fixed-N singular passages; both precede the uniform critical limit. No cutoff/N interchange or inferred convergence of source expectations from path convergence. Current source gate supplies actual L1 separately.
+
+
+R18/R19 reconstruction checkpoint,2026-09-18 UTC. R18/R19 full reconstructions perform fixed-N,finite-nu same-noise heat/noncollision passage first, then uniform actual inequalities. Source diagonal remains deleted and all Haar contractions genuine. No uniform particle-cutoff convergence rate or source L2 passage is inferred.
+
+
+## R18/R19 whole gates accepted — 2026-09-18 UTC
+
+THM040/PO027 and the entire THM041/PO028 conjunction now pass both fresh independent axes and exact source matching. R18 AUD055/056 gives bounded-convergent-noise finite-dimensional Gaussian law with full initial plus thermal covariance, exact Haar centering, all frozen degeneracies and no noise-convergence rate. R19 AUD057/058 gives the source bound uniform over every finite nonnegative diffusivity and, with s<d/2, full unit bounded-Lipschitz Gaussian approximation uniformly over that parameter, including unrestricted hot-noise convergence to zero in probability. Source range remains d>=3,0<s<=d-2; Gaussian claims remain s<d/2, fixed finite smooth time/test list, actual homogeneous iid-Haar-prepared singular gradient dynamics. Original half/row/scalar, Coulomb atom/compensation, b and independent-noise coefficients are unchanged. Full proofs, scope, exposure, source and computation dispositions are AUDITS/ROUND_018_GATE_INTEGRATION.md and AUDITS/ROUND_019_GATE_INTEGRATION.md. No path-space/field/higher hierarchy or broader law claim is included, no root independent chronology certificate, no new counterterm or retraction. Frozen historical cards and evidence bytes remain untouched.

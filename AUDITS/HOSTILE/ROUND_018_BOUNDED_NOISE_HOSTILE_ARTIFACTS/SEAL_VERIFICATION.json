@@ -1,0 +1,15 @@
+{
+  "archive_exact_bytes": true,
+  "archive_regular_file_members": 26,
+  "archive_sha256": "f77c5520be01408a2498e7f27d7f8c44ebeabf41f332a2cdcf0b0d44c89d4cae",
+  "audit": "AUD056 / TASK-086",
+  "extraction_performed": false,
+  "input_files": 17,
+  "payload_and_report_readonly": true,
+  "payload_output_files": 8,
+  "status": "PASS",
+  "unsafe_name_mutations_rejected": 7,
+  "unsafe_or_duplicate_members": 0,
+  "untracked_payload_files": 0,
+  "workspace_overlay_and_standalone_checked": true
+}

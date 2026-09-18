@@ -1,0 +1,13 @@
+# R18/R19 ordinary publication preflight
+
+2026-09-18 UTC. Before-commit HEAD e75f8b780682a7e9fb0715b5e8b5873be684a2e8. User authorizes commit/push; main and origin remain unchanged. Whole THM040 and THM041 independent gates and exact source mapping pass; no full campaign completion is asserted. See the complete gate integration and round reports.
+
+All six complete packets were read/reviewed, exact-byte verified and their diagnostics independently rerun. Shipped campaign verification and protected provenance pass:51 immutable entries,23 documented mutable files. Supplemental source/output scan passes241 manifests and2742 digest entries with zero errors;303 pending paths were inventoried before staging. The original note and package hashes remain unchanged. No unrelated user changes or prior staged changes were present.
+
+The explicit accepted-output selection contains226 paths before this record, including the final TeX/PDF and exact complete build log;78 future R20/R21 proof/packet/dossier/task paths are held outside this publication. Frozen OPEN future assertion cards and recovery state are included without any promotion. Every staged byte is compared to its reviewed working-tree byte, and exact filenames are checked against this selection before commit. A final staged diff check is repeated after adding this record.
+
+Final synthesis command: latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=BUILD/round018-019 MEMORANDA/hocf_round018_019_20260918T062500Z.tex. PASS:2pages188996bytes. Complete log read; no compilation, undefined citation/reference, duplicate label, missing inclusion, font-substitution or overfull-box issue. Both final pages rendered and viewed, with intact glyphs/equations and suitable breaks. Build verification is separate from analytic gates.
+
+The staged whitespace check reports only preserved evidence: line21 in two exact copies of the already-issued THM039 card, plus trailing/terminal whitespace in the verbatim TeX build log. The two card copies were checked byte-identically against the frozen original. These locations are recorded without copying trailing whitespace into this note. No issued evidence is normalized to silence a warning. The unstaged tracked diff check was clean before staging; all later staged warnings are reviewed.
+
+Commit and push must be ordinary, with no amend/rewrite/force or remote change. Afterward verify HEAD, origin/main and the live remote main exactly agree and put the literal result in ROUND_019_PUBLICATION.md outside its own commit. R20/R21 and wider flagships remain pending their own gates. Continue the campaign after publication.

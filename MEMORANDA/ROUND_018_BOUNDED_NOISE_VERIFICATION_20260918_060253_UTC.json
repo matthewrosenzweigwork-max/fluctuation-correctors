@@ -1,0 +1,18 @@
+{
+  "archive_extracted": false,
+  "archive_members": 26,
+  "archive_sha256": "31f60c78fd7bf355537c7d75bd9ca7b795b440aba2cdd4f7ca47c28730c334af",
+  "authoritative_memorandum_compared": true,
+  "base_commit": "faf6f775a55579722319795cd9a9921e5829a903",
+  "diagnostic_assertions": 3150,
+  "diagnostic_categories": 26,
+  "exact_archive_bytes_match": true,
+  "independent_certification": false,
+  "inputs": 14,
+  "mutation_families_rejected": 9,
+  "output_hashes": 25,
+  "packet_files": 26,
+  "source_root_compared": ".",
+  "status": "PASS",
+  "unsafe_name_negative_controls_rejected": 10
+}

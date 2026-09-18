@@ -1,0 +1,93 @@
+{
+  "base_commit": "faf6f775a55579722319795cd9a9921e5829a903",
+  "branch": "codex/hocf-r018-bounded-noise-construction",
+  "canonical_ledgers_modified": false,
+  "children": false,
+  "commits": false,
+  "conditional_complete_sources": [
+    "R16 / THM038",
+    "R17 / THM039"
+  ],
+  "construction_status": "CONDITIONAL PROVED CANDIDATE / CONSTRUCTOR SELF-CHECK",
+  "dependency_installation": false,
+  "external_search": false,
+  "independent_certification": false,
+  "input_manifest_sha256": "be63b492edc737d16bf90967258d7727815627673436ae2f74f9529285099b09",
+  "inputs": [
+    {
+      "bytes": 8174,
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+    },
+    {
+      "bytes": 5031,
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+    },
+    {
+      "bytes": 30796,
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de"
+    },
+    {
+      "bytes": 36096,
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be"
+    },
+    {
+      "bytes": 2552,
+      "path": "THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "aaaec9f6e10be3b5b6e82473ce11a441ad67c6c9b03c17254c144270e0103c7a"
+    },
+    {
+      "bytes": 37944,
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017"
+    },
+    {
+      "bytes": 35077,
+      "path": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b"
+    },
+    {
+      "bytes": 3247,
+      "path": "THEOREMS/THM-031_ACTUAL_FOURIER_SMOOTHING_AND_TAIL.md",
+      "sha256": "2b8ffeae89b33742353c06e9e975b726f4b705ab7f1ef2bb8d830675d6195ba4"
+    },
+    {
+      "bytes": 2569,
+      "path": "THEOREMS/THM-038_FULL_SUBCOULOMB_COULOMB_QUADRATIC_SOURCE.md",
+      "sha256": "257260a31d299f2d22d38deb0aea4add7b183b739d83d1031705d5d31f9982cb"
+    },
+    {
+      "bytes": 34431,
+      "path": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26"
+    },
+    {
+      "bytes": 3369,
+      "path": "THEOREMS/THM-039_CRITICAL_FINITE_DIMENSIONAL_HOMOGENEOUS_GAUSSIAN.md",
+      "sha256": "108a18e6f7b4053a12a9d341dcd1f0f7f90622fb6c590a002d866ff569d0c28f"
+    },
+    {
+      "bytes": 13337,
+      "path": "MEMORANDA/ROUND_017_CRITICAL_FINITE_DIMENSIONAL_GAUSSIAN.md",
+      "sha256": "14c72f321d45073b355366822c3bdb8c569c3629cfaf5061772a36477785325f"
+    },
+    {
+      "bytes": 3152,
+      "path": "THEOREMS/THM-040_BOUNDED_DIFFUSIVITY_FINITE_DIMENSIONAL_GAUSSIAN.md",
+      "sha256": "eda23360683cb9545d4d0fe7bcc8c32e36ca6aa6e670c6bcf38609317332efdc"
+    },
+    {
+      "bytes": 2016,
+      "path": "TASKS/ACTIVE/TASK-084_ROUND018_BOUNDED_NOISE_GAUSSIAN_CONSTRUCTION.md",
+      "sha256": "6224eb76cd0082bd288cf9c871e24661eaf9f0d14907a4f2a70129d77e905027"
+    }
+  ],
+  "schema": "hocf.round018.bounded-construction-provenance.v1",
+  "source_files_modified": false,
+  "task": "TASK-084",
+  "theorem": "THM-040",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r018-bounded-noise-construction"
+}

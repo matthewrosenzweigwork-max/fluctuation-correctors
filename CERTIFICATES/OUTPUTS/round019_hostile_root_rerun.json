@@ -1,0 +1,214 @@
+{
+  "arithmetic": "Python integers and fractions.Fraction; Gaussian rational pairs; formal polynomial identities",
+  "assertions": 7564,
+  "assertions_by_category": {
+    "BL_probability_threshold_factor": 18,
+    "L1_only_exact_BL_distance": 6,
+    "L1_only_residual_decay": 6,
+    "L1_tail_mechanism": 30,
+    "capped_scaling": 7,
+    "constant_deleted_statistic": 11,
+    "constant_test_zero": 21,
+    "coulomb_atom_compensation_mass": 3,
+    "covariance_gram_at_formal_probe": 2100,
+    "deleted_energy_identity": 11,
+    "density_difference_can_be_small": 3,
+    "dependence_error_uniform_decay": 6,
+    "direct_interaction_and_full_source": 66,
+    "fixed_parameter_spike_disappears": 6,
+    "fixed_time_formal_covariance_identity": 525,
+    "free_energy_local_square_exact": 20,
+    "free_energy_sign_all_finite_noise": 20,
+    "genuine_scalar_background": 66,
+    "haar_row_convolution": 168,
+    "independent_Brownian_labels_bracket": 15,
+    "initial_conditioned_compensator_exact": 6,
+    "initial_variance_uniform": 28,
+    "lattice_commutator_squared": 3000,
+    "literal_iid_binomial_moment": 84,
+    "modal_diagonal_hot_bound": 588,
+    "polynomial_retention_positive": 180,
+    "positive_omitted_mass_exact_integral": 30,
+    "positive_remainder": 11,
+    "repeated_time_degenerate_gram": 21,
+    "retained_fourier_commutator_factor": 66,
+    "scaled_source_exact_exponent": 27,
+    "smooth_source_diagonal": 66,
+    "source_balanced_exponents": 27,
+    "source_range_distinct_from_Gaussian_range": 9,
+    "source_reality": 66,
+    "strict_Gaussian_threshold": 9,
+    "terminal_spatial_amplitude_fixed": 2,
+    "triangular_iid_fourth_uniform": 28,
+    "triangular_iid_sixth_uniform": 28,
+    "uniform_radial_log_derivative": 180
+  },
+  "audit": "AUD058 / TASK089",
+  "first_mutation_witnesses": {
+    "Brownian_bracket_extra_N": {
+      "N": 2,
+      "bracket": "-1/12",
+      "nu": "1/4"
+    },
+    "Brownian_bracket_missing_two": {
+      "N": 2,
+      "nu": "1/4"
+    },
+    "assume_uniform_terminal_time_derivative": {
+      "nu": "1000",
+      "time_derivative_amplitude": "4001"
+    },
+    "density_sup_norm_without_tails": {
+      "bounded_Lipschitz_gap": 2,
+      "density_sup_error": "1/2",
+      "n": 2
+    },
+    "drop_retention_log_derivative_contribution": {
+      "actual_log_derivative": "26788594520016668/13363802787223889",
+      "alpha": 1,
+      "d": 3,
+      "lambda": "1",
+      "r": "1/1000"
+    },
+    "entropy_weight_omits_nu": {
+      "correct_dissipation": "-2253001/250000",
+      "density": "1",
+      "nu": "1/1000"
+    },
+    "exponential_retention_reused_as_polynomial": {
+      "L": 12,
+      "ell": 17,
+      "k": 16,
+      "scaled_heat_parameter": "log(2)"
+    },
+    "falling_factorial_denominator": {
+      "N": 2
+    },
+    "finite_N_initial_martingale_independence": {
+      "exact_joint_characteristic_value": "-5/24",
+      "independence_prediction": "0",
+      "n": 2
+    },
+    "initial_scale_omits_b": {
+      "N": 2,
+      "nu": "3"
+    },
+    "initial_sum_time_replaced_by_difference": {
+      "nu": "0",
+      "time_indices": [
+        1,
+        3
+      ]
+    },
+    "nondecay_promoted_at_threshold": {
+      "N": 256,
+      "d": 4,
+      "s": 2,
+      "scaled_bound_power": 0
+    },
+    "omit_haar_row": {
+      "N": 2,
+      "row": "(-1/4,0)"
+    },
+    "omit_probability_test_normalizing_factor": {
+      "epsilon": "1/10",
+      "required_factor": "10",
+      "test_at_threshold": "1/10"
+    },
+    "omit_smooth_self": {
+      "N": 2,
+      "missing": "(5/16,0)",
+      "positions_in_quarters": [
+        0,
+        1
+      ]
+    },
+    "omit_symmetrization_half": {
+      "N": 2,
+      "direct": "(-1/4,0)",
+      "positions_in_quarters": [
+        0,
+        1
+      ]
+    },
+    "pointwise_parameter_to_uniform_metric": {
+      "BL_distance_delta1_delta0": 1,
+      "N": 2,
+      "bad_finite_nu": 2
+    },
+    "promote_source_L1_to_uniform_L2": {
+      "first_moment": "1/2",
+      "n": 2,
+      "second_moment": "8"
+    },
+    "punctured_coulomb_response": {
+      "c": "1",
+      "f_x": "1",
+      "mean_f": "0"
+    },
+    "replace_deleted_background_by_half": {
+      "N": 2,
+      "correct_background": "(1/2,0)",
+      "mutant_background": "1"
+    },
+    "replace_random_bracket_by_its_mean_exactly": {
+      "joint_value": "-5/24",
+      "n": 2
+    },
+    "thermal_factor_two_lost": {
+      "nu": "1/1000",
+      "time_indices": [
+        1,
+        1
+      ]
+    },
+    "uncapped_hot_normalization": {
+      "correct_b": "1/3",
+      "nu": "3"
+    },
+    "wrong_exponential_compensator_sign": {
+      "correct_value": "0",
+      "mutant_value": "-65/144",
+      "n": 2
+    }
+  },
+  "limits": [
+    "No simulation or finite-N singular distribution calculation.",
+    "Finite probes do not establish uniform analytic inequalities.",
+    "Formal q=exp[-(D+nu*a)/3] retains the fixed physical time grid j/3.",
+    "Gaussian-rational source derivatives are divided by their common factor 2*pi; physical factors are restored in the audit.",
+    "Adapted Gaussian-mixture and residual/spike examples challenge proof steps and are not counterexamples in the admitted particle law class."
+  ],
+  "mutation_families": 24,
+  "mutation_rejections": 879,
+  "mutation_rejections_by_category": {
+    "Brownian_bracket_extra_N": 12,
+    "Brownian_bracket_missing_two": 12,
+    "assume_uniform_terminal_time_derivative": 2,
+    "density_sup_norm_without_tails": 3,
+    "drop_retention_log_derivative_contribution": 180,
+    "entropy_weight_omits_nu": 9,
+    "exponential_retention_reused_as_polynomial": 1,
+    "falling_factorial_denominator": 11,
+    "finite_N_initial_martingale_independence": 6,
+    "initial_scale_omits_b": 12,
+    "initial_sum_time_replaced_by_difference": 210,
+    "nondecay_promoted_at_threshold": 9,
+    "omit_haar_row": 32,
+    "omit_probability_test_normalizing_factor": 6,
+    "omit_smooth_self": 11,
+    "omit_symmetrization_half": 28,
+    "pointwise_parameter_to_uniform_metric": 6,
+    "promote_source_L1_to_uniform_L2": 6,
+    "punctured_coulomb_response": 9,
+    "replace_deleted_background_by_half": 11,
+    "replace_random_bracket_by_its_mean_exactly": 6,
+    "thermal_factor_two_lost": 288,
+    "uncapped_hot_normalization": 3,
+    "wrong_exponential_compensator_sign": 6
+  },
+  "python": "3.9.6",
+  "seed": null,
+  "status": "PASS exact diagnostic assertions and rejected mutations",
+  "tolerance": null
+}

@@ -1,0 +1,35 @@
+{
+  "utc": "2026-09-18T06:49:15.597056+00:00",
+  "published_base": "e75f8b780682a7e9fb0715b5e8b5873be684a2e8",
+  "sources": [
+    {
+      "source": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "gate_record_sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_006.md",
+      "gate_record_sha256": "1d0d901e2e96dbd6013cb847225ea2b2340aac13379ef34197f0f00d80be11b6",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "gate_record": "REPORTS/ROUND_REPORTS/ROUND_010.md",
+      "gate_record_sha256": "56d4605864a0023c35ae542d1ec96317eef69f80c1b0975944d5bf870749e5cd",
+      "matches_published_HEAD": true
+    },
+    {
+      "source": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "gate_record": "AUDITS/ROUND_016_GATE_INTEGRATION.md",
+      "gate_record_sha256": "68207163d5e576722b48953526f0d22b244a53badf7ae02e374251255aa1def9",
+      "matches_published_HEAD": true
+    }
+  ],
+  "status": "PASS exact source bytes and accepted scope matched; all-finite-noise extension is itself a new R19 assertion"
+}

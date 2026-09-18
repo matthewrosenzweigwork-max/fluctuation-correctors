@@ -1,0 +1,111 @@
+{
+  "arithmetic": "fractions.Fraction; exact Gaussian rationals; formal exponential polynomials",
+  "assertions": 3150,
+  "categories": {
+    "OU_conditional_covariance_reconstruction": 256,
+    "actual_initial_time_covariance_derivative": 96,
+    "actual_initial_variance_derivative": 96,
+    "all_required_mutations_rejected": 1,
+    "bounded_bracket_flattening": 7,
+    "bracket_decay_exponent": 39,
+    "conditional_compensated_Gaussian_series": 54,
+    "constant_test_null_row": 256,
+    "dependent_martingale_mixed_second_moment": 3,
+    "dependent_martingale_variance": 3,
+    "diffusivity_scale_normalization": 5,
+    "full_real_test_covariance": 256,
+    "iid_centered_triangular_variance": 24,
+    "initial_weight_exposes_random_bracket": 3,
+    "integrated_vs_card_modal_covariance": 256,
+    "literal_Haar_row_response": 24,
+    "literal_cross_carre_du_champ": 288,
+    "literal_double_contraction": 24,
+    "literal_first_order_generator": 96,
+    "literal_iid_fourth_moment": 7,
+    "mutation_control": 629,
+    "real_covariance_symmetry": 256,
+    "same_time_linear_dependency": 256,
+    "source_decay_exponent": 39,
+    "zero_noise_covariance": 64,
+    "zero_time_covariance": 112
+  },
+  "evidence": "constructor exact diagnostics; not mathematical or independent certification",
+  "external_packages": [],
+  "floating_point_tolerance": null,
+  "mutation_first_witnesses": {
+    "discarded_thermal_covariance": {
+      "nu": "1/3",
+      "t": "1/4",
+      "u": "1/4"
+    },
+    "extra_bracket_inverse_N": {
+      "N": 2,
+      "kernel": 0,
+      "nu": "1/3",
+      "tests": [
+        1,
+        1
+      ]
+    },
+    "missing_Brownian_two": {
+      "N": 2,
+      "kernel": 0,
+      "nu": "1/3",
+      "tests": [
+        1,
+        1
+      ]
+    },
+    "missing_source_half": {
+      "N": 2,
+      "kernel": 0,
+      "nu": "0",
+      "test": 1
+    },
+    "random_bracket_replaced_by_mean": {
+      "epsilon": "1/2",
+      "weighted_z2_coefficient": "-1/4"
+    },
+    "response_sign": {
+      "N": 2,
+      "kernel": 0,
+      "nu": "0",
+      "test": 1
+    },
+    "suppressed_cross_bracket": {
+      "N": 2,
+      "kernel": 0,
+      "nu": "1/3",
+      "tests": [
+        1,
+        2
+      ]
+    },
+    "time_sum_conflated_with_difference": {
+      "nu": "0",
+      "t": "1/4",
+      "u": "1/4"
+    },
+    "wrong_exponential_compensator_sign": {
+      "epsilon": "1/2",
+      "initial_sign": -1
+    }
+  },
+  "mutation_rejections": {
+    "discarded_thermal_covariance": 108,
+    "extra_bracket_inverse_N": 96,
+    "missing_Brownian_two": 96,
+    "missing_source_half": 64,
+    "random_bracket_replaced_by_mean": 3,
+    "response_sign": 64,
+    "suppressed_cross_bracket": 48,
+    "time_sum_conflated_with_difference": 144,
+    "wrong_exponential_compensator_sign": 6
+  },
+  "normalization": "physical first derivative = 2*pi times implemented derivative; restore (2*pi)^2 in generators/brackets",
+  "prior_checkers_read": [],
+  "random_seed": null,
+  "scope": "literal smooth finite Fourier and conditional Gaussian diagnostics; singular proof is the memorandum",
+  "script_sha256": "ff947bb49b564e00ac3d5cb8dcded464bc208e945b0c7cc03760598f4dfa653b",
+  "status": "PASS"
+}

@@ -84,3 +84,11 @@ R16/R17 reconstruction checkpoint,2026-09-18 UTC. R16 constructor polynomial-tai
 
 
 R17 final gate,2026-09-18 UTC. R17 constants are uniform on each admitted eventual critical tail for the fixed finite tuple; the proof establishes eventual b1 explicitly. R16 gives all bounded-noise source constants. No all-noise constant is promoted until THM041 independent gates.
+
+
+R18/R19 reconstruction checkpoint,2026-09-18 UTC. R19 new proof explicitly checks constants over every finite nu: zero expected-energy upper bound, spatial Fourier contraction, nu*b<=1; local particle/PDE and time-derivative constants are per fixed nu, never used uniformly. Both whole constructions agree; hostile pending.
+
+
+## R18/R19 whole gates accepted — 2026-09-18 UTC
+
+THM040/PO027 and the entire THM041/PO028 conjunction now pass both fresh independent axes and exact source matching. R18 AUD055/056 gives bounded-convergent-noise finite-dimensional Gaussian law with full initial plus thermal covariance, exact Haar centering, all frozen degeneracies and no noise-convergence rate. R19 AUD057/058 gives the source bound uniform over every finite nonnegative diffusivity and, with s<d/2, full unit bounded-Lipschitz Gaussian approximation uniformly over that parameter, including unrestricted hot-noise convergence to zero in probability. Source range remains d>=3,0<s<=d-2; Gaussian claims remain s<d/2, fixed finite smooth time/test list, actual homogeneous iid-Haar-prepared singular gradient dynamics. Original half/row/scalar, Coulomb atom/compensation, b and independent-noise coefficients are unchanged. Full proofs, scope, exposure, source and computation dispositions are AUDITS/ROUND_018_GATE_INTEGRATION.md and AUDITS/ROUND_019_GATE_INTEGRATION.md. No path-space/field/higher hierarchy or broader law claim is included, no root independent chronology certificate, no new counterterm or retraction. Frozen historical cards and evidence bytes remain untouched.

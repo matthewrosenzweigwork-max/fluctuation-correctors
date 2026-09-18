@@ -1,0 +1,18 @@
+# R19 whole reconstruction comparison — pending hostile gate
+
+2026-09-18 UTC. Root sealed the complete197-line proof before opening the full563-line TASK088/AUD057 reconstruction. Root read the entire reconstruction, source/exposure record and portable verifier. Unsolicited pre-seal worker progress and root's exposure to R18 construction are expressly disclosed in root EXPOSURE.md; root is never independent. No proof or range repair.
+
+| Entire two-part assertion | Root construction | Fresh Ultra reconstruction | Comparison |
+|---|---|---|---|
+| All-finite-noise actual energy/particle source interface | Sections1–2 | Section3 | Smooth PDE/particle constants fixed per finite parameter; expected-energy upper bound zero passes shifted Fatou independently of every finite nu, with separate deterministic zero-noise proof. |
+| Part A full source uniformity | Section3 | Section4 | Rechecks polynomial positive heat retention, exact E+S identity, logarithmic slope L=2(alpha+M), commutator, omitted positive Q_(2r), all three contractions and scale N^-2/d. Spatial seminorms uniformly contract; growing time derivative is not used uniformly. Bounded-noise card alone is explicitly insufficient. |
+| Actual Fourier and every bracket product | Sections2,5 | Sections5–6 | Root uses sharp-heat retention, blind uses polynomial retention; both get actual L1 smooth-family deviation N^(-theta/2) uniformly over all finite nu. |
+| Genuine vector/centering | Section4 | Sections3,6 | Same original singular first-order identity, exact Haar centering and source L1 remainder N^-kappa. No source-square claim. |
+| Joint initial/thermal law | Sections5–6 | Section7 | Uniform bounded iid Taylor and bounded initial-sigma-field exponential retain finite-N dependence. Same exact coefficients and compact-uniform characteristic estimates. |
+| Full metric suprema | Section7 | Section7 | Root smooths actual Z, using second-moment W plus L1-residual tight tails, Fourier-ball split and then spatial ball. Blind smooths W first using explicit measurable majorant/second moment, then transfers uniform BL expectations by residual L1. Both prove uniformity over nu and all unit bounded-Lipschitz tests. |
+| Covariance, finite and divergent sequence cases, degeneracy | Sections6,8 | Section8 | Identical Gram and modal formulas, finite-limit continuity of PSD roots, trace<=b times initial variance. Blind gives additional direct sup_N hot-noise first moment; no stronger extra scope is promoted absent matching hostile review. |
+| Falsification/scope | Section9 | Sections9–10 | Fresh coefficient and dependence controls; strict source threshold, all original endpoint exclusions. No path-space, high-s or full hierarchy claim. |
+
+Root12-input/21-member packet SHAeecceebc1e2aef5cd774cf3a797c89f7e191ba2236f114b104e2a802fc05a566, proof9f9e804306b5419ca9cc5d5aaac98bcf377fb891842d8dd152cc7a945df26d31. Blind11-input/20-member tar SHAe2d50329370ba8ede555e881dbca4e013b2a263a597b5532e30535146ee58c58, report492e816ee3ff23275871390a6d5acd05e3ffb8b71b42d15991b840cdc2e206ad. All original input/output/archive bytes verify; new22623 root and4380 blind assertions rerun byte-identically. Root9 mutation families; blind271 rejected mutations/7 classes. All issued bytes copied unchanged. Supporting exact diagnostics are not analytic certification.
+
+Disposition: ISOLATED_RECONSTRUCTION_PASS for entire THM041 conjunction. New unbounded-noise source uniformity is itself reconstructed, not inferred from THM038's card. Separate fresh TASK089/AUD058 hostile is active with15 input files; final gate/source mapping remains open. THM041/PO028 is not yet promoted.

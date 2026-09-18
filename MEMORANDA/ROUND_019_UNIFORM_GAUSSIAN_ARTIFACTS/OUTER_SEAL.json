@@ -1,0 +1,9 @@
+{
+  "archive_members": 21,
+  "archive_name": "ROUND_019_ROOT_UNIFORM_GAUSSIAN_20260918T061530Z.zip",
+  "archive_sha256": "eecceebc1e2aef5cd774cf3a797c89f7e191ba2236f114b104e2a802fc05a566",
+  "issued_utc": "20260918T061530Z",
+  "output_manifest_sha256": "1ad7f51cc6efea4472863d749e029495ff9663fa7c9a921f904467e96556d4da",
+  "proof_sha256": "9f9e804306b5419ca9cc5d5aaac98bcf377fb891842d8dd152cc7a945df26d31",
+  "root_status": "SELF_CHECKED / independent gates pending"
+}

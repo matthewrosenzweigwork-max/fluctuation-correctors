@@ -88,3 +88,11 @@ R16/R17 reconstruction checkpoint,2026-09-18 UTC. R17 zero-noise response S_t mu
 
 
 R17 final gate,2026-09-18 UTC. R17 accepted finite-dimensional limit uses the genuine zero-noise response S_t and covariance with sum of times. No high-frequency smoothing or positivity-preserving property of S_t is assumed, including Coulomb. Broader temperature Q_t^nu limits are separately frozen.
+
+
+R18/R19 reconstruction checkpoint,2026-09-18 UTC. Q_t^nu has multiplier exp(-t(D_k+nu*a_k)) and preserves constants. All spatial Fourier seminorms contract for every finite nu. R19 requires no uniform time derivative as nu diverges. New THM042 asks a continuous-path statement beyond current finite-list gates.
+
+
+## R18/R19 whole gates accepted — 2026-09-18 UTC
+
+THM040/PO027 and the entire THM041/PO028 conjunction now pass both fresh independent axes and exact source matching. R18 AUD055/056 gives bounded-convergent-noise finite-dimensional Gaussian law with full initial plus thermal covariance, exact Haar centering, all frozen degeneracies and no noise-convergence rate. R19 AUD057/058 gives the source bound uniform over every finite nonnegative diffusivity and, with s<d/2, full unit bounded-Lipschitz Gaussian approximation uniformly over that parameter, including unrestricted hot-noise convergence to zero in probability. Source range remains d>=3,0<s<=d-2; Gaussian claims remain s<d/2, fixed finite smooth time/test list, actual homogeneous iid-Haar-prepared singular gradient dynamics. Original half/row/scalar, Coulomb atom/compensation, b and independent-noise coefficients are unchanged. Full proofs, scope, exposure, source and computation dispositions are AUDITS/ROUND_018_GATE_INTEGRATION.md and AUDITS/ROUND_019_GATE_INTEGRATION.md. No path-space/field/higher hierarchy or broader law claim is included, no root independent chronology certificate, no new counterterm or retraction. Frozen historical cards and evidence bytes remain untouched.

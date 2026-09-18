@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "input_files": 11,
+  "output_files": 8,
+  "archive_members": 20,
+  "archive_sha256": "e2d50329370ba8ede555e881dbca4e013b2a263a597b5532e30535146ee58c58",
+  "safe_regular_files_only": true,
+  "all_archive_bytes_match": true,
+  "report_sha256": "492e816ee3ff23275871390a6d5acd05e3ffb8b71b42d15991b840cdc2e206ad"
+}

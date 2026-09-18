@@ -1,0 +1,18 @@
+{
+  "archive_basename": "ROUND_018_BOUNDED_NOISE_ARTIFACTS_20260918_060253_UTC.zip",
+  "archive_bytes": 128635,
+  "archive_members": 26,
+  "archive_sha256": "31f60c78fd7bf355537c7d75bd9ca7b795b440aba2cdd4f7ca47c28730c334af",
+  "base_commit": "faf6f775a55579722319795cd9a9921e5829a903",
+  "diagnostic_result_sha256": "4f91ca484057afe2075546bcb8104124e9bf1acc2757ba39fdc2de1feffef87b",
+  "diagnostic_script_sha256": "ff947bb49b564e00ac3d5cb8dcded464bc208e945b0c7cc03760598f4dfa653b",
+  "independent_certification": false,
+  "input_manifest_sha256": "be63b492edc737d16bf90967258d7727815627673436ae2f74f9529285099b09",
+  "issued_utc": "2026-09-18T06:02:53Z",
+  "memorandum_sha256": "0ef01a670c4b8533196e7eed26bbaf4e1f42789a3867c0f3b54ce492b42ac371",
+  "output_manifest_sha256": "04ff389decd33de25efc2e53483480ff6dafde18b5be8ab6e77f38c8807cf3b6",
+  "packet_basename": "ROUND_018_BOUNDED_NOISE_ARTIFACTS",
+  "schema": "hocf.round018.construction-seal.v1",
+  "status": "CONDITIONAL PROVED CANDIDATE / CONSTRUCTOR SELF-CHECK",
+  "verification_program_sha256": "0d20c15580cbda3fff27e96f2dd544aa91df33baea3b2b2dd11cd2e4f3c18258"
+}
