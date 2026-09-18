@@ -1,0 +1,145 @@
+{
+  "archive": {
+    "bytes": 102411,
+    "name": "ROUND_028_COLLISION_FLUX_ARTIFACTS_20260918_101125_UTC.tar.gz",
+    "sha256": "9732fd08bf6e533e045c0e1d05787504d679a3257f955b6c72d107288e6d91dd"
+  },
+  "archive_inventory": {
+    "name": "ROUND_028_COLLISION_FLUX_ARTIFACTS_20260918_101125_UTC_ARCHIVE_MEMBERS.json",
+    "sha256": "36ec08e9bb57a065f2b9ad14ac51a3822f099ea94dcd8f979e29a3bc77e0873b"
+  },
+  "audit_status": "SELF_CHECKED; fresh independent whole-claim gates remain required",
+  "claim": "Whole frozen THM053(A)-(B)",
+  "commits_pushes_remotes_dependencies_children": false,
+  "content_manifest": {
+    "name": "ROUND_028_COLLISION_FLUX_ARTIFACTS/CONTENT_SHA256SUMS.txt",
+    "sha256": "461c6acb13f94a356f7adaae25806be8f24202d2e7f320c9a129f7e839ad2da9"
+  },
+  "final_original_input_recheck": [
+    {
+      "pass": true,
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+    },
+    {
+      "pass": true,
+      "path": "MODEL_ORCHESTRATION.md",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1"
+    },
+    {
+      "pass": true,
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+    },
+    {
+      "pass": true,
+      "path": "TASKS/ACTIVE/TASK-121_ROUND028_FIRST_COLLISION_FLUX.md",
+      "sha256": "79dfe3be907d6d37c22a3c55258694f2f013d12658d099de0fbbdebda94c6b61"
+    },
+    {
+      "pass": true,
+      "path": "THEOREMS/THM-053_KILLED_COULOMB_FIRST_COLLISION_FLUX.md",
+      "sha256": "4798f247ef3237ae9ff23534bd14b7c75f19391c082b70c11c5fee05190c417c"
+    },
+    {
+      "pass": true,
+      "path": "THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md",
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309"
+    },
+    {
+      "pass": true,
+      "path": "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d"
+    },
+    {
+      "pass": true,
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de"
+    },
+    {
+      "pass": true,
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be"
+    },
+    {
+      "pass": true,
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017"
+    },
+    {
+      "pass": true,
+      "path": "MEMORANDA/ROUND_027_KILLED_ATTRACTIVE_DUALITY.md",
+      "sha256": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc"
+    },
+    {
+      "pass": true,
+      "path": "MEMORANDA/ROUND_027_KILLED_DUALITY_ARTIFACTS/EXPOSURE_AND_SOURCES.md",
+      "sha256": "829cb85967ceb37f2fb20bfdd0f4d0b063d246c35b94041e6a1cb4e2227abc0e"
+    }
+  ],
+  "issued_at_utc": "2026-09-18T10:29:10Z",
+  "limitations": "Integrity and reproducible diagnostics are not an independent mathematical certificate. Original THM046 remains open.",
+  "mathematical_status": "PROVED_CANDIDATE",
+  "memorandum": {
+    "name": "ROUND_028_FIRST_COLLISION_FLUX.md",
+    "sha256": "a986c3f93c48287b4efbbabc066460e3cb18c4aeacdeb9ddce109f30219f80ee"
+  },
+  "packet_directory": "ROUND_028_COLLISION_FLUX_ARTIFACTS",
+  "readonly_files": true,
+  "readonly_packet_directories": true,
+  "schema": "TASK121-read-only-issuance-v1",
+  "source_or_canonical_files_changed": false,
+  "task": "TASK121",
+  "verifier_command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-B",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-collision-flux/MEMORANDA/ROUND_028_COLLISION_FLUX_ARTIFACTS/verifier.py",
+    "--archive",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-collision-flux/MEMORANDA/ROUND_028_COLLISION_FLUX_ARTIFACTS_20260918_101125_UTC.tar.gz",
+    "--memo",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-collision-flux/MEMORANDA/ROUND_028_FIRST_COLLISION_FLUX.md"
+  ],
+  "verifier_exit_code": 0,
+  "verifier_result": {
+    "archive_checked": true,
+    "archive_regular_members": 24,
+    "archive_sha256": "9732fd08bf6e533e045c0e1d05787504d679a3257f955b6c72d107288e6d91dd",
+    "baseline_checks_reproduced": 1480,
+    "content_manifest_sha256": "461c6acb13f94a356f7adaae25806be8f24202d2e7f320c9a129f7e839ad2da9",
+    "file_writes_performed": false,
+    "frozen_inputs_verified": 12,
+    "in_memory_safety_mutations_rejected": 20,
+    "input_manifest_sha256": "5a703d22de7f68beac0d6fe6de319372de713be042709599bd2d8767e090053f",
+    "meaning": "Read-only integrity and exact diagnostic reproduction only; no independent mathematical certification",
+    "memorandum_sha256": "a986c3f93c48287b4efbbabc066460e3cb18c4aeacdeb9ddce109f30219f80ee",
+    "nonzero_mathematical_mutations_reproduced": 11,
+    "payload_digests_verified": 23,
+    "read_only_directory_count": 7,
+    "regular_file_count_including_manifest": 24,
+    "safety_rejections": [
+      "unsafe_name_'../bad'",
+      "unsafe_name_'/bad'",
+      "unsafe_name_'a/../bad'",
+      "unsafe_name_'a//bad'",
+      "unsafe_name_'a/./bad'",
+      "unsafe_name_'a\\\\bad'",
+      "unsafe_name_'a\\x00bad'",
+      "unsafe_name_'C:/bad'",
+      "unsafe_name_''",
+      "unsafe_name_'a/..'",
+      "duplicate_manifest",
+      "bad_manifest_digest",
+      "archive_traversal",
+      "archive_absolute",
+      "archive_wrong_prefix",
+      "archive_symlink",
+      "archive_hardlink",
+      "archive_directory",
+      "archive_device",
+      "archive_duplicate"
+    ],
+    "separate_memorandum_checked": true,
+    "status": "PASS"
+  },
+  "verifier_stderr": ""
+}

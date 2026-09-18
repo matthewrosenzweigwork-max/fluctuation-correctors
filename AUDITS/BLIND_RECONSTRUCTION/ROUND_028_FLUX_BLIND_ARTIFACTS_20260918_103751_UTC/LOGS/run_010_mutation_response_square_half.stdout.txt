@@ -1,0 +1,9 @@
+{
+  "actual": "10201/30351",
+  "category": "exact_laplace_response_square",
+  "expected": "10201/60702",
+  "mutation": "response_square_half",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "10201/60702",
+  "status": "ASSERTION_FAILURE"
+}

@@ -1,0 +1,14 @@
+{
+  "check_count": 58645,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-moment-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/CODE/diagnostic.py"
+  ],
+  "mutation_count": 19,
+  "returncode": 0,
+  "run": 1,
+  "seconds": 1.179584166,
+  "source_sha256": "fc16b2e7a2aaa650b031ac0fc30299bdbd284635126207d4dd48a269a7570bc5",
+  "started_utc": "2026-09-18T10:50:47.824476+00:00",
+  "status": "PASS"
+}

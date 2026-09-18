@@ -1,0 +1,1 @@
+{"mutation": "cutoff_endpoint_claim", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": "delta=1/22 not admissible for decay", "difference": "1/22", "mutated": "-1/22", "right": "0"}}

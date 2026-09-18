@@ -1,0 +1,25 @@
+{
+  "archive_bytes": 117721,
+  "archive_name": "ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC.tar.gz",
+  "archive_sha256": "06e2d6707f6448263c70b63637b604f78378fb811fa6a6be880a661dcaa1805d",
+  "diagnostic_categories": 27,
+  "diagnostic_checks": 7957,
+  "directory_count": 11,
+  "file_count": 84,
+  "historical_source_gate_authentication": "Separate root responsibility.",
+  "input_count": 18,
+  "inventory_sha256": "4b277877321bb6a840b58a1ea56d42ad01ea8593f6d7a7537bb2bad2a7fe889a",
+  "issued_utc": "2026-09-18T10:59:17.774191+00:00",
+  "mutation_count": 14,
+  "packet_name": "ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC",
+  "payload_manifest_entries": 83,
+  "payload_manifest_sha256": "fea36b55c4605245648d686dd02408bbd0dd31c54e3842cde32f7dedb7dce2cc",
+  "report_name": "ROUND_028_FLUX_RECONSTRUCTION.md",
+  "report_sha256": "786955f173fe5c6ff61e8bf0c478ec9ec396884f6de64f2d5dfb1be591f8514d",
+  "schema": "AUD077-outer-seal-v1",
+  "scope": "Complete unchanged joint conjunction; no critical-profile limit decided.",
+  "verdicts": {
+    "THM053(A)-(B)": "ISOLATED_RECONSTRUCTION_PASS",
+    "THM055(A)-(E)": "ISOLATED_RECONSTRUCTION_PASS"
+  }
+}

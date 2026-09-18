@@ -1,0 +1,1086 @@
+{
+  "reason": "Restore inline TeX delimiters lost by JavaScript string escaping before issuance; no mathematical changes. Explicitly disclose automatically injected ambient startup memory summary. Correct two TeX spellings.",
+  "inline_delimiters_restored": 216,
+  "changes": [
+    {
+      "line": 9,
+      "original": "(N\\ge2)",
+      "replacement": "\\(N\\ge2\\)"
+    },
+    {
+      "line": 9,
+      "original": "(O(r))",
+      "replacement": "\\(O(r)\\)"
+    },
+    {
+      "line": 11,
+      "original": "(N,\\beta,t,m,r)",
+      "replacement": "\\(N,\\beta,t,m,r\\)"
+    },
+    {
+      "line": 11,
+      "original": "(N)",
+      "replacement": "\\(N\\)"
+    },
+    {
+      "line": 17,
+      "original": "(d=4,s=2)",
+      "replacement": "\\(d=4,s=2\\)"
+    },
+    {
+      "line": 17,
+      "original": "(c=4\\pi^2)",
+      "replacement": "\\(c=4\\pi^2\\)"
+    },
+    {
+      "line": 17,
+      "original": "(\\ell_m=c|m|^2)",
+      "replacement": "\\(\\ell_m=c|m|^2\\)"
+    },
+    {
+      "line": 17,
+      "original": "(\\nu=\\beta^{-1})",
+      "replacement": "\\(\\nu=\\beta^{-1}\\)"
+    },
+    {
+      "line": 23,
+      "original": "(N\\ge2)",
+      "replacement": "\\(N\\ge2\\)"
+    },
+    {
+      "line": 27,
+      "original": "(p_u)",
+      "replacement": "\\(p_u\\)"
+    },
+    {
+      "line": 27,
+      "original": "(e^{-cu|m|^2})",
+      "replacement": "\\(e^{-cu|m|^2}\\)"
+    },
+    {
+      "line": 33,
+      "original": "(h_0)",
+      "replacement": "\\(h_0\\)"
+    },
+    {
+      "line": 33,
+      "original": "(g_*>-\\infty)",
+      "replacement": "\\(g_*>-\\infty\\)"
+    },
+    {
+      "line": 33,
+      "original": "(K=-\\nabla g\\in L^1)",
+      "replacement": "\\(K=-\\nabla g\\in L^1\\)"
+    },
+    {
+      "line": 33,
+      "original": "(2|\\mathbb S^3|=c)",
+      "replacement": "\\(2|\\mathbb S^3|=c\\)"
+    },
+    {
+      "line": 45,
+      "original": "(H_N-(N-1)g_*/2)",
+      "replacement": "\\(H_N-(N-1)g_*/2\\)"
+    },
+    {
+      "line": 45,
+      "original": "(B=-\\nabla H_N)",
+      "replacement": "\\(B=-\\nabla H_N\\)"
+    },
+    {
+      "line": 45,
+      "original": "(\\Delta_{4N}H_N=c(N-1))",
+      "replacement": "\\(\\Delta_{4N}H_N=c(N-1)\\)"
+    },
+    {
+      "line": 52,
+      "original": "(\\nu c(N-1)T)",
+      "replacement": "\\(\\nu c(N-1)T\\)"
+    },
+    {
+      "line": 52,
+      "original": "(E)",
+      "replacement": "\\(E\\)"
+    },
+    {
+      "line": 52,
+      "original": "(L^2)",
+      "replacement": "\\(L^2\\)"
+    },
+    {
+      "line": 54,
+      "original": "(\\mathbb EH_N(X_t)\\le0)",
+      "replacement": "\\(\\mathbb EH_N(X_t)\\le0\\)"
+    },
+    {
+      "line": 54,
+      "original": "(F^\\epsilon)",
+      "replacement": "\\(F^\\epsilon\\)"
+    },
+    {
+      "line": 61,
+      "original": "(C^1)",
+      "replacement": "\\(C^1\\)"
+    },
+    {
+      "line": 61,
+      "original": "(N,\\nu,T)",
+      "replacement": "\\(N,\\nu,T\\)"
+    },
+    {
+      "line": 61,
+      "original": "(H_N^\\epsilon\\ge(N-1)g_*/2)",
+      "replacement": "\\(H_N^\\epsilon\\ge(N-1)g_*/2\\)"
+    },
+    {
+      "line": 67,
+      "original": "(N\\to\\infty)",
+      "replacement": "\\(N\\to\\infty\\)"
+    },
+    {
+      "line": 67,
+      "original": "(N)",
+      "replacement": "\\(N\\)"
+    },
+    {
+      "line": 67,
+      "original": "(F_t\\le e^{c(N-1)t})",
+      "replacement": "\\(F_t\\le e^{c(N-1)t}\\)"
+    },
+    {
+      "line": 67,
+      "original": "(L^1)",
+      "replacement": "\\(L^1\\)"
+    },
+    {
+      "line": 77,
+      "original": "(Q_r\\ge0)",
+      "replacement": "\\(Q_r\\ge0\\)"
+    },
+    {
+      "line": 77,
+      "original": "(g=\\gamma_r+Q_r-q_r^0)",
+      "replacement": "\\(g=\\gamma_r+Q_r-q_r^0\\)"
+    },
+    {
+      "line": 89,
+      "original": "(H_N\\ge-C\\sqrt N)",
+      "replacement": "\\(H_N\\ge-C\\sqrt N\\)"
+    },
+    {
+      "line": 89,
+      "original": "(r=N^{-1/2})",
+      "replacement": "\\(r=N^{-1/2}\\)"
+    },
+    {
+      "line": 89,
+      "original": "(F_r,V_r\\ge0)",
+      "replacement": "\\(F_r,V_r\\ge0\\)"
+    },
+    {
+      "line": 91,
+      "original": "(uW_r(u)e^{-c\\xi^2u})",
+      "replacement": "\\(uW_r(u)e^{-c\\xi^2u}\\)"
+    },
+    {
+      "line": 91,
+      "original": "(0\\le uW'_r\\le6W_r)",
+      "replacement": "\\(0\\le uW'_r\\le6W_r\\)"
+    },
+    {
+      "line": 93,
+      "original": "(p,q)",
+      "replacement": "\\(p,q\\)"
+    },
+    {
+      "line": 100,
+      "original": "(u=\\min(|p|,|q|)\\ge1)",
+      "replacement": "\\(u=\\min(|p|,|q|)\\ge1\\)"
+    },
+    {
+      "line": 100,
+      "original": "(R=\\max(|p|,|q|))",
+      "replacement": "\\(R=\\max(|p|,|q|)\\)"
+    },
+    {
+      "line": 100,
+      "original": "((R/u)^{14})",
+      "replacement": "\\((R/u)^{14}\\)"
+    },
+    {
+      "line": 100,
+      "original": "(14\\alpha_r(u)(R-u)/u)",
+      "replacement": "\\(14\\alpha_r(u)(R-u)/u\\)"
+    },
+    {
+      "line": 100,
+      "original": "(R/u\\le1+|p-q|)",
+      "replacement": "\\(R/u\\le1+|p-q|\\)"
+    },
+    {
+      "line": 102,
+      "original": "(v=\\nabla f)",
+      "replacement": "\\(v=\\nabla f\\)"
+    },
+    {
+      "line": 109,
+      "original": "(|p|^{-14})",
+      "replacement": "\\(|p|^{-14}\\)"
+    },
+    {
+      "line": 117,
+      "original": "(v)",
+      "replacement": "\\(v\\)"
+    },
+    {
+      "line": 119,
+      "original": "(P_N)",
+      "replacement": "\\(P_N\\)"
+    },
+    {
+      "line": 123,
+      "original": "(r=N^{-1/2})",
+      "replacement": "\\(r=N^{-1/2}\\)"
+    },
+    {
+      "line": 123,
+      "original": "(r)",
+      "replacement": "\\(r\\)"
+    },
+    {
+      "line": 123,
+      "original": "(m)",
+      "replacement": "\\(m\\)"
+    },
+    {
+      "line": 123,
+      "original": "(0\\le s\\le t\\le T)",
+      "replacement": "\\(0\\le s\\le t\\le T\\)"
+    },
+    {
+      "line": 123,
+      "original": "(f_s=Q_{t-s}^\\nu e_m=e^{-a_m(t-s)}e_m)",
+      "replacement": "\\(f_s=Q_{t-s}^\\nu e_m=e^{-a_m(t-s)}e_m\\)"
+    },
+    {
+      "line": 123,
+      "original": "(C(1+|m|)^{10}=Cw_m)",
+      "replacement": "\\(C(1+|m|)^{10}=Cw_m\\)"
+    },
+    {
+      "line": 123,
+      "original": "(G,C)",
+      "replacement": "\\(G,C\\)"
+    },
+    {
+      "line": 128,
+      "original": "(t\\le T)",
+      "replacement": "\\(t\\le T\\)"
+    },
+    {
+      "line": 139,
+      "original": "(G)",
+      "replacement": "\\(G\\)"
+    },
+    {
+      "line": 139,
+      "original": "(h)",
+      "replacement": "\\(h\\)"
+    },
+    {
+      "line": 146,
+      "original": "(\\mu_4)",
+      "replacement": "\\(\\mu_4\\)"
+    },
+    {
+      "line": 147,
+      "original": "(3\\cdot6=18)",
+      "replacement": "\\(3\\cdot6=18\\)"
+    },
+    {
+      "line": 147,
+      "original": "(\\mu_2^2)",
+      "replacement": "\\(\\mu_2^2\\)"
+    },
+    {
+      "line": 148,
+      "original": "(3\\cdot12=36)",
+      "replacement": "\\(3\\cdot12=36\\)"
+    },
+    {
+      "line": 148,
+      "original": "(\\tau)",
+      "replacement": "\\(\\tau\\)"
+    },
+    {
+      "line": 149,
+      "original": "(3\\cdot6=18)",
+      "replacement": "\\(3\\cdot6=18\\)"
+    },
+    {
+      "line": 149,
+      "original": "(\\mu_2^2)",
+      "replacement": "\\(\\mu_2^2\\)"
+    },
+    {
+      "line": 150,
+      "original": "(3\\cdot24=72)",
+      "replacement": "\\(3\\cdot24=72\\)"
+    },
+    {
+      "line": 150,
+      "original": "(\\chi)",
+      "replacement": "\\(\\chi\\)"
+    },
+    {
+      "line": 152,
+      "original": "(\\mu_2^2)",
+      "replacement": "\\(\\mu_2^2\\)"
+    },
+    {
+      "line": 152,
+      "original": "(\\int h^2(h*h)=\\tau)",
+      "replacement": "\\(\\int h^2(h*h)=\\tau\\)"
+    },
+    {
+      "line": 152,
+      "original": "(\\int(h*h)^2=\\chi)",
+      "replacement": "\\(\\int(h*h)^2=\\chi\\)"
+    },
+    {
+      "line": 154,
+      "original": "(H^h=N^{-1}\\sum_{i<j}h(Y_i-Y_j))",
+      "replacement": "\\(H^h=N^{-1}\\sum_{i<j}h(Y_i-Y_j)\\)"
+    },
+    {
+      "line": 154,
+      "original": "(N^{-4})",
+      "replacement": "\\(N^{-4}\\)"
+    },
+    {
+      "line": 161,
+      "original": "(N)",
+      "replacement": "\\(N\\)"
+    },
+    {
+      "line": 169,
+      "original": "(L_0\\ge1)",
+      "replacement": "\\(L_0\\ge1\\)"
+    },
+    {
+      "line": 169,
+      "original": "(L\\ge L_0)",
+      "replacement": "\\(L\\ge L_0\\)"
+    },
+    {
+      "line": 177,
+      "original": "(CL^{-1/2})",
+      "replacement": "\\(CL^{-1/2}\\)"
+    },
+    {
+      "line": 177,
+      "original": "(h_L=\\min(g,L)-m_L)",
+      "replacement": "\\(h_L=\\min(g,L)-m_L\\)"
+    },
+    {
+      "line": 177,
+      "original": "(H_N^{[L]}=N^{-1}\\sum_{i<j}h_L(X_i(0)-X_j(0)))",
+      "replacement": "\\(H_N^{[L]}=N^{-1}\\sum_{i<j}h_L(X_i(0)-X_j(0))\\)"
+    },
+    {
+      "line": 184,
+      "original": "(L=L_N=L_0N^2)",
+      "replacement": "\\(L=L_N=L_0N^2\\)"
+    },
+    {
+      "line": 184,
+      "original": "(B_N)",
+      "replacement": "\\(B_N\\)"
+    },
+    {
+      "line": 184,
+      "original": "(g>L_N)",
+      "replacement": "\\(g>L_N\\)"
+    },
+    {
+      "line": 184,
+      "original": "(G_N=B_N^c)",
+      "replacement": "\\(G_N=B_N^c\\)"
+    },
+    {
+      "line": 191,
+      "original": "(G_N)",
+      "replacement": "\\(G_N\\)"
+    },
+    {
+      "line": 199,
+      "original": "(\\tau_R)",
+      "replacement": "\\(\\tau_R\\)"
+    },
+    {
+      "line": 199,
+      "original": "(R)",
+      "replacement": "\\(R\\)"
+    },
+    {
+      "line": 210,
+      "original": "(\\mathbb EM_T^4=6\\mathbb E\\int M_s^2d\\langle M\\rangle_s\\)",
+      "replacement": "\\(\\mathbb EM_T^4=6\\mathbb E\\int M_s^2d\\langle M\\rangle_s\\\\)"
+    },
+    {
+      "line": 210,
+      "original": "(6(\\mathbb E(M_T^*)^4)^{1/2}(\\mathbb E\\langle M\\rangle_T^2)^{1/2})",
+      "replacement": "\\(6(\\mathbb E(M_T^*)^4)^{1/2}(\\mathbb E\\langle M\\rangle_T^2)^{1/2}\\)"
+    },
+    {
+      "line": 210,
+      "original": "(L^4)",
+      "replacement": "\\(L^4\\)"
+    },
+    {
+      "line": 210,
+      "original": "((4/3)^4\\mathbb EM_T^4)",
+      "replacement": "\\((4/3)^4\\mathbb EM_T^4\\)"
+    },
+    {
+      "line": 210,
+      "original": "(u)",
+      "replacement": "\\(u\\)"
+    },
+    {
+      "line": 223,
+      "original": "(R,N,\\beta)",
+      "replacement": "\\(R,N,\\beta\\)"
+    },
+    {
+      "line": 228,
+      "original": "(\\mathbb E(E_T^*)^4)",
+      "replacement": "\\(\\mathbb E(E_T^*)^4\\)"
+    },
+    {
+      "line": 237,
+      "original": "(1/(2N^2))",
+      "replacement": "\\(1/(2N^2)\\)"
+    },
+    {
+      "line": 237,
+      "original": "(f_s=Q_{t-s}^\\nu e_m)",
+      "replacement": "\\(f_s=Q_{t-s}^\\nu e_m\\)"
+    },
+    {
+      "line": 244,
+      "original": "(L^2)",
+      "replacement": "\\(L^2\\)"
+    },
+    {
+      "line": 244,
+      "original": "(N)",
+      "replacement": "\\(N\\)"
+    },
+    {
+      "line": 246,
+      "original": "(t)",
+      "replacement": "\\(t\\)"
+    },
+    {
+      "line": 260,
+      "original": "(q_m^2\\mathbf1_{B_N})",
+      "replacement": "\\(q_m^2\\mathbf1_{B_N}\\)"
+    },
+    {
+      "line": 269,
+      "original": "(\\nabla\\bar f_s)",
+      "replacement": "\\(\\nabla\\bar f_s\\)"
+    },
+    {
+      "line": 271,
+      "original": "(G_N)",
+      "replacement": "\\(G_N\\)"
+    },
+    {
+      "line": 276,
+      "original": "(B_N)",
+      "replacement": "\\(B_N\\)"
+    },
+    {
+      "line": 276,
+      "original": "( |D_{N,m}(t)|\\le2\\sqrt N)",
+      "replacement": "\\( |D_{N,m}(t)|\\le2\\sqrt N\\)"
+    },
+    {
+      "line": 283,
+      "original": "(\\nu^2\\le\\lambda_-^{-2}/N)",
+      "replacement": "\\(\\nu^2\\le\\lambda_-^{-2}/N\\)"
+    },
+    {
+      "line": 283,
+      "original": "(N\\ge2)",
+      "replacement": "\\(N\\ge2\\)"
+    },
+    {
+      "line": 283,
+      "original": "(t\\le T)",
+      "replacement": "\\(t\\le T\\)"
+    },
+    {
+      "line": 283,
+      "original": "(S)",
+      "replacement": "\\(S\\)"
+    },
+    {
+      "line": 290,
+      "original": "(2m\\ne0)",
+      "replacement": "\\(2m\\ne0\\)"
+    },
+    {
+      "line": 292,
+      "original": "(w_m^4)",
+      "replacement": "\\(w_m^4\\)"
+    },
+    {
+      "line": 298,
+      "original": "(S,D,Z)",
+      "replacement": "\\(S,D,Z\\)"
+    },
+    {
+      "line": 298,
+      "original": "(T=0)",
+      "replacement": "\\(T=0\\)"
+    },
+    {
+      "line": 298,
+      "original": "(S=D=0)",
+      "replacement": "\\(S=D=0\\)"
+    },
+    {
+      "line": 298,
+      "original": "(T)",
+      "replacement": "\\(T\\)"
+    },
+    {
+      "line": 302,
+      "original": "(g_r=p_r*g)",
+      "replacement": "\\(g_r=p_r*g\\)"
+    },
+    {
+      "line": 302,
+      "original": "(\\gamma_r)",
+      "replacement": "\\(\\gamma_r\\)"
+    },
+    {
+      "line": 315,
+      "original": "(R_0<1/8)",
+      "replacement": "\\(R_0<1/8\\)"
+    },
+    {
+      "line": 315,
+      "original": "(u\\in[R^2/2,R^2])",
+      "replacement": "\\(u\\in[R^2/2,R^2]\\)"
+    },
+    {
+      "line": 315,
+      "original": "(q_{R^2}(z)\\ge c_0R^{-2})",
+      "replacement": "\\(q_{R^2}(z)\\ge c_0R^{-2}\\)"
+    },
+    {
+      "line": 315,
+      "original": "(\\operatorname{dist}(z,0)\\le R\\le R_0)",
+      "replacement": "\\(\\operatorname{dist}(z,0)\\le R\\le R_0\\)"
+    },
+    {
+      "line": 323,
+      "original": "(k\\ne0)",
+      "replacement": "\\(k\\ne0\\)"
+    },
+    {
+      "line": 324,
+      "original": "(d_r=ce^{-r\\ell_k})",
+      "replacement": "\\(d_r=ce^{-r\\ell_k}\\)"
+    },
+    {
+      "line": 324,
+      "original": "(j_{k,r})",
+      "replacement": "\\(j_{k,r}\\)"
+    },
+    {
+      "line": 324,
+      "original": "(2d_re_k(x))",
+      "replacement": "\\(2d_re_k(x)\\)"
+    },
+    {
+      "line": 326,
+      "original": "(|z|)",
+      "replacement": "\\(|z|\\)"
+    },
+    {
+      "line": 327,
+      "original": "(u=|z|^2/(4r))",
+      "replacement": "\\(u=|z|^2/(4r)\\)"
+    },
+    {
+      "line": 327,
+      "original": "(r_0>0)",
+      "replacement": "\\(r_0>0\\)"
+    },
+    {
+      "line": 327,
+      "original": "(N,\\nu)",
+      "replacement": "\\(N,\\nu\\)"
+    },
+    {
+      "line": 332,
+      "original": "(r^{-2})",
+      "replacement": "\\(r^{-2}\\)"
+    },
+    {
+      "line": 338,
+      "original": "(r_0\\le1/2)",
+      "replacement": "\\(r_0\\le1/2\\)"
+    },
+    {
+      "line": 343,
+      "original": "(|c-d_r|\\le C_kr)",
+      "replacement": "\\(|c-d_r|\\le C_kr\\)"
+    },
+    {
+      "line": 347,
+      "original": "(L^2)",
+      "replacement": "\\(L^2\\)"
+    },
+    {
+      "line": 359,
+      "original": "(j_{k,r})",
+      "replacement": "\\(j_{k,r}\\)"
+    },
+    {
+      "line": 363,
+      "original": "(a_r(0)=0)",
+      "replacement": "\\(a_r(0)=0\\)"
+    },
+    {
+      "line": 363,
+      "original": "(a_r(m)=|m|^{-2}e^{-cr|m|^2})",
+      "replacement": "\\(a_r(m)=|m|^{-2}e^{-cr|m|^2}\\)"
+    },
+    {
+      "line": 363,
+      "original": "(K_r)",
+      "replacement": "\\(K_r\\)"
+    },
+    {
+      "line": 370,
+      "original": "(e_q(x)e_{k-q}(y))",
+      "replacement": "\\(e_q(x)e_{k-q}(y)\\)"
+    },
+    {
+      "line": 370,
+      "original": "(q=m+k)",
+      "replacement": "\\(q=m+k\\)"
+    },
+    {
+      "line": 375,
+      "original": "(r>0)",
+      "replacement": "\\(r>0\\)"
+    },
+    {
+      "line": 380,
+      "original": "(|m|\\ge2|k|)",
+      "replacement": "\\(|m|\\ge2|k|\\)"
+    },
+    {
+      "line": 380,
+      "original": "(F_r(x)=x|x|^{-2}e^{-cr|x|^2})",
+      "replacement": "\\(F_r(x)=x|x|^{-2}e^{-cr|x|^2}\\)"
+    },
+    {
+      "line": 385,
+      "original": "((1+u)e^{-u/4}\\le Ce^{-u/8})",
+      "replacement": "\\((1+u)e^{-u/4}\\le Ce^{-u/8}\\)"
+    },
+    {
+      "line": 385,
+      "original": "(c|k|^2)",
+      "replacement": "\\(c|k|^2\\)"
+    },
+    {
+      "line": 385,
+      "original": "(0<|m|<2|k|)",
+      "replacement": "\\(0<|m|<2|k|\\)"
+    },
+    {
+      "line": 385,
+      "original": "(|m|^{-2}e^{-cr|m|^2/8})",
+      "replacement": "\\(|m|^{-2}e^{-cr|m|^2/8}\\)"
+    },
+    {
+      "line": 385,
+      "original": "(0<r\\le r_0)",
+      "replacement": "\\(0<r\\le r_0\\)"
+    },
+    {
+      "line": 392,
+      "original": "(k)",
+      "replacement": "\\(k\\)"
+    },
+    {
+      "line": 392,
+      "original": "(w_{m+k}\\le C_kw_m)",
+      "replacement": "\\(w_{m+k}\\le C_kw_m\\)"
+    },
+    {
+      "line": 392,
+      "original": "(C(n+1)^3)",
+      "replacement": "\\(C(n+1)^3\\)"
+    },
+    {
+      "line": 392,
+      "original": "(n\\le|m|<n+1)",
+      "replacement": "\\(n\\le|m|<n+1\\)"
+    },
+    {
+      "line": 399,
+      "original": "(v=\\sqrt r\\,n)",
+      "replacement": "\\(v=\\sqrt r\\,n\\)"
+    },
+    {
+      "line": 399,
+      "original": "(r_0\\le1)",
+      "replacement": "\\(r_0\\le1\\)"
+    },
+    {
+      "line": 399,
+      "original": "(20-2+3=21)",
+      "replacement": "\\(20-2+3=21\\)"
+    },
+    {
+      "line": 399,
+      "original": "(w_m^2\\le C_kw_{m+k}w_m)",
+      "replacement": "\\(w_m^2\\le C_kw_{m+k}w_m\\)"
+    },
+    {
+      "line": 407,
+      "original": "(N U_r\\overline Z_k)",
+      "replacement": "\\(N U_r\\overline Z_k\\)"
+    },
+    {
+      "line": 407,
+      "original": "(2N^2)",
+      "replacement": "\\(2N^2\\)"
+    },
+    {
+      "line": 416,
+      "original": "(N=2)",
+      "replacement": "\\(N=2\\)"
+    },
+    {
+      "line": 419,
+      "original": "(m\\ne0)",
+      "replacement": "\\(m\\ne0\\)"
+    },
+    {
+      "line": 425,
+      "original": "(N)",
+      "replacement": "\\(N\\)"
+    },
+    {
+      "line": 429,
+      "original": "(L^2)",
+      "replacement": "\\(L^2\\)"
+    },
+    {
+      "line": 435,
+      "original": "(m=0,-k)",
+      "replacement": "\\(m=0,-k\\)"
+    },
+    {
+      "line": 435,
+      "original": "(k)",
+      "replacement": "\\(k\\)"
+    },
+    {
+      "line": 435,
+      "original": "(L^2)",
+      "replacement": "\\(L^2\\)"
+    },
+    {
+      "line": 435,
+      "original": "(C_kN^{-1/2})",
+      "replacement": "\\(C_kN^{-1/2}\\)"
+    },
+    {
+      "line": 449,
+      "original": "(N\\ge3)",
+      "replacement": "\\(N\\ge3\\)"
+    },
+    {
+      "line": 449,
+      "original": "(p_NA_{3,r})",
+      "replacement": "\\(p_NA_{3,r}\\)"
+    },
+    {
+      "line": 449,
+      "original": "(p_NB_{3,r})",
+      "replacement": "\\(p_NB_{3,r}\\)"
+    },
+    {
+      "line": 449,
+      "original": "(N=2)",
+      "replacement": "\\(N=2\\)"
+    },
+    {
+      "line": 451,
+      "original": "(a=c+\\nu\\ell_k)",
+      "replacement": "\\(a=c+\\nu\\ell_k\\)"
+    },
+    {
+      "line": 451,
+      "original": "(A=e^{-aT})",
+      "replacement": "\\(A=e^{-aT}\\)"
+    },
+    {
+      "line": 451,
+      "original": "(u_t=e^{-\\widetilde a(T-t)}\\)",
+      "replacement": "\\(u_t=e^{-\\widetilde a(T-t)}\\\\)"
+    },
+    {
+      "line": 451,
+      "original": "(u_t^2)",
+      "replacement": "\\(u_t^2\\)"
+    },
+    {
+      "line": 451,
+      "original": "(Au_t)",
+      "replacement": "\\(Au_t\\)"
+    },
+    {
+      "line": 458,
+      "original": "(N=2)",
+      "replacement": "\\(N=2\\)"
+    },
+    {
+      "line": 458,
+      "original": "(T=0)",
+      "replacement": "\\(T=0\\)"
+    },
+    {
+      "line": 460,
+      "original": "(r_N=r_*N^{-1/24})",
+      "replacement": "\\(r_N=r_*N^{-1/24}\\)"
+    },
+    {
+      "line": 460,
+      "original": "(0<r_*\\le r_0)",
+      "replacement": "\\(0<r_*\\le r_0\\)"
+    },
+    {
+      "line": 460,
+      "original": "(r_*^{-11}N^{-1/24})",
+      "replacement": "\\(r_*^{-11}N^{-1/24}\\)"
+    },
+    {
+      "line": 462,
+      "original": "(C_{r_*}N^{-1/24})",
+      "replacement": "\\(C_{r_*}N^{-1/24}\\)"
+    },
+    {
+      "line": 462,
+      "original": "(N\\ge2)",
+      "replacement": "\\(N\\ge2\\)"
+    },
+    {
+      "line": 462,
+      "original": "(0<\\delta<1/22)",
+      "replacement": "\\(0<\\delta<1/22\\)"
+    },
+    {
+      "line": 462,
+      "original": "(r=r_*N^{-\\delta})",
+      "replacement": "\\(r=r_*N^{-\\delta}\\)"
+    },
+    {
+      "line": 478,
+      "original": "(2(c-d_r)C_t)",
+      "replacement": "\\(2(c-d_r)C_t\\)"
+    },
+    {
+      "line": 478,
+      "original": "(2(c-d_r)O_t)",
+      "replacement": "\\(2(c-d_r)O_t\\)"
+    },
+    {
+      "line": 484,
+      "original": "(N=2)",
+      "replacement": "\\(N=2\\)"
+    },
+    {
+      "line": 486,
+      "original": "(N)",
+      "replacement": "\\(N\\)"
+    },
+    {
+      "line": 493,
+      "original": "(S_t)",
+      "replacement": "\\(S_t\\)"
+    },
+    {
+      "line": 493,
+      "original": "(L^2)",
+      "replacement": "\\(L^2\\)"
+    },
+    {
+      "line": 493,
+      "original": "(N^{-1/2})",
+      "replacement": "\\(N^{-1/2}\\)"
+    },
+    {
+      "line": 493,
+      "original": "(|S_t|\\le1)",
+      "replacement": "\\(|S_t|\\le1\\)"
+    },
+    {
+      "line": 495,
+      "original": "(2p_N/(N-1)=(N-2)/N\\le1)",
+      "replacement": "\\(2p_N/(N-1)=(N-2)/N\\le1\\)"
+    },
+    {
+      "line": 495,
+      "original": "(|c-d_r|\\le C_kr)",
+      "replacement": "\\(|c-d_r|\\le C_kr\\)"
+    },
+    {
+      "line": 500,
+      "original": "(r_N)",
+      "replacement": "\\(r_N\\)"
+    },
+    {
+      "line": 505,
+      "original": "(k,T,\\lambda)",
+      "replacement": "\\(k,T,\\lambda\\)"
+    },
+    {
+      "line": 505,
+      "original": "(N\\ge2)",
+      "replacement": "\\(N\\ge2\\)"
+    },
+    {
+      "line": 507,
+      "original": "(j_k)",
+      "replacement": "\\(j_k\\)"
+    },
+    {
+      "line": 515,
+      "original": "(2\\nu\\ell_k/N\\,dt)",
+      "replacement": "\\(2\\nu\\ell_k/N\\,dt\\)"
+    },
+    {
+      "line": 515,
+      "original": "(F_N,G_N)",
+      "replacement": "\\(F_N,G_N\\)"
+    },
+    {
+      "line": 530,
+      "original": "(O(N^{-2}))",
+      "replacement": "\\(O(N^{-2})\\)"
+    },
+    {
+      "line": 530,
+      "original": "(O_k(N^{-1/2}))",
+      "replacement": "\\(O_k(N^{-1/2})\\)"
+    },
+    {
+      "line": 532,
+      "original": "(A_2)",
+      "replacement": "\\(A_2\\)"
+    },
+    {
+      "line": 532,
+      "original": "(r\\)",
+      "replacement": "\\(r\\\\)"
+    },
+    {
+      "line": 532,
+      "original": "(N^{-1/2})",
+      "replacement": "\\(N^{-1/2}\\)"
+    },
+    {
+      "line": 532,
+      "original": "(A_2=O(N^{-1/2})\\)",
+      "replacement": "\\(A_2=O(N^{-1/2})\\\\)"
+    },
+    {
+      "line": 532,
+      "original": "(B_2-A_2)",
+      "replacement": "\\(B_2-A_2\\)"
+    },
+    {
+      "line": 532,
+      "original": "(j_{k,r})",
+      "replacement": "\\(j_{k,r}\\)"
+    },
+    {
+      "line": 532,
+      "original": "(O(N^{-1/4}\\sqrt{1+\\log N})\\)",
+      "replacement": "\\(O(N^{-1/4}\\sqrt{1+\\log N})\\\\)"
+    },
+    {
+      "line": 536,
+      "original": "(L^1)",
+      "replacement": "\\(L^1\\)"
+    },
+    {
+      "line": 536,
+      "original": "(L^2)",
+      "replacement": "\\(L^2\\)"
+    },
+    {
+      "line": 536,
+      "original": "(\\mathbb E|L|^2=O_k(\\nu)\\)",
+      "replacement": "\\(\\mathbb E|L|^2=O_k(\\nu)\\\\)"
+    },
+    {
+      "line": 536,
+      "original": "(L^1)",
+      "replacement": "\\(L^1\\)"
+    },
+    {
+      "line": 536,
+      "original": "(h)",
+      "replacement": "\\(h\\)"
+    },
+    {
+      "line": 536,
+      "original": "(w_m)",
+      "replacement": "\\(w_m\\)"
+    },
+    {
+      "line": 536,
+      "original": "(\\min(\\beta_N,1)=1)",
+      "replacement": "\\(\\min(\\beta_N,1)=1\\)"
+    },
+    {
+      "line": 538,
+      "original": "(L^1)",
+      "replacement": "\\(L^1\\)"
+    },
+    {
+      "line": 538,
+      "original": "(L^1)",
+      "replacement": "\\(L^1\\)"
+    },
+    {
+      "line": 542,
+      "original": "(N=2)",
+      "replacement": "\\(N=2\\)"
+    },
+    {
+      "line": 542,
+      "original": "(N)",
+      "replacement": "\\(N\\)"
+    },
+    {
+      "line": 546,
+      "original": "(N)",
+      "replacement": "\\(N\\)"
+    }
+  ]
+}

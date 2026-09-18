@@ -104,3 +104,5 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R27 whole acceptance. THM052 leaves the fixed-T rare-survival initial/current correlation unresolved. Unconditional auxiliary Haar estimates cannot be multiplied by a presumed bounded conditioning factor: the exact factor grows as exp[c(N-1)T].
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): The rare-lifetime gap is structural to the current argument: small unconditional lifetime averages do not imply their exp(kappa T)-normalized tails at fixed T. The finite diagnostic profile illustrating this failure is not a particle-law counterexample.

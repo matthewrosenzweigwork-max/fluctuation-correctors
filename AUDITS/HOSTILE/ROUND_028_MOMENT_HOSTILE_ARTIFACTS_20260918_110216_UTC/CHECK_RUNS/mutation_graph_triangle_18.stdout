@@ -1,0 +1,1 @@
+{"mutation": "graph_triangle_18", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [3, 3], "difference": "36", "mutated": "126", "right": "162"}}

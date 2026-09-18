@@ -1,0 +1,206 @@
+{
+  "timestamp_utc": "2026-09-18T10:47:42.233901+00:00",
+  "published_commit": "72fe7e2fb4964d03643cb2e1e1bde46c3eb2c4d8",
+  "source_gate_matches": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_025_GATE_INTEGRATION.md",
+      "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_025_RECONSTRUCTION_COMPARISON.md",
+      "sha256": "c681b9b71699a8a3c30037db021489492f482b66fc6dabd31e4d88cc630a8e33",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_026_GATE_INTEGRATION.md",
+      "sha256": "b415f5c36676cdab4d5d92b547037c8db82eb53d89ec36835e7235290512f7c7",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_026_OVERLAP_RECONSTRUCTION_COMPARISON.md",
+      "sha256": "5a2c22844729b33c5f61cf9636390f877cac539903a21bd376ec32eb3faa2b50",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_026_RESPONSE_RECONSTRUCTION_COMPARISON.md",
+      "sha256": "85fe34bdc3f79a101974d5d36f47978d4096261db5a39678f79d1d05dcb241ba",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_027_GATE_INTEGRATION.md",
+      "sha256": "d9a141a884c6eb05a7d2bd86cf4587e834e4d06b772709074dbebbf5435e47ed",
+      "published_equal": true
+    },
+    {
+      "path": "AUDITS/ROUND_027_RECONSTRUCTION_COMPARISON.md",
+      "sha256": "5e365d6d82fa3420868045dc4215656f0daf41dbb66112c9cf2022a3c1f89c52",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "sha256": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+      "sha256": "f4035c691bfbd1c48191335942ac57ffa161078729c992552913e417da41f9fe",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION_ARTIFACTS/EXPOSURE_AND_SOURCES.md",
+      "sha256": "989dfd5406a0b640ddae24360bc7ed12ab3adb60f3d66de88b5f908cd4e807c2",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_026_SIGNED_CORRELATION_ARTIFACTS_20260918_090236_UTC/EXPOSURE_AND_SOURCES.md",
+      "sha256": "9bf49c5453993e2a902e872eec578471f9bc45eb9c9eb9360c31d125178cb924",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_026_SIGNED_CORRELATION_ATTEMPT.md",
+      "sha256": "749d9da1cd355065841880fdce4c1a253d9d3b02ad18417aeb30c0a6f2a5ce58",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_027_KILLED_ATTRACTIVE_DUALITY.md",
+      "sha256": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc",
+      "published_equal": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_027_KILLED_DUALITY_ARTIFACTS/EXPOSURE_AND_SOURCES.md",
+      "sha256": "829cb85967ceb37f2fb20bfdd0f4d0b063d246c35b94041e6a1cb4e2227abc0e",
+      "published_equal": true
+    },
+    {
+      "path": "MODEL_ORCHESTRATION.md",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "published_equal": true
+    },
+    {
+      "path": "REPORTS/ROUND_REPORTS/ROUND_004.md",
+      "sha256": "5e009212360f2da99f4052073c51b4d47c617ced349981254a799cbfcac1701d",
+      "published_equal": true
+    },
+    {
+      "path": "REPORTS/ROUND_REPORTS/ROUND_006.md",
+      "sha256": "1d0d901e2e96dbd6013cb847225ea2b2340aac13379ef34197f0f00d80be11b6",
+      "published_equal": true
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "published_equal": true
+    },
+    {
+      "path": "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+      "published_equal": true
+    },
+    {
+      "path": "THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md",
+      "sha256": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+      "published_equal": true
+    },
+    {
+      "path": "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "published_equal": true
+    },
+    {
+      "path": "THEOREMS/THM-050_COULOMB_CONDITIONAL_RESPONSE_AND_ANGULAR_OBSTRUCTION.md",
+      "sha256": "f24b505c4b3e5dfc6d930b30ceb2757836eed24622761fb548842dfd431f0565",
+      "published_equal": true
+    },
+    {
+      "path": "THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md",
+      "sha256": "f8114c60684145aaad4e458c1ee867d9190dac2d26c60cdb95dd04dbcb4e5d8a",
+      "published_equal": true
+    },
+    {
+      "path": "THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md",
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309",
+      "published_equal": true
+    }
+  ],
+  "current_inputs": [
+    {
+      "manifest": "AUDITS/ROUND_028_BOUNDARY_HOSTILE_INPUT_SHA256SUMS.txt",
+      "count": 21,
+      "all_current_bytes_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_028_COLLISION_FLUX_INPUT_SHA256SUMS.txt",
+      "count": 12,
+      "all_current_bytes_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_028_DUAL_FALSIFICATION_INPUT_SHA256SUMS.txt",
+      "count": 17,
+      "all_current_bytes_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "count": 8,
+      "all_current_bytes_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "count": 10,
+      "all_current_bytes_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_028_MOMENT_BLIND_INPUT_SHA256SUMS.txt",
+      "count": 18,
+      "all_current_bytes_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_028_MOMENT_HOSTILE_INPUT_SHA256SUMS.txt",
+      "count": 20,
+      "all_current_bytes_match": true
+    },
+    {
+      "manifest": "AUDITS/ROUND_028_TRIPLE_CONSTRUCTION_INPUT_SHA256SUMS.txt",
+      "count": 21,
+      "all_current_bytes_match": true
+    }
+  ],
+  "new_claims_status": "Whole unchanged THM053/054/055 pass both fresh axes and root source/evidence integration; original THM046 remains OPEN.",
+  "final_gate_recheck_utc": "2026-09-18T11:22:44.871103+00:00",
+  "final_audits": [
+    "AUD077",
+    "AUD078",
+    "AUD079",
+    "AUD080"
+  ]
+}

@@ -1,0 +1,1 @@
+{"mutation": "graph_adjacent_omit", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [3, 3], "difference": "72", "mutated": "90", "right": "162"}}

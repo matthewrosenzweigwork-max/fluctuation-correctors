@@ -76,3 +76,7 @@ R23 retains the original Haar row -4pi^2(h-Haar h) and zero scalar. The literal 
 
 
 2026-09-18 UTC. R24 whole THM047/PO034 accepted: PROVED_CANDIDATE; ISOLATED_RECONSTRUCTION_PASS(AUD067), HOSTILE_REVIEW_PASS(AUD068); VERSION_LOCKED. Complete constructor/blind/hostile and all source/code/evidence root-read; no repair. Exact averaged trace and contraction integral K.D Phi+2c(q-tau), all Cj bounds C sqrt(N), source-specific scalar0, actual absolute scaled lower drift O(N^-1/4), iid endpoint O(sqrt((1+logN)/N)) and smooth true-noise O(N^-3/8) give the entire cubic-plus-residual-martingale L1 equivalence. Both responses, all backgrounds, N2 and fixed-N singular limits retained. THM046/PO033 remains OPEN. See AUDITS/ROUND_024_GATE_INTEGRATION.md and ROUND_024_RECONSTRUCTION_COMPARISON.md.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): Configuration Delta H=kappa Haar-(2c/N)sum probability-Haar pair fusion measures. Both differentiated coordinates and the torus compensation are retained; induced surface volume is not silently substituted. No new renormalization/counterterm introduced.
+
+2026-09-18 UTC — R28 THM054 accepted: Smooth zero-row kernel has sum b_r=2d_r and exact self term -d_r Z_k/N. Both overlapping orientations and p_N=(N-1)(N-2)/(2N) retained; current and initial weights u² and A u remain distinct. No new counterterm.

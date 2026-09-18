@@ -1,0 +1,229 @@
+{
+  "all_original_diagnostic_runs": 15,
+  "canonical_edits": 0,
+  "children": 0,
+  "commits": 0,
+  "created_paths": {
+    "archive": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC.tar.gz",
+    "outer_checksums": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC.SHA256SUMS.txt",
+    "packet": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC",
+    "receipt": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC.RECEIPT.json",
+    "report": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_RECONSTRUCTION.md",
+    "seal": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC.SEAL.json"
+  },
+  "finished_utc": "2026-09-18T10:59:21.540477+00:00",
+  "input_edits": 0,
+  "issuance_execution": {
+    "argv": [
+      "CODE/seal_packet.py"
+    ],
+    "cwd": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC",
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "outcome_record": "sibling .RECEIPT.json or .ISSUANCE_FAILURE.json",
+    "packet": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC",
+    "script_sha256": "8dfaebe63d151b469ae1d2a1d9186cf2c5aed64d3d33a8f74a32a184e4afe325",
+    "started_utc": "2026-09-18T10:59:17.713150+00:00"
+  },
+  "original_expected_nonzero_mutations": 14,
+  "pushes": 0,
+  "schema": "AUD077-issuance-receipt-v1",
+  "seal_sha256": "b871e007931bc9610f95c8f0d6d35f44a053838db6403acae27ca7796ee32614",
+  "started_utc": "2026-09-18T10:59:17.713150+00:00",
+  "status": "PASS",
+  "verification": {
+    "archive_regular_member_count": 84,
+    "diagnostic_categories": 27,
+    "diagnostic_checks": 7957,
+    "input_count": 18,
+    "mutation_nonzero_exits_reproduced": 14,
+    "original_logged_runs": 15,
+    "packet_directory_count": 11,
+    "packet_file_count": 84,
+    "payload_manifest_entries": 83,
+    "payload_manifest_sha256": "fea36b55c4605245648d686dd02408bbd0dd31c54e3842cde32f7dedb7dce2cc",
+    "read_only_verifier": true,
+    "report_sha256": "786955f173fe5c6ff61e8bf0c478ec9ec396884f6de64f2d5dfb1be591f8514d",
+    "reproduced_executions": [
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py"
+        ],
+        "exit_code": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "5fc986fe94409ffc0432168efc64921628750b1c53b06e56c93bfa61cf14453e"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "pair_atom_half"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "c48cff9d16e6d0930f95c53b443d114155f736b32b488f720b5e3e4424c5e276"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "compensation_omitted"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "d081eec56baac0a077f453f7b58fe5fe82f805a7a7d1329aade74d62a92eb2c0"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "source_self_deleted"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "d649070f598933da1e4e8b1df39aeb6125a63017bd140d6be03e2b1a46e3e882"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "iid_variance_factor_two"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "afd14ec240e877fe09e74ac16f402689738943f2d82cfb18a69d0321b97d9858"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "clipping_not_centered"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "c56bf3bed701e8035521b63f2ddcfa969c28a1bcae39d0dbfb0fe239b4c1f11a"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "terminal_fusion_as_iid"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "9c6cadf2430420936527d666068034523b93549aca9972a0fa5b6cb08feb26d7"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "conjugate_bracket_sign"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "d61bef9feadfc5180a4a7da14e5de74311e8858d97f415844f763340921c5921"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "unconjugated_bracket_sign"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "a1d6bb8d820dfefbd88cfcf7c999b311fb17f32bd0d5753e95b7aacf8e71e1ad"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "response_square_half"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "5191a9cb1ed30a8c7e500ddcc73b400b38eee92c4e900048aa15ec708e7fb9da"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "survival_normalizer_dropped"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "adc6f7939c5e29e79a26b2727caec27432255e4ca7874e4ca37c1c92924b62c3"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "fused_count_two"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "211d7ebfc52c7a5c80516276f769e59b63e7d65376fc01310e54e71e571c7670"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "terminal_event_isometry"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "c5fee1444f27101493d21135d9a17e8fc85379bd71988378cc56f962e9f6dac9"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "initial_marks_independent"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "1ee682e185169b22875b2325be0491780b08266728c0b2b8c8585e77caea4b09"
+      },
+      {
+        "argv": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py",
+          "--mutation",
+          "first_power_replaced_by_square"
+        ],
+        "exit_code": 1,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "2ce0dc2ad35ca36ea76741d28172a736fde1e5a151fd495c06cca3dc8634c3e1"
+      }
+    ],
+    "status": "PASS"
+  },
+  "verifier_argv": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/verify.py",
+    "--archive",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC.tar.gz",
+    "--seal",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC.SEAL.json",
+    "--report",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_RECONSTRUCTION.md",
+    "--require-readonly"
+  ],
+  "verifier_exit_code": 0,
+  "verifier_stderr": "",
+  "verifier_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "verifier_stdout": "{\n  \"archive_regular_member_count\": 84,\n  \"diagnostic_categories\": 27,\n  \"diagnostic_checks\": 7957,\n  \"input_count\": 18,\n  \"mutation_nonzero_exits_reproduced\": 14,\n  \"original_logged_runs\": 15,\n  \"packet_directory_count\": 11,\n  \"packet_file_count\": 84,\n  \"payload_manifest_entries\": 83,\n  \"payload_manifest_sha256\": \"fea36b55c4605245648d686dd02408bbd0dd31c54e3842cde32f7dedb7dce2cc\",\n  \"read_only_verifier\": true,\n  \"report_sha256\": \"786955f173fe5c6ff61e8bf0c478ec9ec396884f6de64f2d5dfb1be591f8514d\",\n  \"reproduced_executions\": [\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\"\n      ],\n      \"exit_code\": 0,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"5fc986fe94409ffc0432168efc64921628750b1c53b06e56c93bfa61cf14453e\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"pair_atom_half\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"c48cff9d16e6d0930f95c53b443d114155f736b32b488f720b5e3e4424c5e276\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"compensation_omitted\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"d081eec56baac0a077f453f7b58fe5fe82f805a7a7d1329aade74d62a92eb2c0\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"source_self_deleted\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"d649070f598933da1e4e8b1df39aeb6125a63017bd140d6be03e2b1a46e3e882\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"iid_variance_factor_two\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"afd14ec240e877fe09e74ac16f402689738943f2d82cfb18a69d0321b97d9858\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"clipping_not_centered\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"c56bf3bed701e8035521b63f2ddcfa969c28a1bcae39d0dbfb0fe239b4c1f11a\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"terminal_fusion_as_iid\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"9c6cadf2430420936527d666068034523b93549aca9972a0fa5b6cb08feb26d7\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"conjugate_bracket_sign\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"d61bef9feadfc5180a4a7da14e5de74311e8858d97f415844f763340921c5921\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"unconjugated_bracket_sign\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"a1d6bb8d820dfefbd88cfcf7c999b311fb17f32bd0d5753e95b7aacf8e71e1ad\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"response_square_half\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"5191a9cb1ed30a8c7e500ddcc73b400b38eee92c4e900048aa15ec708e7fb9da\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"survival_normalizer_dropped\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"adc6f7939c5e29e79a26b2727caec27432255e4ca7874e4ca37c1c92924b62c3\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"fused_count_two\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"211d7ebfc52c7a5c80516276f769e59b63e7d65376fc01310e54e71e571c7670\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"terminal_event_isometry\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"c5fee1444f27101493d21135d9a17e8fc85379bd71988378cc56f962e9f6dac9\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"initial_marks_independent\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"1ee682e185169b22875b2325be0491780b08266728c0b2b8c8585e77caea4b09\"\n    },\n    {\n      \"argv\": [\n        \"/Library/Developer/CommandLineTools/usr/bin/python3\",\n        \"/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC/CODE/diagnostic.py\",\n        \"--mutation\",\n        \"first_power_replaced_by_square\"\n      ],\n      \"exit_code\": 1,\n      \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"stdout_sha256\": \"2ce0dc2ad35ca36ea76741d28172a736fde1e5a151fd495c06cca3dc8634c3e1\"\n    }\n  ],\n  \"status\": \"PASS\"\n}\n",
+  "verifier_stdout_sha256": "2740a56b0a342d78a4c6e9de8ff9bf1699974fc3ef85d50ad64e1558cf2dc087"
+}

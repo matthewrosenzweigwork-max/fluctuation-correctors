@@ -121,3 +121,7 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R27 whole acceptance. THM052 retains covariance 2nu, Girsanov coefficient 1/(2nu), complete force-square penalty 1/(4nu), and stopped true energy martingale. No stopped martingale is simply conditioned on a future rare survival event to infer mean zero.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): Full-drift first-power occupation justifies smooth terminal Itô passage. The killed modal martingale is true L2 before conditioning, with both exact cross brackets in THM055(C); drift/noise cross terms are retained. Conditional estimates transfer the entire future after deterministic survival, never impose a future-event isometry on the past.
+
+2026-09-18 UTC — R28 THM054 accepted: Restricted initial-good-event energy fourth martingale bound follows from true stopped identity, full-force bracket, Doob/Itô and absorption. Bad-event endpoint/noise fourth moments use an initial indicator in the integrand. Energy/observable common-noise cross term is retained, never set to zero.

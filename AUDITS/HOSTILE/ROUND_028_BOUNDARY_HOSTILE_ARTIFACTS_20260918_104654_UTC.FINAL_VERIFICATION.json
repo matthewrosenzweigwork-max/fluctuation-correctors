@@ -1,0 +1,59 @@
+{
+  "utc": "2026-09-18T11:05:55.641703+00:00",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-B",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-boundary-hostile/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC/verify.py",
+    "--archive",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-boundary-hostile/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.tar.gz",
+    "--inventory",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-boundary-hostile/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.ARCHIVE_MEMBERS.json",
+    "--seal",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-boundary-hostile/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SEAL.json",
+    "--report",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-boundary-hostile/AUDITS/HOSTILE/ROUND_028_JOINT_BOUNDARY_REVIEW.md",
+    "--sha256sums",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-boundary-hostile/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SHA256SUMS"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"archive\": {\n    \"bytes\": 151974,\n    \"inventory_sha256\": \"bc41a0121b3135174014025dd5a776dc6ec280c7c6c66b4a19c6c69d3459928c\",\n    \"regular_members\": 39,\n    \"sha256\": \"c4629b0980640942758ac1d55162676a6b43dbe1d8f2b83677a57b48b9817ae6\"\n  },\n  \"diagnostics\": {\n    \"assertions\": 16732,\n    \"categories\": 39,\n    \"mutation_count\": 27,\n    \"status\": \"PASS\"\n  },\n  \"external_report\": \"MATCH\",\n  \"external_seal\": \"MATCH\",\n  \"inputs\": 21,\n  \"packet_files\": 39,\n  \"packet_manifest_sha256\": \"985ec2a1572fbd72b0babec1f32ae4477b134e43b641027c98f8f4c9ec92fe48\",\n  \"payload_members\": 38,\n  \"review_sha256\": \"3dcef4cede1e83a753b301d3399597e74a1237fa04a1d4007d309b35d701044f\",\n  \"sibling_digests\": \"MATCH\",\n  \"status\": \"PASS\",\n  \"unsafe_name_negative_tests\": 10\n}\n",
+  "stderr": "",
+  "verification": {
+    "archive": {
+      "bytes": 151974,
+      "inventory_sha256": "bc41a0121b3135174014025dd5a776dc6ec280c7c6c66b4a19c6c69d3459928c",
+      "regular_members": 39,
+      "sha256": "c4629b0980640942758ac1d55162676a6b43dbe1d8f2b83677a57b48b9817ae6"
+    },
+    "diagnostics": {
+      "assertions": 16732,
+      "categories": 39,
+      "mutation_count": 27,
+      "status": "PASS"
+    },
+    "external_report": "MATCH",
+    "external_seal": "MATCH",
+    "inputs": 21,
+    "packet_files": 39,
+    "packet_manifest_sha256": "985ec2a1572fbd72b0babec1f32ae4477b134e43b641027c98f8f4c9ec92fe48",
+    "payload_members": 38,
+    "review_sha256": "3dcef4cede1e83a753b301d3399597e74a1237fa04a1d4007d309b35d701044f",
+    "sibling_digests": "MATCH",
+    "status": "PASS",
+    "unsafe_name_negative_tests": 10
+  },
+  "named_sibling_sha256": {
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.tar.gz": "c4629b0980640942758ac1d55162676a6b43dbe1d8f2b83677a57b48b9817ae6",
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.ARCHIVE_MEMBERS.json": "bc41a0121b3135174014025dd5a776dc6ec280c7c6c66b4a19c6c69d3459928c",
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SEAL.json": "beee2cabbf6169ee48eb3965f366b53e795193e48bafaf79599788724a71fc8f",
+    "ROUND_028_JOINT_BOUNDARY_REVIEW.md": "3dcef4cede1e83a753b301d3399597e74a1237fa04a1d4007d309b35d701044f",
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SHA256SUMS": "282e1950b920867f540be3560bdbccff9988c8a189f2d131116e5b357457631b"
+  },
+  "mode_check": {
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.tar.gz": "0o444",
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.ARCHIVE_MEMBERS.json": "0o444",
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SEAL.json": "0o444",
+    "ROUND_028_JOINT_BOUNDARY_REVIEW.md": "0o444",
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SHA256SUMS": "0o444"
+  }
+}

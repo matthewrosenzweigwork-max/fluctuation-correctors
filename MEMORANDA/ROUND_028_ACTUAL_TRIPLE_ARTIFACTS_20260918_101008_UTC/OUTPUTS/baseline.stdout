@@ -1,0 +1,290 @@
+{
+  "arithmetic": "exact rational and Gaussian rational",
+  "assertions": 5695,
+  "categories": {
+    "balanced_fourth_clipping": 4,
+    "bounded_fourth_not_decay": 1,
+    "clipped_zero_row": 6,
+    "current_label_count": 240,
+    "cycle_convolution_bound": 6,
+    "deleted_fourier_source": 240,
+    "direct_pair_fourier": 3360,
+    "endpoint_noise_cross": 1,
+    "endpoint_noise_cross_nonzero": 1,
+    "finite_N_square_term_retained": 2,
+    "four_dimensional_heat_power": 1,
+    "four_edge_graph_counts": 25,
+    "four_edge_graph_exhaustion": 5,
+    "fourth_energy_bound": 24,
+    "fourth_haar_energy": 24,
+    "iid_modal_fourth": 5,
+    "mixed_label_count": 240,
+    "overlap_diagonal": 240,
+    "oversized_clip_same_edge_fails": 4,
+    "pair_symmetry": 114,
+    "row_current_same_label": 240,
+    "row_mixed_same_label": 240,
+    "row_triple_reduction_current": 192,
+    "row_triple_reduction_mixed": 192,
+    "second_haar_energy": 24,
+    "shrinking_heat_rate": 2,
+    "signed_triple_two_weights": 240,
+    "smooth_diagonal_coefficients": 6,
+    "triangle_convolution_bound": 6,
+    "undersized_clip_bad_event_fails": 4,
+    "zero_fourier_rows": 6
+  },
+  "limitations": [
+    "finite algebra only",
+    "no SDE simulation",
+    "no continuum or asymptotic certification",
+    "finite Fourier kernels are diagnostic substitutes only"
+  ],
+  "mutation_count": 17,
+  "mutation_witnesses": {
+    "drop_adjacent_double": {
+      "category": "fourth_haar_energy",
+      "context": [
+        3,
+        "1/2",
+        3
+      ],
+      "correct": "1/8",
+      "mutated": "5/72"
+    },
+    "drop_disjoint_double": {
+      "category": "fourth_haar_energy",
+      "context": [
+        3,
+        "1/2",
+        4
+      ],
+      "correct": "207/1024",
+      "mutated": "189/1024"
+    },
+    "drop_four_cycle": {
+      "category": "fourth_haar_energy",
+      "context": [
+        3,
+        "1/2",
+        4
+      ],
+      "correct": "207/1024",
+      "mutated": "171/1024"
+    },
+    "drop_heat_self": {
+      "category": "deleted_fourier_source",
+      "context": [
+        0,
+        [
+          1,
+          0
+        ],
+        2,
+        0
+      ],
+      "correct": [
+        "-19/48",
+        "-19/48"
+      ],
+      "mutated": [
+        "-7/48",
+        "-7/48"
+      ]
+    },
+    "drop_mixed_same_label": {
+      "category": "row_mixed_same_label",
+      "context": [
+        0,
+        [
+          1,
+          0
+        ],
+        2,
+        0
+      ],
+      "correct": [
+        "1/2",
+        "1/2"
+      ],
+      "mutated": [
+        "0",
+        "0"
+      ]
+    },
+    "drop_noise_cross": {
+      "category": "endpoint_noise_cross",
+      "context": "independent input coins; dependent endpoint and noise",
+      "correct": "2041/3600",
+      "mutated": "3121/3600"
+    },
+    "drop_overlap_self": {
+      "category": "overlap_diagonal",
+      "context": [
+        0,
+        [
+          1,
+          0
+        ],
+        2,
+        0
+      ],
+      "correct": [
+        "-19/12",
+        "0"
+      ],
+      "mutated": [
+        "5/12",
+        "0"
+      ]
+    },
+    "drop_row_same_label": {
+      "category": "row_current_same_label",
+      "context": [
+        0,
+        [
+          1,
+          0
+        ],
+        2,
+        0
+      ],
+      "correct": [
+        "0",
+        "0"
+      ],
+      "mutated": [
+        "1",
+        "0"
+      ]
+    },
+    "drop_same_edge": {
+      "category": "fourth_haar_energy",
+      "context": [
+        3,
+        "1/2",
+        2
+      ],
+      "correct": "3/128",
+      "mutated": "0"
+    },
+    "drop_triangle": {
+      "category": "fourth_haar_energy",
+      "context": [
+        3,
+        "1/2",
+        3
+      ],
+      "correct": "1/8",
+      "mutated": "5/72"
+    },
+    "lose_ordered_half": {
+      "category": "deleted_fourier_source",
+      "context": [
+        0,
+        [
+          1,
+          0
+        ],
+        2,
+        0
+      ],
+      "correct": [
+        "-19/48",
+        "-19/48"
+      ],
+      "mutated": [
+        "-13/24",
+        "-13/24"
+      ]
+    },
+    "merge_backward_weights": {
+      "category": "signed_triple_two_weights",
+      "context": [
+        0,
+        [
+          1,
+          0
+        ],
+        3,
+        0
+      ],
+      "correct": [
+        "-20/567",
+        "-184/567"
+      ],
+      "mutated": [
+        "0",
+        "-32/81"
+      ]
+    },
+    "omit_clip_recentering": {
+      "category": "clipped_zero_row",
+      "context": [
+        3,
+        "1/2"
+      ],
+      "correct": "0",
+      "mutated": "-1/2"
+    },
+    "replace_initial_tag": {
+      "category": "signed_triple_two_weights",
+      "context": [
+        0,
+        [
+          1,
+          0
+        ],
+        3,
+        0
+      ],
+      "correct": [
+        "-20/567",
+        "-184/567"
+      ],
+      "mutated": [
+        "-20/567",
+        "-40/567"
+      ]
+    },
+    "wrong_clipping_power": {
+      "category": "balanced_fourth_clipping",
+      "context": 2,
+      "correct": [
+        "1",
+        "1"
+      ],
+      "mutated": [
+        "1/4",
+        "4"
+      ]
+    },
+    "wrong_cutoff_dimension": {
+      "category": "four_dimensional_heat_power",
+      "context": "dimension plus modal weights minus Coulomb power",
+      "correct": "11",
+      "mutated": "21/2"
+    },
+    "wrong_falling_factorial": {
+      "category": "signed_triple_two_weights",
+      "context": [
+        0,
+        [
+          1,
+          0
+        ],
+        3,
+        0
+      ],
+      "correct": [
+        "-20/567",
+        "-184/567"
+      ],
+      "mutated": [
+        "-20/189",
+        "-184/189"
+      ]
+    }
+  },
+  "status": "PASS"
+}

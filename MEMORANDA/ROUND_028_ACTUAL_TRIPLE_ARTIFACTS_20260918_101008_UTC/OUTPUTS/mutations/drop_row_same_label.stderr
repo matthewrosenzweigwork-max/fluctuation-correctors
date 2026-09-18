@@ -1,0 +1,1 @@
+{"kind": "MATHEMATICAL_MUTATION_CAUGHT", "mutant": "drop_row_same_label", "witness": {"category": "row_current_same_label", "context": [0, [1, 0], 2, 0], "correct": ["0", "0"], "mutated": ["1", "0"]}}

@@ -1,0 +1,1 @@
+{"mutation": "energy_noise_cross_zero", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [[1, 0], 2], "difference": ["1/12", "1/12"], "mutated": ["0", "0"], "right": ["1/12", "1/12"]}}

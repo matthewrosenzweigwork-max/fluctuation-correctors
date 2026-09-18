@@ -1,0 +1,1 @@
+{"kind": "MATHEMATICAL_MUTATION_CAUGHT", "mutant": "wrong_cutoff_dimension", "witness": {"category": "four_dimensional_heat_power", "context": "dimension plus modal weights minus Coulomb power", "correct": "11", "mutated": "21/2"}}

@@ -1,0 +1,9 @@
+{
+  "actual": "5/6",
+  "category": "literal_source_self_correction",
+  "expected": "5/2",
+  "mutation": "source_self_deleted",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "-5/3",
+  "status": "ASSERTION_FAILURE"
+}

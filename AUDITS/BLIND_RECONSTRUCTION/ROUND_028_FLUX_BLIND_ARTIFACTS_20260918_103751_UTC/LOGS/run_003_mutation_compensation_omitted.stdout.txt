@@ -1,0 +1,9 @@
+{
+  "actual": "0",
+  "category": "configuration_fourier_atom_and_compensation",
+  "expected": "-1",
+  "mutation": "compensation_omitted",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "1",
+  "status": "ASSERTION_FAILURE"
+}

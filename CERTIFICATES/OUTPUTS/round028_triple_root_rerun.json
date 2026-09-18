@@ -1,0 +1,124 @@
+{
+  "temporary_code_only_directory": "/private/tmp/hocf-r028-triple-rerun-rwp35mnc",
+  "baseline_exact_byte_match": true,
+  "assertions": 5695,
+  "mutations_and_guards": [
+    {
+      "name": "drop_adjacent_double",
+      "exit": 1,
+      "stderr_sha256": "c088cb6d0755d016d4b0e0eac85deee70d8961758f224d7f0bb04334270c2db3",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_disjoint_double",
+      "exit": 1,
+      "stderr_sha256": "4ce0e3c9bf8d5c6286443337182cb8cd0123b34344c0e667c2d8974ec58397f5",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_four_cycle",
+      "exit": 1,
+      "stderr_sha256": "82d28e67727eaa528c43e2fe16d29f4e95ac9eec75a81234b7e55ee2a196dd6e",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_heat_self",
+      "exit": 1,
+      "stderr_sha256": "162cb532efd0ec391edba898197030c4440a897456b64571f599acdb4dfbeaf9",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_mixed_same_label",
+      "exit": 1,
+      "stderr_sha256": "0e3d4e66ea3bb64933716288cc0660220c8efca3490a013130593de8e1faf2fd",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_noise_cross",
+      "exit": 1,
+      "stderr_sha256": "842a9d47bca9acff3518111f12b735efb55da602fc65c64e58c2d2463bff2e85",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_overlap_self",
+      "exit": 1,
+      "stderr_sha256": "01cda04281925171cc7ea2210427223be782464e60c03f3705440972d2cb6355",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_row_same_label",
+      "exit": 1,
+      "stderr_sha256": "2a5744413feeca5946291690f184a6dfada7e2e518a06b3114c52a2301a3b1be",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_same_edge",
+      "exit": 1,
+      "stderr_sha256": "fedafe9d0b1a763b0ff1459a6bc66b6998dc19dd137e553ca8d075e3259fb367",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "drop_triangle",
+      "exit": 1,
+      "stderr_sha256": "815752de4477d13d1f46c3c75d2e90f058c6678ab0524deac997d2386aaf66dd",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "lose_ordered_half",
+      "exit": 1,
+      "stderr_sha256": "d681d18e3a4a9ccca15832b0003f777165e9b76565f569ac92d74112aa974771",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "merge_backward_weights",
+      "exit": 1,
+      "stderr_sha256": "c64c15d386c6b0ab6c8d68f21ba327170a542359dd82493c3d3ff6473ed29edc",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "omit_clip_recentering",
+      "exit": 1,
+      "stderr_sha256": "767c66d589858082e9924fb18d09b30086d22ee16a5c943f572f61612153c6db",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "replace_initial_tag",
+      "exit": 1,
+      "stderr_sha256": "353396b64eeb15476b61aeab0312490a9feabb7c8bff71f93ae20172ecbb2c12",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "wrong_clipping_power",
+      "exit": 1,
+      "stderr_sha256": "05b1f98a5814b1e28185cf53c6e5849948af61779b8d9f79d2d52d40dccae912",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "wrong_cutoff_dimension",
+      "exit": 1,
+      "stderr_sha256": "4881367e6906fbdc845cb424007f8997990e6df10e61b776a3064853cebd4c4c",
+      "saved_bytes_match": true
+    },
+    {
+      "name": "wrong_falling_factorial",
+      "exit": 1,
+      "stderr_sha256": "0b86c1b031ac01bd38b9e07ea1a97a03863b1ffe24059754f05cd4e1692cd2b4",
+      "saved_bytes_match": true
+    },
+    {
+      "guard": "corrupt_digest",
+      "exit": 1,
+      "stderr": "VERIFICATION_REJECTED: complete inventory digest mismatch: CLAIM_CARD.md\n"
+    },
+    {
+      "guard": "unsafe_member",
+      "exit": 1,
+      "stderr": "VERIFICATION_REJECTED: unsafe member path: ../escape\n"
+    },
+    {
+      "guard": "duplicate_member",
+      "exit": 1,
+      "stderr": "VERIFICATION_REJECTED: duplicate member: CLAIM_CARD.md\n"
+    }
+  ]
+}

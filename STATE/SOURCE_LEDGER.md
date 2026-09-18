@@ -89,3 +89,6 @@ R24 TASK104 distinct trace/source lane sealed and fully root-read333lines, sourc
 
 
 2026-09-18 UTC — R27 whole acceptance. Root separately verified R4/R6 complete source and round-gate bytes, THM048/049 cards and R25 gate/comparison against published 24b766b; 10/8/11 current inputs match. No private source, external citation or novelty claim. Isolated auditors did not authenticate absent historical gates.
+
+
+Round029 root-only primary-source applicability screen,2026-09-18 UTC: MEMORANDA/ROUND_029_SOURCE_PREFLIGHT_20260918T105900Z.md records exact inspected portions and links for Duerinckx--Jabin2605.28979v1, Wang--Zhao--Zhu2105.13201v3, and abstract-only Chen--Holzinger--Juengel2405.15128/Jiang--Qiao--Wu--Zhang2608.16655v1. The first two inspected hypotheses do not match the current d4 Coulomb overdamped critical iid-Haar row; no theorem or estimate imported. The latter two are screening only, not full theorem audits. Missing HTML/browser-challenge access recorded without bypass. No novelty/absence claim or private-source dependence. This root preflight is outside every current audit/construction allowlist; no worker received it.

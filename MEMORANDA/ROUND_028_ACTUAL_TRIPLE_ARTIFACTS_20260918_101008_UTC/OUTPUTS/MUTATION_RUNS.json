@@ -1,0 +1,223 @@
+[
+  {
+    "mutant": "drop_adjacent_double",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_adjacent_double"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.28,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_disjoint_double",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_disjoint_double"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.281,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_four_cycle",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_four_cycle"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.268,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_heat_self",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_heat_self"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.655,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_mixed_same_label",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_mixed_same_label"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.66,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_noise_cross",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_noise_cross"
+    ],
+    "returncode": 1,
+    "duration_seconds": 6.041,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_overlap_self",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_overlap_self"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.656,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_row_same_label",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_row_same_label"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.615,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_same_edge",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_same_edge"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.243,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "drop_triangle",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "drop_triangle"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.24,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "lose_ordered_half",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "lose_ordered_half"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.671,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "merge_backward_weights",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "merge_backward_weights"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.714,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "omit_clip_recentering",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "omit_clip_recentering"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.267,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "replace_initial_tag",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "replace_initial_tag"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.752,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "wrong_clipping_power",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "wrong_clipping_power"
+    ],
+    "returncode": 1,
+    "duration_seconds": 5.853,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "wrong_cutoff_dimension",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "wrong_cutoff_dimension"
+    ],
+    "returncode": 1,
+    "duration_seconds": 5.827,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  },
+  {
+    "mutant": "wrong_falling_factorial",
+    "command": [
+      "python3",
+      "diagnostic.py",
+      "--mutant",
+      "wrong_falling_factorial"
+    ],
+    "returncode": 1,
+    "duration_seconds": 0.806,
+    "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1",
+    "nonzero_mathematical_witness": true
+  }
+]

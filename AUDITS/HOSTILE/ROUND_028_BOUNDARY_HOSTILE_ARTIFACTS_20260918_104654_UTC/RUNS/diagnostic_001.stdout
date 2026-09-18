@@ -1,0 +1,194 @@
+{
+  "arithmetic": "Fraction and exact Gaussian rationals except labeled binary64 layer-cake values",
+  "assertions": 16732,
+  "categories": 39,
+  "continuum_certification": "analytic report only; diagnostics do not prove singular SDE passages",
+  "counts": {
+    "L1 double centering factor four": 1,
+    "QSD Haar current marginal": 8,
+    "adjoint conservative row": 8,
+    "attractive observable drift": 1360,
+    "bounded endpoint cross-term inequality": 4561,
+    "canonical unordered pair variance": 4,
+    "conjugate cross bracket": 4080,
+    "coupled law unchanged column marginal": 2,
+    "coupled law unchanged row marginal": 2,
+    "distribution Fourier coefficient": 276,
+    "entire future functional transfer": 32,
+    "five class multiplicities": 145,
+    "five class total": 29,
+    "fused endpoint variance": 4,
+    "iid centered statistic mean": 4,
+    "initial empirical Fourier variance": 4,
+    "killed chain semigroup": 4,
+    "layer cake finite logarithmic expression": 6,
+    "literal deleted source coefficient": 1360,
+    "marked Laplace mass": 21,
+    "mean survival normalizer": 4,
+    "nonzero deliberate mutation": 27,
+    "nonzero logarithmic coefficient mutation": 5,
+    "normalized threshold-profile tail": 19,
+    "original zero row": 4,
+    "orthogonal projection contraction": 1,
+    "orthonormal probability-Haar coefficient": 7,
+    "r4 martingale bracket": 30,
+    "relative radial generator": 90,
+    "residual life response factor": 234,
+    "response term O N inverse constant": 234,
+    "restored zero row": 4,
+    "symmetric complex centered kernel": 16,
+    "threshold-profile unconditioned smallness": 19,
+    "total probability flux": 7,
+    "true unconditioned chain martingale": 1,
+    "unconjugated cross bracket": 4080,
+    "uniform unordered pair": 7,
+    "whole three-time reversed cylinder": 32
+  },
+  "examples": {
+    "layer_cake_at_17": {
+      "classification": "analytic formula evaluated in binary64; not a numerical proof",
+      "residual": 0.058823529411764705,
+      "second": 6.666426688112432
+    }
+  },
+  "mutation_count": 27,
+  "mutations": {
+    "N replaces N-1 in rate mass": {
+      "actual": "1",
+      "residual": "1/3",
+      "wrong": "2/3"
+    },
+    "clipping leaves Haar rows zero": {
+      "actual": "(9/4,3)",
+      "residual": "(9/4,3)",
+      "wrong": "(0,0)"
+    },
+    "collision atom sign flipped": {
+      "actual": "-2/3",
+      "residual": "-4/3",
+      "wrong": "2/3"
+    },
+    "complex self bracket doubled": {
+      "actual": "2/3",
+      "residual": "-2/3",
+      "wrong": "4/3"
+    },
+    "conditioned past isometry unchanged": {
+      "actual": "85/288",
+      "residual": "119/1152",
+      "wrong": "221/1152"
+    },
+    "conditioned past martingale stays centered": {
+      "actual": "253/1152",
+      "residual": "253/1152",
+      "wrong": "0"
+    },
+    "distinct-outside coefficient off by one": {
+      "actual": "2",
+      "residual": "-2",
+      "wrong": "4"
+    },
+    "empirical deletion correction omitted": {
+      "actual": "(1/4,1/4)",
+      "residual": "(1/4,1/4)",
+      "wrong": "(0,0)"
+    },
+    "exit marginals force joint independence": {
+      "actual": "5/16",
+      "residual": "1/16",
+      "wrong": "1/4"
+    },
+    "fused-common multiplicity halved": {
+      "actual": "4",
+      "residual": "2",
+      "wrong": "2"
+    },
+    "fusion variance omits ordered cross terms": {
+      "actual": "5/9",
+      "residual": "2/9",
+      "wrong": "1/3"
+    },
+    "missing torus compensation": {
+      "actual": "0",
+      "residual": "2",
+      "wrong": "-2"
+    },
+    "omitted differentiated particle factor": {
+      "actual": "-2/3",
+      "residual": "-1/3",
+      "wrong": "-1/3"
+    },
+    "ordered pair variance misses half": {
+      "actual": "2825/768",
+      "residual": "-2825/768",
+      "wrong": "2825/384"
+    },
+    "rare normalizer omitted": {
+      "actual": "1",
+      "residual": "1/2",
+      "wrong": "1/2"
+    },
+    "relative diffusivity halved": {
+      "actual": "576",
+      "residual": "288",
+      "wrong": "288"
+    },
+    "residual numerator two removed": {
+      "actual": "9/20",
+      "residual": "9/40",
+      "wrong": "9/40"
+    },
+    "reversal orientation unchanged": {
+      "actual": "29/24",
+      "residual": "-7/48",
+      "wrong": "65/48"
+    },
+    "second shifted denominator collapsed": {
+      "actual": "9/20",
+      "residual": "-27/100",
+      "wrong": "18/25"
+    },
+    "small typical profile controls rare tail": {
+      "actual": "1",
+      "residual": "524287/524288",
+      "wrong": "1/524288"
+    },
+    "spurious diffusivity in flux": {
+      "actual": "-2/3",
+      "residual": "2/3",
+      "wrong": "-4/3"
+    },
+    "surface measure substituted for probability Haar": {
+      "actual": "-2/3",
+      "residual": "-1/2",
+      "wrong": "-1/6"
+    },
+    "survival leaves initial Haar law": {
+      "actual": "17/48",
+      "residual": "-7/48",
+      "wrong": "1/2"
+    },
+    "triple-diagonal mass on three active modes": {
+      "actual": "0",
+      "residual": "-1/7",
+      "wrong": "1/7"
+    },
+    "uncentered clipped variance used": {
+      "actual": "1375/288",
+      "residual": "2525/2304",
+      "wrong": "2825/768"
+    },
+    "unconjugated bracket sign flipped": {
+      "actual": "-2/3",
+      "residual": "-4/3",
+      "wrong": "2/3"
+    },
+    "zero-noise collision time missing pair factor": {
+      "actual": "81/8",
+      "residual": "-81/8",
+      "wrong": "81/4"
+    }
+  },
+  "randomness": "none",
+  "status": "PASS"
+}

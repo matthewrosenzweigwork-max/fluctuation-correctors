@@ -112,3 +112,7 @@ R23 constants a,c>0 and m0 are fixed before m; all sufficiently large integer gr
 
 
 2026-09-18 UTC — R27 whole acceptance. THM052 holds for every finite N>=2, nu>0 and finite horizon, bounded Borel real/complex tests. Current conditional Haar and lifetime Exp(c(N-1)) require iid-Haar initial preparation. The reciprocal survival exp[c(N-1)T] is exact and not uniformly bounded.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): THM053/055 retain every finite N>=2 and finite positive diffusivity for exact identities; the quantitative epsilon and response transfer are uniform for 0<nu<=nu_* and all finite horizons. Explicit near/far clipping constants are in frozen THM055(B); no hidden N-dependent kernel constant.
+
+2026-09-18 UTC — R28 THM054 accepted: Uniform critical windows, every N>=2, every nonzero m and w_m=(1+|m|)^10; fixed k,T,0<r<=r0 with constants independent of N,beta,r. Only a supremum of deterministic-time fourth expectations is accepted here.

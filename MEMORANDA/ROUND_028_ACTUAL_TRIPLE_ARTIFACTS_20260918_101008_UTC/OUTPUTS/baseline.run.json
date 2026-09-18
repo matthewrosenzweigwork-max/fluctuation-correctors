@@ -1,0 +1,9 @@
+{
+  "command": [
+    "python3",
+    "diagnostic.py"
+  ],
+  "returncode": 0,
+  "duration_seconds": 3.713,
+  "program_sha256": "3ac7b188776aa0f53e5b148b693594d9f80dde557ec158001fccd4b097b712a1"
+}

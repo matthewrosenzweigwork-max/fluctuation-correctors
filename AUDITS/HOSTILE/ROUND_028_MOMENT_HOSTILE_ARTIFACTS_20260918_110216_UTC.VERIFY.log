@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-moment-hostile/AUDITS/HOSTILE/ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/verify.py",
+    "--archive",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-moment-hostile/AUDITS/HOSTILE/ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC.tar.gz",
+    "--seal",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-moment-hostile/AUDITS/HOSTILE/ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC.SEALS.json",
+    "--report",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-moment-hostile/AUDITS/HOSTILE/ROUND_028_MOMENT_TAIL_REVIEW.md"
+  ],
+  "note": "Final issuance receipt. All packet content and seals were already frozen before this read-only verification.",
+  "returncode": 0,
+  "seal_sha256": "91e775429644ceeb7b80f47def3b737bec8fde76777bf332b006e5b2bbc38894",
+  "stderr": "",
+  "stdout": "{\"exact_checks\": 308, \"floating_checks\": 36000, \"input_files\": 20, \"nonzero_mutation_runs\": 21, \"note\": \"Integrity and diagnostic consistency only; mathematical verdict is in REPORT.md.\", \"packet_files\": 79, \"read_only\": true, \"safe_regular_archive_members\": 79, \"status\": \"PASS\"}\n"
+}

@@ -149,3 +149,7 @@ R23 fixes d4,s2, g_hat(k)=|k|^-2 and div K=4pi^2(delta_0-dx). Exact ordered pair
 
 
 2026-09-18 UTC — R27 whole acceptance. THM052 uses c=4pi², Delta H=c(N-1) on Omega, exact full collision atom in distributions, and the identical N-scaled modal defect with A=exp[-(c+nu c|k|²)T]. The three frozen regimes and all finite-N backgrounds remain unchanged.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): Critical d4,s2 normalizations remain old beta_N->0, full microscopic beta_N/sqrt(N)->0, and beta_N/sqrt(N)->positive finite lambda. Collision rate kappa=c(N-1), marked pair coefficient2c/N, probability-Haar fusion and exp(kappa T) rare-tail normalizer remain exact.
+
+2026-09-18 UTC — R28 THM054 accepted: Critical moment window beta/sqrt(N) bounded above and below is distinct from beta->0 and microscopic subcritical beta/sqrt(N)->0. N2 triple terms zero with no nonexistent label. New moment/localization estimates do not enlarge the Gaussian theorem range.

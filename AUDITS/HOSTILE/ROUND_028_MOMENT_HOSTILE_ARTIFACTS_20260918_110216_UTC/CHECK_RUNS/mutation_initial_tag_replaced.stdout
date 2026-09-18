@@ -1,0 +1,1 @@
+{"mutation": "initial_tag_replaced", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [[1, 0], 3], "difference": ["1/243", "1/405"], "mutated": ["7/3645", "28/3645"], "right": ["22/3645", "37/3645"]}}

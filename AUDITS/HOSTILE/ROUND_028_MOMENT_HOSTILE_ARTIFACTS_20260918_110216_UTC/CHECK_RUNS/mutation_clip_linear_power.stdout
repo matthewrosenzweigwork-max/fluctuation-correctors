@@ -1,0 +1,1 @@
+{"mutation": "clip_linear_power", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": "L=N instead of N^2", "difference": "2", "mutated": "-2", "right": "0"}}

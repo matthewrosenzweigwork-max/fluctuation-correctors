@@ -1,0 +1,66 @@
+{
+  "completed_utc": "2026-09-18 10:32:48 UTC",
+  "status": "PASS",
+  "verifier_sha256": "100da62f72bb3e188c2e7a40ef25e0d5f4c624cbe7c5d5a86f349c7adcbca313",
+  "source_inputs": 21,
+  "regular_members": 92,
+  "diagnostic_assertions": 5695,
+  "mathematical_mutation_runs": 17,
+  "all_mathematical_mutations_nonzero": true,
+  "guard_mutation_runs": 3,
+  "all_guard_mutations_nonzero": true,
+  "report_archive_copy_equal": true,
+  "results": [
+    {
+      "command": [
+        "python3",
+        "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-triple-construction/MEMORANDA/ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC/verify.py",
+        "--run-diagnostic"
+      ],
+      "returncode": 0,
+      "stdout": "{\"archive_extracted\": false, \"archive_regular_members\": 92, \"diagnostic_assertions\": 5695, \"inputs\": 21, \"read_only\": true, \"regular_members\": 92, \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "expected_returncode": 0,
+      "accepted_control": true
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-triple-construction/MEMORANDA/ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC/verify.py",
+        "--mutant",
+        "corrupt_digest"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "VERIFICATION_REJECTED: complete inventory digest mismatch: CLAIM_CARD.md\n",
+      "expected_returncode": 1,
+      "accepted_control": true
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-triple-construction/MEMORANDA/ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC/verify.py",
+        "--mutant",
+        "unsafe_member"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "VERIFICATION_REJECTED: unsafe member path: ../escape\n",
+      "expected_returncode": 1,
+      "accepted_control": true
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-triple-construction/MEMORANDA/ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC/verify.py",
+        "--mutant",
+        "duplicate_member"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "VERIFICATION_REJECTED: duplicate member: CLAIM_CARD.md\n",
+      "expected_returncode": 1,
+      "accepted_control": true
+    }
+  ]
+}

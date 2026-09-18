@@ -1,0 +1,400 @@
+{
+  "count": 79,
+  "members": [
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RESULTS.json",
+      "sha256": "5848ba71e8eb501c6e98bea35896fa11bedf3ca76468062099e2339987b3a81e",
+      "size": 17621
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/baseline.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/baseline.stdout",
+      "sha256": "0ed96947570ca873ed8f423b15c09c26c77742a6da8b0d0bc3344a322c681763",
+      "size": 5940
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_clip_linear_power.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_clip_linear_power.stdout",
+      "sha256": "6857133cb31e7730fc6981d75b4d2717d8c3fd51b306080ba1d4ade2ea9ee6f3",
+      "size": 182
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_cutoff_endpoint_claim.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_cutoff_endpoint_claim.stdout",
+      "sha256": "99c0a936db1295dfb48621e36318565049c2bed192fe1bdf49bd560bf2869bf0",
+      "size": 209
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_energy_noise_cross_zero.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_energy_noise_cross_zero.stdout",
+      "sha256": "d4ab5da3970c837f6bfdce3aed21561ae3fb65614bb0786487170d57b7301a59",
+      "size": 211
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_finite_N_square_term_drop.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_finite_N_square_term_drop.stdout",
+      "sha256": "ebb910069c0140449a93faf4f2acda478f4a3c331f98643be381eb84050d2fbb",
+      "size": 183
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_adjacent_omit.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_adjacent_omit.stdout",
+      "sha256": "821c22fdd2312c142e314fb0e3511f8b84d204d9c78059b528197331c3cd6a12",
+      "size": 173
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_cycle_24.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_cycle_24.stdout",
+      "sha256": "db1f876401284451dcc5c487d1dab1a09f06e18c730447260a2348c925ab5562",
+      "size": 169
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_disjoint_omit.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_disjoint_omit.stdout",
+      "sha256": "d0c44ac8dccb922496ecaf869e08fae9d50e82ea7b9c736b9ad529a512ea656e",
+      "size": 174
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_ordered_energy.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_ordered_energy.stdout",
+      "sha256": "60b370d541bd0a93a34f545d4d13fd71558b0935cfa6c0c5034b0667501c09ea",
+      "size": 173
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_triangle_18.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_triangle_18.stdout",
+      "sha256": "6cad7adbdbd09893f4f6b588d4fe7c453f5ad27ae1c16b7b43bfbf72247cf742",
+      "size": 172
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_initial_all_equal_twice.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_initial_all_equal_twice.stdout",
+      "sha256": "3b179cd0aa8f7baf45be3e23353d9109ece48e5ec7fec5fd0b8340789e8aa415",
+      "size": 173
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_initial_tag_replaced.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_initial_tag_replaced.stdout",
+      "sha256": "5951d0c10c4e3ccd4e2c11d96ae42d8af85461f8ba67d204f11292b63ce8d5f2",
+      "size": 227
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_merge_time_weights.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_merge_time_weights.stdout",
+      "sha256": "3107d23ed2d2d4976b37cda5a92cc5aa01933d539ea5965793f97c30f93fafe4",
+      "size": 227
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_mixed_same_label_omit.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_mixed_same_label_omit.stdout",
+      "sha256": "f6d23df83135b44d355cf2701a9ec7ee21a285abdf695fe4e6ddcd75649f28f8",
+      "size": 206
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_ordered_half_omit.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_ordered_half_omit.stdout",
+      "sha256": "ee48480e0e51dff17db415cdd04df367e691fdc610f17560749d708415bd8444",
+      "size": 213
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_overlap_missing_orientation.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_overlap_missing_orientation.stdout",
+      "sha256": "1b377b777c41c1c445e9c9e17d9aa468780470b0bafd30ece0b1ac05e615954e",
+      "size": 219
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_overlap_self_omit.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_overlap_self_omit.stdout",
+      "sha256": "912e17ab00268a588596cd42db9cabe564587343985ccefdf3330af2f4cda97c",
+      "size": 202
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_smooth_self_omit.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_smooth_self_omit.stdout",
+      "sha256": "7e4540986b3f7e32921d2f1591a40116365f3f3a0a8381cad9c89f526a9e604c",
+      "size": 212
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_smooth_self_sign.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_smooth_self_sign.stdout",
+      "sha256": "e4a5940a6aed1468870372e1b9d55773b0378d130a0ac8d15240c5f67f507dc0",
+      "size": 210
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_tail_row_factor_one.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_tail_row_factor_one.stdout",
+      "sha256": "966569838b659b6bda9b36eec10584bf0e2f1072a759a45e31d9b5f9b08fba98",
+      "size": 204
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_terminal_event_isometry.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_terminal_event_isometry.stdout",
+      "sha256": "db78a822dea423cfd9e67f6144b96664f13131fb688a113ee60464d681176564",
+      "size": 204
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_triple_prefactor_twice.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_triple_prefactor_twice.stdout",
+      "sha256": "0b866dd49a5bd5c12586b62e72652463b91988b3afab21b487a095a97e32ede6",
+      "size": 225
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/DISPLAY_HISTORY.json",
+      "sha256": "d90a90ced3ac014e23803ef3ba3ffca49916f4d93327aa1e0484eb1a134f9f9c",
+      "size": 2244
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/EXECUTION_HISTORY.json",
+      "sha256": "e3b763a47d0e37619be3ba76cfb7ee2d261267d2685c28edbde46b5b090db96d",
+      "size": 310702
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/EXPOSURE_AND_SOURCES.md",
+      "sha256": "71d48d28aa6c5fe96cafbf59dce2daafac89f52dd1038d6a4b2ff1e71555c960",
+      "size": 6293
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/FAILED_ROUTES.md",
+      "sha256": "79b5a24d7da1d955dba6e7b303ec36527b63b336d47eff846993c8ce76261e9c",
+      "size": 3092
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "size": 8174
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/AUDITS/ROUND_025_GATE_INTEGRATION.md",
+      "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+      "size": 3115
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/AUDITS/ROUND_026_GATE_INTEGRATION.md",
+      "sha256": "b415f5c36676cdab4d5d92b547037c8db82eb53d89ec36835e7235290512f7c7",
+      "size": 2611
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "size": 30796
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "size": 36096
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "size": 37944
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "size": 35077
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "size": 34431
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "sha256": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+      "size": 31951
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+      "sha256": "f4035c691bfbd1c48191335942ac57ffa161078729c992552913e417da41f9fe",
+      "size": 28994
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC/EXPOSURE_AND_SOURCES.md",
+      "sha256": "ecbc9f2a9bb5f43fda5a14da2cde558099bffe77ab9e583123b1e122cf830ea9",
+      "size": 8338
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_028_ACTUAL_TRIPLE_CONSTRUCTION.md",
+      "sha256": "af18846a8f85a6a1356ae5d7a2c35b043629bc141852c06578e8cef0df24d05b",
+      "size": 30427
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MODEL_ORCHESTRATION.md",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "size": 4350
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "size": 5031
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/TASKS/ACTIVE/TASK-125_ROUND028_MOMENT_TAIL_HOSTILE.md",
+      "sha256": "87579bb63196934b2dc142b0a21feac0849b7ffdfa2bc1b75e30802011a867d1",
+      "size": 2718
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+      "size": 2035
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md",
+      "sha256": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+      "size": 2860
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "size": 3353
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md",
+      "sha256": "f8114c60684145aaad4e458c1ee867d9190dac2d26c60cdb95dd04dbcb4e5d8a",
+      "size": 3740
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-054_CRITICAL_COULOMB_FOURTH_MOMENTS_AND_FORCE_TAIL.md",
+      "sha256": "0e7e6f64159137ff5b6942ce48dff6e02fd7730ed51a8499a4466aca3d7c9f3e",
+      "size": 5602
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUT_MANIFEST.txt",
+      "sha256": "ddf9e5f22e3fe96bdbd566fbc4784e61df6648f100c3b43899bc4352ef0de57f",
+      "size": 2289
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUT_VERIFICATION.json",
+      "sha256": "b15a7d646dc00cb47b01e47dc0dbae89ac2d3b578783839faaf78cb7d12e8590",
+      "size": 3693
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/MEMBER_INVENTORY.txt",
+      "sha256": "bd746a2e81963527d574e2fe1a4b23554ed0ca2910b182d1acd425865fa1c7c1",
+      "size": 3427
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/README.md",
+      "sha256": "01c697c3e12b601286aae4727d7266536e04e5ec0d6b6d4af4958ced1f32677f",
+      "size": 3218
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/REPORT.md",
+      "sha256": "62e4b77edad4e3f250549e048cbe5a9e6ddde21eb99586b7c61277a0adf50285",
+      "size": 31197
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/RUN_HISTORY.md",
+      "sha256": "d9c04cf15fde40e6e5b2888f4707e1fd30df0508d0a9f58674b14d0c78671cb9",
+      "size": 1751
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/SHA256SUMS.json",
+      "sha256": "79b66bf576b855951e18b9803b4f27a4803c3bcbeea069738bb471981840aad4",
+      "size": 12846
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/fresh_checks.py",
+      "sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "size": 12717
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/seal_packet.py",
+      "sha256": "b4b905b68482ce03001e7f58850887c6fd574bf858430073f557514d61ea62c2",
+      "size": 4371
+    },
+    {
+      "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/verify.py",
+      "sha256": "994df9f5102d34a720ddf8a495dfb0598087b9dbbcc3efa56a002f31b6355c5d",
+      "size": 6447
+    }
+  ]
+}

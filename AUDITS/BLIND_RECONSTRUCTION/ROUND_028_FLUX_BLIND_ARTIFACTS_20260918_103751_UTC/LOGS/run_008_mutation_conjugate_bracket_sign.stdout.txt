@@ -1,0 +1,14 @@
+{
+  "actual": [
+    "3/5",
+    "0"
+  ],
+  "category": "conjugate_mode_bracket",
+  "expected": [
+    "-3/5",
+    "0"
+  ],
+  "mutation": "conjugate_bracket_sign",
+  "nonzero_discrepancy": true,
+  "status": "ASSERTION_FAILURE"
+}

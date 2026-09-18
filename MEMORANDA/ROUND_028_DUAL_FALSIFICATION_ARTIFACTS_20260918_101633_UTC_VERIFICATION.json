@@ -1,0 +1,20 @@
+{
+  "archive_regular_members": 27,
+  "archive_sha256": "416efacc482d6fce0324262526ee18869c8f9c397caeedaf57e35d73724431c1",
+  "diagnostic_categories": 41,
+  "diagnostic_checks": 3845,
+  "diagnostic_replayed": true,
+  "extractions": 0,
+  "independent_mathematical_certification": false,
+  "input_copies": 17,
+  "nonzero_mutation_witnesses": 20,
+  "outer_siblings_verified": 0,
+  "packet_directories": 7,
+  "packet_regular_members": 27,
+  "payload_members": 25,
+  "readonly_required": true,
+  "report_sha256": "2e80c1b0b814d1bbc9cc2deaf8096c759e88d7184a2a26b6e28aa18f515145e5",
+  "safety_rejections": 15,
+  "status": "PASS",
+  "writes": 0
+}

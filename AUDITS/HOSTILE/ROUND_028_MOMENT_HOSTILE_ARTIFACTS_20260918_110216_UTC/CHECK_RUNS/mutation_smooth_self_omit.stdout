@@ -1,0 +1,1 @@
+{"mutation": "smooth_self_omit", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [[1, 0], 2], "difference": ["-1/16", "-1/16"], "mutated": ["1/12", "1/12"], "right": ["1/48", "1/48"]}}

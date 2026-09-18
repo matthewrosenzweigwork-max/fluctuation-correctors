@@ -1,0 +1,1 @@
+{"mutation": "triple_prefactor_twice", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [[1, 0], 3, false], "difference": ["-1/162", "-2/81"], "mutated": ["0", "4/81"], "right": ["-1/162", "2/81"]}}

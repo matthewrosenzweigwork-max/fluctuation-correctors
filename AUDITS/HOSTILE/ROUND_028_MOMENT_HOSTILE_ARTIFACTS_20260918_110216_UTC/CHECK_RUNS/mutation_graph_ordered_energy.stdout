@@ -1,0 +1,1 @@
+{"mutation": "graph_ordered_energy", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [3, 2], "difference": "-90", "mutated": "96", "right": "6"}}

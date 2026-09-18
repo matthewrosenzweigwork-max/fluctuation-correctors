@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "count": 20,
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "size": 8174
+    },
+    {
+      "path": "MODEL_ORCHESTRATION.md",
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "size": 4350
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "size": 5031
+    },
+    {
+      "path": "THEOREMS/THM-054_CRITICAL_COULOMB_FOURTH_MOMENTS_AND_FORCE_TAIL.md",
+      "sha256": "0e7e6f64159137ff5b6942ce48dff6e02fd7730ed51a8499a4466aca3d7c9f3e",
+      "size": 5602
+    },
+    {
+      "path": "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+      "size": 2035
+    },
+    {
+      "path": "THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md",
+      "sha256": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+      "size": 2860
+    },
+    {
+      "path": "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "size": 3353
+    },
+    {
+      "path": "THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md",
+      "sha256": "f8114c60684145aaad4e458c1ee867d9190dac2d26c60cdb95dd04dbcb4e5d8a",
+      "size": 3740
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "size": 30796
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "size": 36096
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "size": 37944
+    },
+    {
+      "path": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+      "size": 35077
+    },
+    {
+      "path": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+      "size": 34431
+    },
+    {
+      "path": "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "sha256": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+      "size": 31951
+    },
+    {
+      "path": "AUDITS/ROUND_025_GATE_INTEGRATION.md",
+      "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+      "size": 3115
+    },
+    {
+      "path": "MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+      "sha256": "f4035c691bfbd1c48191335942ac57ffa161078729c992552913e417da41f9fe",
+      "size": 28994
+    },
+    {
+      "path": "AUDITS/ROUND_026_GATE_INTEGRATION.md",
+      "sha256": "b415f5c36676cdab4d5d92b547037c8db82eb53d89ec36835e7235290512f7c7",
+      "size": 2611
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-125_ROUND028_MOMENT_TAIL_HOSTILE.md",
+      "sha256": "87579bb63196934b2dc142b0a21feac0849b7ffdfa2bc1b75e30802011a867d1",
+      "size": 2718
+    },
+    {
+      "path": "MEMORANDA/ROUND_028_ACTUAL_TRIPLE_CONSTRUCTION.md",
+      "sha256": "af18846a8f85a6a1356ae5d7a2c35b043629bc141852c06578e8cef0df24d05b",
+      "size": 30427
+    },
+    {
+      "path": "MEMORANDA/ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC/EXPOSURE_AND_SOURCES.md",
+      "sha256": "ecbc9f2a9bb5f43fda5a14da2cde558099bffe77ab9e583123b1e122cf830ea9",
+      "size": 8338
+    }
+  ]
+}

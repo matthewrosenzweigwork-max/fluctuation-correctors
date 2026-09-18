@@ -1,0 +1,209 @@
+{
+  "all_detected_nonzero": true,
+  "count": 14,
+  "runs": [
+    {
+      "mutation": "pair_atom_half",
+      "run_record": "LOGS/run_002_mutation_pair_atom_half.json",
+      "witness": {
+        "actual": "-1",
+        "category": "configuration_fourier_atom_and_compensation",
+        "expected": "-1/2",
+        "mutation": "pair_atom_half",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "-1/2",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "compensation_omitted",
+      "run_record": "LOGS/run_003_mutation_compensation_omitted.json",
+      "witness": {
+        "actual": "0",
+        "category": "configuration_fourier_atom_and_compensation",
+        "expected": "-1",
+        "mutation": "compensation_omitted",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "1",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "source_self_deleted",
+      "run_record": "LOGS/run_004_mutation_source_self_deleted.json",
+      "witness": {
+        "actual": "5/6",
+        "category": "literal_source_self_correction",
+        "expected": "5/2",
+        "mutation": "source_self_deleted",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "-5/3",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "iid_variance_factor_two",
+      "run_record": "LOGS/run_005_mutation_iid_variance_factor_two.json",
+      "witness": {
+        "actual": "29/648",
+        "category": "iid_canonical_variance",
+        "expected": "29/324",
+        "mutation": "iid_variance_factor_two",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "-29/648",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "clipping_not_centered",
+      "run_record": "LOGS/run_006_mutation_clipping_not_centered.json",
+      "witness": {
+        "actual": "-1/36",
+        "category": "iid_canonical_mean",
+        "expected": 0,
+        "mutation": "clipping_not_centered",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "-1/36",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "terminal_fusion_as_iid",
+      "run_record": "LOGS/run_007_mutation_terminal_fusion_as_iid.json",
+      "witness": {
+        "actual": "1",
+        "category": "haar_and_fused_second_moment",
+        "expected": "1/2",
+        "mutation": "terminal_fusion_as_iid",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "1/2",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "conjugate_bracket_sign",
+      "run_record": "LOGS/run_008_mutation_conjugate_bracket_sign.json",
+      "witness": {
+        "actual": [
+          "3/5",
+          "0"
+        ],
+        "category": "conjugate_mode_bracket",
+        "expected": [
+          "-3/5",
+          "0"
+        ],
+        "mutation": "conjugate_bracket_sign",
+        "nonzero_discrepancy": true,
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "unconjugated_bracket_sign",
+      "run_record": "LOGS/run_009_mutation_unconjugated_bracket_sign.json",
+      "witness": {
+        "actual": [
+          "-3/10",
+          "-3/10"
+        ],
+        "category": "unconjugated_mode_bracket",
+        "expected": [
+          "3/10",
+          "3/10"
+        ],
+        "mutation": "unconjugated_bracket_sign",
+        "nonzero_discrepancy": true,
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "response_square_half",
+      "run_record": "LOGS/run_010_mutation_response_square_half.json",
+      "witness": {
+        "actual": "10201/30351",
+        "category": "exact_laplace_response_square",
+        "expected": "10201/60702",
+        "mutation": "response_square_half",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "10201/60702",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "survival_normalizer_dropped",
+      "run_record": "LOGS/run_011_mutation_survival_normalizer_dropped.json",
+      "witness": {
+        "actual": "1/4",
+        "category": "survival_profile_normalizer",
+        "expected": "1/8",
+        "mutation": "survival_normalizer_dropped",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "1/8",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "fused_count_two",
+      "run_record": "LOGS/run_012_mutation_fused_count_two.json",
+      "witness": {
+        "actual": [
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "category": "five_marked_label_classes",
+        "expected": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mutation": "fused_count_two",
+        "nonzero_discrepancy": true,
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "terminal_event_isometry",
+      "run_record": "LOGS/run_013_mutation_terminal_event_isometry.json",
+      "witness": {
+        "actual": "1",
+        "category": "future_event_isometry_deliberate_falsehood",
+        "expected": "1/2",
+        "mutation": "terminal_event_isometry",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "1/2",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "initial_marks_independent",
+      "run_record": "LOGS/run_014_mutation_initial_marks_independent.json",
+      "witness": {
+        "actual": "1/3",
+        "category": "initial_lifetime_correlation",
+        "expected": "1/4",
+        "mutation": "initial_marks_independent",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "1/12",
+        "status": "ASSERTION_FAILURE"
+      }
+    },
+    {
+      "mutation": "first_power_replaced_by_square",
+      "run_record": "LOGS/run_015_mutation_first_power_replaced_by_square.json",
+      "witness": {
+        "actual": "1/2",
+        "category": "solvable_killed_flow_first_power",
+        "expected": "1/3",
+        "mutation": "first_power_replaced_by_square",
+        "nonzero_discrepancy": true,
+        "signed_discrepancy": "1/6",
+        "status": "ASSERTION_FAILURE"
+      }
+    }
+  ]
+}

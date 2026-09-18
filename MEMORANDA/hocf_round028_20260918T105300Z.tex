@@ -1,0 +1,198 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\newcommand{\E}{\mathbb E}
+\newcommand{\PP}{\mathbb P}
+\begin{document}
+\begin{center}
+{\large Fourth moments, collision flux, and two exact critical reductions}\\[4pt]
+HOCF--RIESZ, Round 028 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Status.} The entire frozen claims pass independent reconstruction and hostile review (AUD077--080), with source and evidence checks complete. The original critical source assertion remains open. This synthesis records the full scope of THM053--055; the complete proofs and evidence are the named round memoranda and audit packets.
+
+Use unit Haar measure on $\mathbb T^4$, $c=4\pi^2$,
+$\widehat g(m)=|m|^{-2}$ for $m\ne0$, $\widehat g(0)=0$, and $K=-\nabla g$.
+The original particles start iid Haar, independently of their Brownian drivers, and solve
+\[
+ dX_i=\frac1N\sum_{j\ne i}K(X_i-X_j)dt+\sqrt{2\nu}\,dW_i,
+ \qquad \nu=\beta^{-1},\qquad
+ H_N=\frac1N\sum_{i<j}g(X_i-X_j).
+\]
+For every $N\ge2$, the critical window is $0<\lambda_-\le\beta/\sqrt N\le\lambda_+<\infty$.
+For $m\ne0$, let $Z_m=N^{-1}\sum_i e^{2\pi i m\cdot X_i}$,
+$\ell_m=c|m|^2$, $a_m=c+\nu\ell_m$, and $w_m=(1+|m|)^{10}$.
+The original response has multiplier $e^{-a_mt}$. Define
+$J^f(x,y)=K(x-y)\cdot(\nabla f(x)-\nabla f(y))$.
+For these zero-mean tests, the literal source including both Haar rows is
+$P_N[J^f]=(2N^2)^{-1}\sum_{i\ne j}J^f(X_i,X_j)+cN^{-1}\sum_i f(X_i)$;
+its double Haar background is zero. Set
+\[
+ S_{N,m}(t)=\sqrt N\int_0^tP_N[J^{Q_{t-s}^\nu e_m}](X_s)ds,
+ \qquad D_{N,m}(t)=\sqrt N\{Z_m(t)-e^{-a_mt}Z_m(0)\}.
+\]
+THM054(A) states, for fixed finite $T$ and the entire window,
+\[
+ \sup_{t\le T}\E\bigl[|S_{N,m}(t)|^4+|D_{N,m}(t)|^4
+                  +|\sqrt N Z_m(t)|^4\bigr]\le Cw_m^4.\tag{1}
+\]
+This is a supremum of deterministic-time expectations.
+
+The new moment mechanism is an exact bounded-kernel identity. For an even real zero-mean bounded kernel $h$ on any compact abelian Haar probability group, put $H^h=N^{-1}\sum_{i<j}h(Y_i-Y_j)$, $\mu_j=\int h^j$, $\tau=\int h^2(h*h)$ and $\chi=\int(h*h)^2$. Then
+\[
+ N^4\E(H^h)^4=\binom{N}{2}\mu_4+18\binom{N}{3}\mu_2^2
+ +36\binom{N}{3}\tau+18\binom{N}{4}\mu_2^2+72\binom{N}{4}\chi.\tag{2}
+\]
+Degree-one labels vanish by centering. The remaining four-edge graphs are one quadrupled edge, two adjacent doubled edges, a doubled-edge triangle, two disjoint doubled edges, and a four-cycle. Their ordering counts give (2).
+
+Apply (2) to $h_L=\min(g,L)-\int\min(g,L)$ at $L=L_0N^2$.
+The initial bad event has probability $O(N^{-2})$, while
+$\E|H^{h_L}|^4\le C(N^2+\log^2N)$.
+The true energy identity is $H_t+\mathcal A_t=H_0+\nu c(N-1)t+E_t$, with
+$\langle E\rangle_t=2\nu\mathcal A_t$ and $H_t\ge-C\sqrt N$.
+Stopping first, the time-zero good-event indicator and the fourth-moment martingale inequality give $\E[\mathbf1_{\rm good}\sup_{t\le T}|E_t|^4]\le C$ by absorption. The pointwise source majorant controls the good event. On the bad event, use the exact bounded endpoint and its bounded-bracket observable martingale. This proves (1) without taking an unrestricted moment of the singular energy.
+
+\newpage
+\noindent\textbf{Localization of the exact three-label criterion.}
+Fix a nonzero mode $k$ and time $T$. Write $a=c+\nu\ell_k$,
+$\widetilde a=a-c/N$, $u_t=e^{-\widetilde a(T-t)}$, $A=e^{-aT}$, and
+$p_N=(N-1)(N-2)/(2N)$. Let
+\[
+ j_k(x,y)=K(x-y)\cdot(\nabla e_k(x)-\nabla e_k(y))+c(e_k(x)+e_k(y)).
+\]
+The current and initial third-tag correlations are $A_3(t)=\E[j_k(X_1(t),X_2(t))\overline{e_k(X_3(t))}]$ and
+$B_3(t)=\E[j_k(X_1(t),X_2(t))\overline{e_k(X_3(0))}]$.
+At $N=2$ the three-label quantity is zero. Accepted R25--26 reduce the original source criterion to the real part of
+\[
+ R_N^{(3)}=p_N\int_0^T\{u_t^2 A_3(t)-Au_tB_3(t)\}dt.\tag{3}
+\]
+Both weights and the distinction between initial and current tags remain.
+
+Smooth only the observable: $K_r=-\nabla(p_r*g)$ and $d_r=ce^{-r\ell_k}$.
+The corresponding zero-row kernel $j_{k,r}$ has coefficients
+\[
+\begin{split}
+ b_r(m)&=c\{(k\cdot m)a_r(m)-(k\cdot(m+k))a_r(m+k)\}
+            +d_r(\mathbf1_{m=0}+\mathbf1_{m=-k}),\\
+ a_r(m)&=|m|^{-2}e^{-cr|m|^2}\ (m\ne0),\qquad a_r(0)=0.
+\end{split}
+\]
+Here $b_r(0)=b_r(-k)=0$, $\sum_m b_r(m)=2d_r$, and exact empirical deletion gives
+\[
+ U_r=\tfrac12\sum_m b_r(m)Z_{k+m}Z_{-m}-\frac{d_r}{N}Z_k.
+\]
+The all-frequency bound $|b_r(m)|\le C_k|m|^{-2}e^{-cr|m|^2/8}$ implies
+$\sum_m|b_r(m)|w_{k+m}w_m\le C_kr^{-11}$.
+Equation (1), H\"older with exponents $4,4,2$, and exact overlap counting then yield
+\[
+ |R_{N,r}^{(3)}|\le C\left[N^{-1/2}r^{-11}
+       +N^{-1/4}\sqrt{1+\log(1/r)+(Nr^2)^{-1}}\right].\tag{4}
+\]
+The second term uses the actual pair truncated-square estimate and tagged displacement; it uses no positive-time independence.
+
+Set $r_N=r_*N^{-1/24}$, with fixed $0<r_*\le r_0$. Replace $j_k$ in (3) by the raw force tail
+\[
+ J_k^{>r}(x,y)=(K-K_r)(x-y)\cdot(\nabla e_k(x)-\nabla e_k(y)),
+\]
+and denote the resulting expression by $\mathcal H_{N,r}^{(3)}$.
+The omitted row is explicitly $2p_N(c-d_r)\int_0^T(u_t^2C_t-Au_tO_t)dt$, where
+\[
+ C_t=\frac{N\E|Z_k(t)|^2-1}{N-1},\qquad
+ O_t=\frac{N\E[Z_k(t)\overline{Z_k(0)}]-S_t}{N-1},
+ \quad S_t=\E[e_k(X_1(t))\overline{e_k(X_1(0))}].
+\]
+Equation (1) bounds this row by $Cr$. Thus (4) proves
+\[
+ |R_N^{(3)}-\mathcal H_{N,r_N}^{(3)}|\le CN^{-1/24}.\tag{5}
+\]
+The remaining assertion is precisely $\Re\mathcal H_{N,r_N}^{(3)}\to0$ for every admitted fixed $k,T$ and critical sequence. An absolute-tail estimate costs $Nr+r^{-1}$ and does not prove it.
+
+\newpage
+\noindent\textbf{Actual first-collision flux for the auxiliary attractive law.}
+For fixed $N\ge2$ and finite $\nu>0$, let $Y$ solve the opposite-drift equation with iid Haar start, killed at its maximal collision-free lifetime $\zeta$.
+Accepted THM052 gives
+\[
+ \E[f(Y_t)\mathbf1_{t<\zeta}]=e^{-\kappa t}\int fdx,
+ \qquad \kappa=c(N-1).
+\]
+The complete configuration gradient is Haar integrable. Tonelli therefore gives the exact first-power action
+\[
+ \E\int_0^\zeta|\nabla H_N(Y_s)|ds
+       =\kappa^{-1}\int|\nabla H_N|dx<\infty.\tag{6}
+\]
+Euclidean lifts have an absolutely convergent drift integral and a continuous Brownian limit at the almost surely finite lifetime. Hence $Z=Y_{\zeta-}$ exists. Local continuation would contradict maximality if $Z$ were collision-free.
+
+Let $m_{ij}$ be the probability-Haar law with coordinates $i,j$ fused at a common Haar point and all remaining coordinates independent Haar. Distributionally,
+\[
+ \Delta H_N=\kappa\,dx-\frac{2c}{N}\sum_{i<j}m_{ij}.\tag{7}
+\]
+The coefficient includes both differentiated coordinates, and $m_{ij}$ is a probability measure, not an induced surface measure with a hidden factor. For a globally smooth configuration test, genuine stopped It\^o calculus passes to the terminal limit using (6) and bounded observable gradients. Subtracting the surviving Haar part and using (7) identifies the exit measure. Determination of finite Borel measures then gives, for every bounded Borel test $\phi$,
+\[
+ \E[\mathbf1_{I=\{i,j\}}\phi(\zeta,Z)]
+ =\frac{2c}{N}\int_0^\infty e^{-\kappa t}\int\phi(t,z)\,dm_{ij}(z)dt.\tag{8}
+\]
+Here almost surely exactly one unordered pair $I$ collides. Indeed every $m_{ij}$ gives all further coincidences measure zero. Equation (8) also holds for nonnegative extended tests and includes $N=2$. The lifetime is independent of $(I,Z)$, the pair is uniform, and $Z\mid I=\{i,j\}$ has law $m_{ij}$. No initial/terminal independence follows.
+
+For $F=N^{-1}\sum_i e_k(x_i)$, define
+$\Gamma_N=\binom{N}{2}^{-1}\sum m_{ij}$.
+The exact initial and terminal moments are
+\[
+ \int Fdx=\Gamma_N[F]=0,\qquad
+ \int|F|^2dx=\frac1N,\qquad \Gamma_N[|F|^2]=\frac{N+2}{N^2}.
+\]
+The fused pair contributes squared coefficient four, and the other $N-2$ labels contribute one each.
+
+The complete first-collision proof is the Round028 first-collision-flux memorandum. The separate quantitative construction independently recovers the unmarked law before using it. These two ordinary constructions do not replace either fresh independent audit axis. No force-square estimate, postcollision continuation, point-start exponential law or critical cancellation is asserted by (6)--(8).
+
+\newpage
+\noindent\textbf{Quantitative collision-history criterion.}
+Use $a,A$ from the three-label criterion, and put
+\[
+ b=c(1-1/N)-\nu\ell_k,\qquad
+ U=\frac1{2N^2}\sum_{i\ne j}j_k(x_i,x_j).
+\]
+The exact attractive generator is $L^+F=bF-U$. Canonically double-centering a radial complex clipping of $j_k$ gives the iid estimate
+\[
+ \E_{\mathrm{iid}}|U|\le u_{N,k}:=
+ \sqrt{\frac{(N-1)(1+2C_k\log N)}{2N^3}}
+       +\frac{2C_k(N-1)}{N^2},
+\]
+where the explicit kernel constant $C_k$ is fixed in THM055(B).
+Only an auxiliary iid estimate is clipped. The killed occupation identity gives the genuine stopped decomposition
+\[
+ F(Z)-F(Y_0)=\int_0^\zeta(bF-U)(Y_s)ds+M,
+ \qquad \E|M|^2=\frac{2\nu\ell_k}{N\kappa}.
+\]
+The bound $|F(Z)-F(Y_0)|\le2$ and a norm inequality retaining the drift/noise cross term yield
+\[
+ N\E|F(Z)-F(Y_0)|^2\le\epsilon_{N,k,\nu}
+ :=\frac{4N}{\kappa}\left(\frac{|b|}{\sqrt N}+u_{N,k}\right)
+       +\frac{2\nu\ell_k}{\kappa}.\tag{9}
+\]
+Conditional on survival to any deterministic $T$, the entire future segment starts from product Haar. Thus the same bound holds for
+$N\E[|F(Z)-F(Y_T)|^2\mid\zeta>T]$.
+It is $O(N^{-1/2}+\sqrt{1+\log N}/N)$ uniformly for $0<\nu\le\nu_*$. This restarts a future path; it does not condition a past martingale isometry on future survival.
+
+Define the measurable lifetime profile, up to null sets,
+\[
+ R(t)=N\E[|F(Y_0)-e^{-at}F(Z)|^2\mid\zeta=t],\qquad
+ B_N(k,T)=\int_0^\infty\kappa e^{-\kappa u}R(T+u)du.
+\]
+Equivalently $B_N=e^{\kappa T}\int_T^\infty\kappa e^{-\kappa t}R(t)dt$.
+The exponential normalizer remains exact. Let
+$D_N=N\E_{\rm rep}|F(X_T)-AF(X_0)|^2$.
+Full path reversal, (9), and independence of terminal configuration from lifetime give
+\[
+ |\sqrt{D_N}-\sqrt{B_N}|
+ \le A\left[\sqrt{\epsilon_{N,k,\nu}}+
+ \sqrt{(1+2/N)\frac{2a^2}{(\kappa+a)(\kappa+2a)}}\right].\tag{10}
+\]
+The response-change term inside the square root is exact. The total right side is $O(N^{-1/4})$, uniformly in finite $T\ge0$ and bounded positive diffusivity. Thus $D_N\to0$ if and only if $B_N\to0$ along every admitted critical sequence, with the same positive-limsup alternative.
+
+Initial/terminal correlations are the remaining content. The intermediate square equals
+$v_N+A^2(1+2/N)-2A\Re q_N$, where
+$v_N=N\E[|F(Y_0)|^2\mid\zeta>T]$ and
+$q_N=N\E[F(Y_0)\overline{F(Z)}\mid\zeta>T]$.
+Conditioning on pair $\{1,2\}$ leaves these symmetric quantities unchanged; the five label classes have counts
+$4,2(N-2),2(N-2),N-2,(N-2)(N-3)$ before division by $N$.
+Their two-time products do not factor. Neither (5) nor (10) decides the original source limit. The old condition $\beta_N\to0$, full microscopic subcriticality $\beta_N/\sqrt N\to0$, and positive critical limit remain separate.
+\end{document}

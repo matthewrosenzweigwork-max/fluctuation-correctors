@@ -136,3 +136,7 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R27 whole acceptance. THM052 uses collision-free bounded domains, then monotone nonnegative killed expectations. It takes no uniform N or domain bound on exponential-energy multipliers and performs no formal integration across the collision diagonal. Exact equality-time survival convention retained.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): Auxiliary complex radial clipping at level N restores zero rows by canonical double-centering; it proves an iid L1 bound without claiming instantaneous singular L2. It neither regularizes dynamics nor alters the target. Collision exit is obtained from full drift integrability and exhaustion, not a radial surrogate.
+
+2026-09-18 UTC — R28 THM054 accepted: Physical heat approximation removed at fixed N before any N-limit. Subsequent r_N=r_*N^-1/24 smooths only a source observable of actual singular particles. The all-frequency envelope uses r/8, not a false same-scale neighboring Gaussian ratio; no instantaneous singular source-square limit.

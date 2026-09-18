@@ -1,0 +1,14 @@
+{
+  "actual": [
+    "-3/10",
+    "-3/10"
+  ],
+  "category": "unconjugated_mode_bracket",
+  "expected": [
+    "3/10",
+    "3/10"
+  ],
+  "mutation": "unconjugated_bracket_sign",
+  "nonzero_discrepancy": true,
+  "status": "ASSERTION_FAILURE"
+}

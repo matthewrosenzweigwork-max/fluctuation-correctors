@@ -1,0 +1,1 @@
+{"kind": "MATHEMATICAL_MUTATION_CAUGHT", "mutant": "drop_same_edge", "witness": {"category": "fourth_haar_energy", "context": [3, "1/2", 2], "correct": "3/128", "mutated": "0"}}

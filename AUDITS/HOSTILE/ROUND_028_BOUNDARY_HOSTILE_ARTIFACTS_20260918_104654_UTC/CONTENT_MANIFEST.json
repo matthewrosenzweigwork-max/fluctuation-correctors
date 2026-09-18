@@ -1,0 +1,157 @@
+{
+  "files": {
+    "DIAGNOSTIC_RESULT.json": {
+      "bytes": 5511,
+      "sha256": "69e7e63efd2e0987eb134a5f83c62c8e2dcbc35e690d712431e4325bb0e93e0d"
+    },
+    "DRAFT_HISTORY/README.md": {
+      "bytes": 410,
+      "sha256": "65b274026ed71d7131bf13c6a38709919aade4bc652490f3beba55eaba9c1004"
+    },
+    "DRAFT_HISTORY/REVIEW_PRE_N2_QUALIFICATION.md": {
+      "bytes": 34785,
+      "sha256": "51426b326ff99aa419ed6e74f28b0d81f061a07c6f085886c3f0d711194562e0"
+    },
+    "EXPOSURE_READ_HISTORY.md": {
+      "bytes": 7862,
+      "sha256": "059a5f44ce860939d5b226b53ab548b79bcc82a2b53b48f8cb1951778406451f"
+    },
+    "FAILED_ROUTES_AND_RUNS.md": {
+      "bytes": 5677,
+      "sha256": "7773b8cddba92125aa0d9dabf55d491309294c7a4362322440c50d629c2ad3c0"
+    },
+    "INPUTS/AGENTS.md": {
+      "bytes": 8174,
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+    },
+    "INPUTS/AUDITS/ROUND_025_GATE_INTEGRATION.md": {
+      "bytes": 3115,
+      "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58"
+    },
+    "INPUTS/AUDITS/ROUND_027_GATE_INTEGRATION.md": {
+      "bytes": 2067,
+      "sha256": "d9a141a884c6eb05a7d2bd86cf4587e834e4d06b772709074dbebbf5435e47ed"
+    },
+    "INPUTS/MEMORANDA/ROUND_001_ALGEBRA.md": {
+      "bytes": 30796,
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de"
+    },
+    "INPUTS/MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md": {
+      "bytes": 36096,
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be"
+    },
+    "INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md": {
+      "bytes": 37944,
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017"
+    },
+    "INPUTS/MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md": {
+      "bytes": 31951,
+      "sha256": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea"
+    },
+    "INPUTS/MEMORANDA/ROUND_027_KILLED_ATTRACTIVE_DUALITY.md": {
+      "bytes": 12467,
+      "sha256": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc"
+    },
+    "INPUTS/MEMORANDA/ROUND_028_COLLISION_FLUX_ARTIFACTS/EXPOSURE_READ_HISTORY.md": {
+      "bytes": 9181,
+      "sha256": "0b6b13bd01ca6c87add065f2b8c8da1ee4555de6b009cb207dd66d99b8999e19"
+    },
+    "INPUTS/MEMORANDA/ROUND_028_DUAL_ACTUAL_FALSIFICATION.md": {
+      "bytes": 35692,
+      "sha256": "2e80c1b0b814d1bbc9cc2deaf8096c759e88d7184a2a26b6e28aa18f515145e5"
+    },
+    "INPUTS/MEMORANDA/ROUND_028_DUAL_FALSIFICATION_ARTIFACTS_20260918_101633_UTC/EXPOSURE_AND_SOURCES.md": {
+      "bytes": 5475,
+      "sha256": "aafac9578c791e3fdecf46fd051324639d811248f64fcf7705f7bf89dcc5a053"
+    },
+    "INPUTS/MEMORANDA/ROUND_028_FIRST_COLLISION_FLUX.md": {
+      "bytes": 31766,
+      "sha256": "a986c3f93c48287b4efbbabc066460e3cb18c4aeacdeb9ddce109f30219f80ee"
+    },
+    "INPUTS/MODEL_ORCHESTRATION.md": {
+      "bytes": 4350,
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1"
+    },
+    "INPUTS/TASKS/ACTIVE/ROUND_001_MODEL.md": {
+      "bytes": 5031,
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+    },
+    "INPUTS/TASKS/ACTIVE/TASK-123_ROUND028_JOINT_BOUNDARY_HOSTILE.md": {
+      "bytes": 3040,
+      "sha256": "05796140d5a10c091d8465d20201a4a26b6249db5f52fc8d30346189d31347e4"
+    },
+    "INPUTS/THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md": {
+      "bytes": 2035,
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d"
+    },
+    "INPUTS/THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md": {
+      "bytes": 2860,
+      "sha256": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4"
+    },
+    "INPUTS/THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md": {
+      "bytes": 3353,
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e"
+    },
+    "INPUTS/THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md": {
+      "bytes": 3271,
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309"
+    },
+    "INPUTS/THEOREMS/THM-053_KILLED_COULOMB_FIRST_COLLISION_FLUX.md": {
+      "bytes": 2787,
+      "sha256": "4798f247ef3237ae9ff23534bd14b7c75f19391c082b70c11c5fee05190c417c"
+    },
+    "INPUTS/THEOREMS/THM-055_COULOMB_COLLISION_HISTORY_DEFECT_REDUCTION.md": {
+      "bytes": 6421,
+      "sha256": "f24507dff19471d09da49cd4b3fdf14813eff46d5ebc1b2095dcdffe5de390b5"
+    },
+    "INPUT_POSTFLIGHT.json": {
+      "bytes": 4433,
+      "sha256": "178708d6604c88f4e863652446277cf8b866a19cd9c7e577bd87ff01e779097e"
+    },
+    "INPUT_PREFLIGHT.json": {
+      "bytes": 5863,
+      "sha256": "bb70f5c0e9870221690146b329fe7dee151fe2140865e9915d22c27ae58fc4ad"
+    },
+    "INPUT_SHA256SUMS.txt": {
+      "bytes": 2435,
+      "sha256": "0057c4df9162b0445667bab08bb7e53984694044bc8c7b8e1e07169292529867"
+    },
+    "OPERATION_HISTORY.md": {
+      "bytes": 5990,
+      "sha256": "57e423c6ce8707f21452c231a451717e480f422ba8f48248efdb10ee312c3882"
+    },
+    "README.md": {
+      "bytes": 4503,
+      "sha256": "2c0f4b24fd6a17b726b3e76bc124dceb20fe3d670636de8546acd15762b9cec6"
+    },
+    "REVIEW.md": {
+      "bytes": 35243,
+      "sha256": "3dcef4cede1e83a753b301d3399597e74a1237fa04a1d4007d309b35d701044f"
+    },
+    "RUNS/diagnostic_001.metadata.json": {
+      "bytes": 335,
+      "sha256": "69c0fe2f7ace20ef3ce07fbf244e8eaf0a39b1df5bb76913039c93765dabc6de"
+    },
+    "RUNS/diagnostic_001.source.py": {
+      "bytes": 13679,
+      "sha256": "17e6e0943fd40b6cd1dbfed1564288cf4140a9fcd45e2f7edebe0472fc62b10b"
+    },
+    "RUNS/diagnostic_001.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "RUNS/diagnostic_001.stdout": {
+      "bytes": 5511,
+      "sha256": "69e7e63efd2e0987eb134a5f83c62c8e2dcbc35e690d712431e4325bb0e93e0d"
+    },
+    "diagnostics.py": {
+      "bytes": 13679,
+      "sha256": "17e6e0943fd40b6cd1dbfed1564288cf4140a9fcd45e2f7edebe0472fc62b10b"
+    },
+    "verify.py": {
+      "bytes": 8548,
+      "sha256": "5f9ba23cc0f7120085fbfdbe21da32e6ebb4bb399c9e8bf7c3a290a7d7798e89"
+    }
+  },
+  "schema": "AUD078-content-v1"
+}

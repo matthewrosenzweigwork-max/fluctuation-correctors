@@ -1,0 +1,1 @@
+{"kind": "MATHEMATICAL_MUTATION_CAUGHT", "mutant": "drop_noise_cross", "witness": {"category": "endpoint_noise_cross", "context": "independent input coins; dependent endpoint and noise", "correct": "2041/3600", "mutated": "3121/3600"}}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-B",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/MEMORANDA/ROUND_028_COLLISION_FLUX_ARTIFACTS/verifier.py",
+    "--archive",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/MEMORANDA/ROUND_028_COLLISION_FLUX_ARTIFACTS_20260918_101125_UTC.tar.gz",
+    "--memo",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/MEMORANDA/ROUND_028_FIRST_COLLISION_FLUX.md"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"archive_checked\": true,\n  \"archive_regular_members\": 24,\n  \"archive_sha256\": \"9732fd08bf6e533e045c0e1d05787504d679a3257f955b6c72d107288e6d91dd\",\n  \"baseline_checks_reproduced\": 1480,\n  \"content_manifest_sha256\": \"461c6acb13f94a356f7adaae25806be8f24202d2e7f320c9a129f7e839ad2da9\",\n  \"file_writes_performed\": false,\n  \"frozen_inputs_verified\": 12,\n  \"in_memory_safety_mutations_rejected\": 20,\n  \"input_manifest_sha256\": \"5a703d22de7f68beac0d6fe6de319372de713be042709599bd2d8767e090053f\",\n  \"meaning\": \"Read-only integrity and exact diagnostic reproduction only; no independent mathematical certification\",\n  \"memorandum_sha256\": \"a986c3f93c48287b4efbbabc066460e3cb18c4aeacdeb9ddce109f30219f80ee\",\n  \"nonzero_mathematical_mutations_reproduced\": 11,\n  \"payload_digests_verified\": 23,\n  \"read_only_directory_count\": 7,\n  \"regular_file_count_including_manifest\": 24,\n  \"safety_rejections\": [\n    \"unsafe_name_'../bad'\",\n    \"unsafe_name_'/bad'\",\n    \"unsafe_name_'a/../bad'\",\n    \"unsafe_name_'a//bad'\",\n    \"unsafe_name_'a/./bad'\",\n    \"unsafe_name_'a\\\\\\\\bad'\",\n    \"unsafe_name_'a\\\\x00bad'\",\n    \"unsafe_name_'C:/bad'\",\n    \"unsafe_name_''\",\n    \"unsafe_name_'a/..'\",\n    \"duplicate_manifest\",\n    \"bad_manifest_digest\",\n    \"archive_traversal\",\n    \"archive_absolute\",\n    \"archive_wrong_prefix\",\n    \"archive_symlink\",\n    \"archive_hardlink\",\n    \"archive_directory\",\n    \"archive_device\",\n    \"archive_duplicate\"\n  ],\n  \"separate_memorandum_checked\": true,\n  \"status\": \"PASS\"\n}\n",
+  "stderr": "",
+  "external_seal_hashes_match": true,
+  "canonical_input_hashes_match": true
+}

@@ -1,0 +1,32 @@
+{
+  "canonical_changes": false,
+  "exclusions": "The outer seal does not hash itself; the sibling .sha256 does.",
+  "git_mutations": false,
+  "packet_manifest_sha256": "06cf1272957e7b70b5218c6c79d48be691abbccabb96ae38bdfc38aceb01e837",
+  "packet_name": "ROUND_028_DUAL_FALSIFICATION_ARTIFACTS_20260918_101633_UTC",
+  "schema": 1,
+  "siblings": [
+    {
+      "path": "ROUND_028_DUAL_ACTUAL_FALSIFICATION.md",
+      "sha256": "2e80c1b0b814d1bbc9cc2deaf8096c759e88d7184a2a26b6e28aa18f515145e5",
+      "size": 35692
+    },
+    {
+      "path": "ROUND_028_DUAL_FALSIFICATION_ARTIFACTS_20260918_101633_UTC.tar.gz",
+      "sha256": "416efacc482d6fce0324262526ee18869c8f9c397caeedaf57e35d73724431c1",
+      "size": 120169
+    },
+    {
+      "path": "ROUND_028_DUAL_FALSIFICATION_ARTIFACTS_20260918_101633_UTC_ARCHIVE_INVENTORY.json",
+      "sha256": "05279b3e4a8b674ddf267801a6415fe5089cc54af749b81871e8c21ab44924aa",
+      "size": 4821
+    },
+    {
+      "path": "ROUND_028_DUAL_FALSIFICATION_ARTIFACTS_20260918_101633_UTC_VERIFICATION.json",
+      "sha256": "436305428e29db30e758cf4f7f2c9f06f430e0af79ea7b3b6c78b8eeaf471336",
+      "size": 638
+    }
+  ],
+  "source_changes": false,
+  "status": "SELF_CHECKED; original THM046 remains OPEN"
+}

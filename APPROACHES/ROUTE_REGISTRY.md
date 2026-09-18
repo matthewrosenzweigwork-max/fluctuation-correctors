@@ -76,3 +76,7 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R27 whole acceptance. THM052 dual route accepted after whole AUD075/AUD076; R28 now pursues an actual boundary-response estimate, separate marked exit law and actual triple cancellation. These ordinary constructions are not independent audits of one another.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): R28 marked collision-flux and collision-history routes pass their whole independent gates AUD077/078. Continue at the actual rare-profile estimate with fresh Max TASK127, independent of fresh Ultra TASK126 force-tail route. The full campaign remains open.
+
+2026-09-18 UTC — R28 THM054 accepted: R28 whole moments/tail reduction passes AUD079/080. Fresh Ultra TASK126 has now sealed a new maximal-time moment/force-sector attempt; separate Max TASK127 continues boundary-profile falsification. New THM056/PO043 is frozen OPEN for fresh TASK128/AUD081 reconstruction; neither new result is a premise of R28.

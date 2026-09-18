@@ -1,0 +1,1 @@
+{"mutation": "graph_cycle_24", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [3, 4], "difference": "96", "mutated": "732", "right": "828"}}

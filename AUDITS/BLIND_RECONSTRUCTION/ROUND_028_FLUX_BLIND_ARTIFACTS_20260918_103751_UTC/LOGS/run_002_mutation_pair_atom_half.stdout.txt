@@ -1,0 +1,9 @@
+{
+  "actual": "-1",
+  "category": "configuration_fourier_atom_and_compensation",
+  "expected": "-1/2",
+  "mutation": "pair_atom_half",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "-1/2",
+  "status": "ASSERTION_FAILURE"
+}

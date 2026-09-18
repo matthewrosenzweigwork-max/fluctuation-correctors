@@ -1,0 +1,1 @@
+{"mutation": "overlap_self_omit", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [[1, 0], 2], "difference": ["-1/2", "0"], "mutated": ["7/12", "0"], "right": ["1/12", "0"]}}

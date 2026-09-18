@@ -1,0 +1,1 @@
+{"mutation": "merge_time_weights", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [[1, 0], 3], "difference": ["-28/3645", "7/3645"], "mutated": ["10/729", "2/243"], "right": ["22/3645", "37/3645"]}}

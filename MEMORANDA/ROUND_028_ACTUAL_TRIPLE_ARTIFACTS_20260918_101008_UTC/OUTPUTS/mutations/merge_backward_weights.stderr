@@ -1,0 +1,1 @@
+{"kind": "MATHEMATICAL_MUTATION_CAUGHT", "mutant": "merge_backward_weights", "witness": {"category": "signed_triple_two_weights", "context": [0, [1, 0], 3, 0], "correct": ["-20/567", "-184/567"], "mutated": ["0", "-32/81"]}}

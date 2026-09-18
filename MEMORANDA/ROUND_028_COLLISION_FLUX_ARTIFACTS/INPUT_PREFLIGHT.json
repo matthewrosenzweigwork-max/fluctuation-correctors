@@ -1,0 +1,91 @@
+{
+  "count": 12,
+  "all_pass": true,
+  "manifest_sha256": "5a703d22de7f68beac0d6fe6de319372de713be042709599bd2d8767e090053f",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 8174,
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "MODEL_ORCHESTRATION.md",
+      "bytes": 4350,
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "bytes": 5031,
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-121_ROUND028_FIRST_COLLISION_FLUX.md",
+      "bytes": 2875,
+      "sha256": "79dfe3be907d6d37c22a3c55258694f2f013d12658d099de0fbbdebda94c6b61",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "THEOREMS/THM-053_KILLED_COULOMB_FIRST_COLLISION_FLUX.md",
+      "bytes": 2787,
+      "sha256": "4798f247ef3237ae9ff23534bd14b7c75f19391c082b70c11c5fee05190c417c",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md",
+      "bytes": 3271,
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "bytes": 2035,
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "bytes": 30796,
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "bytes": 36096,
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "bytes": 37944,
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_027_KILLED_ATTRACTIVE_DUALITY.md",
+      "bytes": 12467,
+      "sha256": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc",
+      "original_pass": true,
+      "copy_pass": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_027_KILLED_DUALITY_ARTIFACTS/EXPOSURE_AND_SOURCES.md",
+      "bytes": 2291,
+      "sha256": "829cb85967ceb37f2fb20bfdd0f4d0b063d246c35b94041e6a1cb4e2227abc0e",
+      "original_pass": true,
+      "copy_pass": true
+    }
+  ]
+}

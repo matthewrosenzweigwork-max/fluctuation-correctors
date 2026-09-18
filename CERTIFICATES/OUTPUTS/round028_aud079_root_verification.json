@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-09-18T11:09:26.161489+00:00",
+  "audit": "aud079",
+  "report_sha256": "e6c457703ea8d3b9f6975679c0b8fe75c6da63aef68797e01e81c3ccc4fc1c6c",
+  "report_lines": 548,
+  "archive_sha256": "180435fb727310459ae35c7c662ae46567398f76d502e3cc5c2968a0ca28b55b",
+  "canonical_inputs": {
+    "AGENTS.md": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+    "MODEL_ORCHESTRATION.md": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+    "TASKS/ACTIVE/ROUND_001_MODEL.md": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+    "TASKS/ACTIVE/TASK-124_ROUND028_MOMENT_TAIL_BLIND.md": "f71a29d0345d1e66f46f2f891ad45cc44b5b5b1abd55ead2b6180f8a230ae345",
+    "THEOREMS/THM-054_CRITICAL_COULOMB_FOURTH_MOMENTS_AND_FORCE_TAIL.md": "0e7e6f64159137ff5b6942ce48dff6e02fd7730ed51a8499a4466aca3d7c9f3e",
+    "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+    "THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+    "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+    "THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md": "f8114c60684145aaad4e458c1ee867d9190dac2d26c60cdb95dd04dbcb4e5d8a",
+    "MEMORANDA/ROUND_001_ALGEBRA.md": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+    "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+    "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+    "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+    "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+    "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+    "AUDITS/ROUND_025_GATE_INTEGRATION.md": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+    "MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md": "f4035c691bfbd1c48191335942ac57ffa161078729c992552913e417da41f9fe",
+    "AUDITS/ROUND_026_GATE_INTEGRATION.md": "b415f5c36676cdab4d5d92b547037c8db82eb53d89ec36835e7235290512f7c7"
+  },
+  "external_anchors": {
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC.tar.gz": "180435fb727310459ae35c7c662ae46567398f76d502e3cc5c2968a0ca28b55b",
+    "ROUND_028_MOMENT_TAIL_RECONSTRUCTION.md": "e6c457703ea8d3b9f6975679c0b8fe75c6da63aef68797e01e81c3ccc4fc1c6c",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INVENTORY.json": "9bbb3d3482008f3c817873e0126af7470939f7ee0ac300ce6636acc483baf9c2",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/PAYLOAD_SHA256.json": "3797e9b79a2e69ccb1e84f1423d9bccebcfe025cc6cf5f53018aef62f45f9b06",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC.VERIFICATION.json": "8aea41609b18cd06a2ceae8a7c5022e72be2e26113e65d7afbddf26ad235db1b",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC.SEALS.json": "9f73c540cc1cf9738959a8dfc6d5e40cebe47c70ecf9f3d1964f5a4c1ae55ddd"
+  },
+  "regular_payload_members": 42,
+  "readonly_files": 42,
+  "readonly_directories": 11,
+  "pax_path_metadata": [
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/TASKS/ACTIVE/TASK-124_ROUND028_MOMENT_TAIL_BLIND.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md",
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INPUTS/THEOREMS/THM-054_CRITICAL_COULOMB_FOURTH_MOMENTS_AND_FORCE_TAIL.md"
+  ],
+  "pax_scope": "Only exact safe long-path metadata allowed; no links, sparse or other overrides. No extraction. Payload entries are literal regular files.",
+  "verifier_argv": [
+    "python3",
+    "-B",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/verify_readonly.py",
+    "--archive",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC.tar.gz",
+    "--replay"
+  ],
+  "verifier_stdout": "{\n  \"archive_regular_member_count\": 42,\n  \"archive_sha256\": \"180435fb727310459ae35c7c662ae46567398f76d502e3cc5c2968a0ca28b55b\",\n  \"exact_input_count\": 18,\n  \"fresh_replay_check_count\": 58645,\n  \"fresh_replay_nonzero_mutation_count\": 19,\n  \"fresh_replay_status\": \"PASS\",\n  \"inventory_sha256\": \"9bbb3d3482008f3c817873e0126af7470939f7ee0ac300ce6636acc483baf9c2\",\n  \"payload_hash_count\": 40,\n  \"payload_manifest_sha256\": \"3797e9b79a2e69ccb1e84f1423d9bccebcfe025cc6cf5f53018aef62f45f9b06\",\n  \"regular_member_count\": 42,\n  \"report_sha256\": \"e6c457703ea8d3b9f6975679c0b8fe75c6da63aef68797e01e81c3ccc4fc1c6c\",\n  \"status\": \"PASS\",\n  \"writes_performed\": false\n}\n",
+  "verifier_stderr": "",
+  "verifier_result": {
+    "archive_regular_member_count": 42,
+    "archive_sha256": "180435fb727310459ae35c7c662ae46567398f76d502e3cc5c2968a0ca28b55b",
+    "exact_input_count": 18,
+    "fresh_replay_check_count": 58645,
+    "fresh_replay_nonzero_mutation_count": 19,
+    "fresh_replay_status": "PASS",
+    "inventory_sha256": "9bbb3d3482008f3c817873e0126af7470939f7ee0ac300ce6636acc483baf9c2",
+    "payload_hash_count": 40,
+    "payload_manifest_sha256": "3797e9b79a2e69ccb1e84f1423d9bccebcfe025cc6cf5f53018aef62f45f9b06",
+    "regular_member_count": 42,
+    "report_sha256": "e6c457703ea8d3b9f6975679c0b8fe75c6da63aef68797e01e81c3ccc4fc1c6c",
+    "status": "PASS",
+    "writes_performed": false
+  },
+  "fresh_code_only_directory": "/private/tmp/hocf-r028-aud079-root-rerun-e0niprlq",
+  "fresh_executions": [
+    {
+      "kind": "baseline",
+      "exit": 0,
+      "output_sha256": "a6481a7cb4baf629adea92a564a6d4d324cd12c16f90dda6a6411577b1f0588e",
+      "full_json_match": true
+    }
+  ],
+  "root_scope": "Full proof comparison separate from supporting diagnostic verification; no critical decay certified."
+}

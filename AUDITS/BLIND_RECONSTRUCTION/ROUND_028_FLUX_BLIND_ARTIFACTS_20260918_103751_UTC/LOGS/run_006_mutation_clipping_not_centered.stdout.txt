@@ -1,0 +1,9 @@
+{
+  "actual": "-1/36",
+  "category": "iid_canonical_mean",
+  "expected": 0,
+  "mutation": "clipping_not_centered",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "-1/36",
+  "status": "ASSERTION_FAILURE"
+}

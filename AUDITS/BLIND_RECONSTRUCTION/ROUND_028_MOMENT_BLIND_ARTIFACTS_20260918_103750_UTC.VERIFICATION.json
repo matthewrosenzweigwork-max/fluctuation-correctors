@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-moment-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/verify_readonly.py",
+    "--archive",
+    "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-moment-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC.tar.gz",
+    "--replay"
+  ],
+  "packet_writes_performed_by_verifier": false,
+  "result": {
+    "archive_regular_member_count": 42,
+    "archive_sha256": "180435fb727310459ae35c7c662ae46567398f76d502e3cc5c2968a0ca28b55b",
+    "exact_input_count": 18,
+    "fresh_replay_check_count": 58645,
+    "fresh_replay_nonzero_mutation_count": 19,
+    "fresh_replay_status": "PASS",
+    "inventory_sha256": "9bbb3d3482008f3c817873e0126af7470939f7ee0ac300ce6636acc483baf9c2",
+    "payload_hash_count": 40,
+    "payload_manifest_sha256": "3797e9b79a2e69ccb1e84f1423d9bccebcfe025cc6cf5f53018aef62f45f9b06",
+    "regular_member_count": 42,
+    "report_sha256": "e6c457703ea8d3b9f6975679c0b8fe75c6da63aef68797e01e81c3ccc4fc1c6c",
+    "status": "PASS",
+    "writes_performed": false
+  },
+  "returncode": 0,
+  "seconds": 1.247643875,
+  "started_utc": "2026-09-18T10:58:56.986936+00:00",
+  "stderr": "",
+  "stdout": "{\n  \"archive_regular_member_count\": 42,\n  \"archive_sha256\": \"180435fb727310459ae35c7c662ae46567398f76d502e3cc5c2968a0ca28b55b\",\n  \"exact_input_count\": 18,\n  \"fresh_replay_check_count\": 58645,\n  \"fresh_replay_nonzero_mutation_count\": 19,\n  \"fresh_replay_status\": \"PASS\",\n  \"inventory_sha256\": \"9bbb3d3482008f3c817873e0126af7470939f7ee0ac300ce6636acc483baf9c2\",\n  \"payload_hash_count\": 40,\n  \"payload_manifest_sha256\": \"3797e9b79a2e69ccb1e84f1423d9bccebcfe025cc6cf5f53018aef62f45f9b06\",\n  \"regular_member_count\": 42,\n  \"report_sha256\": \"e6c457703ea8d3b9f6975679c0b8fe75c6da63aef68797e01e81c3ccc4fc1c6c\",\n  \"status\": \"PASS\",\n  \"writes_performed\": false\n}\n",
+  "verifier_sha256": "3e5f83202b067991688d61ba40792957257310211fdf79acac2f9c54519ed040"
+}

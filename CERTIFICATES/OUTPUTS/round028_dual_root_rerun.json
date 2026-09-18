@@ -1,0 +1,8 @@
+{
+  "temporary_code_and_frozen_inputs_directory": "/private/tmp/hocf-r028-dual-rerun-zihbyyuc",
+  "no_saved_results_copied": true,
+  "baseline_exact_byte_match": true,
+  "assertions": 3845,
+  "nonzero_mutation_witnesses": 20,
+  "output_sha256": "ae10831eb37fc40f16c5759f7906408fe80bffe036ae264d31c031bc9e53e47f"
+}

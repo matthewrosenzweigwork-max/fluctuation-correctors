@@ -1,0 +1,64 @@
+{
+  "equation_tags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "python_ast_parses": [
+    {
+      "path": "CODE/diagnostic.py",
+      "sha256": "19aa7e94847347183b5cae0762ec4c19e6a9db10d8b687c8be3607d8825d576a"
+    },
+    {
+      "path": "CODE/run_logged.py",
+      "sha256": "dd37054843a71cd86f95a52ad7492cfdef6c3ece3b67fee5252866c1ab9dfa53"
+    },
+    {
+      "path": "CODE/seal_packet.py",
+      "sha256": "8dfaebe63d151b469ae1d2a1d9186cf2c5aed64d3d33a8f74a32a184e4afe325"
+    },
+    {
+      "path": "CODE/verify.py",
+      "sha256": "768c7023667f793e7cd8199122ea2d22d7def21026f99c27e80f79e9278930e6"
+    }
+  ],
+  "report_bytes": 35061,
+  "report_lines": 708,
+  "report_sha256": "786955f173fe5c6ff61e8bf0c478ec9ec396884f6de64f2d5dfb1be591f8514d",
+  "scope": "Administrative syntax, equation labels and coverage markers only; no mathematical claim.",
+  "status": "PASS",
+  "whole_verdict_count": 2
+}

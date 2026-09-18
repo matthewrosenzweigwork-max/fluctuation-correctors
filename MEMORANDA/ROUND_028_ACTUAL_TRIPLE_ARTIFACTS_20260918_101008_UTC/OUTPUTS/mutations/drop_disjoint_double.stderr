@@ -1,0 +1,1 @@
+{"kind": "MATHEMATICAL_MUTATION_CAUGHT", "mutant": "drop_disjoint_double", "witness": {"category": "fourth_haar_energy", "context": [3, "1/2", 4], "correct": "207/1024", "mutated": "189/1024"}}

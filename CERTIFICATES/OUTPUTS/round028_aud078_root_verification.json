@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-09-18T11:09:35.813960+00:00",
+  "audit": "aud078",
+  "report_sha256": "3dcef4cede1e83a753b301d3399597e74a1237fa04a1d4007d309b35d701044f",
+  "report_lines": 624,
+  "archive_sha256": "c4629b0980640942758ac1d55162676a6b43dbe1d8f2b83677a57b48b9817ae6",
+  "canonical_inputs": {
+    "AGENTS.md": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+    "MODEL_ORCHESTRATION.md": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+    "TASKS/ACTIVE/ROUND_001_MODEL.md": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+    "THEOREMS/THM-053_KILLED_COULOMB_FIRST_COLLISION_FLUX.md": "4798f247ef3237ae9ff23534bd14b7c75f19391c082b70c11c5fee05190c417c",
+    "THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309",
+    "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+    "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+    "MEMORANDA/ROUND_027_KILLED_ATTRACTIVE_DUALITY.md": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc",
+    "AUDITS/ROUND_027_GATE_INTEGRATION.md": "d9a141a884c6eb05a7d2bd86cf4587e834e4d06b772709074dbebbf5435e47ed",
+    "THEOREMS/THM-055_COULOMB_COLLISION_HISTORY_DEFECT_REDUCTION.md": "f24507dff19471d09da49cd4b3fdf14813eff46d5ebc1b2095dcdffe5de390b5",
+    "MEMORANDA/ROUND_001_ALGEBRA.md": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+    "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+    "THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+    "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+    "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+    "AUDITS/ROUND_025_GATE_INTEGRATION.md": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+    "TASKS/ACTIVE/TASK-123_ROUND028_JOINT_BOUNDARY_HOSTILE.md": "05796140d5a10c091d8465d20201a4a26b6249db5f52fc8d30346189d31347e4",
+    "MEMORANDA/ROUND_028_FIRST_COLLISION_FLUX.md": "a986c3f93c48287b4efbbabc066460e3cb18c4aeacdeb9ddce109f30219f80ee",
+    "MEMORANDA/ROUND_028_COLLISION_FLUX_ARTIFACTS/EXPOSURE_READ_HISTORY.md": "0b6b13bd01ca6c87add065f2b8c8da1ee4555de6b009cb207dd66d99b8999e19",
+    "MEMORANDA/ROUND_028_DUAL_ACTUAL_FALSIFICATION.md": "2e80c1b0b814d1bbc9cc2deaf8096c759e88d7184a2a26b6e28aa18f515145e5",
+    "MEMORANDA/ROUND_028_DUAL_FALSIFICATION_ARTIFACTS_20260918_101633_UTC/EXPOSURE_AND_SOURCES.md": "aafac9578c791e3fdecf46fd051324639d811248f64fcf7705f7bf89dcc5a053"
+  },
+  "external_anchors": {
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.tar.gz": "c4629b0980640942758ac1d55162676a6b43dbe1d8f2b83677a57b48b9817ae6",
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.ARCHIVE_MEMBERS.json": "bc41a0121b3135174014025dd5a776dc6ec280c7c6c66b4a19c6c69d3459928c",
+    "ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SEAL.json": "beee2cabbf6169ee48eb3965f366b53e795193e48bafaf79599788724a71fc8f",
+    "ROUND_028_JOINT_BOUNDARY_REVIEW.md": "3dcef4cede1e83a753b301d3399597e74a1237fa04a1d4007d309b35d701044f"
+  },
+  "regular_payload_members": 39,
+  "readonly_files": 39,
+  "readonly_directories": 11,
+  "pax_path_metadata": [],
+  "pax_scope": "Only exact safe long-path metadata allowed; no links, sparse or other overrides. No extraction. Payload entries are literal regular files.",
+  "verifier_argv": [
+    "python3",
+    "-B",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC/verify.py",
+    "--archive",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.tar.gz",
+    "--inventory",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.ARCHIVE_MEMBERS.json",
+    "--seal",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SEAL.json",
+    "--report",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_JOINT_BOUNDARY_REVIEW.md",
+    "--sha256sums",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_BOUNDARY_HOSTILE_ARTIFACTS_20260918_104654_UTC.SHA256SUMS"
+  ],
+  "verifier_stdout": "{\n  \"archive\": {\n    \"bytes\": 151974,\n    \"inventory_sha256\": \"bc41a0121b3135174014025dd5a776dc6ec280c7c6c66b4a19c6c69d3459928c\",\n    \"regular_members\": 39,\n    \"sha256\": \"c4629b0980640942758ac1d55162676a6b43dbe1d8f2b83677a57b48b9817ae6\"\n  },\n  \"diagnostics\": {\n    \"assertions\": 16732,\n    \"categories\": 39,\n    \"mutation_count\": 27,\n    \"status\": \"PASS\"\n  },\n  \"external_report\": \"MATCH\",\n  \"external_seal\": \"MATCH\",\n  \"inputs\": 21,\n  \"packet_files\": 39,\n  \"packet_manifest_sha256\": \"985ec2a1572fbd72b0babec1f32ae4477b134e43b641027c98f8f4c9ec92fe48\",\n  \"payload_members\": 38,\n  \"review_sha256\": \"3dcef4cede1e83a753b301d3399597e74a1237fa04a1d4007d309b35d701044f\",\n  \"sibling_digests\": \"MATCH\",\n  \"status\": \"PASS\",\n  \"unsafe_name_negative_tests\": 10\n}\n",
+  "verifier_stderr": "",
+  "verifier_result": {
+    "archive": {
+      "bytes": 151974,
+      "inventory_sha256": "bc41a0121b3135174014025dd5a776dc6ec280c7c6c66b4a19c6c69d3459928c",
+      "regular_members": 39,
+      "sha256": "c4629b0980640942758ac1d55162676a6b43dbe1d8f2b83677a57b48b9817ae6"
+    },
+    "diagnostics": {
+      "assertions": 16732,
+      "categories": 39,
+      "mutation_count": 27,
+      "status": "PASS"
+    },
+    "external_report": "MATCH",
+    "external_seal": "MATCH",
+    "inputs": 21,
+    "packet_files": 39,
+    "packet_manifest_sha256": "985ec2a1572fbd72b0babec1f32ae4477b134e43b641027c98f8f4c9ec92fe48",
+    "payload_members": 38,
+    "review_sha256": "3dcef4cede1e83a753b301d3399597e74a1237fa04a1d4007d309b35d701044f",
+    "sibling_digests": "MATCH",
+    "status": "PASS",
+    "unsafe_name_negative_tests": 10
+  },
+  "fresh_code_only_directory": "/private/tmp/hocf-r028-aud078-root-rerun-4v69k068",
+  "fresh_executions": [
+    {
+      "kind": "baseline",
+      "exit": 0,
+      "output_sha256": "69e7e63efd2e0987eb134a5f83c62c8e2dcbc35e690d712431e4325bb0e93e0d",
+      "full_json_match": true
+    }
+  ],
+  "root_scope": "Full proof comparison separate from supporting diagnostic verification; no critical decay certified."
+}

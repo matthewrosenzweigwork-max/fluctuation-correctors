@@ -63,3 +63,7 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R27 whole acceptance. THM052 + accepted THM048/049 give exact equivalence of original critical source decay and the N-scaled survival-conditioned attractive endpoint defect. This does not supply the estimate. New THM053 marked collision flux remains OPEN pending its own whole fresh gates.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): Accepted THM052 exact killed duality -> THM053 full marked first-collision law and THM055 collision-history criterion. THM048/049 supplies the unchanged original-source equivalence. The outgoing edge to actual rare-lifetime profile decay (TASK120 equation6.7) remains OPEN.
+
+2026-09-18 UTC — R28 THM054 accepted: Accepted THM048/049/051 plus new THM054(A-C) reduce original critical source to TASK119 equation9.3. This outgoing signed force-tail cancellation remains OPEN; no promoted Gaussian endpoint.

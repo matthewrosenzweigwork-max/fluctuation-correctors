@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-09-18T10:44:01.571771+00:00",
+  "portable": {
+    "archive_extracted": false,
+    "archive_regular_members": 92,
+    "diagnostic_assertions": 5695,
+    "inputs": 21,
+    "read_only": true,
+    "regular_members": 92,
+    "status": "PASS"
+  },
+  "external_anchors": {
+    "ROUND_028_ACTUAL_TRIPLE_CONSTRUCTION.md": "af18846a8f85a6a1356ae5d7a2c35b043629bc141852c06578e8cef0df24d05b",
+    "ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC.tar.gz": "48502b3f5ba88c0308a9c276e1137f478c140b1ee3a46f87baee7258488c6934",
+    "ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC.MEMBERS.json": "bdedf27e9abe30283bc9a4828c574b9e3d3e393d4e1269f8b5cd57c2e57558fb",
+    "ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC.VERIFICATION.json": "35325543758d4bcea91bea6d82d570f17c4e84c6f22bec3939554dafba0b1275"
+  },
+  "canonical_inputs": 21,
+  "supplement": {
+    "safe_literal_regular_members": 92,
+    "readonly_paths": 103,
+    "no_pax_links_controls_colons": true
+  },
+  "report_full_final_lines": 665,
+  "root_status": "SELF_CHECKED; independent axes required"
+}

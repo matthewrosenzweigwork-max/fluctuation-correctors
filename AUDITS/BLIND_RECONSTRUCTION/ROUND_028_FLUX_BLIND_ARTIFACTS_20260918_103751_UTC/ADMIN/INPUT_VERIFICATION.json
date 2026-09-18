@@ -1,0 +1,149 @@
+{
+  "verified_count": 18,
+  "records": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 8174,
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "MODEL_ORCHESTRATION.md",
+      "bytes": 4350,
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "bytes": 5031,
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-122_ROUND028_COLLISION_FLUX_BLIND.md",
+      "bytes": 2729,
+      "sha256": "b2566c9c59e092c3769d57cf2d4643e2df366afadcb1ea3f6ce726a8d07fc943",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "THEOREMS/THM-053_KILLED_COULOMB_FIRST_COLLISION_FLUX.md",
+      "bytes": 2787,
+      "sha256": "4798f247ef3237ae9ff23534bd14b7c75f19391c082b70c11c5fee05190c417c",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md",
+      "bytes": 3271,
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "bytes": 36096,
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "bytes": 37944,
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "MEMORANDA/ROUND_027_KILLED_ATTRACTIVE_DUALITY.md",
+      "bytes": 12467,
+      "sha256": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "AUDITS/ROUND_027_GATE_INTEGRATION.md",
+      "bytes": 2067,
+      "sha256": "d9a141a884c6eb05a7d2bd86cf4587e834e4d06b772709074dbebbf5435e47ed",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_INPUT_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-122_ROUND028_JOINT_BOUNDARY_SCOPE_ADDENDUM.md",
+      "bytes": 1853,
+      "sha256": "b9344c091344a939c02c7016c775092a667cad8fbcb64eecd10156c722d0d4d8",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "THEOREMS/THM-055_COULOMB_COLLISION_HISTORY_DEFECT_REDUCTION.md",
+      "bytes": 6421,
+      "sha256": "f24507dff19471d09da49cd4b3fdf14813eff46d5ebc1b2095dcdffe5de390b5",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "bytes": 30796,
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "bytes": 2035,
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md",
+      "bytes": 2860,
+      "sha256": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "bytes": 3353,
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "bytes": 31951,
+      "sha256": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    },
+    {
+      "path": "AUDITS/ROUND_025_GATE_INTEGRATION.md",
+      "bytes": 3115,
+      "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+      "manifest": "AUDITS/ROUND_028_FLUX_BLIND_ADDENDUM_SHA256SUMS.txt",
+      "verified": true,
+      "exposure": "full text read; current statement or allowed prior source"
+    }
+  ]
+}

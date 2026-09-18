@@ -125,3 +125,5 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R27 whole acceptance. Exact Haar bilinear adjoint P_t*=exp[kappa t]Q_t, kappa=c(N-1), with Q minimal killed attractive semigroup. Fixed-domain Girsanov and symmetric Brownian killing, followed by monotone exhaustion with strict t<zeta, justify the actual domains. Independent flow Jacobian gives the same full path law.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): THM053/055 use the actual minimal killed attractive diffusion from THM052. The first-collision terminal law is derived by genuine stopped globally smooth tests and finite-measure uniqueness. Original conservative repulsive process is unchanged; no attractive postcollision continuation or point-start exponential law.

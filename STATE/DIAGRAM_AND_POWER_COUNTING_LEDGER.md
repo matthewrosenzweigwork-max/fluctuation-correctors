@@ -72,3 +72,5 @@ THM040/PO027 and the entire THM041/PO028 conjunction now pass both fresh indepen
 
 
 2026-09-18 UTC. R24 whole THM047/PO034 accepted: PROVED_CANDIDATE; ISOLATED_RECONSTRUCTION_PASS(AUD067), HOSTILE_REVIEW_PASS(AUD068); VERSION_LOCKED. Complete constructor/blind/hostile and all source/code/evidence root-read; no repair. Exact averaged trace and contraction integral K.D Phi+2c(q-tau), all Cj bounds C sqrt(N), source-specific scalar0, actual absolute scaled lower drift O(N^-1/4), iid endpoint O(sqrt((1+logN)/N)) and smooth true-noise O(N^-3/8) give the entire cubic-plus-residual-martingale L1 equivalence. Both responses, all backgrounds, N2 and fixed-N singular limits retained. THM046/PO033 remains OPEN. See AUDITS/ROUND_024_GATE_INTEGRATION.md and ROUND_024_RECONSTRUCTION_COMPARISON.md.
+
+2026-09-18 UTC — R28 THM054 accepted: Complete compact abelian centered four-edge identity has coefficients1,18,36,18,72 for quadruple edge, adjacent doubles, doubled triangle, disjoint doubles and four-cycle. Gaussian broadened Fourier sum with degree20 weights is r^-11. Delta range0<delta<1/22 excludes its endpoint; chosen1/24 gives rateN^-1/24.

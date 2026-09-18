@@ -1,0 +1,1 @@
+{"mutation": "overlap_missing_orientation", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [[1, 0], 2, false], "difference": ["1/48", "0"], "mutated": ["1/48", "0"], "right": ["1/24", "0"]}}

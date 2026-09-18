@@ -1,0 +1,9 @@
+{
+  "actual": "1/4",
+  "category": "survival_profile_normalizer",
+  "expected": "1/8",
+  "mutation": "survival_normalizer_dropped",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "1/8",
+  "status": "ASSERTION_FAILURE"
+}

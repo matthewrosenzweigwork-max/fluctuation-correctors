@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "CODE/diagnostic.py",
+    "--mutation",
+    "survival_normalizer_dropped"
+  ],
+  "cwd": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC",
+  "ended_utc": "2026-09-18T10:49:23.407059+00:00",
+  "exit_code": 1,
+  "expected_exit_code": 1,
+  "label": "mutation_survival_normalizer_dropped",
+  "matched_expected_exit": true,
+  "number": 11,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "started_utc": "2026-09-18T10:49:23.075450+00:00",
+  "stderr": "LOGS/run_011_mutation_survival_normalizer_dropped.stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "LOGS/run_011_mutation_survival_normalizer_dropped.stdout.txt",
+  "stdout_sha256": "adc6f7939c5e29e79a26b2727caec27432255e4ca7874e4ca37c1c92924b62c3"
+}

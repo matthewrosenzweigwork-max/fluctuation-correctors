@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "CODE/seal_packet.py"
+  ],
+  "cwd": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC",
+  "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "outcome_record": "sibling .RECEIPT.json or .ISSUANCE_FAILURE.json",
+  "packet": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-flux-blind/AUDITS/BLIND_RECONSTRUCTION/ROUND_028_FLUX_BLIND_ARTIFACTS_20260918_103751_UTC",
+  "script_sha256": "8dfaebe63d151b469ae1d2a1d9186cf2c5aed64d3d33a8f74a32a184e4afe325",
+  "started_utc": "2026-09-18T10:59:17.713150+00:00"
+}

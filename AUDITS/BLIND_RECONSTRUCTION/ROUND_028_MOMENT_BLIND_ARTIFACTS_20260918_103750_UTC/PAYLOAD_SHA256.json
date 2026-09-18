@@ -1,0 +1,162 @@
+{
+  "CODE/diagnostic.py": {
+    "bytes": 17733,
+    "sha256": "fc16b2e7a2aaa650b031ac0fc30299bdbd284635126207d4dd48a269a7570bc5"
+  },
+  "CODE/issue_packet.py": {
+    "bytes": 4627,
+    "sha256": "5fff5d6e951a6739a2df1aafc29f702f7b5fe07fc7e3c1df0c6a548acf4289a3"
+  },
+  "CODE/run_once.py": {
+    "bytes": 1501,
+    "sha256": "3b0e48bc83b13d74db275228a49c33082af25af43b120b246532fa9babdf883f"
+  },
+  "INPUTS/AGENTS.md": {
+    "bytes": 8174,
+    "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3"
+  },
+  "INPUTS/AUDITS/ROUND_025_GATE_INTEGRATION.md": {
+    "bytes": 3115,
+    "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58"
+  },
+  "INPUTS/AUDITS/ROUND_026_GATE_INTEGRATION.md": {
+    "bytes": 2611,
+    "sha256": "b415f5c36676cdab4d5d92b547037c8db82eb53d89ec36835e7235290512f7c7"
+  },
+  "INPUTS/MEMORANDA/ROUND_001_ALGEBRA.md": {
+    "bytes": 30796,
+    "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de"
+  },
+  "INPUTS/MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md": {
+    "bytes": 36096,
+    "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be"
+  },
+  "INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md": {
+    "bytes": 37944,
+    "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017"
+  },
+  "INPUTS/MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md": {
+    "bytes": 35077,
+    "sha256": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b"
+  },
+  "INPUTS/MEMORANDA/ROUND_016_SOURCE_EXTENSION.md": {
+    "bytes": 34431,
+    "sha256": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26"
+  },
+  "INPUTS/MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md": {
+    "bytes": 31951,
+    "sha256": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea"
+  },
+  "INPUTS/MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md": {
+    "bytes": 28994,
+    "sha256": "f4035c691bfbd1c48191335942ac57ffa161078729c992552913e417da41f9fe"
+  },
+  "INPUTS/MODEL_ORCHESTRATION.md": {
+    "bytes": 4350,
+    "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1"
+  },
+  "INPUTS/TASKS/ACTIVE/ROUND_001_MODEL.md": {
+    "bytes": 5031,
+    "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57"
+  },
+  "INPUTS/TASKS/ACTIVE/TASK-124_ROUND028_MOMENT_TAIL_BLIND.md": {
+    "bytes": 2751,
+    "sha256": "f71a29d0345d1e66f46f2f891ad45cc44b5b5b1abd55ead2b6180f8a230ae345"
+  },
+  "INPUTS/THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md": {
+    "bytes": 2035,
+    "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d"
+  },
+  "INPUTS/THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md": {
+    "bytes": 2860,
+    "sha256": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4"
+  },
+  "INPUTS/THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md": {
+    "bytes": 3353,
+    "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e"
+  },
+  "INPUTS/THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md": {
+    "bytes": 3740,
+    "sha256": "f8114c60684145aaad4e458c1ee867d9190dac2d26c60cdb95dd04dbcb4e5d8a"
+  },
+  "INPUTS/THEOREMS/THM-054_CRITICAL_COULOMB_FOURTH_MOMENTS_AND_FORCE_TAIL.md": {
+    "bytes": 5602,
+    "sha256": "0e7e6f64159137ff5b6942ce48dff6e02fd7730ed51a8499a4466aca3d7c9f3e"
+  },
+  "OUTPUTS/expected_result.json": {
+    "bytes": 5842,
+    "sha256": "a6481a7cb4baf629adea92a564a6d4d324cd12c16f90dda6a6411577b1f0588e"
+  },
+  "OUTPUTS/run_001/diagnostic_source.py": {
+    "bytes": 17733,
+    "sha256": "fc16b2e7a2aaa650b031ac0fc30299bdbd284635126207d4dd48a269a7570bc5"
+  },
+  "OUTPUTS/run_001/execution.json": {
+    "bytes": 518,
+    "sha256": "10853eec37c8b76f20b09d907032f1b4e7b31310719d252fdb4b58e9854e7327"
+  },
+  "OUTPUTS/run_001/result.json": {
+    "bytes": 5842,
+    "sha256": "a6481a7cb4baf629adea92a564a6d4d324cd12c16f90dda6a6411577b1f0588e"
+  },
+  "OUTPUTS/run_001/stderr.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "OUTPUTS/run_001/stdout.txt": {
+    "bytes": 5842,
+    "sha256": "a6481a7cb4baf629adea92a564a6d4d324cd12c16f90dda6a6411577b1f0588e"
+  },
+  "README.md": {
+    "bytes": 3355,
+    "sha256": "8359db8fa43a3235e028dddc957545fc0ee6b33762d1d7bc23878fdc3100bb1e"
+  },
+  "RECORDS/CLAUSE_COVERAGE.md": {
+    "bytes": 3568,
+    "sha256": "14cb55d7ea7765cf9ef36890e1a8607e79ac5800b60e8af6fca454de999d8bf8"
+  },
+  "RECORDS/EXECUTION_HISTORY.md": {
+    "bytes": 3295,
+    "sha256": "bc76653b167394f2f21b1c0dd7d73aaba5cdd4aa4c3a131bd0c1250ca8a8e4d5"
+  },
+  "RECORDS/FAILURES_AND_REJECTED_ROUTES.md": {
+    "bytes": 3640,
+    "sha256": "9316973cbed3d71c0d735e004897555afc2daf21c4719f416076ea32bc90fbaa"
+  },
+  "RECORDS/INPUT_SHA256SUMS.txt": {
+    "bytes": 2017,
+    "sha256": "c532e6d2cd106384be059d024c2f1dfe6facad65584740db5f1189fe6e16b59e"
+  },
+  "RECORDS/READ_EXPOSURE.md": {
+    "bytes": 4526,
+    "sha256": "e29832131858e5cb8cbb3b2650f877342806487fc75042bbb7957edb230ab9f0"
+  },
+  "RECORDS/environment.json": {
+    "bytes": 590,
+    "sha256": "88f5b83c7d05d904fe2f24bcbe9f8acb920fa2b445e887cbdebc9e84868f0df8"
+  },
+  "RECORDS/input_verification.json": {
+    "bytes": 3312,
+    "sha256": "e3146bf4ae84324411978676d77b6a2df36a067237e6ca1c34c3b009d005b8ab"
+  },
+  "RECORDS/preseal_status.txt": {
+    "bytes": 367,
+    "sha256": "a4f65087c566b119d79b87ebd21ddc2e5088c733d83c4d895197fc63fc0b6ca2"
+  },
+  "RECORDS/preseal_verification.json": {
+    "bytes": 4383,
+    "sha256": "21872fd5da82415af676ee0699902cc2f7d9361875ba0ae99e885f42c2e339d2"
+  },
+  "RECORDS/report_formatting_record.json": {
+    "bytes": 23453,
+    "sha256": "44c5f677999ac273b092ebd3b8c01d7721f00445cb1b302cf4316230a6b3f58c"
+  },
+  "REPORT.md": {
+    "bytes": 35808,
+    "sha256": "e6c457703ea8d3b9f6975679c0b8fe75c6da63aef68797e01e81c3ccc4fc1c6c"
+  },
+  "verify_readonly.py": {
+    "bytes": 5428,
+    "sha256": "3e5f83202b067991688d61ba40792957257310211fdf79acac2f9c54519ed040"
+  }
+}

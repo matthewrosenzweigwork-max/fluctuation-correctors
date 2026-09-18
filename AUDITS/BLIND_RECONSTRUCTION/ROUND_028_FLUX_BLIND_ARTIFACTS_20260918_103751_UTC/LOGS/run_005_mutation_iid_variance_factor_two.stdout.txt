@@ -1,0 +1,9 @@
+{
+  "actual": "29/648",
+  "category": "iid_canonical_variance",
+  "expected": "29/324",
+  "mutation": "iid_variance_factor_two",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "-29/648",
+  "status": "ASSERTION_FAILURE"
+}

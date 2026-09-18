@@ -1,0 +1,1 @@
+{"kind": "MATHEMATICAL_MUTATION_CAUGHT", "mutant": "drop_adjacent_double", "witness": {"category": "fourth_haar_energy", "context": [3, "1/2", 3], "correct": "1/8", "mutated": "5/72"}}

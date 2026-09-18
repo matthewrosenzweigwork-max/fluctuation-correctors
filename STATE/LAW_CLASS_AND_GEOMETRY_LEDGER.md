@@ -115,3 +115,5 @@ R23 accepted static d4 Coulomb law is a jittered coherently deformed grid, commo
 
 
 2026-09-18 UTC — R27 whole acceptance. The explicitly auxiliary attractive process is killed at its maximal collision-free lifetime. With iid-Haar start its survivor current marginal is exactly product Haar, whereas the original law is its reversed path law conditional on survival. No original positive-time product law or point-start exponential lifetime is asserted.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): New entire gates THM053/055 concern the auxiliary minimal attractive d4 periodic Coulomb process, iid Haar independent of drivers, and its exact bridge to the original iid-prepared repulsive defect. Terminal unique binary pair includes N=2. No other geometry, initial law or noise endpoint is promoted.

@@ -78,3 +78,7 @@ R25 accepted bounded update,2026-09-18 UTC: exact scope is AUDITS/ROUND_025_GATE
 
 
 2026-09-18 UTC — R27 whole acceptance. THM052 auxiliary exact survivor Haar law follows from a killed dynamic dual, not an assumed equilibrium closure. Its full path reversal is conditioned on the exponentially rare survival event and does not transfer arbitrary static Haar estimates to the original positive-time law.
+
+2026-09-18 UTC — R28 boundary gates accepted (full comparison AUDITS/ROUND_028_BOUNDARY_RECONSTRUCTION_COMPARISON.md): Terminal pair fusion is exactly Haar by the killed exit measure, while the initial marks conditional on long survival remain unresolved. Typical-lifetime modal displacement O(N^-1/2+sqrt(log N)/N) does not control the normalized rare-tail profile. No static or zero-noise example is an actual critical witness.
+
+2026-09-18 UTC — R28 THM054 accepted: Graph moments apply to bounded clipped initial iid kernels, not unclipped Coulomb energy or positive-time independent particles. Actual pair heat/small-ball estimates and total-force action, not iid closure, bound mixed overlaps.

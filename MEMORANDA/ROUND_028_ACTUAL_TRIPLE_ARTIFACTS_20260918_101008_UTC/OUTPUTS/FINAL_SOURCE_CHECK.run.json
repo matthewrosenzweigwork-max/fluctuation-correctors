@@ -1,0 +1,11 @@
+{
+  "command": [
+    "shasum",
+    "-a",
+    "256",
+    "-c",
+    "AUDITS/ROUND_028_TRIPLE_CONSTRUCTION_INPUT_SHA256SUMS.txt"
+  ],
+  "returncode": 0,
+  "verified_rows": 21
+}

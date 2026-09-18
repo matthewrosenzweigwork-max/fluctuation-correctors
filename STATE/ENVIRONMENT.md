@@ -106,3 +106,26 @@ R26 TASK111 final611-line proof and complete source/exposure/history/code read. 
 
 
 2026-09-18 UTC — R28 dispatch: fresh Max TASK119 actual signed triple construction (21 inputs), TASK120 dual actual falsification/boundary-response route (17), TASK121 first-collision flux construction (12), three separate worktrees at ef438b6. THM053/PO040 whole first-collision terminal/marked-flux conjunction is frozen OPEN/UNAUDITED. No new theorem accepted. Root Ultra compares R27 audits and publishes R26. Configured worker cap 10, effective runtime 3 plus root; no bypass. Next free TASK122,AUD077,THM054,PO041.
+
+
+# Round 028 continuation — 2026-09-18T10:41:29.391417+00:00
+
+R27 published and local/tracking/live origin/main matched at 72fe7e2fb4964d03643cb2e1e1bde46c3eb2c4d8; receipt ROUND_027_PUBLICATION.md. R26 and R27 full gates accepted; no history rewrite or remote change. Index empty; all pending files belong to authorized R28 research.
+
+Root Astra Ultra. Configured worker ceiling10; actual initialized runtime3 workers. TASK119 actual fourth-moment/force-tail constructor and TASK120 collision-history constructor are sealed; TASK121 marked collision flux sealed and fully root-verified/reproduced. TASK122/AUD077 fresh Max joint THM053+055 blind is running on18 exact inputs (original10 plus separate8-file addendum). TASK124/AUD079 fresh Max whole THM054 blind running on18 inputs. TASK123/AUD078 fresh Max joint boundary hostile prepared21 inputs at R27 head, dispatch next; TASK125/AUD080 whole THM054 hostile reserved. Next free TASK126,AUD081,THM056,PO043.
+
+THM053/PO040 marked terminal flux, THM054/PO041 deterministic-time fourth moments plus exact force-tail criterion, THM055/PO042 quantitative collision-history criterion are all OPEN/UNAUDITED, with immutable statements. No source cancellation or actual counterexample has been proved. Main THM046/PO033 remains first open load-bearing assertion, with unchanged lambda_N=beta_N N^-1/2 finite positive and genuine original iid-Haar dynamics.
+
+Root complete397-line TASK121 report/source/code/packet and fresh1480-check output verified; records round028_flux_root_verification.json and round028_flux_root_rerun.json. TASK119 final665-line report (662 read before final clarifications; final full reread pending), code363lines and verifier154lines/source records read. Its21-input92-member packet awaits root portable replay,17 mathematical mutants,3 guard controls and external/mode supplementation. TASK120 final report read705lines; final packet just copied; final report delta and full code/verifier/source/execution verification remain. Its17-input27-member receipt reports3845checks20mutations15guards, not yet reproduced by root.
+
+Next execute full root119/120 evidence checks while123 audits and122/124 reconstruct. Prepare125 once slot opens. Compare every clause and auxiliary assertion across whole fresh axes before promotion. Then fresh Ultra escalation on the actual remaining limit is required by MODEL_ORCHESTRATION section4 after two distinct Max mechanisms leave the singular estimate open. No stopping gate has been reached. Preserve all frozen evidence; do not edit current input manifests/gates/statements. Root alone edits canonical state.
+
+
+
+2026-09-18 UTC — R28 root constructor checks complete: TASK119 full final665-line report, all code/source/exposure read;21-input92-member immutable packet and external anchors pass,5695 exact baseline checks and17 genuine subprocess mathematical mutants reproduce byte-for-byte,3 negative verifier controls reject. TASK120 full final705-line report/source/exposure/code read;17-input27-member packet,outer seals and original sources pass,3845checks/20 nonzero witnesses reproduce exact bytes from fresh code plus frozen inputs. All literal archive types, no links/pax/control paths and readonly modes checked separately. Root records round028_triple_root_verification/rerun.json and round028_dual_root_verification/rerun.json. Neither constructor is independently promoted. TASK123/AUD078 fresh Max whole THM053+055 hostile now active21 inputs; TASK122 joint blind andTASK124 THM054 blind remain active. TASK125/AUD080 whole THM054 hostile prepared20 inputs at72fe7, awaiting a free runtime slot. Next free TASK126,AUD081,THM056,PO043.
+
+2026-09-18 UTC — Current allocation supersedes earlier queued entries: TASK122/AUD077, TASK123/AUD078 and TASK124/AUD079 sealed/root-verified; TASK125/AUD080 Max hostile, TASK126 Ultra force-tail and TASK127 Max boundary-profile falsification active in separate worktrees. Configured ten workers; available runtime three plus root. Next free TASK128/AUD081/THM056/PO043. R28 final integration continues; no mission stop gate.
+
+2026-09-18 UTC — R28 whole gates accepted. TASK125/AUD080 and TASK126 sealed. TASK127 Max boundary-profile and TASK128/AUD081 Max whole THM056 blind active; TASK129/AUD082 hostile being prepared. THM056/PO043 OPEN, next new theorem057/obligation044. Root Ultra, configured10workers/effective3. R29 proofs not promoted.
+
+2026-09-18 UTC — TASK129/AUD082 fresh Max hostile dispatched19 exact inputs in hocf-r029-sector-hostile. Current three workers:127 Max,128 Max blind,129 Max hostile. TASK126 Ultra constructor is sealed. Next freeTASK130/AUD083/THM057/PO044. User worker ceiling10 remains configured; effective3 plus root.

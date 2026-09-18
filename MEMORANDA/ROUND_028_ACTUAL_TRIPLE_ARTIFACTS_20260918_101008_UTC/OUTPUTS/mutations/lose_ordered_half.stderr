@@ -1,0 +1,1 @@
+{"kind": "MATHEMATICAL_MUTATION_CAUGHT", "mutant": "lose_ordered_half", "witness": {"category": "deleted_fourier_source", "context": [0, [1, 0], 2, 0], "correct": ["-19/48", "-19/48"], "mutated": ["-13/24", "-13/24"]}}

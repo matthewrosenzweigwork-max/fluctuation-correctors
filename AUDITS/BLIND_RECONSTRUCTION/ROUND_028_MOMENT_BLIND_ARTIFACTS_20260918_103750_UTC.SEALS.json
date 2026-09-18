@@ -1,0 +1,39 @@
+{
+  "artifacts": {
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC.VERIFICATION.json": {
+      "bytes": 2111,
+      "sha256": "8aea41609b18cd06a2ceae8a7c5022e72be2e26113e65d7afbddf26ad235db1b"
+    },
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC.tar.gz": {
+      "bytes": 144326,
+      "sha256": "180435fb727310459ae35c7c662ae46567398f76d502e3cc5c2968a0ca28b55b"
+    },
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/INVENTORY.json": {
+      "bytes": 2022,
+      "sha256": "9bbb3d3482008f3c817873e0126af7470939f7ee0ac300ce6636acc483baf9c2"
+    },
+    "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC/PAYLOAD_SHA256.json": {
+      "bytes": 6024,
+      "sha256": "3797e9b79a2e69ccb1e84f1423d9bccebcfe025cc6cf5f53018aef62f45f9b06"
+    },
+    "ROUND_028_MOMENT_TAIL_RECONSTRUCTION.md": {
+      "bytes": 35808,
+      "sha256": "e6c457703ea8d3b9f6975679c0b8fe75c6da63aef68797e01e81c3ccc4fc1c6c"
+    }
+  },
+  "audit": "AUD079",
+  "check_count": 58645,
+  "development_execution_count": 1,
+  "development_failure_count": 0,
+  "exact_input_count": 18,
+  "fresh_readonly_verification": "PASS",
+  "issued_utc": "2026-09-18T10:58:58.235275+00:00",
+  "nonzero_mutation_count": 19,
+  "open_assertion": "Actual raw force-tail cancellation or an admitted same-fixed-data witness.",
+  "packet": "ROUND_028_MOMENT_BLIND_ARTIFACTS_20260918_103750_UTC",
+  "payload_hash_count": 40,
+  "regular_member_count": 42,
+  "report_lines": 548,
+  "task": "TASK124",
+  "verdict": "ISOLATED_RECONSTRUCTION_PASS"
+}

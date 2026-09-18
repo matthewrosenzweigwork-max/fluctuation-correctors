@@ -1,0 +1,179 @@
+{
+  "arithmetic": "Exact Fraction and Gaussian-rational arithmetic; no random input or tolerance.",
+  "categories": {
+    "Laplace_response_exact": 252,
+    "Laplace_response_large_N_bound": 252,
+    "Laplace_response_positive": 252,
+    "all_marked_terms_counted": 18,
+    "bounded_endpoint_inequality": 1,
+    "clipped_ustat_mean": 16,
+    "clipped_ustat_variance": 16,
+    "clipped_zero_row": 16,
+    "complex_symmetry": 16,
+    "complex_ustat_variance": 4,
+    "complex_zero_row": 4,
+    "death_mark_mass": 1,
+    "death_time_mark_independent": 15,
+    "dual_Markov_row": 3,
+    "endpoint_bound": 1,
+    "exact_survival_mass": 5,
+    "five_marked_label_classes": 90,
+    "flux_mass": 18,
+    "fusion_mean": 4,
+    "fusion_mode_variance": 4,
+    "iid_mode_variance": 4,
+    "input_count": 1,
+    "input_hash": 17,
+    "input_regular": 17,
+    "laplacian_pair_factor": 18,
+    "literal_row_deletion": 1360,
+    "local_absorption_time": 32,
+    "nonzero_mutation": 20,
+    "orthogonal_projection_contraction": 4,
+    "physical_N2_absorption": 4,
+    "projection_l1_residual": 4,
+    "qsd_column_sum": 3,
+    "rare_profile_conditioning": 18,
+    "rare_profile_typical_bound": 18,
+    "real_zero_row": 4,
+    "relative_radial_bracket": 96,
+    "relative_radial_generator": 96,
+    "stopped_modal_bracket": 36,
+    "survivor_current_Haar": 15,
+    "unconditioned_martingale_mean": 1,
+    "whole_path_normalization": 1089
+  },
+  "checks": 3845,
+  "diagnostic_sha256": "265f01ab49a775865a2713794c696a76cf4a44c144060d12755316c1fc834884",
+  "limitations": [
+    "Finite cyclic examples check canonical clipping and label coefficients, not singular law convergence.",
+    "Finite sub-Markov paths check survival normalization and dependence, not the Coulomb diffusion.",
+    "The local radial model has no periodic background; zero noise is only a limiting diagnostic.",
+    "No critical positive-limsup witness, boundary-profile decay or independent mathematical audit is supplied.",
+    "The continuum proof and all singular passages remain in REPORT.md for fresh review."
+  ],
+  "mutation_count": 20,
+  "nonzero_mutations": [
+    {
+      "correct": "3/64",
+      "limitation": "Double orientation must combine exactly once.",
+      "mutated": "3/16",
+      "name": "omit_ordered_pair_half"
+    },
+    {
+      "correct": "1/36",
+      "limitation": "Finite iid coefficient witness, not singular dynamics.",
+      "mutated": "1/16",
+      "name": "replace_N_power_by_falling_factorial"
+    },
+    {
+      "correct": "2/3",
+      "limitation": "Exact N=3 response-row coefficient.",
+      "mutated": "1",
+      "name": "use_c_in_place_of_c_one_minus_one_over_N"
+    },
+    {
+      "correct": "1",
+      "limitation": "Collision endpoint differs from an iid current configuration.",
+      "mutated": "1/2",
+      "name": "fusion_is_product_Haar_N2"
+    },
+    {
+      "correct": "5/9",
+      "limitation": "Collision endpoint differs from an iid current configuration.",
+      "mutated": "1/3",
+      "name": "fusion_is_product_Haar_N3"
+    },
+    {
+      "correct": "3/8",
+      "limitation": "Collision endpoint differs from an iid current configuration.",
+      "mutated": "1/4",
+      "name": "fusion_is_product_Haar_N4"
+    },
+    {
+      "correct": "7/25",
+      "limitation": "Collision endpoint differs from an iid current configuration.",
+      "mutated": "1/5",
+      "name": "fusion_is_product_Haar_N5"
+    },
+    {
+      "correct": "4",
+      "limitation": "One pair contributes from two differentiated coordinates.",
+      "mutated": "2",
+      "name": "single_instead_of_double_collision_flux"
+    },
+    {
+      "correct": "33961/8575",
+      "limitation": "Finite killed-chain analogue of exp(kappa T).",
+      "mutated": "33961/25000",
+      "name": "drop_rare_survival_normalizer"
+    },
+    {
+      "correct": "33961/8575",
+      "limitation": "Initial/final conditional law is not symmetric.",
+      "mutated": "38098/8575",
+      "name": "reverse_response_orientation"
+    },
+    {
+      "correct": "61/63",
+      "limitation": "Lifetime/mark independence does not imply initial/mark independence.",
+      "mutated": "10109/27783",
+      "name": "initial_and_collision_marks_independent"
+    },
+    {
+      "correct": "120/343",
+      "limitation": "Only the surviving current state is exactly Haar.",
+      "mutated": "1/3",
+      "name": "surviving_initial_is_Haar"
+    },
+    {
+      "correct": "32/105",
+      "limitation": "Future survival changes conditional martingale increments.",
+      "mutated": "0",
+      "name": "conditioned_survival_keeps_martingale_centered"
+    },
+    {
+      "correct": "1/3",
+      "limitation": "Exact change from fixed T to actual lifetime.",
+      "mutated": "1/6",
+      "name": "omit_Laplace_numerator_two"
+    },
+    {
+      "correct": "1/3",
+      "limitation": "The response-time correction is small but not zero.",
+      "mutated": "0",
+      "name": "replace_lifetime_response_without_error"
+    },
+    {
+      "correct": "1",
+      "limitation": "Scalar profile/conditioning countermodel; not admitted dynamics.",
+      "mutated": "1/4096",
+      "name": "unconditional_smallness_implies_rare_tail_smallness"
+    },
+    {
+      "correct": "16",
+      "limitation": "Dimension four local radial generator.",
+      "mutated": "8",
+      "name": "relative_diffusion_missing_factor_two"
+    },
+    {
+      "correct": "8",
+      "limitation": "Two attractive particle drifts act on the relative separation.",
+      "mutated": "4",
+      "name": "relative_force_missing_second_label"
+    },
+    {
+      "correct": "2/3",
+      "limitation": "One-body complex Ito bracket coefficient.",
+      "mutated": "1/3",
+      "name": "noise_covariance_missing_two"
+    },
+    {
+      "correct": "9/4",
+      "limitation": "No independence or cross-term cancellation is available.",
+      "mutated": "5/4",
+      "name": "drop_endpoint_drift_martingale_cross"
+    }
+  ],
+  "status": "PASS"
+}

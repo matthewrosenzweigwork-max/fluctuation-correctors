@@ -1,0 +1,67 @@
+{
+  "schema": "AUD080-DISPLAY-HISTORY-1",
+  "records": [
+    {
+      "source": "THEOREMS/THM-054_CRITICAL_COULOMB_FOURTH_MOMENTS_AND_FORCE_TAIL.md",
+      "portion": "entire theorem extracted from captured result after aggregate display truncation"
+    },
+    {
+      "source": "MEMORANDA/ROUND_028_ACTUAL_TRIPLE_CONSTRUCTION.md",
+      "portion": "lines 1-235 re-emitted from captured full command result"
+    },
+    {
+      "source": "MEMORANDA/ROUND_028_ACTUAL_TRIPLE_CONSTRUCTION.md",
+      "portion": "lines 236-450 re-emitted from captured full result"
+    },
+    {
+      "source": "MEMORANDA/ROUND_028_ACTUAL_TRIPLE_CONSTRUCTION.md",
+      "portion": "lines 451-665 re-emitted from captured full result; constructor entirely displayed"
+    },
+    {
+      "source": "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "portion": "lines 1-235"
+    },
+    {
+      "source": "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "portion": "lines 236-475"
+    },
+    {
+      "source": "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "portion": "lines 476-687; entire file displayed"
+    },
+    {
+      "source": "MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+      "portion": "lines 1-215"
+    },
+    {
+      "source": "MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+      "portion": "lines 216-430"
+    },
+    {
+      "source": "MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+      "portion": "lines 431-611; entire file displayed"
+    },
+    {
+      "source": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "portion": "lines 1-155"
+    },
+    {
+      "source": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "portion": "lines 45-165"
+    },
+    {
+      "source": "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+      "portion": "lines 1-230"
+    },
+    {
+      "source": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "portion": "lines 255-420"
+    },
+    {
+      "source": "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+      "portion": "lines 1-220"
+    }
+  ],
+  "note": "Fully displayed cards/instructions and acquisition results are also documented by the source table and command history. This list records bounded re-emissions and partial historical source ranges."
+}
+

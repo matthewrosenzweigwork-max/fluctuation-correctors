@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-09-18T11:21:27.066786+00:00",
+  "audit": "aud080",
+  "report_sha256": "62e4b77edad4e3f250549e048cbe5a9e6ddde21eb99586b7c61277a0adf50285",
+  "report_lines": 599,
+  "archive_sha256": "cf56fbb3a61a696d132824e951614893589dc2d6c935db22240e6015d9f31593",
+  "canonical_inputs": {
+    "AGENTS.md": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+    "MODEL_ORCHESTRATION.md": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+    "TASKS/ACTIVE/ROUND_001_MODEL.md": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+    "THEOREMS/THM-054_CRITICAL_COULOMB_FOURTH_MOMENTS_AND_FORCE_TAIL.md": "0e7e6f64159137ff5b6942ce48dff6e02fd7730ed51a8499a4466aca3d7c9f3e",
+    "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+    "THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+    "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+    "THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md": "f8114c60684145aaad4e458c1ee867d9190dac2d26c60cdb95dd04dbcb4e5d8a",
+    "MEMORANDA/ROUND_001_ALGEBRA.md": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+    "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+    "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+    "MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md": "f8d0b7a47d1cf7456dc3e877f3e6cb0b3396fa0ad8a184b650de9afc1cb97d1b",
+    "MEMORANDA/ROUND_016_SOURCE_EXTENSION.md": "62fc121556fa2cb08f0ec3e2c7d1813f40bce6a86a2f5ea07ed2d616c6ce9a26",
+    "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+    "AUDITS/ROUND_025_GATE_INTEGRATION.md": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+    "MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md": "f4035c691bfbd1c48191335942ac57ffa161078729c992552913e417da41f9fe",
+    "AUDITS/ROUND_026_GATE_INTEGRATION.md": "b415f5c36676cdab4d5d92b547037c8db82eb53d89ec36835e7235290512f7c7",
+    "TASKS/ACTIVE/TASK-125_ROUND028_MOMENT_TAIL_HOSTILE.md": "87579bb63196934b2dc142b0a21feac0849b7ffdfa2bc1b75e30802011a867d1",
+    "MEMORANDA/ROUND_028_ACTUAL_TRIPLE_CONSTRUCTION.md": "af18846a8f85a6a1356ae5d7a2c35b043629bc141852c06578e8cef0df24d05b",
+    "MEMORANDA/ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC/EXPOSURE_AND_SOURCES.md": "ecbc9f2a9bb5f43fda5a14da2cde558099bffe77ab9e583123b1e122cf830ea9"
+  },
+  "external_anchors": {
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC.VERIFY.log": "25f339a727a635e1ce26d3f01389c240417ef319e26ca1138bf1347557e435b4",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC.SEALS.json": "91e775429644ceeb7b80f47def3b737bec8fde76777bf332b006e5b2bbc38894"
+  },
+  "regular_payload_members": 79,
+  "readonly_files": 79,
+  "readonly_directories": 9,
+  "pax_path_metadata": [
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_cutoff_endpoint_claim.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_cutoff_endpoint_claim.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_energy_noise_cross_zero.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_energy_noise_cross_zero.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_finite_N_square_term_drop.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_finite_N_square_term_drop.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_adjacent_omit.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_adjacent_omit.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_disjoint_omit.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_disjoint_omit.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_ordered_energy.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_graph_ordered_energy.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_initial_all_equal_twice.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_initial_all_equal_twice.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_initial_tag_replaced.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_initial_tag_replaced.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_mixed_same_label_omit.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_mixed_same_label_omit.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_overlap_missing_orientation.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_overlap_missing_orientation.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_tail_row_factor_one.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_tail_row_factor_one.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_terminal_event_isometry.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_terminal_event_isometry.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_triple_prefactor_twice.stderr",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/CHECK_RUNS/mutation_triple_prefactor_twice.stdout",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_016_SOURCE_EXTENSION.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_026_CORRELATION_FALSIFICATION.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_028_ACTUAL_TRIPLE_ARTIFACTS_20260918_101008_UTC/EXPOSURE_AND_SOURCES.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/MEMORANDA/ROUND_028_ACTUAL_TRIPLE_CONSTRUCTION.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/TASKS/ACTIVE/TASK-125_ROUND028_MOMENT_TAIL_HOSTILE.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-051_COULOMB_TWO_LABEL_OVERLAP_CANCELLATION.md",
+    "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/INPUTS/THEOREMS/THM-054_CRITICAL_COULOMB_FOURTH_MOMENTS_AND_FORCE_TAIL.md"
+  ],
+  "pax_scope": "Only exact safe long-path metadata allowed; no links, sparse or other overrides. No extraction. Payload entries are literal regular files.",
+  "verifier_argv": [
+    "python3",
+    "-B",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC/verify.py",
+    "--seal",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC.SEALS.json",
+    "--report",
+    "/Users/matthewrosenzweig/Library/CloudStorage/GoogleDrive-mrosenz2@andrew.cmu.edu/My Drive/Git/fluctuation-correctors/AUDITS/HOSTILE/ROUND_028_MOMENT_TAIL_REVIEW.md"
+  ],
+  "verifier_stdout": "{\"exact_checks\": 308, \"floating_checks\": 36000, \"input_files\": 20, \"nonzero_mutation_runs\": 21, \"note\": \"Integrity and diagnostic consistency only; mathematical verdict is in REPORT.md.\", \"packet_files\": 79, \"read_only\": true, \"safe_regular_archive_members\": 79, \"status\": \"PASS\"}\n",
+  "verifier_stderr": "",
+  "verifier_result": {
+    "exact_checks": 308,
+    "floating_checks": 36000,
+    "input_files": 20,
+    "nonzero_mutation_runs": 21,
+    "note": "Integrity and diagnostic consistency only; mathematical verdict is in REPORT.md.",
+    "packet_files": 79,
+    "read_only": true,
+    "safe_regular_archive_members": 79,
+    "status": "PASS"
+  },
+  "fresh_code_only_directory": "/private/tmp/hocf-r028-aud080-root-rerun-97wq_cmp",
+  "fresh_executions": [
+    {
+      "kind": "baseline",
+      "exit": 0,
+      "output_sha256": "0ed96947570ca873ed8f423b15c09c26c77742a6da8b0d0bc3344a322c681763",
+      "full_json_match": true
+    },
+    {
+      "mutation": "clip_linear_power",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "6857133cb31e7730fc6981d75b4d2717d8c3fd51b306080ba1d4ade2ea9ee6f3"
+    },
+    {
+      "mutation": "cutoff_endpoint_claim",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "99c0a936db1295dfb48621e36318565049c2bed192fe1bdf49bd560bf2869bf0"
+    },
+    {
+      "mutation": "energy_noise_cross_zero",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "d4ab5da3970c837f6bfdce3aed21561ae3fb65614bb0786487170d57b7301a59"
+    },
+    {
+      "mutation": "finite_N_square_term_drop",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "ebb910069c0140449a93faf4f2acda478f4a3c331f98643be381eb84050d2fbb"
+    },
+    {
+      "mutation": "graph_adjacent_omit",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "821c22fdd2312c142e314fb0e3511f8b84d204d9c78059b528197331c3cd6a12"
+    },
+    {
+      "mutation": "graph_cycle_24",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "db1f876401284451dcc5c487d1dab1a09f06e18c730447260a2348c925ab5562"
+    },
+    {
+      "mutation": "graph_disjoint_omit",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "d0c44ac8dccb922496ecaf869e08fae9d50e82ea7b9c736b9ad529a512ea656e"
+    },
+    {
+      "mutation": "graph_ordered_energy",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "60b370d541bd0a93a34f545d4d13fd71558b0935cfa6c0c5034b0667501c09ea"
+    },
+    {
+      "mutation": "graph_triangle_18",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "6cad7adbdbd09893f4f6b588d4fe7c453f5ad27ae1c16b7b43bfbf72247cf742"
+    },
+    {
+      "mutation": "initial_all_equal_twice",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "3b179cd0aa8f7baf45be3e23353d9109ece48e5ec7fec5fd0b8340789e8aa415"
+    },
+    {
+      "mutation": "initial_tag_replaced",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "5951d0c10c4e3ccd4e2c11d96ae42d8af85461f8ba67d204f11292b63ce8d5f2"
+    },
+    {
+      "mutation": "merge_time_weights",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "3107d23ed2d2d4976b37cda5a92cc5aa01933d539ea5965793f97c30f93fafe4"
+    },
+    {
+      "mutation": "mixed_same_label_omit",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "f6d23df83135b44d355cf2701a9ec7ee21a285abdf695fe4e6ddcd75649f28f8"
+    },
+    {
+      "mutation": "ordered_half_omit",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "ee48480e0e51dff17db415cdd04df367e691fdc610f17560749d708415bd8444"
+    },
+    {
+      "mutation": "overlap_missing_orientation",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "1b377b777c41c1c445e9c9e17d9aa468780470b0bafd30ece0b1ac05e615954e"
+    },
+    {
+      "mutation": "overlap_self_omit",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "912e17ab00268a588596cd42db9cabe564587343985ccefdf3330af2f4cda97c"
+    },
+    {
+      "mutation": "smooth_self_omit",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "7e4540986b3f7e32921d2f1591a40116365f3f3a0a8381cad9c89f526a9e604c"
+    },
+    {
+      "mutation": "smooth_self_sign",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "e4a5940a6aed1468870372e1b9d55773b0378d130a0ac8d15240c5f67f507dc0"
+    },
+    {
+      "mutation": "tail_row_factor_one",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "966569838b659b6bda9b36eec10584bf0e2f1072a759a45e31d9b5f9b08fba98"
+    },
+    {
+      "mutation": "terminal_event_isometry",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "db78a822dea423cfd9e67f6144b96664f13131fb688a113ee60464d681176564"
+    },
+    {
+      "mutation": "triple_prefactor_twice",
+      "exit": 7,
+      "full_byte_match": true,
+      "stdout_sha256": "0b866dd49a5bd5c12586b62e72652463b91988b3afab21b487a095a97e32ede6"
+    }
+  ],
+  "root_scope": "Full proof comparison separate from supporting diagnostic verification; no critical decay certified."
+}

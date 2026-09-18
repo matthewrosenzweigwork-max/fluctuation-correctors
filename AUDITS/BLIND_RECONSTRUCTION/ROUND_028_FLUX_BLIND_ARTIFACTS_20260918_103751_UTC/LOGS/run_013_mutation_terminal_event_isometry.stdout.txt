@@ -1,0 +1,9 @@
+{
+  "actual": "1",
+  "category": "future_event_isometry_deliberate_falsehood",
+  "expected": "1/2",
+  "mutation": "terminal_event_isometry",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "1/2",
+  "status": "ASSERTION_FAILURE"
+}

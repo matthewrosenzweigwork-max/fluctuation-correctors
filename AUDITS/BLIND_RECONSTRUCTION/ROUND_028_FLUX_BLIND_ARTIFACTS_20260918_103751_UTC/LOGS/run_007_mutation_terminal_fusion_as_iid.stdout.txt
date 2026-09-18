@@ -1,0 +1,9 @@
+{
+  "actual": "1",
+  "category": "haar_and_fused_second_moment",
+  "expected": "1/2",
+  "mutation": "terminal_fusion_as_iid",
+  "nonzero_discrepancy": true,
+  "signed_discrepancy": "1/2",
+  "status": "ASSERTION_FAILURE"
+}

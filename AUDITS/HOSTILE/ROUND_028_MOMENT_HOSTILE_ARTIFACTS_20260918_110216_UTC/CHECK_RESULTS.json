@@ -1,0 +1,652 @@
+{
+  "baseline": {
+    "assertions": 36308,
+    "categories": {
+      "all_mutations_nonzero": 1,
+      "b_diagonal_sum": 3,
+      "b_symmetry": 94,
+      "b_zero_modes": 6,
+      "clip_bad_event_exponent": 1,
+      "clip_same_edge_exponent": 1,
+      "current_label_counts": 12,
+      "current_row_deletion": 12,
+      "cutoff_balance": 1,
+      "direct_fourier_kernel": 75,
+      "floating_heat_envelope": 36000,
+      "gaussian_integral_exponent": 1,
+      "gaussian_shell_power": 1,
+      "graph_enumeration": 1,
+      "haar_graph_fourth": 16,
+      "haar_graph_second": 16,
+      "initial_event_fourth": 1,
+      "initial_mode_fourth": 4,
+      "mixed_label_counts": 12,
+      "mixed_row_deletion": 12,
+      "smooth_deletion": 12,
+      "spectral_overlap": 12,
+      "tail_row_twice": 9,
+      "terminal_control_nonzero": 1,
+      "zero_row": 4
+    },
+    "floating_heat_argmax": [
+      [
+        2,
+        -1,
+        1,
+        0
+      ],
+      [
+        -3,
+        1,
+        -1,
+        0
+      ],
+      0.25
+    ],
+    "floating_heat_max_ratio": 23.441051212925636,
+    "limits": "Finite exact algebra and finite floating diagnostics support the analytic audit only; no actual-law simulation or continuum certification.",
+    "mutations": {
+      "clip_linear_power": {
+        "data": "L=N instead of N^2",
+        "difference": "2",
+        "mutated": "-2",
+        "right": "0"
+      },
+      "cutoff_endpoint_claim": {
+        "data": "delta=1/22 not admissible for decay",
+        "difference": "1/22",
+        "mutated": "-1/22",
+        "right": "0"
+      },
+      "energy_noise_cross_zero": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        "difference": [
+          "1/12",
+          "1/12"
+        ],
+        "mutated": [
+          "0",
+          "0"
+        ],
+        "right": [
+          "1/12",
+          "1/12"
+        ]
+      },
+      "finite_N_square_term_drop": {
+        "data": [
+          16,
+          "1/16"
+        ],
+        "difference": "16",
+        "mutated": "0",
+        "right": "16"
+      },
+      "graph_adjacent_omit": {
+        "data": [
+          3,
+          3
+        ],
+        "difference": "72",
+        "mutated": "90",
+        "right": "162"
+      },
+      "graph_cycle_24": {
+        "data": [
+          3,
+          4
+        ],
+        "difference": "96",
+        "mutated": "732",
+        "right": "828"
+      },
+      "graph_disjoint_omit": {
+        "data": [
+          3,
+          4
+        ],
+        "difference": "72",
+        "mutated": "756",
+        "right": "828"
+      },
+      "graph_ordered_energy": {
+        "data": [
+          3,
+          2
+        ],
+        "difference": "-90",
+        "mutated": "96",
+        "right": "6"
+      },
+      "graph_triangle_18": {
+        "data": [
+          3,
+          3
+        ],
+        "difference": "36",
+        "mutated": "126",
+        "right": "162"
+      },
+      "initial_all_equal_twice": {
+        "data": 2,
+        "difference": "-1/2",
+        "mutated": "2",
+        "right": "3/2"
+      },
+      "initial_tag_replaced": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        "difference": [
+          "1/243",
+          "1/405"
+        ],
+        "mutated": [
+          "7/3645",
+          "28/3645"
+        ],
+        "right": [
+          "22/3645",
+          "37/3645"
+        ]
+      },
+      "merge_time_weights": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        "difference": [
+          "-28/3645",
+          "7/3645"
+        ],
+        "mutated": [
+          "10/729",
+          "2/243"
+        ],
+        "right": [
+          "22/3645",
+          "37/3645"
+        ]
+      },
+      "mixed_same_label_omit": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        "difference": [
+          "0",
+          "-1/6"
+        ],
+        "mutated": [
+          "0",
+          "-1/6"
+        ],
+        "right": [
+          "0",
+          "-1/3"
+        ]
+      },
+      "ordered_half_omit": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        "difference": [
+          "-1/48",
+          "-1/48"
+        ],
+        "mutated": [
+          "1/24",
+          "1/24"
+        ],
+        "right": [
+          "1/48",
+          "1/48"
+        ]
+      },
+      "overlap_missing_orientation": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          2,
+          false
+        ],
+        "difference": [
+          "1/48",
+          "0"
+        ],
+        "mutated": [
+          "1/48",
+          "0"
+        ],
+        "right": [
+          "1/24",
+          "0"
+        ]
+      },
+      "overlap_self_omit": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        "difference": [
+          "-1/2",
+          "0"
+        ],
+        "mutated": [
+          "7/12",
+          "0"
+        ],
+        "right": [
+          "1/12",
+          "0"
+        ]
+      },
+      "smooth_self_omit": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        "difference": [
+          "-1/16",
+          "-1/16"
+        ],
+        "mutated": [
+          "1/12",
+          "1/12"
+        ],
+        "right": [
+          "1/48",
+          "1/48"
+        ]
+      },
+      "smooth_self_sign": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          2
+        ],
+        "difference": [
+          "-1/8",
+          "-1/8"
+        ],
+        "mutated": [
+          "7/48",
+          "7/48"
+        ],
+        "right": [
+          "1/48",
+          "1/48"
+        ]
+      },
+      "tail_row_factor_one": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          3
+        ],
+        "difference": [
+          "0",
+          "-1/3"
+        ],
+        "mutated": [
+          "0",
+          "-1/3"
+        ],
+        "right": [
+          "0",
+          "-2/3"
+        ]
+      },
+      "terminal_event_isometry": {
+        "data": "M=epsilon1+2epsilon2, event M=3",
+        "difference": "1",
+        "mutated": "5/4",
+        "right": "9/4"
+      },
+      "triple_prefactor_twice": {
+        "data": [
+          [
+            1,
+            0
+          ],
+          3,
+          false
+        ],
+        "difference": [
+          "-1/162",
+          "-2/81"
+        ],
+        "mutated": [
+          "0",
+          "4/81"
+        ],
+        "right": [
+          "-1/162",
+          "2/81"
+        ]
+      }
+    },
+    "status": "PASS"
+  },
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "runs": [
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py"
+      ],
+      "expected_returncode": 0,
+      "label": "baseline",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 0,
+      "stderr_path": "CHECK_RUNS/baseline.stderr",
+      "stdout_path": "CHECK_RUNS/baseline.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "clip_linear_power"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_clip_linear_power",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_clip_linear_power.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_clip_linear_power.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "cutoff_endpoint_claim"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_cutoff_endpoint_claim",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_cutoff_endpoint_claim.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_cutoff_endpoint_claim.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "energy_noise_cross_zero"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_energy_noise_cross_zero",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_energy_noise_cross_zero.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_energy_noise_cross_zero.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "finite_N_square_term_drop"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_finite_N_square_term_drop",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_finite_N_square_term_drop.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_finite_N_square_term_drop.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "graph_adjacent_omit"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_graph_adjacent_omit",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_graph_adjacent_omit.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_graph_adjacent_omit.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "graph_cycle_24"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_graph_cycle_24",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_graph_cycle_24.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_graph_cycle_24.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "graph_disjoint_omit"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_graph_disjoint_omit",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_graph_disjoint_omit.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_graph_disjoint_omit.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "graph_ordered_energy"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_graph_ordered_energy",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_graph_ordered_energy.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_graph_ordered_energy.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "graph_triangle_18"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_graph_triangle_18",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_graph_triangle_18.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_graph_triangle_18.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "initial_all_equal_twice"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_initial_all_equal_twice",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_initial_all_equal_twice.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_initial_all_equal_twice.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "initial_tag_replaced"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_initial_tag_replaced",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_initial_tag_replaced.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_initial_tag_replaced.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "merge_time_weights"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_merge_time_weights",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_merge_time_weights.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_merge_time_weights.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "mixed_same_label_omit"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_mixed_same_label_omit",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_mixed_same_label_omit.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_mixed_same_label_omit.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "ordered_half_omit"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_ordered_half_omit",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_ordered_half_omit.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_ordered_half_omit.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "overlap_missing_orientation"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_overlap_missing_orientation",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_overlap_missing_orientation.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_overlap_missing_orientation.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "overlap_self_omit"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_overlap_self_omit",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_overlap_self_omit.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_overlap_self_omit.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "smooth_self_omit"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_smooth_self_omit",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_smooth_self_omit.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_smooth_self_omit.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "smooth_self_sign"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_smooth_self_sign",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_smooth_self_sign.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_smooth_self_sign.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "tail_row_factor_one"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_tail_row_factor_one",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_tail_row_factor_one.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_tail_row_factor_one.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "terminal_event_isometry"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_terminal_event_isometry",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_terminal_event_isometry.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_terminal_event_isometry.stdout"
+    },
+    {
+      "argv": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "fresh_checks.py",
+        "triple_prefactor_twice"
+      ],
+      "expected_returncode": 7,
+      "label": "mutation_triple_prefactor_twice",
+      "program_sha256": "4fe8d1ba244e3e184cb4cd395dd184992f6cb9440a9154a2d79e745ea7bd52cd",
+      "returncode": 7,
+      "stderr_path": "CHECK_RUNS/mutation_triple_prefactor_twice.stderr",
+      "stdout_path": "CHECK_RUNS/mutation_triple_prefactor_twice.stdout"
+    }
+  ],
+  "status": "PASS"
+}

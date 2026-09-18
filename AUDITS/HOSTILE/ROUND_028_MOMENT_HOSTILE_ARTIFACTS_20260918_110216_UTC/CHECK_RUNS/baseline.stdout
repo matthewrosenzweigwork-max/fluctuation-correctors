@@ -1,0 +1,361 @@
+{
+  "assertions": 36308,
+  "categories": {
+    "all_mutations_nonzero": 1,
+    "b_diagonal_sum": 3,
+    "b_symmetry": 94,
+    "b_zero_modes": 6,
+    "clip_bad_event_exponent": 1,
+    "clip_same_edge_exponent": 1,
+    "current_label_counts": 12,
+    "current_row_deletion": 12,
+    "cutoff_balance": 1,
+    "direct_fourier_kernel": 75,
+    "floating_heat_envelope": 36000,
+    "gaussian_integral_exponent": 1,
+    "gaussian_shell_power": 1,
+    "graph_enumeration": 1,
+    "haar_graph_fourth": 16,
+    "haar_graph_second": 16,
+    "initial_event_fourth": 1,
+    "initial_mode_fourth": 4,
+    "mixed_label_counts": 12,
+    "mixed_row_deletion": 12,
+    "smooth_deletion": 12,
+    "spectral_overlap": 12,
+    "tail_row_twice": 9,
+    "terminal_control_nonzero": 1,
+    "zero_row": 4
+  },
+  "floating_heat_argmax": [
+    [
+      2,
+      -1,
+      1,
+      0
+    ],
+    [
+      -3,
+      1,
+      -1,
+      0
+    ],
+    0.25
+  ],
+  "floating_heat_max_ratio": 23.441051212925636,
+  "limits": "Finite exact algebra and finite floating diagnostics support the analytic audit only; no actual-law simulation or continuum certification.",
+  "mutations": {
+    "clip_linear_power": {
+      "data": "L=N instead of N^2",
+      "difference": "2",
+      "mutated": "-2",
+      "right": "0"
+    },
+    "cutoff_endpoint_claim": {
+      "data": "delta=1/22 not admissible for decay",
+      "difference": "1/22",
+      "mutated": "-1/22",
+      "right": "0"
+    },
+    "energy_noise_cross_zero": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        2
+      ],
+      "difference": [
+        "1/12",
+        "1/12"
+      ],
+      "mutated": [
+        "0",
+        "0"
+      ],
+      "right": [
+        "1/12",
+        "1/12"
+      ]
+    },
+    "finite_N_square_term_drop": {
+      "data": [
+        16,
+        "1/16"
+      ],
+      "difference": "16",
+      "mutated": "0",
+      "right": "16"
+    },
+    "graph_adjacent_omit": {
+      "data": [
+        3,
+        3
+      ],
+      "difference": "72",
+      "mutated": "90",
+      "right": "162"
+    },
+    "graph_cycle_24": {
+      "data": [
+        3,
+        4
+      ],
+      "difference": "96",
+      "mutated": "732",
+      "right": "828"
+    },
+    "graph_disjoint_omit": {
+      "data": [
+        3,
+        4
+      ],
+      "difference": "72",
+      "mutated": "756",
+      "right": "828"
+    },
+    "graph_ordered_energy": {
+      "data": [
+        3,
+        2
+      ],
+      "difference": "-90",
+      "mutated": "96",
+      "right": "6"
+    },
+    "graph_triangle_18": {
+      "data": [
+        3,
+        3
+      ],
+      "difference": "36",
+      "mutated": "126",
+      "right": "162"
+    },
+    "initial_all_equal_twice": {
+      "data": 2,
+      "difference": "-1/2",
+      "mutated": "2",
+      "right": "3/2"
+    },
+    "initial_tag_replaced": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        3
+      ],
+      "difference": [
+        "1/243",
+        "1/405"
+      ],
+      "mutated": [
+        "7/3645",
+        "28/3645"
+      ],
+      "right": [
+        "22/3645",
+        "37/3645"
+      ]
+    },
+    "merge_time_weights": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        3
+      ],
+      "difference": [
+        "-28/3645",
+        "7/3645"
+      ],
+      "mutated": [
+        "10/729",
+        "2/243"
+      ],
+      "right": [
+        "22/3645",
+        "37/3645"
+      ]
+    },
+    "mixed_same_label_omit": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        3
+      ],
+      "difference": [
+        "0",
+        "-1/6"
+      ],
+      "mutated": [
+        "0",
+        "-1/6"
+      ],
+      "right": [
+        "0",
+        "-1/3"
+      ]
+    },
+    "ordered_half_omit": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        2
+      ],
+      "difference": [
+        "-1/48",
+        "-1/48"
+      ],
+      "mutated": [
+        "1/24",
+        "1/24"
+      ],
+      "right": [
+        "1/48",
+        "1/48"
+      ]
+    },
+    "overlap_missing_orientation": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        2,
+        false
+      ],
+      "difference": [
+        "1/48",
+        "0"
+      ],
+      "mutated": [
+        "1/48",
+        "0"
+      ],
+      "right": [
+        "1/24",
+        "0"
+      ]
+    },
+    "overlap_self_omit": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        2
+      ],
+      "difference": [
+        "-1/2",
+        "0"
+      ],
+      "mutated": [
+        "7/12",
+        "0"
+      ],
+      "right": [
+        "1/12",
+        "0"
+      ]
+    },
+    "smooth_self_omit": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        2
+      ],
+      "difference": [
+        "-1/16",
+        "-1/16"
+      ],
+      "mutated": [
+        "1/12",
+        "1/12"
+      ],
+      "right": [
+        "1/48",
+        "1/48"
+      ]
+    },
+    "smooth_self_sign": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        2
+      ],
+      "difference": [
+        "-1/8",
+        "-1/8"
+      ],
+      "mutated": [
+        "7/48",
+        "7/48"
+      ],
+      "right": [
+        "1/48",
+        "1/48"
+      ]
+    },
+    "tail_row_factor_one": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        3
+      ],
+      "difference": [
+        "0",
+        "-1/3"
+      ],
+      "mutated": [
+        "0",
+        "-1/3"
+      ],
+      "right": [
+        "0",
+        "-2/3"
+      ]
+    },
+    "terminal_event_isometry": {
+      "data": "M=epsilon1+2epsilon2, event M=3",
+      "difference": "1",
+      "mutated": "5/4",
+      "right": "9/4"
+    },
+    "triple_prefactor_twice": {
+      "data": [
+        [
+          1,
+          0
+        ],
+        3,
+        false
+      ],
+      "difference": [
+        "-1/162",
+        "-2/81"
+      ],
+      "mutated": [
+        "0",
+        "4/81"
+      ],
+      "right": [
+        "-1/162",
+        "2/81"
+      ]
+    }
+  },
+  "status": "PASS"
+}

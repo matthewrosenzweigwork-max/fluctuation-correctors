@@ -1,0 +1,20 @@
+{
+  "actual": [
+    4,
+    0,
+    0,
+    0,
+    0
+  ],
+  "category": "five_marked_label_classes",
+  "expected": [
+    2,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mutation": "fused_count_two",
+  "nonzero_discrepancy": true,
+  "status": "ASSERTION_FAILURE"
+}

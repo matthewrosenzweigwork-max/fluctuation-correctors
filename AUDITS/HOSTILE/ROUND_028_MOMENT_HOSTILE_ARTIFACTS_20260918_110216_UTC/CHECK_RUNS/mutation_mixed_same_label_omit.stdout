@@ -1,0 +1,1 @@
+{"mutation": "mixed_same_label_omit", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": [[1, 0], 3], "difference": ["0", "-1/6"], "mutated": ["0", "-1/6"], "right": ["0", "-1/3"]}}

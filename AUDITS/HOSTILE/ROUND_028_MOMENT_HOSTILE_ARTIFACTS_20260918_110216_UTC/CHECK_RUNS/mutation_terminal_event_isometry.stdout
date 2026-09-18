@@ -1,0 +1,1 @@
+{"mutation": "terminal_event_isometry", "status": "DELIBERATE_MATHEMATICAL_MUTATION_REJECTED", "witness": {"data": "M=epsilon1+2epsilon2, event M=3", "difference": "1", "mutated": "5/4", "right": "9/4"}}

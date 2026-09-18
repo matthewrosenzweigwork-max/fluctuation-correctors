@@ -1,0 +1,10 @@
+{
+  "fresh_directory": "/private/tmp/hocf-r028-flux-rerun-zb_s1943",
+  "code_only": true,
+  "stdout_byte_identical": true,
+  "output_sha256": "26a3a1fc74e4665269027f42168264ec72cbd10b53dccb4e737d934c5dcb5f24",
+  "checks": 1480,
+  "nonzero_mutations": 11,
+  "literal_regular_archive_members": 24,
+  "status": "PASS"
+}

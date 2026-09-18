@@ -1,0 +1,221 @@
+{
+  "actual_singular_process_simulated": false,
+  "audit": "AUD079",
+  "check_count": 58645,
+  "checks_by_category": {
+    "exact_Fourier_coefficients": 205,
+    "exact_Fourier_symmetry": 205,
+    "exact_clipping_recenter_on_good": 60,
+    "exact_clipping_union_bound": 1,
+    "exact_common_driver_cross_bracket": 1,
+    "exact_convolution_bounds": 12,
+    "exact_cutoff_first_power": 1,
+    "exact_cutoff_noise_power": 1,
+    "exact_empirical_deleted_polynomial": 12,
+    "exact_exchangeable_current_initial_counts": 10,
+    "exact_exhaustive_Haar_fourth": 48,
+    "exact_graph_multiplicities": 30,
+    "exact_kernel_centering": 12,
+    "exact_kernel_evenness": 48,
+    "exact_open_delta_boundary": 1,
+    "exact_raw_tail_row_correction": 1,
+    "exact_same_label_current": 1,
+    "exact_same_label_mixed": 1,
+    "exact_smooth_diagonal_sum": 3,
+    "exact_time_zero_event_isometry": 1,
+    "exact_zero_rows": 6,
+    "finite_martingale_fourth_bound_diagnostic": 1,
+    "floating_actual_heat_symmetry": 28980,
+    "floating_actual_heat_zero_rows": 24,
+    "floating_all_frequency_domination_sample": 28968,
+    "floating_two_response_weights": 12
+  },
+  "mutation_count": 19,
+  "nonzero_mutations": [
+    {
+      "altered": "2520",
+      "correct": "2580",
+      "kind": "exact",
+      "name": "decrement mu4 coefficient",
+      "nonzero_residual": "60"
+    },
+    {
+      "altered": "2540",
+      "correct": "2580",
+      "kind": "exact",
+      "name": "decrement three-label doubled-path coefficient",
+      "nonzero_residual": "40"
+    },
+    {
+      "altered": "2560",
+      "correct": "2580",
+      "kind": "exact",
+      "name": "decrement triangle coefficient",
+      "nonzero_residual": "20"
+    },
+    {
+      "altered": "2560",
+      "correct": "2580",
+      "kind": "exact",
+      "name": "decrement disjoint doubled-pair coefficient",
+      "nonzero_residual": "20"
+    },
+    {
+      "altered": "2570",
+      "correct": "2580",
+      "kind": "exact",
+      "name": "decrement four-cycle coefficient",
+      "nonzero_residual": "10"
+    },
+    {
+      "altered": "20568/125",
+      "correct": "51024/125",
+      "kind": "exact",
+      "name": "omit zero-mean recentering in graph formula",
+      "nonzero_residual": "30456/125"
+    },
+    {
+      "altered": "1/8",
+      "correct": "0",
+      "kind": "exact",
+      "name": "discard smooth empirical diagonal",
+      "nonzero_residual": "-1/8"
+    },
+    {
+      "altered": "1/2",
+      "correct": "0",
+      "kind": "exact",
+      "name": "use c instead of heat row response d",
+      "nonzero_residual": "-1/2"
+    },
+    {
+      "altered": "1059/728",
+      "correct": "213/104",
+      "kind": "exact",
+      "name": "halve the two overlapping orientations",
+      "nonzero_residual": "54/91"
+    },
+    {
+      "altered": "1059/364",
+      "correct": "213/104",
+      "kind": "exact",
+      "name": "double the all-distinct triple multiplicity",
+      "nonzero_residual": "-627/728"
+    },
+    {
+      "altered": "0",
+      "correct": "-1/6",
+      "kind": "exact",
+      "name": "omit mixed same-label subtraction",
+      "nonzero_residual": "-1/6"
+    },
+    {
+      "altered": "-1/3",
+      "correct": "-1/6",
+      "kind": "exact",
+      "name": "replace mixed same-label phase by one",
+      "nonzero_residual": "1/6"
+    },
+    {
+      "altered": "0",
+      "correct": "1/42",
+      "kind": "exact",
+      "name": "silently center the raw tail by dropping row correction",
+      "nonzero_residual": "1/42"
+    },
+    {
+      "altered": "5/4",
+      "correct": "9/4",
+      "kind": "exact",
+      "name": "replace time-zero event by terminal event",
+      "nonzero_residual": "1"
+    },
+    {
+      "altered": "0",
+      "correct": "3",
+      "kind": "exact",
+      "name": "discard energy-observable common-noise cross term",
+      "nonzero_residual": "3"
+    },
+    {
+      "altered": "0.544020052711286",
+      "correct": "0.6664441104465961",
+      "kind": "floating",
+      "name": "use current-current weight for mixed response",
+      "nonzero_residual": "0.12242405773531018"
+    },
+    {
+      "altered": "0.6478305223515957",
+      "correct": "0.6664441104465961",
+      "kind": "floating",
+      "name": "replace original backward weight by shifted rate",
+      "nonzero_residual": "0.018613588095000466"
+    },
+    {
+      "altered": "0.0",
+      "correct": "71.0489731835645",
+      "kind": "floating",
+      "name": "replace r/8 domination by uniformly bounded same-scale Gaussian ratio",
+      "nonzero_residual": "71.0489731835645"
+    },
+    {
+      "altered": "-1/24",
+      "correct": "0",
+      "kind": "exact",
+      "name": "claim decay at the excluded delta=1/22 boundary",
+      "nonzero_residual": "1/24"
+    }
+  ],
+  "randomness": "None; exhaustive or deterministic inputs.",
+  "samples": [
+    {
+      "clipping_finite_group": {
+        "bad": 65,
+        "good": 60,
+        "label": "auxiliary algebra only",
+        "mean": "-3/5"
+      }
+    },
+    {
+      "heat_coefficient_sample": {
+        "k": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "label": "finite floating support, not proof",
+        "max_r8_ratio": 106.88881130233842,
+        "samples": 9656
+      }
+    },
+    {
+      "heat_coefficient_sample": {
+        "k": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "label": "finite floating support, not proof",
+        "max_r8_ratio": 328.9946779476227,
+        "samples": 9656
+      }
+    },
+    {
+      "heat_coefficient_sample": {
+        "k": [
+          5,
+          -3,
+          2,
+          1
+        ],
+        "label": "finite floating support, not proof",
+        "max_r8_ratio": 3413.8730617612014,
+        "samples": 9656
+      }
+    }
+  ],
+  "scope": "Supporting exact finite algebra and labelled floating diagnostics; proof is REPORT.md.",
+  "status": "PASS"
+}

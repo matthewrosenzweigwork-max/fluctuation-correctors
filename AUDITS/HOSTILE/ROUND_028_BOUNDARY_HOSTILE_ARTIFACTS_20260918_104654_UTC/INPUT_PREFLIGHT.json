@@ -1,0 +1,178 @@
+{
+  "created_utc": "20260918_104654_UTC",
+  "worktree": "/Users/matthewrosenzweig/.codex/worktrees/hocf-r028-boundary-hostile",
+  "branch": "codex/hocf-r028-boundary-hostile",
+  "base": "72fe7e2fb4964d03643cb2e1e1bde46c3eb2c4d8",
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 8174,
+      "lines": 123,
+      "sha256": "cc3a478358f1fcb3ccf472615c715acfdef575d9a80b5aa49417593a25825ed3",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MODEL_ORCHESTRATION.md",
+      "bytes": 4350,
+      "lines": 123,
+      "sha256": "e49ee3901ea41494b36f251d16a72f1d06d6405a842cc09d889a2c87c1ef83e1",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "TASKS/ACTIVE/ROUND_001_MODEL.md",
+      "bytes": 5031,
+      "lines": 54,
+      "sha256": "3fdad096402a18f0c42f9661cfec48897d9dd5c917dc21f209a0aa3494aadf57",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "THEOREMS/THM-053_KILLED_COULOMB_FIRST_COLLISION_FLUX.md",
+      "bytes": 2787,
+      "lines": 18,
+      "sha256": "4798f247ef3237ae9ff23534bd14b7c75f19391c082b70c11c5fee05190c417c",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "THEOREMS/THM-052_KILLED_ATTRACTIVE_COULOMB_DUALITY.md",
+      "bytes": 3271,
+      "lines": 25,
+      "sha256": "b40019d72424818df99ffd4193dd65402d22d8fb133e871d0d0ad4cd389b1309",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md",
+      "bytes": 36096,
+      "lines": 541,
+      "sha256": "135b726c4dd4a69bc8206ea81671c2c949b454d4b80e98002af6378a7d6f34be",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md",
+      "bytes": 37944,
+      "lines": 584,
+      "sha256": "d4d1eae9f18d5796e8e99aa4b5e364b39321167f48eb27fa764bc7e327272017",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_027_KILLED_ATTRACTIVE_DUALITY.md",
+      "bytes": 12467,
+      "lines": 99,
+      "sha256": "18c8b3ad8ac2cdc53ff39abe1c29816b92c80d5b63a3de337988d3a19f2a9dfc",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_027_GATE_INTEGRATION.md",
+      "bytes": 2067,
+      "lines": 9,
+      "sha256": "d9a141a884c6eb05a7d2bd86cf4587e834e4d06b772709074dbebbf5435e47ed",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "THEOREMS/THM-055_COULOMB_COLLISION_HISTORY_DEFECT_REDUCTION.md",
+      "bytes": 6421,
+      "lines": 58,
+      "sha256": "f24507dff19471d09da49cd4b3fdf14813eff46d5ebc1b2095dcdffe5de390b5",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_001_ALGEBRA.md",
+      "bytes": 30796,
+      "lines": 917,
+      "sha256": "e5db5923ba82bf929218e23fe641ed5a7387c106220e6374f37bd06b80c3e4de",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "THEOREMS/THM-046_ACTUAL_CRITICAL_COULOMB_THRESHOLD_SOURCE.md",
+      "bytes": 2035,
+      "lines": 15,
+      "sha256": "4c9e6f6dae43d4ae4c4e08b6b8d40e11fd7e88d861f246cee157030ddbe25f9d",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "THEOREMS/THM-048_CRITICAL_COULOMB_SOURCE_UNIFORM_INTEGRABILITY.md",
+      "bytes": 2860,
+      "lines": 22,
+      "sha256": "62d08f0c7419ca8170e211de289fc981b1f9e1e8d269217704b544252f8511d4",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "THEOREMS/THM-049_EXACT_CRITICAL_COULOMB_SIGNED_CORRELATION_GATE.md",
+      "bytes": 3353,
+      "lines": 42,
+      "sha256": "9700a6b2c4dadca03bb6b9ba8aadff8fa427de20cffa16a36552e02e71489f2e",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_025_ULTRA_CRITICAL_THRESHOLD_ATTEMPT.md",
+      "bytes": 31951,
+      "lines": 687,
+      "sha256": "20e3d6b15ae823eb8eb618e3578878c66d2835feca7fe868e5eab1060e1a84ea",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "AUDITS/ROUND_025_GATE_INTEGRATION.md",
+      "bytes": 3115,
+      "lines": 11,
+      "sha256": "13418daca81a1b435d3a185d3cf36cada8f73bced16907ce0d0610b5d20bdc58",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "TASKS/ACTIVE/TASK-123_ROUND028_JOINT_BOUNDARY_HOSTILE.md",
+      "bytes": 3040,
+      "lines": 9,
+      "sha256": "05796140d5a10c091d8465d20201a4a26b6249db5f52fc8d30346189d31347e4",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_028_FIRST_COLLISION_FLUX.md",
+      "bytes": 31766,
+      "lines": 397,
+      "sha256": "a986c3f93c48287b4efbbabc066460e3cb18c4aeacdeb9ddce109f30219f80ee",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_028_COLLISION_FLUX_ARTIFACTS/EXPOSURE_READ_HISTORY.md",
+      "bytes": 9181,
+      "lines": 50,
+      "sha256": "0b6b13bd01ca6c87add065f2b8c8da1ee4555de6b009cb207dd66d99b8999e19",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_028_DUAL_ACTUAL_FALSIFICATION.md",
+      "bytes": 35692,
+      "lines": 706,
+      "sha256": "2e80c1b0b814d1bbc9cc2deaf8096c759e88d7184a2a26b6e28aa18f515145e5",
+      "original_match": true,
+      "copy_match": true
+    },
+    {
+      "path": "MEMORANDA/ROUND_028_DUAL_FALSIFICATION_ARTIFACTS_20260918_101633_UTC/EXPOSURE_AND_SOURCES.md",
+      "bytes": 5475,
+      "lines": 72,
+      "sha256": "aafac9578c791e3fdecf46fd051324639d811248f64fcf7705f7bf89dcc5a053",
+      "original_match": true,
+      "copy_match": true
+    }
+  ]
+}

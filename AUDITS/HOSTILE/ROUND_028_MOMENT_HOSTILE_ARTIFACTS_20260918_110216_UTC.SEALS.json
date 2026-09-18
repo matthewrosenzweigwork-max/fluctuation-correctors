@@ -1,0 +1,17 @@
+{
+  "archive": {
+    "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC.tar.gz",
+    "sha256": "cf56fbb3a61a696d132824e951614893589dc2d6c935db22240e6015d9f31593",
+    "size": 255065
+  },
+  "archive_inventory": {
+    "name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC.ARCHIVE_MEMBERS.json",
+    "sha256": "b43d89db7bd4527491fab51c97f5c5a46fe5ccf62539216b74f52a637fa53c3e",
+    "size": 18243
+  },
+  "packet_inventory_sha256": "bd746a2e81963527d574e2fe1a4b23554ed0ca2910b182d1acd425865fa1c7c1",
+  "packet_manifest_sha256": "79b66bf576b855951e18b9803b4f27a4803c3bcbeea069738bb471981840aad4",
+  "packet_name": "ROUND_028_MOMENT_HOSTILE_ARTIFACTS_20260918_110216_UTC",
+  "report_sha256": "62e4b77edad4e3f250549e048cbe5a9e6ddde21eb99586b7c61277a0adf50285",
+  "schema": "AUD080-SEALS-1"
+}
