@@ -1,0 +1,14 @@
+{
+  "archive_member_manifest_sha256": "1fc0a1e7e59adc5cadf25007b1c32cdfcdb6c67a91d35f86df53a1136330b7b5",
+  "archive_members": 42,
+  "archive_sha256": "2509860f04f3306258118a9b5c232966f5e63fe77ee8ca3a977a1fea74381477",
+  "audit": "AUD062",
+  "base": "64ac0538dff37a37d0883661b401ad04c311a5e5",
+  "branch": "codex/hocf-r021-critical-cubic-hostile",
+  "input_manifest_sha256": "1e0082cbce0d36476c5ffabf71f21e7f4af8efbfcd1ed181dadef9ed68d3f13e",
+  "inputs": 32,
+  "output_manifest_sha256": "3f54d7d8ba0614ca102f64db48a0b2975847082b896dc5304f3a98471cb0a40c",
+  "payload_outputs": 9,
+  "task": "TASK095",
+  "version": 1
+}

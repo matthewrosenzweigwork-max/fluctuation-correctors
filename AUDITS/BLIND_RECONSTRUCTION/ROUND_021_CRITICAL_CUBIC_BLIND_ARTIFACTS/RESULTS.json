@@ -1,0 +1,224 @@
+{
+  "admitted_rational_parameter_cases": 8349,
+  "arithmetic": "fractions.Fraction Gaussian rationals; no floating point, tolerance, seed, or dependency",
+  "assertion_count": 117352,
+  "audit": "AUD061/TASK094",
+  "categories": {
+    "absolute_after_integral_distinction": 1,
+    "admitted_s_greater_than_two": 1,
+    "all_cubic_first_backgrounds": 36,
+    "all_cubic_second_backgrounds": 36,
+    "bounded_chi_critical_boundary": 1,
+    "chi_exponent": 8349,
+    "cubic_scalar": 36,
+    "degenerate_slices": 12,
+    "excluded_coulomb": 1,
+    "excluded_noise_equality": 1,
+    "full_martingale_bracket": 72,
+    "full_range": 91839,
+    "iid_decomposition": 18,
+    "iid_endpoint": 18,
+    "iid_endpoint_bound": 18,
+    "iid_nonnegative": 18,
+    "integrated_cubic_rearrangement": 1,
+    "integrated_fundamental_identity": 1,
+    "literal_U3_iid_mean": 8,
+    "lower_exponent": 8349,
+    "noise_exponent": 8349,
+    "nonvacuous_mutation_coverage": 1,
+    "pair_symmetry": 6,
+    "particle_gradient": 108,
+    "whole_particle_identity": 72
+  },
+  "evidence": "Exact smooth algebra and rational parameter diagnostics only; not singular analytic proof.",
+  "fourier_convention": "Derivative=(2*pi)^(-1)*physical derivative; force=-that derivative of potential. Second-order equations divided by common (2*pi)^2.",
+  "mutation_count": 18,
+  "mutation_witnesses": {
+    "drop_N2_cubic": {
+      "case": "additive,two_mode,N=2,nu=0",
+      "frequency": [
+        -3,
+        2
+      ],
+      "nonzero_difference": {
+        "imag": "-1/84",
+        "real": "-1/56"
+      }
+    },
+    "drop_all_cubic_backgrounds": {
+      "case": "additive,two_mode,N=2,nu=0",
+      "frequency": [
+        -3,
+        2
+      ],
+      "nonzero_difference": {
+        "imag": "-1/84",
+        "real": "-1/56"
+      }
+    },
+    "falling_factorial_pair_denominator": {
+      "case": "additive,zero,N=2,nu=2/3",
+      "frequency": [
+        -1,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "-1/18",
+        "real": "-1/12"
+      }
+    },
+    "flip_initial_endpoint_sign": {
+      "case": "time polynomial",
+      "frequency": [],
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-4"
+      }
+    },
+    "flip_integrated_lower_sign": {
+      "case": "time polynomial",
+      "frequency": [],
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-3"
+      }
+    },
+    "flip_martingale_increment_sign": {
+      "case": "time polynomial",
+      "frequency": [],
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-10"
+      }
+    },
+    "flip_scalar_lower": {
+      "case": "relative,two_mode,N=2,nu=0",
+      "frequency": [
+        0,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-29/84"
+      }
+    },
+    "halve_centered_lower": {
+      "case": "additive,two_mode,N=2,nu=0",
+      "frequency": [
+        -1,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "-1/96",
+        "real": "-1/64"
+      }
+    },
+    "internal_1_over_N_plus_1": {
+      "case": "additive,two_mode,N=2,nu=0",
+      "frequency": [
+        -3,
+        2
+      ],
+      "nonzero_difference": {
+        "imag": "1/504",
+        "real": "1/336"
+      }
+    },
+    "omit_centered_lower": {
+      "case": "additive,two_mode,N=2,nu=0",
+      "frequency": [
+        -1,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "-1/48",
+        "real": "-1/32"
+      }
+    },
+    "omit_gradient_background": {
+      "case": "additive,zero,N=2,i=0",
+      "frequency": [
+        -1,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "1/4",
+        "real": "-1/6"
+      }
+    },
+    "omit_initial_bias": {
+      "case": "constant,N=2",
+      "frequency": [],
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "9/16"
+      }
+    },
+    "omit_initial_projection": {
+      "case": "additive,N=2",
+      "frequency": [],
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "13/144"
+      }
+    },
+    "omit_noise_factor_two": {
+      "case": "additive,zero,N=2,nu=2/3",
+      "frequency": [
+        -2,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "-1/72",
+        "real": "-5/864"
+      }
+    },
+    "omit_response_x": {
+      "case": "additive,two_mode,N=2,nu=0",
+      "frequency": [
+        -1,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "1/96",
+        "real": "1/64"
+      }
+    },
+    "omit_response_y": {
+      "case": "additive,two_mode,N=2,nu=0",
+      "frequency": [
+        -1,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "1/96",
+        "real": "1/64"
+      }
+    },
+    "omit_scalar_lower": {
+      "case": "relative,two_mode,N=2,nu=0",
+      "frequency": [
+        0,
+        0
+      ],
+      "nonzero_difference": {
+        "imag": "0",
+        "real": "-29/168"
+      }
+    },
+    "symmetrization_sum_not_average": {
+      "case": "additive,two_mode,N=2,nu=0",
+      "frequency": [
+        -3,
+        2
+      ],
+      "nonzero_difference": {
+        "imag": "5/84",
+        "real": "5/56"
+      }
+    }
+  },
+  "script_sha256": "8c7bcda2168942ba1542b13c4d4817a98d04ec1bfb82d7cd864d49642e2a323f",
+  "status": "PASS",
+  "whole_identity_cases": 72
+}

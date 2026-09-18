@@ -1,0 +1,185 @@
+{
+  "arithmetic": "fractions.Fraction and formal finite exponential sums",
+  "assertion_count": 2508,
+  "audit": "AUD059",
+  "categories": {
+    "constant_test": 9,
+    "dyadic_endpoint_not_summable": 1,
+    "dyadic_grid_union_power": 12,
+    "dyadic_summability_exponent": 3,
+    "infinitesimal_thermal_variance_coefficient": 1,
+    "initial_variance": 162,
+    "linear_dependence": 9,
+    "literal_brownian_bracket": 320,
+    "literal_constant_source": 80,
+    "literal_ordered_source": 320,
+    "literal_pair_half": 320,
+    "modal_covariance": 162,
+    "modal_equal_time": 162,
+    "modal_symmetry": 162,
+    "mutation_rejection": 13,
+    "positive_split_exact_self_background": 80,
+    "positive_split_nonnegative": 80,
+    "random_tent_exact_area": 4,
+    "random_tent_fixed_time_bound": 260,
+    "random_tent_integrated_area": 4,
+    "random_tent_supremum_and_modulus": 20,
+    "three_part_increment": 162,
+    "zero_noise": 54,
+    "zero_noise_no_past_or_fresh": 54,
+    "zero_time_increment": 54
+  },
+  "evidence_class": "exact diagnostic and mutation self-check; not a proof certificate",
+  "external_dependencies": "none",
+  "limitations": [
+    "The particle theorem is proved analytically in the reconstruction report, conditionally on the exact earlier sources.",
+    "The trigonometric and finite-group models check exact algebra, not singular-law transfer.",
+    "The random tent falsifies an inference, not the admitted particle assertion.",
+    "Formal exponential equalities are exact identities; mutation nonzero reasons are stated separately."
+  ],
+  "mutation_witnesses": [
+    {
+      "exact_witness": [
+        {
+          "coefficient": "3/20",
+          "exponent": "5"
+        },
+        {
+          "coefficient": "-3/20",
+          "exponent": "25/3"
+        }
+      ],
+      "name": "brownian_factor_two_removed",
+      "reason": "Positive b*c/(2L) times exp(-L(t-u))-exp(-L(t+u)), since u>0.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": [
+        {
+          "coefficient": "1/10",
+          "exponent": "5"
+        },
+        {
+          "coefficient": "-1/10",
+          "exponent": "25/3"
+        }
+      ],
+      "name": "initial_sum_and_thermal_difference_swapped",
+      "reason": "D differs from c; the two strictly different positive exponential terms have opposite weights.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": [
+        {
+          "coefficient": "3/10",
+          "exponent": "0"
+        },
+        {
+          "coefficient": "-3/10",
+          "exponent": "10/3"
+        },
+        {
+          "coefficient": "-3/5",
+          "exponent": "5"
+        },
+        {
+          "coefficient": "3/5",
+          "exponent": "25/3"
+        },
+        {
+          "coefficient": "3/10",
+          "exponent": "10"
+        },
+        {
+          "coefficient": "-3/10",
+          "exponent": "40/3"
+        }
+      ],
+      "name": "past_noise_increment_omitted",
+      "reason": "Positive b*c/L*(1-exp(-2Lu))*(exp(-L(t-u))-1)^2.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": [
+        {
+          "coefficient": "3/10",
+          "exponent": "0"
+        },
+        {
+          "coefficient": "-3/10",
+          "exponent": "10/3"
+        },
+        {
+          "coefficient": "-3/10",
+          "exponent": "5"
+        },
+        {
+          "coefficient": "3/10",
+          "exponent": "25/3"
+        }
+      ],
+      "name": "terminal_convolution_called_martingale",
+      "reason": "Positive thermal variance at u times 1-exp(-L(t-u)).",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "3/2",
+      "name": "increment_variance_linear_noise_half",
+      "reason": "The fresh-noise integral has derivative 2*b*c at zero, not b*c.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "-1/4",
+      "name": "source_half_removed",
+      "reason": "Literal N=2 ordered force sum differs from the source with no factor one half.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "1/2",
+      "name": "source_row_response_sign_flipped",
+      "reason": "The exact Haar row of sin(x-y)*(f'(x)-f'(y)) is minus the nonconstant first mode/2.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "-1/2",
+      "name": "extra_inverse_N_in_bracket",
+      "reason": "At N=2, nu*b=1 and mean squared derivative=1/2, the exact bracket is 1.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "3/4",
+      "name": "split_self_diagonal_missing",
+      "reason": "At N=2 the exact retained self subtraction is retained(0)/(2N)=3/4.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "1/2",
+      "name": "split_background_Nminus1_replaced_by_N",
+      "reason": "At N=2 and c=2 the changed constant subtraction differs by c/(2N)=1/2.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "7/8",
+      "name": "supremum_expectation_exchanged",
+      "reason": "E sup of a random tent is 1 but sup E equals 1/8 at n=16.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "1",
+      "name": "dyadic_grid_cardinality_omitted",
+      "reason": "At gamma=1/3 the false exponent is 2/3; including 2^n edges gives -1/3.",
+      "status": "REJECTED"
+    },
+    {
+      "exact_witness": "-1",
+      "name": "fourth_moment_bound_claims_gamma_half",
+      "reason": "The required summability exponent is -1, so this bound cannot justify gamma=1/2.",
+      "status": "REJECTED"
+    }
+  ],
+  "mutations_rejected": 13,
+  "randomness": "none",
+  "source_sha256": "3788c07feb09b11aa0a2a8e5064d240917aea57352ab2a2b79710fb7ad7e0a88",
+  "status": "PASS",
+  "task": "TASK091"
+}

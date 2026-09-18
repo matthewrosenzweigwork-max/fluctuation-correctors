@@ -1,0 +1,14 @@
+{
+  "archive_bytes": 134997,
+  "archive_file": "ROUND_020_CONTINUOUS_PATH_HOSTILE_PACKET.tar.gz",
+  "archive_members": 25,
+  "archive_sha256": "6a8266c8559081350134ec83cc357ecdc41e1386773ebeb835b7b6734f9af826",
+  "audit": "AUD060",
+  "external_anchor": "SHA-256 of FINAL_SHA256SUMS.txt supplied in handoff",
+  "input_count": 16,
+  "input_manifest_sha256": "e732a449b98f8ccb540f5db060590f3c9b0fe0456594551b26f4441c9c70fe46",
+  "payload_manifest_sha256": "db12ef17f20580d18c43f785a49599464d29d52ab426dcbae97f038915746dd0",
+  "report_bytes": 34660,
+  "report_sha256": "885856922e92c1395e5bc4683521b80a8b773cfda476215fcbd03e81a6ed7062",
+  "scope": "payload plus archive; completed FINAL_SHA256SUMS.txt seals every final output, excluding itself only"
+}

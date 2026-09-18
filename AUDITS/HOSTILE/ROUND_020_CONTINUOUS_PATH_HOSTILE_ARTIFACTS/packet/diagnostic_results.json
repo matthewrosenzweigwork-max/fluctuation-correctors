@@ -1,0 +1,249 @@
+{
+  "arithmetic": "Python standard-library Fraction; no randomness, floating point, numerical tolerance or installs.",
+  "assertions": 3316,
+  "audit": "AUD060",
+  "categories": {
+    "balanced_source_exponent": 33,
+    "bounded_density_fourth_majorant": 1,
+    "compact_neighborhood_separated_paths": 100,
+    "conditional_positive_compensator": 3,
+    "continuum_covariance_symmetry": 144,
+    "continuum_increment_majorant": 144,
+    "continuum_increment_nonnegative": 144,
+    "continuum_integrated_path_functional": 24,
+    "continuum_integrated_variance_nonnegative": 24,
+    "continuum_old_and_recent_noise": 144,
+    "continuum_path_functional_gram": 16,
+    "continuum_path_functional_psd": 16,
+    "continuum_volterra_two_constructions": 144,
+    "dyadic_critical_exponent_not_summable": 15,
+    "dyadic_fourth_moment_summability": 15,
+    "energy_full_self_and_background": 8,
+    "energy_nonnegative_terms": 8,
+    "initial_martingale_orthogonality_not_independence": 1,
+    "linear_interpolation_uniform_modulus": 12,
+    "literal_cross_bracket_scaling": 1344,
+    "literal_deleted_source_identity": 336,
+    "mutation_conditional_compensator_uses_mean": 1,
+    "mutation_delete_earlier_noise": 1,
+    "mutation_double_energy_self_subtraction": 1,
+    "mutation_drop_squared_time_increment": 1,
+    "mutation_erase_finite_background_factor": 1,
+    "mutation_erase_path_integral_memory": 1,
+    "mutation_finite_N_initial_thermal_independence": 1,
+    "mutation_fixed_compact_neighborhood_erases_packing": 1,
+    "mutation_flip_haar_response": 1,
+    "mutation_grid_values_identify_uniform_path": 1,
+    "mutation_insert_deleted_factor_in_bracket": 1,
+    "mutation_negative_exponential_compensator": 1,
+    "mutation_random_bracket_replaced_by_mean": 1,
+    "mutation_remove_noise_factor_two": 1,
+    "mutation_remove_ordered_source_half": 1,
+    "mutation_reuse_three_dimensional_coulomb_decay": 1,
+    "mutation_treat_convolution_as_martingale": 1,
+    "mutation_use_unretained_log_slope_bound": 1,
+    "no_singular_remainder_diagonal": 8,
+    "retained_laplace_positive_product": 60,
+    "retained_next_moment_positive_product": 60,
+    "retained_uniform_log_slope": 60,
+    "retained_weight_positive": 60,
+    "scaled_source_threshold": 33,
+    "smooth_double_contraction": 1,
+    "smooth_haar_response": 4,
+    "source_symmetric_label_half": 336
+  },
+  "evidence_class": "Exact diagnostic support; not analytic certification or an admitted particle counterexample.",
+  "mutation_count": 18,
+  "mutations_rejected_with_nonzero_witness": {
+    "conditional_compensator_uses_mean": {
+      "case": {
+        "conditional_bracket": "3/2",
+        "mean": "4"
+      },
+      "correct": "0",
+      "mutant": "5/4"
+    },
+    "delete_earlier_noise": {
+      "case": {
+        "lambda": "1",
+        "t": "1",
+        "u": "1/2"
+      },
+      "correct": "5/12",
+      "mutant": "7/24"
+    },
+    "double_energy_self_subtraction": {
+      "case": {
+        "N": 3
+      },
+      "correct": "94711/267750",
+      "mutant": "25043/133875"
+    },
+    "drop_squared_time_increment": {
+      "case": {
+        "subsampled_level": 1
+      },
+      "correct": "1/16",
+      "mutant": "16"
+    },
+    "erase_finite_background_factor": {
+      "case": {
+        "N": 3
+      },
+      "correct": "94711/267750",
+      "mutant": "81961/267750"
+    },
+    "erase_path_integral_memory": {
+      "case": {
+        "T": 1,
+        "lambda": 1
+      },
+      "correct": "2/15",
+      "mutant": "1/3"
+    },
+    "finite_N_initial_thermal_independence": {
+      "case": {
+        "E_S": 0,
+        "E_S_M": 0,
+        "E_S_M_squared": "-5/2"
+      },
+      "correct": "-5/2",
+      "mutant": "0"
+    },
+    "fixed_compact_neighborhood_erases_packing": {
+      "case": {
+        "all_in_tube": true,
+        "analytic_infinite_extension": "same disjoint dyadic supports",
+        "radius_about_zero": "1/2",
+        "tested_paths": 10
+      },
+      "correct": "1/2",
+      "mutant": "0"
+    },
+    "flip_haar_response": {
+      "case": {
+        "N": 2,
+        "configuration": [
+          0,
+          1
+        ]
+      },
+      "correct": "-3/4",
+      "mutant": "3/4"
+    },
+    "grid_values_identify_uniform_path": {
+      "case": {
+        "coarse_grid": [
+          "0",
+          "1/2",
+          "1"
+        ],
+        "fine_path": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "uniform_error": "1"
+      },
+      "correct": "1",
+      "mutant": "0"
+    },
+    "insert_deleted_factor_in_bracket": {
+      "case": {
+        "N": 2,
+        "configuration": [
+          0,
+          0
+        ],
+        "nu": "1/2"
+      },
+      "correct": "-2",
+      "mutant": "-1"
+    },
+    "negative_exponential_compensator": {
+      "case": {
+        "bracket": "3/2"
+      },
+      "correct": "0",
+      "mutant": "-3/2"
+    },
+    "random_bracket_replaced_by_mean": {
+      "case": {
+        "conditional_brackets": [
+          "3/2",
+          "13/2"
+        ],
+        "fourth_moment": "267/4"
+      },
+      "correct": "267/4",
+      "mutant": "48"
+    },
+    "remove_noise_factor_two": {
+      "case": {
+        "N": 2,
+        "configuration": [
+          0,
+          0
+        ],
+        "nu": "1/2"
+      },
+      "correct": "-2",
+      "mutant": "-1"
+    },
+    "remove_ordered_source_half": {
+      "case": {
+        "N": 2,
+        "configuration": [
+          0,
+          1
+        ]
+      },
+      "correct": "-3/4",
+      "mutant": "-3/2"
+    },
+    "reuse_three_dimensional_coulomb_decay": {
+      "case": {
+        "actual_d": 4,
+        "actual_s": 2,
+        "mutant_reuses_d": 3,
+        "mutant_reuses_s": 1
+      },
+      "correct": "0",
+      "mutant": "-1/6"
+    },
+    "treat_convolution_as_martingale": {
+      "case": {
+        "lambda": "1",
+        "t": "1",
+        "u": "1/2"
+      },
+      "correct": "5/48",
+      "mutant": "7/24"
+    },
+    "use_unretained_log_slope_bound": {
+      "case": {
+        "M": 5,
+        "alpha": 1,
+        "lambda": "16",
+        "scale": "1",
+        "slope": "1065082/101745"
+      },
+      "correct": true,
+      "mutant": false
+    }
+  },
+  "scope": [
+    "Continuum polynomial-kernel Brownian convolution, temporal increments and integrated path functionals.",
+    "Literal smooth Fourier source and bracket factors; abstract positive splitting algebra and Laplace moments.",
+    "Dyadic summability, interpolation, noncompact neighborhoods and conditional probability-inference controls.",
+    "No actual singular law, compactness theorem or continuum source estimate is proved by this program."
+  ],
+  "script_sha256": "91aa6c94a2304b8c9e682f23a086b5f91d23b2bc97d72e3523186e3b89a38b68",
+  "status": "PASS"
+}

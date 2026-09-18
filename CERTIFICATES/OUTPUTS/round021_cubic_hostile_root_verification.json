@@ -1,0 +1,22 @@
+{
+  "archive_members": 42,
+  "archive_sha256": "2509860f04f3306258118a9b5c232966f5e63fe77ee8ca3a977a1fea74381477",
+  "diagnostic_assertions": 137147,
+  "input_files": 32,
+  "local_packet_files": 44,
+  "payload_outputs": 9,
+  "rejected_in_memory_mutations": [
+    "duplicate",
+    "missing",
+    "unexpected",
+    "traversal",
+    "absolute",
+    "modified_bytes",
+    "symlink",
+    "directory",
+    "duplicate_manifest",
+    "unsafe_manifest"
+  ],
+  "report_sha256": "ba457c2ef2e575c56e68bec429c32c37428113277e8b3964952b01ae92189d29",
+  "status": "PASS"
+}

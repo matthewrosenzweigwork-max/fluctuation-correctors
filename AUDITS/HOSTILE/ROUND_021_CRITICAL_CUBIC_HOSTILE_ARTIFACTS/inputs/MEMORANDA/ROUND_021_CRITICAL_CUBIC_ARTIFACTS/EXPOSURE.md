@@ -1,0 +1,7 @@
+# R21 exposed root construction record
+
+Root Astra Ultra is the coordinator and is not independent. It has read prior complete campaign proofs, audits, state, code and progress summaries, including R15 integrated cubic, R14 lower drift, R16 source, R18/R19 limiting-law work, and R20 worker progress. Memory orientation was used earlier, never as a mathematical source. The complete R21 Sections 1-5 and new exact checker were written before any R21 reconstruction/review dispatch. No R21 worker existed or had supplied a narrative at this seal. This chronology is root attestation, not an independently certified fact.
+
+After the proof existed, root received R18/R19 hostile outcomes and read their source/analytic reports, and received R20 construction/blind progress. Their Gaussian/path claims are not premises for R21. The root may not label this construction isolated. Both new axes must receive fresh bounded contexts; statement-only reconstruction is withheld from this narrative and code until sealing. The packet verifier is transparently adapted from the root R19 byte verifier; it is not an independent mathematical diagnostic. The R21 exact mathematical checker was newly written for this assertion.
+
+No external literature/novelty claim, private source, dependency installation or source-byte edit was used. All old issued histories remain unchanged. Any later correction to this frozen attempt must be a separately issued artifact.

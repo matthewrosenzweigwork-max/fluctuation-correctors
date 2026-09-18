@@ -1,0 +1,44 @@
+{
+  "archive": {
+    "bytes": 339151,
+    "name": "ROUND_020_CONTINUOUS_PATH_BLIND_ARTIFACTS.zip",
+    "sha256": "ef27201a558d36a6942bd236f3c8148466f6c0178542a1f4943ecb5b15ea1515"
+  },
+  "audit": "AUD059",
+  "base_commit": "e75f8b780682a7e9fb0715b5e8b5873be684a2e8",
+  "branch": "codex/hocf-r020-continuous-path-blind",
+  "diagnostics": {
+    "arithmetic": "exact rational and formal finite exponential sums",
+    "assertions_passed": 2508,
+    "mutations_rejected": 13
+  },
+  "format": 1,
+  "input_manifest": {
+    "bytes": 1588,
+    "name": "ROUND_020_CONTINUOUS_PATH_BLIND_INPUT_SHA256SUMS.txt",
+    "sha256": "e033902feed6c5272228e7a292924116c34c9f432fbfcbce4980d47555df2130"
+  },
+  "issued_utc": "2026-09-18T07:11:24Z",
+  "original_input_count": 14,
+  "packet_bytes": 333535,
+  "packet_file_count": 23,
+  "payload_manifest": {
+    "bytes": 2410,
+    "name": "PACKET_SHA256SUMS.txt",
+    "sha256": "f83de3517108b858d1b79b43d1d6b88e7925436b5bcad8a87907e70218cb71dd"
+  },
+  "preseal_verification": {
+    "all_CRCs": true,
+    "complete_member_set": true,
+    "every_member_exact_original_bytes": true,
+    "regular_safe_unique_paths": true
+  },
+  "remaining_gate": "Root comparison and separate hostile/source audits; no constructor narrative received.",
+  "report": {
+    "bytes": 44855,
+    "name": "ROUND_020_CONTINUOUS_PATH_RECONSTRUCTION.md",
+    "sha256": "cc5df442b6be08642cfc3f73685736e3b644fdeaa48d2d12086517df7216fd51"
+  },
+  "task": "TASK091",
+  "verdict": "Entire THM042 reconstructed conditionally on the exact full earlier source premises; separate source and hostile gates remain."
+}

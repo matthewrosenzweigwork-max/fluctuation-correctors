@@ -1,0 +1,9 @@
+{
+  "archive_members": 38,
+  "archive_sha256": "9ef9a557bbef1c7842fd85290e64b7ccfa76811313077c967b155cf114f3556c",
+  "inputs": 29,
+  "output_hashes": 37,
+  "proof_sha256": "6386b59f61d3dc966b049dcd06dcbaeb16db901d5f7b13fdcebe2638f8c89bc8",
+  "status": "PASS",
+  "unsafe_controls_rejected": 9
+}

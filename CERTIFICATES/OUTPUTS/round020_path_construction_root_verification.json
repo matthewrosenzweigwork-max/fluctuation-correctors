@@ -1,0 +1,17 @@
+{
+  "all_packet_files_read_only": true,
+  "archive_members": 22,
+  "archive_read_only": true,
+  "archive_safety": "PASS / exact safe regular-file membership, lengths, CRC reads, bytes and SHA256; no extraction",
+  "archive_sha256": "415139fcb75b92a50e095d8c117111677db6f43f2a1cd9cf66cb9d4f1ea72adf",
+  "diagnostic_rerun": "PASS / exact output byte match",
+  "frozen_inputs": 14,
+  "input_manifest_sha256": "34cf31b9a9d05fa2695764fa0c9998dd9ab771f0a8f8366577b1cac920a1209f",
+  "manifested_outputs": 7,
+  "output_manifest_sha256": "86b557338551b5d07505ec0d5294879deccf240ded94a2637052b2942ccabc97",
+  "packet_bytes": 336658,
+  "packet_files": 22,
+  "sibling_memo_read_only": true,
+  "sibling_memo_sha256": "e5193f460dc6e979459105a60091ecb6c57827552fe1773edae01e7c44cf211f",
+  "status": "PASS"
+}

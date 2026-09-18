@@ -1,0 +1,34 @@
+{
+  "assertions": 12531,
+  "categories": {
+    "admissible_midpoint": 1016,
+    "critical_rescaling": 1016,
+    "exact_iid_second_moment": 15,
+    "initial_decay": 1016,
+    "initial_scaled_L2_bound": 15,
+    "literal_deleted_decomposition": 3267,
+    "lower_decay": 1016,
+    "lower_range": 1016,
+    "lower_scalar_half": 54,
+    "noise_decay": 1016,
+    "noise_equality_no_decay": 1,
+    "noise_polynomial": 1016,
+    "orthogonal_norm": 3,
+    "range_factorization": 28,
+    "source_decay": 1016,
+    "source_equality_no_decay": 1,
+    "strict_source_range": 1016,
+    "zero_rows": 3
+  },
+  "limitations": "Finite exact range and iid/normalization diagnostics. Singular dynamics, imported analytic estimates and their uniformity are proved in full source documents, not by this program.",
+  "mutation_rejections": {
+    "discard_scalar_lower": 54,
+    "missing_noise_1_over_N": 1016,
+    "missing_scalar_endpoint": 15,
+    "strict_endpoint_mutation": 1
+  },
+  "random_seed": null,
+  "script_sha256": "e086ed21a386692721047b221cb90d75b6f50ecea7bde7f828ad1bcb9c1be4dc",
+  "status": "PASS",
+  "tolerance": null
+}

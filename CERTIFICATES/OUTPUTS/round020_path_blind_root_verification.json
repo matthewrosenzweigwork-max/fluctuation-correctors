@@ -1,0 +1,14 @@
+{
+  "archive_sha256": "ef27201a558d36a6942bd236f3c8148466f6c0178542a1f4943ecb5b15ea1515",
+  "audit": "AUD059",
+  "diagnostic_assertions": 2508,
+  "input_files": 14,
+  "mutations_rejected": 13,
+  "packet_bytes": 333535,
+  "packet_files": 23,
+  "read_only_modes": true,
+  "report_sha256": "cc5df442b6be08642cfc3f73685736e3b644fdeaa48d2d12086517df7216fd51",
+  "safe_complete_zip_byte_verification": true,
+  "seal_sha256": "58de312eb0a9b14a02a440d06f3cfbd7d473e007ffef0bd0c20227b50f93eefe",
+  "status": "PASS"
+}

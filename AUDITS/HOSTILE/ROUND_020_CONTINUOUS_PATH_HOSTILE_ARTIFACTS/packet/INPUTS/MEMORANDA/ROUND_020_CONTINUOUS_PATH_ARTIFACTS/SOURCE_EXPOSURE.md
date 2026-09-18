@@ -1,0 +1,26 @@
+# TASK090 source and exposure record
+
+The first accessed files were the root's TASK-090 card and its exact input manifest. The prescribed unique branch/worktree was then created from `e75f8b780682a7e9fb0715b5e8b5873be684a2e8`. Each of the fourteen listed input byte strings was verified at the root before copying and again in the isolated worktree. The manifest itself is routing evidence. Only the allowed inputs were opened; inherited non-allowlisted files were ignored. A filename-only worktree status showed the prescribed overlay and was not used as mathematical evidence.
+
+The supplied R1, R4, R6, R10, R16 and R18 memoranda were read in full, including their historical statuses and limitations. The R18 tool display initially elided part of Sections 4–5; the exact source span was then read directly to recover all of it. No separate historical checker, result, audit, worktree output, root scratch or non-allowlisted referenced source was opened. The read access was to the memoranda themselves, not to programs or results they name.
+
+| Exact permitted source | Load-bearing use | Explicit nondependencies |
+|---|---|---|
+| `AGENTS.md` | Research discipline; task-specific isolation governs general orientation and state directions. | No inherited mandate to inspect non-allowlisted state, README or orchestration. |
+| `TASKS/ACTIVE/ROUND_001_MODEL.md` | Frozen Haar/Fourier/kernel normalization, interaction and noise, original deleted-label centering. | No logarithmic substitution or arbitrary-preparation limit. |
+| `MEMORANDA/ROUND_001_ALGEBRA.md` | Smooth one-body source convention and bracket; genuine singular version derived in new Section 4. | Pair/higher hierarchy and singular diagonal assignments. |
+| `MEMORANDA/ROUND_004_SINGULAR_RESPONSE.md` | Heat representation, local coefficient one, integrable force, divergence atom and compensation, smooth response. | Singular pair propagation and unseen R3 source mentioned historically. |
+| `THEOREMS/THM-026_FINITE_N_SINGULAR_PARTICLE_REALIZATION.md` | Issued finite-particle statement and boundary. | Its OPEN / UNAUDITED card is not evidence of an independent gate. |
+| `MEMORANDA/ROUND_006_SINGULAR_PARTICLE_REALIZATION.md` | Actual global paths, stopped full energy, same-noise finite-N heat passage and measurability. | No N-uniform density transfer or unseen R5 theorem. The needed finite-N proof is present in full. |
+| `MEMORANDA/ROUND_010_ACTUAL_LAW_FALSIFICATION.md` | Sections 2–3 only: actual expected energy, pair-energy moment, Fourier law estimate. | R5 inverse, R8 domain, R9 reference estimate, full singular pair-gradient bracket and residual tail. |
+| `THEOREMS/THM-031_ACTUAL_FOURIER_SMOOTHING_AND_TAIL.md` | Scope map; the full R10 proof supplies the actual used estimates. | Card-level inference that the open pair-gradient tail is closed. |
+| `THEOREMS/THM-038_FULL_SUBCOULOMB_COULOMB_QUADRATIC_SOURCE.md` | Issued source assertion and its fixed-test limitation. | Inference of simultaneous terminal-time control from the card alone. |
+| `MEMORANDA/ROUND_016_SOURCE_EXTENSION.md` | Sections 2–7: actual energy and deterministic positive splitting/commutator/remainder estimates with explicit seminorm dependence. New Section 3 derives simultaneous-family domination. | No new source-gate certification or changed-test theorem inferred from a status. |
+| `THEOREMS/THM-040_BOUNDED_DIFFUSIVITY_FINITE_DIMENSIONAL_GAUSSIAN.md` | Entire issued finite-dimensional statement and exclusions. | Path tightness. |
+| `MEMORANDA/ROUND_018_BOUNDED_NOISE_GAUSSIAN.md` | Entire supplied source inspected; Sections 2–8 furnish the joint probability mechanism, reproduced in the new proof. | The R17 comparison is not a premise; no unseen R17 file is used. Finite-dimensional convergence alone is not path convergence. |
+| `THEOREMS/THM-042_BOUNDED_DIFFUSIVITY_CONTINUOUS_PATH_GAUSSIAN.md` | Entire frozen target, covariance, topology, edges and exact negation. | No narrowing or broader campaign claim. |
+| `TASKS/ACTIVE/TASK-090_ROUND020_CONTINUOUS_PATH_CONSTRUCTION.md` | Worktree, allowed files, output scope, no canonical edits/commits/children, complete sealed handoff. | No inferred authority to run another lane or certify oneself. |
+
+The new deterministic-family source lemma, fourth-moment and dyadic arguments, Gaussian series and direct interpolation passage were constructed in this context. The falsification route uses independent exact tent-path and modal/adapted-Brownian calculations within the same constructor context. These are not isolated audits. The fresh program reads only its own bytes to record its digest; it does not inspect any mathematical input, prior code or saved result. The packet verifier reads only the packet, explicitly named archive and sibling memorandum and can rerun the included program.
+
+Automatically supplied parent/global instructions and the high-level memory summary were unavoidable ambient exposure. No memory file was opened and no memory-derived mathematical fact was used. No external source, web search, private input, install, child agent, author contact, publication, commit or push was used. All earlier source bytes and statuses remain unchanged as issued. The root must arrange both independent whole-claim gates separately.

@@ -1,0 +1,384 @@
+{
+  "code_sha256": "554871c772d03708cde582c4cd7dc01771cf64826e89e082ad43ae648706d5a9",
+  "diagnostic": {
+    "arithmetic": "exact Gaussian rational and rational; no random seed or tolerance",
+    "audit": "AUD062",
+    "categories": {
+      "absolute_lower_slice_integrability": 12384,
+      "all_real_range_witness": 12384,
+      "critical_chi_exact_power": 12384,
+      "deleted_particle_gradient": 140,
+      "entire_empirical_background_bracket": 40,
+      "exact_iid_endpoint_bias": 40,
+      "exact_iid_endpoint_second_moment": 40,
+      "exponent_mutation_equality": 1,
+      "exponent_mutation_q": 1,
+      "exponent_mutation_square": 1,
+      "exponent_mutation_temperature": 1,
+      "genuine_new_ranges_tested": 1,
+      "gradient_lower_admissibility": 12384,
+      "iid_uniform_bound": 40,
+      "independent_carre_du_champ": 40,
+      "initial_L2_range": 12384,
+      "literal_full_generator": 40,
+      "lower_decay_power": 12384,
+      "noise_condition_exact_factor": 12384,
+      "noise_gradient_admissibility": 12384,
+      "nonvacuous_coefficient_mutation_witnesses": 1,
+      "positive_retained_laplace_moment": 240,
+      "scale_uniform_logarithmic_slope": 240,
+      "squared_gradient_power": 12384,
+      "strict_boundary_is_excluded": 1,
+      "strict_four_decay_exponents": 12384,
+      "strict_midpoint_interval": 12384,
+      "terminal_zero_integrated_identity_jet": 16,
+      "zero_hoeffding_rows": 40
+    },
+    "coefficient_mutations": {
+      "discard_all_cubic_backgrounds": {
+        "context": {
+          "N": 2,
+          "kernel": "relative",
+          "nu": "0"
+        },
+        "frequency": [
+          -1,
+          1
+        ],
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "-1/8"
+        }
+      },
+      "double_symmetrized_cubic": {
+        "context": {
+          "N": 2,
+          "kernel": "relative",
+          "nu": "0"
+        },
+        "frequency": [
+          -1,
+          1
+        ],
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "1/8"
+        }
+      },
+      "drop_N2_cubic": {
+        "context": {
+          "N": 2,
+          "kernel": "relative",
+          "nu": "0"
+        },
+        "frequency": [
+          -1,
+          1
+        ],
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "-1/8"
+        }
+      },
+      "falling_factorial_pair_denominator": {
+        "context": {
+          "N": 2,
+          "kernel": "relative",
+          "nu": "0"
+        },
+        "frequency": [
+          -3,
+          3
+        ],
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "1/24"
+        }
+      },
+      "halve_internal_coefficient": {
+        "context": {
+          "N": 2,
+          "kernel": "relative",
+          "nu": "0"
+        },
+        "frequency": [
+          -3,
+          3
+        ],
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "-1/48"
+        }
+      },
+      "omit_response_slot": {
+        "context": {
+          "N": 2,
+          "kernel": "relative",
+          "nu": "0"
+        },
+        "frequency": [
+          -1,
+          1
+        ],
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "1/16"
+        }
+      },
+      "omit_scalar_lower": {
+        "context": {
+          "N": 2,
+          "kernel": "relative",
+          "nu": "0"
+        },
+        "frequency": [
+          0,
+          0
+        ],
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "1/4"
+        }
+      },
+      "remove_background_from_bracket": {
+        "context": {
+          "N": 2,
+          "kernel": "all_projections",
+          "nu": "2/5"
+        },
+        "frequency": [
+          -3,
+          1
+        ],
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "-2/15"
+        }
+      },
+      "reverse_initial_sign": {
+        "context": {
+          "N": 2,
+          "kernel": "all_projections",
+          "nu": "2/5"
+        },
+        "horizon_power": 1,
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "-1/4"
+        }
+      },
+      "reverse_lower_sign": {
+        "context": {
+          "N": 2,
+          "kernel": "relative",
+          "nu": "2/5"
+        },
+        "horizon_power": 2,
+        "nonzero_residual_coefficient": {
+          "imaginary": "0",
+          "real": "-1/4"
+        }
+      }
+    },
+    "exponent_mutations": {
+      "drop_q_lower_one": {
+        "d": 3,
+        "mutant_q": "23/40",
+        "rejected": "q is not greater than one",
+        "s": "1/10"
+      },
+      "include_noise_equality": {
+        "d": 12,
+        "mutant_bracket_power": "0",
+        "rejected": "not strictly negative",
+        "s": "4"
+      },
+      "omit_square_gradient_factor": {
+        "correct_power": "23/43",
+        "d": 5,
+        "mutant_power": "23/86",
+        "rejected": "scaling identity fails",
+        "s": "23/10"
+      },
+      "reciprocal_temperature_sign": {
+        "d": 3,
+        "mutant_chi_power": "49/30",
+        "rejected": "positive instead of negative",
+        "s": "1/2"
+      }
+    },
+    "integrated_identity_jets": [
+      {
+        "N": 2,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "0"
+        },
+        "kernel": "relative",
+        "nu": "2/5",
+        "power": 1
+      },
+      {
+        "N": 2,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "0"
+        },
+        "kernel": "relative",
+        "nu": "2/5",
+        "power": 2
+      },
+      {
+        "N": 2,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "-1/48"
+        },
+        "kernel": "relative",
+        "nu": "2/5",
+        "power": 3
+      },
+      {
+        "N": 2,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "7/2880"
+        },
+        "kernel": "relative",
+        "nu": "2/5",
+        "power": 4
+      },
+      {
+        "N": 2,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "0"
+        },
+        "kernel": "all_projections",
+        "nu": "2/5",
+        "power": 1
+      },
+      {
+        "N": 2,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "0"
+        },
+        "kernel": "all_projections",
+        "nu": "2/5",
+        "power": 2
+      },
+      {
+        "N": 2,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "-1/72"
+        },
+        "kernel": "all_projections",
+        "nu": "2/5",
+        "power": 3
+      },
+      {
+        "N": 2,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "7/4320"
+        },
+        "kernel": "all_projections",
+        "nu": "2/5",
+        "power": 4
+      },
+      {
+        "N": 3,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "0"
+        },
+        "kernel": "relative",
+        "nu": "2/5",
+        "power": 1
+      },
+      {
+        "N": 3,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "0"
+        },
+        "kernel": "relative",
+        "nu": "2/5",
+        "power": 2
+      },
+      {
+        "N": 3,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "-1/81"
+        },
+        "kernel": "relative",
+        "nu": "2/5",
+        "power": 3
+      },
+      {
+        "N": 3,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "451/87480"
+        },
+        "kernel": "relative",
+        "nu": "2/5",
+        "power": 4
+      },
+      {
+        "N": 3,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "0"
+        },
+        "kernel": "all_projections",
+        "nu": "2/5",
+        "power": 1
+      },
+      {
+        "N": 3,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "0"
+        },
+        "kernel": "all_projections",
+        "nu": "2/5",
+        "power": 2
+      },
+      {
+        "N": 3,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "-2/243"
+        },
+        "kernel": "all_projections",
+        "nu": "2/5",
+        "power": 3
+      },
+      {
+        "N": 3,
+        "cubic_coefficient": {
+          "imaginary": "0",
+          "real": "451/131220"
+        },
+        "kernel": "all_projections",
+        "nu": "2/5",
+        "power": 4
+      }
+    ],
+    "limitations": "Finite smooth Fourier probes, finite exact parameter grid and Laplace moments support the analytic audit; they do not prove singular-domain or uniform limiting estimates.",
+    "script_sha256": "554871c772d03708cde582c4cd7dc01771cf64826e89e082ad43ae648706d5a9",
+    "status": "PASS",
+    "total_assertions": 137147,
+    "unique_admitted_parameter_pairs": 12384
+  },
+  "fresh_result_byte_identical": true,
+  "initial_attempt": "Read-only stdout comparison failed solely because print(rendered) appends a newline to a JSON string already ending in newline. The saved result writes rendered directly. Repeated the documented --write only in a fresh code-only temporary directory; exact saved bytes match. Original packet unchanged.",
+  "readonly_original_files": true,
+  "status": "PASS",
+  "stdout_has_one_extra_print_newline": true,
+  "temporary_directory": "/private/tmp/hocf-r021-hostile-root-record-gv01iv5t"
+}

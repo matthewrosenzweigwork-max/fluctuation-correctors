@@ -1,0 +1,141 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[left=0.85in,right=0.85in,top=0.75in,bottom=0.75in]{geometry}
+\usepackage{hyperref}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\begin{document}
+\begin{center}
+{\Large Continuous-path fluctuations and the critical cubic residual}\\[4pt]
+HOCF--RIESZ, Rounds 020--021 \quad 18 September 2026
+\end{center}
+\noindent\textbf{Status.} THM--042 and THM--043 have passed separate whole-statement reconstructions and hostile reviews (AUD059--062). Root compared the complete proofs, matched the exact accepted source premises, and reproduced every sealed diagnostic. This synthesis records the two accepted scopes. Complete proofs, source qualifications and exposure histories remain in the Round 020/021 Markdown memoranda, immutable packets and gate-integration records.
+
+\paragraph{Common model.}
+On the unit-mass torus, particles start iid Haar, independently of independent Brownian drivers, and follow the actual noncolliding singular gradient dynamics
+\[
+ dX_i=\frac1N\sum_{j\ne i}K(X_i-X_j)\,dt+\sqrt{2\nu_N}\,dW_i,
+ \qquad K=-\nabla g,\quad
+ \widehat g(k)=c_{d,s}|k|^{s-d}\ (k\ne0),\quad\widehat g(0)=0,
+\]
+with coefficient-one Riesz normalization and Fourier characters $e^{2\pi i k\cdot x}$.
+Here $c_{d,s}=\pi^{s-d/2}\Gamma((d-s)/2)/\Gamma(s/2)$, $d\ge3$ and $0<s\le d-2$. Write
+$\eta_N=N^{-1}\sum_i\delta_{X_i}$, $\rho_N=\eta_N-dx$,
+$b(0)=1$, $b(\nu)=\min(1,1/\nu)$ for $\nu>0$, and $\sigma_N=\sqrt{Nb(\nu_N)}$.
+The empirical and background terms use ordered deleted labels divided by $N^k$, and $P_N=U_2/2$. Translation invariance and pathwise uniqueness give exact one-body Haar centering. No positive-time product law is assumed.
+
+\paragraph{The continuous-path assertion.}
+THM--042 adds $s<d/2$, a finite horizon $T$, a fixed finite list of real smooth tests $h_1,\ldots,h_m$, and bounded diffusivities $\nu_N\to\bar\nu\ge0$ without a rate. It asserts convergence of
+\[
+ Z_N(t)=\bigl(\sigma_N\rho_N(t)[h_j]\bigr)_{j=1}^m
+ \quad\hbox{in }C([0,T],\R^m)
+\]
+with the uniform norm, to a centered continuous Gaussian process. Put
+$a_k=4\pi^2|k|^2$, $D_k=4\pi^2c_{d,s}|k|^{s+2-d}$, $L_k=D_k+\bar\nu a_k$, and $\bar b=b(\bar\nu)$. Its exact covariance is
+\[
+ \E Z_i(t)Z_j(u)=\bar b\sum_{k\ne0}\widehat h_i(k)\overline{\widehat h_j(k)}
+ \left[\frac{D_k}{L_k}e^{-(t+u)L_k}
+       +\frac{\bar\nu a_k}{L_k}e^{-|t-u|L_k}\right].
+\]
+The initial and thermal components remain distinct. Zero noise, zero horizon, constants, repeated tests and all covariance degeneracies are included. Finite-dimensional convergence is already an accepted input in its exact bounded-noise scope; the new obligation is the uniform path topology.
+
+\paragraph{The simultaneous source estimate.}
+Let $Q_t^\nu$ preserve constants and have multiplier $e^{-t(D_k+\nu a_k)}$ on nonzero modes. The full positive-retention proof in Round 016 gives, at each collision-free configuration and simultaneously for every smooth $f$,
+\[
+ |P_N[J^f](x)|\le C\|f\|_{\mathcal A_R}
+       [E_\ell(x)+S_{2\ell}(x)+c_{2\ell}],\qquad
+ J^f(x,y)=K(x-y)\cdot(\nabla f(x)-\nabla f(y)),
+\]
+where $R=(d-s)/2+d+5$, $\|f\|_{\mathcal A_R}=\sum_k(1+|k|)^R|\widehat f(k)|$, and the bracketed quantity is nonnegative. The exact retained-energy identity and actual expected-energy bound imply
+\[
+ \sup_{r\le T}\E[E_\ell+S_{2\ell}+c_{2\ell}](X(r))
+ \le C(N^{-1}\ell^{-s/2}+\ell^{(d-s)/2}).
+\]
+Every spatial seminorm of $Q_a^{\nu_N}h$ is bounded by the corresponding seminorm of $h$. Taking $\ell=N^{-2/d}$ therefore bounds the entire backward-test family at once. The actual nonlinear remainder
+\[
+ E_N^h(t)=\sigma_N\int_0^tP_N[J^{Q_{t-r}^{\nu_N}h}](X(r))\,dr
+\]
+satisfies
+\[
+ \E\sup_{t\le T}|E_N^h(t)|\le C\sqrt{b_N}N^{s/d-1/2}\longrightarrow0.
+\]
+The supremum is taken before expectation, using deterministic domination. A separate expectation bound at each time would not justify this step. The original deleted source and every Haar contraction remain; no singular self value or source-square bound is introduced.
+
+\paragraph{Actual tightness and the continuous Gaussian law.}
+The genuine stopped first-order identity gives $Z_N=I_N+M_N+E_N$, with
+\[
+ I_N^h(t)=\sqrt{b_N/N}\sum_i\left(Q_t^{\nu_N}h(X_i(0))-\int h\right),\qquad
+ M_N^h(t)=\sqrt{2\nu_Nb_N/N}\sum_i\int_0^t
+       \nabla Q_{t-r}^{\nu_N}h(X_i(r))\cdot dW_i(r).
+\]
+The process $M_N^h$ is a stochastic convolution in its terminal time. Its increment between $u$ and $t$ retains both the change of the old integrand on $[0,u]$ and the new integral on $(u,t]$.
+The former integrand is bounded by $C|t-u|$ and the latter by $C$, uniformly on bounded noise intervals. A deterministic bracket-density bound and stopped It\^o calculus yield
+\[
+ \E|M_N^h(t)-M_N^h(u)|^4\le C|t-u|^2,
+ \qquad \E|I_N^h(t)-I_N^h(u)|^4\le C|t-u|^4.
+\]
+Initial fourth moments are bounded. Dyadic adjacent-increment estimates and chaining give compact H\"older sets for $I_N+M_N$. The vanishing expected supremum of $E_N$ transfers tightness by actual modulus sets, with finitely many small $N$ handled by continuity. A fixed neighborhood of a compact set is not presumed compact.
+
+For a real orthonormal sine/cosine basis $(e_l)$, independent standard normals $\xi_l$ and independent Brownian motions $B_l$ construct the limit through
+\[
+ Z_j(t)=\sum_l\left(\int h_je_l\right)\sqrt{\bar b}
+ \left[e^{-L_lt}\xi_l+\sqrt{2\bar\nu a_l}\int_0^t e^{-L_l(t-r)}dB_l(r)\right].
+\]
+The deterministic convolution identity bounds its path supremum by twice the Brownian supremum. Smooth Fourier coefficients give absolute uniform convergence almost surely and convergence of tails in expected uniform norm. The series thus defines the continuous Gaussian process with the displayed covariance. Actual finite-dimensional convergence, polygonal interpolation, tight moduli and compact-set Lipschitz approximation prove full weak convergence for bounded continuous path functionals.
+
+\paragraph{The larger critical cubic range.}
+THM--043 instead assumes strict sub-Coulomb interaction and positive finite microscopic criticality:
+\[
+ 0<s<d-2,\qquad s(s+2)<2d,\qquad
+ \lambda_N:=\beta_NN^{s/d-1}\longrightarrow\lambda\in(0,\infty),
+ \qquad\nu_N=\beta_N^{-1}.
+\]
+Let $\Phi$ be the genuine symmetric terminal-zero full pair inverse for the backward source, with internal drift $B/N$ and both compensated response slots. Use the actual Round 008 representatives. Write
+\[
+ B\Phi=K(x-y)\cdot(\nabla_x-\nabla_y)\Phi,\quad
+ g_t(x)=\int B\Phi_t(x,y)\,dy,\quad c_t=\int g_t,
+\]
+and let $C\Phi=\operatorname{Sym}_3[K(x-z)\cdot\nabla_x\Phi(x,y)]$, averaging all six permutations. The exact genuine identity is
+\[
+ dP_N[\Phi_t]=\left[-P_N[J_t]+U_3[C\Phi_t]
+          +\frac{\rho_N[g_t]}N+\frac{c_t}{2N}\right]dt+dM_t^{(2)}.
+\]
+The full $U_3$ includes all Haar backgrounds, even when its raw three-distinct-label sum is empty at $N=2$. Terminal $\Phi_T=0$ implies
+\[
+ \int_0^TU_3[C\Phi_t]dt
+ =\int_0^TP_N[J_t]dt-P_N[\Phi_0]-M_T^{(2)}
+       -\int_0^T\left[\frac{\rho_N[g_t]}N+\frac{c_t}{2N}\right]dt.
+\]
+This controls the absolute value \emph{after} time integration. It does not assert an instantaneous absolute cubic estimate.
+
+\paragraph{Every exponent and source hypothesis.}
+Set $p=s+2$, $a=s/p$, $\theta=1-s/d$, and
+\[
+ q=\tfrac12\left[\max(1,s/2)+\min(d/2,d-s-1,s+1)\right],\qquad
+ \kappa=\frac{2q-s}{2p}.
+\]
+The strict noise condition gives $a<\theta$ and implies $s<d/2$. It also gives $3s<2d-2$: for $d=3$ use $s<1$, and for $d\ge4$ the increasing function $x(x+2)$ obeys
+\[
+ \left. x(x+2)-2d\right|_{x=2(d-1)/3}
+ =\frac{2(2d+1)(d-4)}9\ge0.
+\]
+Thus the interval defining $q$ is nonempty and $\kappa>0$. On the eventual critical tail, $b_N=1$ and
+\[
+ \nu_N=\lambda_N^{-1}N^{-\theta}\to0,\qquad
+ \chi_N=\nu_NN^{2/p}
+ =\lambda_N^{-1}N^{s(s+2-d)/(d(s+2))}\to0.
+\]
+Every bounded-noise and bounded-$\chi$ source theorem is therefore used within its hypotheses, with constants depending only on fixed data and eventual finite upper/lower bounds on $\lambda_N$.
+
+The accepted Round 016 source, Round 005 initial iid endpoint, Round 012 whole martingale bracket and Round 014 lower contractions give, respectively,
+\[
+ \sigma_N\E\left|\int_0^TU_3[C\Phi_t]dt\right|
+ \le C\left[N^{s/d-1/2}+N^{-1/2}
+            +N^{(a-\theta)/2}+N^{-\kappa}\right]\longrightarrow0.
+\]
+The initial endpoint uses $2s<d$ and the exact deleted-label second-moment decomposition. The true martingale uses its entire bracket and It\^o isometry. Both lower contractions, including the scalar half, remain. Fixed-$N$ density bounds justify genuine singular representatives and It\^o passage but are not used uniformly in $N$. This accepted result extends the earlier integrated cubic range. Both independent gates cover this entire strict range and the precise integrated norm.
+
+\paragraph{Remaining scope.}
+Neither assertion resolves the entire higher-order hierarchy, larger singularities, arbitrary preparation, logarithmic or inhomogeneous models. The field-valued extension is a separate pending THM--044. The old energy-floor condition $\beta_NN^{2s/d-1}\to0$, full microscopic subcriticality $\lambda_N\to0$, and finite positive criticality remain distinct. No private source, unverified external theorem or novelty claim is used.
+\end{document}

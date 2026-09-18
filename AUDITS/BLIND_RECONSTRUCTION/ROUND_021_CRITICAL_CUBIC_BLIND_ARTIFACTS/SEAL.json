@@ -1,0 +1,12 @@
+{
+  "archive_manifest_sha256": "bff8e7e4c1b5013e33231bd4390e437564e99baef6bf577d078ee34ddca9269c",
+  "archive_members": 38,
+  "archive_sha256": "5441c0748e9d9488c843ea3d572e49ec2f82f10bde79229a79a49f3f5c3fc645",
+  "base_commit": "e75f8b780682a7e9fb0715b5e8b5873be684a2e8",
+  "branch": "codex/hocf-r021-critical-cubic-blind",
+  "input_count": 29,
+  "input_manifest_sha256": "03b7096962cd368eda6fc69bacb9fdbc0a99fe309f6433782e34a73c4e1cf5b2",
+  "output_manifest_sha256": "6a2bc016f7e1c280ee721135356e614afd7adda98d166668cd8cba829d23794d",
+  "report_sha256": "b3644dcb74b59677e7e873428c2a2e0e24a39c3862299cf4c869bd245dadb124",
+  "schema": "AUD061-v1"
+}

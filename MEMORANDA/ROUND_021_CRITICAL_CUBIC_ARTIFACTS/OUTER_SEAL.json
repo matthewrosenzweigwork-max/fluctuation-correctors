@@ -1,0 +1,9 @@
+{
+  "archive_members": 38,
+  "archive_name": "ROUND_021_ROOT_CRITICAL_CUBIC_20260918T064424Z.zip",
+  "archive_sha256": "9ef9a557bbef1c7842fd85290e64b7ccfa76811313077c967b155cf114f3556c",
+  "output_manifest_sha256": "9dee64b133e008b38b8844027b2bb2ebee5d6aa57a598fcff59c25a812c52c9c",
+  "proof_sha256": "6386b59f61d3dc966b049dcd06dcbaeb16db901d5f7b13fdcebe2638f8c89bc8",
+  "status": "SELF_CHECKED; independent axes pending",
+  "utc": "20260918T064424Z"
+}

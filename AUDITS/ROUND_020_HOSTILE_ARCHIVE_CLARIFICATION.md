@@ -1,0 +1,3 @@
+# AUD060 archive-format clarification
+
+The immutable hostile report's final safety paragraph says ZIP. Its actual issued archive is ROUND_020_CONTINUOUS_PATH_HOSTILE_PACKET.tar.gz, as its README, Python tarfile verifier and magic bytes show. Root verified the exact25 regular tar members, complete sizes/hashes, no links/duplicates/unsafe paths and all17 detecting tamper controls without extraction. Archive SHA2566a8266c8559081350134ec83cc357ecdc41e1386773ebeb835b7b6734f9af826; final-manifest SHA256abf801a3552f2383f21987fb27a018cd241d6ff62751d61b164c78e553af10c5. This is a format-description clarification, with no mathematical or evidence-byte change.

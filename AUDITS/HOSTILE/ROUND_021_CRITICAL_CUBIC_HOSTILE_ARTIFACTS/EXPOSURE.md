@@ -1,0 +1,11 @@
+# AUD062 exposure and isolation record
+
+2026-09-18 UTC. This is the fresh TASK095 hostile lane, requested as Astra Max by the root. It is intentionally exposed to the full frozen R21 construction. It is not a statement-only reconstruction and does not claim blindness to the constructor narrative.
+
+The task and its exact 32-input hash manifest were the first files read. The prescribed branch/worktree was created at published base 64ac0538dff37a37d0883661b401ad04c311a5e5, and only the 32 prescribed inputs were overlaid. Each input was checked before mathematical use, after overlay, and on copying into this packet. The complete allowed proofs and source cards were read. The exposed R21 candidate, its exposure statement and source map were permitted inputs. Root's chronology was read as attestation and was not independently certified.
+
+Ambient system/developer/user messages include general research instructions, tool and skill catalogs, and an automatically supplied high-level memory summary. No memory file was opened; no mathematical premise, source identity, current state or verdict was taken from that summary. Creating the prescribed worktree displayed the base commit's subject. That incidental subject was not used as evidence for any mathematical or audit claim.
+
+The permitted source proofs and two allowed R5 audit-directory addenda contain historical report references, status labels, checker descriptions and counts. Those embedded passages were encountered because their parent files are required inputs. No referenced nonpermitted report, program, results, archive, state, history, root scratch, R15 synthesis, R17–R20 mathematics/audits, R21 blind output or progress, or external link was opened. None of those embedded labels or counts supplied a premise. No other worker was queried. Root progress messages from this lane conveyed only this lane's own status.
+
+The new exact diagnostic and read-only verifier were written in this context from standard-library primitives, without reading a previous checker or verifier. This lane used no child, dependency installation, external browse, public communication, commit or push. The mathematical verdict belongs to this independent hostile axis only. The root alone compares axes, verifies historical source-gate matching and assigns canonical status.

@@ -1,0 +1,11 @@
+{
+  "all_issued_files_read_only": true,
+  "archive_members": 38,
+  "archive_sha256": "5441c0748e9d9488c843ea3d572e49ec2f82f10bde79229a79a49f3f5c3fc645",
+  "disk_packet_files": 41,
+  "extraction_performed": false,
+  "input_files": 29,
+  "nonvacuous_integrity_mutation_count": 9,
+  "report_sha256": "b3644dcb74b59677e7e873428c2a2e0e24a39c3862299cf4c869bd245dadb124",
+  "status": "PASS"
+}
