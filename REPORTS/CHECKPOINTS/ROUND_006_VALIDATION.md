@@ -1,0 +1,11 @@
+# Round006 final validation
+
+Input HEAD32d17afba1ddb3c4198fb9a45e912907629618ce. Empty index before explicit staging; all31 initial paths are campaign research,canonical state,immutable audit evidence,verification/artifacts or the explicitly OPEN R8 domain dossier. No unrelated user changes,protected source/authority edits,dependencies,global configuration,remote settings or history changes. R6 promotes only THM026's exact bounded scope,not THM027/028 or a fluctuation theorem.
+
+Protected provenance and shipped verification PASS:51 immutable baseline entries unchanged,23 documented mutable paths differing from baseline,original note SHA256a332f829904a80c27f0c13291758c316f1fcdd7460a3b0d6d67c1ff1bf18ff76. Current issued R4–R8 manifests56 and358 file checks all PASS. Historical mutable checkpoint manifests are not rewritten. New Python source parses and text control-character/allowed-path checks pass.
+
+Root read the full constructor/reconstruction/hostile proof set,compared exact scopes/constants and reviewed all substantive canonical/decision/obligation/theorem diffs. The independent hostile4910-check rerun in a writable temp directory produces byte-identical output; the original output-location PermissionError is documented and sealed bytes/modes preserved. Complete R6 TeX log clean; all3pages rendered/viewed,192623bytes,without clipping or equation defects. Computation/build success is not treated as a proof by itself.
+
+Explicit initial stage31 named paths; complete path list inspected. Every staged byte equals its reviewed working file. git diff --check PASS before staging. git diff --cached --check has exactly one warning: CERTIFICATES/OUTPUTS/round006_tex_build.txt:199,new blank line at EOF. The verbatim transcript is preserved intentionally; no other whitespace defect or evidence normalization. This record,inventory and nonselfhash manifest bring the final stage to34 paths and33 checkpoint hashes.
+
+The owner-authorized ordinary commit/push uses unchanged origin/main; independently compare localHEAD,origin/main and live remote main afterward and record the literal hash outside its own commit. No amend,force push,history rewrite or remotes alteration. Active gradient/domain workers write only their isolated worktrees; their unissued output is not absorbed.

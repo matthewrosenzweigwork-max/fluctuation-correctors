@@ -1,0 +1,198 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\T}{\mathbb T}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Pp}{\mathbb P}
+\title{Finite-particle singular realization and heat passage}
+\author{HOCF--RIESZ, Round 006}
+\date{18 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Scope and status.}
+This memorandum records the finite-$N$ assertion THM--026. Its complete
+construction, fresh reconstruction and hostile review have separate immutable
+Markdown reports; subsequent dispositions are in the canonical theorem ledger.
+The result concerns particle realization and law domination. It does not supply
+the domain of a singular pair corrector or estimates uniform in particle number.
+
+\section*{Model and precise conclusions}
+The torus has Haar mass one and characters $e^{2\pi i k\cdot x}$. Fix
+$d\ge3$, $0<s\le d-2$, $N\ge2$, $0\le\nu<\infty$, a finite horizon $T$,
+and a smooth real periodic potential $V$. Set $b=-\nabla V$, $K=-\nabla g_s$,
+where
+\[
+ \widehat g_s(0)=0,\qquad
+ \widehat g_s(k)=\pi^{s-d/2}
+ \frac{\Gamma((d-s)/2)}{\Gamma(s/2)}|k|^{s-d},\quad k\ne0.
+\]
+The previously proved heat representation gives $g_s(z)=|z|^{-s}+h_s(z)$
+with a smooth even local remainder, $g_s,K\in L^1$, and
+\[
+ D:=\operatorname{div}K=
+ \begin{cases}
+ s(d-2-s)g_{s+2}\,dz,&s<d-2,\\
+ c_d(\delta_0-dz),&s=d-2,
+ \end{cases}
+ \qquad c_d=(d-2)|\mathbb S^{d-1}|.
+\]
+Choose $a,\kappa\ge0$ with $\operatorname{div}b\ge-a$ and
+$D\ge-\kappa\,dz$, and put $C_N=Na+(N-1)\kappa$.
+With independent standard Brownian motions, the equation is
+\[
+ dX_i=\left[b(X_i)+\frac1N\sum_{j\ne i}K(X_i-X_j)\right]dt
+       +\sqrt{2\nu}\,dW_i.
+\]
+From every fixed distinct configuration it has a unique global collision-free
+pathwise realization. The path and transition kernels are jointly Borel and
+have the deterministic-time conditional Markov property. Each fixed realized
+finite horizon has a positive minimum pair distance. No single exceptional
+set for all uncountably many starts is asserted.
+
+For the same initial state and Brownian motions, replacing $K$ by its positive
+heat convolution $K_\varepsilon$ gives
+\[
+ \sup_{0\le t\le T}\max_i
+ \operatorname{dist}_{\T^d}(X_i^\varepsilon(t),X_i(t))\longrightarrow0
+ \quad\text{almost surely as }\varepsilon\downarrow0.
+\]
+This is a fixed-parameter full-family limit, with no uniform rate. An initial
+probability density $F_0\in L^\infty((\T^d)^N)$, independent of the Brownian
+motions, evolves to a density with
+\[
+ F_t\le\|F_0\|_\infty e^{C_Nt}\quad\text{almost everywhere}.
+\]
+For iid initial density bounded by $M$, the factor is $M^Ne^{C_Nt}$.
+The estimate does not propagate independence or give a uniform bound in $N$.
+
+\section*{Energy controls every partial collision}
+Write $v_*=\min V$, $g_*=\inf_{z\ne0}g_s(z)>-\infty$, and define
+\[
+ H_N=\sum_iV(x_i)+\frac1N\sum_{i<j}g_s(x_i-x_j),\qquad
+ \mathcal E_N=H_N-Nv_*-\frac{N-1}{2}g_*.
+\]
+Each summand in
+\[
+ \mathcal E_N=\sum_i(V(x_i)-v_*)+
+        \frac1N\sum_{i<j}(g_s(x_i-x_j)-g_*)
+\]
+is nonnegative. Thus a single colliding pair forces the energy to infinity,
+including at simultaneous clusters or disjoint partial collisions. All energy
+sublevels are compact in the collision-free configuration space. If
+$\delta=\min_{i<j}\operatorname{dist}(x_i,x_j)\le r_0=1/4$, a fixed
+$A>0$ determined by the local remainder gives
+\[
+ \mathcal E_N\ge\frac{\delta^{-s}-A}{N}.
+\]
+The complete drift $B$ is $-\nabla H_N$ and the full trace is
+\[
+ \Delta_{Nd}H_N=\sum_i\Delta V(x_i)+\frac2N\sum_{i<j}\Delta g_s(x_i-x_j)
+ \le C_N.
+\]
+The coefficient is $2/N$. At Coulomb, the punctured periodic Laplacian is
+$\Delta g_s=c_d$; it is not the zero Euclidean principal Laplacian.
+For $Q_N=C_N-\Delta H_N\ge0$, the exact generator identity is
+\[
+ L_N\mathcal E_N=\nu C_N-|B|^2-\nu Q_N.
+\]
+The square is the full squared total drift. Its triple cross terms can have
+either sign and are not discarded. Three equally spaced collinear particles
+have zero leading force on the middle particle but divergent total pair energy;
+no individual-force coercivity is needed.
+
+\section*{Construction, stopping and global integrability}
+Smooth periodic force cutoffs agree with $K$ away from a shrinking collision
+tube. Subtracting the continuous additive driving path gives a globally
+Lipschitz integral equation; Picard iteration and Gronwall construct its unique
+solution and Borel dependence. Local uniqueness patches these solutions up to
+collision. On the torus the only possible finite lifetime approaches that set.
+
+Let $\sigma_R$ be the first energy-level exit. Before this stop the coefficients
+and energy derivatives lie in a fixed compact smooth region. Smooth It\^o
+calculus therefore gives
+\begin{align*}
+ \mathcal E_N(X_{t\wedge\sigma_R})
+ &+\int_0^{t\wedge\sigma_R}|B|^2\,dr
+ +\nu\int_0^{t\wedge\sigma_R}Q_N\,dr
+ =\mathcal E_N(x)+\nu C_N(t\wedge\sigma_R)+M_R(t),\\
+ [M_R]_t&=2\nu\int_0^{t\wedge\sigma_R}|B|^2\,dr.
+\end{align*}
+The stopped integrand is bounded, so $M_R$ is a true square-integrable
+martingale. Taking expectations, using nonnegativity, yields
+\[
+ \Pp_x(\sigma_R\le T)\le\frac{\mathcal E_N(x)+\nu C_NT}{R}.
+\]
+Energy coercivity implies that these stops exhaust the local lifetime.
+Letting $R$ tend to infinity proves noncollision and global uniqueness, before
+using positive minimum path separation.
+
+For independent initial data with $J_0=\E\mathcal E_N(X_0)<\infty$, Fatou
+first proves integrability of $\int_0^T|B|^2$ and $\int_0^T\nu Q_N$.
+The unstopped energy martingale is then square integrable. Its omitted bracket
+has expectation tending to zero, so the stopped martingales converge in $L^2$.
+Passing the localized identity and taking expectations now gives the equality
+\[
+ \E\mathcal E_N(X_t)+\E\int_0^t|B|^2\,dr
+        +\E\int_0^t\nu Q_N\,dr=J_0+\nu C_Nt.
+\]
+At $\nu=0$ the last integral is identically zero; no division by $\nu$ occurs.
+The same stopped argument at a distance threshold $\rho$ gives
+\[
+ \Pp\left(\min_{[0,T]}\delta(X_t)\le\rho\right)
+ \le\frac{N(J_0+\nu C_NT)}{\rho^{-s}-A}
+ \le2N(J_0+\nu C_NT)\rho^s
+\]
+when $0<\rho\le r_0$ and $\rho^{-s}\ge2A$.
+For bounded $F_0$, the required energy mean is finite because
+\[
+ \int\mathcal E_N\,dX=N\left(\int V-v_*\right)-\frac{N-1}{2}g_*<\infty.
+\]
+This initial integrability is established before any density propagation.
+
+The countable cutoff construction yields a Borel set of good start/path pairs,
+whose section has probability one at each distinct start. Independent Brownian
+increments and Fubini at a random current state justify deterministic-time
+restart and the Markov property. A universal exceptional set is unnecessary.
+
+\section*{Heat coupling and density passage}
+On every compact set away from zero, $K_\varepsilon\to K$ in $C^1$.
+To prove this, separate a smooth part agreeing with $K$ near that set from an
+$L^1$ distant part. Gaussian derivative tails bound the latter by an inverse
+power of $\varepsilon$ times $e^{-c/\varepsilon}$. Fix a noncolliding path and
+its positive minimum separation. The Brownian terms cancel in the same-noise
+difference equation. A stopped Gronwall bound prevents the smooth trajectory
+from leaving a small neighborhood of that path for every sufficiently small
+$\varepsilon$. This proves the full-family uniform path limit.
+
+The regularized full drift has exact divergence
+\[
+ \operatorname{div}_{Nd}B^\varepsilon
+ =\sum_i\operatorname{div}b(x_i)+\frac2N\sum_{i<j}D_\varepsilon(x_i-x_j)
+ \ge-C_N.
+\]
+For each continuous driving path its smooth flow is a spatial diffeomorphism:
+solve the translated integral equation backwards for its inverse. Its ordinary
+variational equation gives a Jacobian determinant at least $e^{-C_Nt}$.
+Change of variables, the bound on $F_0$, and Brownian expectation give
+\[
+ \E G(X_t^\varepsilon)\le\|F_0\|_\infty e^{C_Nt}\int G\,dX
+ \quad(G\ge0\text{ continuous}).
+\]
+The same-noise convergence and bounded convergence first pass this inequality
+for continuous tests. Increasing continuous approximations of open-set
+indicators, followed by Haar outer regularity, extend it to all Borel sets.
+This proves the asserted density domination without assuming a singular
+Fokker--Planck solution, convergence for all Borel terminal tests, or an inverse
+for the limiting singular flow.
+
+\section*{The remaining corrector-domain line}
+These results do not justify applying It\^o calculus to the bounded Borel
+full pair inverse from Round005. Its spatial and time derivatives,
+differentiated background contractions, singular generator identity, and
+residual/bracket approximation remain separate obligations. A finite-$N$
+density bound transfers an already proved integrable function; it cannot
+supply a missing derivative or turn a nonintegrable expression into an
+integrable one. Uniform evolved-law estimates and the critical hierarchy
+remain open, with the original energy-floor and microscopic regimes unchanged.
+\end{document}

@@ -1,0 +1,1118 @@
+{
+  "arithmetic": "fractions.Fraction; exact integer roots; symbolic powers of pi",
+  "checks_by_group": {
+    "Coulomb_Q_zero_constant_V": 28,
+    "Coulomb_divergence_sign": 28,
+    "Coulomb_particle_compensation": 28,
+    "Coulomb_zero_and_nonzero_modes": 3,
+    "complete_square_and_ordered_triples": 132,
+    "coordinate_energy_gradient": 1848,
+    "direct_divergence": 132,
+    "disjoint_pairs_energy_lower_bound": 15,
+    "energy_generator_including_zero_diffusion": 396,
+    "exact_Coulomb_atom_coefficient": 7,
+    "exact_gamma_fourier_ratio": 21,
+    "full_density_exponent": 12,
+    "full_laplacian_2_over_N": 132,
+    "reject_missing_second_pair_derivative": 100,
+    "relative_diffusion_factor_two": 90,
+    "scalar_energy_consistency": 1848,
+    "triple_energy_blowup_coefficient": 15,
+    "triple_individual_pair_forces_nonzero": 15,
+    "triple_negative_cross_exact": 15,
+    "triple_total_force_cancellation": 15,
+    "zero_noise_energy_dissipation": 15,
+    "zero_noise_relative_integral": 15
+  },
+  "checks_total": 4910,
+  "differential_cases": [
+    {
+      "N": 2,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "1/2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "1/2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "1/2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "1/2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 3,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 3,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 4,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 4,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "1",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "3",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "3",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "3",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "3",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "3",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "3",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "3",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "3",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "3",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "3",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "3",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "3",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "3",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "3",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "3",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 5,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "3",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "2",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "4",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "4",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 2,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "two",
+      "s": "4",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 2,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "two",
+      "s": "4",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "4",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "4",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "triple_symmetric",
+      "s": "4",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "triple_symmetric",
+      "s": "4",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "4",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "4",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "triangle_3_4_5",
+      "s": "4",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 3,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "triangle_3_4_5",
+      "s": "4",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "4",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "4",
+      "smooth_even_remainder": false
+    },
+    {
+      "N": 4,
+      "d": 6,
+      "external_gradient": false,
+      "geometry": "disjoint_close_pairs",
+      "s": "4",
+      "smooth_even_remainder": true
+    },
+    {
+      "N": 4,
+      "d": 6,
+      "external_gradient": true,
+      "geometry": "disjoint_close_pairs",
+      "s": "4",
+      "smooth_even_remainder": true
+    }
+  ],
+  "differential_cases_total": 132,
+  "external_dependencies": [],
+  "floating_point_tolerance": null,
+  "limits": [
+    "Finite exact diagnostics corroborate the written analytic audit; they are not a stochastic existence proof.",
+    "Smooth local polynomial remainders and backgrounds test differential identities only.",
+    "The periodic Coulomb compensation is checked through exact Fourier/gamma identities, not a sampled Euclidean kernel.",
+    "N=3 or 17 in the two-body relative ODE is a coefficient diagnostic; the actual two-particle system has N=2.",
+    "No individual pair-force-square estimate or uniform-in-N density estimate is inferred."
+  ],
+  "method": "Coordinate scalar Taylor coefficients of raw energies versus explicit vector force and ordered divergence",
+  "random_seed": null,
+  "status": "PASS",
+  "witnesses": {
+    "disjoint_pairs": {
+      "N": 4,
+      "principal_energy": "69566/1023",
+      "rho": "1/128",
+      "two_close_pairs_lower_bound": "64"
+    },
+    "symmetric_triple": {
+      "N": 3,
+      "d": 3,
+      "energy": "160/3",
+      "full_drift_square": "52428800/9",
+      "middle_individual_drift_square_sum": "33554432/9",
+      "middle_ordered_cross_term": "-33554432/9",
+      "middle_total_force_square": "0",
+      "rho": "1/64",
+      "s": "1"
+    }
+  }
+}
